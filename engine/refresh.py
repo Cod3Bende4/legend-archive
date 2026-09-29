@@ -150,14 +150,14 @@ G = [("Horror & Ghost", r"horror|ghost|eerie|cthulhu|weird|haunt|slit-mouth|exor
      ("Apocalypse", r"apocalyp|zombie|doomsday|doom|wasteland|endless night|mutant"),
      ("Beast & Evolution", r"beast|snake|dragon|fox|koi|carp|evolv|evolution|devour|zoo|tiger|wolf|lizard|ant\b|slime|monster|pet"),
      ("Cultivation", r"cultivat|immortal|sect|sage|heaven|wukong|ruyi|monkey king|martial|god|divine")]
-# (c1, c2, ac) per genre: traditional Japanese pigments as used in ukiyo-e prints
-PAL = {"Horror & Ghost": ("#6e1a22", "#1f0a0c", "#e8606a"),           # enji / beni (crimson lake)
-       "Mecha & Sci-Fi": ("#1f3d66", "#0b1526", "#8fb8de"),           # bero-ai (Prussian blue)
-       "Sea & Survival": ("#1d4f63", "#081a22", "#9fd3d6"),           # asagi (Great Wave teal)
-       "Apocalypse": ("#7a3217", "#1f0e07", "#f08a4b"),               # kaki (persimmon)
-       "Beast & Evolution": ("#3c5424", "#10170a", "#b5c96a"),        # moegi / matcha
-       "Cultivation": ("#4a3163", "#150e1e", "#c9a8e0"),              # fuji-murasaki (wisteria)
-       "System & Summoner": ("#2a2f5a", "#0d0f20", "#e6b54a")}        # yamabuki gold on kon
+# (c1, c2, ac) per genre: sumi ink washes with the red of the sun and the white of the koi
+PAL = {"Horror & Ghost": ("#5a1216", "#120607", "#e5484d"),           # blood red in black ink
+       "Mecha & Sci-Fi": ("#34373c", "#0c0d0f", "#d6d9dd"),           # steel-grey wash
+       "Sea & Survival": ("#2a3538", "#0a0e10", "#b8c7cc"),           # wave grey
+       "Apocalypse": ("#5e1c14", "#170806", "#f07a6a"),               # ash and ember
+       "Beast & Evolution": ("#7a1a1d", "#150607", "#f4f1ec"),        # koi: red body, white fins
+       "Cultivation": ("#2f2e31", "#0b0b0c", "#eaa3a8"),              # ink with sakura pink
+       "System & Summoner": ("#1d1d20", "#060607", "#e5484d")}        # pure sumi, red seal
 
 
 def genre(txt):
