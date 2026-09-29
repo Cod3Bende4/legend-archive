@@ -150,10 +150,14 @@ G = [("Horror & Ghost", r"horror|ghost|eerie|cthulhu|weird|haunt|slit-mouth|exor
      ("Apocalypse", r"apocalyp|zombie|doomsday|doom|wasteland|endless night|mutant"),
      ("Beast & Evolution", r"beast|snake|dragon|fox|koi|carp|evolv|evolution|devour|zoo|tiger|wolf|lizard|ant\b|slime|monster|pet"),
      ("Cultivation", r"cultivat|immortal|sect|sage|heaven|wukong|ruyi|monkey king|martial|god|divine")]
-PAL = {"Horror & Ghost": ("#5b1426", "#12060b", "#ff5c78"), "Mecha & Sci-Fi": ("#1c3d63", "#080f1c", "#7cc8ff"),
-       "Sea & Survival": ("#0d5160", "#04161b", "#5fe3d8"), "Apocalypse": ("#62270f", "#170a06", "#ff8a45"),
-       "Beast & Evolution": ("#22512f", "#08140c", "#a4e36a"), "Cultivation": ("#40275f", "#110a1c", "#d9b8ff"),
-       "System & Summoner": ("#2c2f70", "#0c0d22", "#ffc857")}
+# (c1, c2, ac) per genre: traditional Japanese pigments as used in ukiyo-e prints
+PAL = {"Horror & Ghost": ("#6e1a22", "#1f0a0c", "#e8606a"),           # enji / beni (crimson lake)
+       "Mecha & Sci-Fi": ("#1f3d66", "#0b1526", "#8fb8de"),           # bero-ai (Prussian blue)
+       "Sea & Survival": ("#1d4f63", "#081a22", "#9fd3d6"),           # asagi (Great Wave teal)
+       "Apocalypse": ("#7a3217", "#1f0e07", "#f08a4b"),               # kaki (persimmon)
+       "Beast & Evolution": ("#3c5424", "#10170a", "#b5c96a"),        # moegi / matcha
+       "Cultivation": ("#4a3163", "#150e1e", "#c9a8e0"),              # fuji-murasaki (wisteria)
+       "System & Summoner": ("#2a2f5a", "#0d0f20", "#e6b54a")}        # yamabuki gold on kon
 
 
 def genre(txt):
