@@ -6201,6 +6201,10 @@
 "completed": true,
 "merge_into": "fiveelementgodofwar",
 "note": "Chinese-title variant, 3 eps"
+},
+"": {
+"hide": true,
+"note": "titles with no Latin or Chinese letters (Thai dubs etc.), not English"
 }
 }
 }
