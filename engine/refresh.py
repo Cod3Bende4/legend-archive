@@ -83,7 +83,7 @@ def fetch(url, known=frozenset(), full=True):
     if use_api():
         import ytapi
         res = ytapi.uploads(url, known=known, full=full)
-        return [dict(id=i["id"], title=i["t"], dur=i.get("d")) for i in res["items"]]
+        return [dict(id=i["id"], title=i["t"], dur=i.get("d"), published=i.get("p")) for i in res["items"]]
     exe = ytdlp()
     if not exe:
         raise RuntimeError("yt-dlp not found (brew install yt-dlp)")
@@ -197,7 +197,8 @@ def build(state, cur):
     for vid, v in state["videos"].items():
         if v.get("gone"):
             continue
-        r = dict(id=vid, ch=v["ch"], title=v["title"], dur=v["dur"], order=v["pos"], first_seen=v["first_seen"])
+        r = dict(id=vid, ch=v["ch"], title=v["title"], dur=v["dur"], order=v["pos"],
+                 first_seen=v.get("published") or v["first_seen"])
         r["season"], r["base"], r["tag"] = season_of(r["title"]), base_of(r["title"]), tag_of(r["title"])
         rows[vid] = r
     for k, s in cur["seasons"].items():
@@ -373,6 +374,7 @@ def main():
                 else:
                     top = max([v["pos"] for v in state["videos"].values() if v["ch"] == ch] or [0])
                     state["videos"][it["id"]] = dict(ch=ch, title=it["title"], dur=it["dur"], first_seen=TODAY,
+                                                     published=it.get("published"),
                                                      pos=(n - i) if full_dub else top + (n - i))
                     added.append(it["title"])
             if full_dub:  # a partial (delta) listing cannot tell removed videos apart

@@ -97,7 +97,7 @@ def official_series(genre, PAL, split_title, meta=None):
             ser["names"][p["name"]] = ser["names"].get(p["name"], 0) + 1
             ser["chans"].add(cname)
             ser["seasons"].setdefault(p["season"], []).append(dict(p, id=v["id"], d=v["d"], ch=cname, t=v["t"],
-                                                                  fs=v.get("first_seen", "2026-09-28")))
+                                                                  fs=v.get("p") or v.get("first_seen", "2026-09-28")))
     # fold near-identical keys (typos, "Tale"/"Tales") and hand-made merges into one series
     keys = sorted(by, key=lambda k: -sum(len(x) for x in by[k]["seasons"].values()))
     for i, k in enumerate(keys):

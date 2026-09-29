@@ -25,7 +25,7 @@ def listing(url, limit=None, known=frozenset()):
     if os.environ.get("YT_API_KEY"):
         import ytapi
         res = ytapi.uploads(url.replace("/videos", ""), known=known, full=limit is None)
-        return dict(channel=res["channel"]), [dict(id=i["id"], t=i["t"], d=i.get("d")) for i in res["items"]]
+        return dict(channel=res["channel"]), [dict(id=i["id"], t=i["t"], d=i.get("d"), p=i.get("p")) for i in res["items"]]
     cmd = [ytdlp(), "--flat-playlist", "-J", "--no-warnings"]
     if limit:
         cmd += ["--playlist-end", str(limit)]
@@ -49,7 +49,7 @@ def scan_channel(name, c, full):
     full = full or old is None or not old.get("last_full") or \
         (datetime.date.today() - datetime.date.fromisoformat(old["last_full"][:10])).days >= FULL_EVERY_DAYS
     j, items = listing(c["url"].rstrip("/") + "/videos", None if full else DELTA_ITEMS, frozenset(known))
-    new = [dict(v, first_seen=TODAY) for v in items if v["id"] not in known]
+    new = [dict({k: x for k, x in v.items() if x is not None}, first_seen=TODAY) for v in items if v["id"] not in known]
     if full:
         seen = {v["id"] for v in items}
         for v in items:  # refresh titles/durations of known videos

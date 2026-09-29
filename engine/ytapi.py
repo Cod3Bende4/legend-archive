@@ -97,7 +97,8 @@ def uploads(url, known=frozenset(), full=False):
             j = get("playlistItems", **params)
         except LookupError:
             break
-        page = [dict(id=it["snippet"]["resourceId"]["videoId"], t=it["snippet"].get("title", ""))
+        page = [dict(id=it["snippet"]["resourceId"]["videoId"], t=it["snippet"].get("title", ""),
+                     p=(it["snippet"].get("publishedAt") or "")[:10])
                 for it in j.get("items", []) if it["snippet"].get("resourceId", {}).get("videoId")]
         items += page
         token = j.get("nextPageToken")
