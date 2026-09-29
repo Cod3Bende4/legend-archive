@@ -17,7 +17,7 @@ Shelves
   8 Ongoing               A1/A2, not finished yet, rated 7.5+ or not rated yet
   9 Awaiting review       A1/A2, not rated yet (Claude rates these on its scheduled runs)
   10 Extras               A3 under 5h
-  hidden                  AI slop, rated under 7.5, members-only, or hidden by hand
+  hidden                  AI slop, rated under 7.5, under 1 hour total, members-only, or hidden by hand
 
 Origin (CN donghua, JP anime, KR Korean webtoon/manhwa) splits the site into three sections that each
 carry the shelves above. It comes from the channel ("origin" in config.json, the four dub channels are CN),
@@ -242,7 +242,7 @@ def apply(series, cur, Q):
         x["ratingSrc"] = m.get("rating_src", "")
         x["completed"] = m.get("completed", x["audio"] == "A3")
         members = x.pop("members", False) and not m.get("members_ok")
-        if m.get("hide") or slop or members or (rating is not None and rating < 7.5):
+        if m.get("hide") or slop or members or x["total"] < 3600 or (rating is not None and rating < 7.5):
             hidden += 1
             continue
         hrs = x["total"] / 3600
