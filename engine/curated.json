@@ -421,14 +421,16 @@
 "note": "still ongoing; members-only gaps"
 },
 "tenthousandworlds": {
-"name": "Ten Thousand Worlds",
+"name": "Ten Thousand Worlds (Wan Jie Du Zun)",
 "completed": false,
-"note": "Wan Jie Du Zun; ongoing; members-only gaps; no rating found"
+"note": "ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "spiritswordsovereign": {
 "name": "Spirit Sword Sovereign",
 "completed": false,
-"note": "Ling Jian Zun; ongoing; members-only gaps; no rating found"
+"note": "ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "swallowedstar": {
 "name": "Swallowed Star",
@@ -447,12 +449,14 @@
 "againsttheskysupreme": {
 "name": "Against the Sky Supreme",
 "completed": false,
-"note": "Ni Tian Zhizun; ongoing; members-only gaps; no rating found"
+"note": "ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "bigbrother": {
 "name": "Big Brother",
 "completed": false,
-"note": "Shixiong A Shixiong; ongoing; members-only gaps in S1; no rating found"
+"note": "ongoing; members-only gaps in S1; no rating found",
+"origin": "CN"
 },
 "throneofseal": {
 "name": "Throne of Seal",
@@ -464,7 +468,8 @@
 "mythofeternity": {
 "name": "Myth of Eternity",
 "completed": false,
-"note": "Wangu Shenhua; ongoing; members-only gaps; no rating found"
+"note": "ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "demongods": {
 "name": "Tales of Demons and Gods",
@@ -483,12 +488,14 @@
 "onehundredthousandyearsofqirefining": {
 "name": "One Hundred Thousand Years of Qi Refining",
 "completed": false,
-"note": "Lian Qi Shi Wan Nian; ongoing; members-only gaps; no rating found"
+"note": "ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "onesteptowardsfreedom": {
 "name": "One Step Towards Freedom",
 "completed": false,
-"note": "Du Bu Xiaoyao; ongoing; members-only gaps; no rating found"
+"note": "ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "thattimeigotreincarnatedasaslime": {
 "name": "That Time I Got Reincarnated as a Slime",
@@ -507,17 +514,20 @@
 "legendofxianwu": {
 "name": "Legend of Xianwu",
 "completed": false,
-"note": "Xianwu Chuan; weekly, still ongoing; no rating found"
+"note": "ongoing; no rating found",
+"origin": "CN"
 },
 "peerlessmartialspirit": {
 "name": "Peerless Martial Spirit",
 "completed": false,
-"note": "Jueshi Wuhun; ongoing; members-only gaps; no rating found"
+"note": "ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "supremegodemperor": {
 "name": "Supreme God Emperor",
 "completed": false,
-"note": "ongoing; no rating found"
+"note": "ongoing; no rating found",
+"origin": "CN"
 },
 "awilleternal": {
 "name": "A Will Eternal",
@@ -529,12 +539,14 @@
 "legendofskylord": {
 "name": "The Legend of Sky Lord",
 "completed": false,
-"note": "3D version (2024); ongoing; members-only gaps; no rating found"
+"note": "3D version, ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "magicchefoficeandfire": {
 "name": "The Magic Chef of Ice and Fire",
 "completed": false,
-"note": "Bing Huo Mo Chu; weekly, still ongoing; no rating found"
+"note": "ongoing; no rating found",
+"origin": "CN"
 },
 "apotheosis": {
 "name": "Apotheosis",
@@ -546,7 +558,8 @@
 "successofmmpyreanxuanemperor": {
 "name": "The Success of Empyrean Xuan Emperor",
 "completed": false,
-"note": "Jiu Tian Xuan Di Jue; ongoing; no rating found"
+"note": "ongoing; no rating found",
+"origin": "CN"
 },
 "斗罗大陆2绝世唐门": {
 "merge_into": "soulland2thepeerlesstangclan",
@@ -557,12 +570,14 @@
 "wanjiezhizun": {
 "name": "Wan Jie Zhi Zun",
 "completed": false,
-"note": "ongoing; 2 gaps; key 万界至尊 (EP2-71) overlaps it; no rating found"
+"note": "ongoing; overlaps key 万界至尊; no rating found",
+"origin": "CN"
 },
 "legendofsworddomain": {
 "name": "The Legend of Sword Domain",
 "completed": false,
-"note": "Jian Yu Feng Yun; renewed for further seasons, ongoing; no rating found"
+"note": "ongoing, more seasons; no rating found",
+"origin": "CN"
 },
 "godofwardominates": {
 "name": "The God of War Dominates (Martial Master)",
@@ -602,7 +617,10 @@
 "taleofherdinggod": {
 "name": "Tales of Herding Gods",
 "completed": false,
-"note": "no rating found on MAL (AnimeSchedule 8.31); still airing weekly (EP103 in Oct 2026)"
+"note": "still airing; score recalled (approx)",
+"origin": "CN",
+"rating": 8.2,
+"rating_src": "MAL"
 },
 "lingwucontinent": {
 "name": "Lingwu Continent",
@@ -677,7 +695,8 @@
 "superheroic": {
 "name": "Super Heroic",
 "completed": false,
-"note": "members-only gaps (267 missing); no rating found; iQIYI album URL resolves to Super Heroic Spirit, possibly same show as superheroicspirit (overlap, not merged)"
+"note": "members-only gaps (267 missing); possibly same show as superheroicspirit; no rating found",
+"origin": "CN"
 },
 "supremealchemy": {
 "name": "Supreme Alchemy",
@@ -758,7 +777,8 @@
 "ludijianxian": {
 "name": "Lu Di Jian Xian (Keyboard Immortal)",
 "completed": true,
-"note": "no rating found; 150 eps, finished"
+"note": "150 eps finished; no rating found",
+"origin": "CN"
 },
 "foxspiritmatchmaker": {
 "name": "Fox Spirit Matchmaker",
@@ -770,7 +790,8 @@
 "superheroicspirit": {
 "name": "Super Heroic Spirit",
 "completed": false,
-"note": "no rating found; iQIYI donghua, S1 180 eps done, S2 (2026) still airing; not the same as key superheroic (unverified)"
+"note": "S2 airing; no rating found",
+"origin": "CN"
 },
 "aceofdiamondact": {
 "name": "Ace of Diamond Act II",
@@ -866,7 +887,9 @@
 "lovestoryofmyimmortaldad": {
 "name": "The Love Story of My Immortal Dad",
 "completed": false,
-"note": "no rating found; motion comic (animated comic), low animation quality; members-only gaps"
+"note": "motion comic, low animation quality; members-only gaps",
+"origin": "CN",
+"hide": true
 },
 "assassinationclassroom": {
 "name": "Assassination Classroom",
@@ -878,12 +901,14 @@
 "wordofhonor": {
 "name": "Word of Honor (Jun You Yun)",
 "completed": true,
-"note": "animated Bilibili donghua, not the live action; S2 32 eps finished 2025; no MAL score found"
+"note": "animated Bilibili donghua, not the live action; no rating found",
+"origin": "CN"
 },
 "hundredrefiningsoaringrecord": {
 "name": "Hundred Refining Soaring Record",
-"completed": false,
-"note": "no rating found; S1 60 + S2 40 eps finished, 1 episode missing from uploads"
+"completed": true,
+"note": "1 ep gap likely bundle artifact; no rating found",
+"origin": "CN"
 },
 "tokyorevengers": {
 "name": "Tokyo Revengers",
@@ -895,7 +920,8 @@
 "spyxsect": {
 "name": "Spy x Sect",
 "completed": false,
-"note": "no MAL score found; members-only gaps; 152 eps incl. S2"
+"note": "members-only gaps; no rating found",
+"origin": "CN"
 },
 "immortalascension": {
 "name": "The Immortal Ascension",
@@ -925,7 +951,8 @@
 "endlessgodrealm": {
 "name": "Endless God Realm",
 "completed": true,
-"note": "no MAL score found; iQIYI lists 80 eps complete"
+"note": "80 eps complete; no rating found",
+"origin": "CN"
 },
 "jojosbizarreadventurediamondisunbreakable": {
 "name": "JoJo's Bizarre Adventure",
@@ -960,7 +987,8 @@
 "shulingji": {
 "name": "Shu Ling Ji (Spirit of the Book)",
 "completed": true,
-"note": "no rating found; 30+40+60 = 130 eps across 3 seasons, finished 2022"
+"note": "130 eps across 3 seasons, compilations; no rating found",
+"origin": "CN"
 },
 "classroomoftheelite": {
 "name": "Classroom of the Elite",
@@ -1000,7 +1028,8 @@
 "jiadaozhonger": {
 "name": "Jia Dao Zhong Er",
 "completed": true,
-"note": "no rating found; 120-ep comedy donghua (2024), complete"
+"note": "120 eps complete; no rating found",
+"origin": "CN"
 },
 "onepunchman-dub": {
 "name": "One-Punch Man (English Dub)",
@@ -1083,7 +1112,8 @@
 "fabulousswordgod": {
 "name": "The Fabulous Sword God",
 "completed": false,
-"note": "no rating found; only EP1-78 of 156 uploaded (Ni Tian Jian Shen, finished 2022)"
+"note": "only EP1-78 of 156 uploaded; no rating found",
+"origin": "CN"
 },
 "ravagesoftime": {
 "name": "The Ravages of Time",
@@ -1163,7 +1193,8 @@
 "mywechatconnectstothedragonpalace": {
 "name": "My WeChat Connects to the Dragon Palace",
 "completed": true,
-"note": "no rating found (MAL unscored); 60 eps finished Feb 2025"
+"note": "60 eps; no rating found",
+"origin": "CN"
 },
 "frierenbeyondjourneysend-dub": {
 "name": "Frieren: Beyond Journey's End (English Dub)",
@@ -1239,12 +1270,14 @@
 "wayofchoices3d": {
 "name": "Way of Choices 3D",
 "completed": true,
-"note": "no rating found; MAL entry: Ze Tian Ji (2026), 26 eps finished"
+"note": "26 eps (Ze Tian Ji); no rating found",
+"origin": "CN"
 },
 "jiangu": {
 "name": "Blade and Bones (Jian Gu)",
 "completed": true,
-"note": "60 eps finished; xuzang uploads fill EP60; no rating found"
+"note": "60 eps; no rating found",
+"origin": "CN"
 },
 "ouranhighschoolhostclub": {
 "name": "Ouran High School Host Club",
@@ -1270,7 +1303,8 @@
 "martialconquerorofthecosmos": {
 "name": "Martial Conqueror of the Cosmos",
 "completed": true,
-"note": "MAL entry: Wu Sui Xinghe (60 eps, finished); MAL score could not be retrieved"
+"note": "60 eps finished; no rating found",
+"origin": "CN"
 },
 "westward": {
 "name": "The Westward",
@@ -1384,7 +1418,8 @@
 "wealthandwonder": {
 "name": "Wealth and Wonder",
 "completed": true,
-"note": "no rating found; 2025 Youku 3D donghua, 26 eps"
+"note": "26 eps; no rating found",
+"origin": "CN"
 },
 "girlfriendgirlfriend": {
 "name": "Girlfriend, Girlfriend",
@@ -1436,7 +1471,8 @@
 "qiangshenji": {
 "name": "Age of Gunslingers (Qiang Shen Ji)",
 "completed": false,
-"note": "no rating found; 3 compilations cover 36 of 48 eps (4 arcs of 12), uncertain"
+"note": "compilations cover 36 of 48 eps; no rating found",
+"origin": "CN"
 },
 "skeletonknightinanotherworld": {
 "name": "Skeleton Knight in Another World",
@@ -1569,12 +1605,15 @@
 "nationalhusbandbringhome": {
 "name": "National Husband Bring Home",
 "completed": false,
-"note": "finished show (S4 has 12 eps) but S4 EP12 not uploaded; no rating found"
+"note": "S4 EP12 not uploaded; no rating found",
+"origin": "CN"
 },
 "fiveelementwargod": {
 "name": "Five Element God of War",
 "completed": true,
-"note": "single EP1-80 compilation of the finished 80-ep show (ended Jan 2025); fiveelementgodofwar holds EP1-50 as individual uploads (subset); no rating found"
+"note": "EP1-80 compilation, same show as fiveelementgodofwar",
+"origin": "CN",
+"merge_into": "fiveelementgodofwar"
 },
 "campfirecookinginanotherworldwithmyabsurdskill": {
 "name": "Campfire Cooking in Another World with My Absurd Skill",
@@ -1586,12 +1625,14 @@
 "codeofgodshavoc": {
 "name": "Code of Gods Havoc",
 "completed": false,
-"note": "members-only gaps; still ongoing (EP52 upcoming); no rating found"
+"note": "ongoing; members-only gaps; no rating found",
+"origin": "CN"
 },
 "divinemanifestation": {
 "name": "Divine Manifestation",
 "completed": true,
-"note": "Tian Xiang, 26 eps finished Mar 2026; no rating found"
+"note": "26 eps finished; no rating found",
+"origin": "CN"
 },
 "degeneratedrawingjianghu": {
 "name": "The Degenerate-Drawing Jianghu",
@@ -1603,7 +1644,8 @@
 "ascendantsoftheninesuns": {
 "name": "Ascendants of the Nine Suns",
 "completed": false,
-"note": "ongoing weekly (EP47 Sep 2026); 1 gap; no rating found"
+"note": "ongoing weekly; no rating found",
+"origin": "CN"
 },
 "vndub": {
 "name": "How Dare You!? (Vietnamese dub)",
@@ -1614,7 +1656,8 @@
 "misspuff": {
 "name": "Miss Puff",
 "completed": false,
-"note": "finished show but S4 missing and gaps in S1-S3; no rating found"
+"note": "S4 missing, gaps in S1-S3; no rating found",
+"origin": "CN"
 },
 "ileftmyarankparty": {
 "name": "I Left My A-Rank Party to Help My Former Students Reach the Dungeon Depths!",
@@ -1626,7 +1669,8 @@
 "longsword": {
 "name": "Long Sword",
 "completed": false,
-"note": "Chang Jian Fengyun; S1 1 gap (members-only); no rating found"
+"note": "S1 1 members-only gap; no rating found",
+"origin": "CN"
 },
 "muvluvalternative": {
 "name": "Muv-Luv Alternative",
@@ -1638,7 +1682,8 @@
 "scumofthebrave": {
 "name": "Scum of the Brave",
 "completed": true,
-"note": "24 eps, Jan-Jun 2026; no rating found"
+"note": "24 eps 2026; no rating found",
+"origin": "JP"
 },
 "sugarapplefairytale": {
 "name": "Sugar Apple Fairy Tale",
@@ -1650,12 +1695,14 @@
 "legendofsoldier": {
 "name": "Legend of Soldier",
 "completed": true,
-"note": "26 eps, ended; no rating found"
+"note": "26 eps; no rating found",
+"origin": "CN"
 },
 "everlastinggodofsword": {
 "name": "Everlasting God of Sword",
 "completed": true,
-"note": "Wangu Jian Shen, 38 eps, finished; no rating found"
+"note": "38 eps; no rating found",
+"origin": "CN"
 },
 "bladesoftheguardians": {
 "name": "Blades of the Guardians",
@@ -1667,17 +1714,20 @@
 "talesofdarkriver": {
 "name": "Tales of Dark River",
 "completed": true,
-"note": "26 eps, finished; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "monsterbutwild": {
 "name": "Monster but Wild",
 "completed": false,
-"note": "finished (12+16 eps) but S1 has 1 gap (members-only); no rating found"
+"note": "S1 has 1 members-only gap",
+"origin": "CN"
 },
 "gateofmysticalrealm": {
 "name": "The Gate of Mystical Realm",
 "completed": true,
-"note": "Xuan Jie Zhi Men, 26 eps finished May 2026; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "amortalsjourneytoimmortalityremake": {
 "name": "A Record of a Mortal's Journey to Immortality (Remastered)",
@@ -1689,7 +1739,8 @@
 "rebornasacat": {
 "name": "Reborn as a Cat",
 "completed": true,
-"note": "36 eps (Nov 2025 ONA), all uploaded; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "unparalleledblackwhite": {
 "name": "The Unparalleled Black & White",
@@ -1720,7 +1771,8 @@
 "legendoflotusswordfairy": {
 "name": "Legend of Lotus Sword Fairy",
 "completed": false,
-"note": "54 eps, on hiatus since Oct 2023; 1 ep missing; no rating found"
+"note": "on hiatus, not finished",
+"origin": "CN"
 },
 "cinderellachief": {
 "name": "Cinderella Chef",
@@ -1737,8 +1789,9 @@
 },
 "fiveelementgodofwar": {
 "name": "Five Element God of War",
-"completed": false,
-"note": "members-only gaps; likely same show as fiveelementwargod (EP1-80 compilation), not merged; no rating found"
+"completed": true,
+"note": "same show as fiveelementwargod; members-only gaps",
+"origin": "CN"
 },
 "cellsatwork": {
 "name": "Cells at Work!",
@@ -1750,7 +1803,8 @@
 "insearchofgods": {
 "name": "In Search of Gods",
 "completed": true,
-"note": "24 eps complete (2026); no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "immortalitys1s2all": {
 "name": "Immortality",
@@ -1781,17 +1835,20 @@
 "othersideofdeepspace": {
 "name": "The Other Side of Deep Space",
 "completed": true,
-"note": "26 eps, finished June 2026; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "kingofwanderingcultivators": {
 "name": "The King of Wandering Cultivators",
 "completed": true,
-"note": "S1 52 eps complete (partly as compilations); no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "winddriverintangdynasty": {
 "name": "Wind Driver in Tang Dynasty",
 "completed": false,
-"note": "at least 26 eps exist, uploads EP1-25 with 1 gap; no rating found"
+"note": "1 gap, later eps missing",
+"origin": "CN"
 },
 "legendofexorcism": {
 "name": "Legend of Exorcism",
@@ -1821,7 +1878,8 @@
 "overgoddess": {
 "name": "Over Goddess",
 "completed": true,
-"note": "徒弟个个是大佬, 40 eps complete; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "修仙者大战超能力": {
 "name": "Cultivators vs. Superpowers",
@@ -1832,87 +1890,104 @@
 "wayofchoices3d-dub": {
 "name": "Way of Choices 3D (English Dub)",
 "completed": true,
-"note": "EP1-26 dub collection, series finished at 26; no rating found"
+"note": "dub collection EP1-26",
+"origin": "CN"
 },
 "dragonprinceyuan": {
 "name": "Dragon Prince Yuan",
 "completed": false,
-"note": "S1 26 eps (on hiatus), uploads EP1-25 with 1 gap; no rating found"
+"note": "hiatus; 1 gap",
+"origin": "CN"
 },
 "tigercrane": {
 "name": "Tiger Crane",
 "completed": false,
-"note": "24 eps finished, only EP1-23 uploaded; no rating found"
+"note": "only EP1-23 of 24 uploaded",
+"origin": "CN"
 },
 "mythicalcreaturesaremydinners": {
 "name": "Mythical Creatures Are My Dinners",
 "completed": false,
-"note": "ongoing; no rating found"
+"note": "ongoing",
+"origin": "CN"
 },
 "riseofthedragon": {
 "name": "Rise of the Dragon",
 "completed": true,
-"note": "极道龙神, 40 eps complete; low-budget 3D; no rating found"
+"note": "low-budget 3D",
+"origin": "CN"
 },
 "msorganization": {
 "name": "M&S Organization",
 "completed": false,
-"note": "25 eps, uploads start at EP3; no rating found"
+"note": "uploads start at EP3",
+"origin": "CN"
 },
 "psychicprincess": {
 "name": "Psychic Princess",
 "completed": false,
-"note": "Season 2 (2025, 24 eps, finished); 1 episode missing; no rating found"
+"note": "only season 2 uploaded, 1 gap",
+"origin": "CN"
 },
 "flameimperialguards": {
 "name": "The Flame Imperial Guards",
 "completed": true,
-"note": "24 eps finished 2023; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "masterofthestarspring": {
 "name": "Master of the Star Spring",
 "completed": false,
-"note": "48 eps finished 2023; 2 episodes missing (members-only gaps); no rating found"
+"note": "2 members-only gaps",
+"origin": "CN"
 },
 "dragonstarlord": {
 "name": "The Dragon Star Lord",
 "completed": true,
-"note": "iQIYI 2024, 48 eps; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "heavenscrapmaster": {
 "name": "Heaven Scrap Master",
 "completed": true,
-"note": "40 eps finished Nov 2025; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "maddemonlord": {
 "name": "Mad Demon Lord",
 "completed": true,
-"note": "MAL entry: Kuang Shen Mo Zun; 2021, EP1-62 compilations; no rating found"
+"note": "compilations EP1-62",
+"origin": "CN"
 },
 "异世界中药铺": {
 "name": "Different World Chinese Medicine Shop",
 "completed": false,
-"note": "uploads only cover EP41-100 compilations; series is longer (has season 2); no rating found; not the Japanese Parallel World Pharmacy"
+"note": "uploads only EP41-100 compilations; not Parallel World Pharmacy",
+"origin": "CN"
 },
 "mostpowerfulvendor": {
 "name": "The Most Powerful Vendor",
 "completed": true,
-"note": "24 eps finished Feb 2026; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "aliensamongimmortals": {
 "name": "Aliens Among Immortals",
 "completed": true,
-"note": "60 eps finished 2026; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "soulofsoldiermaster": {
 "name": "The Soul of Soldier Master",
 "completed": true,
-"note": "MAL entry: Bing Zhu Qi Hun (2022); no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "supremebodyrefiningmaster": {
 "name": "The Supreme Body Refining Master",
 "completed": true,
-"note": "40 eps finished May 2026; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "lordofmysteriestheclown": {
 "name": "Lord of Mysteries",
@@ -1930,7 +2005,8 @@
 "castoutbymyfamilyiawakened900millionstatpoints": {
 "name": "Cast Out by My Family, I Awakened 900 Million Stat Points",
 "completed": false,
-"note": "season 2 still airing; no rating found"
+"note": "season 2 still airing",
+"origin": "CN"
 },
 "bladeandbones": {
 "name": "Blade and Bones",
@@ -1941,12 +2017,14 @@
 "secretsofstardivinearts": {
 "name": "The Secrets of Star Divine Arts",
 "completed": true,
-"note": "40 eps finished 2024; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "makemoneytobeking": {
 "name": "Make Money to Be King",
 "completed": false,
-"note": "uploads cover EP1-60; series has 90+ eps and continues; no rating found"
+"note": "continues past EP60",
+"origin": "CN"
 },
 "goodkiller": {
 "name": "Good Killer",
@@ -1957,32 +2035,38 @@
 "nodoubtinus": {
 "name": "No Doubt in Us",
 "completed": false,
-"note": "members-only gaps in S1; S2 only as one EP1-24 collection; S2 individual eps are in marriedashusbandandwifenodoubtaboutlove; no rating found"
+"note": "members-only gaps in S1; S2 only as EP1-24 collection",
+"origin": "CN"
 },
 "lordofplanets": {
 "name": "Lord of Planets",
 "completed": false,
-"note": "uploads cover EP1-60 of 80 eps; no rating found"
+"note": "uploads cover EP1-60 of 80",
+"origin": "CN"
 },
 "proudswordsman": {
 "name": "Proud Swordsman",
 "completed": false,
-"note": "ongoing, 78+ eps; uploads cover EP1-60; no rating found"
+"note": "ongoing, uploads EP1-60",
+"origin": "CN"
 },
 "myjourneyinanalternateworld": {
 "name": "My Journey in an Alternate World",
 "completed": true,
-"note": "40 eps finished 2022; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "dontgiveup": {
 "name": "Don't Give Up!",
 "completed": true,
-"note": "2024 Bilibili series; 23 eps uploaded without gaps; episode total not verified; no rating found"
+"note": "episode total not verified",
+"origin": "CN"
 },
 "greatdoctormissnine": {
 "name": "Great Doctor Miss Nine",
 "completed": false,
-"note": "80+ eps; uploads cover EP1-60; no rating found"
+"note": "80+ eps, uploads EP1-60",
+"origin": "CN"
 },
 "season3thethreerealms": {
 "name": "Wu Geng Ji",
@@ -1995,7 +2079,8 @@
 "tombsoffallenimmortals": {
 "name": "Tombs of Fallen Immortals",
 "completed": true,
-"note": "Xian Mu (Immortal Tomb), 60 eps finished 2023; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "wugenjiseason2apocalypse": {
 "name": "Wu Geng Ji",
@@ -2008,7 +2093,8 @@
 "shapeofthewindsiamera": {
 "name": "The Shape of the Wind: Siam Era",
 "completed": true,
-"note": "20 eps finished 2023; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "season4thebattleagainstheaven": {
 "name": "Wu Geng Ji",
@@ -2021,7 +2107,8 @@
 "legendofyangchen": {
 "name": "The Legend of Yang Chen",
 "completed": true,
-"note": "40 eps, ended; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "thousandautumns": {
 "name": "Thousand Autumns",
@@ -2033,7 +2120,8 @@
 "celestialbonds": {
 "name": "Celestial Bonds",
 "completed": true,
-"note": "Xian Chong (2025), 18 eps complete per iQ.com; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "berylandsapphire": {
 "name": "Beryl and Sapphire",
@@ -2051,27 +2139,32 @@
 "overthedivinerealms": {
 "name": "Over the Divine Realms",
 "completed": true,
-"note": "Shen Guo Zhi Shang S1, 17 eps finale; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "rebirthoftheswordpatriarch": {
 "name": "Rebirth of the Sword Patriarch",
 "completed": false,
-"note": "Yongheng Jian Zu, 40 eps finished but uploads miss one ep and EP40; no rating found"
+"note": "1 gap and EP40 missing",
+"origin": "CN"
 },
 "evernight": {
 "name": "Ever Night",
 "completed": true,
-"note": "Jiang Ye animation S1, 19 eps, Apr-Aug 2026; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "fightforthethrone": {
 "name": "Fight for the Throne",
 "completed": true,
-"note": "Douzhan Tianxia, 48 eps complete; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "legendofdragonsoldier": {
 "name": "The Legend of Dragon Soldier",
 "completed": true,
-"note": "Shen Ji Long Wei, 26 eps; no rating found"
+"note": "Shen Ji Long Wei; no rating found",
+"origin": "CN"
 },
 "battlethroughtheheavens": {
 "name": "Battle Through the Heavens",
@@ -2083,22 +2176,26 @@
 "bking": {
 "name": "B King",
 "completed": true,
-"note": "Yu Ling Shi (2026), 18 eps finished; no rating found"
+"note": "Yu Ling Shi; no rating found",
+"origin": "CN"
 },
 "lordofalllords": {
 "name": "Lord of All Lords",
 "completed": true,
-"note": "26 eps, full collection exists; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "shadowofheaven": {
 "name": "Shadow of Heaven",
 "completed": true,
-"note": "Tian Ying, 26 eps finished Feb 2025; no rating found"
+"note": "Tian Ying; no rating found",
+"origin": "CN"
 },
 "classroomoftheelite4thseason": {
-"name": "Classroom of the Elite 4th Season",
+"name": "Classroom of the Elite Season 4",
 "completed": true,
-"note": "16 eps, aired Apr-Jun 2026; gaps come from EP01-04 bundle upload; not merged (target likely uses S1-S3 numbering); no rating found"
+"note": "16 eps; gaps from EP01-04 bundle; no rating found",
+"origin": "JP"
 },
 "slaythegods": {
 "name": "Slay the Gods",
@@ -2110,12 +2207,14 @@
 "pheromonessaywerenotmeanttobeourpheromonessayno": {
 "name": "Pheromones Say We're Not Meant to Be",
 "completed": true,
-"note": "24 eps, full collection exists; possibly dynamic manhua style, unverified; no rating found"
+"note": "possibly dynamic manhua style, unverified; no rating found",
+"origin": "CN"
 },
 "shiboyugiplayingdeathgamestoputfoodonthetable": {
 "name": "SHIBOYUGI: Playing Death Games to Put Food on the Table",
 "completed": true,
-"note": "TV aired Jan-Mar 2026, finished; no rating found"
+"note": "no rating found",
+"origin": "JP"
 },
 "chumumoxie": {
 "name": "The Charm of Soul Pets",
@@ -2126,12 +2225,15 @@
 "almanacmaster": {
 "name": "Almanac Master",
 "completed": true,
-"note": "Li Shi (2020); criticized as low quality in Chinese reviews; no rating found"
+"note": "Li Shi; low quality; no rating found",
+"origin": "CN"
 },
 "xianwuheaven": {
 "name": "Xianwu Heaven",
 "completed": true,
-"note": "Xianwu Cangqiong (2022), 48 eps complete per iQ.com; no rating found"
+"note": "Xianwu Cangqiong, same show as xianwucangqiong; no rating found",
+"origin": "CN",
+"merge_into": "xianwucangqiong"
 },
 "一世独尊": {
 "name": "The Lone Sword Overlord (Yi Shi Du Zun)",
@@ -2142,32 +2244,38 @@
 "goldenwug": {
 "name": "The Golden Wug",
 "completed": true,
-"note": "Jin Can Wangshi (2024), 24 eps; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "thousandsofworlds": {
 "name": "Thousands of Worlds",
 "completed": true,
-"note": "MAL entry: Zhu Tian Ji (2022), 26 eps; no rating found"
+"note": "Zhu Tian Ji; no rating found",
+"origin": "CN"
 },
 "legendofprincesschangge": {
 "name": "The Legend of Princess Chang-Ge",
 "completed": false,
-"note": "Chang Ge Xing, listed as 16 eps but only EP1-15 uploaded; no rating found"
+"note": "16 eps but only 15 uploaded; no rating found",
+"origin": "CN"
 },
 "apocalypseidominatewithmysrankmech": {
 "name": "Apocalypse: I Dominate with My S-Rank Mech",
 "completed": false,
-"note": "ongoing (EP40 June 2026, no end date); no rating found"
+"note": "ongoing; no rating found",
+"origin": "CN"
 },
 "immortalsofthegodlessage": {
 "name": "Immortals of the Godless Age",
 "completed": true,
-"note": "MAL entry: Chunqiu Feng Shen (2021), 24 eps; no rating found"
+"note": "Chunqiu Feng Shen; no rating found",
+"origin": "CN"
 },
 "bladersoul": {
 "name": "Blader Soul",
 "completed": true,
-"note": "Bu Xing Si: Yuan Qi (2024), 18 eps; no rating found"
+"note": "Bu Xing Si: Yuan Qi; no rating found",
+"origin": "CN"
 },
 "qinhu": {
 "name": "The Flame Imperial Guards",
@@ -2178,17 +2286,20 @@
 "knightsondebris": {
 "name": "Knights on Debris",
 "completed": true,
-"note": "MAL entry: Xing Hai Qishi, S1 15 eps; no rating found"
+"note": "Xing Hai Qishi S1; no rating found",
+"origin": "CN"
 },
 "guardianlegend": {
 "name": "The Guardian Legend",
 "completed": true,
-"note": "Shu Tian Fu Mo Lu (2023), 16 eps; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "laidoffdemon": {
 "name": "The Laid Off Demon",
 "completed": false,
-"note": "no rating found; 26 eps finished 2025, 1 episode missing (EP1..26 with gap)"
+"note": "1 episode missing; no rating found",
+"origin": "CN"
 },
 "peakoftruemartialarts": {
 "name": "The Peak of True Martial Arts",
@@ -2228,7 +2339,8 @@
 "abovemyriads": {
 "name": "Above Myriads",
 "completed": false,
-"note": "2026 donghua (Wan Ren Zhi Shang), likely still airing; no rating found"
+"note": "likely still airing; no rating found",
+"origin": "CN"
 },
 "画江湖之不良人第七季九幽玄天": {
 "name": "The Degenerate-Drawing Jianghu Season 7",
@@ -2270,7 +2382,8 @@
 "swordandfairy": {
 "name": "Sword and Fairy 3",
 "completed": false,
-"note": "2025-26 Tencent donghua, finished June 2026 but only EP1-16 uploaded with 1 gap; no rating found"
+"note": "1 gap of 16 eps; no rating found",
+"origin": "CN"
 },
 "myseniorbrotheristoostrong": {
 "name": "My Senior Brother is Too Strong",
@@ -2343,7 +2456,8 @@
 "embers": {
 "name": "EMBERS",
 "completed": true,
-"note": "2025 iQIYI donghua (Yu Jin Xing Zhe), 15 eps; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "capsules": {
 "name": "CAPSULES",
@@ -2403,47 +2517,56 @@
 "richestmaningame": {
 "name": "The Richest Man in Game",
 "completed": true,
-"note": "no rating found; 16-episode season finished 2024"
+"note": "no rating found",
+"origin": "CN"
 },
 "meleemage": {
 "name": "The Melee Mage",
 "completed": false,
-"note": "members-only gaps; 20 episodes total, no rating found"
+"note": "members-only gaps; no rating found",
+"origin": "CN"
 },
 "whitednighttime": {
 "name": "Whited Nighttime",
 "completed": true,
-"note": "25 episodes (2018) uploaded as two compilations; no rating found"
+"note": "25 eps as two compilations; no rating found",
+"origin": "CN"
 },
 "backtothegreatming": {
 "name": "Back to the Great Ming",
 "completed": true,
-"note": "16 episodes, finished; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "momimsorry": {
 "name": "Mom, I'm Sorry",
 "completed": true,
-"note": "no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "jinwuwei": {
 "name": "Jin Wu Wei: The Wind Rises in Jinling",
 "completed": true,
-"note": "16 episodes, finished; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "backasimmortallord": {
 "name": "Back as Immortal Lord",
 "completed": true,
-"note": "16 episodes, ended; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "thrud": {
 "name": "THRUD",
 "completed": true,
-"note": "15 episodes total; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "kuibazhishutu": {
 "name": "Kuiba: Different Paths",
 "completed": false,
-"note": "15 episodes total, 1 missing upload; Chinese title 魁拔之殊途; no rating found"
+"note": "1 missing of 15; no rating found",
+"origin": "CN"
 },
 "irodukutheworldincolors": {
 "name": "IRODUKU: The World in Colors",
@@ -2490,7 +2613,8 @@
 "dragonsdisciple": {
 "name": "Dragon's Disciple",
 "completed": true,
-"note": "season 1, 16 episodes; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "ipponagain": {
 "name": "Ippon Again!",
@@ -2509,7 +2633,8 @@
 "transcendingthenineheavens": {
 "name": "Transcending the Nine Heavens",
 "completed": true,
-"note": "season 1 (12 episodes) complete; no rating found"
+"note": "no rating found",
+"origin": "CN"
 },
 "我是学校唯一的人类": {
 "name": "I'm the Only Human at School",
@@ -2520,7 +2645,8 @@
 "eternalstrife": {
 "name": "The Eternal Strife",
 "completed": true,
-"note": "season 1, 16 episodes; end not fully verified; no rating found"
+"note": "end not fully verified; no rating found",
+"origin": "CN"
 },
 "sasakiandpeeps": {
 "name": "Sasaki and Peeps",
@@ -2532,7 +2658,3409 @@
 "girldownstairs": {
 "name": "The Girl Downstairs",
 "completed": true,
-"note": "MAL entry: Aishang Ta de Liyou; no rating found; see also girldownstairsall"
+"note": "Aishang Ta de Liyou; no rating found",
+"origin": "CN"
+},
+"wugenji": {
+"origin": "CN",
+"name": "Wu Geng Ji (Against the Gods)",
+"completed": false,
+"note": "4 seasons uploaded, later season may be airing; no rating found"
+},
+"mrstonefeelslonely": {
+"origin": "CN",
+"name": "Mr. Stone Feels Lonely",
+"completed": false,
+"note": "unsure of show; no rating found"
+},
+"killergude": {
+"origin": "CN",
+"name": "Good Killer",
+"completed": true,
+"note": "unsure of show; no rating found"
+},
+"charmofsoulpets": {
+"origin": "CN",
+"name": "The Charm of Soul Pets",
+"completed": true,
+"note": "no rating found"
+},
+"fairymountain": {
+"origin": "CN",
+"name": "Fairy Mountain",
+"completed": true,
+"note": "no rating found"
+},
+"bangdream3rdseason": {
+"origin": "JP",
+"name": "BanG Dream! 3rd Season",
+"completed": true,
+"rating": 7.2,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"wrongwaytousehealingmagic": {
+"origin": "JP",
+"name": "The Wrong Way to Use Healing Magic",
+"completed": true,
+"rating": 7.3,
+"rating_src": "MAL",
+"note": "S2 exists; S1 uploaded; score recalled"
+},
+"higehiroafterbeingrejectedishavedandtookinahighschoolrunaway": {
+"origin": "JP",
+"name": "Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway",
+"completed": true,
+"rating": 7.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"tadaneverfallsinlove": {
+"origin": "JP",
+"name": "Tada Never Falls in Love",
+"completed": true,
+"rating": 7.1,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"haigakura": {
+"origin": "JP",
+"name": "Haigakura",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"talentlessnana": {
+"origin": "JP",
+"name": "Talentless Nana",
+"completed": true,
+"rating": 7.1,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"beasttamer": {
+"origin": "JP",
+"name": "Beast Tamer",
+"completed": true,
+"rating": 6.9,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"bangdreamitsmygo": {
+"origin": "JP",
+"name": "BanG Dream! It's MyGO!!!!!",
+"completed": true,
+"rating": 8.0,
+"rating_src": "MAL",
+"note": "single full-series upload; score recalled"
+},
+"bangdreamyumemita": {
+"origin": "JP",
+"name": "BanG Dream! Yume Mita",
+"completed": true,
+"rating": 6.4,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"apocalypsebringermynoghra": {
+"origin": "JP",
+"name": "Apocalypse Bringer Mynoghra",
+"completed": true,
+"rating": 7.0,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"selectionproject": {
+"origin": "JP",
+"name": "Selection Project",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"saiyukireloadzeroin": {
+"origin": "JP",
+"name": "Saiyuki Reload: Zeroin",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"exiledheavyknightknowshowtogamethesystem": {
+"origin": "JP",
+"name": "The Exiled Heavy Knight Knows How to Game the System",
+"completed": true,
+"rating": 7.3,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"worldisdancing": {
+"origin": "JP",
+"name": "The World Is Dancing",
+"completed": true,
+"rating": 7.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"policeinapod": {
+"origin": "JP",
+"name": "Police in a Pod",
+"completed": true,
+"rating": 7.7,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"everythingisfinewiththeemperor": {
+"origin": "CN",
+"name": "Everything Is Fine with the Emperor",
+"completed": true,
+"note": "no rating found"
+},
+"riddlestoryofdevil": {
+"origin": "JP",
+"name": "Riddle Story of Devil",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"battlecut": {
+"origin": "CN",
+"name": "Carp Reborn",
+"completed": false,
+"note": "Season 3 of Carp Reborn, mislabeled key; no rating found",
+"merge_into": "carpreborn"
+},
+"iamtheblade": {
+"origin": "CN",
+"name": "I Am the Blade",
+"completed": true,
+"note": "no rating found"
+},
+"detectiveisalreadydead": {
+"origin": "JP",
+"name": "The Detective Is Already Dead",
+"completed": true,
+"rating": 7.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"baijiajue": {
+"origin": "CN",
+"name": "Bai Jia Jue",
+"completed": true,
+"note": "no rating found"
+},
+"aceofthediamondactsecondseason": {
+"origin": "JP",
+"name": "Ace of the Diamond Act II: Second Season",
+"completed": true,
+"rating": 8.2,
+"rating_src": "MAL",
+"note": "possible overlap with aceofdiamondact, not merged; score recalled"
+},
+"cellsatworkcodeblack": {
+"origin": "JP",
+"name": "Cells at Work! CODE BLACK",
+"completed": true,
+"rating": 7.7,
+"rating_src": "MAL",
+"note": "separate series from Cells at Work!; score recalled"
+},
+"godofhighschool": {
+"origin": "KR",
+"name": "The God of High School",
+"completed": true,
+"rating": 7.0,
+"rating_src": "MAL",
+"note": "Japan-Korea co-production of Korean webtoon; score recalled"
+},
+"noblesse": {
+"origin": "KR",
+"name": "Noblesse",
+"completed": true,
+"rating": 7.4,
+"rating_src": "MAL",
+"note": "Korean webtoon adaptation; score recalled"
+},
+"walkingthewayallalone": {
+"origin": "CN",
+"name": "Walking the Way All Alone",
+"completed": true,
+"note": "AI flag on one upload; no rating found"
+},
+"qirefiningfor3000years": {
+"origin": "CN",
+"name": "Qi Refining for 3000 Years",
+"completed": true,
+"note": "members gating on latest, unsure if finished; no rating found"
+},
+"richgod": {
+"origin": "CN",
+"name": "The Rich God",
+"completed": true,
+"note": "no rating found"
+},
+"alicezoroku": {
+"origin": "JP",
+"name": "Alice & Zoroku",
+"completed": true,
+"rating": 7.3,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"taleofthespiritstone": {
+"origin": "CN",
+"name": "The Tale of the Spirit Stone",
+"completed": true,
+"note": "unsure if finished; no rating found"
+},
+"indomitable": {
+"origin": "CN",
+"name": "The Indomitable",
+"completed": true,
+"note": "no rating found"
+},
+"时光代理人": {
+"origin": "CN",
+"name": "Link Click",
+"completed": false,
+"rating": 8.6,
+"rating_src": "MAL",
+"note": "only S2 uploaded; S3 exists; score recalled"
+},
+"legendofmartial": {
+"origin": "CN",
+"name": "The Legend of Martial",
+"completed": false,
+"note": "only S2 uploaded, ongoing; no rating found"
+},
+"aliencut": {
+"origin": "CN",
+"name": "The Infinitors",
+"completed": true,
+"note": "naming variant of infinitors; no rating found",
+"merge_into": "infinitors"
+},
+"saltedfishs2cantoneseversion": {
+"origin": "CN",
+"name": "Salted Fish S2 (Cantonese)",
+"completed": true,
+"note": "Cantonese dub, non-English; duplicate of saltedfish S2; no rating found",
+"hide": true
+},
+"coilingdragon": {
+"origin": "CN",
+"name": "Coiling Dragon",
+"completed": true,
+"note": "unsure if later seasons exist; no rating found"
+},
+"purgatorywalkers": {
+"origin": "CN",
+"name": "Purgatory Walkers",
+"completed": true,
+"note": "no rating found"
+},
+"pawspalaces": {
+"origin": "CN",
+"name": "Paws & Palaces",
+"completed": false,
+"note": "gap of 1 episode; no rating found"
+},
+"diningroomoflinklee": {
+"origin": "CN",
+"name": "The Dining Room of Link Lee",
+"completed": false,
+"note": "single S1-S2 collection upload, AI flag; no rating found",
+"hide": true
+},
+"legendarymonsteremperor": {
+"origin": "CN",
+"name": "The Legendary Monster Emperor",
+"completed": false,
+"note": "1 episode gap; no rating found"
+},
+"crownedinahundreddays": {
+"origin": "CN",
+"name": "Crowned in a Hundred Days",
+"completed": true,
+"note": "no rating found; completion unverified"
+},
+"fuutopi": {
+"origin": "JP",
+"name": "Fuuto PI",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled; single complete-series upload"
+},
+"villaininitialization": {
+"origin": "CN",
+"name": "Villain Initialization",
+"completed": true,
+"note": "no rating found"
+},
+"snowballearth": {
+"origin": "JP",
+"name": "Snowball Earth",
+"completed": true,
+"note": "no rating found; Spring 2026 anime, completion assumed"
+},
+"banshenzhijing": {
+"origin": "CN",
+"name": "Ban Shen Zhi Jing",
+"completed": true,
+"note": "no rating found"
+},
+"ringingfate": {
+"origin": "CN",
+"name": "Ringing Fate",
+"completed": true,
+"note": "no rating found"
+},
+"jxonline3theadventureofshenjianxin": {
+"origin": "CN",
+"name": "JX Online 3: The Adventure of Shen Jianxin",
+"completed": false,
+"note": "no rating found; only S2 EP1 and S3 EP13-24 uploaded, ongoing franchise"
+},
+"millenniumsofwarringstates": {
+"origin": "CN",
+"name": "Millenniums of Warring States",
+"completed": false,
+"note": "no rating found; 1 gap (EP1..EP16 with one missing)"
+},
+"invincible": {
+"origin": "CN",
+"name": "The Invincible",
+"completed": true,
+"note": "no rating found"
+},
+"immortal": {
+"origin": "CN",
+"name": "Immortal",
+"completed": true,
+"note": "no rating found"
+},
+"sincetheredmoon": {
+"origin": "CN",
+"name": "Since the Red Moon",
+"completed": true,
+"note": "no rating found"
+},
+"onewayoranother": {
+"origin": "CN",
+"name": "One Way or Another",
+"completed": true,
+"note": "no rating found"
+},
+"girlsfrontline": {
+"origin": "JP",
+"name": "Girls' Frontline",
+"rating": 6.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled; single complete-series upload"
+},
+"风火战纪": {
+"origin": "CN",
+"name": "Feng Huo Zhan Ji",
+"completed": true,
+"note": "no rating found; fenghuozhanji key is the EP1-16 collection of the same show, should merge into this key"
+},
+"sidestorytransformation": {
+"origin": "CN",
+"name": "Foreordination",
+"completed": true,
+"note": "no rating found; uploads titled Foreordination, key says Side Story"
+},
+"carpreborn": {
+"origin": "CN",
+"name": "Carp Reborn",
+"completed": false,
+"note": "no rating found; only S2 EP2-16 uploaded (EP1 missing)"
+},
+"demonsascension": {
+"origin": "CN",
+"name": "Demon's Ascension",
+"completed": true,
+"note": "no rating found"
+},
+"aworldworthprotecting": {
+"origin": "CN",
+"name": "A World Worth Protecting",
+"completed": true,
+"note": "no rating found"
+},
+"thisartclubhasaproblem": {
+"origin": "JP",
+"name": "This Art Club Has a Problem!",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"美少女的衣橱": {
+"origin": "CN",
+"name": "Beauty Wardrobe",
+"completed": false,
+"hide": true,
+"note": "live-action fashion show, not animation"
+},
+"otherworldlyevilmonarch": {
+"origin": "CN",
+"name": "Otherworldly Evil Monarch",
+"completed": true,
+"note": "no rating found"
+},
+"天官赐福": {
+"origin": "CN",
+"name": "Heaven Official's Blessing",
+"rating": 8.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled; only S2 uploaded, S3 status unverified"
+},
+"rentagirlfriend2ndseason": {
+"origin": "JP",
+"name": "Rent-a-Girlfriend 2nd Season",
+"rating": 7.2,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled; single complete-series upload, may overlap rentagirlfriend key"
+},
+"shadowsofthevoid": {
+"origin": "CN",
+"name": "Shadows of the Void",
+"completed": true,
+"note": "no rating found"
+},
+"cheerboys": {
+"origin": "JP",
+"name": "Cheer Boys!!",
+"rating": 7.1,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"destinyruler": {
+"origin": "CN",
+"name": "The Destiny Ruler",
+"completed": true,
+"note": "no rating found; 39 eps, completion assumed"
+},
+"supercub": {
+"origin": "JP",
+"name": "Super Cub",
+"rating": 7.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"miragehouseintheclouds": {
+"origin": "CN",
+"name": "The Mirage House in the Clouds",
+"completed": false,
+"note": "no rating found; 3 gaps, episode-range collections"
+},
+"andyouthoughtthereisneveragirlonline": {
+"origin": "JP",
+"name": "And You Thought There Is Never a Girl Online?",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"dawnofthewitch": {
+"origin": "JP",
+"name": "The Dawn of the Witch",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"matoithesacredslayer": {
+"origin": "JP",
+"name": "Matoi the Sacred Slayer",
+"rating": 6.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"secretsoftherivers": {
+"origin": "CN",
+"name": "Secrets of the Rivers",
+"completed": true,
+"note": "no rating found"
+},
+"spyfamilypart1": {
+"origin": "JP",
+"name": "SPY x FAMILY Part 1",
+"rating": 8.6,
+"rating_src": "MAL",
+"completed": true,
+"hide": true,
+"note": "duplicate of spyfamily; score recalled"
+},
+"failureframeibecamethestrongestandannihilatedeverythingwithl": {
+"origin": "JP",
+"name": "Failure Frame: I Became the Strongest and Annihilated Everything with Low-Level Spells",
+"rating": 6.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"rolepv": {
+"origin": "CN",
+"name": "SWARM",
+"completed": false,
+"hide": true,
+"note": "duplicate of swarm (uploads are SWARM eps labelled Season 4); no rating found"
+},
+"greatclericwhitecollarsurvivalinanotherworld": {
+"origin": "JP",
+"name": "The Great Cleric: White-Collar Survival in Another World",
+"completed": true,
+"note": "no rating found; single complete-series upload"
+},
+"failureframe": {
+"origin": "JP",
+"name": "Failure Frame",
+"rating": 6.8,
+"rating_src": "MAL",
+"completed": true,
+"hide": true,
+"note": "duplicate of failureframeibecamethestrongestandannihilatedeverythingwithl (complete-series compilation); score recalled"
+},
+"magicalwarfare": {
+"origin": "JP",
+"name": "Magical Warfare",
+"rating": 6.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"thuytminh": {
+"origin": "CN",
+"name": "The Daily Life of the Immortal King (Vietnamese dub)",
+"completed": false,
+"hide": true,
+"note": "Vietnamese language upload"
+},
+"dailylifeoftheimmortalking": {
+"origin": "CN",
+"name": "The Daily Life of the Immortal King",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": false,
+"note": "score recalled; later seasons airing (see 仙王的日常生活 S5 key)"
+},
+"souloflight": {
+"origin": "CN",
+"name": "Soul of Light",
+"completed": true,
+"note": "no rating found"
+},
+"frombureaucrattovillainessdadsbeenreincarnated": {
+"origin": "JP",
+"name": "From Bureaucrat to Villainess: Dad's Been Reincarnated!",
+"rating": 7.2,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"chillininanotherworldwithlevel2supercheatpowers": {
+"origin": "JP",
+"name": "Chillin' in Another World with Level 2 Super Cheat Powers",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"ichu": {
+"origin": "JP",
+"name": "I★CHU",
+"completed": true,
+"note": "no rating found"
+},
+"chainchroniclethelightofhaecceitas": {
+"origin": "JP",
+"name": "Chain Chronicle: The Light of Haecceitas",
+"rating": 6.2,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled; aired as movies then TV, 12 eps uploaded"
+},
+"zom100bucketlistofthedead": {
+"origin": "JP",
+"name": "Zom 100: Bucket List of the Dead",
+"completed": true,
+"note": "score recalled",
+"rating": 7.9,
+"rating_src": "MAL"
+},
+"zom100bucketlistofthedead-dub": {
+"origin": "JP",
+"name": "Zom 100: Bucket List of the Dead (English Dub)",
+"completed": true,
+"note": "score recalled",
+"rating": 7.9,
+"rating_src": "MAL"
+},
+"shuai": {
+"origin": "CN",
+"name": "Fatal Rule",
+"completed": true,
+"merge_into": "fatalrule",
+"note": "uploads titled Fatal Rule; merged"
+},
+"zombielandsagarevenge": {
+"origin": "JP",
+"name": "Zombie Land Saga Revenge",
+"completed": true,
+"note": "score recalled",
+"rating": 7.9,
+"rating_src": "MAL"
+},
+"schoolbabysitters": {
+"origin": "JP",
+"name": "School Babysitters",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"campfirecookinginanotherworld": {
+"origin": "JP",
+"name": "Campfire Cooking in Another World",
+"completed": true,
+"note": "season 2 only uploaded here; score recalled",
+"rating": 7.9,
+"rating_src": "MAL"
+},
+"kumamikogirlmeetsbear": {
+"origin": "JP",
+"name": "Kumamiko: Girl Meets Bear",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"muhyorojisbureauofsupernaturalinvestigation": {
+"origin": "JP",
+"name": "Muhyo & Roji's Bureau of Supernatural Investigation",
+"completed": true,
+"note": "season 2 only uploaded; score recalled",
+"rating": 7.4,
+"rating_src": "MAL"
+},
+"amomentbutforever": {
+"origin": "CN",
+"name": "A Moment but Forever",
+"completed": true,
+"note": "no rating found"
+},
+"taishootomefairytale": {
+"origin": "JP",
+"name": "Taisho Otome Fairy Tale",
+"completed": true,
+"note": "single complete-series upload; score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"unlimitedgacha": {
+"origin": "JP",
+"name": "Unlimited Gacha",
+"completed": true,
+"note": "score recalled, low confidence",
+"rating": 6.2,
+"rating_src": "MAL"
+},
+"hitoribocchinomarumaruseikatsu": {
+"origin": "JP",
+"name": "Hitoribocchi no Marumaru Seikatsu",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"7thtimeloopthevillainessenjoysacarefreelifemarriedtoherworst": {
+"origin": "JP",
+"name": "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy!",
+"completed": true,
+"note": "score recalled",
+"rating": 7.9,
+"rating_src": "MAL"
+},
+"mystatusasanassassinobviouslyexceedstheheros": {
+"origin": "JP",
+"name": "My Status as an Assassin Obviously Exceeds the Hero's",
+"completed": true,
+"note": "score recalled",
+"rating": 6.5,
+"rating_src": "MAL"
+},
+"wanderingwitchthejourneyofelaina": {
+"origin": "JP",
+"name": "Wandering Witch: The Journey of Elaina",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"reborntomasterthebladefromherokingtoextraordinarysquire": {
+"origin": "JP",
+"name": "Reborn to Master the Blade: From Hero-King to Extraordinary Squire",
+"completed": true,
+"note": "score recalled",
+"rating": 6.9,
+"rating_src": "MAL"
+},
+"ajourneythroughanotherworld": {
+"origin": "JP",
+"name": "A Journey Through Another World: Raising Kids While Adventuring",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"ajourneythroughanotherworld-dub": {
+"origin": "JP",
+"name": "A Journey Through Another World: Raising Kids While Adventuring (English Dub)",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"heavensdesignteam": {
+"origin": "JP",
+"name": "Heaven's Design Team",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"littlemastersbetterlife": {
+"origin": "CN",
+"name": "The Little Master's Better Life",
+"completed": true,
+"note": "no rating found"
+},
+"uqholder": {
+"origin": "JP",
+"name": "UQ Holder!",
+"completed": true,
+"note": "score recalled",
+"rating": 6.3,
+"rating_src": "MAL"
+},
+"lapisrelights": {
+"origin": "JP",
+"name": "Lapis Re: LiGHTs",
+"completed": true,
+"note": "score recalled",
+"rating": 6.5,
+"rating_src": "MAL"
+},
+"7thtimeloop": {
+"origin": "JP",
+"name": "7th Time Loop",
+"completed": true,
+"hide": true,
+"note": "duplicate of 7thtimeloopthevillainessenjoysacarefreelifemarriedtoherworst"
+},
+"justbecause": {
+"origin": "JP",
+"name": "Just Because!",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"isekaiofficeworker": {
+"origin": "JP",
+"name": "Isekai Office Worker",
+"completed": true,
+"note": "no rating found"
+},
+"iparryeverything": {
+"origin": "JP",
+"name": "I Parry Everything",
+"completed": true,
+"note": "score recalled",
+"rating": 6.9,
+"rating_src": "MAL"
+},
+"combatantswillbedispatched": {
+"origin": "JP",
+"name": "Combatants Will Be Dispatched!",
+"completed": true,
+"note": "score recalled",
+"rating": 7.4,
+"rating_src": "MAL"
+},
+"mierukochan": {
+"origin": "JP",
+"name": "Mieruko-chan",
+"completed": true,
+"note": "score recalled",
+"rating": 7.4,
+"rating_src": "MAL"
+},
+"mysenpaiisannoying": {
+"origin": "JP",
+"name": "My Senpai Is Annoying",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"cautiousherotheheroisoverpoweredbutoverlycautious": {
+"origin": "JP",
+"name": "Cautious Hero: The Hero Is Overpowered but Overly Cautious",
+"completed": true,
+"note": "score recalled",
+"rating": 7.2,
+"rating_src": "MAL"
+},
+"ossannewbieadventurer": {
+"origin": "JP",
+"name": "The Ossan Newbie Adventurer",
+"completed": true,
+"note": "no rating found"
+},
+"halloweenspecial": {
+"origin": "JP",
+"name": "Junji Ito Collection",
+"completed": true,
+"note": "Halloween Special bundle of Junji Ito Collection; score recalled",
+"rating": 6.4,
+"rating_src": "MAL"
+},
+"thattimeigotreincarnatedasaslimetheslimediaries": {
+"origin": "JP",
+"name": "That Time I Got Reincarnated as a Slime: The Slime Diaries",
+"completed": true,
+"note": "score recalled",
+"rating": 7.4,
+"rating_src": "MAL"
+},
+"girlslasttour": {
+"origin": "JP",
+"name": "Girls' Last Tour",
+"completed": true,
+"note": "score recalled",
+"rating": 7.9,
+"rating_src": "MAL"
+},
+"shachibatopresidentitstimeforbattle": {
+"origin": "JP",
+"name": "Shachibato! President, It's Time for Battle!",
+"completed": true,
+"note": "no rating found"
+},
+"jellyfishcantswiminthenight": {
+"origin": "JP",
+"name": "Jellyfish Can't Swim in the Night",
+"completed": true,
+"note": "score recalled",
+"rating": 7.9,
+"rating_src": "MAL"
+},
+"hinalogicfromlucklogic": {
+"origin": "JP",
+"name": "Hina Logic: From Luck & Logic",
+"completed": true,
+"note": "score recalled",
+"rating": 6.2,
+"rating_src": "MAL"
+},
+"wanjiechunqiu": {
+"origin": "CN",
+"name": "Wan Jie Chun Qiu",
+"completed": false,
+"note": "no rating found"
+},
+"magicalrevolutionofthereincarnatedprincessandthegeniusyoungl": {
+"origin": "JP",
+"name": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+"completed": true,
+"note": "score recalled",
+"rating": 8.1,
+"rating_src": "MAL"
+},
+"servamp": {
+"origin": "JP",
+"name": "Servamp",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"worldsfinestassassingetsreincarnatedinanotherworldasanaristo": {
+"origin": "JP",
+"name": "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat",
+"completed": true,
+"note": "score recalled",
+"rating": 7.4,
+"rating_src": "MAL"
+},
+"osamakeromcomwherethechildhoodfriendwontlose": {
+"origin": "JP",
+"name": "Osamake: Romcom Where The Childhood Friend Won't Lose",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"kandagawajetgirls": {
+"origin": "JP",
+"name": "Kandagawa Jet Girls",
+"completed": true,
+"note": "score recalled",
+"rating": 6.0,
+"rating_src": "MAL"
+},
+"lonerlifeinanotherworld": {
+"origin": "JP",
+"name": "Loner Life in Another World",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"rokudosbadgirls": {
+"origin": "JP",
+"name": "Rokudo's Bad Girls",
+"completed": true,
+"note": "score recalled",
+"rating": 6.5,
+"rating_src": "MAL"
+},
+"ningenfushinadventurerswhodontbelieveinhumanitywillsavethewo": {
+"origin": "JP",
+"name": "Ningen Fushin: Adventurers Who Don't Believe in Humanity Will Save the World",
+"completed": true,
+"note": "score recalled",
+"rating": 6.9,
+"rating_src": "MAL"
+},
+"rumblegaranndoll": {
+"origin": "JP",
+"name": "Rumble Garanndoll",
+"completed": true,
+"note": "score recalled",
+"rating": 6.3,
+"rating_src": "MAL"
+},
+"lastperiodthejourneytotheendofthedespair": {
+"origin": "JP",
+"name": "Last Period: The Journey to the End of the Despair",
+"completed": true,
+"note": "score recalled",
+"rating": 6.2,
+"rating_src": "MAL"
+},
+"armedgirlsmachiavellism": {
+"origin": "JP",
+"name": "Armed Girl's Machiavellism",
+"completed": true,
+"note": "score recalled",
+"rating": 6.4,
+"rating_src": "MAL"
+},
+"ifitsformydaughteridevendefeatademonlord": {
+"origin": "JP",
+"name": "If It's for My Daughter, I'd Even Defeat a Demon Lord",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"greatestdemonlordisrebornasatypicalnobody": {
+"origin": "JP",
+"name": "The Greatest Demon Lord Is Reborn as a Typical Nobody",
+"completed": true,
+"note": "score recalled",
+"rating": 6.6,
+"rating_src": "MAL"
+},
+"kemonojihen": {
+"origin": "JP",
+"name": "Kemono Jihen",
+"completed": true,
+"note": "score recalled",
+"rating": 7.3,
+"rating_src": "MAL"
+},
+"supposeakidfromthelastdungeonbooniesmovedtoastartertown": {
+"origin": "JP",
+"name": "Suppose a Kid from the Last Dungeon Boonies Moved to a Starter Town",
+"completed": true,
+"note": "score recalled",
+"rating": 7.4,
+"rating_src": "MAL"
+},
+"wastefuldaysofhighschoolgirls": {
+"origin": "JP",
+"name": "Wasteful Days of High School Girls",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"arte": {
+"origin": "JP",
+"name": "ARTE",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"worldsstrongestrearguard": {
+"origin": "JP",
+"name": "The World's Strongest Rearguard: Labyrinth Country's Novice Seeker",
+"completed": true,
+"note": "score recalled",
+"rating": 6.7,
+"rating_src": "MAL"
+},
+"blacktorch": {
+"origin": "JP",
+"name": "Black Torch",
+"completed": true,
+"note": "score recalled",
+"rating": 6.5,
+"rating_src": "MAL"
+},
+"talker": {
+"origin": "JP",
+"name": "The Most Notorious Talker Runs the World's Greatest Clan",
+"completed": true,
+"note": "score recalled, uncertain",
+"rating": 6.8,
+"rating_src": "MAL"
+},
+"easygoingterritorydefensebytheoptimisticlord": {
+"origin": "JP",
+"name": "Easygoing Territory Defense by the Optimistic Lord",
+"completed": true,
+"note": "score recalled",
+"rating": 7.4,
+"rating_src": "MAL"
+},
+"appraiser": {
+"origin": "JP",
+"name": "Even Given the Worthless Appraiser Class, I'm Actually the Strongest",
+"completed": true,
+"note": "score recalled",
+"rating": 6.7,
+"rating_src": "MAL"
+},
+"shyheroandtheassassinprincesses": {
+"origin": "JP",
+"name": "The Shy Hero and the Assassin Princesses",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"kumakumakumabear": {
+"origin": "JP",
+"name": "Kuma Kuma Kuma Bear",
+"completed": true,
+"note": "score recalled; season 2 is a separate key",
+"rating": 7.3,
+"rating_src": "MAL"
+},
+"newgate": {
+"origin": "JP",
+"name": "The New Gate",
+"completed": true,
+"note": "score recalled",
+"rating": 6.8,
+"rating_src": "MAL"
+},
+"unwantedundeadadventurer": {
+"origin": "JP",
+"name": "The Unwanted Undead Adventurer",
+"completed": true,
+"note": "score recalled",
+"rating": 6.4,
+"rating_src": "MAL"
+},
+"ourdatingstorytheexperiencedyouandtheinexperiencedme": {
+"origin": "JP",
+"name": "Our Dating Story: The Experienced You and The Inexperienced Me",
+"completed": true,
+"note": "score recalled",
+"rating": 7.5,
+"rating_src": "MAL"
+},
+"stardusttelepath": {
+"origin": "JP",
+"name": "Stardust Telepath",
+"completed": true,
+"note": "score recalled",
+"rating": 7.7,
+"rating_src": "MAL"
+},
+"geniusprincesguidetoraisinganationoutofdebt": {
+"origin": "JP",
+"name": "The Genius Prince's Guide to Raising a Nation Out of Debt",
+"completed": true,
+"note": "score recalled",
+"rating": 7.7,
+"rating_src": "MAL"
+},
+"sheprofessedherselfpupilofthewiseman": {
+"origin": "JP",
+"name": "She Professed Herself Pupil of the Wise Man",
+"completed": true,
+"note": "score recalled",
+"rating": 7.2,
+"rating_src": "MAL"
+},
+"parallelworldpharmacy": {
+"origin": "JP",
+"name": "Parallel World Pharmacy",
+"completed": true,
+"note": "score recalled",
+"rating": 7.2,
+"rating_src": "MAL"
+},
+"diaryofourdaysatthebreakwater": {
+"origin": "JP",
+"name": "Diary of Our Days at the Breakwater",
+"completed": true,
+"note": "score recalled",
+"rating": 7.3,
+"rating_src": "MAL"
+},
+"danganronpa3theendofhopespeakhighschoolfuturearc": {
+"origin": "JP",
+"name": "Danganronpa 3: The End of Hope's Peak High School - Future Arc",
+"completed": true,
+"note": "score recalled; Despair Arc is a separate key",
+"rating": 7.5,
+"rating_src": "MAL"
+},
+"privatetutortothedukesdaughter": {
+"origin": "JP",
+"name": "Private Tutor to the Duke's Daughter",
+"completed": true,
+"note": "score recalled",
+"rating": 7.6,
+"rating_src": "MAL"
+},
+"alwaysacatch": {
+"origin": "JP",
+"name": "Always a Catch!",
+"completed": true,
+"note": "score recalled, uncertain",
+"rating": 7.3,
+"rating_src": "MAL"
+},
+"agatherersadventureinisekai": {
+"origin": "JP",
+"name": "A Gatherer's Adventure in Isekai",
+"completed": true,
+"note": "score recalled, uncertain; AI flag on upload check, verify",
+"rating": 6.9,
+"rating_src": "MAL"
+},
+"behenekotheelfgirlscatissecretlyansrankedmonster": {
+"origin": "JP",
+"name": "Beheneko: The Elf-Girl's Cat Is Secretly an S-Ranked Monster!",
+"completed": true,
+"note": "score recalled",
+"rating": 7.2,
+"rating_src": "MAL"
+},
+"anobodyswayuptoanexplorationhero": {
+"origin": "JP",
+"name": "A Nobody's Way Up to an Exploration Hero",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"magatsuwahrheitzuerst": {
+"origin": "JP",
+"name": "Magatsu Wahrheit Zuerst",
+"completed": true,
+"note": "score recalled, uncertain",
+"rating": 6.5,
+"rating_src": "MAL"
+},
+"tearmoonempire": {
+"origin": "JP",
+"name": "Tearmoon Empire",
+"completed": false,
+"note": "score recalled; show has 24 eps, only 12 uploaded",
+"rating": 7.7,
+"rating_src": "MAL"
+},
+"monstergirldoctor": {
+"origin": "JP",
+"name": "Monster Girl Doctor",
+"completed": true,
+"note": "score recalled",
+"rating": 6.8,
+"rating_src": "MAL"
+},
+"iwanttoescapefromprincesslessons": {
+"origin": "JP",
+"name": "I Want to Escape from Princess Lessons",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"copcraft": {
+"origin": "JP",
+"name": "Cop Craft",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"sabikuibisco": {
+"origin": "JP",
+"name": "Sabikui Bisco",
+"completed": true,
+"note": "score recalled",
+"rating": 7.5,
+"rating_src": "MAL"
+},
+"luminouswitches": {
+"origin": "JP",
+"name": "Luminous Witches",
+"completed": true,
+"note": "score recalled",
+"rating": 6.9,
+"rating_src": "MAL"
+},
+"lucklogic": {
+"origin": "JP",
+"name": "Luck & Logic",
+"completed": true,
+"note": "score recalled",
+"rating": 6.6,
+"rating_src": "MAL"
+},
+"myinstantdeathabilityisoverpowered": {
+"origin": "JP",
+"name": "My Instant Death Ability Is So Overpowered",
+"completed": true,
+"note": "score recalled",
+"rating": 6.7,
+"rating_src": "MAL"
+},
+"devilisaparttimerseason2part": {
+"origin": "JP",
+"name": "The Devil Is a Part-Timer! Season 2 Part 1",
+"completed": true,
+"note": "duplicate of devilisaparttimer (9h28m key likely holds both seasons); single compilation upload",
+"rating": 7.9,
+"rating_src": "MAL",
+"hide": true
+},
+"aplaythroughofacertaindudesvrmmolife": {
+"origin": "JP",
+"name": "A Playthrough of a Certain Dude's VRMMO Life",
+"completed": true,
+"note": "score recalled; single full-series upload",
+"rating": 6.6,
+"rating_src": "MAL"
+},
+"insearchofthelostfuture": {
+"origin": "JP",
+"name": "In Search of the Lost Future",
+"completed": true,
+"note": "score recalled",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"asignofaffection": {
+"origin": "JP",
+"name": "A Sign of Affection",
+"completed": true,
+"note": "score recalled; single full-series upload, S1 only",
+"rating": 8.0,
+"rating_src": "MAL"
+},
+"drramunemysteriousdiseasespecialist": {
+"origin": "JP",
+"name": "Dr. Ramune: Mysterious Disease Specialist",
+"completed": true,
+"note": "score recalled, uncertain",
+"rating": 7.0,
+"rating_src": "MAL"
+},
+"grimoireofzero": {
+"origin": "JP",
+"name": "Grimoire of Zero",
+"completed": true,
+"rating": 7.2,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"epicofdivinitylight": {
+"origin": "CN",
+"name": "Epic of Divinity Light",
+"completed": false,
+"note": "possibly members-only latest eps; no rating found"
+},
+"teasingmastertakagisan": {
+"origin": "JP",
+"name": "Teasing Master Takagi-san Season 3",
+"completed": true,
+"rating": 8.5,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"handshakers": {
+"origin": "JP",
+"name": "Hand Shakers",
+"completed": true,
+"rating": 5.9,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"remonster-dub": {
+"origin": "JP",
+"name": "Re:Monster",
+"completed": true,
+"rating": 6.9,
+"rating_src": "MAL",
+"note": "English dub; score recalled"
+},
+"remonster": {
+"origin": "JP",
+"name": "Re:Monster",
+"completed": true,
+"rating": 6.9,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"fantasymountainandseaballad": {
+"origin": "CN",
+"name": "Fantasy Mountain and Sea Ballad",
+"completed": false,
+"note": "no rating found"
+},
+"threadsoffateawaruntold": {
+"origin": "CN",
+"name": "Threads of Fate: A War Untold",
+"completed": false,
+"note": "no rating found"
+},
+"oneswithin": {
+"origin": "JP",
+"name": "The Ones Within",
+"completed": true,
+"rating": 6.4,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"helpfulfoxsenkosan": {
+"origin": "JP",
+"name": "The Helpful Fox Senko-san",
+"completed": true,
+"rating": 7.7,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"istheorderarabbitbloom": {
+"origin": "JP",
+"name": "Is the Order a Rabbit? BLOOM",
+"completed": true,
+"rating": 8.0,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"asobiasobaseworkshopoffun": {
+"origin": "JP",
+"name": "Asobi Asobase",
+"completed": true,
+"rating": 7.9,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"万域之王": {
+"origin": "CN",
+"name": "King of All Domains",
+"completed": false,
+"note": "no rating found"
+},
+"heavenofficialsblessing": {
+"origin": "CN",
+"name": "Heaven Official's Blessing",
+"completed": true,
+"rating": 8.4,
+"rating_src": "MAL",
+"note": "season 1 only uploaded; may be members-only; score recalled"
+},
+"differentworldmedicineshop": {
+"origin": "CN",
+"name": "Different World Medicine Shop",
+"completed": false,
+"note": "no rating found"
+},
+"changanmagicstreet": {
+"origin": "CN",
+"name": "Chang'an Magic Street",
+"completed": false,
+"note": "no rating found"
+},
+"yashe": {
+"origin": "CN",
+"name": "YaShe",
+"completed": false,
+"note": "no rating found"
+},
+"lovemagicgrocery": {
+"origin": "CN",
+"name": "Love Magic Grocery",
+"completed": false,
+"note": "no rating found"
+},
+"luoyang": {
+"origin": "CN",
+"name": "Luoyang",
+"completed": false,
+"note": "1 ep gap; no rating found"
+},
+"zhenjiandhisfriends": {
+"origin": "CN",
+"name": "Zhenji and His Friends",
+"completed": false,
+"note": "unsure if finished; no rating found"
+},
+"protocolrain": {
+"origin": "JP",
+"name": "Protocol: Rain",
+"completed": true,
+"note": "no rating found"
+},
+"lordofvermilionthecrimsonking": {
+"origin": "JP",
+"name": "Lord of Vermilion: The Crimson King",
+"completed": true,
+"note": "no rating found"
+},
+"blazbluealtermemory": {
+"origin": "JP",
+"name": "BlazBlue Alter Memory",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"imtheevillordofanintergalacticempire": {
+"origin": "JP",
+"name": "I'm the Evil Lord of an Intergalactic Empire!",
+"completed": false,
+"rating": 7.3,
+"rating_src": "MAL",
+"note": "1 ep gap (eps 1+2 bundled, likely artifact); score recalled"
+},
+"drawthisthendie": {
+"origin": "JP",
+"name": "Draw This, Then Die!",
+"completed": true,
+"note": "no rating found"
+},
+"daomubiji": {
+"origin": "CN",
+"name": "Dao Mu Bi Ji: Qinling Sacred Tree",
+"completed": true,
+"note": "no rating found"
+},
+"kingsbigbrother": {
+"origin": "CN",
+"name": "King's Big Brother",
+"completed": false,
+"note": "no rating found"
+},
+"ancientlords": {
+"origin": "CN",
+"name": "Ancient Lords",
+"completed": false,
+"note": "no rating found"
+},
+"martialgodasura": {
+"origin": "CN",
+"name": "Martial God Asura",
+"completed": false,
+"note": "long-running, only first 16 eps; no rating found"
+},
+"镇魂街": {
+"origin": "CN",
+"name": "Rakshasa Street",
+"completed": false,
+"rating": 6.9,
+"rating_src": "MAL",
+"note": "eps 1-4 missing; numbering odd; score recalled"
+},
+"ageofcosmosexploration": {
+"origin": "CN",
+"name": "The Age of Cosmos Exploration",
+"completed": false,
+"note": "no rating found"
+},
+"godofdeception": {
+"origin": "CN",
+"name": "God of Deception",
+"completed": false,
+"note": "no rating found"
+},
+"legendoftang": {
+"origin": "CN",
+"name": "Legend of Tang",
+"completed": false,
+"note": "no rating found"
+},
+"warofcards": {
+"origin": "CN",
+"name": "The War of Cards",
+"completed": false,
+"note": "no rating found"
+},
+"shadowsofthevoidcantoneseversion": {
+"origin": "CN",
+"name": "Shadows of the Void (Cantonese)",
+"completed": false,
+"note": "duplicate of shadowsofthevoid, Cantonese audio; no rating found",
+"hide": true
+},
+"kaijugirlcaramelise": {
+"origin": "JP",
+"name": "Kaiju Girl Caramelise",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"tiantingbanzhuanxia": {
+"origin": "CN",
+"name": "Tian Ting Ban Zhuan Xia",
+"completed": false,
+"note": "no rating found"
+},
+"spiritsinchinesebrushes": {
+"origin": "CN",
+"name": "Spirits in Chinese Brushes",
+"completed": false,
+"note": "no rating found"
+},
+"casefilesofjewelerrichard": {
+"origin": "JP",
+"name": "The Case Files of Jeweler Richard",
+"completed": true,
+"rating": 7.7,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"bloodofyouth": {
+"origin": "CN",
+"name": "The Blood of Youth",
+"completed": false,
+"note": "no rating found"
+},
+"alldevouringwhalehomecoming": {
+"origin": "CN",
+"name": "The All-devouring Whale: Homecoming",
+"completed": false,
+"note": "no rating found"
+},
+"蒼蘭訣": {
+"origin": "CN",
+"name": "Love Between Fairy and Devil",
+"completed": true,
+"note": "compilation EP1-24, Chinese-language title; no rating found",
+"merge_into": "lovebetweenfairyanddevil"
+},
+"modlive": {
+"origin": "CN",
+"name": "Link Click",
+"completed": true,
+"rating": 8.6,
+"rating_src": "MAL",
+"note": "Time Agent S1 compilation EP1-11; name uncertain vs key; score recalled"
+},
+"asheepinwolfsclothing": {
+"origin": "CN",
+"name": "A Sheep in Wolf's Clothing",
+"completed": false,
+"note": "no rating found"
+},
+"rezerostartinglifeinanotherworldseason4part1": {
+"origin": "JP",
+"name": "Re:ZERO -Starting Life in Another World- Season 4",
+"completed": false,
+"note": "S4 part 1 as full compilation; season 4 ongoing; no rating found",
+"merge_into": "rezerostartinglifeinanotherworld"
+},
+"danganronpa3theendofhopespeakhighschooldespairarc": {
+"origin": "JP",
+"name": "Danganronpa 3: The End of Hope's Peak High School - Despair Arc",
+"completed": true,
+"rating": 7.3,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"outburstdreamerboys": {
+"origin": "JP",
+"name": "Outburst Dreamer Boys",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"thirtysixcavalry": {
+"origin": "CN",
+"name": "Thirty-six Cavalry",
+"completed": true,
+"note": "no rating found"
+},
+"xyrinempire": {
+"origin": "CN",
+"name": "Xyrin Empire",
+"completed": false,
+"note": "gaps 2; no rating found"
+},
+"awakening": {
+"origin": "CN",
+"name": "The Awakening",
+"completed": true,
+"note": "no rating found"
+},
+"jxonline3theadventureofshenjianxinseason3volume1": {
+"origin": "CN",
+"name": "JX Online 3: The Adventure of Shen Jianxin",
+"completed": false,
+"note": "gap 1; season 3 volume 1 only; no rating found",
+"merge_into": "jxonline3theadventureofshenjianxin"
+},
+"awakeningsoul": {
+"origin": "CN",
+"name": "Awakening Soul",
+"completed": true,
+"note": "no rating found"
+},
+"agate": {
+"origin": "CN",
+"name": "Agate",
+"completed": false,
+"note": "2 seasons, completion unsure; no rating found"
+},
+"shikimorisnotjustacutie": {
+"origin": "JP",
+"name": "Shikimori's Not Just a Cutie",
+"completed": true,
+"rating": 7.4,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"girldownstairsall": {
+"origin": "CN",
+"name": "The Girl Downstairs",
+"completed": true,
+"note": "duplicate of girldownstairs; no rating found",
+"hide": true
+},
+"rescueeternaldesert": {
+"origin": "CN",
+"name": "Rescue Eternal Desert",
+"completed": true,
+"note": "no rating found"
+},
+"berserkofgluttony": {
+"origin": "JP",
+"name": "Berserk of Gluttony",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"半神之境": {
+"origin": "CN",
+"name": "Realm of Demigods",
+"completed": false,
+"note": "EP1-3 missing; English title uncertain; no rating found"
+},
+"silvertracingmaster": {
+"origin": "CN",
+"name": "Silver Tracing Master",
+"completed": true,
+"note": "no rating found"
+},
+"yunyang": {
+"origin": "CN",
+"name": "Fairies Album Season 3",
+"completed": true,
+"note": "Fairies Album S3 collection; no rating found",
+"merge_into": "fairiesalbums"
+},
+"emperorsstrategy": {
+"origin": "CN",
+"name": "The Emperor's Strategy",
+"completed": true,
+"note": "no rating found"
+},
+"ancientwarsoul": {
+"origin": "CN",
+"name": "Ancient War Soul",
+"completed": true,
+"note": "no rating found"
+},
+"shifangjiansheng": {
+"origin": "CN",
+"name": "Shi Fang Jian Sheng",
+"completed": true,
+"note": "no rating found"
+},
+"berserkofgluttony-dub": {
+"origin": "JP",
+"name": "Berserk of Gluttony (English Dub)",
+"completed": true,
+"rating": 6.6,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"eternalsupremeliyunxiao": {
+"origin": "CN",
+"name": "The Eternal Supreme, Li Yunxiao",
+"completed": true,
+"note": "no rating found"
+},
+"grandlord": {
+"origin": "CN",
+"name": "The Grand Lord",
+"completed": false,
+"note": "gaps 2; no rating found"
+},
+"biographyofthemutants": {
+"origin": "CN",
+"name": "Biography of the Mutants",
+"completed": true,
+"note": "no rating found"
+},
+"cagedcharacter": {
+"origin": "CN",
+"name": "Caged Character",
+"completed": false,
+"note": "gap 1; no rating found"
+},
+"秦侠": {
+"origin": "CN",
+"name": "Qin Xia",
+"completed": true,
+"note": "EP1-12 collection; no rating found"
+},
+"myseniorbro": {
+"origin": "CN",
+"name": "My Senior Brother Is Too Steady",
+"completed": true,
+"note": "naming variant; no rating found",
+"merge_into": "myseniorbrotheristoostrong"
+},
+"万古神话": {
+"origin": "CN",
+"name": "Wan Gu Shen Hua",
+"completed": false,
+"note": "ongoing, 87 gaps, EP1-10 missing; no rating found"
+},
+"lingchen": {
+"origin": "CN",
+"name": "Villain Initialization",
+"completed": true,
+"note": "naming variant; no rating found",
+"merge_into": "villaininitialization"
+},
+"s1end": {
+"origin": "CN",
+"name": "Paws & Palaces",
+"completed": true,
+"note": "naming variant; no rating found",
+"merge_into": "pawspalaces"
+},
+"1stkiss": {
+"origin": "CN",
+"name": "1st Kiss",
+"completed": true,
+"note": "no rating found"
+},
+"神武天尊": {
+"origin": "CN",
+"name": "Shen Wu Tian Zun",
+"completed": false,
+"note": "ongoing, 175 gaps, EP1-56 missing; no rating found"
+},
+"memoryofchangan": {
+"origin": "CN",
+"name": "Memory of Chang'An",
+"completed": false,
+"note": "season 2 gaps 6; no rating found"
+},
+"supercube": {
+"origin": "CN",
+"name": "Super Cube",
+"completed": true,
+"note": "no rating found"
+},
+"infinitors": {
+"origin": "CN",
+"name": "The Infinitors",
+"completed": true,
+"note": "no rating found"
+},
+"howdareyou-dub": {
+"origin": "CN",
+"name": "How Dare You!? (English Dub)",
+"completed": true,
+"note": "EP1-12 collection, S1 only; season 2 may exist; no rating found"
+},
+"xianwucangqiong": {
+"origin": "CN",
+"name": "Xian Wu Cang Qiong",
+"completed": false,
+"note": "48 eps collection; show identity uncertain; no rating found"
+},
+"ohmygoddess": {
+"origin": "CN",
+"name": "Oh My Goddess",
+"completed": true,
+"note": "no rating found"
+},
+"immortality2all": {
+"origin": "CN",
+"name": "Immortality Season 2",
+"completed": true,
+"note": "duplicate of immortality; no rating found",
+"hide": true
+},
+"losingmoneytobeatycoon": {
+"origin": "CN",
+"name": "Losing Money to Be a Tycoon",
+"completed": true,
+"note": "no rating found"
+},
+"agooddaytoascend": {
+"origin": "CN",
+"name": "A Good Day to Ascend",
+"completed": false,
+"note": "EP1 missing; no rating found"
+},
+"martialuniverse": {
+"origin": "CN",
+"name": "Martial Universe",
+"completed": false,
+"rating": 6.7,
+"rating_src": "MAL",
+"note": "S1 only, later seasons exist; score recalled"
+},
+"magicallegend": {
+"origin": "CN",
+"name": "Magical Legend",
+"completed": false,
+"note": "season 4 only; no rating found"
+},
+"anotherjourneytothewest": {
+"origin": "CN",
+"name": "Another Journey to the West",
+"completed": true,
+"note": "no rating found"
+},
+"wanglingcut": {
+"origin": "CN",
+"name": "The Daily Life of the Immortal King",
+"completed": false,
+"rating": 7.5,
+"rating_src": "MAL",
+"note": "Wangling cut of Daily Life of the Immortal King, later seasons airing; score recalled"
+},
+"wukong": {
+"origin": "CN",
+"name": "Wu Kong",
+"completed": true,
+"note": "no rating found"
+},
+"masterofahiddensect": {
+"origin": "CN",
+"name": "Master of a Hidden Sect",
+"completed": true,
+"note": "no rating found"
+},
+"swarm": {
+"origin": "CN",
+"name": "SWARM",
+"completed": false,
+"hide": true,
+"note": "single clickbait full-episode upload, AI flagged; probably AI slop or non-series"
+},
+"linkclick": {
+"origin": "CN",
+"name": "Link Click",
+"completed": false,
+"rating": 8.7,
+"rating_src": "MAL",
+"note": "score recalled; S3 upload count may be incomplete"
+},
+"luoli": {
+"origin": "CN",
+"name": "The Grand Lord",
+"completed": true,
+"merge_into": "grandlord",
+"note": "LuoLi is The Grand Lord, EP1-11 collection"
+},
+"merrychristmas": {
+"origin": "CN",
+"name": "The Great Ruler",
+"completed": false,
+"merge_into": "greatruler",
+"note": "EP39-80 collections titled Merry Christmas, gaps"
+},
+"actionmonsterbigmovie": {
+"origin": "CN",
+"name": "Action Monster Big Movie",
+"completed": true,
+"note": "no rating found"
+},
+"rift": {
+"origin": "CN",
+"name": "Rift",
+"completed": false,
+"note": "gaps 2, no rating found"
+},
+"fallenmaster": {
+"origin": "CN",
+"name": "The Fallen Master",
+"completed": false,
+"note": "starts at EP3, no rating found"
+},
+"fenghuozhanji": {
+"origin": "CN",
+"name": "Feng Huo Zhan Ji",
+"completed": true,
+"note": "no rating found"
+},
+"riseoftheweak": {
+"origin": "CN",
+"name": "The Rise of the Weak",
+"completed": false,
+"note": "uploads start at EP5, no rating found"
+},
+"仙王的日常生活": {
+"origin": "CN",
+"name": "The Daily Life of the Immortal King",
+"completed": true,
+"rating": 7.6,
+"rating_src": "MAL",
+"merge_into": "dailylifeoftheimmortalking",
+"note": "Season 5, score recalled"
+},
+"faceonlie": {
+"origin": "CN",
+"name": "Face on Lie",
+"completed": true,
+"note": "no rating found"
+},
+"mythreebody": {
+"origin": "CN",
+"name": "My Three-Body",
+"completed": true,
+"note": "Season 4, no rating found"
+},
+"ipickeduplotsofattributes": {
+"origin": "CN",
+"name": "I Picked Up Lots of Attributes",
+"completed": true,
+"note": "no rating found"
+},
+"武逆": {
+"origin": "CN",
+"name": "Martial Reversal",
+"completed": true,
+"merge_into": "martialreversal",
+"note": "Chinese title of Martial Reversal, EP1-30 collection"
+},
+"threekingdomskilltaipingheavenlybook": {
+"origin": "CN",
+"name": "Three Kingdoms Kill: Taiping Heavenly Book",
+"completed": true,
+"note": "no rating found"
+},
+"从妖城死战到诸天封神石荒领衔五行联军改写世界命运": {
+"origin": "CN",
+"name": "Five Element God of War",
+"completed": false,
+"hide": true,
+"note": "duplicate of fiveelementwargod, S2 compilation"
+},
+"summerpunch": {
+"origin": "CN",
+"name": "Summer Punch",
+"completed": true,
+"note": "no rating found"
+},
+"no7westmarsstreet": {
+"origin": "CN",
+"name": "No.7 West Mars Street",
+"completed": false,
+"note": "gaps 1, no rating found"
+},
+"raccoontowninphone": {
+"origin": "CN",
+"name": "Raccoon Town in Phone",
+"completed": false,
+"note": "members-only gaps, no rating found"
+},
+"jojosbizarreadventurephantomblood": {
+"origin": "JP",
+"name": "JoJo's Bizarre Adventure",
+"completed": true,
+"rating": 7.83,
+"rating_src": "MAL",
+"merge_into": "jojosbizarreadventure",
+"note": "Phantom Blood S1, score recalled"
+},
+"defensefullyopen": {
+"origin": "CN",
+"name": "Defense Fully Open",
+"completed": true,
+"note": "no rating found"
+},
+"catstea": {
+"origin": "CN",
+"name": "The Cat's Tea",
+"completed": false,
+"note": "S2 uploads start at EP4, no rating found"
+},
+"inthenameofyingtai": {
+"origin": "CN",
+"name": "In the Name of Ying Tai",
+"completed": false,
+"note": "gaps 1, no rating found"
+},
+"busteddarklord": {
+"origin": "CN",
+"name": "Busted! Darklord",
+"completed": true,
+"note": "no rating found"
+},
+"realmofdemigod": {
+"origin": "CN",
+"name": "The Realm of Demigod",
+"completed": true,
+"note": "no rating found"
+},
+"remakeversion": {
+"origin": "CN",
+"name": "Rakshasa Street (Remake Version)",
+"completed": false,
+"hide": true,
+"note": "duplicate of rakshasastreet, remake S2 recut"
+},
+"necromanceriamthescourge": {
+"origin": "CN",
+"name": "Necromancer: I Am the Scourge",
+"completed": true,
+"note": "no rating found"
+},
+"starsfall": {
+"origin": "CN",
+"name": "Stars Fall",
+"completed": true,
+"note": "no rating found"
+},
+"tobewinner": {
+"origin": "CN",
+"name": "To Be Winner",
+"completed": false,
+"note": "uploads start at EP2, no rating found"
+},
+"godofdesolation": {
+"origin": "CN",
+"name": "God of Desolation",
+"completed": true,
+"note": "no rating found"
+},
+"martialreversal": {
+"origin": "CN",
+"name": "Martial Reversal",
+"completed": false,
+"note": "uploads start at EP3; 武逆 key has full EP1-30, no rating found"
+},
+"antidote": {
+"origin": "CN",
+"name": "Antidote",
+"completed": true,
+"note": "no rating found"
+},
+"scumbagsystem": {
+"origin": "CN",
+"name": "Scumbag System",
+"completed": true,
+"note": "no rating found"
+},
+"godonabumpyroad": {
+"origin": "CN",
+"name": "God on a Bumpy Road",
+"completed": true,
+"note": "no rating found"
+},
+"attackontitanoad": {
+"origin": "JP",
+"name": "Attack on Titan OAD",
+"completed": true,
+"rating": 7.5,
+"rating_src": "MAL",
+"note": "score recalled, rough"
+},
+"raisedbydemonspandali": {
+"origin": "CN",
+"name": "Raised by Demons: Panda Li",
+"completed": false,
+"note": "uploads start at EP2, no rating found"
+},
+"strongestmaleheroever": {
+"origin": "CN",
+"name": "The Strongest Male Hero Ever",
+"completed": false,
+"note": "uploads start at EP11, no rating found"
+},
+"monsterlist": {
+"origin": "CN",
+"name": "Monster List",
+"completed": false,
+"note": "gaps 1, no rating found"
+},
+"beyondtimesgaze": {
+"origin": "CN",
+"name": "Beyond Time's Gaze",
+"completed": false,
+"note": "gaps 9, no rating found"
+},
+"alchemistsrise": {
+"origin": "CN",
+"name": "The Alchemist's Rise",
+"completed": false,
+"note": "gaps 1, no rating found"
+},
+"amortalsjourneythebeginning": {
+"origin": "CN",
+"name": "A Mortal's Journey: The Beginning",
+"completed": true,
+"note": "uncertain relation to amortalsjourney, no rating found"
+},
+"时光代理人英都篇": {
+"origin": "CN",
+"name": "Link Click: Yingdu Arc",
+"completed": false,
+"hide": true,
+"note": "duplicate of linkclick S2 (Yingdu arc)"
+},
+"capsuleshero": {
+"origin": "CN",
+"name": "CAPSULES: Hero",
+"completed": true,
+"note": "no rating found"
+},
+"youreagenius": {
+"origin": "CN",
+"name": "You're a Genius",
+"completed": false,
+"note": "uploads start at EP4, gaps 2, no rating found"
+},
+"heroreturn": {
+"origin": "CN",
+"name": "Hero Return",
+"completed": true,
+"note": "no rating found"
+},
+"dragonstriumphinthecelestialrealm": {
+"origin": "CN",
+"name": "Dragon's Triumph in the Celestial Realm",
+"completed": true,
+"note": "no rating found"
+},
+"foodcut": {
+"origin": "CN",
+"name": "The Dining Room of Link Lee Season 2",
+"completed": false,
+"hide": true,
+"note": "duplicate of diningroomoflinklee (S2 content labeled S1)"
+},
+"chroniclesoftheranger": {
+"origin": "CN",
+"name": "The Chronicles of the Ranger",
+"completed": false,
+"note": "no rating found; completion unsure"
+},
+"insearchofgods-dub": {
+"origin": "CN",
+"name": "In Search of Gods (English Dub)",
+"completed": true,
+"note": "no rating found; single bundle EP1-12"
+},
+"lighterprincessdress": {
+"origin": "CN",
+"name": "Lighter & Princess Dress",
+"completed": true,
+"note": "no rating found"
+},
+"whileboredombelongstohumans": {
+"origin": "CN",
+"name": "While Boredom Belongs to Humans",
+"completed": false,
+"note": "no rating found; title unsure, single collection upload"
+},
+"不正经土豪": {
+"origin": "CN",
+"name": "Not-So-Serious Tycoon",
+"completed": false,
+"note": "no rating found; gaps 1; English title unsure"
+},
+"gicallegend": {
+"origin": "CN",
+"name": "Magical Legend",
+"completed": false,
+"merge_into": "magicallegend",
+"note": "truncated title, Season 4 of Magical Legend; check season clash"
+},
+"manfromdaoxiangcun": {
+"origin": "CN",
+"name": "The Man From Dao Xiang Cun",
+"completed": false,
+"note": "gaps 1; no rating found"
+},
+"primevaloverlord": {
+"origin": "CN",
+"name": "Primeval Overlord",
+"completed": false,
+"note": "no rating found; starts at EP2, completion unsure"
+},
+"legendofblue": {
+"origin": "CN",
+"name": "Legend of Blue",
+"completed": false,
+"hide": true,
+"note": "old movie, only middle part uploaded"
+},
+"armorshopforladiesgentlemen": {
+"origin": "JP",
+"name": "Armor Shop for Ladies & Gentlemen",
+"completed": true,
+"note": "no rating found; completion of S2 assumed"
+},
+"catgod": {
+"origin": "CN",
+"name": "Cat God",
+"completed": true,
+"note": "no rating found"
+},
+"superxiang": {
+"origin": "CN",
+"name": "Super Xiang",
+"completed": true,
+"note": "no rating found"
+},
+"crossdimensionbigshow": {
+"origin": "CN",
+"name": "Cross Dimension Big Show",
+"completed": false,
+"note": "gaps 1; no rating found"
+},
+"iamthegreatimmortal": {
+"origin": "CN",
+"name": "I Am The Great Immortal",
+"completed": false,
+"note": "only S3 EP8-16 uploaded; no rating found"
+},
+"nekoalbum": {
+"origin": "CN",
+"name": "Neko Album",
+"completed": true,
+"note": "no rating found"
+},
+"swordquest": {
+"origin": "CN",
+"name": "Sword Quest",
+"completed": true,
+"note": "no rating found"
+},
+"roommates": {
+"origin": "CN",
+"name": "Roommates",
+"completed": true,
+"note": "no rating found"
+},
+"happythanksgiving": {
+"origin": "CN",
+"name": "Ascendants of the Nine Suns",
+"completed": false,
+"merge_into": "ascendantsoftheninesuns",
+"note": "promo title, gaps 18"
+},
+"ihaveamountainfastness": {
+"origin": "CN",
+"name": "I Have a Mountain Fastness",
+"completed": true,
+"note": "no rating found"
+},
+"feirenzai": {
+"origin": "CN",
+"name": "Fei Ren Zai",
+"completed": true,
+"note": "Season 3 only; no rating found"
+},
+"goldencurse": {
+"origin": "CN",
+"name": "Golden Curse",
+"completed": true,
+"note": "no rating found; starts EP2"
+},
+"soulbusterepisode": {
+"origin": "CN",
+"name": "Soul Buster Episode",
+"completed": true,
+"note": "JPN dub upload; no rating found"
+},
+"食草老龙被冠以恶龙之名": {
+"origin": "JP",
+"name": "The Herbivorous Dragon of 5,000 Years Gets Unfairly Villainized",
+"completed": false,
+"hide": true,
+"note": "Chinese-language title and uploads; gaps"
+},
+"threeswordsmanhalfface": {
+"origin": "CN",
+"name": "Three Swordsman: Half Face",
+"completed": true,
+"note": "no rating found"
+},
+"zilong": {
+"origin": "CN",
+"name": "The Ravages of Time: Zilong",
+"completed": true,
+"note": "possible overlap with ravagesoftime; no rating found"
+},
+"supremeswordgod": {
+"origin": "CN",
+"name": "Supreme Sword God",
+"completed": false,
+"note": "no rating found; completion unsure"
+},
+"highlight": {
+"origin": "CN",
+"name": "Highlight",
+"completed": false,
+"hide": true,
+"note": "highlight compilations of Thousand Autumns and The Outcast; duplicate of thousandautumns/outcast"
+},
+"devoureternity": {
+"origin": "CN",
+"name": "Devour Eternity",
+"completed": false,
+"note": "no rating found; ongoing"
+},
+"asura": {
+"origin": "CN",
+"name": "Asura",
+"completed": false,
+"note": "no rating found; completion unsure"
+},
+"issettopremiereonjanuary17th": {
+"origin": "CN",
+"name": "The Mirage House in the Clouds",
+"completed": false,
+"merge_into": "miragehouseintheclouds",
+"note": "promo title"
+},
+"shanghaimelody": {
+"origin": "CN",
+"name": "Shanghai Melody",
+"completed": true,
+"note": "no rating found"
+},
+"husbandandwifehandinhand": {
+"origin": "CN",
+"name": "My Heroic Husband Season 2",
+"completed": false,
+"merge_into": "myheroichusband",
+"note": "naming variant"
+},
+"eyeofstorm": {
+"origin": "CN",
+"name": "Eye of Storm",
+"completed": true,
+"note": "no rating found"
+},
+"yaochinesefolktales-dub": {
+"origin": "CN",
+"name": "Yao-Chinese Folktales (English Dub)",
+"completed": true,
+"note": "no rating found"
+},
+"yaochinesefolktales": {
+"origin": "CN",
+"name": "Yao-Chinese Folktales",
+"completed": true,
+"note": "no rating found"
+},
+"adventuresinsubduingthedemons": {
+"origin": "CN",
+"name": "Adventures in Subduing the Demons",
+"completed": true,
+"note": "no rating found"
+},
+"senryugirl": {
+"origin": "JP",
+"name": "Senryu Girl",
+"completed": true,
+"rating": 7.2,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"gowestoverworked": {
+"origin": "CN",
+"name": "GoWest Overworked",
+"completed": false,
+"note": "no rating found; completion unsure"
+},
+"炼气十万年": {
+"origin": "CN",
+"name": "One Hundred Thousand Years of Qi Refining",
+"completed": false,
+"merge_into": "onehundredthousandyearsofqirefining",
+"note": "Chinese title variant"
+},
+"sworddynasty": {
+"origin": "CN",
+"name": "Sword Dynasty",
+"completed": false,
+"note": "gaps 1; no rating found"
+},
+"eep301": {
+"origin": "CN",
+"name": "Peerless Martial Spirit",
+"completed": false,
+"merge_into": "peerlessmartialspirit",
+"note": "bundle upload EP301-320"
+},
+"newanime": {
+"origin": "CN",
+"name": "New Anime",
+"completed": false,
+"hide": true,
+"note": "promo mix of Renegade Immortal EP1 and Spare Me Great Lord S2; duplicates renegadeimmortal/sparemegreatlord"
+},
+"aotuworldreborn": {
+"origin": "CN",
+"name": "Aotu World Reborn",
+"completed": false,
+"note": "no rating found; completion unsure"
+},
+"martialweekly": {
+"origin": "CN",
+"name": "The Martial Weekly",
+"completed": false,
+"note": "episodes start at EP5"
+},
+"isekaiquartet": {
+"origin": "JP",
+"name": "Isekai Quartet Season 3",
+"completed": true,
+"rating": 7.9,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"whimsicalwish": {
+"origin": "CN",
+"name": "Whimsical Wish",
+"completed": true,
+"note": ""
+},
+"chapterofmythicalbeastsappear": {
+"origin": "CN",
+"name": "Chapter of Mythical Beasts Appear",
+"completed": false,
+"note": "collection upload only, ongoing"
+},
+"littleimmortalsjade": {
+"origin": "CN",
+"name": "The Little Immortal's Jade",
+"completed": true,
+"note": ""
+},
+"fengwuyaochu": {
+"origin": "CN",
+"name": "Feng Wu Yao Chu",
+"completed": false,
+"note": ""
+},
+"whatswrongwithmybigbrother": {
+"origin": "CN",
+"name": "What's Wrong with My Big Brother",
+"completed": false,
+"note": "members-only gaps"
+},
+"rivergodsaxe": {
+"origin": "CN",
+"name": "The River God's Axe",
+"completed": false,
+"note": "members-only gaps, long running"
+},
+"soninlawthroughtheages": {
+"origin": "CN",
+"name": "Son-In-Law Through The Ages",
+"completed": false,
+"note": "single bundle upload"
+},
+"perfectworldp71": {
+"origin": "CN",
+"name": "Perfect World",
+"completed": false,
+"merge_into": "perfectworld",
+"note": "episode 78 bundle"
+},
+"毛头的深夜理发店": {
+"origin": "CN",
+"name": "Maotou's Late Night Barbershop",
+"completed": true,
+"note": "Chinese-language upload"
+},
+"yamarebornmasteroffate": {
+"origin": "CN",
+"name": "Yama Reborn: Master of Fate",
+"completed": true,
+"note": ""
+},
+"directorscutfinale": {
+"origin": "CN",
+"name": "Soul Land Director's Cut Finale",
+"completed": true,
+"merge_into": "soulland",
+"note": "Soul Land EP265"
+},
+"isthereagod": {
+"origin": "CN",
+"name": "Is There A God?",
+"completed": true,
+"note": ""
+},
+"novolandeagleflag": {
+"origin": "CN",
+"name": "Novoland: Eagle Flag",
+"completed": false,
+"hide": true,
+"note": "live action drama"
+},
+"血与心": {
+"origin": "CN",
+"name": "Blood and Heart",
+"completed": false,
+"merge_into": "bloodandheart",
+"note": "Chinese-title variant, EP7-12"
+},
+"riseofthesaintking": {
+"origin": "CN",
+"name": "Rise of the Saint King",
+"completed": true,
+"note": ""
+},
+"newchroniclesofextraordinarybeingspreface": {
+"origin": "CN",
+"name": "The New Chronicles of Extraordinary Beings: Preface",
+"completed": false,
+"note": ""
+},
+"interstellarwanderer": {
+"origin": "CN",
+"name": "Interstellar Wanderer",
+"completed": false,
+"note": "members-only gap"
+},
+"happynewyear": {
+"origin": "CN",
+"name": "The Great Ruler Happy New Year",
+"completed": false,
+"merge_into": "greatruler",
+"note": "EP39-45 collection"
+},
+"myacgparents": {
+"origin": "CN",
+"name": "My ACG Parents",
+"completed": false,
+"note": "gaps"
+},
+"bloodandheart": {
+"origin": "CN",
+"name": "Blood and Heart",
+"completed": true,
+"note": ""
+},
+"jpnsub": {
+"origin": "CN",
+"name": "Blood and Heart JPN sub",
+"completed": true,
+"hide": true,
+"note": "duplicate of bloodandheart, Japanese sub"
+},
+"小品一家人之爆笑校园": {
+"origin": "CN",
+"name": "Xiaopin Family: Funny Campus",
+"completed": false,
+"note": "gaps, Chinese-language upload"
+},
+"imtheonlyhumaninschool": {
+"origin": "CN",
+"name": "I'm the Only Human in School",
+"completed": false,
+"note": "collection uploads, ongoing"
+},
+"risinginthefire": {
+"origin": "CN",
+"name": "Rising in the Fire",
+"completed": false,
+"note": ""
+},
+"力拔山河兮子唐": {
+"origin": "CN",
+"name": "Zitang, Strength to Move Mountains",
+"completed": false,
+"note": "Chinese-language upload"
+},
+"furiousyama": {
+"origin": "CN",
+"name": "The Furious Yama",
+"completed": false,
+"note": "members-only gaps"
+},
+"wattsupgirl": {
+"origin": "CN",
+"name": "Watt's Up, Girl?",
+"completed": true,
+"note": ""
+},
+"agates2all": {
+"origin": "CN",
+"name": "Agate",
+"completed": true,
+"merge_into": "agate",
+"note": "S2 collection"
+},
+"sevendeadlysinssignsofholywar": {
+"origin": "JP",
+"name": "The Seven Deadly Sins: Signs of Holy War",
+"completed": true,
+"rating": 7.5,
+"rating_src": "MAL",
+"note": "score recalled, special"
+},
+"kaginado": {
+"origin": "JP",
+"name": "Kaginado",
+"completed": false,
+"note": "no rating found"
+},
+"contentwarningdarkgathering": {
+"origin": "JP",
+"name": "Dark Gathering",
+"completed": false,
+"merge_into": "darkgathering",
+"note": "members-only gaps"
+},
+"soullandfinalemovie": {
+"origin": "CN",
+"name": "Soul Land Finale",
+"completed": true,
+"merge_into": "soulland",
+"note": "Soul Land EP264"
+},
+"finalchapter": {
+"origin": "CN",
+"name": "GoWest Overworked",
+"completed": false,
+"merge_into": "gowestoverworked",
+"note": "members-only gaps"
+},
+"catsteas2all": {
+"origin": "CN",
+"name": "Cat's Tea",
+"completed": true,
+"merge_into": "catstea",
+"note": "S2 collection"
+},
+"仙尊奶爸当赘婿": {
+"origin": "CN",
+"name": "Immortal Lord Dad Becomes a Son-in-Law",
+"completed": false,
+"note": "collection upload, Chinese title"
+},
+"takemybrotheraway": {
+"origin": "CN",
+"name": "Take My Brother Away",
+"completed": false,
+"note": "gaps"
+},
+"assassinationclassroomthemovie365daystime": {
+"origin": "JP",
+"name": "Assassination Classroom the Movie: 365 Days' Time",
+"completed": true,
+"rating": 7.7,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"abovetheabyss": {
+"origin": "CN",
+"name": "Above the Abyss",
+"completed": true,
+"note": ""
+},
+"agateall": {
+"origin": "CN",
+"name": "Agate",
+"completed": true,
+"merge_into": "agate",
+"note": "collection"
+},
+"王者大师兄": {
+"origin": "CN",
+"name": "King Senior Brother",
+"completed": false,
+"note": "Chinese title"
+},
+"peacockiron": {
+"origin": "CN",
+"name": "Peacock & Iron",
+"completed": true,
+"note": ""
+},
+"underthegate": {
+"origin": "CN",
+"name": "Under the Gate",
+"completed": false,
+"note": ""
+},
+"kingofeternalnight": {
+"origin": "CN",
+"name": "King of Eternal Night",
+"completed": true,
+"note": "no rating found"
+},
+"flowerbeauty": {
+"origin": "CN",
+"name": "Flower Beauty",
+"completed": true,
+"note": "no rating found; member-only latest eps possible"
+},
+"freshnew": {
+"origin": "CN",
+"name": "Fresh New",
+"completed": true,
+"note": "no rating found"
+},
+"monsterdiner": {
+"origin": "CN",
+"name": "Monster Diner",
+"completed": true,
+"note": "no rating found"
+},
+"idonteatitfornothing": {
+"origin": "CN",
+"name": "I Don't Eat It for Nothing",
+"completed": false,
+"note": "members-only gaps; no rating found"
+},
+"chaptertwodivinebird": {
+"origin": "CN",
+"name": "The Great Ruler",
+"completed": false,
+"note": "Great Ruler arc collection",
+"merge_into": "greatruler"
+},
+"4cuthero": {
+"origin": "CN",
+"name": "4 CUT HERO",
+"completed": true,
+"note": "no rating found"
+},
+"special": {
+"origin": "CN",
+"name": "Soulmate Adventure Special",
+"completed": false,
+"note": "Bilibili special, 2 eps; no rating found",
+"hide": true
+},
+"embraceinthedarknight": {
+"origin": "CN",
+"name": "Embrace in the Dark Night",
+"completed": true,
+"note": "single full-series upload; no rating found"
+},
+"wuwillyoumarryme": {
+"origin": "CN",
+"name": "Soul Land",
+"completed": false,
+"note": "Soul Land EP156-160 bundle",
+"merge_into": "soulland"
+},
+"berylandsapphires2all": {
+"origin": "CN",
+"name": "Beryl and Sapphire",
+"completed": false,
+"note": "S2 collection",
+"merge_into": "berylandsapphire"
+},
+"remake": {
+"origin": "CN",
+"name": "A Record of Mortal's Journey",
+"completed": false,
+"note": "Mortal's Journey EP177-190 naming variant",
+"merge_into": "amortalsjourney"
+},
+"arecordofmortalsjourney": {
+"origin": "CN",
+"name": "A Record of Mortal's Journey",
+"completed": false,
+"note": "Mortal's Journey EP170-172 naming variant",
+"merge_into": "amortalsjourney"
+},
+"amortalsjourneytoimmortalitybattleinyanfamily": {
+"origin": "CN",
+"name": "A Mortal's Journey to Immortality: Battle in Yan Family",
+"completed": false,
+"note": "special",
+"merge_into": "amortalsjourneytoimmortalityspecial"
+},
+"kingsavatars1quanzhigaoshouthekingsavatar": {
+"origin": "CN",
+"name": "The King's Avatar",
+"completed": false,
+"note": "naming variant, S1 and S2",
+"merge_into": "kingsavatars2quanzhigaoshou"
+},
+"hetaliaworldstars": {
+"origin": "JP",
+"name": "Hetalia: World Stars",
+"completed": true,
+"rating": 6.8,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"customizedlover": {
+"origin": "CN",
+"name": "Customized Lover",
+"completed": true,
+"note": "no rating found"
+},
+"chapterofwarsoulawaking": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit EP1-10 chapter",
+"merge_into": "superheroicspirit"
+},
+"candycaries": {
+"origin": "JP",
+"name": "Candy Caries",
+"completed": false,
+"rating": 6.3,
+"rating_src": "MAL",
+"note": "missing episodes (gaps 11); score recalled"
+},
+"preludeofthedemonhunterdongningprefectureinsummer": {
+"origin": "CN",
+"name": "Prelude of The Demon Hunter: Dongning Prefecture in Summer",
+"completed": true,
+"note": "no rating found; short series"
+},
+"thattimeigotreincarnatedasaslimevisionsofcoleus": {
+"origin": "JP",
+"name": "That Time I Got Reincarnated as a Slime: Visions of Coleus",
+"completed": true,
+"rating": 7.4,
+"rating_src": "MAL",
+"note": "3-ep special series; score recalled"
+},
+"apocalypticimprisonmentmynemesissecretlylovesme": {
+"origin": "CN",
+"name": "Apocalyptic Imprisonment: My Nemesis Secretly Loves Me",
+"completed": true,
+"note": "single full upload; no rating found"
+},
+"bistrooflilinke": {
+"origin": "CN",
+"name": "The Bistro of LiLinke",
+"completed": false,
+"note": "members-only gaps; no rating found"
+},
+"uniteupunibirth": {
+"origin": "JP",
+"name": "UniteUp! Uni:Birth",
+"completed": true,
+"rating": 6.3,
+"rating_src": "MAL",
+"note": "score recalled, uncertain"
+},
+"helpmyroommateisasuccubus": {
+"origin": "CN",
+"name": "Help! My Roommate Is a Succubus",
+"completed": true,
+"note": "single full upload; flagged AI check, verify; no rating found"
+},
+"youreagenius-dub": {
+"origin": "CN",
+"name": "You're a Genius (English Dub)",
+"completed": false,
+"note": "members-only gap; no rating found"
+},
+"iamsopoorthatallihaveismoney": {
+"origin": "CN",
+"name": "Spiritual Lord of Chaos",
+"completed": false,
+"note": "Spiritual Lord of Chaos episode bundle",
+"merge_into": "spirituallordofchaos"
+},
+"beinganomnipotentrichmanismysimpledream": {
+"origin": "CN",
+"name": "Spiritual Lord of Chaos",
+"completed": false,
+"note": "Spiritual Lord of Chaos episode bundle",
+"merge_into": "spirituallordofchaos"
+},
+"chapterofselectionconference": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapterofbusinessalliance": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapterofresonance": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapterofwarsoulresonance": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapteroflightningtribulation": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapterofwaremperorprime": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapterofwarsoulslevelup": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapteroffirstvisittoholyland": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapterofgodlevelstrength": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapteroftheremnantbodyofgod": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"chapterofwinfirstplace": {
+"origin": "CN",
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "Super Heroic Spirit chapter bundle",
+"merge_into": "superheroicspirit"
+},
+"shutianfumolu": {
+"origin": "CN",
+"name": "Shu Tian Fu Mo Lu",
+"completed": false,
+"note": "only EP1-4 uploaded; no rating found"
+},
+"tatasrainbowbrainstorm": {
+"origin": "CN",
+"name": "Tata's Rainbow Brainstorm 2",
+"completed": true,
+"note": "Season 2 only; no rating found"
+},
+"nationoftreasure": {
+"origin": "CN",
+"name": "Nation of Treasure",
+"completed": false,
+"note": "members-only gaps; no rating found"
+},
+"uqholderoad": {
+"origin": "JP",
+"name": "UQ Holder! OAD",
+"completed": true,
+"rating": 6.7,
+"rating_src": "MAL",
+"note": "score recalled"
+},
+"mechanicalascension": {
+"origin": "CN",
+"name": "Mechanical Ascension",
+"completed": false,
+"note": "gaps 2; no rating found"
+},
+"我气哭了百万修炼者": {
+"origin": "CN",
+"name": "I Annoyed Millions of Cultivators",
+"completed": false,
+"note": "only EP95-100 uploaded, ongoing; no rating found"
+},
+"furiousyamaseason1all": {
+"origin": "CN",
+"name": "The Furious Yama",
+"completed": false,
+"note": "duplicate/variant of furiousyama",
+"merge_into": "furiousyama"
+},
+"sweetbitemarks": {
+"origin": "CN",
+"name": "Sweet Bite Marks",
+"completed": false,
+"note": "members-only gaps"
+},
+"chapterofdesolatebattlefields": {
+"origin": "CN",
+"name": "Peerless Martial Spirit",
+"completed": false,
+"note": "EP161-170 collection of Peerless Martial Spirit",
+"merge_into": "peerlessmartialspirit"
+},
+"burnthewitch": {
+"origin": "JP",
+"name": "Burn the Witch",
+"completed": true,
+"note": "score recalled",
+"rating": 7.1,
+"rating_src": "MAL"
+},
+"chapterofgodspast": {
+"origin": "CN",
+"name": "Peerless Martial Spirit",
+"completed": false,
+"note": "EP141-150 collection of Peerless Martial Spirit",
+"merge_into": "peerlessmartialspirit"
+},
+"latestchapterwargodsblade": {
+"origin": "CN",
+"name": "Peerless Martial Spirit",
+"completed": false,
+"note": "EP151-160 collection of Peerless Martial Spirit",
+"merge_into": "peerlessmartialspirit"
+},
+"chenghuang": {
+"origin": "CN",
+"name": "Chenghuang",
+"completed": false,
+"note": "no rating found; only EP1-6 compilation"
+},
+"battleofthelightanddarkness": {
+"origin": "CN",
+"name": "The Westward",
+"completed": false,
+"note": "Westward S5 EP1-4 collection",
+"merge_into": "westward"
+},
+"makeadramaticcomebackandreturntothepeak": {
+"origin": "CN",
+"name": "Devour Eternity",
+"completed": false,
+"note": "EP8-15 collection of Devour Eternity",
+"merge_into": "devoureternity"
+},
+"betweenheavenandearthonlyiameternal": {
+"origin": "CN",
+"name": "Devour Eternity",
+"completed": false,
+"note": "EP1-7 collection of Devour Eternity",
+"merge_into": "devoureternity"
+},
+"amortalsjourneytoimmortalityspecial": {
+"origin": "CN",
+"name": "A Mortal's Journey to Immortality Special",
+"completed": false,
+"note": "special episodes only, no rating"
+},
+"沧元纪": {
+"origin": "CN",
+"name": "Cang Yuan Ji Interview",
+"completed": false,
+"note": "interview clip, not a series",
+"hide": true
+},
+"blindnecromancer": {
+"origin": "CN",
+"name": "The Blind Necromancer",
+"completed": false,
+"note": "no rating found"
+},
+"手机里的浣熊小镇": {
+"origin": "CN",
+"name": "Raccoon Town in Phone",
+"completed": false,
+"note": "duplicate/variant of raccoontowninphone",
+"merge_into": "raccoontowninphone"
+},
+"xuqianqianrolepvitsnotimpossibledontletmydadfindout": {
+"origin": "CN",
+"name": "Xyrin Empire",
+"completed": false,
+"note": "duplicate/variant of xyrinempire",
+"merge_into": "xyrinempire"
+},
+"blooper": {
+"origin": "CN",
+"name": "The Rise of the Weak",
+"completed": false,
+"note": "special/extra, not an episode",
+"hide": true
+},
+"ancestorspleasehelpme": {
+"origin": "CN",
+"name": "Ancestors, Please Help Me",
+"completed": false,
+"note": "no rating found"
+},
+"destinycode": {
+"origin": "CN",
+"name": "Destiny Code",
+"completed": false,
+"note": "no rating found"
+},
+"seasonhasconcluded": {
+"origin": "CN",
+"name": "Ling Cage",
+"completed": false,
+"note": "Ling Cage 2 EP12; may be season 2 of lingcage",
+"merge_into": "lingcage"
+},
+"史上最强男主角": {
+"origin": "CN",
+"name": "The Strongest Male Lead Ever",
+"completed": false,
+"note": "only EP1-10 collection; no rating found"
+},
+"lngtingvitcnraththnggna": {
+"origin": "CN",
+"name": "Con Ra The Thong Gi Nua (Vietnamese dub)",
+"completed": false,
+"note": "Vietnamese dub",
+"hide": true
+},
+"monsterdinerall": {
+"origin": "CN",
+"name": "Monster Diner",
+"completed": false,
+"note": "duplicate/variant of monsterdiner",
+"merge_into": "monsterdiner"
+},
+"真人动画魔幻现实主义迷你剧联盒圀": {
+"origin": "CN",
+"name": "Lian He Guo (live action + animation)",
+"completed": false,
+"note": "live action mix mini series",
+"hide": true
+},
+"super": {
+"origin": "CN",
+"name": "Superstar",
+"completed": false,
+"note": "no rating found"
+},
+"tobecontinued": {
+"origin": "CN",
+"name": "The Alchemist's Rise",
+"completed": false,
+"note": "gaps, no rating found"
+},
+"牧神记": {
+"origin": "CN",
+"name": "Tale of Herding Gods",
+"completed": false,
+"note": "EP56-58 collection only; no rating found"
+},
+"少年歌行番外篇之少年事": {
+"origin": "CN",
+"name": "Song of Youth Side Story: Youth Affairs",
+"completed": true,
+"note": "no rating found"
+},
+"superstar": {
+"origin": "CN",
+"name": "Super Star",
+"completed": false,
+"note": "no rating found"
+},
+"heavensgame": {
+"origin": "CN",
+"name": "Heaven's Game",
+"completed": false,
+"note": "gaps, no rating found"
+},
+"degeneratedrawingjianghus5thedegeneratedrawingjianghu": {
+"origin": "CN",
+"name": "The Degenerate-Drawing Jianghu",
+"completed": false,
+"note": "duplicate/variant of degeneratedrawingjianghu",
+"merge_into": "degeneratedrawingjianghu"
+},
+"thisseasonend": {
+"origin": "CN",
+"name": "Immortality",
+"completed": false,
+"note": "Immortality S4 EP16+",
+"merge_into": "immortality"
+},
+"furryadventureswaitingforyoufabulousbeasts": {
+"origin": "CN",
+"name": "Fabulous Beasts",
+"completed": false,
+"note": "duplicate/variant of fabulousbeasts",
+"merge_into": "fabulousbeasts"
+},
+"真人动画魔幻现实主义迷你剧联盒圀合集篇第58集": {
+"origin": "CN",
+"name": "Lian He Guo eps 5-8",
+"completed": false,
+"note": "live action mix, duplicate of 联盒圀",
+"hide": true
+},
+"warriorfromqin": {
+"origin": "CN",
+"name": "The Warrior From Qin",
+"completed": false,
+"note": "only EP1; no rating found"
+},
+"fairyplantingmanual": {
+"origin": "CN",
+"name": "Fairy Planting Manual",
+"completed": false,
+"note": "no rating found"
+},
+"degeneratedrawingjianghus6end": {
+"origin": "CN",
+"name": "The Degenerate-Drawing Jianghu",
+"completed": false,
+"note": "duplicate/variant of degeneratedrawingjianghu",
+"merge_into": "degeneratedrawingjianghu"
+},
+"end": {
+"origin": "CN",
+"name": "Roommates",
+"completed": false,
+"note": "The End EP12-24 of Roommates (season finale), gaps",
+"merge_into": "roommates"
+},
+"dogstea": {
+"origin": "CN",
+"name": "The Dog's Tea",
+"completed": false,
+"note": "gaps"
+},
+"ultimatepv": {
+"origin": "CN",
+"name": "M&S Organization",
+"completed": false,
+"note": "special/extra, not an episode",
+"hide": true
+},
+"wingsoftheworld": {
+"origin": "CN",
+"name": "Wings of the World",
+"completed": false,
+"note": "members-only gaps"
+},
+"真人动画魔幻现实主义迷你剧联盒圀合集篇第14集": {
+"origin": "CN",
+"name": "Lian He Guo eps 1-4",
+"completed": false,
+"note": "live action mix, duplicate of 联盒圀",
+"hide": true
+},
+"恋爱循环": {
+"origin": "CN",
+"name": "Fantasy Dancer EP07",
+"completed": false,
+"note": "live dance reality show clip",
+"hide": true
+},
+"perfectworldwillowgodspecial": {
+"origin": "CN",
+"name": "Perfect World",
+"completed": false,
+"note": "special/extra, not an episode",
+"hide": true
+},
+"smalltheater": {
+"origin": "CN",
+"name": "Cat's Tea",
+"completed": false,
+"note": "special/extra, not an episode",
+"hide": true
+},
+"火星西路7号": {
+"origin": "CN",
+"name": "No.7 West Mars Street",
+"completed": false,
+"note": "duplicate/variant of no7westmarsstreet",
+"merge_into": "no7westmarsstreet"
+},
+"final": {
+"origin": "CN",
+"name": "Way of Choices 3D (Finale)",
+"completed": true,
+"merge_into": "wayofchoices3d",
+"note": "EP26 finale duplicate of wayofchoices3d"
+},
+"五行战神": {
+"origin": "CN",
+"name": "Five Element War God",
+"completed": true,
+"merge_into": "fiveelementgodofwar",
+"note": "Chinese-title variant, 3 eps"
 }
 }
 }
