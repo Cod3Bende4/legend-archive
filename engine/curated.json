@@ -1502,6 +1502,1037 @@
 "rating_src": "MAL",
 "completed": true,
 "note": "24 eps = S1 (2023) + S2 (2024)"
+},
+"ivebeenkillingslimesfor300yearsandmaxedoutmylevel": {
+"name": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
+"rating": 6.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 ~6.9, S2 lower; score recalled"
+},
+"devilisaparttimer": {
+"name": "The Devil Is a Part-Timer!",
+"rating": 6.6,
+"rating_src": "MAL",
+"completed": true,
+"note": "Season 2 (both cours, 24 eps); may overlap devilisaparttimerseason2part; score recalled"
+},
+"chainedsoldier": {
+"name": "Chained Soldier",
+"rating": 6.6,
+"rating_src": "MAL",
+"completed": true,
+"note": "S2 aired Jan-Mar 2026; score recalled"
+},
+"kumakumakumabearpunch": {
+"name": "Kuma Kuma Kuma Bear Punch!",
+"rating": 7.0,
+"rating_src": "MAL",
+"completed": true,
+"note": "Season 1 slot is a Punch! complete-series compilation duplicating the S2 episodes; not merged into kumakumakumabear because that label would clash with original S1; score recalled"
+},
+"acertainmagicalindex": {
+"name": "A Certain Magical Index",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 as single complete-series compilation; score recalled"
+},
+"aquatopeonwhitesand": {
+"name": "The Aquatope on White Sand",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"kingsavatars2quanzhigaoshou": {
+"name": "The King's Avatar",
+"rating": 8.3,
+"rating_src": "MAL",
+"completed": false,
+"note": "S1 EP1-2 missing here (likely in kingsavatars1quanzhigaoshouthekingsavatar); S2 complete; score recalled"
+},
+"mynextlifeasavillainessallroutesleadtodoomx": {
+"name": "My Next Life as a Villainess: All Routes Lead to Doom!",
+"rating": 7.1,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 + X; score recalled"
+},
+"nogunslife": {
+"name": "No Guns Life",
+"rating": 6.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"nationalhusbandbringhome": {
+"name": "National Husband Bring Home",
+"completed": false,
+"note": "finished show (S4 has 12 eps) but S4 EP12 not uploaded; no rating found"
+},
+"fiveelementwargod": {
+"name": "Five Element God of War",
+"completed": true,
+"note": "single EP1-80 compilation of the finished 80-ep show (ended Jan 2025); fiveelementgodofwar holds EP1-50 as individual uploads (subset); no rating found"
+},
+"campfirecookinginanotherworldwithmyabsurdskill": {
+"name": "Campfire Cooking in Another World with My Absurd Skill",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": true,
+"note": "S2 only as a complete-series compilation; may overlap campfirecookinginanotherworld; score recalled"
+},
+"codeofgodshavoc": {
+"name": "Code of Gods Havoc",
+"completed": false,
+"note": "members-only gaps; still ongoing (EP52 upcoming); no rating found"
+},
+"divinemanifestation": {
+"name": "Divine Manifestation",
+"completed": true,
+"note": "Tian Xiang, 26 eps finished Mar 2026; no rating found"
+},
+"degeneratedrawingjianghu": {
+"name": "The Degenerate-Drawing Jianghu",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": false,
+"note": "S5 EP1-2 missing here (see degeneratedrawingjianghus5... keys); S6 complete; score recalled"
+},
+"ascendantsoftheninesuns": {
+"name": "Ascendants of the Nine Suns",
+"completed": false,
+"note": "ongoing weekly (EP47 Sep 2026); 1 gap; no rating found"
+},
+"vndub": {
+"name": "How Dare You!? (Vietnamese dub)",
+"completed": false,
+"hide": true,
+"note": "not English"
+},
+"misspuff": {
+"name": "Miss Puff",
+"completed": false,
+"note": "finished show but S4 missing and gaps in S1-S3; no rating found"
+},
+"ileftmyarankparty": {
+"name": "I Left My A-Rank Party to Help My Former Students Reach the Dungeon Depths!",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "season 1 (24 eps, 2025); S2 announced; score recalled"
+},
+"longsword": {
+"name": "Long Sword",
+"completed": false,
+"note": "Chang Jian Fengyun; S1 1 gap (members-only); no rating found"
+},
+"muvluvalternative": {
+"name": "Muv-Luv Alternative",
+"rating": 6.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "both seasons; score recalled"
+},
+"scumofthebrave": {
+"name": "Scum of the Brave",
+"completed": true,
+"note": "24 eps, Jan-Jun 2026; no rating found"
+},
+"sugarapplefairytale": {
+"name": "Sugar Apple Fairy Tale",
+"rating": 7.5,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"legendofsoldier": {
+"name": "Legend of Soldier",
+"completed": true,
+"note": "26 eps, ended; no rating found"
+},
+"everlastinggodofsword": {
+"name": "Everlasting God of Sword",
+"completed": true,
+"note": "Wangu Jian Shen, 38 eps, finished; no rating found"
+},
+"bladesoftheguardians": {
+"name": "Blades of the Guardians",
+"rating": 7.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "S2 (8 eps) finished Jul 2026; score recalled"
+},
+"talesofdarkriver": {
+"name": "Tales of Dark River",
+"completed": true,
+"note": "26 eps, finished; no rating found"
+},
+"monsterbutwild": {
+"name": "Monster but Wild",
+"completed": false,
+"note": "finished (12+16 eps) but S1 has 1 gap (members-only); no rating found"
+},
+"gateofmysticalrealm": {
+"name": "The Gate of Mystical Realm",
+"completed": true,
+"note": "Xuan Jie Zhi Men, 26 eps finished May 2026; no rating found"
+},
+"amortalsjourneytoimmortalityremake": {
+"name": "A Record of a Mortal's Journey to Immortality (Remastered)",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps; not merged into amortalsjourney (episode numbering may clash); rating of main series, score recalled"
+},
+"rebornasacat": {
+"name": "Reborn as a Cat",
+"completed": true,
+"note": "36 eps (Nov 2025 ONA), all uploaded; no rating found"
+},
+"unparalleledblackwhite": {
+"name": "The Unparalleled Black & White",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": false,
+"note": "S3 is final season (finished 2021) but S1 missing 1 ep; score recalled"
+},
+"sparemegreatlord": {
+"name": "Spare Me, Great Lord!",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": false,
+"note": "S2 only EP5-12 uploaded; score recalled"
+},
+"xuchangqing": {
+"name": "Legend of Lotus Sword Fairy",
+"merge_into": "legendoflotusswordfairy",
+"completed": false,
+"note": "junk key (protagonist name); same S1 episodes"
+},
+"诸天纪": {
+"name": "Multi-show compilation (诸天纪 etc.)",
+"hide": true,
+"completed": false,
+"note": "single EP1-10 compilation of four different shows"
+},
+"legendoflotusswordfairy": {
+"name": "Legend of Lotus Sword Fairy",
+"completed": false,
+"note": "54 eps, on hiatus since Oct 2023; 1 ep missing; no rating found"
+},
+"cinderellachief": {
+"name": "Cinderella Chef",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": false,
+"note": "3 seasons exist, only S1-S2 uploaded; score recalled"
+},
+"jasmine": {
+"name": "Against the Gods",
+"merge_into": "againstthegods",
+"completed": false,
+"note": "junk key; uploads are Against the Gods S1 EP2-24"
+},
+"fiveelementgodofwar": {
+"name": "Five Element God of War",
+"completed": false,
+"note": "members-only gaps; likely same show as fiveelementwargod (EP1-80 compilation), not merged; no rating found"
+},
+"cellsatwork": {
+"name": "Cells at Work!",
+"rating": 7.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 13 + S2 8 eps complete; score recalled"
+},
+"insearchofgods": {
+"name": "In Search of Gods",
+"completed": true,
+"note": "24 eps complete (2026); no rating found"
+},
+"immortalitys1s2all": {
+"name": "Immortality",
+"hide": true,
+"completed": false,
+"note": "duplicate of immortality (S1-S2 compilation)"
+},
+"fabulousbeasts": {
+"name": "Fabulous Beasts",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": false,
+"note": "Fei Ren Zai, long-running ongoing short series; score recalled"
+},
+"shihuang": {
+"name": "Five Element God of War",
+"merge_into": "fiveelementgodofwar",
+"completed": false,
+"note": "junk key (protagonist name); same S1 episodes"
+},
+"godtroublesme": {
+"name": "God Troubles Me",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": false,
+"note": "S2 not uploaded; score recalled"
+},
+"othersideofdeepspace": {
+"name": "The Other Side of Deep Space",
+"completed": true,
+"note": "26 eps, finished June 2026; no rating found"
+},
+"kingofwanderingcultivators": {
+"name": "The King of Wandering Cultivators",
+"completed": true,
+"note": "S1 52 eps complete (partly as compilations); no rating found"
+},
+"winddriverintangdynasty": {
+"name": "Wind Driver in Tang Dynasty",
+"completed": false,
+"note": "at least 26 eps exist, uploads EP1-25 with 1 gap; no rating found"
+},
+"legendofexorcism": {
+"name": "Legend of Exorcism",
+"rating": 7.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 (13, compilation) + S2 (13) finished; score recalled"
+},
+"fairiesalbums2all": {
+"name": "Fairies Album",
+"hide": true,
+"completed": false,
+"note": "duplicate of fairiesalbums (S1/S2 full compilations)"
+},
+"cangyuantuthedemonhunter": {
+"name": "The Demon Hunter",
+"hide": true,
+"completed": false,
+"note": "duplicate of demonhunter (EP1-29 compilation)"
+},
+"subscirbeus": {
+"name": "Mr. Stone Feels Lonely",
+"merge_into": "mrstonefeelslonely",
+"completed": false,
+"note": "junk key; members-only gaps"
+},
+"overgoddess": {
+"name": "Over Goddess",
+"completed": true,
+"note": "徒弟个个是大佬, 40 eps complete; no rating found"
+},
+"修仙者大战超能力": {
+"name": "Cultivators vs. Superpowers",
+"hide": true,
+"completed": false,
+"note": "motion comic (动态漫画 of the manhua), Chinese-titled uploads"
+},
+"wayofchoices3d-dub": {
+"name": "Way of Choices 3D (English Dub)",
+"completed": true,
+"note": "EP1-26 dub collection, series finished at 26; no rating found"
+},
+"dragonprinceyuan": {
+"name": "Dragon Prince Yuan",
+"completed": false,
+"note": "S1 26 eps (on hiatus), uploads EP1-25 with 1 gap; no rating found"
+},
+"tigercrane": {
+"name": "Tiger Crane",
+"completed": false,
+"note": "24 eps finished, only EP1-23 uploaded; no rating found"
+},
+"mythicalcreaturesaremydinners": {
+"name": "Mythical Creatures Are My Dinners",
+"completed": false,
+"note": "ongoing; no rating found"
+},
+"riseofthedragon": {
+"name": "Rise of the Dragon",
+"completed": true,
+"note": "极道龙神, 40 eps complete; low-budget 3D; no rating found"
+},
+"msorganization": {
+"name": "M&S Organization",
+"completed": false,
+"note": "25 eps, uploads start at EP3; no rating found"
+},
+"psychicprincess": {
+"name": "Psychic Princess",
+"completed": false,
+"note": "Season 2 (2025, 24 eps, finished); 1 episode missing; no rating found"
+},
+"flameimperialguards": {
+"name": "The Flame Imperial Guards",
+"completed": true,
+"note": "24 eps finished 2023; no rating found"
+},
+"masterofthestarspring": {
+"name": "Master of the Star Spring",
+"completed": false,
+"note": "48 eps finished 2023; 2 episodes missing (members-only gaps); no rating found"
+},
+"dragonstarlord": {
+"name": "The Dragon Star Lord",
+"completed": true,
+"note": "iQIYI 2024, 48 eps; no rating found"
+},
+"heavenscrapmaster": {
+"name": "Heaven Scrap Master",
+"completed": true,
+"note": "40 eps finished Nov 2025; no rating found"
+},
+"maddemonlord": {
+"name": "Mad Demon Lord",
+"completed": true,
+"note": "MAL entry: Kuang Shen Mo Zun; 2021, EP1-62 compilations; no rating found"
+},
+"异世界中药铺": {
+"name": "Different World Chinese Medicine Shop",
+"completed": false,
+"note": "uploads only cover EP41-100 compilations; series is longer (has season 2); no rating found; not the Japanese Parallel World Pharmacy"
+},
+"mostpowerfulvendor": {
+"name": "The Most Powerful Vendor",
+"completed": true,
+"note": "24 eps finished Feb 2026; no rating found"
+},
+"aliensamongimmortals": {
+"name": "Aliens Among Immortals",
+"completed": true,
+"note": "60 eps finished 2026; no rating found"
+},
+"soulofsoldiermaster": {
+"name": "The Soul of Soldier Master",
+"completed": true,
+"note": "MAL entry: Bing Zhu Qi Hun (2022); no rating found"
+},
+"supremebodyrefiningmaster": {
+"name": "The Supreme Body Refining Master",
+"completed": true,
+"note": "40 eps finished May 2026; no rating found"
+},
+"lordofmysteriestheclown": {
+"name": "Lord of Mysteries",
+"rating": 8.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Guimi Zhi Zhu: Xiaochou Pian; season 1 (13 eps, 2025) complete; score recalled"
+},
+"thousandsofworldsmotioncomics": {
+"name": "Thousands of Worlds (Motion Comic)",
+"completed": true,
+"hide": true,
+"note": "motion comic; single EP1-60 compilation"
+},
+"castoutbymyfamilyiawakened900millionstatpoints": {
+"name": "Cast Out by My Family, I Awakened 900 Million Stat Points",
+"completed": false,
+"note": "season 2 still airing; no rating found"
+},
+"bladeandbones": {
+"name": "Blade and Bones",
+"completed": true,
+"merge_into": "jiangu",
+"note": "same show as jiangu (Jian Gu, 60 eps, ended 2023); EP1-60 compilations, season 1"
+},
+"secretsofstardivinearts": {
+"name": "The Secrets of Star Divine Arts",
+"completed": true,
+"note": "40 eps finished 2024; no rating found"
+},
+"makemoneytobeking": {
+"name": "Make Money to Be King",
+"completed": false,
+"note": "uploads cover EP1-60; series has 90+ eps and continues; no rating found"
+},
+"goodkiller": {
+"name": "Good Killer",
+"completed": true,
+"merge_into": "killergude",
+"note": "MAL entry: Shashou Gu De (same show as killergude); verify killergude uses season 1 label; no rating found"
+},
+"nodoubtinus": {
+"name": "No Doubt in Us",
+"completed": false,
+"note": "members-only gaps in S1; S2 only as one EP1-24 collection; S2 individual eps are in marriedashusbandandwifenodoubtaboutlove; no rating found"
+},
+"lordofplanets": {
+"name": "Lord of Planets",
+"completed": false,
+"note": "uploads cover EP1-60 of 80 eps; no rating found"
+},
+"proudswordsman": {
+"name": "Proud Swordsman",
+"completed": false,
+"note": "ongoing, 78+ eps; uploads cover EP1-60; no rating found"
+},
+"myjourneyinanalternateworld": {
+"name": "My Journey in an Alternate World",
+"completed": true,
+"note": "40 eps finished 2022; no rating found"
+},
+"dontgiveup": {
+"name": "Don't Give Up!",
+"completed": true,
+"note": "2024 Bilibili series; 23 eps uploaded without gaps; episode total not verified; no rating found"
+},
+"greatdoctormissnine": {
+"name": "Great Doctor Miss Nine",
+"completed": false,
+"note": "80+ eps; uploads cover EP1-60; no rating found"
+},
+"season3thethreerealms": {
+"name": "Wu Geng Ji",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "wugenji",
+"note": "Wu Geng Ji season 3 EP1-42 compilation; score recalled"
+},
+"tombsoffallenimmortals": {
+"name": "Tombs of Fallen Immortals",
+"completed": true,
+"note": "Xian Mu (Immortal Tomb), 60 eps finished 2023; no rating found"
+},
+"wugenjiseason2apocalypse": {
+"name": "Wu Geng Ji",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "wugenji",
+"note": "season 2 EP1-42 compilation; score recalled"
+},
+"shapeofthewindsiamera": {
+"name": "The Shape of the Wind: Siam Era",
+"completed": true,
+"note": "20 eps finished 2023; no rating found"
+},
+"season4thebattleagainstheaven": {
+"name": "Wu Geng Ji",
+"rating": 7.5,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "wugenji",
+"note": "Wu Geng Ji season 4 EP1-42 compilation; score recalled"
+},
+"legendofyangchen": {
+"name": "The Legend of Yang Chen",
+"completed": true,
+"note": "40 eps, ended; no rating found"
+},
+"thousandautumns": {
+"name": "Thousand Autumns",
+"rating": 7.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Shan He Jian Xin; S1 16 eps (2021); score recalled"
+},
+"celestialbonds": {
+"name": "Celestial Bonds",
+"completed": true,
+"note": "Xian Chong (2025), 18 eps complete per iQ.com; no rating found"
+},
+"berylandsapphire": {
+"name": "Beryl and Sapphire",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Xiao Lu He Xiao Lan; uploads cover S2-S5 only (S1 absent); score recalled"
+},
+"jojosbizarreadventurebattletendency": {
+"name": "JoJo's Bizarre Adventure",
+"completed": true,
+"hide": true,
+"note": "duplicate of jojosbizarreadventure (S1 compilation)"
+},
+"overthedivinerealms": {
+"name": "Over the Divine Realms",
+"completed": true,
+"note": "Shen Guo Zhi Shang S1, 17 eps finale; no rating found"
+},
+"rebirthoftheswordpatriarch": {
+"name": "Rebirth of the Sword Patriarch",
+"completed": false,
+"note": "Yongheng Jian Zu, 40 eps finished but uploads miss one ep and EP40; no rating found"
+},
+"evernight": {
+"name": "Ever Night",
+"completed": true,
+"note": "Jiang Ye animation S1, 19 eps, Apr-Aug 2026; no rating found"
+},
+"fightforthethrone": {
+"name": "Fight for the Throne",
+"completed": true,
+"note": "Douzhan Tianxia, 48 eps complete; no rating found"
+},
+"legendofdragonsoldier": {
+"name": "The Legend of Dragon Soldier",
+"completed": true,
+"note": "Shen Ji Long Wei, 26 eps; no rating found"
+},
+"battlethroughtheheavens": {
+"name": "Battle Through the Heavens",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": false,
+"note": "only S1 compilation + S2 EP1-11 (EP12 missing); franchise ongoing; score recalled"
+},
+"bking": {
+"name": "B King",
+"completed": true,
+"note": "Yu Ling Shi (2026), 18 eps finished; no rating found"
+},
+"lordofalllords": {
+"name": "Lord of All Lords",
+"completed": true,
+"note": "26 eps, full collection exists; no rating found"
+},
+"shadowofheaven": {
+"name": "Shadow of Heaven",
+"completed": true,
+"note": "Tian Ying, 26 eps finished Feb 2025; no rating found"
+},
+"classroomoftheelite4thseason": {
+"name": "Classroom of the Elite 4th Season",
+"completed": true,
+"note": "16 eps, aired Apr-Jun 2026; gaps come from EP01-04 bundle upload; not merged (target likely uses S1-S3 numbering); no rating found"
+},
+"slaythegods": {
+"name": "Slay the Gods",
+"rating": 7.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Zhan Shen: Fanchen Shenyu; S1 15 eps (2024), S2 separate; score not confirmed"
+},
+"pheromonessaywerenotmeanttobeourpheromonessayno": {
+"name": "Pheromones Say We're Not Meant to Be",
+"completed": true,
+"note": "24 eps, full collection exists; possibly dynamic manhua style, unverified; no rating found"
+},
+"shiboyugiplayingdeathgamestoputfoodonthetable": {
+"name": "SHIBOYUGI: Playing Death Games to Put Food on the Table",
+"completed": true,
+"note": "TV aired Jan-Mar 2026, finished; no rating found"
+},
+"chumumoxie": {
+"name": "The Charm of Soul Pets",
+"completed": true,
+"merge_into": "charmofsoulpets",
+"note": "Huan Chong Shi; uploads titled The Charm of Soul Pets; S1 16 eps, completion not fully verified; no rating found"
+},
+"almanacmaster": {
+"name": "Almanac Master",
+"completed": true,
+"note": "Li Shi (2020); criticized as low quality in Chinese reviews; no rating found"
+},
+"xianwuheaven": {
+"name": "Xianwu Heaven",
+"completed": true,
+"note": "Xianwu Cangqiong (2022), 48 eps complete per iQ.com; no rating found"
+},
+"一世独尊": {
+"name": "The Lone Sword Overlord (Yi Shi Du Zun)",
+"completed": false,
+"merge_into": "yishiduzun",
+"note": "members-only gaps; Chinese-titled uploads of same show"
+},
+"goldenwug": {
+"name": "The Golden Wug",
+"completed": true,
+"note": "Jin Can Wangshi (2024), 24 eps; no rating found"
+},
+"thousandsofworlds": {
+"name": "Thousands of Worlds",
+"completed": true,
+"note": "MAL entry: Zhu Tian Ji (2022), 26 eps; no rating found"
+},
+"legendofprincesschangge": {
+"name": "The Legend of Princess Chang-Ge",
+"completed": false,
+"note": "Chang Ge Xing, listed as 16 eps but only EP1-15 uploaded; no rating found"
+},
+"apocalypseidominatewithmysrankmech": {
+"name": "Apocalypse: I Dominate with My S-Rank Mech",
+"completed": false,
+"note": "ongoing (EP40 June 2026, no end date); no rating found"
+},
+"immortalsofthegodlessage": {
+"name": "Immortals of the Godless Age",
+"completed": true,
+"note": "MAL entry: Chunqiu Feng Shen (2021), 24 eps; no rating found"
+},
+"bladersoul": {
+"name": "Blader Soul",
+"completed": true,
+"note": "Bu Xing Si: Yuan Qi (2024), 18 eps; no rating found"
+},
+"qinhu": {
+"name": "The Flame Imperial Guards",
+"completed": true,
+"hide": true,
+"note": "duplicate of flameimperialguards (single FULL collection)"
+},
+"knightsondebris": {
+"name": "Knights on Debris",
+"completed": true,
+"note": "MAL entry: Xing Hai Qishi, S1 15 eps; no rating found"
+},
+"guardianlegend": {
+"name": "The Guardian Legend",
+"completed": true,
+"note": "Shu Tian Fu Mo Lu (2023), 16 eps; no rating found"
+},
+"laidoffdemon": {
+"name": "The Laid Off Demon",
+"completed": false,
+"note": "no rating found; 26 eps finished 2025, 1 episode missing (EP1..26 with gap)"
+},
+"peakoftruemartialarts": {
+"name": "The Peak of True Martial Arts",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": false,
+"note": "MAL entry: Zhen Wu Dianfeng, score recalled; later seasons exist, 1 gap"
+},
+"timeprisoner": {
+"name": "Time Prisoner",
+"rating": 7.2,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Shijian Qiutu, score recalled"
+},
+"chroniclesofeverlastingwindandswordrain": {
+"name": "Chronicles of Everlasting Wind and Sword Rain",
+"rating": 6.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Xian Feng Jian Yu Lu, score recalled; 70 eps (2020-21) in 10-ep compilations"
+},
+"legendofthetaiyiswordimmorta": {
+"name": "The Legend of the Taiyi Sword Immortal",
+"rating": 6.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled; 20-ep season (2023)"
+},
+"kingofjinintangdynasty": {
+"name": "King of Jin in Tang Dynasty",
+"rating": 6.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "animated (Xie Wang Zhui Qi), single S1-S2 collection upload; score recalled"
+},
+"abovemyriads": {
+"name": "Above Myriads",
+"completed": false,
+"note": "2026 donghua (Wan Ren Zhi Shang), likely still airing; no rating found"
+},
+"画江湖之不良人第七季九幽玄天": {
+"name": "The Degenerate-Drawing Jianghu Season 7",
+"rating": 7.5,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "degeneratedrawingjianghu",
+"note": "ENG SUB season 7 of Hua Jiang Hu: Bu Liang Ren; score recalled"
+},
+"fatedmagicalprincesswhomademeaprincess": {
+"name": "The Fated Magical Princess: Who Made Me a Princess",
+"rating": 6.5,
+"rating_src": "MAL",
+"completed": true,
+"note": "16 eps (Sep-Dec 2025); gaps are from combined EP1-3 upload; MAL entry: Mofa Gongzhu de Xiao Fannao, score recalled"
+},
+"divinelordoftheheavens": {
+"name": "Divine Lord of the Heavens",
+"rating": 6.8,
+"rating_src": "MAL",
+"completed": false,
+"note": "ongoing weekly (Shendao Dizun); members-only gaps; score recalled"
+},
+"marriedashusbandandwifenodoubtaboutlove": {
+"name": "No Doubt In Us",
+"rating": 7.2,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "nodoubtinus",
+"note": "S2 individual episodes; target has S2 only as a collection; score recalled"
+},
+"islandofsiliang": {
+"name": "The Island of Siliang",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "Season 2 only (EP16-30, finished 2024); score recalled"
+},
+"swordandfairy": {
+"name": "Sword and Fairy 3",
+"completed": false,
+"note": "2025-26 Tencent donghua, finished June 2026 but only EP1-16 uploaded with 1 gap; no rating found"
+},
+"myseniorbrotheristoostrong": {
+"name": "My Senior Brother is Too Strong",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": false,
+"note": "ongoing (2025-); members-only gaps; score recalled"
+},
+"sinceiwasnttheheroine": {
+"name": "Since I Wasn't the Heroine",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "16 eps (2023); score recalled"
+},
+"aiptdub": {
+"name": "ARMS (Portuguese AI dub)",
+"completed": false,
+"hide": true,
+"note": "not English (AI Portuguese dub)"
+},
+"aiesdub": {
+"name": "Super Cube (Spanish AI dub)",
+"completed": false,
+"hide": true,
+"note": "not English (AI Spanish dub of supercub)"
+},
+"amortalsjourney-dub": {
+"name": "A Mortal's Journey (English Dub)",
+"rating": 8.0,
+"rating_src": "MAL",
+"completed": false,
+"note": "single EP1-21 collection; show ongoing; score recalled"
+},
+"bangdream": {
+"name": "BanG Dream!",
+"rating": 6.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "Season 1 (2017); not merged with other BanG Dream keys (same season label would clash); score recalled"
+},
+"madeinabyss": {
+"name": "Made in Abyss",
+"rating": 8.6,
+"rating_src": "MAL",
+"completed": true,
+"note": "Season 1; Golden City is key madeinabyssthegoldencityofthescorchingsun (not merged, season label clash risk)"
+},
+"proudemperorofeternity": {
+"name": "The Proud Emperor of Eternity",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": false,
+"note": "only S1 (EP1-20) uploaded, S2 exists; MAL entry: Wangu Kuang Di, score recalled"
+},
+"momentarylily": {
+"name": "Momentary Lily",
+"rating": 5.6,
+"rating_src": "MAL",
+"completed": true,
+"note": "2025 anime, poorly received; score recalled"
+},
+"bladeofdawn": {
+"name": "Blade of Dawn",
+"rating": 6.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "16 eps (2022-23); score recalled"
+},
+"embers": {
+"name": "EMBERS",
+"completed": true,
+"note": "2025 iQIYI donghua (Yu Jin Xing Zhe), 15 eps; no rating found"
+},
+"capsules": {
+"name": "CAPSULES",
+"rating": 7.1,
+"rating_src": "MAL",
+"completed": true,
+"note": "Capsules Project S1-S2; CAPSULES: Hero (capsuleshero) is a later separate season, not merged (unsure of its season labels); score recalled"
+},
+"edrelease": {
+"name": "Fairy Mountain",
+"completed": false,
+"merge_into": "fairymountain",
+"note": "junk key name; uploads are Fairy Mountain EP1-17"
+},
+"momokuri": {
+"name": "Momokuri",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "13-ep TV version; score recalled"
+},
+"wargodsystemimcountingonyou": {
+"name": "War God System! I'm Counting On You!",
+"rating": 7.0,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Kao Ni La Zhanshen Xitong, score recalled"
+},
+"fatalrule": {
+"name": "Fatal Rule",
+"rating": 6.8,
+"rating_src": "MAL",
+"completed": false,
+"note": "EP1 missing (uploads EP2-16); MAL entry: Shenyuan Youxi, score recalled"
+},
+"firstorder": {
+"name": "The First Order",
+"rating": 7.0,
+"rating_src": "MAL",
+"completed": true,
+"note": "Diyi Xulie S1, 16 eps (EP16 END); score recalled"
+},
+"fairytail-dub": {
+"name": "Fairy Tail (English Dub)",
+"rating": 7.57,
+"rating_src": "MAL",
+"completed": false,
+"note": "only first 13 of 175 episodes uploaded; score recalled"
+},
+"danganronpatheanimation": {
+"name": "Danganronpa: The Animation",
+"rating": 6.41,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"richestmaningame": {
+"name": "The Richest Man in Game",
+"completed": true,
+"note": "no rating found; 16-episode season finished 2024"
+},
+"meleemage": {
+"name": "The Melee Mage",
+"completed": false,
+"note": "members-only gaps; 20 episodes total, no rating found"
+},
+"whitednighttime": {
+"name": "Whited Nighttime",
+"completed": true,
+"note": "25 episodes (2018) uploaded as two compilations; no rating found"
+},
+"backtothegreatming": {
+"name": "Back to the Great Ming",
+"completed": true,
+"note": "16 episodes, finished; no rating found"
+},
+"momimsorry": {
+"name": "Mom, I'm Sorry",
+"completed": true,
+"note": "no rating found"
+},
+"jinwuwei": {
+"name": "Jin Wu Wei: The Wind Rises in Jinling",
+"completed": true,
+"note": "16 episodes, finished; no rating found"
+},
+"backasimmortallord": {
+"name": "Back as Immortal Lord",
+"completed": true,
+"note": "16 episodes, ended; no rating found"
+},
+"thrud": {
+"name": "THRUD",
+"completed": true,
+"note": "15 episodes total; no rating found"
+},
+"kuibazhishutu": {
+"name": "Kuiba: Different Paths",
+"completed": false,
+"note": "15 episodes total, 1 missing upload; Chinese title 魁拔之殊途; no rating found"
+},
+"irodukutheworldincolors": {
+"name": "IRODUKU: The World in Colors",
+"rating": 7.34,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"igotacheatskillinanotherworldandbecameunrivaledintherealworl": {
+"name": "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"blackbullet": {
+"name": "Black Bullet",
+"rating": 7.12,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"alderaminonthesky": {
+"name": "Alderamin on the Sky",
+"rating": 7.36,
+"rating_src": "MAL",
+"completed": true,
+"note": "single complete-series compilation; score recalled"
+},
+"bangdreamavemujica": {
+"name": "BanG Dream! Ave Mujica",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": true,
+"note": "separate series from other BanG Dream keys; score recalled"
+},
+"marriagetoxin": {
+"name": "Marriagetoxin",
+"rating": 7.1,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"dragonsdisciple": {
+"name": "Dragon's Disciple",
+"completed": true,
+"note": "season 1, 16 episodes; no rating found"
+},
+"ipponagain": {
+"name": "Ippon Again!",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"minamikamakurahighschoolgirlscyclingclub": {
+"name": "Minami Kamakura High School Girls Cycling Club",
+"rating": 6.0,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"transcendingthenineheavens": {
+"name": "Transcending the Nine Heavens",
+"completed": true,
+"note": "season 1 (12 episodes) complete; no rating found"
+},
+"我是学校唯一的人类": {
+"name": "I'm the Only Human at School",
+"completed": true,
+"hide": true,
+"note": "not English: Chinese-only uploads with no English subs indicated; short-episode iQIYI series"
+},
+"eternalstrife": {
+"name": "The Eternal Strife",
+"completed": true,
+"note": "season 1, 16 episodes; end not fully verified; no rating found"
+},
+"sasakiandpeeps": {
+"name": "Sasaki and Peeps",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "score recalled"
+},
+"girldownstairs": {
+"name": "The Girl Downstairs",
+"completed": true,
+"note": "MAL entry: Aishang Ta de Liyou; no rating found; see also girldownstairsall"
 }
 }
 }
