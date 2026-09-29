@@ -178,7 +178,7 @@ footer .chips{gap:14px}
   <nav class="origins" id="origins" aria-label="Origin"></nav>
   <label class="search" for="q">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a93ab" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-    <input id="q" type="search" placeholder="Search mecha, zoo, skeleton…" aria-label="Search series" autocomplete="off">
+    <input id="q" type="search" placeholder="Search all sections…" aria-label="Search series in all sections" autocomplete="off">
   </label>
 </header>
 
@@ -208,7 +208,7 @@ const ORIGINS = [
   {id:'kr', code:'KR', name:'Korean', long:'Korean webtoon & manhwa', sub:'Animation of Korean webtoons and manhwa.'}];
 const CAP = 20, PAGE = 48;
 const SHELVES = [{id:0,name:'New this week',sub:'Series with an upload that appeared in the last 7 days.'}].concat(META.shelves || []);
-const S = {q:'', ch:'All', hero:0, sel:null, season:0, playing:false, origin:'cn', shelf:null, sort:'rank', shown:PAGE};
+const S = {q:'', ch:'All', hero:0, sel:null, season:0, playing:false, origin:'cn', shelf:null, sort:'rank', shown:PAGE, open:{}};
 let LIVE = false; // true once YouTube thumbnails can load (page opened outside Claude)
 const $ = (id) => document.getElementById(id);
 const esc = (t) => String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -223,7 +223,9 @@ const PLAY = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor
 const CHEV = (d) => `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="${d < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7'}"/></svg>`;
 const org = () => ORIGINS.find(o => o.id === S.origin);
 const ALL = DATA.map((x,i) => ({x,i}));
-const inOrigin = () => ALL.filter(o => (o.x.origin || 'CN') === org().code);
+const ofOrigin = (code) => ALL.filter(o => (o.x.origin || 'CN') === code);
+const inOrigin = () => ofOrigin(org().code);
+const LIVE_ORIGINS = ORIGINS.filter(o => ofOrigin(o.code).length); // a section with no series gets no tab
 const href = (origin, shelf) => '#/' + origin + (shelf != null ? '/' + shelf : '');
 
 function frame(x, opts) {
@@ -247,8 +249,8 @@ function matches(x) {
   return hay.indexOf(S.q) >= 0;
 }
 function renderOrigins() {
-  $('origins').innerHTML = ORIGINS.map(o => {
-    const n = ALL.filter(e => (e.x.origin || 'CN') === o.code).length;
+  $('origins').innerHTML = LIVE_ORIGINS.map(o => {
+    const n = ofOrigin(o.code).length;
     return `<a class="origin" href="${href(o.id)}" title="${o.long}"${o.id === S.origin ? ' aria-current="page"' : ''}>${o.name}<small>${n}</small></a>`;
   }).join('');
 }
@@ -302,7 +304,7 @@ function renderHero() {
 }
 function renderStats() {
   const here = inOrigin().map(o => o.x);
-  $('statbox').hidden = S.shelf !== null || !here.length;
+  $('statbox').hidden = S.shelf !== null || !!S.q || !here.length;
   const up = here.reduce((n,x) => n + x.seas.reduce((m,s) => m + Math.max(1 + s.alts.length, (s.eps || []).length), 0), 0);
   const nch = chansHere().length;
   $('stats').innerHTML = [
@@ -328,6 +330,7 @@ const SORTS = {rank:['Top', null], rating:['Rating', (a,b) => (b.x.rating||0) - 
   az:['A–Z', (a,b) => a.x.title.localeCompare(b.x.title)]};
 function renderShelves() {
   if (S.shelf !== null) return renderPage();
+  if (S.q) return renderSearch();
   const html = SHELVES.map(d => {
     const items = shelfItems(d);
     if (!items.length) return '';
@@ -340,15 +343,26 @@ function renderShelves() {
         <button class="arrow next" type="button" data-scroll="1" aria-label="Scroll ${esc(d.name)} right"><span>${CHEV(1)}</span></button>
       </div></section>`;
   }).join('');
-  $('shelves').innerHTML = html || (S.q
-    ? `<div class="empty">Nothing in ${org().name} matches “${esc(S.q)}”. Try one word, like mecha, carp or skeleton.</div>`
-    : `<div class="empty">No ${org().long} series yet. They appear here as soon as an official channel uploads one.</div>`);
+  $('shelves').innerHTML = html || `<div class="empty">No ${org().long} series yet. They appear here as soon as an official channel uploads one.</div>`;
   document.querySelectorAll('.row').forEach(r => { r.addEventListener('scroll', arrows, {passive:true}); arrows({target:r}); });
 }
 function arrows(e) {
   const r = e.target, rail = r.parentNode, end = r.scrollWidth - r.clientWidth - 4;
   rail.querySelector('.prev').disabled = r.scrollLeft <= 4;
   rail.querySelector('.next').disabled = r.scrollLeft >= end;
+}
+function renderSearch() {
+  // search covers every section, the one you are in first
+  const order = [org()].concat(LIVE_ORIGINS.filter(o => o !== org()));
+  const html = order.map(o => {
+    const items = ofOrigin(o.code).filter(e => matches(e.x));
+    if (!items.length) return '';
+    const cap = S.open[o.id] ? items.length : 12;
+    return `<section aria-label="${o.name} results"><div class="shelf-head"><h2>${o.name}</h2><span>${items.length} match${items.length === 1 ? '' : 'es'} for “${esc(S.q)}”</span></div>
+      <div class="grid" style="margin-top:14px">${items.slice(0, cap).map(e => tile(e.x, e.i)).join('')}</div>
+      ${items.length > cap ? `<div class="pager" style="margin-top:18px"><button class="btn ghost" type="button" data-open-all="${o.id}">Show all ${items.length} in ${o.name}</button></div>` : ''}</section>`;
+  }).join('');
+  $('shelves').innerHTML = html || `<div class="empty">Nothing matches “${esc(S.q)}” in any section. Try one word, like mecha, carp or skeleton.</div>`;
 }
 function renderPage() {
   const d = SHELVES.find(x => x.id === S.shelf) || SHELVES[0];
@@ -403,7 +417,8 @@ function renderLegend() {
 }
 function route() {
   const m = /^#\/(cn|jp|kr)(?:\/(\d+))?/.exec(location.hash);
-  const origin = m ? m[1] : 'cn', shelf = m && m[2] !== undefined ? +m[2] : null;
+  const live = m && LIVE_ORIGINS.some(o => o.id === m[1]);
+  const origin = live ? m[1] : (LIVE_ORIGINS[0] || ORIGINS[0]).id, shelf = live && m[2] !== undefined ? +m[2] : null;
   const moved = origin !== S.origin || shelf !== S.shelf;
   if (origin !== S.origin) { S.hero = 0; S.ch = 'All'; }
   if (shelf !== S.shelf) { S.sort = 'rank'; S.shown = PAGE; }
@@ -415,7 +430,7 @@ function route() {
 document.addEventListener('click', (e) => {
   const ep = e.target.closest('[data-ep]');
   if (ep && LIVE) { e.preventDefault(); S.playId = ep.dataset.ep; S.playing = true; renderSheet(); return; }
-  const t = e.target.closest('[data-open],[data-hero],[data-ch],[data-close],[data-season],[data-play],[data-scroll],[data-sort],[data-more]');
+  const t = e.target.closest('[data-open],[data-hero],[data-ch],[data-close],[data-season],[data-play],[data-scroll],[data-sort],[data-more],[data-open-all]');
   if (!t) { if (e.target === $('veil')) { S.sel = null; S.playing = false; renderSheet(); } return; }
   if (t.dataset.open !== undefined) { S.sel = +t.dataset.open; S.season = 0; S.playing = false; S.playId = null; renderSheet(); }
   else if (t.dataset.hero) { S.hero += +t.dataset.hero; renderHero(); }
@@ -426,9 +441,10 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.scroll) { const r = t.parentNode.querySelector('.row'); r.scrollBy({left: +t.dataset.scroll * r.clientWidth * 0.9}); }
   else if (t.dataset.sort) { S.sort = t.dataset.sort; S.shown = PAGE; renderShelves(); }
   else if (t.dataset.more !== undefined) { S.shown += PAGE; renderShelves(); }
+  else if (t.dataset.openAll) { S.open[t.dataset.openAll] = true; renderShelves(); }
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.sel !== null) { S.sel = null; S.playing = false; renderSheet(); } });
-$('q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); renderAll(); });
+$('q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); S.open = {}; renderAll(); });
 $('foot').textContent = 'Updated ' + new Date(META.updated).toLocaleString([], {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}) + (META.added ? ' · ' + META.added + ' new upload' + (META.added > 1 ? 's' : '') : '') + (META.hidden ? ' · ' + META.hidden + ' AI-slop series hidden' : '') + (META.failed.length ? ' · could not reach ' + META.failed.join(', ') : '') + '. Refreshes daily at 10 PM.';
 window.addEventListener('hashchange', route);
 route();

@@ -5,7 +5,7 @@ A browsable archive of long-form animation in three sections: Donghua (Chinese),
 ## How it runs
 - **22:00 IST, GitHub Actions** (`.github/workflows/nightly.yml`): asks the YouTube Data API for uploads newer than the ones already saved, checks new series' comments for AI slop, rebuilds `index.html`, publishes to GitHub Pages.
 - **23:13 IST, Claude scheduled task**: researches ratings and completion for unrated series and commits them to `engine/curated.json`; that push triggers a rebuild.
-- Any push to `engine/` rebuilds and republishes in about 2 minutes.
+- Any push to `engine/` or the workflow rebuilds and republishes in about 2 minutes. Put `[skip ci]` in a commit message to push without publishing (the curation job does this for its progress commits).
 
 ## Files
 | Path | What |

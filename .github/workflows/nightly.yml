@@ -6,7 +6,7 @@ on:
   workflow_dispatch:            # "Run workflow" button (phone works too)
   push:
     branches: [main]
-    paths: ["engine/**"]        # curation or code change: rebuild and publish only
+    paths: ["engine/**", ".github/workflows/**"]   # curation, code or workflow change: rebuild and publish only
 
 permissions:
   contents: write
@@ -21,16 +21,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     env:
       TZ: Asia/Kolkata
       SITE_DIR: _site
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -58,9 +55,27 @@ jobs:
             git push
           fi
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+
+  # Separate job: the uploaded site is settled before publishing starts. GitHub's Pages API
+  # sometimes misses a just-uploaded artifact, so one retry follows after a short wait.
+  # (Re-running a failed run from the Actions page does not help: it finds two artifacts.)
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url || steps.retry.outputs.page_url }}
+    steps:
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - if: steps.deploy.outcome == 'failure'
+        run: sleep 30
+      - id: retry
+        if: steps.deploy.outcome == 'failure'
+        uses: actions/deploy-pages@v5
