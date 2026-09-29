@@ -1,42 +1,1507 @@
 {
-"same":[["NiGVXGZAAW0","HJnSjssEOro"],["ggdjWKmh4Cw","pRGG4_vbtl4"],["NEZ79bljAEY","IeKBV-_XJNs"],["nzmpbg4z16s","fmmL8S1jT0c"],["Z6h3yGOlVxk","pi7OtfnyjZw"],["vGD3EBXpTB4","jItZSbCdksE"],["7KqQxIkw_xw","FR9vg2FOAAE"],["2ST5qq4Kybw","fGtZ78Md0D0"]],
-"seasons":{"FR9vg2FOAAE":2,"IeKBV-_XJNs":2,"fGtZ78Md0D0":2,"fmmL8S1jT0c":"1-3 (compilation)","jItZSbCdksE":2,"pi7OtfnyjZw":2},
-"links":[
-{"conf":"confirmed","ids":["8JxIAlyZADc","7uLRtBir5kU"],"name":"Horror Player: I Devour the Supernatural","note":"Identical runtime (2:09:06)"},
-{"conf":"confirmed","ids":["3842sWgrMjw","ZWIcdu5mHeE"],"name":"Post-Apocalyptic Landlord: S-Rank Mutant Tenants","note":"Runtime within 3s"},
-{"conf":"confirmed","ids":["VoRlQE1eOA4","Juk-3OR9yZI"],"name":"Soul Stolen: Copy Every Power (Soccer)","note":"Identical runtime (1:48:42)"},
-{"conf":"confirmed","ids":["sxhslQoicB8","_fB3DQ_hdy8"],"name":"The White Demon Mecha","note":"Identical runtime (2:05:46)"},
-{"conf":"confirmed","ids":["sxNW5Eh1SIw","XR6P5XKedTI"],"name":"Mana Bar Hit 1 Trillion","note":"Runtime within 3s"},
-{"conf":"confirmed","ids":["cEk34DMnUvU","U63AhhGMF8M"],"name":"Ultimate Mech Evolution: Xing Tian","note":"Runtime within 3s"},
-{"conf":"confirmed","ids":["mX-J_kKqgO0","-jcqW172gr0"],"name":"Caged as Pet? I Devour the Beast World","note":"Runtime within 2s"},
-{"conf":"confirmed","ids":["kyUgxIXuwPk","aKHYSXV8L-s"],"name":"F-Rank Fox to Overlord: Evolution by Devour","note":"Runtime within 2s"},
-{"conf":"confirmed","ids":["RR3C_MAnGAY","M19K6CgclyA"],"name":"Bankrupt Zoo: Beast Evolution System","note":"Identical runtime (1:24:47)"},
-{"conf":"confirmed","ids":["As-vHHRSAUE","tCrOI7vVnuc","umsx04561DI"],"name":"Infinite Beast System: Mythic Monster Army","note":"Alpha and Legend within 2s; second Legend upload (Beast Prison title) 19s off, same premise"},
-{"conf":"confirmed","ids":["EqJHenpR3y0","zwQqKUyk8Nc"],"name":"Prison of Abyss: The Sleeping Prodigy","note":"Runtime within 1s"},
-{"conf":"confirmed","ids":["-r9A47S8bQ4","JXac2Qv6mpQ"],"name":"Undead Overlord: 999-Level Skeleton Soldiers","note":"Runtime within 5s"},
-{"conf":"confirmed","ids":["5E-NsN8il4E","DXxefitIBOQ","iVSRsPE9XVw"],"name":"Ruyi Golden Cudgel","note":"Alpha 'Monkey King's Staff' and Legend within 6s; Alpha 'Ruyi Jingu Bang' upload is a longer cut (+15 min), same premise"},
-{"conf":"confirmed","ids":["BnrAvxjEJ40","4iwN3wzrD1c"],"name":"Doomsday Mecha Truck","note":"Runtime within 10s"},
-{"conf":"confirmed","ids":["pt4Qzkgn_5Q","1g9zMnBfJBI"],"name":"F-Rank Summoner, Boss-Soloing Pets","note":"Runtime within 4s"},
-{"conf":"confirmed","ids":["nzmpbg4z16s"],"name":"God of Wealth (Real Money) Talent","note":"Seasons 1-3 compilation runtime equals S1+S2+S3 to the second, so it is a re-upload"},
-{"conf":"probable","ids":["-EPPR7gXBbg","2ST5qq4Kybw","ZtWZUikVlLE","4Nz_Jvre3Eo"],"name":"Apocalypse CEO: S-Rank Zombie Employees","note":"Same premise on both channels; runtimes 11s and 39s apart"},
-{"conf":"probable","ids":["d27x3aYS2Ew","v4ztxkt88oI","auZecF-IgYU"],"name":"Skeletons Train Themselves / Lazy Summoner","note":"Alpha single upload (2:25:51) is close to Legend S1+S2 (2:19:25); NeonLore 'self-taught skeleton army' S1 is 4:47 shorter than Legend S1"},
-{"conf":"probable","ids":["U3cnlVeQMIA","y74X18wia-U"],"name":"Self-Aware Fireball","note":"Same premise, runtimes 2 min apart"},
-{"conf":"probable","ids":["edsKtWmfh-E","DO4GMG0xN9k"],"name":"Koi / Lucky Carp to Dragon","note":"Same premise, runtimes 82s apart"},
-{"conf":"probable","ids":["x-IybTCeOAE","rlL5uTU5vYM"],"name":"Infinite Storage: Billions of Supplies","note":"Same premise, runtimes 40s apart"},
-{"conf":"probable","ids":["qZRA79Fkt7Y","omZ3COcC2oQ"],"name":"Horror Game: Ghost Bosses Work for Me","note":"Same premise, runtimes 18s apart"},
-{"conf":"probable","ids":["K9gAvKQEyoA","Ay8SeZny7GI"],"name":"Mecha Awakens Early / Insect King","note":"Rebirth before mecha awakening; runtimes 25s apart"},
-{"conf":"probable","ids":["niYg0MtFjnM","CNt5YBFjRXs"],"name":"Omni-God: All Elements Awakened","note":"Same premise and season numbering (S3 to S5 on both); NeonLore cuts run about 25 min shorter each"},
-{"conf":"probable","ids":["46QuIbYl7jA","LgFsraspvkw"],"name":"Deep-Sea Warship Mechanic","note":"Same premise, runtimes 4 min apart"},
-{"conf":"probable","ids":["ypGXoFdz28k","RgEELBoe1SY"],"name":"Ranger Turned Mythical Beast Tamer","note":"Same premise, runtimes 7 min apart"},
-{"conf":"possible","ids":["vZLq-AQqEaY","uP9UcmXkALQ"],"name":"Zero-Attack / SSS Mecha Girl","note":"Similar premise; runtimes differ by 12 min"},
-{"conf":"possible","ids":["RMfP0dnomKM","hRDJinyjwfk","LbuxvArPWus"],"name":"Hear Sea Beasts' Minds","note":"Same premise across 3 uploads; runtimes differ by 3 to 7 min"},
-{"conf":"possible","ids":["oAZkPyXx_Ds","4Heu4Vj3_pI","xevXOu_0R-0"],"name":"Devouring Snake to Divine Beast","note":"Common premise; runtimes differ widely, may be different works"},
-{"conf":"probable","ids":["2WAXLiFn9cc","TFnKZkMZmiQ"],"name":"Monster Bureau: Every Monster Is My Bro","note":"Two Legend uploads, same premise; likely parts 1 and 2"},
-{"conf":"probable","ids":["LA15hCTbH4g","MZvYL-M1egU"],"name":"Apocalypse Teacher: SSS Mutant Students","note":"Two Legend uploads, same premise; likely parts 1 and 2"},
-{"conf":"probable","ids":["usT2finbLjc","OLlUD7YHNMs"],"name":"Sea God Rod and Six Beauties","note":"Two YuErYY uploads, near-identical titles; runtimes 32 min apart"},
-{"conf":"possible","ids":["iytcnOAueeY","3R0rYk80X68","e6c3zrbsp5g"],"name":"Xuanwu Turtle Sea City","note":"Three YuErYY uploads, same Xuanwu turtle premise"},
-{"conf":"possible","ids":["PJoPUvFvHUM","3D2pLai8CCQ"],"name":"Ghost Ship Skeleton Crew","note":"Two YuErYY uploads, same premise"},
-{"conf":"possible","ids":["ZRtr7jWAjQI","L9k-hQWLGJA"],"name":"Undead Army Upgrade Lord","note":"Two YuErYY uploads, same premise"}
+"same": [
+[
+"NiGVXGZAAW0",
+"HJnSjssEOro"
 ],
-"checks":[["-EPPR7gXBbg","yq2VkjheAmY"],["EqJHenpR3y0","qZRA79Fkt7Y"],["4w1U0S9RXfA","7gVhgIEoci0"],["2mQESM4Kimo","OyNcGzRQB90"],["TFnKZkMZmiQ","ZV0g4Ux5CtE"],["IPc9TPdcRJU","0CulwXpGvfM"]]
+[
+"ggdjWKmh4Cw",
+"pRGG4_vbtl4"
+],
+[
+"NEZ79bljAEY",
+"IeKBV-_XJNs"
+],
+[
+"nzmpbg4z16s",
+"fmmL8S1jT0c"
+],
+[
+"Z6h3yGOlVxk",
+"pi7OtfnyjZw"
+],
+[
+"vGD3EBXpTB4",
+"jItZSbCdksE"
+],
+[
+"7KqQxIkw_xw",
+"FR9vg2FOAAE"
+],
+[
+"2ST5qq4Kybw",
+"fGtZ78Md0D0"
+]
+],
+"seasons": {
+"FR9vg2FOAAE": 2,
+"IeKBV-_XJNs": 2,
+"fGtZ78Md0D0": 2,
+"fmmL8S1jT0c": "1-3 (compilation)",
+"jItZSbCdksE": 2,
+"pi7OtfnyjZw": 2
+},
+"links": [
+{
+"conf": "confirmed",
+"ids": [
+"8JxIAlyZADc",
+"7uLRtBir5kU"
+],
+"name": "Horror Player: I Devour the Supernatural",
+"note": "Identical runtime (2:09:06)"
+},
+{
+"conf": "confirmed",
+"ids": [
+"3842sWgrMjw",
+"ZWIcdu5mHeE"
+],
+"name": "Post-Apocalyptic Landlord: S-Rank Mutant Tenants",
+"note": "Runtime within 3s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"VoRlQE1eOA4",
+"Juk-3OR9yZI"
+],
+"name": "Soul Stolen: Copy Every Power (Soccer)",
+"note": "Identical runtime (1:48:42)"
+},
+{
+"conf": "confirmed",
+"ids": [
+"sxhslQoicB8",
+"_fB3DQ_hdy8"
+],
+"name": "The White Demon Mecha",
+"note": "Identical runtime (2:05:46)"
+},
+{
+"conf": "confirmed",
+"ids": [
+"sxNW5Eh1SIw",
+"XR6P5XKedTI"
+],
+"name": "Mana Bar Hit 1 Trillion",
+"note": "Runtime within 3s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"cEk34DMnUvU",
+"U63AhhGMF8M"
+],
+"name": "Ultimate Mech Evolution: Xing Tian",
+"note": "Runtime within 3s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"mX-J_kKqgO0",
+"-jcqW172gr0"
+],
+"name": "Caged as Pet? I Devour the Beast World",
+"note": "Runtime within 2s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"kyUgxIXuwPk",
+"aKHYSXV8L-s"
+],
+"name": "F-Rank Fox to Overlord: Evolution by Devour",
+"note": "Runtime within 2s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"RR3C_MAnGAY",
+"M19K6CgclyA"
+],
+"name": "Bankrupt Zoo: Beast Evolution System",
+"note": "Identical runtime (1:24:47)"
+},
+{
+"conf": "confirmed",
+"ids": [
+"As-vHHRSAUE",
+"tCrOI7vVnuc",
+"umsx04561DI"
+],
+"name": "Infinite Beast System: Mythic Monster Army",
+"note": "Alpha and Legend within 2s; second Legend upload (Beast Prison title) 19s off, same premise"
+},
+{
+"conf": "confirmed",
+"ids": [
+"EqJHenpR3y0",
+"zwQqKUyk8Nc"
+],
+"name": "Prison of Abyss: The Sleeping Prodigy",
+"note": "Runtime within 1s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"-r9A47S8bQ4",
+"JXac2Qv6mpQ"
+],
+"name": "Undead Overlord: 999-Level Skeleton Soldiers",
+"note": "Runtime within 5s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"5E-NsN8il4E",
+"DXxefitIBOQ",
+"iVSRsPE9XVw"
+],
+"name": "Ruyi Golden Cudgel",
+"note": "Alpha 'Monkey King's Staff' and Legend within 6s; Alpha 'Ruyi Jingu Bang' upload is a longer cut (+15 min), same premise"
+},
+{
+"conf": "confirmed",
+"ids": [
+"BnrAvxjEJ40",
+"4iwN3wzrD1c"
+],
+"name": "Doomsday Mecha Truck",
+"note": "Runtime within 10s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"pt4Qzkgn_5Q",
+"1g9zMnBfJBI"
+],
+"name": "F-Rank Summoner, Boss-Soloing Pets",
+"note": "Runtime within 4s"
+},
+{
+"conf": "confirmed",
+"ids": [
+"nzmpbg4z16s"
+],
+"name": "God of Wealth (Real Money) Talent",
+"note": "Seasons 1-3 compilation runtime equals S1+S2+S3 to the second, so it is a re-upload"
+},
+{
+"conf": "probable",
+"ids": [
+"-EPPR7gXBbg",
+"2ST5qq4Kybw",
+"ZtWZUikVlLE",
+"4Nz_Jvre3Eo"
+],
+"name": "Apocalypse CEO: S-Rank Zombie Employees",
+"note": "Same premise on both channels; runtimes 11s and 39s apart"
+},
+{
+"conf": "probable",
+"ids": [
+"d27x3aYS2Ew",
+"v4ztxkt88oI",
+"auZecF-IgYU"
+],
+"name": "Skeletons Train Themselves / Lazy Summoner",
+"note": "Alpha single upload (2:25:51) is close to Legend S1+S2 (2:19:25); NeonLore 'self-taught skeleton army' S1 is 4:47 shorter than Legend S1"
+},
+{
+"conf": "probable",
+"ids": [
+"U3cnlVeQMIA",
+"y74X18wia-U"
+],
+"name": "Self-Aware Fireball",
+"note": "Same premise, runtimes 2 min apart"
+},
+{
+"conf": "probable",
+"ids": [
+"edsKtWmfh-E",
+"DO4GMG0xN9k"
+],
+"name": "Koi / Lucky Carp to Dragon",
+"note": "Same premise, runtimes 82s apart"
+},
+{
+"conf": "probable",
+"ids": [
+"x-IybTCeOAE",
+"rlL5uTU5vYM"
+],
+"name": "Infinite Storage: Billions of Supplies",
+"note": "Same premise, runtimes 40s apart"
+},
+{
+"conf": "probable",
+"ids": [
+"qZRA79Fkt7Y",
+"omZ3COcC2oQ"
+],
+"name": "Horror Game: Ghost Bosses Work for Me",
+"note": "Same premise, runtimes 18s apart"
+},
+{
+"conf": "probable",
+"ids": [
+"K9gAvKQEyoA",
+"Ay8SeZny7GI"
+],
+"name": "Mecha Awakens Early / Insect King",
+"note": "Rebirth before mecha awakening; runtimes 25s apart"
+},
+{
+"conf": "probable",
+"ids": [
+"niYg0MtFjnM",
+"CNt5YBFjRXs"
+],
+"name": "Omni-God: All Elements Awakened",
+"note": "Same premise and season numbering (S3 to S5 on both); NeonLore cuts run about 25 min shorter each"
+},
+{
+"conf": "probable",
+"ids": [
+"46QuIbYl7jA",
+"LgFsraspvkw"
+],
+"name": "Deep-Sea Warship Mechanic",
+"note": "Same premise, runtimes 4 min apart"
+},
+{
+"conf": "probable",
+"ids": [
+"ypGXoFdz28k",
+"RgEELBoe1SY"
+],
+"name": "Ranger Turned Mythical Beast Tamer",
+"note": "Same premise, runtimes 7 min apart"
+},
+{
+"conf": "possible",
+"ids": [
+"vZLq-AQqEaY",
+"uP9UcmXkALQ"
+],
+"name": "Zero-Attack / SSS Mecha Girl",
+"note": "Similar premise; runtimes differ by 12 min"
+},
+{
+"conf": "possible",
+"ids": [
+"RMfP0dnomKM",
+"hRDJinyjwfk",
+"LbuxvArPWus"
+],
+"name": "Hear Sea Beasts' Minds",
+"note": "Same premise across 3 uploads; runtimes differ by 3 to 7 min"
+},
+{
+"conf": "possible",
+"ids": [
+"oAZkPyXx_Ds",
+"4Heu4Vj3_pI",
+"xevXOu_0R-0"
+],
+"name": "Devouring Snake to Divine Beast",
+"note": "Common premise; runtimes differ widely, may be different works"
+},
+{
+"conf": "probable",
+"ids": [
+"2WAXLiFn9cc",
+"TFnKZkMZmiQ"
+],
+"name": "Monster Bureau: Every Monster Is My Bro",
+"note": "Two Legend uploads, same premise; likely parts 1 and 2"
+},
+{
+"conf": "probable",
+"ids": [
+"LA15hCTbH4g",
+"MZvYL-M1egU"
+],
+"name": "Apocalypse Teacher: SSS Mutant Students",
+"note": "Two Legend uploads, same premise; likely parts 1 and 2"
+},
+{
+"conf": "probable",
+"ids": [
+"usT2finbLjc",
+"OLlUD7YHNMs"
+],
+"name": "Sea God Rod and Six Beauties",
+"note": "Two YuErYY uploads, near-identical titles; runtimes 32 min apart"
+},
+{
+"conf": "possible",
+"ids": [
+"iytcnOAueeY",
+"3R0rYk80X68",
+"e6c3zrbsp5g"
+],
+"name": "Xuanwu Turtle Sea City",
+"note": "Three YuErYY uploads, same Xuanwu turtle premise"
+},
+{
+"conf": "possible",
+"ids": [
+"PJoPUvFvHUM",
+"3D2pLai8CCQ"
+],
+"name": "Ghost Ship Skeleton Crew",
+"note": "Two YuErYY uploads, same premise"
+},
+{
+"conf": "possible",
+"ids": [
+"ZRtr7jWAjQI",
+"L9k-hQWLGJA"
+],
+"name": "Undead Army Upgrade Lord",
+"note": "Two YuErYY uploads, same premise"
+}
+],
+"checks": [
+[
+"-EPPR7gXBbg",
+"yq2VkjheAmY"
+],
+[
+"EqJHenpR3y0",
+"qZRA79Fkt7Y"
+],
+[
+"4w1U0S9RXfA",
+"7gVhgIEoci0"
+],
+[
+"2mQESM4Kimo",
+"OyNcGzRQB90"
+],
+[
+"TFnKZkMZmiQ",
+"ZV0g4Ux5CtE"
+],
+[
+"IPc9TPdcRJU",
+"0CulwXpGvfM"
+]
+],
+"meta": {
+"fairytail": {
+"name": "Fairy Tail",
+"rating": 7.57,
+"rating_src": "MAL",
+"completed": true,
+"note": "covers 2009 series + 2014 series (EP1-277); Final Season is key fairytailfinalseason"
+},
+"soulland": {
+"name": "Soul Land",
+"rating": 7.8,
+"rating_src": "MAL",
+"completed": false,
+"note": "S1 finished (EP263) but 3 eps missing; 'Season 2' uploads are actually Soul Land 2 EP95-141"
+},
+"amortalsjourney": {
+"name": "A Mortal's Journey",
+"rating": 8.1,
+"rating_src": "MAL",
+"completed": false,
+"note": "mostly multi-episode collections; members-only gaps; still ongoing (Sea of Stars arc)"
+},
+"perfectworld": {
+"name": "Perfect World",
+"rating": 8.1,
+"rating_src": "MAL",
+"completed": false,
+"note": "still ongoing; members-only gaps"
+},
+"tenthousandworlds": {
+"name": "Ten Thousand Worlds",
+"completed": false,
+"note": "Wan Jie Du Zun; ongoing; members-only gaps; no rating found"
+},
+"spiritswordsovereign": {
+"name": "Spirit Sword Sovereign",
+"completed": false,
+"note": "Ling Jian Zun; ongoing; members-only gaps; no rating found"
+},
+"swallowedstar": {
+"name": "Swallowed Star",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": false,
+"note": "still ongoing; members-only gaps"
+},
+"reborn": {
+"name": "Reborn!",
+"rating": 8.13,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Katekyo Hitman Reborn!"
+},
+"againsttheskysupreme": {
+"name": "Against the Sky Supreme",
+"completed": false,
+"note": "Ni Tian Zhizun; ongoing; members-only gaps; no rating found"
+},
+"bigbrother": {
+"name": "Big Brother",
+"completed": false,
+"note": "Shixiong A Shixiong; ongoing; members-only gaps in S1; no rating found"
+},
+"throneofseal": {
+"name": "Throne of Seal",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": false,
+"note": "series ended around EP208 but uploads incomplete; EP999 is a parse outlier"
+},
+"mythofeternity": {
+"name": "Myth of Eternity",
+"completed": false,
+"note": "Wangu Shenhua; ongoing; members-only gaps; no rating found"
+},
+"demongods": {
+"name": "Tales of Demons and Gods",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": false,
+"note": "Yao Shen Ji; ongoing; collections with members-only gaps"
+},
+"hunterhunter": {
+"name": "Hunter x Hunter",
+"rating": 9.03,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Hunter x Hunter (2011)"
+},
+"onehundredthousandyearsofqirefining": {
+"name": "One Hundred Thousand Years of Qi Refining",
+"completed": false,
+"note": "Lian Qi Shi Wan Nian; ongoing; members-only gaps; no rating found"
+},
+"onesteptowardsfreedom": {
+"name": "One Step Towards Freedom",
+"completed": false,
+"note": "Du Bu Xiaoyao; ongoing; members-only gaps; no rating found"
+},
+"thattimeigotreincarnatedasaslime": {
+"name": "That Time I Got Reincarnated as a Slime",
+"rating": 8.1,
+"rating_src": "MAL",
+"completed": false,
+"note": "S4 is a five-cour run started April 2026, still airing; S1/S2 uploaded as compilations"
+},
+"renegadeimmortal": {
+"name": "Renegade Immortal",
+"rating": 8.4,
+"rating_src": "MAL",
+"completed": false,
+"note": "still ongoing; members-only gaps (EP1 missing)"
+},
+"legendofxianwu": {
+"name": "Legend of Xianwu",
+"completed": false,
+"note": "Xianwu Chuan; weekly, still ongoing; no rating found"
+},
+"peerlessmartialspirit": {
+"name": "Peerless Martial Spirit",
+"completed": false,
+"note": "Jueshi Wuhun; ongoing; members-only gaps; no rating found"
+},
+"supremegodemperor": {
+"name": "Supreme God Emperor",
+"completed": false,
+"note": "ongoing; no rating found"
+},
+"awilleternal": {
+"name": "A Will Eternal",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": false,
+"note": "S1-2 only as compilations with gaps; S3 ongoing"
+},
+"legendofskylord": {
+"name": "The Legend of Sky Lord",
+"completed": false,
+"note": "3D version (2024); ongoing; members-only gaps; no rating found"
+},
+"magicchefoficeandfire": {
+"name": "The Magic Chef of Ice and Fire",
+"completed": false,
+"note": "Bing Huo Mo Chu; weekly, still ongoing; no rating found"
+},
+"apotheosis": {
+"name": "Apotheosis",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps; S3 numbering restarts (EP1..EP106), may overlap S1-2 uploads"
+},
+"successofmmpyreanxuanemperor": {
+"name": "The Success of Empyrean Xuan Emperor",
+"completed": false,
+"note": "Jiu Tian Xuan Di Jue; ongoing; no rating found"
+},
+"斗罗大陆2绝世唐门": {
+"merge_into": "soulland2thepeerlesstangclan",
+"name": "Soul Land 2: The Peerless Tang Clan",
+"completed": false,
+"note": "naming variant of soulland2thepeerlesstangclan"
+},
+"wanjiezhizun": {
+"name": "Wan Jie Zhi Zun",
+"completed": false,
+"note": "ongoing; 2 gaps; key 万界至尊 (EP2-71) overlaps it; no rating found"
+},
+"legendofsworddomain": {
+"name": "The Legend of Sword Domain",
+"completed": false,
+"note": "Jian Yu Feng Yun; renewed for further seasons, ongoing; no rating found"
+},
+"godofwardominates": {
+"name": "The God of War Dominates (Martial Master)",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": false,
+"note": "MAL entry: Wushen Zhuzai; still airing (700+ eps), uploads are 20-ep compilations up to EP473"
+},
+"wonderland": {
+"name": "Wonderland",
+"rating": 7.02,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Wan Jie Xian Zong 5th Season (eps 177-464); series ended at EP464 in July 2024"
+},
+"attackontitan": {
+"name": "Attack on Titan",
+"rating": 8.56,
+"rating_src": "MAL",
+"completed": true,
+"note": "S4 overlaps attackontitanthefinalseasonpart (compilations)"
+},
+"rezerostartinglifeinanotherworld": {
+"name": "Re:ZERO -Starting Life in Another World-",
+"rating": 8.23,
+"rating_src": "MAL",
+"completed": false,
+"note": "S4 (19 eps) still airing, finale ~2026-09-30; 16 S4 eps uploaded"
+},
+"welcometodemonschoolirumakun": {
+"name": "Welcome to Demon School! Iruma-kun",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "S4 (24 eps) finished 2026-09-27; rating rounded across seasons"
+},
+"taleofherdinggod": {
+"name": "Tales of Herding Gods",
+"completed": false,
+"note": "no rating found on MAL (AnimeSchedule 8.31); still airing weekly (EP103 in Oct 2026)"
+},
+"lingwucontinent": {
+"name": "Lingwu Continent",
+"rating": 6.83,
+"rating_src": "MAL",
+"completed": false,
+"note": "MAL entry: Ling Wu Dalu; still airing"
+},
+"urbanmiracledoctor": {
+"name": "Urban Miracle Doctor",
+"rating": 6.73,
+"rating_src": "MAL",
+"completed": false,
+"note": "MAL entry: Du Shi Gu Xian Yi; still airing (216/250 on iQIYI)"
+},
+"soulland2thepeerlesstangclan": {
+"name": "Soul Land 2: The Peerless Tang Clan",
+"rating": 8.03,
+"rating_src": "MAL",
+"completed": false,
+"note": "still airing; same show as 斗罗大陆2绝世唐门 key (overlapping compilations, not merged) and soulland S2 uploads"
+},
+"supremelordofgalaxy": {
+"name": "Supreme Lord of Galaxy",
+"rating": 6.14,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps; S3 uploads (EP86-112) overlap S2 numbering"
+},
+"greatruler": {
+"name": "The Great Ruler",
+"rating": 7.16,
+"rating_src": "MAL",
+"completed": false,
+"note": "S2 still airing (EP41 of 52 due Oct 2026); rating is MAL S2 (Da Zhuzai: Nian Fan 2)"
+},
+"2purpleriver": {
+"name": "Purple River",
+"rating": 7.31,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL lists 42 eps for S1 but 41 uploaded; S2 (52 eps) finished 2025"
+},
+"greatjourneyofteenagers": {
+"name": "Great Journey of Teenagers",
+"rating": 7.29,
+"rating_src": "MAL",
+"completed": true,
+"note": "covers SP, S2, S3, S4 (all finished); S1 not uploaded here; sequel Nanming Li Huo exists"
+},
+"thattimeigotreincarnatedasaslime-dub": {
+"name": "That Time I Got Reincarnated as a Slime (English Dub)",
+"rating": 8.14,
+"rating_src": "MAL",
+"completed": true,
+"note": "dub covers S1-S3 (S4 not dubbed yet)"
+},
+"gloriousrevengeofyefeng": {
+"name": "Glorious Revenge of Ye Feng",
+"rating": 6.98,
+"rating_src": "MAL",
+"completed": false,
+"note": "MAL entry: Dubu Wangu 2nd Season; S1 uploads cover EP1-130 (S1+S2), 'S2' uploads EP21-46 are a newer season with a gap"
+},
+"immortality": {
+"name": "Immortality",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Yong Sheng; S5 finished May 2026"
+},
+"superheroic": {
+"name": "Super Heroic",
+"completed": false,
+"note": "members-only gaps (267 missing); no rating found; iQIYI album URL resolves to Super Heroic Spirit, possibly same show as superheroicspirit (overlap, not merged)"
+},
+"supremealchemy": {
+"name": "Supreme Alchemy",
+"rating": 7.13,
+"rating_src": "MAL",
+"completed": false,
+"note": "MAL entry: Dan Dao Zhizun; still airing (193+ eps)"
+},
+"jojosbizarreadventureseason4part": {
+"name": "JoJo's Bizarre Adventure",
+"rating": 8.4,
+"rating_src": "MAL",
+"completed": false,
+"note": "duplicate of jojosbizarreadventure (partial compilations of S2-S4)",
+"hide": true
+},
+"yishiduzun": {
+"name": "The Lone Sword Overlord (Yi Shi Du Zun)",
+"rating": 6.65,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps; series ended at EP165 (Oct 2025)"
+},
+"ancientmyth": {
+"merge_into": "mythofeternity",
+"name": "Myth of Eternity",
+"completed": false,
+"note": "naming variant of mythofeternity"
+},
+"demonhunter": {
+"name": "The Demon Hunter",
+"rating": 8.2,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps in S2; MAL entry: Cang Yuan Tu 2; overlaps 2thedemonhunter (not merged)"
+},
+"jadedynasty": {
+"name": "Jade Dynasty",
+"rating": 7.94,
+"rating_src": "MAL",
+"completed": false,
+"note": "3 episodes missing (S2/S3); S3 finished Oct 2025"
+},
+"landofmiracles": {
+"name": "The Land of Miracles",
+"rating": 7.53,
+"rating_src": "MAL",
+"completed": false,
+"note": "1 episode missing in S1; S2/S3 are single collections; show finished 2023"
+},
+"legendaryoverlord": {
+"name": "Legendary Overlord",
+"rating": 7.25,
+"rating_src": "MAL",
+"completed": false,
+"note": "series ended 2022 (3 seasons + special); uploads stop at EP77, may be slightly short; verify"
+},
+"beelzebub": {
+"name": "Beelzebub",
+"rating": 7.83,
+"rating_src": "MAL",
+"completed": true
+},
+"mushokutenseijoblessreincarnation": {
+"name": "Mushoku Tensei: Jobless Reincarnation",
+"rating": 8.36,
+"rating_src": "MAL",
+"completed": false,
+"note": "S3 cour 1 (14 eps) done Sept 2026, cour 2 (13 eps) still to air"
+},
+"iannoyedmillionsofcultivators": {
+"name": "I Annoyed Millions of Cultivators",
+"rating": 6.1,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps"
+},
+"ludijianxian": {
+"name": "Lu Di Jian Xian (Keyboard Immortal)",
+"completed": true,
+"note": "no rating found; 150 eps, finished"
+},
+"foxspiritmatchmaker": {
+"name": "Fox Spirit Matchmaker",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": false,
+"note": "S13 (Huangfeng Ridge arc) still airing in 2026; S8 missing 1 ep; many seasons not uploaded; rating approx. across seasons (S1 7.14, S6 7.37)"
+},
+"superheroicspirit": {
+"name": "Super Heroic Spirit",
+"completed": false,
+"note": "no rating found; iQIYI donghua, S1 180 eps done, S2 (2026) still airing; not the same as key superheroic (unverified)"
+},
+"aceofdiamondact": {
+"name": "Ace of Diamond Act II",
+"rating": 8.28,
+"rating_src": "MAL",
+"completed": false,
+"note": "MAL lists 52 eps, only 51 uploaded"
+},
+"bloodriver": {
+"name": "Blood River",
+"completed": false,
+"hide": true,
+"note": "live action drama (Gong Jun / Peng Xiaoran)"
+},
+"greatruler-dub": {
+"name": "The Great Ruler (English Dub)",
+"rating": 7.76,
+"rating_src": "MAL",
+"completed": false,
+"note": "MAL entry: Da Zhuzai: Nian Fan; second year-long season still airing in 2026"
+},
+"shangrilafrontier": {
+"name": "Shangri-La Frontier",
+"rating": 8.25,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 as one compilation video, S2 per episode"
+},
+"fairytailfinalseason": {
+"name": "Fairy Tail: Final Series",
+"rating": 7.63,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "fairytail"
+},
+"howdareyou": {
+"name": "How Dare You!?",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Cheng He Titong (S1 7.99, S2 7.76); animated version, not the 2026 live action"
+},
+"spyfamily": {
+"name": "SPY x FAMILY",
+"rating": 8.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "approx. S1 score; S3 8.21"
+},
+"againstthegods": {
+"name": "Against the Gods",
+"rating": 7.8,
+"rating_src": "MAL",
+"completed": false,
+"note": "S2 (Nian Fan) still airing (52 planned); members-only gaps"
+},
+"ahirunosora": {
+"name": "Ahiru no Sora",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": true,
+"note": "rating from recall, not verified; regular TV anime (Diomedea), not AI",
+"quality": "quality"
+},
+"amortalsjourneytoimmortality": {
+"merge_into": "amortalsjourney",
+"name": "A Mortal's Journey",
+"completed": false,
+"note": "naming variant of amortalsjourney"
+},
+"jojosbizarreadventurestardustcrusaders": {
+"name": "JoJo's Bizarre Adventure",
+"rating": 8.3,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "jojosbizarreadventure",
+"note": "Stardust Crusaders (2 cours); rating approx. from recall; target only holds S1, but jojosbizarreadventureseason4part also holds S2-S4 compilations"
+},
+"swordimmortalishere": {
+"name": "The Sword Immortal Is Here",
+"rating": 6.27,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps; S1 upload numbering runs into S2 (36+50 eps)"
+},
+"swords": {
+"name": "Sword of Coming (The Swords)",
+"rating": 7.86,
+"rating_src": "MAL",
+"completed": false,
+"note": "S2 has 27 eps, only 16 uploaded"
+},
+"lovestoryofmyimmortaldad": {
+"name": "The Love Story of My Immortal Dad",
+"completed": false,
+"note": "no rating found; motion comic (animated comic), low animation quality; members-only gaps"
+},
+"assassinationclassroom": {
+"name": "Assassination Classroom",
+"rating": 8.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "approx. average of S1 (~8.1) and S2 (~8.5), from recall"
+},
+"wordofhonor": {
+"name": "Word of Honor (Jun You Yun)",
+"completed": true,
+"note": "animated Bilibili donghua, not the live action; S2 32 eps finished 2025; no MAL score found"
+},
+"hundredrefiningsoaringrecord": {
+"name": "Hundred Refining Soaring Record",
+"completed": false,
+"note": "no rating found; S1 60 + S2 40 eps finished, 1 episode missing from uploads"
+},
+"tokyorevengers": {
+"name": "Tokyo Revengers",
+"rating": 7.85,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 only; rating from recall"
+},
+"spyxsect": {
+"name": "Spy x Sect",
+"completed": false,
+"note": "no MAL score found; members-only gaps; 152 eps incl. S2"
+},
+"immortalascension": {
+"name": "The Immortal Ascension",
+"completed": false,
+"hide": true,
+"note": "live action drama (Yang Yang), not the donghua"
+},
+"pullstrings": {
+"name": "Pull Strings",
+"completed": false,
+"hide": true,
+"note": "live action drama (2026, Ao Ruipeng); 30 eps, 23 uploaded"
+},
+"rakshasastreet": {
+"name": "Rakshasa Street",
+"rating": 7.66,
+"rating_src": "MAL",
+"completed": false,
+"note": "S1-S3 only partially uploaded, S4 25 of 26 eps; S5 exists; rating is S4"
+},
+"kokiesdanapiyangajaib": {
+"name": "The Magic Chef of Ice and Fire (Indonesian sub)",
+"completed": false,
+"hide": true,
+"note": "not English (INDOSUB)"
+},
+"endlessgodrealm": {
+"name": "Endless God Realm",
+"completed": true,
+"note": "no MAL score found; iQIYI lists 80 eps complete"
+},
+"jojosbizarreadventurediamondisunbreakable": {
+"name": "JoJo's Bizarre Adventure",
+"rating": 8.5,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "jojosbizarreadventure",
+"note": "Diamond is Unbreakable; rating approx. from recall"
+},
+"jojosbizarreadventuregoldenwind": {
+"name": "JoJo's Bizarre Adventure",
+"rating": 8.6,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "jojosbizarreadventure",
+"note": "Golden Wind; rating approx. from recall"
+},
+"ushioandtora": {
+"name": "Ushio and Tora",
+"rating": 7.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "2015 anime, both seasons (39 eps); rating approx. from recall"
+},
+"frierenbeyondjourneysend": {
+"name": "Frieren: Beyond Journey's End",
+"rating": 9.28,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 compilation + S2 (10 eps, ended Mar 2026) complete; S3 due Oct 2027; S2 MAL 8.84"
+},
+"shulingji": {
+"name": "Shu Ling Ji (Spirit of the Book)",
+"completed": true,
+"note": "no rating found; 30+40+60 = 130 eps across 3 seasons, finished 2022"
+},
+"classroomoftheelite": {
+"name": "Classroom of the Elite",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1-S3 complete (S3 MAL 7.91); S4 announced, not uploaded"
+},
+"youngbrewmastersadventure": {
+"name": "The Young Brewmaster's Adventure",
+"rating": 7.05,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 20 eps (MAL 7.05), S2 26 eps (MAL 6.72), both finished"
+},
+"spyfamily-dub": {
+"name": "SPY x FAMILY (English Dub)",
+"rating": 8.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1+S2 fully uploaded; S3 (Oct 2025) not uploaded"
+},
+"mobpsycho100": {
+"name": "Mob Psycho 100",
+"rating": 8.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "all 3 seasons, avg of season scores"
+},
+"lovebetweenfairyanddevil": {
+"name": "Love Between Fairy and Devil (animated)",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "donghua (not the live-action drama); MAL Cang Lan Jue 7.26 (12+12 eps), Cang Lan Jue 2 7.41 (26 eps, ended Dec 2025)"
+},
+"jiadaozhonger": {
+"name": "Jia Dao Zhong Er",
+"completed": true,
+"note": "no rating found; 120-ep comedy donghua (2024), complete"
+},
+"onepunchman-dub": {
+"name": "One-Punch Man (English Dub)",
+"rating": 8.49,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL S1 score (S2 about 7.4, S3 4.77); S3 part 2 due 2027"
+},
+"onepunchman": {
+"name": "One-Punch Man",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "duplicate of onepunchman-dub (same episodes, English audio kept)",
+"hide": true
+},
+"dandadan": {
+"name": "DAN DA DAN",
+"rating": 8.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1+S2 (S2 MAL 8.37) fully uploaded; S3 announced"
+},
+"100girlfriendswhoreallyreallyreallyreallyreallyloveyou": {
+"name": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+"rating": 7.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1-S3 uploaded; S3 aired summer 2026 (S2 MAL 7.87)"
+},
+"thngnguyn2": {
+"name": "The Demon Hunter (Cang Yuan Tu) Vietnamese dub",
+"completed": false,
+"hide": true,
+"note": "not English (VIETDUB)"
+},
+"lawofdevil": {
+"name": "Law of Devil",
+"rating": 7.35,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps (22 of 24 eps); S2 exists; MAL entry: Emo Faze"
+},
+"firstimmortalofsevenrealms": {
+"name": "The First Immortal of Seven Realms",
+"rating": 6.28,
+"rating_src": "MAL",
+"completed": true,
+"note": "120 eps, finished 2023; MAL entry: Qi Jie Diyi Xian"
+},
+"wistoriawandandsword": {
+"name": "Wistoria: Wand and Sword",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 + S2 (spring 2026, finished) uploaded; rating approximate"
+},
+"attackontitanthefinalseasonpart": {
+"name": "Attack on Titan: The Final Season",
+"rating": 8.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "duplicate of attackontitan (Final Season compilations)",
+"hide": true
+},
+"areyouok": {
+"name": "Are You OK?",
+"rating": 7.0,
+"rating_src": "MAL",
+"completed": true,
+"note": "interludemv uploads fill S2; MAL entry: You Yao 2 (7.03)"
+},
+"ascendanceofabookworm": {
+"name": "Ascendance of a Bookworm",
+"rating": 8.0,
+"rating_src": "MAL",
+"completed": false,
+"note": "S3 has 10 eps but only 8 uploaded; S4 aired 2026, not uploaded; rating approximate"
+},
+"fabulousswordgod": {
+"name": "The Fabulous Sword God",
+"completed": false,
+"note": "no rating found; only EP1-78 of 156 uploaded (Ni Tian Jian Shen, finished 2022)"
+},
+"ravagesoftime": {
+"name": "The Ravages of Time",
+"rating": 7.26,
+"rating_src": "MAL",
+"completed": false,
+"note": "S2 has 16 eps, only 15 uploaded (members-only); S3 exists"
+},
+"lingcage": {
+"name": "Ling Cage",
+"rating": 8.0,
+"rating_src": "MAL",
+"completed": false,
+"note": "S1 is an edited version with a gap, S2 11 of 12 uploaded; S2 MAL 8.39"
+},
+"fairiesalbums": {
+"name": "Fairies Albums",
+"rating": 7.5,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps; S3-S4 not uploaded; S5 MAL 7.53"
+},
+"outcast": {
+"name": "The Outcast",
+"rating": 7.0,
+"rating_src": "MAL",
+"completed": true,
+"note": "S3-S5 complete (MAL 6.84 / 7.01 / 7.18); S1-S2 and S6 not uploaded"
+},
+"万界至尊": {
+"name": "Wan Jie Zhi Zun",
+"completed": false,
+"hide": true,
+"note": "Chinese-titled duplicate of wanjiezhizun (EP2-71 already covered there), likely no English subs; not merged (overlapping eps)"
+},
+"ancientwelkin": {
+"name": "The Ancient Welkin",
+"rating": 6.2,
+"rating_src": "MAL",
+"completed": false,
+"note": "S3 missing 1 ep; 4 seasons finished 2017-2020; dated low-budget 3D; MAL entry: Wangu Xian Qiong"
+},
+"amortalsjourneyspeedingintheseaofstars": {
+"merge_into": "amortalsjourney",
+"name": "A Mortal's Journey",
+"completed": false,
+"note": "naming variant of amortalsjourney"
+},
+"worldoffantasy": {
+"name": "The World of Fantasy (Ling Yu)",
+"rating": 6.44,
+"rating_src": "MAL",
+"completed": false,
+"note": "1 ep missing of 56; old 2015 donghua, finished; MAL entry: Ling Yu"
+},
+"bemywife": {
+"name": "Be My Wife",
+"rating": 7.0,
+"rating_src": "MAL",
+"completed": false,
+"note": "S3 has 16 eps, 15 uploaded; MAL Xie Wang Zhui Qi 6.80 / S3 7.26"
+},
+"chiefsoulmaster": {
+"name": "Chief Soul Master",
+"rating": 6.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 (40 eps) + S2 (60 eps) as 20-ep compilations; MAL S1 6.45, S2 6.37"
+},
+"myheroichusband": {
+"name": "My Heroic Husband",
+"rating": 7.35,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Zhui Xu (S1 12 eps, S2 16 eps, both finished)"
+},
+"mywechatconnectstothedragonpalace": {
+"name": "My WeChat Connects to the Dragon Palace",
+"completed": true,
+"note": "no rating found (MAL unscored); 60 eps finished Feb 2025"
+},
+"frierenbeyondjourneysend-dub": {
+"name": "Frieren: Beyond Journey's End (English Dub)",
+"rating": 9.28,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1 dub only; rating approximate"
+},
+"galaxyemperor": {
+"name": "The Galaxy Emperor",
+"rating": 6.72,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Gaishi Dizun"
+},
+"saltedfish": {
+"name": "Salted Fish",
+"rating": 7.17,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Xian Yu Ge; S1 upload count (18) exceeds MAL 16 eps, likely includes specials"
+},
+"beyondtheocean": {
+"name": "Beyond the Ocean",
+"rating": 6.36,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Si Hai Jing Qi 2nd Season (main upload); S3 only as a single collection upload"
+},
+"riseoftwinsouls": {
+"name": "The Rise of Twin Souls",
+"rating": 6.47,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Shuangsheng Wu Hun, 60 eps finished Jan 2026"
+},
+"rezerostartinglifeinanotherworlddirectorscut": {
+"name": "Re:ZERO -Starting Life in Another World- Director's Cut",
+"rating": 8.1,
+"rating_src": "MAL",
+"completed": true,
+"note": "duplicate of rezerostartinglifeinanotherworld (recut of S1)",
+"hide": true
+},
+"nagiasualullinthesea": {
+"name": "Nagi-Asu: A Lull in the Sea",
+"rating": 7.93,
+"rating_src": "MAL",
+"completed": true,
+"note": "rating approximate"
+},
+"madeinabyssthegoldencityofthescorchingsun": {
+"name": "Made in Abyss: The Golden City of the Scorching Sun",
+"rating": 8.62,
+"rating_src": "MAL",
+"completed": true,
+"note": "S2 only; both seasons in this key are the same S2 (episodes plus a full compilation), so runtime is doubled"
+},
+"tobeherox": {
+"name": "To Be Hero X",
+"rating": 8.66,
+"rating_src": "MAL",
+"completed": true,
+"quality": "quality"
+},
+"jojosbizarreadventure": {
+"name": "JoJo's Bizarre Adventure",
+"rating": 8.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "Parts 1-5 (S1 compilation plus S2-S4 episodes); rating is a rounded average across parts"
+},
+"wayofchoices3d": {
+"name": "Way of Choices 3D",
+"completed": true,
+"note": "no rating found; MAL entry: Ze Tian Ji (2026), 26 eps finished"
+},
+"jiangu": {
+"name": "Blade and Bones (Jian Gu)",
+"completed": true,
+"note": "60 eps finished; xuzang uploads fill EP60; no rating found"
+},
+"ouranhighschoolhostclub": {
+"name": "Ouran High School Host Club",
+"rating": 8.1,
+"rating_src": "MAL",
+"completed": true,
+"note": "rating approximate"
+},
+"spirituallordofchaos": {
+"name": "Spiritual Lord of Chaos",
+"rating": 6.34,
+"rating_src": "MAL",
+"completed": false,
+"note": "finished 60 eps but 1 episode missing from uploads; MAL entry: Honghuang Ling Zun"
+},
+"eclipseofillusion": {
+"name": "Eclipse of Illusion",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Yun Shen Buzhi Meng"
+},
+"martialconquerorofthecosmos": {
+"name": "Martial Conqueror of the Cosmos",
+"completed": true,
+"note": "MAL entry: Wu Sui Xinghe (60 eps, finished); MAL score could not be retrieved"
+},
+"westward": {
+"name": "The Westward",
+"rating": 6.64,
+"rating_src": "MAL",
+"completed": false,
+"note": "members-only gaps; S1 only EP7-11; S5 (Nian Fan, 64 eps) finished"
+},
+"celestialaboveall": {
+"name": "Celestial Above All",
+"rating": 7.06,
+"rating_src": "MAL",
+"completed": false,
+"note": "finished at 60 eps (Jan 2026) but uploads stop at EP59; MAL entry: Ling Tian Du Zun"
+},
+"worldofimmortals": {
+"name": "World of Immortals",
+"rating": 7.38,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL entry: Chang Sheng Jie"
+},
+"fairytail100yearsquest": {
+"name": "Fairy Tail: 100 Years Quest",
+"rating": 7.5,
+"rating_src": "MAL",
+"completed": true,
+"note": "rating approximate"
+},
+"ragnacrimson": {
+"name": "Ragna Crimson",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": true,
+"note": "rating approximate"
+},
+"interludemv": {
+"merge_into": "areyouok",
+"name": "Are You OK?",
+"completed": false,
+"note": "naming variant of areyouok"
+},
+"xuzang": {
+"merge_into": "jiangu",
+"name": "Blade and Bones (Jian Gu)",
+"completed": false,
+"note": "naming variant of jiangu"
+},
+"soulmateadventure": {
+"name": "Soulmate Adventure",
+"rating": 7.5,
+"rating_src": "MAL",
+"completed": true,
+"note": "MAL: S1 7.42, S2 7.51 (Feng Ling Yu Xiu)"
+},
+"blastoftempest": {
+"name": "Blast of Tempest",
+"rating": 7.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "rating approximate"
+},
+"inspectre": {
+"name": "In/Spectre",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1+S2 complete; rating approximate average"
+},
+"sevendeadlysinsrevivalofthecommandments": {
+"name": "The Seven Deadly Sins: Revival of the Commandments",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "sevendeadlysins",
+"note": "Season 2 of sevendeadlysins"
+},
+"darkgathering": {
+"name": "Dark Gathering",
+"rating": 7.84,
+"rating_src": "MAL",
+"completed": true
+},
+"rentagirlfriend": {
+"name": "Rent-a-Girlfriend",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1-S2 only; later seasons not uploaded"
+},
+"sevendeadlysins": {
+"name": "The Seven Deadly Sins",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": true
+},
+"luciferandbiscuithammer": {
+"name": "Lucifer and the Biscuit Hammer",
+"rating": 5.64,
+"rating_src": "MAL",
+"completed": true,
+"note": "widely criticized animation quality; MAL entry: Hoshi no Samidare"
+},
+"2thedemonhunter": {
+"name": "The Demon Hunter Season 2",
+"rating": 8.2,
+"rating_src": "MAL",
+"completed": true,
+"note": "Season 2 as one full upload (36 eps); demonhunter holds S1 and a gappy S2"
+},
+"wealthandwonder": {
+"name": "Wealth and Wonder",
+"completed": true,
+"note": "no rating found; 2025 Youku 3D donghua, 26 eps"
+},
+"girlfriendgirlfriend": {
+"name": "Girlfriend, Girlfriend",
+"rating": 6.6,
+"rating_src": "MAL",
+"completed": true
+},
+"hyouka": {
+"name": "Hyouka",
+"rating": 8.1,
+"rating_src": "MAL",
+"completed": true
+},
+"sevendeadlysinsimperialwrathofthegods": {
+"name": "The Seven Deadly Sins: Imperial Wrath of the Gods",
+"rating": 6.1,
+"rating_src": "MAL",
+"completed": true,
+"merge_into": "sevendeadlysins",
+"note": "Season 3 of sevendeadlysins; notoriously poor animation"
+},
+"iwasreincarnatedasthe7thprince": {
+"name": "I Was Reincarnated as the 7th Prince so I Can Take My Time Perfecting My Magical Ability",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": true,
+"note": "24 eps = S1 (2024) + S2 (2025)"
+},
+"istheorderarabbit": {
+"name": "Is the Order a Rabbit?",
+"rating": 7.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "S1-S2 only; S3 (BLOOM) not uploaded"
+},
+"dandadan-dub": {
+"name": "DAN DA DAN",
+"rating": 8.5,
+"rating_src": "MAL",
+"completed": true,
+"note": "English dub, S1+S2; S3 announced"
+},
+"goblinslayer": {
+"name": "Goblin Slayer",
+"rating": 7.4,
+"rating_src": "MAL",
+"completed": true
+},
+"qiangshenji": {
+"name": "Age of Gunslingers (Qiang Shen Ji)",
+"completed": false,
+"note": "no rating found; 3 compilations cover 36 of 48 eps (4 arcs of 12), uncertain"
+},
+"skeletonknightinanotherworld": {
+"name": "Skeleton Knight in Another World",
+"rating": 7.0,
+"rating_src": "MAL",
+"completed": true
+},
+"letthisgrievingsoulretire": {
+"name": "Let This Grieving Soul Retire",
+"rating": 7.0,
+"rating_src": "MAL",
+"completed": true,
+"note": "24 eps = both cours (2024, 2025)"
+},
+"accelworld": {
+"name": "Accel World",
+"rating": 7.2,
+"rating_src": "MAL",
+"completed": true
+},
+"moriartythepatriot": {
+"name": "Moriarty the Patriot",
+"rating": 8.0,
+"rating_src": "MAL",
+"completed": true
+},
+"mosthereticallastbossqueenfromvillainesstosavior": {
+"name": "The Most Heretical Last Boss Queen: From Villainess to Savior",
+"rating": 6.9,
+"rating_src": "MAL",
+"completed": true
+},
+"moriartythepatriotpart": {
+"name": "Moriarty the Patriot",
+"rating": 8.0,
+"rating_src": "MAL",
+"completed": true,
+"note": "duplicate of moriartythepatriot (compilations)",
+"hide": true
+},
+"newgame": {
+"name": "NEW GAME!",
+"rating": 7.6,
+"rating_src": "MAL",
+"completed": true
+},
+"saintsmagicpowerisomnipotent": {
+"name": "The Saint's Magic Power is Omnipotent",
+"rating": 7.3,
+"rating_src": "MAL",
+"completed": true,
+"quality": "quality"
+},
+"bofuriidontwanttogethurtsoillmaxoutmydefense": {
+"name": "BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense.",
+"rating": 7.5,
+"rating_src": "MAL",
+"completed": true
+},
+"shy": {
+"name": "SHY",
+"rating": 6.8,
+"rating_src": "MAL",
+"completed": true,
+"note": "24 eps = S1 (2023) + S2 (2024)"
+}
+}
 }
