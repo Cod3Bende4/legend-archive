@@ -411,7 +411,8 @@
 "rating": 8.1,
 "rating_src": "MAL",
 "completed": false,
-"note": "mostly multi-episode collections; members-only gaps; still ongoing (Sea of Stars arc)"
+"note": "mostly multi-episode collections; members-only gaps; still ongoing (Sea of Stars arc)",
+"members_ok": true
 },
 "perfectworld": {
 "name": "Perfect World",
@@ -1134,7 +1135,8 @@
 "rating": 7.5,
 "rating_src": "MAL",
 "completed": false,
-"note": "members-only gaps; S3-S4 not uploaded; S5 MAL 7.53"
+"note": "members-only gaps; S3-S4 not uploaded; S5 MAL 7.53",
+"members_ok": true
 },
 "outcast": {
 "name": "The Outcast",
@@ -1855,7 +1857,8 @@
 "rating": 7.7,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1 (13, compilation) + S2 (13) finished; score recalled"
+"note": "S1 (13, compilation) + S2 (13) finished; score recalled",
+"members_ok": true
 },
 "fairiesalbums2all": {
 "name": "Fairies Album",
@@ -3254,7 +3257,8 @@
 "rating": 7.6,
 "rating_src": "MAL",
 "completed": false,
-"note": "score recalled; later seasons airing (see 仙王的日常生活 S5 key)"
+"note": "score recalled; later seasons airing (see 仙王的日常生活 S5 key)",
+"members_ok": true
 },
 "souloflight": {
 "origin": "CN",
