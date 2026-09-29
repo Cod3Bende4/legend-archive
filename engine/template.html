@@ -25,7 +25,16 @@ button{font:inherit;color:inherit}
 .gut{padding-inline:clamp(16px,4vw,56px)}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;padding-block:14px;background:rgba(10,12,18,.88);backdrop-filter:blur(14px);border-bottom:1px solid #1a1e2b}
 .logo{font:900 28px/1 var(--display);letter-spacing:.06em;white-space:nowrap}.logo b{color:var(--gold)}
-.pills{display:flex;gap:8px;flex-wrap:wrap;flex:1 1 420px}
+.origins{display:flex;gap:4px;padding:4px;border-radius:12px;background:#151925;border:1px solid #262c3d;flex:0 1 auto;overflow-x:auto;scrollbar-width:none}
+.origins::-webkit-scrollbar{display:none}
+.origin{display:inline-flex;align-items:baseline;gap:7px;min-height:38px;padding:9px 14px;border-radius:9px;text-decoration:none;color:var(--soft);font-weight:700;font-size:15px;white-space:nowrap}
+.origin:hover{color:var(--fg);background:rgba(255,255,255,.05)}
+.origin[aria-current="page"]{background:var(--gold);color:var(--gold-ink)}
+.origin small{font:600 11.5px var(--mono);opacity:.7}
+.filters{padding-top:16px}
+.pills{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-block:2px}
+.pills::-webkit-scrollbar{display:none}
+.pill{flex:0 0 auto;white-space:nowrap}
 .pill{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 15px;border-radius:999px;border:1px solid #2a3042;background:transparent;font-weight:600;font-size:14px;cursor:pointer}
 .pill[aria-pressed="true"]{background:var(--fg);color:var(--ink);border-color:var(--fg)}
 .dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto;display:inline-block}
@@ -68,14 +77,38 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;
 .stat b{display:block;font:800 32px/1.1 var(--display);font-variant-numeric:tabular-nums}
 .stat span{font-size:14px;color:var(--muted)}
 /* shelves */
-main{display:grid;gap:44px;padding-block:44px}
+main{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;padding-block:44px}
+main>*{min-width:0}
 .shelf-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
 .shelf-head h2{margin:0;font:800 clamp(28px,3.2vw,38px)/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
 .shelf-head span{color:var(--muted);font-size:15px}
 .shelf-head small{margin-left:auto;font:600 13px var(--mono);color:#6b7390}
-.row{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(240px,22vw,300px);gap:18px;overflow-x:auto;padding-block:14px 16px;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:#2a3042 transparent}
-.row::-webkit-scrollbar{height:8px}.row::-webkit-scrollbar-thumb{background:#2a3042;border-radius:8px}
-.tile{scroll-snap-align:start;display:flex;flex-direction:column;gap:10px;padding:0;border:0;background:none;text-align:left;cursor:pointer;min-width:0;transition:transform .25s}
+.shelf-head .all{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:700 14px var(--body);color:var(--gold);text-decoration:none;white-space:nowrap}
+.shelf-head .all:hover{text-decoration:underline}
+.rail{position:relative}
+.row{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,21vw,290px);gap:18px;overflow-x:auto;padding-block:14px 16px;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-x:contain}
+.row::-webkit-scrollbar{display:none}
+.arrow{position:absolute;top:14px;bottom:62px;z-index:4;width:52px;border:0;display:grid;place-items:center;cursor:pointer;color:var(--fg);opacity:0;transition:opacity .2s}
+.arrow.prev{left:calc(-1 * clamp(16px,4vw,56px));background:linear-gradient(90deg,rgba(10,12,18,.95),rgba(10,12,18,0))}
+.arrow.next{right:calc(-1 * clamp(16px,4vw,56px));background:linear-gradient(270deg,rgba(10,12,18,.95),rgba(10,12,18,0))}
+.arrow span{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(22,26,38,.92);border:1px solid #333a50}
+.rail:hover .arrow:not([disabled]),.arrow:focus-visible{opacity:1}
+.arrow[disabled]{pointer-events:none}
+.more{scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;aspect-ratio:16/9;border-radius:12px;border:1px dashed #333a50;color:var(--gold);text-decoration:none;font:800 24px/1 var(--display);text-transform:uppercase;letter-spacing:.03em}
+.more small{font:500 13px var(--body);color:var(--muted);text-transform:none;letter-spacing:0}
+.more:hover{background:rgba(255,193,94,.06);border-color:var(--gold)}
+/* see-all page */
+.page-head{display:flex;flex-wrap:wrap;align-items:end;gap:14px 24px}
+.back{display:inline-flex;align-items:center;gap:6px;font:600 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--fg)}
+.page-head h1{margin:6px 0 4px;font:900 clamp(38px,5vw,64px)/.95 var(--display);text-transform:uppercase}
+.page-head p{margin:0;color:var(--muted)}
+.sort{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.sort button{min-height:38px;padding:0 13px;border-radius:9px;border:1px solid #2a3042;background:transparent;font-weight:600;font-size:14px;cursor:pointer}
+.sort button[aria-pressed="true"]{background:var(--fg);color:var(--ink);border-color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:26px 18px}
+.pager{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--muted);font:500 13px var(--mono)}
+.tile{scroll-snap-align:start;scroll-margin-inline:0;display:flex;flex-direction:column;gap:10px;padding:0;border:0;background:none;text-align:left;cursor:pointer;min-width:0;transition:transform .25s}
 .tile:hover{transform:translateY(-5px)}
 .tile .frame{border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.06)}
 .tile:hover .frame{box-shadow:0 18px 38px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.2)}
@@ -129,6 +162,11 @@ footer .chips{gap:14px}
   .sheet-copy{padding-right:0}.pick{grid-template-columns:1fr}
   .alt{grid-template-columns:1fr auto}.alt .c{grid-column:1/-1}
   .shelf-head small{margin-left:0}
+  .arrow{display:none}
+  .row{grid-auto-columns:minmax(200px,72vw);scroll-snap-type:x proximity}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px 12px}
+  .grid .tname{font-size:14px}
+  .sort{margin-left:0}
 }
 @media (prefers-reduced-motion:reduce){.tile,.bars span{transition:none}.tile:hover{transform:none}}
 </style>
@@ -136,16 +174,17 @@ footer .chips{gap:14px}
 <body>
 
 <header class="gut">
-  <div class="logo"><b>LEGEND</b> ARCHIVE</div>
-  <div class="pills" id="pills" role="group" aria-label="Filter by channel"></div>
+  <a class="logo" href="#/" style="color:inherit;text-decoration:none"><b>LEGEND</b> ARCHIVE</a>
+  <nav class="origins" id="origins" aria-label="Origin"></nav>
   <label class="search" for="q">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a93ab" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
     <input id="q" type="search" placeholder="Search mecha, zoo, skeleton…" aria-label="Search series" autocomplete="off">
   </label>
 </header>
 
+<div class="gut filters"><div class="pills" id="pills" role="group" aria-label="Filter by channel"></div></div>
 <section class="hero gut" id="hero"></section>
-<section class="gut"><div class="stats" id="stats"></div></section>
+<section class="gut" id="statbox"><div class="stats" id="stats"></div></section>
 <main class="gut" id="shelves"></main>
 <footer class="gut">
   <span id="foot"></span>
@@ -156,9 +195,20 @@ footer .chips{gap:14px}
 <script>
 const DATA = __DATA__;
 const META = __META__;
-const CH = {'AlphaAnime':'var(--cA)','Legend-Anime':'var(--cL)','NeonLore':'var(--cN)','YuErYY':'var(--cY)'};
+const CHCOL = {'AlphaAnime':'var(--cA)','Legend-Anime':'var(--cL)','NeonLore':'var(--cN)','YuErYY':'var(--cY)',
+  'Muse Asia':'#ff6b8a','YOUKU ANIMATION':'#4aa8ff','YOUKU English Animation':'#8cc9ff','腾讯视频 - 动漫':'#ff9d3d',
+  '爱奇艺国漫 iQIYI Animation':'#5fdc7a','哔哩哔哩动画Anime Made By Bilibili - 欢迎订阅 -':'#fb7299'};
+const SHORT = {'哔哩哔哩动画Anime Made By Bilibili - 欢迎订阅 -':'Bilibili','腾讯视频 - 动漫':'Tencent Video','爱奇艺国漫 iQIYI Animation':'iQIYI',
+  'YOUKU ANIMATION':'Youku','YOUKU English Animation':'Youku English'};
+const chName = (c) => SHORT[c] || c;
+const chCol = (c) => CHCOL[c] || '#8a93ab';
+const ORIGINS = [
+  {id:'cn', code:'CN', name:'Donghua', long:'Chinese animation', sub:'Donghua from official Chinese studio channels and English-dub channels.'},
+  {id:'jp', code:'JP', name:'Anime', long:'Japanese anime', sub:'Japanese anime from official channels.'},
+  {id:'kr', code:'KR', name:'Korean', long:'Korean webtoon & manhwa', sub:'Animation of Korean webtoons and manhwa.'}];
+const CAP = 20, PAGE = 48;
 const SHELVES = [{id:0,name:'New this week',sub:'Series with an upload that appeared in the last 7 days.'}].concat(META.shelves || []);
-const S = {q:'', ch:'All', hero:0, sel:null, season:0, playing:false};
+const S = {q:'', ch:'All', hero:0, sel:null, season:0, playing:false, origin:'cn', shelf:null, sort:'rank', shown:PAGE};
 let LIVE = false; // true once YouTube thumbnails can load (page opened outside Claude)
 const $ = (id) => document.getElementById(id);
 const esc = (t) => String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -167,9 +217,14 @@ const thumb = (id, q) => 'https://i.ytimg.com/vi/' + id + '/' + (q || 'hqdefault
 const badge = (x) => x.seasons > 1 ? x.seasons + ' seasons' : 'Feature';
 const secs = (d) => { const m = /(?:(\d+)h )?(\d+)m/.exec(d || ''); return m ? (+(m[1]||0))*3600 + (+m[2])*60 : 0; };
 const art = (x) => `background:radial-gradient(circle at ${x.rx}% ${x.ry}%,transparent 34%,${x.ac}55 34.6%,transparent 36.4%),radial-gradient(70% 60% at ${x.px}% ${x.py}%,${x.ac}66 0%,transparent 62%),linear-gradient(160deg,${x.c1},${x.c2})`;
-const dot = (c) => `<i class="dot" style="background:${CH[c]}"></i>`;
-const chipsFor = (x) => x.chans.map(c => `<span class="chip">${dot(c)}${esc(c)}</span>`).join('');
+const dot = (c) => `<i class="dot" style="background:${chCol(c)}"></i>`;
+const chipsFor = (x) => x.chans.map(c => `<span class="chip">${dot(c)}${esc(chName(c))}</span>`).join('');
 const PLAY = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
+const CHEV = (d) => `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="${d < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7'}"/></svg>`;
+const org = () => ORIGINS.find(o => o.id === S.origin);
+const ALL = DATA.map((x,i) => ({x,i}));
+const inOrigin = () => ALL.filter(o => (o.x.origin || 'CN') === org().code);
+const href = (origin, shelf) => '#/' + origin + (shelf != null ? '/' + shelf : '');
 
 function frame(x, opts) {
   const id = x.seas[0].pick.id, big = opts && opts.big;
@@ -191,17 +246,37 @@ function matches(x) {
   const hay = (x.title + ' ' + x.tag + ' ' + x.seas.map(s => s.pick.t + ' ' + s.alts.map(a => a.t).join(' ')).join(' ')).toLowerCase();
   return hay.indexOf(S.q) >= 0;
 }
-function renderPills() {
-  $('pills').innerHTML = ['All','AlphaAnime','Legend-Anime','NeonLore','YuErYY'].map(c =>
-    `<button class="pill" type="button" data-ch="${c}" aria-pressed="${S.ch===c}">${c==='All' ? '<i class="dot" style="background:var(--fg)"></i>All channels' : dot(c)+c}</button>`).join('');
+function renderOrigins() {
+  $('origins').innerHTML = ORIGINS.map(o => {
+    const n = ALL.filter(e => (e.x.origin || 'CN') === o.code).length;
+    return `<a class="origin" href="${href(o.id)}" title="${o.long}"${o.id === S.origin ? ' aria-current="page"' : ''}>${o.name}<small>${n}</small></a>`;
+  }).join('');
 }
-let heroList = DATA.map((x,i)=>({x,i})).filter(o => o.x.tier <= 3 && o.x.seasons > 1).slice(0, 6);
-if (!heroList.length) heroList = DATA.map((x,i)=>({x,i})).slice(0, 6);
+function chansHere() {
+  const n = {};
+  inOrigin().forEach(o => o.x.chans.forEach(c => n[c] = (n[c] || 0) + 1));
+  return Object.keys(n).sort((a,b) => n[b] - n[a]);
+}
+function renderPills() {
+  const cs = chansHere();
+  if (S.ch !== 'All' && cs.indexOf(S.ch) < 0) S.ch = 'All';
+  $('pills').hidden = cs.length < 2;
+  $('pills').innerHTML = ['All'].concat(cs).map(c =>
+    `<button class="pill" type="button" data-ch="${esc(c)}" aria-pressed="${S.ch===c}">${c==='All' ? '<i class="dot" style="background:var(--fg)"></i>All channels' : dot(c)+esc(chName(c))}</button>`).join('');
+}
+function heroList() {
+  const here = inOrigin();
+  let l = here.filter(o => o.x.tier <= 3 && o.x.seasons > 1).slice(0, 6);
+  if (!l.length) l = here.filter(o => o.x.tier <= 7).slice(0, 6);
+  if (!l.length) l = here.slice(0, 6);
+  return l;
+}
 function renderHero() {
   const box = $('hero');
-  box.hidden = !!S.q || S.ch !== 'All';
+  const list = heroList();
+  box.hidden = !!S.q || S.ch !== 'All' || S.shelf !== null || !list.length;
   if (box.hidden) return;
-  const n = heroList.length, hi = ((S.hero % n) + n) % n, o = heroList[hi], x = o.x;
+  const n = list.length, hi = ((S.hero % n) + n) % n, o = list[hi], x = o.x;
   const runs = x.seas.filter(s => /^S\d+$/.test(s.short)).map(s =>
     `<span>${dot(s.pick.ch)}${s.short} <em>${s.pick.dur}</em></span>`).join('');
   box.innerHTML = `
@@ -218,7 +293,7 @@ function renderHero() {
       </div>
       <div class="nav">
         <button class="round" type="button" data-hero="-1" aria-label="Previous saga"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-        <div class="bars">${heroList.map((_, j) => `<span class="${j===hi?'on':''}"></span>`).join('')}</div>
+        <div class="bars">${list.map((_, j) => `<span class="${j===hi?'on':''}"></span>`).join('')}</div>
         <button class="round" type="button" data-hero="1" aria-label="Next saga"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
         <span class="pos">${hi+1} / ${n}</span>
       </div>
@@ -226,10 +301,13 @@ function renderHero() {
     <div class="hero-media">${frame(x, {big:true})}<div class="strip" aria-label="Seasons and runtimes">${runs}</div></div>`;
 }
 function renderStats() {
-  const up = DATA.reduce((n,x) => n + x.seas.reduce((m,s) => m + 1 + s.alts.length, 0), 0);
+  const here = inOrigin().map(o => o.x);
+  $('statbox').hidden = S.shelf !== null || !here.length;
+  const up = here.reduce((n,x) => n + x.seas.reduce((m,s) => m + Math.max(1 + s.alts.length, (s.eps || []).length), 0), 0);
+  const nch = chansHere().length;
   $('stats').innerHTML = [
-    [DATA.length,'series'],[up,'uploads across 4 channels'],[DATA.filter(x=>x.seasons>1).length,'multi-season stories'],
-    [DATA.filter(x=>x.chans.length>1).length,'stories on 2+ channels'],[Math.round(DATA.reduce((n,x)=>n+x.total,0)/3600)+'h','of unique watch time']
+    [here.length,'series'],[up,`uploads across ${nch} channel${nch === 1 ? '' : 's'}`],[here.filter(x=>x.seasons>1).length,'multi-season stories'],
+    [here.filter(x=>x.rating).length,'rated 7.5+'],[Math.round(here.reduce((n,x)=>n+x.total,0)/3600)+'h','of watch time']
   ].map(([n,l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
 }
 function tile(x, i) {
@@ -240,15 +318,48 @@ function tile(x, i) {
     <div class="tmeta">${x.totalF}${x.rating ? ' · ★ ' + x.rating : ''} <span style="display:flex;gap:4px">${x.chans.map(dot).join('')}</span>${x.chans.length > 1 ? `<span class="x">${x.chans.length} channels</span>` : ''}</div>
   </button>`;
 }
+function shelfItems(d) {
+  const items = inOrigin().filter(o => (d.id === 0 ? o.x.fresh : o.x.tier === d.id) && matches(o.x));
+  if (d.id === 0) items.sort((a,b) => b.x.newest.localeCompare(a.x.newest));
+  return items;
+}
+const SORTS = {rank:['Top', null], rating:['Rating', (a,b) => (b.x.rating||0) - (a.x.rating||0) || b.x.total - a.x.total],
+  long:['Longest', (a,b) => b.x.total - a.x.total], newest:['Newest', (a,b) => b.x.newest.localeCompare(a.x.newest)],
+  az:['A–Z', (a,b) => a.x.title.localeCompare(b.x.title)]};
 function renderShelves() {
+  if (S.shelf !== null) return renderPage();
   const html = SHELVES.map(d => {
-    const items = DATA.map((x,i) => ({x,i})).filter(o => (d.id === 0 ? o.x.fresh : o.x.tier === d.id) && matches(o.x));
-    if (d.id === 0) items.sort((a,b) => b.x.newest.localeCompare(a.x.newest));
+    const items = shelfItems(d);
     if (!items.length) return '';
-    return `<section aria-label="${d.name}"><div class="shelf-head"><h2>${d.name}</h2><span>${d.sub}</span><small>${items.length} series</small></div>
-      <div class="row">${items.map(o => tile(o.x, o.i)).join('')}</div></section>`;
+    const more = items.length > CAP, link = href(S.origin, d.id);
+    return `<section aria-label="${esc(d.name)}"><div class="shelf-head"><h2>${esc(d.name)}</h2><span>${esc(d.sub)}</span>
+        <a class="all" href="${link}">See all ${items.length}${CHEV(1)}</a></div>
+      <div class="rail">
+        <button class="arrow prev" type="button" data-scroll="-1" aria-label="Scroll ${esc(d.name)} left" disabled><span>${CHEV(-1)}</span></button>
+        <div class="row">${items.slice(0, CAP).map(o => tile(o.x, o.i)).join('')}${more ? `<a class="more" href="${link}">See all<small>${items.length - CAP} more in this shelf</small></a>` : ''}</div>
+        <button class="arrow next" type="button" data-scroll="1" aria-label="Scroll ${esc(d.name)} right"><span>${CHEV(1)}</span></button>
+      </div></section>`;
   }).join('');
-  $('shelves').innerHTML = html || `<div class="empty">Nothing matches “${esc(S.q)}”. Try one word, like mecha, carp or skeleton.</div>`;
+  $('shelves').innerHTML = html || (S.q
+    ? `<div class="empty">Nothing in ${org().name} matches “${esc(S.q)}”. Try one word, like mecha, carp or skeleton.</div>`
+    : `<div class="empty">No ${org().long} series yet. They appear here as soon as an official channel uploads one.</div>`);
+  document.querySelectorAll('.row').forEach(r => { r.addEventListener('scroll', arrows, {passive:true}); arrows({target:r}); });
+}
+function arrows(e) {
+  const r = e.target, rail = r.parentNode, end = r.scrollWidth - r.clientWidth - 4;
+  rail.querySelector('.prev').disabled = r.scrollLeft <= 4;
+  rail.querySelector('.next').disabled = r.scrollLeft >= end;
+}
+function renderPage() {
+  const d = SHELVES.find(x => x.id === S.shelf) || SHELVES[0];
+  const items = shelfItems(d), f = SORTS[S.sort][1];
+  if (f) items.sort(f);
+  const show = items.slice(0, S.shown);
+  $('shelves').innerHTML = `<div class="page-head"><div><a class="back" href="${href(S.origin)}">${CHEV(-1)}${org().name}</a>
+      <h1>${esc(d.name)}</h1><p>${esc(d.sub)} ${items.length} series.</p></div>
+      <div class="sort" role="group" aria-label="Sort">${Object.keys(SORTS).map(k => `<button type="button" data-sort="${k}" aria-pressed="${S.sort===k}">${SORTS[k][0]}</button>`).join('')}</div></div>
+    ${items.length ? `<div class="grid">${show.map(o => tile(o.x, o.i)).join('')}</div>` : `<div class="empty">Nothing here matches “${esc(S.q)}”.</div>`}
+    ${items.length > show.length ? `<div class="pager"><span>Showing ${show.length} of ${items.length}</span><button class="btn ghost" type="button" data-more>Show ${Math.min(PAGE, items.length - show.length)} more</button></div>` : ''}`;
 }
 function renderSheet() {
   const v = $('veil');
@@ -268,30 +379,43 @@ function renderSheet() {
         ${x.facts ? `<div class="facts">${esc(x.facts)}</div>` : ''}
         <div class="chips">${chipsFor(x)}</div>
         ${x.note ? `<div class="note"><b>${esc(x.conf || 'note')}</b><span>${esc(x.note)}</span></div>` : ''}
-        ${x.missing.length ? `<div class="gapnote">Season ${x.missing.join(', ')} ${x.missing.length > 1 ? 'are' : 'is'} not uploaded on any of the four channels yet.</div>` : ''}
+        ${x.missing.length ? `<div class="gapnote">Season ${x.missing.join(', ')} ${x.missing.length > 1 ? 'are' : 'is'} not uploaded on these channels yet.</div>` : ''}
       </div>
     </div>
     <div class="sheet-body">
       <div class="tabs" role="tablist" aria-label="Seasons">${x.seas.map((t,j) => `<button type="button" role="tab" data-season="${j}" aria-selected="${j===si}">${one ? 'Full feature' : esc(t.label)}${t.pick.new || t.alts.some(a => a.new) ? ' · new' : ''}</button>`).join('')}</div>
       ${player}
       <div class="pick">
-        <div style="min-width:0"><div class="lab"><span>Watch this</span>${dot(s.pick.ch)}<span style="color:#dfe3ee">${esc(s.pick.ch)}</span><span>${s.pick.dur}</span></div><div class="ttl">${esc(s.pick.t)}</div></div>
+        <div style="min-width:0"><div class="lab"><span>Watch this</span>${dot(s.pick.ch)}<span style="color:#dfe3ee">${esc(chName(s.pick.ch))}</span><span>${s.pick.dur}</span></div><div class="ttl">${esc(s.pick.t)}</div></div>
         <div class="go">
           ${LIVE && !S.playing ? `<button class="btn gold" type="button" data-play>${PLAY}Play ${label} here</button>` : ''}
           <a class="btn ${LIVE && !S.playing ? 'ghost' : 'gold'}" href="${yt(s.pick.id)}" target="_blank" rel="noopener">${LIVE ? 'Open on YouTube' : PLAY + 'Play ' + label}</a>
         </div>
       </div>
       ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map(e => `<a class="ep ${S.playing && pid === e.id ? 'on' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" data-ep="${e.id}">EP ${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
-      ${s.alts.length ? `<div class="alts"><h3>Also uploaded as</h3>${s.alts.map(a => `<a class="alt" href="${yt(a.id)}" target="_blank" rel="noopener"><span class="c">${dot(a.ch)}${esc(a.ch)}</span><span>${esc(a.t)}</span><span class="d">${a.dur}</span></a>`).join('')}</div>` : ''}
+      ${s.alts.length ? `<div class="alts"><h3>Also uploaded as</h3>${s.alts.map(a => `<a class="alt" href="${yt(a.id)}" target="_blank" rel="noopener"><span class="c">${dot(a.ch)}${esc(chName(a.ch))}</span><span>${esc(a.t)}</span><span class="d">${a.dur}</span></a>`).join('')}</div>` : ''}
     </div></div>`;
   v.hidden = false; document.body.style.overflow = 'hidden';
 }
-function renderAll() { renderPills(); renderHero(); renderShelves(); }
+function renderAll() { renderOrigins(); renderPills(); renderHero(); renderStats(); renderShelves(); renderLegend(); }
+function renderLegend() {
+  $('legend').innerHTML = chansHere().map(c => `<span class="chip" style="background:none;padding:0;color:#6b7390">${dot(c)}${esc(chName(c))}</span>`).join('');
+}
+function route() {
+  const m = /^#\/(cn|jp|kr)(?:\/(\d+))?/.exec(location.hash);
+  const origin = m ? m[1] : 'cn', shelf = m && m[2] !== undefined ? +m[2] : null;
+  const moved = origin !== S.origin || shelf !== S.shelf;
+  if (origin !== S.origin) { S.hero = 0; S.ch = 'All'; }
+  if (shelf !== S.shelf) { S.sort = 'rank'; S.shown = PAGE; }
+  S.origin = origin; S.shelf = shelf;
+  renderAll();
+  if (moved) window.scrollTo(0, 0);
+}
 
 document.addEventListener('click', (e) => {
   const ep = e.target.closest('[data-ep]');
   if (ep && LIVE) { e.preventDefault(); S.playId = ep.dataset.ep; S.playing = true; renderSheet(); return; }
-  const t = e.target.closest('[data-open],[data-hero],[data-ch],[data-close],[data-season],[data-play]');
+  const t = e.target.closest('[data-open],[data-hero],[data-ch],[data-close],[data-season],[data-play],[data-scroll],[data-sort],[data-more]');
   if (!t) { if (e.target === $('veil')) { S.sel = null; S.playing = false; renderSheet(); } return; }
   if (t.dataset.open !== undefined) { S.sel = +t.dataset.open; S.season = 0; S.playing = false; S.playId = null; renderSheet(); }
   else if (t.dataset.hero) { S.hero += +t.dataset.hero; renderHero(); }
@@ -299,12 +423,15 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.close !== undefined) { S.sel = null; S.playing = false; renderSheet(); }
   else if (t.dataset.season) { S.season = +t.dataset.season; S.playing = false; S.playId = null; renderSheet(); }
   else if (t.dataset.play !== undefined) { S.playing = true; S.playId = null; renderSheet(); }
+  else if (t.dataset.scroll) { const r = t.parentNode.querySelector('.row'); r.scrollBy({left: +t.dataset.scroll * r.clientWidth * 0.9}); }
+  else if (t.dataset.sort) { S.sort = t.dataset.sort; S.shown = PAGE; renderShelves(); }
+  else if (t.dataset.more !== undefined) { S.shown += PAGE; renderShelves(); }
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.sel !== null) { S.sel = null; S.playing = false; renderSheet(); } });
 $('q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); renderAll(); });
-$('legend').innerHTML = Object.keys(CH).map(c => `<span class="chip" style="background:none;padding:0;color:#6b7390">${dot(c)}${c}</span>`).join('');
 $('foot').textContent = 'Updated ' + new Date(META.updated).toLocaleString([], {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}) + (META.added ? ' · ' + META.added + ' new upload' + (META.added > 1 ? 's' : '') : '') + (META.hidden ? ' · ' + META.hidden + ' AI-slop series hidden' : '') + (META.failed.length ? ' · could not reach ' + META.failed.join(', ') : '') + '. Refreshes daily at 10 PM.';
-renderStats(); renderAll();
+window.addEventListener('hashchange', route);
+route();
 </script>
 
 </body>

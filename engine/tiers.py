@@ -17,7 +17,14 @@ Shelves
   8 Ongoing               A1/A2, not finished yet, rated 7.5+ or not rated yet
   9 Awaiting review       A1/A2, not rated yet (Claude rates these on its scheduled runs)
   10 Extras               A3 under 5h
-  hidden                  AI slop, rated under 7.5, or hidden by hand
+  hidden                  AI slop, rated under 7.5, members-only, or hidden by hand
+
+Origin (CN donghua, JP anime, KR Korean webtoon/manhwa) splits the site into three sections that each
+carry the shelves above. It comes from the channel ("origin" in config.json, the four dub channels are CN),
+then ORIGIN_HINTS for known titles, then meta[key]["origin"] set by hand.
+
+Members-only: a series whose free uploads pitch a paid membership ("Join member to watch latest episode",
+加入会员) is hidden, since the rest of it is behind the paywall. meta[key]["members_ok"] = true keeps one.
 
 Per-series facts that need judgment (rating, completed, display name, hide) live in
 curated.json under "meta", keyed by each series' "key". Claude's scheduled runs fill them in.
@@ -35,6 +42,26 @@ JUNK = re.compile(
     r"episodes?\s*\d+\s*[-~]\s*\d+|ep\s*\d+\s*[-~]\s*\d+|marathon)\b", re.I)
 EPNUM = re.compile(r"\b(?:ep(?:isode)?\.?\s*|第\s*)(\d{1,4})", re.I)
 SKIP = re.compile(r"trailer|teaser|pv\b|preview|opening|ending|\bop\b|\bed\b|ost|mv\b|behind the scenes|shorts|clip|highlight", re.I)
+
+
+ORIGINS = {"CN": "Donghua", "JP": "Anime", "KR": "Korean"}
+# titles whose origin differs from their channel's (Muse Asia is mostly Japanese anime)
+ORIGIN_HINTS = [
+    ("KR", re.compile(r"god of high school|noblesse|tower of god|solo leveling|who made me a princess|fated magical princess|"
+                      r"wind breaker|greatest estate developer|trash of the count|tomb raider king|omniscient reader|pick me up|"
+                      r"lookism|hardcore leveling|eleceed|return of the mount hua|nano machine|mercenary enrollment|viral hit|"
+                      r"how to fight|study group|dead account|terror man|killer peter|webtoon|manhwa", re.I)),
+    ("CN", re.compile(r"lord of mysteries|link click|heaven official|scissor seven|immortal king|fog hill|to be hero|"
+                      r"soul land|douluo|battle through the heavens|perfect world|renegade immortal|swallowed star|"
+                      r"mo dao zu shi|grandmaster of demonic|the outcast|spare me,? great lord|ling cage|donghua", re.I)),
+]
+
+
+def origin_of(chan_origin, text):
+    for o, rx in ORIGIN_HINTS:
+        if rx.search(text):
+            return o
+    return chan_origin
 
 
 def norm_name(title):
@@ -78,6 +105,7 @@ def official_series(genre, PAL, split_title, meta=None):
     scan_dir = os.path.join(ENG, "scan")
     if not os.path.isdir(scan_dir):
         return []
+    cands = json.load(open(os.path.join(ENG, "config.json"), encoding="utf-8")).get("candidates", {})
     chans = []
     for f in sorted(os.listdir(scan_dir)):
         if f.endswith(".json") and f != "quality.json":
@@ -86,6 +114,7 @@ def official_series(genre, PAL, split_title, meta=None):
     by = {}
     for s in chans:
         cname = re.sub(r"\s*-\s*(get|chinese).*$", "", s.get("channel") or s["name"], flags=re.I).strip()
+        corig = cands.get(s["name"], {}).get("origin", "CN")
         for v in s.get("uploads", []):
             if v.get("gone"):
                 continue
@@ -93,12 +122,15 @@ def official_series(genre, PAL, split_title, meta=None):
             if not p:
                 continue
             k = epparse.key_of(p["name"]) + ("-dub" if p["dub"] else "")
-            ser = by.setdefault(k, dict(key=k, names={}, chans=set(), dub=p["dub"], seasons={}))
+            ser = by.setdefault(k, dict(key=k, names={}, chans=set(), dub=p["dub"], seasons={}, gated=False, orig={}))
             ser["names"][p["name"]] = ser["names"].get(p["name"], 0) + 1
+            ser["gated"] |= p["gated"]
+            ser["orig"][corig] = ser["orig"].get(corig, 0) + 1
             ser["chans"].add(cname)
             ser["seasons"].setdefault(p["season"], []).append(dict(p, id=v["id"], d=v["d"], ch=cname, t=v["t"],
                                                                   fs=v.get("p") or v.get("first_seen", "2026-09-28")))
     # fold near-identical keys (typos, "Tale"/"Tales") and hand-made merges into one series
+    dom = lambda ser: max(ser["orig"].items(), key=lambda kv: kv[1])[0]
     keys = sorted(by, key=lambda k: -sum(len(x) for x in by[k]["seasons"].values()))
     for i, k in enumerate(keys):
         if k not in by:
@@ -106,7 +138,7 @@ def official_series(genre, PAL, split_title, meta=None):
         target = meta.get(k, {}).get("merge_into")
         if not target:
             for k2 in keys[:i]:
-                if k2 in by and by[k2]["dub"] == by[k]["dub"] and len(k) > 6 and difflib.SequenceMatcher(None, k, k2).ratio() >= 0.92:
+                if k2 in by and by[k2]["dub"] == by[k]["dub"] and dom(by[k2]) == dom(by[k]) and len(k) > 6 and difflib.SequenceMatcher(None, k, k2).ratio() >= 0.92:
                     target = k2
                     break
         if target and target in by and target != k:
@@ -115,6 +147,9 @@ def official_series(genre, PAL, split_title, meta=None):
             for n, c in src["names"].items():
                 dst["names"][n] = dst["names"].get(n, 0) + c
             dst["chans"] |= src["chans"]
+            dst["gated"] |= src["gated"]
+            for o, c in src["orig"].items():
+                dst["orig"][o] = dst["orig"].get(o, 0) + c
             for sn, eps in src["seasons"].items():
                 dst["seasons"].setdefault(sn, []).extend(eps)
     out = []
@@ -156,6 +191,7 @@ def official_series(genre, PAL, split_title, meta=None):
         name = max(ser["names"].items(), key=lambda kv: (kv[1], sum(c.isascii() for c in kv[0])))[0]
         if ser["dub"]:
             name += " (English Dub)"
+        orig = origin_of(dom(ser), name)
         title, tag = split_title(name)
         g = genre(name + " " + " ".join(x["t"] for s_ in ser["seasons"].values() for x in s_[:30])[:4000])
         h = int(hashlib.md5(k.encode()).hexdigest(), 16)
@@ -166,7 +202,7 @@ def official_series(genre, PAL, split_title, meta=None):
                         px=h % 70 + 15, py=(h >> 8) % 60 + 10, rx=(h >> 16) % 80 + 10, ry=(h >> 24) % 70 + 20,
                         fs=34 if tl <= 22 else 28 if tl <= 38 else 23 if tl <= 60 else 19,
                         fresh=newest > "2026-09-28" and newest >= week_ago, newest=newest, q="", audio="A1" if ser["dub"] else "A2", episodes=n_eps,
-                        gaps=sum(s_["gaps"] for s_ in seas)))
+                        gaps=sum(s_["gaps"] for s_ in seas), origin=orig, members=ser["gated"]))
     return out
 
 
@@ -191,6 +227,7 @@ def apply(series, cur, Q):
         x.setdefault("audio", "A3")
         x.setdefault("key", "live:" + x["title"])
         m = meta.get(x["key"], {})
+        x["origin"] = m.get("origin") or origin_of(x.get("origin", "CN"), x["title"])
         if m.get("name"):
             x["title"] = m["name"]
         ids = [s["pick"]["id"] for s in x["seas"]] + [e["id"] for s in x["seas"] for e in s.get("eps", [])]
@@ -204,7 +241,8 @@ def apply(series, cur, Q):
         x["rating"] = rating
         x["ratingSrc"] = m.get("rating_src", "")
         x["completed"] = m.get("completed", x["audio"] == "A3")
-        if m.get("hide") or slop or (rating is not None and rating < 7.5):
+        members = x.pop("members", False) and not m.get("members_ok")
+        if m.get("hide") or slop or members or (rating is not None and rating < 7.5):
             hidden += 1
             continue
         hrs = x["total"] / 3600

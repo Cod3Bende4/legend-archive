@@ -5,6 +5,8 @@ JUNK = re.compile(r"trailer|预告|\bpv\d*\b|teaser|highlight|精彩看点|\bcli
                   r"#shorts|\bshorts\b|behind the scenes|making of|\bmv\b|reaction|character song|片头曲|片尾曲|主题曲|插曲|花絮|"
                   r"special program|\blive\b|直播|announcement|countdown|recap|总集|anime highlight|\bpreview\b(?!.*full)", re.I)
 MEMBERS = re.compile(r"ai (eng )?dub|ai dubbed|会员专享|premiere|members? onl|members? get|see first|members?[\s-]*only|members?\s*preview|member only|\bvip\b|会员专区|付费|抢先看", re.I)
+# free uploads that pitch a paid membership for the rest of the series ("Join member to watch latest episode")
+GATED = re.compile(r"join\s*(the\s*)?members?|加入会员|会员畅享|members?[\s-]*(only|preview|get)|会员专享|会员抢先|抢先看", re.I)
 CN_SUB_ONLY = re.compile(r"【中字】|\[中字\]|中字")
 DUB = re.compile(r"english dub|\[dub\]|\beng ?dub\b", re.I)
 EP = re.compile(r"(?:\bEP|\bEpisode|\bEps?\.)\s*0*(\d{1,4})(?:\s*[-~–—]\s*(?:EP)?\s*0*(\d{1,4}))?|第\s*(\d{1,4})\s*[集话話]|\bS\d{1,2}\s*E0*(\d{1,4})\b", re.I)
@@ -88,6 +90,7 @@ def parse(title, dur):
     if MEMBERS.search(title) or CN_SUB_ONLY.search(title) or OTHER_LANG.search(title):
         return None
     dub = bool(DUB.search(title))
+    gated = bool(GATED.search(title))
     full = bool(FULL.search(title)) and dur >= 2400
     title = PROMO_BR.sub(" ", title)
     title = re.sub(r"\[(?:english (?:sub|dub)|eng ?sub|multi ?sub)\]", " ", title, flags=re.I)
@@ -149,7 +152,7 @@ def parse(title, dur):
         season = s2 or 1
     if len(re.sub(r"\W", "", name)) < 2 or re.fullmatch(r"(?i)(end|top|s\d+|a\d|new|hot|sp|full|eng.*|multi.*)", name):
         return None
-    return dict(name=name, season=season, a=a, b=b, dub=dub, full=a == 0)
+    return dict(name=name, season=season, a=a, b=b, dub=dub, full=a == 0, gated=gated)
 
 
 def key_of(name):

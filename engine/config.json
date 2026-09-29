@@ -8,27 +8,33 @@
  "candidates": {
   "TencentVideoAnimation": {
    "url": "https://www.youtube.com/@TencentVideoAnimation",
-   "audio": "original+en-subs"
+   "audio": "original+en-subs",
+   "origin": "CN"
   },
   "YoukuAnimation": {
    "url": "https://www.youtube.com/@youkuanimation",
-   "audio": "original+en-subs"
+   "audio": "original+en-subs",
+   "origin": "CN"
   },
   "iQIYIAnimation": {
    "url": "https://www.youtube.com/@iQIYIAnimation",
-   "audio": "original+en-subs"
+   "audio": "original+en-subs",
+   "origin": "CN"
   },
   "MadeByBilibili": {
    "url": "https://www.youtube.com/@MadeByBilibili",
-   "audio": "original+en-subs"
+   "audio": "original+en-subs",
+   "origin": "CN"
   },
   "MuseAsia": {
    "url": "https://www.youtube.com/@MuseAsia",
-   "audio": "original+en-subs"
+   "audio": "original+en-subs",
+   "origin": "JP"
   },
   "YoukuEnglishAnimation": {
    "url": "https://www.youtube.com/@YOUKUEnglishAnimation-EN",
-   "audio": "original+en-subs"
+   "audio": "original+en-subs",
+   "origin": "CN"
   }
  }
 }
