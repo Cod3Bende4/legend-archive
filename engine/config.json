@@ -1,0 +1,34 @@
+{
+ "channels": {
+  "AlphaAnime": "https://www.youtube.com/@AlphaAnime-AA/videos",
+  "Legend-Anime": "https://www.youtube.com/@Legend-Anime-o2r/videos",
+  "NeonLore": "https://www.youtube.com/@NeonLoreAnimeStudio/videos",
+  "YuErYY": "https://www.youtube.com/@YuErYY-BF/videos"
+ },
+ "candidates": {
+  "TencentVideoAnimation": {
+   "url": "https://www.youtube.com/@TencentVideoAnimation",
+   "audio": "original+en-subs"
+  },
+  "YoukuAnimation": {
+   "url": "https://www.youtube.com/@youkuanimation",
+   "audio": "original+en-subs"
+  },
+  "iQIYIAnimation": {
+   "url": "https://www.youtube.com/@iQIYIAnimation",
+   "audio": "original+en-subs"
+  },
+  "MadeByBilibili": {
+   "url": "https://www.youtube.com/@MadeByBilibili",
+   "audio": "original+en-subs"
+  },
+  "MuseAsia": {
+   "url": "https://www.youtube.com/@MuseAsia",
+   "audio": "original+en-subs"
+  },
+  "YoukuEnglishAnimation": {
+   "url": "https://www.youtube.com/@YOUKUEnglishAnimation-EN",
+   "audio": "original+en-subs"
+  }
+ }
+}

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Legend Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+[hidden]{display:none!important}
+/* Layout: streaming shelf. Sticky bar, rotating saga banner, stat strip, horizontal shelves of 16:9 tiles by binge length, series sheet with season tabs. Single dark look by choice. */
+:root{
+  color-scheme:dark;
+  --ink:#0a0c12; --panel:#10131c; --raise:#161a26; --line:#232839; --fg:#eef0f6; --soft:#b9c0d3; --muted:#8a93ab; --faint:#5f6780;
+  --gold:#ffc15e; --gold-ink:#1a1406;
+  --cA:#ff8f5a; --cL:#3fd6c0; --cN:#b692ff; --cY:#ffcf5c;
+  --display:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif; --body:"Figtree",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html,body{background:var(--ink);color:var(--fg)}
+body{font:16px/1.5 var(--body);margin:0}
+a{color:var(--gold)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.gut{padding-inline:clamp(16px,4vw,56px)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;padding-block:14px;background:rgba(10,12,18,.88);backdrop-filter:blur(14px);border-bottom:1px solid #1a1e2b}
+.logo{font:900 28px/1 var(--display);letter-spacing:.06em;white-space:nowrap}.logo b{color:var(--gold)}
+.pills{display:flex;gap:8px;flex-wrap:wrap;flex:1 1 420px}
+.pill{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 15px;border-radius:999px;border:1px solid #2a3042;background:transparent;font-weight:600;font-size:14px;cursor:pointer}
+.pill[aria-pressed="true"]{background:var(--fg);color:var(--ink);border-color:var(--fg)}
+.dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto;display:inline-block}
+.search{display:flex;align-items:center;gap:10px;flex:1 1 240px;max-width:360px;height:44px;padding:0 14px;border-radius:10px;background:#151925;border:1px solid #262c3d}
+.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--fg);font:500 15px var(--body)}
+/* hero */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,4vw,56px);align-items:center;padding-block:clamp(28px,5vw,64px)}
+.hero-glow{position:absolute;inset:0;pointer-events:none;opacity:.55}
+.hero-copy{position:relative;display:flex;flex-direction:column;gap:18px;min-width:0}
+.eyebrow{display:flex;flex-wrap:wrap;gap:10px;font:600 12.5px var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.eyebrow i{font-style:normal;color:#4a5169}
+.hero h1{margin:0;font:900 clamp(46px,7vw,92px)/.92 var(--display);text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+.hero p{margin:0;max-width:52ch;font-size:clamp(16px,1.6vw,19px);color:var(--soft)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.07);font-weight:600;font-size:13px;color:#dfe3ee}
+.chip.gold{background:transparent;border:1px solid rgba(255,193,94,.4);color:var(--gold)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:12px;border:0;font-weight:700;font-size:16px;text-decoration:none;cursor:pointer}
+.btn.gold{background:var(--gold);color:var(--gold-ink)}.btn.gold:hover{background:#ffd08a}
+.btn.ghost{background:rgba(255,255,255,.08);color:var(--fg)}.btn.ghost:hover{background:rgba(255,255,255,.14)}
+.nav{display:flex;align-items:center;gap:12px;margin-top:10px}
+.round{width:44px;height:44px;border-radius:50%;border:1px solid #2a3042;background:transparent;display:grid;place-items:center;cursor:pointer}
+.round:hover{background:rgba(255,255,255,.08)}
+.bars{display:flex;gap:6px}.bars span{height:4px;border-radius:4px;background:#2e3447;width:10px;transition:width .3s}.bars span.on{width:28px;background:var(--gold)}
+.pos{font:500 13px var(--mono);color:#7d86a0}
+.frame{position:relative;aspect-ratio:16/9;max-width:100%;border-radius:18px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06)}
+.art,.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.art::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 4px)}
+.frame .shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.78))}
+.hero-media{display:grid;gap:14px;min-width:0}
+.strip{display:flex;flex-wrap:wrap;gap:8px}
+.strip span{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:10px;background:#151925;border:1px solid #232839;font:600 12.5px var(--mono);color:#dfe3ee}
+.strip em{font-style:normal;font-weight:500;color:var(--muted)}
+.run{display:grid;grid-template-columns:30px 1fr 64px;align-items:center;gap:10px;font:600 12px var(--mono)}
+.run b{height:7px;border-radius:7px;display:block}
+.run em{font-style:normal;color:var(--soft);font-weight:500}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#1a1e2b;border-radius:14px;overflow:hidden}
+.stat{background:#0f121a;padding:16px 20px}
+.stat b{display:block;font:800 32px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.stat span{font-size:14px;color:var(--muted)}
+/* shelves */
+main{display:grid;gap:44px;padding-block:44px}
+.shelf-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
+.shelf-head h2{margin:0;font:800 clamp(28px,3.2vw,38px)/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.shelf-head span{color:var(--muted);font-size:15px}
+.shelf-head small{margin-left:auto;font:600 13px var(--mono);color:#6b7390}
+.row{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(240px,22vw,300px);gap:18px;overflow-x:auto;padding-block:14px 16px;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:#2a3042 transparent}
+.row::-webkit-scrollbar{height:8px}.row::-webkit-scrollbar-thumb{background:#2a3042;border-radius:8px}
+.tile{scroll-snap-align:start;display:flex;flex-direction:column;gap:10px;padding:0;border:0;background:none;text-align:left;cursor:pointer;min-width:0;transition:transform .25s}
+.tile:hover{transform:translateY(-5px)}
+.tile .frame{border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.06)}
+.tile:hover .frame{box-shadow:0 18px 38px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.2)}
+.tag{position:absolute;top:10px;left:10px;right:10px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.genre{font:600 10px var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.badge.new{background:var(--gold);color:var(--gold-ink)}
+.badge{padding:3px 8px;border-radius:6px;background:rgba(0,0,0,.6);font:600 11px var(--mono);white-space:nowrap}
+.ptitle{position:absolute;left:12px;right:12px;bottom:10px;font:800 22px/.98 var(--display);text-transform:uppercase;text-wrap:balance}
+.has-img .ptitle,.has-img .genre{display:none}
+.has-img .shade{background:linear-gradient(180deg,rgba(0,0,0,.35),transparent 30%)}
+.tname{font-weight:600;font-size:15px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tmeta{display:flex;align-items:center;gap:8px;font:500 12.5px var(--mono);color:var(--soft)}
+.tmeta .x{margin-left:auto;font:600 11.5px var(--body);color:var(--gold)}
+.empty{padding:48px 24px;border:1px dashed #2a3042;border-radius:16px;text-align:center;color:var(--muted)}
+footer{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;padding-block:26px 40px;border-top:1px solid #1a1e2b;font-size:14px;color:#6b7390}
+footer .chips{gap:14px}
+/* sheet */
+.veil{position:fixed;inset:0;z-index:50;background:rgba(4,5,9,.82);backdrop-filter:blur(10px);overflow-y:auto;padding:max(24px,env(safe-area-inset-top,0px)) 16px 40px;display:flex;justify-content:center;align-items:flex-start}
+.sheet{position:relative;width:min(1040px,100%);border-radius:20px;overflow:hidden;background:var(--panel);border:1px solid var(--line);box-shadow:0 50px 100px rgba(0,0,0,.6)}
+.sheet-top{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;padding:28px}
+.sheet .close{position:absolute;right:16px;top:16px;z-index:3;background:rgba(0,0,0,.5);border:0}
+.sheet h2{margin:0;font:900 clamp(34px,4.5vw,52px)/.95 var(--display);text-transform:uppercase;text-wrap:balance}
+.sheet-copy{display:flex;flex-direction:column;gap:14px;min-width:0;padding-right:40px}
+.sheet-copy p{margin:0;color:var(--soft)}
+.note{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:rgba(255,193,94,.08);border:1px solid rgba(255,193,94,.25);font-size:14px}
+.note b{flex:0 0 auto;padding:2px 8px;border-radius:6px;background:rgba(255,193,94,.18);font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.facts{font:600 12.5px var(--mono);letter-spacing:.04em;color:var(--soft)}
+.eps{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:8px}
+.ep{display:flex;justify-content:space-between;gap:8px;padding:10px 12px;border-radius:10px;background:#131722;border:1px solid #1d2231;color:#dfe3ee;text-decoration:none;font:600 13px var(--mono)}
+.ep:hover,.ep.on{border-color:var(--gold)}
+.ep em{font-style:normal;font-weight:500;color:var(--muted)}
+.gapnote{font-size:14px;color:#ff9a7a}
+.sheet-body{display:grid;gap:18px;padding:24px 28px 28px;border-top:1px solid #1d2231}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid #2a3042;background:transparent;font-weight:700;font-size:15px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--gold);border-color:var(--gold);color:var(--gold-ink)}
+.pick{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;padding:18px 20px;border-radius:14px;background:var(--raise);border:1px solid #262c3d}
+.pick .lab{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:600 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pick .ttl{font-size:17px;font-weight:600;line-height:1.35;overflow-wrap:anywhere;margin-top:6px}
+.pick .go{display:flex;gap:10px;flex-wrap:wrap}
+.player{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.alts{display:grid;gap:8px}
+.alts h3{margin:0;font:600 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#6b7390}
+.alt{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:11px 14px;border-radius:12px;background:#131722;color:#dfe3ee;text-decoration:none}
+.alt:hover{background:#1d2231}
+.alt .c{display:flex;align-items:center;gap:8px;font:600 12px var(--mono);color:var(--soft)}
+.alt .d{font:500 12px var(--mono);color:var(--muted)}
+@media (max-width:760px){
+  .hero,.sheet-top{grid-template-columns:1fr}.hero .hero-media{order:-1}
+  .sheet-copy{padding-right:0}.pick{grid-template-columns:1fr}
+  .alt{grid-template-columns:1fr auto}.alt .c{grid-column:1/-1}
+  .shelf-head small{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){.tile,.bars span{transition:none}.tile:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="gut">
+  <div class="logo"><b>LEGEND</b> ARCHIVE</div>
+  <div class="pills" id="pills" role="group" aria-label="Filter by channel"></div>
+  <label class="search" for="q">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a93ab" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <input id="q" type="search" placeholder="Search mecha, zoo, skeleton…" aria-label="Search series" autocomplete="off">
+  </label>
+</header>
+
+<section class="hero gut" id="hero"></section>
+<section class="gut"><div class="stats" id="stats"></div></section>
+<main class="gut" id="shelves"></main>
+<footer class="gut">
+  <span id="foot"></span>
+  <span class="chips" id="legend"></span>
+</footer>
+<div class="veil" id="veil" hidden></div>
+
+<script>
+const DATA = __DATA__;
+const META = __META__;
+const CH = {'AlphaAnime':'var(--cA)','Legend-Anime':'var(--cL)','NeonLore':'var(--cN)','YuErYY':'var(--cY)'};
+const SHELVES = [{id:0,name:'New this week',sub:'Series with an upload that appeared in the last 7 days.'}].concat(META.shelves || []);
+const S = {q:'', ch:'All', hero:0, sel:null, season:0, playing:false};
+let LIVE = false; // true once YouTube thumbnails can load (page opened outside Claude)
+const $ = (id) => document.getElementById(id);
+const esc = (t) => String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const yt = (id) => 'https://www.youtube.com/watch?v=' + id;
+const thumb = (id, q) => 'https://i.ytimg.com/vi/' + id + '/' + (q || 'hqdefault') + '.jpg';
+const badge = (x) => x.seasons > 1 ? x.seasons + ' seasons' : 'Feature';
+const secs = (d) => { const m = /(?:(\d+)h )?(\d+)m/.exec(d || ''); return m ? (+(m[1]||0))*3600 + (+m[2])*60 : 0; };
+const art = (x) => `background:radial-gradient(circle at ${x.rx}% ${x.ry}%,transparent 34%,${x.ac}55 34.6%,transparent 36.4%),radial-gradient(70% 60% at ${x.px}% ${x.py}%,${x.ac}66 0%,transparent 62%),linear-gradient(160deg,${x.c1},${x.c2})`;
+const dot = (c) => `<i class="dot" style="background:${CH[c]}"></i>`;
+const chipsFor = (x) => x.chans.map(c => `<span class="chip">${dot(c)}${esc(c)}</span>`).join('');
+const PLAY = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
+
+function frame(x, opts) {
+  const id = x.seas[0].pick.id, big = opts && opts.big;
+  const img = `<img alt="" loading="lazy" src="${thumb(id, big ? 'maxresdefault' : 'hqdefault')}" onload="imgOk(this)" onerror="imgBad(this,'${id}',${big?1:0})">`;
+  return `<div class="frame"><div class="art" style="${art(x)}"></div>${img}<div class="shade"></div>${opts && opts.inner || ''}</div>`;
+}
+function imgOk(el) {
+  if (el.naturalWidth <= 120) return imgBad(el); // YouTube's grey placeholder for missing sizes
+  el.parentNode.classList.add('has-img');
+  if (!LIVE) { LIVE = true; if (S.sel !== null) renderSheet(); }
+}
+function imgBad(el, id, big) {
+  if (big && id && !el.dataset.retry) { el.dataset.retry = 1; el.src = thumb(id, 'hqdefault'); return; }
+  el.remove();
+}
+function matches(x) {
+  if (S.ch !== 'All' && x.chans.indexOf(S.ch) < 0) return false;
+  if (!S.q) return true;
+  const hay = (x.title + ' ' + x.tag + ' ' + x.seas.map(s => s.pick.t + ' ' + s.alts.map(a => a.t).join(' ')).join(' ')).toLowerCase();
+  return hay.indexOf(S.q) >= 0;
+}
+function renderPills() {
+  $('pills').innerHTML = ['All','AlphaAnime','Legend-Anime','NeonLore','YuErYY'].map(c =>
+    `<button class="pill" type="button" data-ch="${c}" aria-pressed="${S.ch===c}">${c==='All' ? '<i class="dot" style="background:var(--fg)"></i>All channels' : dot(c)+c}</button>`).join('');
+}
+let heroList = DATA.map((x,i)=>({x,i})).filter(o => o.x.tier <= 3 && o.x.seasons > 1).slice(0, 6);
+if (!heroList.length) heroList = DATA.map((x,i)=>({x,i})).slice(0, 6);
+function renderHero() {
+  const box = $('hero');
+  box.hidden = !!S.q || S.ch !== 'All';
+  if (box.hidden) return;
+  const n = heroList.length, hi = ((S.hero % n) + n) % n, o = heroList[hi], x = o.x;
+  const runs = x.seas.filter(s => /^S\d+$/.test(s.short)).map(s =>
+    `<span>${dot(s.pick.ch)}${s.short} <em>${s.pick.dur}</em></span>`).join('');
+  box.innerHTML = `
+    <div class="hero-glow" style="background:radial-gradient(60% 90% at 80% 30%,${x.c1},transparent 70%)"></div>
+    <div class="hero-copy">
+      <div class="eyebrow" style="color:${x.ac}"><span>${esc((SHELVES.find(s => s.id === x.tier) || {name:''}).name.split(' · ')[0])}</span><i>/</i><span>${badge(x)}</span><i>/</i><span>${x.totalF}</span></div>
+      <h1>${esc(x.title)}</h1>
+      <p>${esc(x.tag)}</p>
+      ${x.facts ? `<div class="facts">${esc(x.facts)}</div>` : ''}
+      <div class="chips">${chipsFor(x)}${x.chans.length > 1 ? `<span class="chip gold">Same story on ${x.chans.length} channels</span>` : ''}</div>
+      <div class="actions">
+        <a class="btn gold" href="${yt(x.seas[0].pick.id)}" target="_blank" rel="noopener">${PLAY}Play Season 1</a>
+        <button class="btn ghost" type="button" data-open="${o.i}">All seasons &amp; uploads</button>
+      </div>
+      <div class="nav">
+        <button class="round" type="button" data-hero="-1" aria-label="Previous saga"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <div class="bars">${heroList.map((_, j) => `<span class="${j===hi?'on':''}"></span>`).join('')}</div>
+        <button class="round" type="button" data-hero="1" aria-label="Next saga"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        <span class="pos">${hi+1} / ${n}</span>
+      </div>
+    </div>
+    <div class="hero-media">${frame(x, {big:true})}<div class="strip" aria-label="Seasons and runtimes">${runs}</div></div>`;
+}
+function renderStats() {
+  const up = DATA.reduce((n,x) => n + x.seas.reduce((m,s) => m + 1 + s.alts.length, 0), 0);
+  $('stats').innerHTML = [
+    [DATA.length,'series'],[up,'uploads across 4 channels'],[DATA.filter(x=>x.seasons>1).length,'multi-season stories'],
+    [DATA.filter(x=>x.chans.length>1).length,'stories on 2+ channels'],[Math.round(DATA.reduce((n,x)=>n+x.total,0)/3600)+'h','of unique watch time']
+  ].map(([n,l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
+}
+function tile(x, i) {
+  const inner = `<div class="tag"><span class="genre" style="color:${x.ac}">${esc(x.genre)}</span><span style="display:flex;gap:6px">${x.fresh ? '<span class="badge new">NEW</span>' : ''}${x.q === 'ai' ? '<span class="badge" title="AI-made, flagged from comments">AI</span>' : ''}<span class="badge">${badge(x)}</span></span></div><div class="ptitle" style="font-size:${Math.round(x.fs*0.72)}px">${esc(x.title)}</div>`;
+  return `<button class="tile" type="button" data-open="${i}" aria-label="${esc(x.title)}, ${badge(x)}, ${x.totalF}">
+    ${frame(x, {inner})}
+    <div class="tname">${esc(x.title)}</div>
+    <div class="tmeta">${x.totalF}${x.rating ? ' · ★ ' + x.rating : ''} <span style="display:flex;gap:4px">${x.chans.map(dot).join('')}</span>${x.chans.length > 1 ? `<span class="x">${x.chans.length} channels</span>` : ''}</div>
+  </button>`;
+}
+function renderShelves() {
+  const html = SHELVES.map(d => {
+    const items = DATA.map((x,i) => ({x,i})).filter(o => (d.id === 0 ? o.x.fresh : o.x.tier === d.id) && matches(o.x));
+    if (d.id === 0) items.sort((a,b) => b.x.newest.localeCompare(a.x.newest));
+    if (!items.length) return '';
+    return `<section aria-label="${d.name}"><div class="shelf-head"><h2>${d.name}</h2><span>${d.sub}</span><small>${items.length} series</small></div>
+      <div class="row">${items.map(o => tile(o.x, o.i)).join('')}</div></section>`;
+  }).join('');
+  $('shelves').innerHTML = html || `<div class="empty">Nothing matches “${esc(S.q)}”. Try one word, like mecha, carp or skeleton.</div>`;
+}
+function renderSheet() {
+  const v = $('veil');
+  if (S.sel === null) { v.hidden = true; v.innerHTML = ''; document.body.style.overflow = ''; return; }
+  const x = DATA[S.sel], si = Math.min(S.season, x.seas.length - 1), s = x.seas[si];
+  const one = x.seas.length === 1, label = one ? 'feature' : s.short;
+  const pid = S.playId || s.pick.id;
+  const player = S.playing && LIVE ? `<div class="player"><iframe src="https://www.youtube.com/embed/${pid}?autoplay=1&rel=0" title="${esc(s.pick.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>` : '';
+  v.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(x.title)}">
+    <button class="round close" type="button" data-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="sheet-top" style="background:radial-gradient(80% 140% at 0% 0%,${x.c1},transparent 65%)">
+      ${frame(x, {big:true, inner:`<div class="tag"><span class="genre" style="color:${x.ac}">${esc(x.genre)}</span></div><div class="ptitle" style="font-size:30px">${esc(x.title)}</div>`})}
+      <div class="sheet-copy">
+        <div class="eyebrow" style="color:${x.ac}"><span>${badge(x)}</span><i>/</i><span>${x.totalF} total</span></div>
+        <h2>${esc(x.title)}</h2>
+        ${x.tag ? `<p>${esc(x.tag)}</p>` : ''}
+        ${x.facts ? `<div class="facts">${esc(x.facts)}</div>` : ''}
+        <div class="chips">${chipsFor(x)}</div>
+        ${x.note ? `<div class="note"><b>${esc(x.conf || 'note')}</b><span>${esc(x.note)}</span></div>` : ''}
+        ${x.missing.length ? `<div class="gapnote">Season ${x.missing.join(', ')} ${x.missing.length > 1 ? 'are' : 'is'} not uploaded on any of the four channels yet.</div>` : ''}
+      </div>
+    </div>
+    <div class="sheet-body">
+      <div class="tabs" role="tablist" aria-label="Seasons">${x.seas.map((t,j) => `<button type="button" role="tab" data-season="${j}" aria-selected="${j===si}">${one ? 'Full feature' : esc(t.label)}${t.pick.new || t.alts.some(a => a.new) ? ' · new' : ''}</button>`).join('')}</div>
+      ${player}
+      <div class="pick">
+        <div style="min-width:0"><div class="lab"><span>Watch this</span>${dot(s.pick.ch)}<span style="color:#dfe3ee">${esc(s.pick.ch)}</span><span>${s.pick.dur}</span></div><div class="ttl">${esc(s.pick.t)}</div></div>
+        <div class="go">
+          ${LIVE && !S.playing ? `<button class="btn gold" type="button" data-play>${PLAY}Play ${label} here</button>` : ''}
+          <a class="btn ${LIVE && !S.playing ? 'ghost' : 'gold'}" href="${yt(s.pick.id)}" target="_blank" rel="noopener">${LIVE ? 'Open on YouTube' : PLAY + 'Play ' + label}</a>
+        </div>
+      </div>
+      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map(e => `<a class="ep ${S.playing && pid === e.id ? 'on' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" data-ep="${e.id}">EP ${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
+      ${s.alts.length ? `<div class="alts"><h3>Also uploaded as</h3>${s.alts.map(a => `<a class="alt" href="${yt(a.id)}" target="_blank" rel="noopener"><span class="c">${dot(a.ch)}${esc(a.ch)}</span><span>${esc(a.t)}</span><span class="d">${a.dur}</span></a>`).join('')}</div>` : ''}
+    </div></div>`;
+  v.hidden = false; document.body.style.overflow = 'hidden';
+}
+function renderAll() { renderPills(); renderHero(); renderShelves(); }
+
+document.addEventListener('click', (e) => {
+  const ep = e.target.closest('[data-ep]');
+  if (ep && LIVE) { e.preventDefault(); S.playId = ep.dataset.ep; S.playing = true; renderSheet(); return; }
+  const t = e.target.closest('[data-open],[data-hero],[data-ch],[data-close],[data-season],[data-play]');
+  if (!t) { if (e.target === $('veil')) { S.sel = null; S.playing = false; renderSheet(); } return; }
+  if (t.dataset.open !== undefined) { S.sel = +t.dataset.open; S.season = 0; S.playing = false; S.playId = null; renderSheet(); }
+  else if (t.dataset.hero) { S.hero += +t.dataset.hero; renderHero(); }
+  else if (t.dataset.ch) { S.ch = t.dataset.ch; renderAll(); }
+  else if (t.dataset.close !== undefined) { S.sel = null; S.playing = false; renderSheet(); }
+  else if (t.dataset.season) { S.season = +t.dataset.season; S.playing = false; S.playId = null; renderSheet(); }
+  else if (t.dataset.play !== undefined) { S.playing = true; S.playId = null; renderSheet(); }
+});
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.sel !== null) { S.sel = null; S.playing = false; renderSheet(); } });
+$('q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); renderAll(); });
+$('legend').innerHTML = Object.keys(CH).map(c => `<span class="chip" style="background:none;padding:0;color:#6b7390">${dot(c)}${c}</span>`).join('');
+$('foot').textContent = 'Updated ' + new Date(META.updated).toLocaleString([], {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}) + (META.added ? ' · ' + META.added + ' new upload' + (META.added > 1 ? 's' : '') : '') + (META.hidden ? ' · ' + META.hidden + ' AI-slop series hidden' : '') + (META.failed.length ? ' · could not reach ' + META.failed.join(', ') : '') + '. Refreshes daily at 10 PM.';
+renderStats(); renderAll();
+</script>
+
+</body>
+</html>

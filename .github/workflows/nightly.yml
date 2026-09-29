@@ -1,0 +1,66 @@
+name: Legend Archive
+
+on:
+  schedule:
+    - cron: "30 16 * * *"      # 22:00 IST: list new uploads, AI check, rebuild, publish
+  workflow_dispatch:            # "Run workflow" button (phone works too)
+  push:
+    branches: [main]
+    paths: ["engine/**"]        # curation or code change: rebuild and publish only
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: legend-archive
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      TZ: Asia/Kolkata
+      SITE_DIR: _site
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh from YouTube (new uploads only)
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh]')
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: |
+          if [ -z "$YT_API_KEY" ]; then echo "::error::Add the YT_API_KEY secret (Settings > Secrets and variables > Actions)"; exit 1; fi
+          python engine/refresh.py --force
+
+      - name: Rebuild page
+        if: github.event_name == 'push' && !contains(github.event.head_commit.message, '[refresh]')
+        run: python engine/refresh.py --rebuild
+
+      - name: Save new data to the repo
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh]')
+        run: |
+          git config user.name "legend-archive-bot"
+          git config user.email "legend-archive-bot@users.noreply.github.com"
+          git add engine/videos.json engine/scan
+          if ! git diff --cached --quiet; then
+            git commit -m "Nightly data $(date +%F)"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
