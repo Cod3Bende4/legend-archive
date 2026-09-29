@@ -133,6 +133,10 @@ footer .chips{gap:14px}
 .sheet h2{margin:0;font:900 clamp(34px,4.5vw,52px)/.95 var(--display);text-transform:uppercase;text-wrap:balance}
 .sheet-copy{display:flex;flex-direction:column;gap:14px;min-width:0;padding-right:40px}
 .sheet-copy p{margin:0;color:var(--soft)}
+.summary{display:grid;gap:6px;padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid #232839}
+.summary b{font:600 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.summary p{color:#dfe3ee;font-size:15.5px;line-height:1.6}
+.hero p.sum{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .note{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:rgba(255,193,94,.08);border:1px solid rgba(255,193,94,.25);font-size:14px}
 .note b{flex:0 0 auto;padding:2px 8px;border-radius:6px;background:rgba(255,193,94,.18);font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
 .facts{font:600 12.5px var(--mono);letter-spacing:.04em;color:var(--soft)}
@@ -245,7 +249,7 @@ function imgBad(el, id, big) {
 function matches(x) {
   if (S.ch !== 'All' && x.chans.indexOf(S.ch) < 0) return false;
   if (!S.q) return true;
-  const hay = (x.title + ' ' + x.tag + ' ' + x.seas.map(s => s.pick.t + ' ' + s.alts.map(a => a.t).join(' ')).join(' ')).toLowerCase();
+  const hay = (x.title + ' ' + x.tag + ' ' + (x.summary || '') + ' ' + x.seas.map(s => s.pick.t + ' ' + s.alts.map(a => a.t).join(' ')).join(' ')).toLowerCase();
   return hay.indexOf(S.q) >= 0;
 }
 function renderOrigins() {
@@ -286,7 +290,7 @@ function renderHero() {
     <div class="hero-copy">
       <div class="eyebrow" style="color:${x.ac}"><span>${esc((SHELVES.find(s => s.id === x.tier) || {name:''}).name.split(' · ')[0])}</span><i>/</i><span>${badge(x)}</span><i>/</i><span>${x.totalF}</span></div>
       <h1>${esc(x.title)}</h1>
-      <p>${esc(x.tag)}</p>
+      ${x.summary ? `<p class="sum">${esc(x.summary)}</p>` : `<p>${esc(x.tag)}</p>`}
       ${x.facts ? `<div class="facts">${esc(x.facts)}</div>` : ''}
       <div class="chips">${chipsFor(x)}${x.chans.length > 1 ? `<span class="chip gold">Same story on ${x.chans.length} channels</span>` : ''}</div>
       <div class="actions">
@@ -390,6 +394,7 @@ function renderSheet() {
         <div class="eyebrow" style="color:${x.ac}"><span>${badge(x)}</span><i>/</i><span>${x.totalF} total</span></div>
         <h2>${esc(x.title)}</h2>
         ${x.tag ? `<p>${esc(x.tag)}</p>` : ''}
+        ${x.summary ? `<div class="summary"><b>Summary</b><p>${esc(x.summary)}</p></div>` : ''}
         ${x.facts ? `<div class="facts">${esc(x.facts)}</div>` : ''}
         <div class="chips">${chipsFor(x)}</div>
         ${x.note ? `<div class="note"><b>${esc(x.conf || 'note')}</b><span>${esc(x.note)}</span></div>` : ''}
@@ -406,7 +411,7 @@ function renderSheet() {
           <a class="btn ${LIVE && !S.playing ? 'ghost' : 'gold'}" href="${yt(s.pick.id)}" target="_blank" rel="noopener">${LIVE ? 'Open on YouTube' : PLAY + 'Play ' + label}</a>
         </div>
       </div>
-      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map(e => `<a class="ep ${S.playing && pid === e.id ? 'on' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" data-ep="${e.id}">EP ${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
+      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map(e => `<a class="ep ${S.playing && pid === e.id ? 'on' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" data-ep="${e.id}">${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
       ${s.alts.length ? `<div class="alts"><h3>Also uploaded as</h3>${s.alts.map(a => `<a class="alt" href="${yt(a.id)}" target="_blank" rel="noopener"><span class="c">${dot(a.ch)}${esc(chName(a.ch))}</span><span>${esc(a.t)}</span><span class="d">${a.dur}</span></a>`).join('')}</div>` : ''}
     </div></div>`;
   v.hidden = false; document.body.style.overflow = 'hidden';

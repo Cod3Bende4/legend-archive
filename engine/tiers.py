@@ -26,6 +26,8 @@ then ORIGIN_HINTS for known titles, then meta[key]["origin"] set by hand.
 Members-only: a series whose free uploads pitch a paid membership ("Join member to watch latest episode",
 加入会员) is hidden, since the rest of it is behind the paywall. meta[key]["members_ok"] = true keeps one.
 
+Summary: meta[key]["summary"] is a short spoiler-free English premise, shown when a series is opened.
+
 Per-series facts that need judgment (rating, completed, display name, hide) live in
 curated.json under "meta", keyed by each series' "key". Claude's scheduled runs fill them in.
 """
@@ -240,6 +242,7 @@ def apply(series, cur, Q):
         rating = m.get("rating")
         x["rating"] = rating
         x["ratingSrc"] = m.get("rating_src", "")
+        x["summary"] = m.get("summary", "")
         x["completed"] = m.get("completed", x["audio"] == "A3")
         members = x.pop("members", False) and not m.get("members_ok")
         if m.get("hide") or slop or members or x["total"] < 3600 or (rating is not None and rating < 7.5):
