@@ -397,14 +397,16 @@
 "rating": 7.57,
 "rating_src": "MAL",
 "completed": true,
-"note": "covers 2009 series + 2014 series (EP1-277); Final Season is key fairytailfinalseason"
+"note": "covers 2009 series + 2014 series (EP1-277); Final Season is key fairytailfinalseason",
+"summary": "Lucy Heartfilia, a young celestial wizard, dreams of joining the famous and famously rowdy Fairy Tail guild. She gets her wish after meeting Natsu Dragneel, a fire-eating Dragon Slayer searching for the dragon who raised him, and his flying cat Happy. Together with their guildmates they take on jobs, rival guilds and dark wizards across the kingdom of Fiore."
 },
 "soulland": {
 "name": "Soul Land",
 "rating": 7.8,
 "rating_src": "MAL",
 "completed": false,
-"note": "S1 finished (EP263) but 3 eps missing; 'Season 2' uploads are actually Soul Land 2 EP95-141"
+"note": "S1 finished (EP263) but 3 eps missing; 'Season 2' uploads are actually Soul Land 2 EP95-141",
+"summary": "Tang San, a prodigy of the Tang Sect of hidden weapons, is reborn in a world where everyone awakens a martial spirit that decides their path in life. Born as a blacksmith's son in a small village, he discovers he carries unusual spirits and rare potential, and he sets out to train at academies and rise as a Spirit Master."
 },
 "amortalsjourney": {
 "name": "A Mortal's Journey",
@@ -412,14 +414,16 @@
 "rating_src": "MAL",
 "completed": false,
 "note": "mostly multi-episode collections; members-only gaps; still ongoing (Sea of Stars arc)",
-"members_ok": true
+"members_ok": true,
+"summary": "Han Li is a poor village boy with no special talent who is taken in as a helper by a small martial sect. When he stumbles onto a mysterious bottle that speeds the growth of medicinal herbs, he quietly begins cultivating immortal arts, relying on caution, patience and cunning to survive a ruthless world of cultivators on his long road toward immortality."
 },
 "perfectworld": {
 "name": "Perfect World",
 "rating": 8.1,
 "rating_src": "MAL",
 "completed": false,
-"note": "still ongoing; members-only gaps"
+"note": "still ongoing; members-only gaps",
+"summary": "Shi Hao is a boy raised in a small village in the wild Great Wilderness. As an infant he was robbed of a rare, powerful bone that marked him for greatness, yet he grows up tough and fearless anyway. Training with the villagers and the spirit that guards them, he sets out into a world of ancient beasts, clans and sects, determined to grow stronger and uncover his origins."
 },
 "tenthousandworlds": {
 "name": "Ten Thousand Worlds",
@@ -444,14 +448,16 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": false,
-"note": "still ongoing; members-only gaps"
+"note": "still ongoing; members-only gaps",
+"summary": "After a deadly virus sweeps the planet and monsters overrun most of it, humanity lives in fortified cities where trained martial artists fight the beasts. Luo Feng, a young man from an ordinary family, is determined to become a warrior so he can provide for his loved ones, and his growing strength sets him on a path toward far greater powers and threats."
 },
 "reborn": {
 "name": "Reborn!",
 "rating": 8.13,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL entry: Katekyo Hitman Reborn!"
+"note": "MAL entry: Katekyo Hitman Reborn!",
+"summary": "Tsunayoshi Sawada is a clumsy middle schooler who fails at nearly everything, until a baby hitman named Reborn shows up at his door. Reborn announces that Tsuna is the heir to the Vongola, a powerful Italian mafia family, and sets out to train him as its next boss with dangerous and absurd methods, while Tsuna gathers an unlikely circle of friends and guardians."
 },
 "againsttheskysupreme": {
 "name": "Against the Sky Supreme",
@@ -498,7 +504,8 @@
 "rating": 9.03,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL entry: Hunter x Hunter (2011)"
+"note": "MAL entry: Hunter x Hunter (2011)",
+"summary": "Twelve-year-old Gon Freecss learns that the father he never knew is a famed Hunter, an elite licensed adventurer, and sets off to pass the brutal Hunter Exam and track him down. Along the way he befriends Killua, the runaway heir of an assassin family, the vengeful Kurapika and the easygoing Leorio, and the group heads into a world of dangerous jobs and powerful rivals."
 },
 "onehundredthousandyearsofqirefining": {
 "name": "One Hundred Thousand Years of Qi Refining",
@@ -520,14 +527,16 @@
 "rating": 8.1,
 "rating_src": "MAL",
 "completed": false,
-"note": "S4 is a five-cour run started April 2026, still airing; S1/S2 uploaded as compilations"
+"note": "S4 is a five-cour run started April 2026, still airing; S1/S2 uploaded as compilations",
+"summary": "Satoru Mikami, a 37-year-old office worker, is stabbed to death and wakes up in a fantasy world as a slime with odd skills, including the power to devour things and copy their abilities. After befriending the sealed Storm Dragon Veldora, he takes the name Rimuru Tempest. He begins protecting the monsters around him, and his growing band of followers sets out to build a peaceful nation."
 },
 "renegadeimmortal": {
 "name": "Renegade Immortal",
 "rating": 8.4,
 "rating_src": "MAL",
 "completed": false,
-"note": "still ongoing; members-only gaps (EP1 missing)"
+"note": "still ongoing; members-only gaps (EP1 missing)",
+"summary": "Wang Lin is a boy of ordinary talent from a poor village who longs to become a cultivator. After barely getting into a cultivation sect, he finds a mysterious bead that changes his fate. Determined and ruthless when he must be, he climbs the harsh world of immortal cultivation in pursuit of power and eternal life."
 },
 "legendofxianwu": {
 "name": "Legend of Xianwu",
@@ -558,7 +567,8 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": false,
-"note": "S1-2 only as compilations with gaps; S3 ongoing"
+"note": "S1-2 only as compilations with gaps; S3 ongoing",
+"summary": "Bai Xiaochun is a cowardly village boy terrified of dying, so he joins the Spirit Stream Sect in hopes of learning the secret to living forever. Rather than fighting, he pours his energy into pill-making and defensive arts, and his knack for causing chaos keeps getting him into trouble. His quest for immortality gradually drags him into wars between sects."
 },
 "legendofskylord": {
 "name": "The Legend of Sky Lord",
@@ -620,7 +630,8 @@
 "rating": 7.6,
 "rating_src": "MAL",
 "completed": false,
-"note": "MAL entry: Wushen Zhuzai; still airing (700+ eps), uploads are 20-ep compilations up to EP473"
+"note": "MAL entry: Wushen Zhuzai; still airing (700+ eps), uploads are 20-ep compilations up to EP473",
+"summary": "Qin Chen was once a peerless martial master who was betrayed and killed. He awakens hundreds of years later in the body of a scorned young man at a royal academy, looked down on by everyone around him. Using the knowledge and techniques from his past life, he sets out to rebuild his strength, protect the people close to him and uncover the truth behind his death."
 },
 "wonderland": {
 "name": "Wonderland",
@@ -634,21 +645,24 @@
 "rating": 8.56,
 "rating_src": "MAL",
 "completed": true,
-"note": "S4 overlaps attackontitanthefinalseasonpart (compilations)"
+"note": "S4 overlaps attackontitanthefinalseasonpart (compilations)",
+"summary": "Humanity survives behind giant walls that keep out Titans, huge man-eating beings. When a Titan breaches the outer wall and Eren Yeager watches his mother die, he vows to wipe them all out and joins the military with his friends Mikasa and Armin, hoping to fight on the front lines and uncover the secrets of the world outside."
 },
 "rezerostartinglifeinanotherworld": {
 "name": "Re:ZERO -Starting Life in Another World-",
 "rating": 8.23,
 "rating_src": "MAL",
 "completed": false,
-"note": "S4 (19 eps) still airing, finale ~2026-09-30; 16 S4 eps uploaded"
+"note": "S4 (19 eps) still airing, finale ~2026-09-30; 16 S4 eps uploaded",
+"summary": "Shut-in Subaru Natsuki is suddenly transported from a convenience store to a fantasy kingdom, where he meets a half-elf girl named Emilia. He discovers that whenever he dies, time rewinds to an earlier point, leaving only him with memories of what happened. He uses this painful ability to protect Emilia and her allies from the dangers around them."
 },
 "welcometodemonschoolirumakun": {
 "name": "Welcome to Demon School! Iruma-kun",
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": true,
-"note": "S4 (24 eps) finished 2026-09-27; rating rounded across seasons"
+"note": "S4 (24 eps) finished 2026-09-27; rating rounded across seasons",
+"summary": "Fourteen-year-old Iruma Suzuki is sold by his careless parents to Sullivan, a powerful demon who simply wants a grandson. Whisked off to the Netherworld, Iruma is enrolled at Babyls, a school for demons, where being exposed as human could get him eaten. Kind to a fault and unable to refuse a request, he tries to keep his secret while making friends and quickly climbing the school's ranks."
 },
 "taleofherdinggod": {
 "name": "Tales of Herding Gods",
@@ -656,7 +670,8 @@
 "note": "still airing; score recalled (approx)",
 "origin": "CN",
 "rating": 8.2,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Qin Mu is an orphan raised in a village of eccentric, disabled elders in the Great Ruins, a wasteland where monsters come out after dark. Each elder is secretly a master of some art, and they teach him everything they know. When he grows up, Qin Mu leaves the Ruins to see the outside world and uncover the truth about his origins and the gods that rule it."
 },
 "lingwucontinent": {
 "name": "Lingwu Continent",
@@ -677,7 +692,8 @@
 "rating": 8.03,
 "rating_src": "MAL",
 "completed": false,
-"note": "still airing; same show as 斗罗大陆2绝世唐门 key (overlapping compilations, not merged) and soulland S2 uploads"
+"note": "still airing; same show as 斗罗大陆2绝世唐门 key (overlapping compilations, not merged) and soulland S2 uploads",
+"summary": "Thousands of years after the first Soul Land story, Huo Yuhao is the neglected son of a duke, living with his mistreated mother and born with a weak martial spirit. After tragedy strikes, he vows to grow strong enough for revenge, and a chance encounter with a powerful spirit beast sets him on the road to Shrek Academy."
 },
 "supremelordofgalaxy": {
 "name": "Supreme Lord of Galaxy",
@@ -712,7 +728,8 @@
 "rating": 8.14,
 "rating_src": "MAL",
 "completed": true,
-"note": "dub covers S1-S3 (S4 not dubbed yet)"
+"note": "dub covers S1-S3 (S4 not dubbed yet)",
+"summary": "Satoru Mikami, an ordinary Tokyo office worker, is stabbed on the street and wakes up in a fantasy world reborn as a slime with a knack for absorbing and copying skills. After befriending a sealed storm dragon and taking the name Rimuru, he starts sheltering goblins and other monsters, aiming to build a peaceful nation where humans and monsters can live side by side."
 },
 "gloriousrevengeofyefeng": {
 "name": "Glorious Revenge of Ye Feng",
@@ -767,14 +784,16 @@
 "rating": 8.2,
 "rating_src": "MAL",
 "completed": false,
-"note": "members-only gaps in S2; MAL entry: Cang Yuan Tu 2; overlaps 2thedemonhunter (not merged)"
+"note": "members-only gaps in S2; MAL entry: Cang Yuan Tu 2; overlaps 2thedemonhunter (not merged)",
+"summary": "In a world where demons break through into human lands and ordinary people rely on martial warriors for protection, Meng Chuan grows up in Dongning in the shadow of a mother who fought the demons. Determined to protect his family and his city, he devotes himself to the sword and the long road of cultivation, aiming to become strong enough to stand against the demon hordes."
 },
 "jadedynasty": {
 "name": "Jade Dynasty",
 "rating": 7.94,
 "rating_src": "MAL",
 "completed": false,
-"note": "3 episodes missing (S2/S3); S3 finished Oct 2025"
+"note": "3 episodes missing (S2/S3); S3 finished Oct 2025",
+"summary": "Zhang Xiaofan is an ordinary village boy whose home is wiped out in a single night, leaving him one of the few survivors. Taken in by the Qingyun Sect, he struggles as its least gifted disciple while secretly carrying teachings from another school and a strange weapon, and his quiet life gradually gets tangled in the conflict between righteous sects and demonic factions."
 },
 "landofmiracles": {
 "name": "The Land of Miracles",
@@ -794,14 +813,16 @@
 "name": "Beelzebub",
 "rating": 7.83,
 "rating_src": "MAL",
-"completed": true
+"completed": true,
+"summary": "Tatsumi Oga is the most feared delinquent at Ishiyama High, a school full of thugs. One day he pulls a man out of a river who splits open to reveal a baby, the son of the Demon Lord, who latches onto Oga as his guardian. With the demon maid Hilda watching over them, Oga must raise the infant to destroy humanity while fending off a steady stream of rival brawlers."
 },
 "mushokutenseijoblessreincarnation": {
 "name": "Mushoku Tensei: Jobless Reincarnation",
 "rating": 8.36,
 "rating_src": "MAL",
 "completed": false,
-"note": "S3 cour 1 (14 eps) done Sept 2026, cour 2 (13 eps) still to air"
+"note": "S3 cour 1 (14 eps) done Sept 2026, cour 2 (13 eps) still to air",
+"summary": "A jobless, reclusive man in his thirties dies in an accident and is reborn as Rudeus Greyrat, an infant in a world of swords and magic who keeps all his old memories. Determined not to waste his second life, he throws himself into learning magic from a young age. As he grows up, he makes friends, finds teachers and faces the challenges his past self always ran from."
 },
 "iannoyedmillionsofcultivators": {
 "name": "I Annoyed Millions of Cultivators",
@@ -838,7 +859,8 @@
 "rating": 8.28,
 "rating_src": "MAL",
 "completed": false,
-"note": "MAL lists 52 eps, only 51 uploaded"
+"note": "MAL lists 52 eps, only 51 uploaded",
+"summary": "Eijun Sawamura is now a second-year pitcher at Seido High School, a powerhouse baseball program in Tokyo. With the older team leaders gone, he competes with his teammates, including rival pitcher Satoru Furuya and a promising new batch of first-years, for the ace number, while the team aims for a return to the national tournament at Koshien."
 },
 "bloodriver": {
 "name": "Blood River",
@@ -858,7 +880,8 @@
 "rating": 8.25,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1 as one compilation video, S2 per episode"
+"note": "S1 as one compilation video, S2 per episode",
+"summary": "Rakuro Hizutome is a high schooler who loves beating broken, badly made video games. For a change of pace he tries Shangri-La Frontier, a hugely popular full-dive VR game, playing as the bird-masked Sunraku. The skills he honed on glitchy games let him stumble onto rare quests and powerful monsters that most players never find, and he sets out to push the game to its limits."
 },
 "fairytailfinalseason": {
 "name": "Fairy Tail: Final Series",
@@ -872,21 +895,24 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL entry: Cheng He Titong (S1 7.99, S2 7.76); animated version, not the 2026 live action"
+"note": "MAL entry: Cheng He Titong (S1 7.99, S2 7.76); animated version, not the 2026 live action",
+"summary": "Office worker Yu Wanwan wakes up inside a palace-intrigue novel as a scheming imperial consort who is fated to die badly. She soon learns that the feared tyrant emperor Xia Houdan is also a stranger from the modern world, and the two form a wary alliance, using what they know of the story to outwit court factions and change their doomed endings."
 },
 "spyfamily": {
 "name": "SPY x FAMILY",
 "rating": 8.4,
 "rating_src": "MAL",
 "completed": true,
-"note": "approx. S1 score; S3 8.21"
+"note": "approx. S1 score; S3 8.21",
+"summary": "Twilight, a top spy for the nation of Westalis, must get close to a reclusive politician whose son attends an elite academy. Posing as psychiatrist Loid Forger, he adopts a girl named Anya and marries office clerk Yor to build a fake family. He does not know that Anya can read minds and Yor is a professional assassin, and each hides their secret while trying to keep the household together."
 },
 "againstthegods": {
 "name": "Against the Gods",
 "rating": 7.8,
 "rating_src": "MAL",
 "completed": false,
-"note": "S2 (Nian Fan) still airing (52 planned); members-only gaps"
+"note": "S2 (Nian Fan) still airing (52 planned); members-only gaps",
+"summary": "Yun Che, chased to a cliff for the precious item he carries, jumps to his death and wakes in the body of another young man with the same name, a crippled youth mocked by his clan. He carries the Sky Poison Pearl and soon meets Jasmine, a mysterious star god. With newly awakened talents, he sets out to settle scores, protect his loved ones and rise above those who looked down on him."
 },
 "ahirunosora": {
 "name": "Ahiru no Sora",
@@ -924,7 +950,8 @@
 "rating": 7.86,
 "rating_src": "MAL",
 "completed": false,
-"note": "S2 has 27 eps, only 16 uploaded"
+"note": "S2 has 27 eps, only 16 uploaded",
+"summary": "Chen Ping'an is a poor orphan living in Mud Vase Lane, a small town that is secretly a sealed world full of hidden fortunes. When the seal starts to break, powerful outsiders arrive seeking treasures and heirs, and the humble boy is drawn into their schemes as he sets out on the long road to become a swordsman."
 },
 "lovestoryofmyimmortaldad": {
 "name": "The Love Story of My Immortal Dad",
@@ -938,7 +965,8 @@
 "rating": 8.3,
 "rating_src": "MAL",
 "completed": true,
-"note": "approx. average of S1 (~8.1) and S2 (~8.5), from recall"
+"note": "approx. average of S1 (~8.1) and S2 (~8.5), from recall",
+"summary": "A grinning, tentacled creature blows away most of the moon and promises to destroy Earth next year, then insists on teaching Class 3-E, the outcast class of an elite junior high. The students are handed weapons and a huge bounty: kill their teacher before graduation. He can move at Mach 20, yet he turns out to be the most devoted teacher they have ever had."
 },
 "wordofhonor": {
 "name": "Word of Honor (Jun You Yun)",
@@ -946,7 +974,8 @@
 "note": "animated Bilibili donghua, not the live action; no rating found; Anime-Planet 3.844 of 5 from 75 votes",
 "origin": "CN",
 "rating": 7.7,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Zhou Zishu, former head of an imperial spy network, walks away from his old life and wanders the martial world in disguise with only a few years left to live. On the road he meets Wen Kexing, a charming stranger with dark secrets, and the two are pulled into the rival sects' deadly scramble for a legendary armor said to unlock a hidden trove of martial arts."
 },
 "hundredrefiningsoaringrecord": {
 "name": "Hundred Refining Soaring Record",
@@ -961,7 +990,8 @@
 "rating": 7.85,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1 only; rating from recall"
+"note": "S1 only; rating from recall",
+"summary": "Takemichi Hanagaki is a 26-year-old drifting through a dead-end life when he learns his middle school girlfriend Hinata was killed in a clash involving the Tokyo Manji Gang. Shoved in front of a train, he suddenly finds himself twelve years in the past. Using his return trips, he sets out to climb the gang's ranks and change its future to save her."
 },
 "spyxsect": {
 "name": "Spy x Sect",
@@ -1033,7 +1063,8 @@
 "rating": 9.28,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1 compilation + S2 (10 eps, ended Mar 2026) complete; S3 due Oct 2027; S2 MAL 8.84"
+"note": "S1 compilation + S2 (10 eps, ended Mar 2026) complete; S3 due Oct 2027; S2 MAL 8.84",
+"summary": "Frieren is an elf mage who helped a hero's party defeat the Demon King. Because elves live for centuries, the decade-long quest felt brief to her, and when her human companion Himmel dies of old age she realizes how little she understood him. She sets out on a new journey with a young apprentice, Fern, hoping to learn more about people and the memories she left behind."
 },
 "shulingji": {
 "name": "Shu Ling Ji (Spirit of the Book)",
@@ -1048,7 +1079,8 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1-S3 complete (S3 MAL 7.91); S4 announced, not uploaded"
+"note": "S1-S3 complete (S3 MAL 7.91); S4 announced, not uploaded",
+"summary": "Kiyotaka Ayanokoji enrolls at an elite government-run high school that promises its graduates a bright future, only to be placed in Class D, the class for supposed misfits. The school ranks classes by merit points and pits them against each other in tests of wits, and the quiet, seemingly average Ayanokoji keeps his real abilities hidden while quietly steering his class through the competition."
 },
 "youngbrewmastersadventure": {
 "name": "The Young Brewmaster's Adventure",
@@ -1062,14 +1094,16 @@
 "rating": 8.3,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1+S2 fully uploaded; S3 (Oct 2025) not uploaded"
+"note": "S1+S2 fully uploaded; S3 (Oct 2025) not uploaded",
+"summary": "Master spy Twilight is ordered to get close to a reclusive politician by enrolling a child at an elite school, so he becomes Loid Forger and assembles a fake family in a hurry. His adopted daughter Anya secretly reads minds, and his new wife Yor is secretly an assassin. Each hides the truth from the others while trying to keep the household, and the mission, together."
 },
 "mobpsycho100": {
 "name": "Mob Psycho 100",
 "rating": 8.7,
 "rating_src": "MAL",
 "completed": true,
-"note": "all 3 seasons, avg of season scores"
+"note": "all 3 seasons, avg of season scores",
+"summary": "Shigeo Kageyama, nicknamed Mob, is a quiet middle schooler with enormous psychic power that he keeps tightly bottled up, fearing what happens when his emotions overflow. He works part time for Reigen, a smooth-talking fake psychic who uses him to exorcise spirits. Meanwhile Mob wants an ordinary life: to get stronger physically, make friends, and win the attention of a girl he admires."
 },
 "lovebetweenfairyanddevil": {
 "name": "Love Between Fairy and Devil (animated)",
@@ -1089,7 +1123,8 @@
 "rating": 8.49,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL S1 score (S2 about 7.4, S3 4.77); S3 part 2 due 2027"
+"note": "MAL S1 score (S2 about 7.4, S3 4.77); S3 part 2 due 2027",
+"summary": "Saitama trained so hard that he can now beat any opponent with a single punch, and the lack of challenge has left him bored and empty. Working as a hero-for-hire in a city beset by monsters, he takes on the eager cyborg Genos as a disciple and tries to earn recognition from the official Hero Association while searching for a fight that finally tests him."
 },
 "onepunchman": {
 "name": "One-Punch Man",
@@ -1104,14 +1139,16 @@
 "rating": 8.4,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1+S2 (S2 MAL 8.37) fully uploaded; S3 announced"
+"note": "S1+S2 (S2 MAL 8.37) fully uploaded; S3 announced",
+"summary": "High schooler Momo Ayase believes in ghosts but not aliens, while her nerdy classmate Okarun believes in aliens but not ghosts. To settle their argument, each visits a place tied to the other's belief, and both turn out to be right. Momo awakens psychic powers, Okarun is cursed by a yokai, and the pair team up to fight off the supernatural and win back what he lost."
 },
 "100girlfriendswhoreallyreallyreallyreallyreallyloveyou": {
 "name": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
 "rating": 7.8,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1-S3 uploaded; S3 aired summer 2026 (S2 MAL 7.87)"
+"note": "S1-S3 uploaded; S3 aired summer 2026 (S2 MAL 7.87)",
+"summary": "Rentarou Aijou has been rejected a hundred times, until the god of love explains why: he is fated to meet a hundred soulmates, and if any of them fails to be with him she will die. When he meets his first two destined partners on the same day in high school, he vows to date every one of them and make them all happy."
 },
 "thngnguyn2": {
 "name": "The Demon Hunter (Cang Yuan Tu) Vietnamese dub",
@@ -1162,7 +1199,8 @@
 "rating": 8.0,
 "rating_src": "MAL",
 "completed": false,
-"note": "S3 has 10 eps but only 8 uploaded; S4 aired 2026, not uploaded; rating approximate"
+"note": "S3 has 10 eps but only 8 uploaded; S4 aired 2026, not uploaded; rating approximate",
+"summary": "Urano, a young woman who loves books above everything, dies and is reborn as Myne, a sickly five-year-old girl in a poor family in a medieval-style world. Books are rare and only the wealthy can afford them, and she cannot even read the local script. Refusing to give up, she sets out to make books herself from scratch."
 },
 "fabulousswordgod": {
 "name": "The Fabulous Sword God",
@@ -1262,7 +1300,8 @@
 "rating": 9.28,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1 dub only; rating approximate"
+"note": "S1 dub only; rating approximate",
+"summary": "Frieren is an elf mage who spent ten years helping a hero's party defeat the Demon King, a span that felt brief to someone who lives for millennia. When her human companions age and pass away, she realizes how little she understood them. She sets out on a new journey, taking on young apprentices and retracing old roads to learn what those years and people meant to her."
 },
 "galaxyemperor": {
 "name": "The Galaxy Emperor",
@@ -1305,28 +1344,32 @@
 "rating": 7.93,
 "rating_src": "MAL",
 "completed": true,
-"note": "rating approximate"
+"note": "rating approximate",
+"summary": "Hikari Sakishima and his childhood friends grew up in a village on the ocean floor, where people can breathe underwater. When their school closes, they must attend a middle school on land, where old tensions between the sea folk and surface dwellers run high. As they adjust to new classmates, the friends also face changing feelings for one another and a quiet crisis threatening both communities."
 },
 "madeinabyssthegoldencityofthescorchingsun": {
 "name": "Made in Abyss: The Golden City of the Scorching Sun",
 "rating": 8.62,
 "rating_src": "MAL",
 "completed": true,
-"note": "S2 only; both seasons in this key are the same S2 (episodes plus a full compilation), so runtime is doubled"
+"note": "S2 only; both seasons in this key are the same S2 (episodes plus a full compilation), so runtime is doubled",
+"summary": "Riko, a young cave raider, and her robot companion Reg continue their descent into the Abyss, a vast pit full of relics and deadly curses, with the rabbit-like Nanachi at their side. Reaching the sixth layer, they enter a strange village built by earlier explorers and must learn its rules as Riko keeps pressing toward the bottom, where she believes her mother waits."
 },
 "tobeherox": {
 "name": "To Be Hero X",
 "rating": 8.66,
 "rating_src": "MAL",
 "completed": true,
-"quality": "quality"
+"quality": "quality",
+"summary": "In this world, public belief grants powers: if enough people think someone can fly, they can, and heroes are ranked by a constantly updated trust score. Lin Ling, a recently fired office worker, is pushed into impersonating the popular hero Nice after the real one dies. Borrowing a stranger's fame and powers, he has to decide whether he can earn people's trust as himself."
 },
 "jojosbizarreadventure": {
 "name": "JoJo's Bizarre Adventure",
 "rating": 8.4,
 "rating_src": "MAL",
 "completed": true,
-"note": "Parts 1-5 (S1 compilation plus S2-S4 episodes); rating is a rounded average across parts"
+"note": "Parts 1-5 (S1 compilation plus S2-S4 episodes); rating is a rounded average across parts",
+"summary": "The Joestar family's bloodline is pulled across generations into strange, deadly battles. It begins in Victorian England, where young Jonathan Joestar's life is upended by his scheming adopted brother Dio Brando and an ancient stone mask that grants terrible power. Later parts follow Jonathan's descendants as they face new foes with unusual fighting abilities, all tied back to that first rivalry."
 },
 "wayofchoices3d": {
 "name": "Way of Choices 3D",
@@ -1348,7 +1391,8 @@
 "rating": 8.1,
 "rating_src": "MAL",
 "completed": true,
-"note": "rating approximate"
+"note": "rating approximate",
+"summary": "Haruhi Fujioka, a scholarship student at a school for the ultra-rich, stumbles into the Ouran Host Club and knocks over a vase worth eight million yen. Mistaken for a boy thanks to her short hair and plain clothes, she is ordered to pay off the debt by working as a host, entertaining girls alongside a crew of eccentric, wealthy young men."
 },
 "spirituallordofchaos": {
 "name": "Spiritual Lord of Chaos",
@@ -1435,7 +1479,8 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": true,
-"note": "rating approximate"
+"note": "rating approximate",
+"summary": "High schooler Mahiro Fuwa is determined to find whoever murdered his adopted sister Aika a year ago. He makes a pact with Hakaze Kusaribe, a powerful sorceress stranded on a desert island who can only reach him through a boy with a message in a bottle. As a strange plague turns people into metal, Mahiro drags his best friend Yoshino into a struggle between rival magic forces."
 },
 "inspectre": {
 "name": "In/Spectre",
@@ -1458,7 +1503,8 @@
 "name": "Dark Gathering",
 "rating": 7.84,
 "rating_src": "MAL",
-"completed": true
+"completed": true,
+"summary": "Keitaro Gentoga is a college student who attracts ghosts so easily that he once had to withdraw from the world after a bad encounter. Trying to recover, he takes a job tutoring Yayoi Hozuki, a young girl with an extraordinary sense for spirits. Yayoi hunts down dangerous haunted spots to capture vengeful spirits, hoping to grow strong enough to face the one that took her mother, and she drags Keitaro along."
 },
 "rentagirlfriend": {
 "name": "Rent-a-Girlfriend",
@@ -1471,7 +1517,8 @@
 "name": "The Seven Deadly Sins",
 "rating": 7.6,
 "rating_src": "MAL",
-"completed": true
+"completed": true,
+"summary": "Princess Elizabeth flees a kingdom seized by its own Holy Knights and goes looking for the Seven Deadly Sins, a band of legendary knights branded as traitors and scattered years ago. She finds their leader Meliodas running a traveling tavern, and together they set out to track down the other members and free the kingdom of Liones."
 },
 "luciferandbiscuithammer": {
 "name": "Lucifer and the Biscuit Hammer",
@@ -1485,7 +1532,8 @@
 "rating": 8.2,
 "rating_src": "MAL",
 "completed": true,
-"note": "Season 2 as one full upload (36 eps); demonhunter holds S1 and a gappy S2"
+"note": "Season 2 as one full upload (36 eps); demonhunter holds S1 and a gappy S2",
+"summary": "The second season of The Demon Hunter continues the story of Meng Chuan, a young swordsman from Dongning who trains to fight the demons that pour into the human world. Having proven himself early, he steps into a wider world of powerful clans, academies and battlefields, pushing his martial path further while the demon threat keeps growing."
 },
 "wealthandwonder": {
 "name": "Wealth and Wonder",
@@ -1505,7 +1553,8 @@
 "name": "Hyouka",
 "rating": 8.1,
 "rating_src": "MAL",
-"completed": true
+"completed": true,
+"summary": "Houtarou Oreki is a high schooler who lives by the motto of conserving energy and avoiding anything unnecessary. At his sister's urging he joins his school's nearly defunct Classics Club, where the endlessly curious Eru Chitanda keeps dragging him into small everyday mysteries, and one old puzzle about the club's own past, that only his sharp deductions can solve."
 },
 "sevendeadlysinsimperialwrathofthegods": {
 "name": "The Seven Deadly Sins: Imperial Wrath of the Gods",
@@ -1527,14 +1576,16 @@
 "rating": 7.7,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1-S2 only; S3 (BLOOM) not uploaded"
+"note": "S1-S2 only; S3 (BLOOM) not uploaded",
+"summary": "Cocoa Hoto moves to a new town for high school and boards at Rabbit House, a small cafe run by the family of quiet middle schooler Chino, whose grandfather now lives on as a fluffy rabbit. Cocoa works as a waitress while trying to become a big sister to Chino, and the show follows their easygoing days with fellow workers and friends from nearby cafes."
 },
 "dandadan-dub": {
 "name": "DAN DA DAN",
 "rating": 8.5,
 "rating_src": "MAL",
 "completed": true,
-"note": "English dub, S1+S2; S3 announced"
+"note": "English dub, S1+S2; S3 announced",
+"summary": "Momo Ayase believes in ghosts but not aliens, while her classmate Okarun believes in aliens but not ghosts. To settle the argument, each visits the other's haunt, and both run into the real thing. Momo awakens psychic powers, Okarun is cursed by a yokai, and the pair team up to fight off strange creatures and win back his stolen body part."
 },
 "goblinslayer": {
 "name": "Goblin Slayer",
@@ -1574,7 +1625,8 @@
 "name": "Moriarty the Patriot",
 "rating": 8.0,
 "rating_src": "MAL",
-"completed": true
+"completed": true,
+"summary": "In nineteenth-century Britain, a rigid class system lets nobles abuse commoners without consequence. William James Moriarty, a brilliant orphan taken in by an aristocratic family, works with his brothers Albert and Louis to expose and punish the corrupt elite through carefully planned crimes. Their goal is to reshape the country, and their path soon crosses that of the detective Sherlock Holmes."
 },
 "mosthereticallastbossqueenfromvillainesstosavior": {
 "name": "The Most Heretical Last Boss Queen: From Villainess to Savior",
@@ -1594,7 +1646,8 @@
 "name": "NEW GAME!",
 "rating": 7.6,
 "rating_src": "MAL",
-"completed": true
+"completed": true,
+"summary": "Aoba Suzukaze joins a video game studio straight out of high school, hired as a character designer on a sequel to the very game that inspired her as a child. Surrounded by quirky coworkers, including the artist she idolizes, she learns the ropes of professional work while striving to grow into a designer who can contribute to the games she loves."
 },
 "saintsmagicpowerisomnipotent": {
 "name": "The Saint's Magic Power is Omnipotent",
@@ -1607,7 +1660,8 @@
 "name": "BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense.",
 "rating": 7.5,
 "rating_src": "MAL",
-"completed": true
+"completed": true,
+"summary": "Kaede Honjo is talked into trying the virtual reality game NewWorld Online and, because she hates getting hurt, puts every stat point into defense. Playing as Maple, her slow, unkillable build turns into a string of absurd skills that the developers never expected. She wanders the game at her own pace with her friend Sally, stumbling into strength that leaves other players baffled."
 },
 "shy": {
 "name": "SHY",
@@ -1667,7 +1721,8 @@
 "rating": 8.3,
 "rating_src": "MAL",
 "completed": false,
-"note": "S1 EP1-2 missing here (likely in kingsavatars1quanzhigaoshouthekingsavatar); S2 complete; score recalled"
+"note": "S1 EP1-2 missing here (likely in kingsavatars1quanzhigaoshouthekingsavatar); S2 complete; score recalled",
+"summary": "Ye Xiu is a veteran pro player of the online game Glory and one of its greatest, until his club forces him out of the team. Taking a job at an internet cafe, he starts over from level one on a new server with a fresh character, aiming to build a new team and fight his way back to the professional stage."
 },
 "mynextlifeasavillainessallroutesleadtodoomx": {
 "name": "My Next Life as a Villainess: All Routes Lead to Doom!",
@@ -1729,7 +1784,8 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": false,
-"note": "S5 EP1-2 missing here (see degeneratedrawingjianghus5... keys); S6 complete; score recalled"
+"note": "S5 EP1-2 missing here (see degeneratedrawingjianghus5... keys); S6 complete; score recalled",
+"summary": "Set in the chaotic years after the fall of China's Tang dynasty, this story follows the Buliangren, a secret organization of assassins founded to guard the dynasty's legacy, and the rival factions and warlords struggling for power. Heroes such as Li Xingyun are drawn into schemes over lost relics and royal bloodlines as they try to protect those they care about."
 },
 "ascendantsoftheninesuns": {
 "name": "Ascendants of the Nine Suns",
@@ -1847,7 +1903,8 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": false,
-"note": "members-only gaps; not merged into amortalsjourney (episode numbering may clash); rating of main series, score recalled"
+"note": "members-only gaps; not merged into amortalsjourney (episode numbering may clash); rating of main series, score recalled",
+"summary": "Han Li is a poor village boy with no special talent who is taken in as a helper by a small martial sect. When he stumbles onto a mysterious bottle that speeds the growth of medicinal herbs, he quietly begins cultivating immortal arts, relying on caution, patience and cunning to survive a ruthless world of cultivators on his long road toward immortality."
 },
 "rebornasacat": {
 "name": "Reborn as a Cat",
@@ -1871,7 +1928,8 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": false,
-"note": "S2 only EP5-12 uploaded; score recalled"
+"note": "S2 only EP5-12 uploaded; score recalled",
+"summary": "Lu Shu is a sharp-tongued orphan living in a world where spiritual energy has suddenly returned and people are awakening strange powers. He gains a mysterious system that rewards him whenever others feel negative emotions toward him, so he sets about annoying everyone he meets. While looking after his younger sister, he uses the rewards to grow stronger and is drawn into the world of cultivators."
 },
 "xuchangqing": {
 "name": "Legend of Lotus Sword Fairy",
@@ -2156,7 +2214,8 @@
 "rating": 8.7,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL entry: Guimi Zhi Zhu: Xiaochou Pian; season 1 (13 eps, 2025) complete; score recalled"
+"note": "MAL entry: Guimi Zhi Zhu: Xiaochou Pian; season 1 (13 eps, 2025) complete; score recalled",
+"summary": "Zhou Mingrui wakes up in the body of Klein Moretti, a young man in a gaslit, Victorian-style city who has apparently just died in a strange ritual. To survive, he drinks a potion that makes him a Beyonder and joins the Nighthawks, a secret group that hunts supernatural threats. Hiding his own mysterious power above a grey fog, he looks for a way home while uncovering the forces behind his death."
 },
 "thousandsofworldsmotioncomics": {
 "name": "Thousands of Worlds (Motion Comic)",
@@ -2397,7 +2456,8 @@
 "note": "16 eps; gaps from EP01-04 bundle; no rating found; Anime-Planet 4.07 of 5 from 2075 votes",
 "origin": "JP",
 "rating": 8.1,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Kiyotaka Ayanokoji is a quiet student at the Advanced Nurturing High School, where classes compete in harsh special exams and the lowest performers can be expelled. As he begins his second year, a new group of first-year students arrives, and a large reward is quietly offered to anyone who can get him expelled. Ayanokoji must stay hidden while figuring out who has come to take him down."
 },
 "slaythegods": {
 "name": "Slay the Gods",
@@ -2636,7 +2696,8 @@
 "rating": 8.0,
 "rating_src": "MAL",
 "completed": false,
-"note": "single EP1-21 collection; show ongoing; score recalled"
+"note": "single EP1-21 collection; show ongoing; score recalled",
+"summary": "Han Li, a poor boy from a mountain village with only ordinary talent, is taken into a martial arts sect and stumbles into the world of immortal cultivation. Lacking a strong background, he relies on caution, cunning and a mysterious green vial that speeds the growth of herbs, as he pursues longevity and power in a ruthless world."
 },
 "bangdream": {
 "name": "BanG Dream!",
@@ -2650,7 +2711,8 @@
 "rating": 8.6,
 "rating_src": "MAL",
 "completed": true,
-"note": "Season 1; Golden City is key madeinabyssthegoldencityofthescorchingsun (not merged, season label clash risk)"
+"note": "Season 1; Golden City is key madeinabyssthegoldencityofthescorchingsun (not merged, season label clash risk)",
+"summary": "Riko is an orphan girl training as a Cave Raider in the town of Orth, which sits at the edge of the Abyss, an enormous pit full of relics and strange creatures. When she finds Reg, a robot boy with no memories, and receives a message that seems to come from her legendary mother deep below, the two set out to descend into the Abyss, knowing the climb back up grows deadlier with every layer."
 },
 "proudemperorofeternity": {
 "name": "The Proud Emperor of Eternity",
@@ -3009,7 +3071,8 @@
 "completed": true,
 "rating": 8.0,
 "rating_src": "MAL",
-"note": "single full-series upload; score recalled"
+"note": "single full-series upload; score recalled",
+"summary": "Tomori Takamatsu is an awkward girl who collects stones and pours her feelings into lyrics in a notebook. After her first band, CRYCHIC, fell apart suddenly, she gets pulled into forming a new one with a transfer student and other girls still carrying their own hurt from the breakup. The group struggles to trust each other as they try to make music together again."
 },
 "bangdreamyumemita": {
 "origin": "JP",
@@ -3124,7 +3187,8 @@
 "completed": true,
 "rating": 8.2,
 "rating_src": "MAL",
-"note": "possible overlap with aceofdiamondact, not merged; score recalled"
+"note": "possible overlap with aceofdiamondact, not merged; score recalled",
+"summary": "Eijun Sawamura, a loud and stubborn left-handed pitcher, is now a second-year at Seido High School, a baseball powerhouse. With new first-years arriving and rivals within his own team, he fights to claim the ace number while Seido chases the summer tournament and a place at Koshien. This part continues the Act II story."
 },
 "cellsatworkcodeblack": {
 "origin": "JP",
@@ -3203,7 +3267,8 @@
 "completed": false,
 "rating": 8.6,
 "rating_src": "MAL",
-"note": "only S2 uploaded; S3 exists; score recalled"
+"note": "only S2 uploaded; S3 exists; score recalled",
+"summary": "Cheng Xiaoshi and Lu Guang run the Time Photo Studio, which quietly takes on unusual jobs. Using a photograph, Cheng can enter the body of the person who took it and relive twelve hours of their past, while Lu Guang guides him with information and strict rules against changing history. Their clients' requests draw them into painful secrets and dangers that reach back into their own lives."
 },
 "legendofmartial": {
 "origin": "CN",
@@ -3231,7 +3296,8 @@
 "completed": true,
 "note": "unsure if later seasons exist; no rating found; Anime-Planet 3.806 of 5 from 34 votes",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Linley Baruch is the heir of the Baruch clan, once-legendary Dragonblood Warriors who have fallen into poverty. As a boy he finds the Coiling Dragon Ring, which holds the spirit of Doehring Cowart, an ancient grand magus. Under Doehring's guidance Linley trains as a mage and sets out to become strong enough to restore his family's lost glory."
 },
 "purgatorywalkers": {
 "origin": "CN",
@@ -3431,7 +3497,9 @@
 "rating": 8.7,
 "rating_src": "MAL",
 "completed": true,
-"note": "score recalled; only S2 uploaded, S3 status unverified"
+"note": "season 2 of heavenofficialsblessing, merged; score recalled",
+"summary": "Xie Lian was once a beloved crown prince who ascended to heaven as a god, then fell twice and became a laughing stock of the heavenly realm. After his third ascension he is sent on earthly errands to solve ghostly cases, and keeps crossing paths with San Lang, a charming young man who seems tied to Hua Cheng, the most feared ghost king.",
+"merge_into": "heavenofficialsblessing"
 },
 "rentagirlfriend2ndseason": {
 "origin": "JP",
@@ -3469,7 +3537,8 @@
 "rating": 7.7,
 "rating_src": "MAL",
 "completed": true,
-"note": "score recalled"
+"note": "score recalled",
+"summary": "Koguma is a high school girl in rural Yamanashi living alone with no parents, no friends, and no hobbies. Her quiet routine changes when she buys a cheap used Honda Super Cub scooter, and learning to ride and care for it slowly widens her world, bringing small adventures and her first real friendship."
 },
 "miragehouseintheclouds": {
 "origin": "CN",
@@ -3619,7 +3688,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.9,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Akira Tendo spent three years being crushed by an exploitative job at a black company. When a zombie outbreak overruns Tokyo, he realizes he never has to go to work again. Freed at last, he writes a list of one hundred things to do before he becomes a zombie and sets out with old friends to tick them off."
 },
 "zom100bucketlistofthedead-dub": {
 "origin": "JP",
@@ -3627,7 +3697,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.9,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Akira Tendo spent three years being crushed by an abusive, exploitative office job. When a zombie outbreak sweeps through Tokyo, he realizes he never has to go to work again. Instead of despairing, he writes a bucket list of everything he always wanted to do and sets out to complete it, recruiting friends along the way as he dodges the undead."
 },
 "shuai": {
 "origin": "CN",
@@ -3642,7 +3713,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.9,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Franchouchou, an idol group of revived zombie girls from different eras, continues its mission to save Saga Prefecture from decline under their eccentric manager Kotaro Tatsumi. After a costly flop leaves them in debt, Sakura Minamoto and the others take side jobs and work to rebuild their momentum toward a major concert that could put Saga on the map."
 },
 "schoolbabysitters": {
 "origin": "JP",
@@ -3650,7 +3722,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "After a plane crash takes their parents, high schooler Ryuichi Kashima and his little brother Kotaro are taken in by the chairwoman of an elite academy. In return, Ryuichi must work at the school's daycare room, which looks after the children of the teachers. He juggles classes with caring for a group of rowdy toddlers while helping Kotaro adjust to their new life."
 },
 "campfirecookinginanotherworld": {
 "origin": "JP",
@@ -3658,7 +3731,8 @@
 "completed": true,
 "note": "season 2 only uploaded here; score recalled",
 "rating": 7.9,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Office worker Tsuyoshi Mukohda is dragged into another world by accident during a hero-summoning ritual. His only skill lets him buy groceries from a modern online supermarket, which turns out to be very useful: his cooking wins over Fel, a legendary wolf who becomes his familiar. He travels the land with his growing band of powerful, food-loving companions, trying to live a quiet life."
 },
 "kumamikogirlmeetsbear": {
 "origin": "JP",
@@ -3688,7 +3762,8 @@
 "completed": true,
 "note": "single complete-series upload; score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "In the Taisho era, Tamahiko Shima loses the use of his right arm in an accident and is cast off by his wealthy family to a remote countryside villa. His gloomy isolation is interrupted by Yuzuki, a cheerful girl his father bought as a bride for him, who moves in to take care of him and gradually helps him open up."
 },
 "unlimitedgacha": {
 "origin": "JP",
@@ -3704,7 +3779,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Bocchi Hitori is painfully shy, and when her only childhood friend Kai tells her they will not be at the same middle school, she makes Bocchi promise to befriend the whole new class before they can talk again. Starting with a tough-looking girl named Nako, Bocchi works up the courage to make friends one nervous step at a time."
 },
 "7thtimeloopthevillainessenjoysacarefreelifemarriedtoherworst": {
 "origin": "JP",
@@ -3712,7 +3788,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.9,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Rishe, a duke's daughter, keeps dying at twenty and waking up at the moment her fiance breaks off their engagement. Over six past lives she worked as a merchant, an apothecary, a knight and more. On her seventh loop she meets Arnold Hein, the crown prince who would one day kill her, and he unexpectedly proposes. She accepts, hoping to steer him away from war while finally living a relaxed life."
 },
 "mystatusasanassassinobviouslyexceedstheheros": {
 "origin": "JP",
@@ -3728,7 +3805,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Elaina is a talented young witch who, inspired by a book of travel stories, sets out to see the world for herself. Flying on her broom from one country to the next, she meets people with odd customs, kind hearts or dark secrets, observing and sometimes stepping in, while keeping her freedom as a traveler who never stays long."
 },
 "reborntomasterthebladefromherokingtoextraordinarysquire": {
 "origin": "JP",
@@ -3760,7 +3838,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "God has grown tired of creating animals and hands the job to a team of designers in Heaven, who receive vague requests and must turn them into creatures that can actually live. Newcomer Kimura joins as liaison between the designers and the client. Each pitch sets off debates about biology and practicality, and the team works out why real animals look the way they do."
 },
 "littlemastersbetterlife": {
 "origin": "CN",
@@ -3799,7 +3878,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "In the final winter of high school, Eita Izumi returns to his hometown after years away and transfers into his old school. He reconnects with old friends like Haruto and Mio Natsume, and gets pulled into a photo club member's project. With graduation and college exams close, their unspoken feelings and crossed signals start to shift."
 },
 "isekaiofficeworker": {
 "origin": "JP",
@@ -3839,7 +3919,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Futaba Igarashi is a small, hardworking young office worker whose mentor, Harumi Takeda, is a huge, loud, and friendly senior colleague who treats her kindly but never lets up on his teasing. The series follows their daily office life and after-work outings as the two slowly grow closer."
 },
 "cautiousherotheheroisoverpoweredbutoverlycautious": {
 "origin": "JP",
@@ -3855,7 +3936,8 @@
 "completed": true,
 "note": "no rating found; Anime-Planet 3.8 of 5 from 4913 votes",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Rick Gladiator decides to become an adventurer at forty, an age when most people have long since retired from that life. His late start catches the eye of the top-ranked hero party, who take him on as an apprentice and put him through punishing training. The middle-aged rookie grows far stronger than anyone expects as he takes on quests."
 },
 "halloweenspecial": {
 "origin": "JP",
@@ -3879,7 +3961,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.9,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Chito and Yuuri are two girls wandering the empty ruins of a vast, multi-level city after civilization has collapsed. Riding a small half-track vehicle, they scavenge for food and fuel and slowly make their way toward the upper levels. Along the way they talk about the world that came before, meet the rare other survivor, and find small comforts in a quiet, lonely place."
 },
 "shachibatopresidentitstimeforbattle": {
 "origin": "JP",
@@ -3895,7 +3978,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.9,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Mahiru Kozuki has given up on her dream of drawing and blends into the crowd in Shibuya. One night she meets Kano Yamanouchi, a former idol who wants to make music again, and they form JELEE, an anonymous online creative group. With new collaborators joining, the girls chase the chance to be seen for their own art."
 },
 "hinalogicfromlucklogic": {
 "origin": "JP",
@@ -3917,7 +4001,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 8.1,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Princess Anisphia remembers a past life and is obsessed with magic, yet she cannot use it herself, so she invents her own field of magicology. When her brother publicly breaks off his engagement to Euphyllia, a gifted and dutiful noble daughter, Anis sweeps her away to become her assistant. Together they chase Anis's dream of flying and challenge the kingdom's rigid ideas about magic."
 },
 "servamp": {
 "origin": "JP",
@@ -4037,7 +4122,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Nozomu Tanaka enrolls at an all-girls high school hoping for a dramatic youth, but she is loud, silly and quickly nicknamed Baka by her classmates. Along with the otaku Wota and the expressionless Robo, she spends her school days on pointless schemes, strange conversations and small misadventures with a class full of odd girls."
 },
 "arte": {
 "origin": "JP",
@@ -4045,7 +4131,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "In 16th century Florence, Arte is a young noblewoman who dreams of becoming a painter at a time when women are barred from the craft. Leaving her privileged life behind, she persuades a gruff master named Leo to take her on as an apprentice and sets out to prove herself in a workshop world run by men."
 },
 "worldsstrongestrearguard": {
 "origin": "JP",
@@ -4125,7 +4212,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.5,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Ryuto Kashima, an ordinary high school boy with no romantic history, confesses to the popular and fashionable Runa Shirakawa on a dare and is surprised when she says yes. Runa has dated before while Ryuto has not, and the two navigate their different expectations and insecurities as they try to build a relationship at their own pace."
 },
 "stardusttelepath": {
 "origin": "JP",
@@ -4133,7 +4221,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.7,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Umika Konohoshi struggles so much to talk to people that she dreams of meeting an alien who could understand her without words. Then a transfer student named Yu Akeuchi appears, claiming to be an alien who can communicate by touching foreheads. The two, along with new friends, begin working toward building a rocket so Yu can return to the stars."
 },
 "geniusprincesguidetoraisinganationoutofdebt": {
 "origin": "JP",
@@ -4141,7 +4230,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.7,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Wein Salema Arbalest is the prince regent of Natra, a poor, snowbound northern kingdom. Privately he wants nothing more than to sell off the country and retire in comfort, with his loyal aide Ninym as his only confidante. Yet every scheme he tries to shed responsibility somehow succeeds so well that his people hail him as a genius, pulling him deeper into war and diplomacy."
 },
 "sheprofessedherselfpupilofthewiseman": {
 "origin": "JP",
@@ -4173,7 +4263,8 @@
 "completed": true,
 "note": "score recalled; Despair Arc is a separate key",
 "rating": 7.5,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Makoto Naegi, survivor of a killing game, is detained by the Future Foundation over accusations of sheltering former agents of despair. During his hearing, the leaders of the organization are trapped together and forced into a new deadly game run by an unknown mastermind. Each wears a bracelet with a secret forbidden action, and they must survive while figuring out who among them is the traitor."
 },
 "privatetutortothedukesdaughter": {
 "origin": "JP",
@@ -4181,7 +4272,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.6,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Allen is a talented but unrecognized young man who failed the exam to become a court magician. He takes a job as a private tutor for Tina, the younger daughter of a duke, who cannot cast any magic at all. With patient, unconventional teaching, he sets out to help her pass the entrance exam to the royal academy, uncovering the secret behind her problem."
 },
 "alwaysacatch": {
 "origin": "JP",
@@ -4229,7 +4321,8 @@
 "completed": false,
 "note": "score recalled; show has 24 eps, only 12 uploaded",
 "rating": 7.7,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Princess Mia of the Tearmoon Empire is sent to the guillotine after a revolution topples her family. She suddenly wakes up as her twelve-year-old self, holding a bloodstained diary from her past life. Selfish but eager to survive, she tries to change the empire's fate, and her self-serving moves keep getting mistaken for wisdom and kindness."
 },
 "monstergirldoctor": {
 "origin": "JP",
@@ -4261,7 +4354,8 @@
 "completed": true,
 "note": "score recalled",
 "rating": 7.5,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "In a Japan ravaged by a deadly rust wind that corrodes living things, Bisco Akaboshi is a wanted Mushroom Keeper whose arrows sprout giant mushrooms wherever they land. He teams up with Milo, a young doctor desperate to save his rust-stricken sister, and the two set off across the wasteland in search of a legendary mushroom said to cure the rust."
 },
 "luminouswitches": {
 "origin": "JP",
@@ -4318,7 +4412,8 @@
 "completed": true,
 "note": "score recalled; single full-series upload, S1 only",
 "rating": 8.0,
-"rating_src": "MAL"
+"rating_src": "MAL",
+"summary": "Yuki Itose is a university student who has been deaf since birth and communicates through sign language and text. On a train she meets Itsuomi Nagi, a well-traveled upperclassman who speaks several languages and treats her disability with easy curiosity. As they get to know each other, the pair slowly fall for one another and learn to bridge the ways they see the world."
 },
 "drramunemysteriousdiseasespecialist": {
 "origin": "JP",
@@ -4348,7 +4443,8 @@
 "completed": true,
 "rating": 8.5,
 "rating_src": "MAL",
-"note": "score recalled"
+"note": "score recalled",
+"summary": "Nishikata is a middle school boy who is constantly teased by Takagi, the classmate who sits beside him and always seems to read his mind. He keeps scheming to get back at her and make her flustered for once, but his plans nearly always backfire. This season continues their playful daily rivalry as they spend their third year of middle school together."
 },
 "handshakers": {
 "origin": "JP",
@@ -4403,7 +4499,8 @@
 "completed": true,
 "rating": 7.7,
 "rating_src": "MAL",
-"note": "score recalled"
+"note": "score recalled",
+"summary": "Nakano is a young salaryman worn down by long hours at a demanding company. One evening he comes home to find Senko, an 800-year-old fox spirit in the form of a small girl, who has arrived to take care of him. She cooks, cleans and offers comfort, hoping to ease his stress and help him rest."
 },
 "istheorderarabbitbloom": {
 "origin": "JP",
@@ -4411,7 +4508,8 @@
 "completed": true,
 "rating": 8.0,
 "rating_src": "MAL",
-"note": "score recalled"
+"note": "score recalled",
+"summary": "Cocoa Hoto lives and works at the Rabbit House, a cafe in a picturesque European-style town run by the reserved Chino and her family. Together with their friends Rize, Chiya and Sharo, the girls enjoy school, part-time jobs and small adventures around town. In this season, they start thinking about the future and where each of them wants to go after school."
 },
 "asobiasobaseworkshopoffun": {
 "origin": "JP",
@@ -4419,7 +4517,8 @@
 "completed": true,
 "rating": 7.9,
 "rating_src": "MAL",
-"note": "score recalled"
+"note": "score recalled",
+"summary": "Hanako, a rich girl who wants to be popular, Olivia, a blonde foreign-looking student who cannot actually speak English, and Kasumi, a quiet girl who hates games, form a Pastime Club at their all-girls school. Their simple games spiral into absurd, loud and often grotesque comedy as the three push each other to extremes."
 },
 "万域之王": {
 "origin": "CN",
@@ -4436,7 +4535,8 @@
 "completed": true,
 "rating": 8.4,
 "rating_src": "MAL",
-"note": "season 1 only uploaded; may be members-only; score recalled"
+"note": "season 1 only uploaded; may be members-only; score recalled",
+"summary": "Xie Lian was once a beloved crown prince who ascended to heaven, fell from grace, and has now ascended a third time as a joke among the gods. Sent to the mortal world to investigate a ghost that abducts brides, he meets a mysterious young man calling himself San Lang, who seems to know far more than he lets on."
 },
 "differentworldmedicineshop": {
 "origin": "CN",
@@ -4633,7 +4733,8 @@
 "completed": true,
 "rating": 7.7,
 "rating_src": "MAL",
-"note": "score recalled"
+"note": "score recalled",
+"summary": "College student Seigi Nakata rescues a strikingly handsome British jeweler named Richard from a group of drunks and asks him to appraise a ring his late grandmother left behind. The appraisal uncovers a painful family story, and afterward Seigi takes a part-time job at Richard's Ginza jewelry shop, where each gemstone brought in comes with a customer's secret to unravel."
 },
 "bloodofyouth": {
 "origin": "CN",
@@ -4660,7 +4761,8 @@
 "completed": true,
 "rating": 8.6,
 "rating_src": "MAL",
-"note": "Time Agent S1 compilation EP1-11; name uncertain vs key; score recalled"
+"note": "Time Agent S1 compilation EP1-11; name uncertain vs key; score recalled",
+"summary": "Cheng Xiaoshi and Lu Guang run a small photo studio that secretly takes on unusual jobs. Using a photograph, Cheng can enter the body of the person who took it and relive a stretch of their past, while Lu guides him and sets the rules. Clients hire them to learn the truth about moments in their lives, but changing the past is forbidden, and the cases grow darker as they go."
 },
 "asheepinwolfsclothing": {
 "origin": "CN",
@@ -4920,7 +5022,8 @@
 "completed": true,
 "note": "EP1-12 collection, S1 only; season 2 may exist; no rating found; Anime-Planet 4.1 of 5 from 166 votes",
 "rating": 8.2,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Office worker Yu Wanwan wakes up inside a palace-intrigue novel as a scheming imperial consort who is fated to die badly. She soon learns that the feared tyrant emperor Xia Houdan is also a stranger from the modern world, and the two form a wary alliance, using what they know of the story to outwit court factions and change their doomed endings."
 },
 "xianwucangqiong": {
 "origin": "CN",
@@ -4983,7 +5086,9 @@
 "completed": false,
 "rating": 7.5,
 "rating_src": "MAL",
-"note": "Wangling cut of Daily Life of the Immortal King, later seasons airing; score recalled"
+"note": "duplicate of dailylifeoftheimmortalking (S1 EP1-15 in one upload, that key has S1 in full)",
+"summary": "Wang Ling is a teenager in a modern world of cultivation who has been absurdly powerful since birth, strong enough to shake the world if he loses control. All he wants is a quiet, normal high school life, so he hides his abilities and seals his power while strange troubles keep finding him and his classmates.",
+"hide": true
 },
 "wukong": {
 "origin": "CN",
@@ -5010,7 +5115,8 @@
 "completed": false,
 "rating": 8.7,
 "rating_src": "MAL",
-"note": "score recalled; S3 upload count may be incomplete"
+"note": "score recalled; S3 upload count may be incomplete",
+"summary": "Cheng Xiaoshi and Lu Guang run a small photo studio called Time Photo Studio that secretly takes on unusual requests. Using their powers, Cheng can enter a photo and live through the twelve hours after it was taken in the body of the photographer, while Lu guides him from outside. Their strict rule is never to change the past, a rule that proves hard to keep."
 },
 "luoli": {
 "origin": "CN",
@@ -5232,7 +5338,8 @@
 "completed": true,
 "note": "no rating found; Anime-Planet 4.1 of 5 from 1799 votes",
 "rating": 8.2,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Shen Yuan dies while ranting about a bad web novel and wakes up inside it as Shen Qingqiu, the cruel mentor who abuses the protagonist Luo Binghe and later suffers a gruesome death at his hands. Guided by a strict System that punishes breaking the plot, he tries to treat his disciple kindly and avoid the fate written for his character."
 },
 "godonabumpyroad": {
 "origin": "CN",
@@ -5246,7 +5353,8 @@
 "completed": true,
 "rating": 7.5,
 "rating_src": "MAL",
-"note": "score recalled, rough"
+"note": "OAD specials, not a series; score recalled",
+"hide": true
 },
 "raisedbydemonspandali": {
 "origin": "CN",
@@ -5589,7 +5697,8 @@
 "origin": "CN",
 "name": "Sword Dynasty",
 "completed": false,
-"note": "gaps 1; no rating found"
+"note": "gaps 1; no rating found",
+"summary": "In Changling, capital of the Qin empire, a young man named Ding Ning lives quietly in a small wine shop alongside Zhangsun Qianxue. He carries knowledge of swordsmanship far beyond his years, tied to a legendary swordsman and a past the ruling emperor wants buried. Entering a sword academy, Ding Ning works to rebuild his strength while pursuing revenge against the powers that rule the dynasty."
 },
 "eep301": {
 "origin": "CN",
@@ -5623,7 +5732,8 @@
 "completed": true,
 "rating": 7.9,
 "rating_src": "MAL",
-"note": "score recalled"
+"note": "score recalled",
+"summary": "Characters from several isekai series, including KonoSuba, Overlord, Re:Zero and The Saga of Tanya the Evil, are drawn into a shared world and enrolled as students at the same school. Drawn in a cute chibi style, the casts bump into one another's quirks through classes, school events and misunderstandings. This season continues their crossover comedy with more classmates and school hijinks."
 },
 "whimsicalwish": {
 "origin": "CN",
@@ -5806,7 +5916,8 @@
 "completed": true,
 "rating": 7.5,
 "rating_src": "MAL",
-"note": "score recalled, special"
+"note": "special (4-episode side story), not a series; score recalled",
+"hide": true
 },
 "kaginado": {
 "origin": "JP",
@@ -5860,7 +5971,8 @@
 "completed": true,
 "rating": 7.7,
 "rating_src": "MAL",
-"note": "score recalled"
+"note": "recap film, duplicate of assassinationclassroom; score recalled",
+"hide": true
 },
 "abovetheabyss": {
 "origin": "CN",
@@ -6522,6 +6634,176 @@
 "completed": false,
 "note": "duplicate of dailylifeoftheimmortalking (S5 EP1-10 compilation; that key has S5 in full); Anime-Planet S5 3.91 of 5 from 405 votes",
 "hide": true
+},
+"live:Omni-God: All Elements Awakened": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; auto match (probable) across Legend-Anime, NeonLore unverified; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:HP x100 Million": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Gods Rejected His SSS Talent": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Dumped at the Altar": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Awaken absolute luck talent": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Absolute Luck Talent"
+},
+"live:Everyone Mocked His Dead Talent": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:God of Wealth (Real Money) Talent": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Desert survival!": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Desert Survival"
+},
+"live:I Took a Summer Job": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Reborn Before the Apocalypse": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Ultimate Island Survival for All": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:I Was the Weakest Mechanic": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Reborn 30 Days Before Doomsday": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Isekai Orc Chief": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Alien ocean doom!": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Alien Ocean Doom"
+},
+"live:Frozen apocalypse hits!": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Frozen Apocalypse"
+},
+"live:Dumped by the School Beauty": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Everyone Fears the Endless Night": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:The World Logged Into a Death Game": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:They Treated Me Like a Slave": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Zero-Attack / SSS Mecha Girl": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; auto match (possible) across AlphaAnime, Legend-Anime unverified; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:100% Return System": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Kicked Out of the Base": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:They Called Him a Beginner Archer": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Every Spell Permanently Boosts His Damage": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Awakened infinite item copy!": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN",
+"name": "Infinite Item Copy"
+},
+"live:Transmigrated to beast world with infinite cash found family turned SSS divine dragons?": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Transmigrated to the Beast World with Infinite Cash"
+},
+"live:Everyone Formed Teams to Survive": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Doomsday: Loot All Global Warehouses First": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Activate Stellar armor fix scrap mech": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Stellar Armor: Fixing a Scrap Mech"
+},
+"live:Isekai in primitive world!": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Isekai in a Primitive World"
+},
+"live:Blue Star: Online": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Skeletons Train Themselves / Lazy Summoner": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; auto match (probable) across AlphaAnime, Legend-Anime, NeonLore unverified; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Rusty Blade": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Doomsday Mecha Truck": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Zombie Apocalypse": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Blood Ascension": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN"
+},
+"live:Transmigrated into wasteland survival game!": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Wasteland Survival Game"
+},
+"live:Apocalypse CEO": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; auto match (probable) across AlphaAnime, Legend-Anime unverified; AI check says AI-made (not slop)",
+"origin": "CN"
+},
+"live:Duo Isekai GF gets OP combat": {
+"note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
+"origin": "CN",
+"name": "Isekai Duo: OP Combat"
 }
 }
 }
