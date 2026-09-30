@@ -1987,7 +1987,8 @@
 "completed": false,
 "note": "3 seasons exist, only S1-S2 uploaded; Anime-Planet 3.879 of 5 from 1846 votes (S1 entry)",
 "origin": "CN",
-"summary": "Ye Jiayao, an editor at a gourmet magazine, is suddenly transported to ancient China, where her cooking earns her the post of head chef at the Jinling Heavenly House. She falls for a young man there, but he soon vanishes without explanation. Balancing kitchen rivalries and her culinary ambitions, she sets out to learn what happened to him and find him again."
+"summary": "Ye Jiayao, an editor at a gourmet magazine, is suddenly transported to ancient China, where her cooking earns her the post of head chef at the Jinling Heavenly House. She falls for a young man there, but he soon vanishes without explanation. Balancing kitchen rivalries and her culinary ambitions, she sets out to learn what happened to him and find him again.",
+"members_ok": true
 },
 "jasmine": {
 "name": "Against the Gods",
@@ -3005,7 +3006,8 @@
 "origin": "CN",
 "rating": 7.5,
 "rating_src": "Anime-Planet x2",
-"summary": "A frail but upright youth begins training in traditional Chinese martial arts under the master Tang Zichen. Pushing past the limits of his weak body, he learns that true martial skill is meant to stop fighting rather than start it, and sets out to grow strong enough to stand up for what is right."
+"summary": "A frail but upright youth begins training in traditional Chinese martial arts under the master Tang Zichen. Pushing past the limits of his weak body, he learns that true martial skill is meant to stop fighting rather than start it, and sets out to grow strong enough to stand up for what is right.",
+"members_ok": true
 },
 "ipponagain": {
 "name": "Ippon Again!",
@@ -4575,11 +4577,12 @@
 "epicofdivinitylight": {
 "origin": "CN",
 "name": "Epic of Divinity Light",
-"completed": false,
-"note": "Anime-Planet 3.797 of 5 from 275 votes; Dinghai Fusheng Lu (2021), 12 eps; possibly members-only latest eps",
+"completed": true,
+"note": "Anime-Planet 3.797 of 5 from 275 votes; Dinghai Fusheng Lu (2021), 12 eps; possibly members-only latest eps; EP1-12 all free, 2021 season finished",
 "rating": 7.6,
 "rating_src": "Anime-Planet x2",
-"summary": "Long after a mysterious event called the Oblivion wiped out the magic that let exorcists hold back demons, war between kingdoms in ancient China begins to stir up evil spirits again. Chen Xing, the last exorcist, sets out carrying the Lamp of the Heart to find a man named Xiang Shu and stop the revival of a great demon."
+"summary": "Long after a mysterious event called the Oblivion wiped out the magic that let exorcists hold back demons, war between kingdoms in ancient China begins to stir up evil spirits again. Chen Xing, the last exorcist, sets out carrying the Lamp of the Heart to find a man named Xiang Shu and stop the revival of a great demon.",
+"members_ok": true
 },
 "teasingmastertakagisan": {
 "origin": "JP",
