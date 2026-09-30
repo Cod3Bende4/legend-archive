@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Read-only helpers for the nightly curation run. Nothing here writes files.
 
-  python3 engine/curate_tools.py todo [N]     worklist: new series, unrated retries, recalled scores to verify
+  python3 engine/curate_tools.py todo [N]     worklist (deltas only): new series, unrated retries that are due,
+                                              recalled scores to verify
+  python3 engine/curate_tools.py stamp KEY..  print today's "checked" stamp for keys (helper; see below)
   python3 engine/curate_tools.py members      rated series hidden only by the members-only filter
   python3 engine/curate_tools.py check        sanity check of meta edits since the last commit (merges, cycles, runtimes)
   python3 engine/curate_tools.py ongoing [N]  Sunday list: shown series marked not completed, best first
@@ -12,6 +14,13 @@
   python3 engine/curate_tools.py report       after a local rebuild: counts per section and tier, sources, borderline
 
 Series under 1 hour total are hidden by tiers.apply, so every list here skips them.
+
+Delta tracking: every series a run researches gets meta[key]["checked"] = "YYYY-MM-DD" and, for official
+series, meta[key]["checked_eps"] = its episode count at that time. todo then lists an unrated series again
+only when it is due: never checked, new episodes since the check, an "anime-planet 429" note, or the check
+is older than RETRY_DAYS (votes accumulate, so a rating can appear later). summaries skips "unavailable"
+premises checked within SUMMARY_RETRY_DAYS. A recalled score whose verification failed gets
+meta[key]["verify_tried"] = "YYYY-MM-DD" and leaves list C for RETRY_DAYS. Everything else with data is left alone.
 """
 import collections, json, os, re, subprocess, sys
 
@@ -21,6 +30,31 @@ import refresh, tiers  # noqa: E402
 
 RECALLED = re.compile(r"recall|approx|from memory|estimate", re.I)
 MIN_TOTAL = 3600
+RETRY_DAYS = 30
+SUMMARY_RETRY_DAYS = 60
+TODAY = __import__("datetime").date.today()
+
+
+def age(m):
+    """Days since meta entry m was last researched (None if never)."""
+    try:
+        return (TODAY - __import__("datetime").date.fromisoformat(m["checked"])).days
+    except Exception:
+        return None
+
+
+def due(s, m):
+    """Why an unrated series should be researched again, or "" if its data is still fresh."""
+    a = age(m)
+    if a is None:
+        return "never checked"
+    if "429" in m.get("note", ""):
+        return "anime-planet 429"
+    if s["episodes"] > m.get("checked_eps", s["episodes"]):
+        return f"new episodes ({m.get('checked_eps')} -> {s['episodes']})"
+    if a >= RETRY_DAYS:
+        return f"last checked {a} days ago"
+    return ""
 SITE = os.environ.get("SITE_DIR", "/tmp/site")
 
 
@@ -43,19 +77,22 @@ def todo(n):
     meta = load_meta()
     ser = [s for s in series(meta) if s["total"] >= MIN_TOTAL]
     new = sorted([s for s in ser if s["key"] not in meta], key=lambda s: -s["total"])
-    retry = sorted([s for s in ser if s["key"] in meta and meta[s["key"]].get("rating") is None
-                    and not meta[s["key"]].get("hide") and not meta[s["key"]].get("merge_into")],
-                   key=lambda s: -s["total"])
+    unrated = [s for s in ser if s["key"] in meta and meta[s["key"]].get("rating") is None
+               and not meta[s["key"]].get("hide") and not meta[s["key"]].get("merge_into")]
+    retry = sorted([s for s in unrated if due(s, meta[s["key"]])], key=lambda s: -s["total"])
+    fresh = len(unrated) - len(retry)
     rec = [s for s in ser if meta.get(s["key"], {}).get("rating") is not None
-           and RECALLED.search(meta[s["key"]].get("note", "")) and not meta[s["key"]].get("hide")]
+           and RECALLED.search(meta[s["key"]].get("note", "")) and not meta[s["key"]].get("hide")
+           and (age({"checked": meta[s["key"]].get("verify_tried", "")}) or RETRY_DAYS) >= RETRY_DAYS]
     rec.sort(key=lambda s: (not 7.2 <= meta[s["key"]]["rating"] <= 7.8, -s["total"]))
-    print(f"A) {len(new)} new (no meta entry)  B) {len(retry)} in meta without a rating  "
-          f"C) {len(rec)} with a recalled score (7.2-7.8 band first)")
+    print(f"A) {len(new)} new (no meta entry)  B) {len(retry)} unrated and due for a retry "
+          f"({fresh} unrated but checked recently, skipped)  C) {len(rec)} with a recalled score (7.2-7.8 band first)")
     for label, rows in (("A NEW", new), ("B RETRY", retry), ("C VERIFY", rec)):
         print(f"\n== {label}")
         for s in rows[:n]:
             m = meta.get(s["key"], {})
-            extra = f" | rating {m.get('rating')} | note: {m.get('note', '')[:90]}" if m else ""
+            extra = (f" | rating {m.get('rating')} | due: {due(s, m)} | note: {m.get('note', '')[:90]}"
+                     if label == "B RETRY" else f" | rating {m.get('rating')} | note: {m.get('note', '')[:90]}" if m else "")
             print(line(s, m) + extra)
 
 
@@ -124,6 +161,13 @@ def ongoing(n):
         print(line(s, m) + f" | rating {m.get('rating')} | note: {m.get('note', '')[:90]}")
 
 
+def stamp(keys):
+    meta = load_meta()
+    eps = {s["key"]: s["episodes"] for s in series(meta)}
+    out = {k: {"checked": TODAY.isoformat(), **({"checked_eps": eps[k]} if k in eps else {})} for k in keys}
+    print(json.dumps(out, ensure_ascii=False))
+
+
 def data():
     h = open(os.path.join(SITE, "index.html"), encoding="utf-8").read()
     return json.loads(re.search(r"const DATA = (.*);\nconst META", h).group(1))
@@ -139,11 +183,14 @@ def dubs(n):
 
 
 def summaries(n):
-    todo = sorted([x for x in data() if not x.get("summary")],
+    meta = load_meta()
+    skip = {x["key"] for x in data() if x.get("summaryStatus") == "unavailable"
+            and (age(meta.get(x["key"], {})) or 0) < SUMMARY_RETRY_DAYS and "checked" in meta.get(x["key"], {})}
+    todo = sorted([x for x in data() if not x.get("summary") and x["key"] not in skip],
                   key=lambda x: (x.get("summaryStatus") == "unavailable", x["tier"], -x["total"]))
     un = sum(1 for x in todo if x.get("summaryStatus") == "unavailable")
-    print(len(data()), "shown,", len(todo), "without summary:", len(todo) - un, "not written yet,", un,
-          "marked unavailable (listed last; retry only if a source may exist now)")
+    print(len(data()), "shown,", len(todo) + len(skip), "without summary:", len(todo) - un, "not written yet,",
+          un, f"unavailable and due for a retry (listed last), {len(skip)} unavailable and checked recently (skipped)")
     for x in todo[:n]:
         print(x["key"], "|", x["title"], "|", x.get("origin"), "| tier", x["tier"], "|", x["totalF"], "|",
               x["seas"][0]["pick"]["t"][:80])
@@ -179,6 +226,6 @@ def report():
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "todo"
-    n = int(sys.argv[2]) if len(sys.argv) > 2 else 60
+    n = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else 60
     {"todo": lambda: todo(n), "members": members, "check": check, "ongoing": lambda: ongoing(n),
-     "dubs": lambda: dubs(n), "summaries": lambda: summaries(n), "report": report}[cmd]()
+     "dubs": lambda: dubs(n), "stamp": lambda: stamp(sys.argv[2:]), "summaries": lambda: summaries(n), "report": report}[cmd]()
