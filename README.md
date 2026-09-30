@@ -11,7 +11,7 @@ A browsable archive of long-form animation in three sections: Donghua (Chinese),
 | Path | What |
 |---|---|
 | `engine/config.json` | Channels: `channels` (English-dub, tier 3/6) and `candidates` (official, subtitled or dubbed with original sound; `origin` CN, JP or KR) |
-| `engine/curated.json` | Hand curation. `meta[series_key]`: `name`, `rating`, `rating_src`, `completed`, `hide`, `quality`, `merge_into`, `origin` (CN, JP, KR), `members_ok`, `summary` (English premise shown on the series page), `note` |
+| `engine/curated.json` | Hand curation. `meta[series_key]`: `name`, `rating`, `rating_src`, `completed`, `hide`, `quality`, `merge_into`, `origin` (CN, JP, KR), `members_ok`, `summary` (English premise shown on the series page), `summary_status` ("unavailable" when researched but no reliable premise was found; the page then says so instead of "not written yet"), `note` |
 | `engine/videos.json`, `engine/scan/*.json` | Saved uploads (one per line), with `first_seen` dates |
 | `engine/scan/quality.json` | AI verdict per checked video: `quality`, `ai`, `slop`, `unknown` |
 | `engine/tiers.py` | Tier rules, origin split, members-only hiding (see its docstring) |

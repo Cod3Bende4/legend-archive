@@ -7,6 +7,8 @@
   python3 engine/curate_tools.py ongoing [N]  Sunday list: shown series marked not completed, best first
   python3 engine/curate_tools.py dubs [N]     dub-channel (A3) series for a light review
   python3 engine/curate_tools.py summaries [N] after a local rebuild: shown series without a summary, tiers 1-7 first
+                                              (researched but no reliable premise found: set meta[key]["summary_status"]
+                                              = "unavailable" so the page says so; those are listed last)
   python3 engine/curate_tools.py report       after a local rebuild: counts per section and tier, sources, borderline
 
 Series under 1 hour total are hidden by tiers.apply, so every list here skips them.
@@ -137,8 +139,11 @@ def dubs(n):
 
 
 def summaries(n):
-    todo = sorted([x for x in data() if not x.get("summary")], key=lambda x: (x["tier"], -x["total"]))
-    print(len(data()), "shown,", len(todo), "without summary")
+    todo = sorted([x for x in data() if not x.get("summary")],
+                  key=lambda x: (x.get("summaryStatus") == "unavailable", x["tier"], -x["total"]))
+    un = sum(1 for x in todo if x.get("summaryStatus") == "unavailable")
+    print(len(data()), "shown,", len(todo), "without summary:", len(todo) - un, "not written yet,", un,
+          "marked unavailable (listed last; retry only if a source may exist now)")
     for x in todo[:n]:
         print(x["key"], "|", x["title"], "|", x.get("origin"), "| tier", x["tier"], "|", x["totalF"], "|",
               x["seas"][0]["pick"]["t"][:80])

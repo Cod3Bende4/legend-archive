@@ -614,7 +614,8 @@
 "note": "Anime-Planet 3.761 of 5 from 39 votes (entry lists 50 eps, 2022-2023); ongoing; overlaps key 万界至尊",
 "origin": "CN",
 "rating": 7.5,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Seven years ago a sudden disaster struck Chu Yunfei's family and left him stranded in the Pill King Valley of Zhongzhou. Now grown and far stronger, he returns to the wider world of martial cultivation with two goals: to take revenge on those responsible and to uncover the full truth of what happened to his family."
 },
 "legendofsworddomain": {
 "name": "The Legend of Sword Domain",
@@ -740,16 +741,18 @@
 },
 "immortality": {
 "name": "Immortality",
-"rating": 7.6,
-"rating_src": "MAL",
+"rating": 7.7,
+"rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "MAL entry: Yong Sheng; S5 finished May 2026"
+"note": "Yong Sheng; Anime-Planet 3.839 of 5 from 79 votes (season 1 entry); S5 finished May 2026",
+"summary": "Fang Han starts out as a lowly household slave who wants nothing more than to stand on his own and owe no one. Stumbling onto the secrets of martial cultivation, he begins remaking his body toward an immortal form. Driven by sheer stubbornness, he sets out through the realms of cultivation, dealing with the sect and former masters that once held him down."
 },
 "superheroic": {
 "name": "Super Heroic",
 "completed": false,
 "note": "members-only gaps (267 missing); likely same show as superheroicspirit (iQIYI lists 'Super Heroic Spirit', 2024), lead curator to decide; no rating found on Anime-Planet",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "supremealchemy": {
 "name": "Supreme Alchemy",
@@ -800,7 +803,8 @@
 "rating": 7.53,
 "rating_src": "MAL",
 "completed": false,
-"note": "1 episode missing in S1; S2/S3 are single collections; show finished 2023"
+"note": "1 episode missing in S1; S2/S3 are single collections; show finished 2023",
+"summary": "Fa Hua and Lan Ge, two teenagers from very different backgrounds, are bound together by the Only Pearl, a magical artifact meant to protect humanity. Growing into an almost sibling-like pair through training and trials, they must guard the Pearl when a member of a sky demon clan comes hunting for it, setting them on a path of cultivation and revenge."
 },
 "legendaryoverlord": {
 "name": "Legendary Overlord",
@@ -873,7 +877,8 @@
 "rating": 7.76,
 "rating_src": "MAL",
 "completed": false,
-"note": "MAL entry: Da Zhuzai: Nian Fan; second year-long season still airing in 2026"
+"note": "MAL entry: Da Zhuzai: Nian Fan; second year-long season still airing in 2026",
+"summary": "In a vast universe of stacked realms where talented fighters from lower worlds rise to fame, Mu Chen is the son of the lord of the Northern Spirit Realm. He sets out on the path of spiritual cultivation, aiming to climb from his home realm into the wider Great Thousand World, facing rivals and dark forces while growing strong enough to stand beside the people he cares about."
 },
 "shangrilafrontier": {
 "name": "Shangri-La Frontier",
@@ -1019,7 +1024,8 @@
 "rating": 7.66,
 "rating_src": "MAL",
 "completed": false,
-"note": "S1-S3 only partially uploaded, S4 25 of 26 eps; S5 exists; rating is S4"
+"note": "S1-S3 only partially uploaded, S4 25 of 26 eps; S5 exists; rating is S4",
+"summary": "Rakshasa Street is a borderland between the world of the living and the spirit realm. Cao Yanbing, a Spirit General who works as a delivery man, commands guardian spirits in battle there. When ordinary girl Xia Ling stumbles into the street, she learns of his missing parents and lost brother and joins him against a shadowy group known as the Kingdom Organization."
 },
 "kokiesdanapiyangajaib": {
 "name": "The Magic Chef of Ice and Fire (Indonesian sub)",
@@ -1223,7 +1229,8 @@
 "rating": 8.0,
 "rating_src": "MAL",
 "completed": false,
-"note": "S1 is an edited version with a gap, S2 11 of 12 uploaded; S2 MAL 8.39"
+"note": "S1 is an edited version with a gap, S2 11 of 12 uploaded; S2 MAL 8.39",
+"summary": "After a geological catastrophe, Earth's surface is overrun by the Mana Ecosystem, a hostile web of mutated life, and the last humans live aboard Lighthouse, a vast flying fortress that was once a prison. Marc commands the Hunters who venture down to the ground, and a mission gone wrong leaves him changed in ways that could make him a bridge between humanity and the creatures below."
 },
 "fairiesalbums": {
 "name": "Fairies Albums",
@@ -1231,7 +1238,8 @@
 "rating_src": "MAL",
 "completed": false,
 "note": "members-only gaps; S3-S4 not uploaded; S5 MAL 7.53",
-"members_ok": true
+"members_ok": true,
+"summary": "Taozi is a sharp-tongued healer of spirits who travels with Moya, a young monk whose life she once saved. Joined by Gungun the grey fox and a serpent demon prince, they wander ancient China tending to ghosts, monsters and creatures caught in hopeless situations, with each story drawn from Chinese folklore."
 },
 "outcast": {
 "name": "The Outcast",
@@ -1293,7 +1301,8 @@
 "note": "60 eps; no rating found; Anime-Planet 3.729 of 5 from 20 votes",
 "origin": "CN",
 "rating": 7.5,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "On his eighteenth birthday, the orphan Luo Yun is pulled into an unlikely group chat run by the East Sea Dragon Palace. By bartering ordinary goods with immortals for cultivation methods and magic treasures, he starts building power in both the human and immortal worlds while chasing clues about his own mysterious origins."
 },
 "frierenbeyondjourneysend-dub": {
 "name": "Frieren: Beyond Journey's End (English Dub)",
@@ -1472,7 +1481,8 @@
 "rating": 7.5,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL: S1 7.42, S2 7.51 (Feng Ling Yu Xiu)"
+"note": "MAL: S1 7.42, S2 7.51 (Feng Ling Yu Xiu)",
+"summary": "Feng Ling is a quick-fingered thief and Bai Yuxiu is a gifted martial artist, and a chance meeting throws the mismatched pair onto the same road. Travelling through the jianghu, the world of wandering kung fu fighters, they get tangled up in schemes and rivalries far bigger than either of them, and have to learn to trust each other to survive."
 },
 "blastoftempest": {
 "name": "Blast of Tempest",
@@ -1777,7 +1787,8 @@
 "note": "26 eps finished; no rating found; Anime-Planet 3.78 of 5 from 20 votes",
 "origin": "CN",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary_status": "unavailable"
 },
 "degeneratedrawingjianghu": {
 "name": "The Degenerate-Drawing Jianghu",
@@ -1878,7 +1889,8 @@
 "note": "no rating found; Anime-Planet 3.787 of 5 from 52 votes",
 "origin": "CN",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Dark River is a secretive assassin organization run by three families, and its leader has just been poisoned. Su Muyu, captain of the guard unit sworn to protect him, sets out to find a legendary doctor while fending off killers. His closest friend Su Changhe, meanwhile, has joined the plot to overthrow the leader, putting the two on a collision course."
 },
 "monsterbutwild": {
 "name": "Monster but Wild",
@@ -1988,7 +2000,8 @@
 "note": "no rating found; Anime-Planet 3.785 of 5 from 21 votes",
 "origin": "CN",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "In the chaotic age when the Yan and Huang Emperors led rival tribes, young Tuoba Ye unexpectedly inherits the power of the legendary Emperor Shennong. With the tribes fighting for dominance, he is pulled into battles and old mysteries, and must learn to wield a gift he never asked for while finding his place in a world on the brink of war."
 },
 "immortalitys1s2all": {
 "name": "Immortality",
@@ -2026,7 +2039,8 @@
 "note": "no rating found; Anime-Planet 3.896 of 5 from 35 votes",
 "origin": "CN",
 "rating": 7.8,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "The old path of cultivating immortality is fading as a new technological art of transcendence takes its place. Wang Xuan is drawn into a secretive organization and sets out on missions that pit him against immortals, send him after lost treasures and ancient secrets, and prepare him for a catastrophe looming over the cosmos."
 },
 "kingofwanderingcultivators": {
 "name": "The King of Wandering Cultivators",
@@ -2160,7 +2174,8 @@
 "note": "no rating found; Anime-Planet 3.84 of 5 from 19 votes",
 "origin": "CN",
 "rating": 7.7,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Gu Zhengfeng, a dragon who once prided himself on his conscience, wakes from a thousand-year sleep to find his nature has turned wicked and his entire treasure hoard has vanished. Adjusting to a world that has moved on without him, he sets out to reclaim his lost riches and figure out what happened while he slept."
 },
 "heavenscrapmaster": {
 "name": "Heaven Scrap Master",
@@ -2227,7 +2242,8 @@
 "name": "Cast Out by My Family, I Awakened 900 Million Stat Points",
 "completed": false,
 "note": "season 2 still airing; no rating found",
-"origin": "CN"
+"origin": "CN",
+"summary": "Zhao Hezhou was born with ruined meridians after his mother gave up her health to save his sister, and his family casts him out as a cripple. He then learns he is the reincarnation of an ancient Asura demon god who carries nine hundred million stat points from his past life, and uses them to clear his mother's name and take revenge."
 },
 "bladeandbones": {
 "name": "Blade and Bones",
@@ -2348,7 +2364,8 @@
 "note": "no rating found; Anime-Planet 3.759 of 5 from 51 votes",
 "origin": "CN",
 "rating": 7.5,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Yang Chen, grandson of the patriarch of the Yang clan, is mocked by his own household because his Dao Soul has failed to awaken for years. Determined to prove them wrong, he pushes his cultivation forward while his ambitious uncle plots to seize control of the family, and Yang Chen sets out to grow strong enough to protect his grandfather and his home."
 },
 "thousandautumns": {
 "name": "Thousand Autumns",
@@ -2370,7 +2387,8 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL entry: Xiao Lu He Xiao Lan; uploads cover S2-S5 only (S1 absent); score recalled"
+"note": "MAL entry: Xiao Lu He Xiao Lan; uploads cover S2-S5 only (S1 absent); score recalled",
+"summary": "Gentle Beryl and easily flustered Sapphire keep crossing paths in one world after another. In each short episodic tale the two meet under new circumstances, sometimes as close companions and sometimes as rivals or enemies, and the series plays with how their bond shifts from setting to setting."
 },
 "jojosbizarreadventurebattletendency": {
 "name": "JoJo's Bizarre Adventure",
@@ -2384,7 +2402,8 @@
 "note": "no rating found; Anime-Planet 3.89 of 5 from 36 votes",
 "origin": "CN",
 "rating": 7.8,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "A young man finds himself thrown back twelve years into his past, to a small hometown in the Zhao Kingdom where demons stir beneath the surface. Over six days and nights he must unravel a strange case and face the monsters behind it, hoping this second chance lets him break free of the divine powers that once bound his fate."
 },
 "rebirthoftheswordpatriarch": {
 "name": "Rebirth of the Sword Patriarch",
@@ -2464,13 +2483,15 @@
 "rating": 7.8,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL entry: Zhan Shen: Fanchen Shenyu; S1 15 eps (2024), S2 separate; score not confirmed"
+"note": "MAL entry: Zhan Shen: Fanchen Shenyu; S1 15 eps (2024), S2 separate; score not confirmed",
+"summary": "Lin Qiye lost his sight as a boy after glimpsing a winged figure on the moon, and years later his vision returns along with a strange power hidden in his mind. He learns that monsters and gods from ancient myths lurk behind modern city life, and he joins the Night Watchers, a secret force that fights these beings to keep ordinary people safe."
 },
 "pheromonessaywerenotmeanttobeourpheromonessayno": {
 "name": "Pheromones Say We're Not Meant to Be",
 "completed": true,
 "note": "no rating found (no Anime-Planet anime entry, only the source manhua Pheromone Impossible); possibly dynamic manhua style, unverified",
-"origin": "CN"
+"origin": "CN",
+"summary": "Xiao Yan, an alpha, and Zhi Yu, an omega, have bickered with each other for as long as either can remember, and their pheromones rate them as completely incompatible. Then an accidental mating bite ties the two rivals together, forcing them to deal with each other in a whole new way in this boys' love romance."
 },
 "shiboyugiplayingdeathgamestoputfoodonthetable": {
 "name": "SHIBOYUGI: Playing Death Games to Put Food on the Table",
@@ -2522,7 +2543,8 @@
 "note": "Zhu Tian Ji; no rating found; Anime-Planet 3.806 of 5 from 127 votes",
 "origin": "CN",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Lin Fei is a young martial artist whose flawed meridians keep him from training, and he watches his master and a friend die in battle. Turning to the craft of refining artifacts in search of revenge, he is later revived by a mysterious power in a new era, where he sets out to rebuild his sect."
 },
 "legendofprincesschangge": {
 "name": "The Legend of Princess Chang-Ge",
@@ -2618,7 +2640,8 @@
 "name": "Above Myriads",
 "completed": false,
 "note": "likely still airing (2026); no rating found (Anime-Planet has only the manhua)",
-"origin": "CN"
+"origin": "CN",
+"summary": "Yi Feng is transported into the Immortal River Continent, a cultivation world where he appears to have no spiritual roots at all and gets by on the everyday skills a mysterious system hands him. What he does not realize is that his strength is godlike, and as he goes about his quiet life, his casual actions keep resolving crises and reshaping the continent around him."
 },
 "画江湖之不良人第七季九幽玄天": {
 "name": "The Degenerate-Drawing Jianghu Season 7",
@@ -2741,7 +2764,8 @@
 "note": "no rating found; Anime-Planet 3.754 of 5 from 29 votes",
 "origin": "CN",
 "rating": 7.5,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Duanmu Yeyu, a young man from a remote village, heads to Ember City hoping to join the elite monster-fighting Hell Hunters. After he rescues an injured engineered agent called MIKO-Taiyi, he unknowingly walks off with a vital device she was carrying. Taiyi must quietly get close to him to recover it, just as the forces of the villain Lucifer close in on the city."
 },
 "capsules": {
 "name": "CAPSULES",
@@ -2806,7 +2830,8 @@
 "note": "no rating found; Anime-Planet 3.955 of 5 from 251 votes",
 "origin": "CN",
 "rating": 7.9,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Pei Qian, head of the small Tengda company, gains a system that turns the money his business loses into personal wealth for him. His plan is simple: make games and products designed to flop, burn through the funds and cash out. The trouble is that every project he dooms to fail keeps turning into a hit, earning him a reputation as a business genius."
 },
 "meleemage": {
 "name": "The Melee Mage",
@@ -2837,13 +2862,15 @@
 "name": "Mom, I'm Sorry",
 "completed": true,
 "note": "no rating found (Anime-Planet only has the manga page)",
-"origin": "CN"
+"origin": "CN",
+"summary": "Dong Cuican will do anything to save his terminally ill mother, so he strikes a deal with a mysterious figure and trades away his own remaining time. His mother Yan Jinyu wakes up healthy and twenty years old again, and he quietly sets out to spend the days he has left caring for her while keeping the bargain a secret."
 },
 "jinwuwei": {
 "name": "Jin Wu Wei: The Wind Rises in Jinling",
 "completed": true,
 "note": "no rating found (Anime-Planet only 14 votes); 16 eps, finished 2024",
-"origin": "CN"
+"origin": "CN",
+"summary": "Rumors spread through the imperial capital of Jinling as people are killed by thunder and fire and sinister rat-faced soldiers roam the streets. Jing Yifei, the young woman leading the Jinwu Guard, teams up with Bai Qi, a reclusive descendant of an old line, and the mechanist Qin Ming to investigate, uncovering secrets left behind by a fallen dynasty."
 },
 "backasimmortallord": {
 "name": "Back as Immortal Lord",
@@ -2939,7 +2966,8 @@
 "note": "no rating found; Anime-Planet 3.797 of 5 from 83 votes",
 "origin": "CN",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Chu Yang is killed in an ambush by plunderers hunting the legendary Nine Tribulations Sword, only to wake sixteen years in the past. Armed with memories of his first life, he tries to reshape his fate, avoid the betrayals that doomed him and grow strong enough to change what is coming."
 },
 "我是学校唯一的人类": {
 "name": "I'm the Only Human at School",
@@ -2968,7 +2996,8 @@
 "note": "Aishang Ta de Liyou; no rating found; Anime-Planet 3.957 of 5 from 520 votes",
 "origin": "CN",
 "rating": 7.9,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Yuan Juntang moves into a new apartment as he starts university, only to discover that his downstairs neighbor is Li Shiya, a former pop idol who quit the spotlight and dropped out of school. As the two keep crossing paths, he is drawn into her guarded new life and the past she is trying to leave behind."
 },
 "wugenji": {
 "origin": "CN",
@@ -2989,7 +3018,8 @@
 "origin": "CN",
 "name": "Good Killer",
 "completed": true,
-"note": "Chinese title Shashou Gu De (杀手古德), adapted from a manhua; no Anime-Planet entry found; no rating found"
+"note": "Chinese title Shashou Gu De (杀手古德), adapted from a manhua; no Anime-Planet entry found; no rating found",
+"summary": "Good is an assassin who may be the least competent killer in the business. Together with his companion Sura he stumbles through one job after another, and the jobs rarely go as planned. This comedy adapted from a manhua follows their chaotic misadventures, where his bumbling nearly always turns a simple assignment into something much stranger."
 },
 "charmofsoulpets": {
 "origin": "CN",
@@ -3004,7 +3034,8 @@
 "origin": "CN",
 "name": "Fairy Mountain",
 "completed": true,
-"note": "Shan Hai Juelun; Anime-Planet has only 10 votes (below threshold); 17 eps, 2022; no rating found"
+"note": "Shan Hai Juelun; Anime-Planet has only 10 votes (below threshold); 17 eps, 2022; no rating found",
+"summary": "Brahma, a boy from the Eastern Kingdom, sails to the Central Plains on a secret mission but loses his memory in a shipwreck. He is rescued by Gongliangchen, a young woman whose leg is ailing, and the two set out to find a fabled immortal island said to hold a cure, picking up companions and chasing hidden treasures along the way."
 },
 "bangdream3rdseason": {
 "origin": "JP",
@@ -3222,7 +3253,8 @@
 "completed": true,
 "note": "AI flag on one upload; no rating found; Anime-Planet 3.754 of 5 from 25 votes",
 "rating": 7.5,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "Luo Li grows up on the Yinzhou Continent, a land without spiritual energy, and becomes the top assassin of the Tianjue Assassin Hall. When his father gives his life for him, Luo Li flees to the Zhongtian Main World, where he takes up cultivation and begins digging into the secrets surrounding his past on his long road toward immortality."
 },
 "qirefiningfor3000years": {
 "origin": "CN",
@@ -3274,7 +3306,8 @@
 "origin": "CN",
 "name": "The Legend of Martial",
 "completed": false,
-"note": "only S2 uploaded, ongoing; no rating found"
+"note": "only S2 uploaded, ongoing; no rating found",
+"summary_status": "unavailable"
 },
 "aliencut": {
 "origin": "CN",
@@ -3367,7 +3400,8 @@
 "origin": "CN",
 "name": "The Realm of Demigod",
 "completed": true,
-"note": "no rating found (Anime-Planet 3.54 of 5 from only 12 votes); 20 eps (2023), all uploaded; also known as Demigod Realm"
+"note": "no rating found (Anime-Planet 3.54 of 5 from only 12 votes); 20 eps (2023), all uploaded; also known as Demigod Realm",
+"summary": "Shen Zhao, heir of the God Illumination Sect, stumbles on a hidden research project and is betrayed by his own brother, who sacrifices him to the ancient beast Fei Lian. Surviving in an unexpected way, he takes on a new identity as Long Ze within the Long family, where he forms new bonds while struggling to control the dangerous power now inside him."
 },
 "ringingfate": {
 "origin": "CN",
@@ -3455,7 +3489,8 @@
 "completed": true,
 "note": "no rating found; Anime-Planet 3.791 of 5 from 39 votes",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "In a world where humans and demons live side by side and dark powers run wild, a desperate young man raised among ruthless, wicked people finds his way onto the path of immortal cultivation. Carrying the scars of his upbringing, he sets out to climb the ranks of cultivators and take control of a fate that no heaven will decide for him."
 },
 "aworldworthprotecting": {
 "origin": "CN",
@@ -3513,7 +3548,8 @@
 "origin": "CN",
 "name": "Shadows of the Void",
 "completed": true,
-"note": "Xuwu Bianjing, Winsing Animation's first series (2024); no Anime-Planet entry found; no rating found"
+"note": "Xuwu Bianjing, Winsing Animation's first series (2024); no Anime-Planet entry found; no rating found",
+"summary": "Monsters are spilling out of the Xuwu region, and only people chosen by fate can hold back the disaster. As war spreads across the Shazhou frontier, Coral, a mysterious woman from that feared land who refuses the destiny set for her, crosses paths with Yu Jia, commander of humanity's united forces."
 },
 "cheerboys": {
 "origin": "JP",
@@ -4989,7 +5025,8 @@
 "origin": "CN",
 "name": "Shen Wu Tian Zun",
 "completed": false,
-"note": "ongoing, 175 gaps, EP1-56 missing; no rating found (also known as The Legend of Sky Lord)"
+"note": "ongoing, 175 gaps, EP1-56 missing; no rating found (also known as The Legend of Sky Lord)",
+"summary": "Xiao Chen is a formidable body cultivator who is betrayed by the people closest to him and dies. He awakens in a new body that shares his name, in a realm of gods and mystic powers, and sets out to rebuild his strength, repay the betrayal and find his place among the powerful figures of this world."
 },
 "memoryofchangan": {
 "origin": "CN",
@@ -5014,7 +5051,8 @@
 "completed": true,
 "note": "no rating found; Anime-Planet 3.734 of 5 from 53 votes",
 "rating": 7.5,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "A comfortable office worker receives a strange invitation that pulls him into a divine realm. There he and others are thrown into simulated trials built to test how humanity adapts and survives, and he has to work out the rules of this place and keep passing its challenges if he wants to stay alive and find a way home."
 },
 "howdareyou-dub": {
 "origin": "CN",
@@ -5035,7 +5073,8 @@
 "origin": "CN",
 "name": "Oh! My Goddess",
 "completed": true,
-"note": "Chinese title Nushen You Dian Ling (2023); no Anime-Planet anime entry found; no rating found"
+"note": "Chinese title Nushen You Dian Ling (2023); no Anime-Planet anime entry found; no rating found",
+"summary_status": "unavailable"
 },
 "immortality2all": {
 "origin": "CN",
@@ -5297,7 +5336,8 @@
 "origin": "CN",
 "name": "Necromancer: I Am the Scourge",
 "completed": true,
-"note": "only a manhua entry on Anime-Planet (Necromancer, the Ultimate Scourge!); no rating found"
+"note": "only a manhua entry on Anime-Planet (Necromancer, the Ultimate Scourge!); no rating found",
+"summary": "A game has crossed over into reality, and every person now awakens a class that decides their power. Lin Moyu awakens as a Necromancer, a class nobody else can get, in a world where humans, demons and dragons fight for dominance. Raising an army from the dead, he sets out to become humanity's shield against the invasion pouring out of the abyss."
 },
 "starsfall": {
 "origin": "CN",
@@ -5305,7 +5345,8 @@
 "completed": true,
 "note": "no rating found; Anime-Planet 3.795 of 5 from 65 votes",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "A strange car accident sets off a chain of events that brings Bai Xi and Han Zhuo into each other's lives. Set in modern China with a supernatural twist, the story follows the pair as they try to make sense of the mystery behind the crash and the unusual bond it creates between them, which draws them ever closer."
 },
 "tobewinner": {
 "origin": "CN",
@@ -5318,7 +5359,8 @@
 "origin": "CN",
 "name": "God of Desolation",
 "completed": true,
-"note": "no rating found (not on Anime-Planet search); Tian Huang Zhan Shen, 2020 to 2021"
+"note": "no rating found (not on Anime-Planet search); Tian Huang Zhan Shen, 2020 to 2021",
+"summary": "Humans are the weakest race in their world and live under threat of extinction, protected by four guardians who have merged with nature to choose a successor. Village prodigy Ji Xiaofa loses the power of a life wheel after a mysterious woman's betrayal, and must find another path to train as beasts and villains close in on the human tribes."
 },
 "martialreversal": {
 "origin": "CN",
@@ -5396,7 +5438,8 @@
 "origin": "CN",
 "name": "A Mortal's Journey: The Beginning",
 "completed": true,
-"note": "uncertain relation to amortalsjourney (possibly the early arc of the Fanren Xiu Xian Chuan series); no Anime-Planet entry matched; no rating found"
+"note": "uncertain relation to amortalsjourney (possibly the early arc of the Fanren Xiu Xian Chuan series); no Anime-Planet entry matched; no rating found",
+"summary": "Han Li is a poor farm boy with no special talent who unexpectedly lands a place as a disciple in a small martial sect. Starting at the very bottom, he relies on caution, hard work and a mysterious green vial to make progress, setting out on a long and perilous road toward immortal cultivation."
 },
 "时光代理人英都篇": {
 "origin": "CN",
@@ -5425,7 +5468,8 @@
 "origin": "CN",
 "name": "Hero Return",
 "completed": true,
-"note": "no rating found (not on Anime-Planet search); Yingxiong Zai Lin, 2020"
+"note": "no rating found (not on Anime-Planet search); Yingxiong Zai Lin, 2020",
+"summary": "Lin Jie lives a quiet, low-key life, but he is secretly ZERO, the world's first superhero, who walked away from heroics five years ago. When he gets pulled back into contact with the current generation of heroes, he finds the organization meant to protect people riddled with corruption, and has to work out what being a hero should really mean."
 },
 "dragonstriumphinthecelestialrealm": {
 "origin": "CN",
@@ -5452,7 +5496,8 @@
 "completed": true,
 "note": "no rating found; single bundle EP1-12; Anime-Planet 3.785 of 5 from 21 votes",
 "rating": 7.6,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary": "In a primal age of the Flame Emperor and the Yellow Emperor, rival heroes fight for control of the Central Plains. When Emperor Shennong dies, a boy named Tuoba Ye is unexpectedly named his successor, and he is thrown into the power struggle between the Metal, Wood, Water, Fire and Earth clans as he tries to live up to the role."
 },
 "lighterprincessdress": {
 "origin": "CN",
@@ -5472,7 +5517,8 @@
 "origin": "CN",
 "name": "Not-So-Serious Tycoon",
 "completed": false,
-"note": "no rating found; gaps 1; English title unsure"
+"note": "no rating found; gaps 1; English title unsure",
+"summary": "A light comedy series that peeks into the lives of absurdly wealthy people who insist they are perfectly ordinary. Each short episode, such as a visit to a so-called average otaku's room, plays up the gap between everyday life and the extravagant world of the ultra-rich, poking fun at their habits along the way."
 },
 "gicallegend": {
 "origin": "CN",
@@ -5485,13 +5531,15 @@
 "origin": "CN",
 "name": "The Man From Dao Xiang Cun",
 "completed": false,
-"note": "gaps 1; no rating found"
+"note": "gaps 1; no rating found",
+"summary": "Shen Jianxin, the hapless swordsman from the world of the game JX3, comes back home to Daoxiang Village, and trouble follows him there. Strange tales, unsolved cases and absurd inventions keep popping up around the village, so he and his companions set off on a fresh round of comic adventures, including a skateboard mishap that flings him through time."
 },
 "primevaloverlord": {
 "origin": "CN",
 "name": "Primeval Overlord",
 "completed": false,
-"note": "no rating found; starts at EP2, completion unsure"
+"note": "no rating found; starts at EP2, completion unsure",
+"summary": "The supreme prince of the Spirit Realm is murdered in a plot against him and reborn as a lowly servant in the mortal world. Drawing on the power and knowledge of his former life, he climbs through the ranks of martial cultivation, facing the enemies around him while working to uncover the conspiracy that ended his old life."
 },
 "legendofblue": {
 "origin": "CN",
@@ -5524,13 +5572,15 @@
 "origin": "CN",
 "name": "Cross Dimension Big Show",
 "completed": false,
-"note": "gaps 1; no rating found"
+"note": "gaps 1; no rating found",
+"summary": "A comedic animated news show made by Youku and Baozou, hosted by Zhu Gusheng, a cartoon anchor who calls himself the most handsome guy in the 2D world. He reports on anime and pop-culture happenings and reinterprets real events from a 2D point of view, while his running struggle to find a girlfriend supplies the gags between segments."
 },
 "iamthegreatimmortal": {
 "origin": "CN",
 "name": "I Am The Great Immortal",
 "completed": false,
-"note": "only S3 EP8-16 uploaded; no rating found"
+"note": "only S3 EP8-16 uploaded; no rating found",
+"summary": "A peerless cultivation genius is betrayed and killed by powerful heavenly beings. Thanks to a mysterious Heavenly Book, he wakes up again in his own body at the age of twenty, long before his downfall. With his old knowledge intact but his strength gone, he sets out to rebuild his power and settle the score with those who framed him."
 },
 "nekoalbum": {
 "origin": "CN",
@@ -5606,7 +5656,8 @@
 "origin": "CN",
 "name": "Supreme Sword God",
 "completed": false,
-"note": "no rating found; completion unsure"
+"note": "no rating found; completion unsure",
+"summary": "Su Yi was once a revered sword master who chose to reincarnate in pursuit of a higher path of the sword. In his new life he has lost his cultivation and lives as a married-in son-in-law of the Wen family, until his old memories return. He sets out to learn the truth about his mother's death and settle scores with the disciples who betrayed him."
 },
 "highlight": {
 "origin": "CN",
@@ -5619,13 +5670,15 @@
 "origin": "CN",
 "name": "Devour Eternity",
 "completed": false,
-"note": "no rating found; ongoing"
+"note": "no rating found; ongoing",
+"summary": "Once hailed as a prodigy, a young master is betrayed and stripped of his martial power, leaving him a cripple in the eyes of his clan. When he stumbles upon a sacred relic called the Devouring Star Map, it awakens a legendary bloodline in his body, and he sets out to reclaim his strength and settle the score with those who wronged him."
 },
 "asura": {
 "origin": "CN",
 "name": "Asura",
 "completed": false,
-"note": "no rating found; completion unsure"
+"note": "no rating found; completion unsure",
+"summary_status": "unavailable"
 },
 "issettopremiereonjanuary17th": {
 "origin": "CN",
@@ -5718,13 +5771,15 @@
 "origin": "CN",
 "name": "Aotu World Reborn",
 "completed": false,
-"note": "no rating found; completion unsure"
+"note": "no rating found; completion unsure",
+"summary": "The god who shaped Aotu World made a universe full of inequality but left its people a chance to change their fate. When a great tournament reopens, a young fighter called King enters the qualifiers, hoping that victory will let him save his home planet and track down his missing sister."
 },
 "martialweekly": {
 "origin": "CN",
 "name": "The Martial Weekly",
 "completed": false,
-"note": "episodes start at EP5"
+"note": "episodes start at EP5",
+"summary": "Hua Xiangrong is the young leader of the small Huajian Clan, trying to keep her sect afloat in a martial world full of schemes and rivals. Framed as a survival guide to the jianghu, this comedic series follows her and her friends as they stumble through traps, feuds and misadventures on their way to making a name for themselves."
 },
 "isekaiquartet": {
 "origin": "JP",
@@ -5745,7 +5800,8 @@
 "origin": "CN",
 "name": "Chapter of Mythical Beasts Appear",
 "completed": false,
-"note": "collection upload only, ongoing"
+"note": "collection upload only, ongoing",
+"summary_status": "unavailable"
 },
 "littleimmortalsjade": {
 "origin": "CN",
@@ -5757,25 +5813,29 @@
 "origin": "CN",
 "name": "Feng Wu Yao Chu",
 "completed": false,
-"note": ""
+"note": "",
+"summary": "In a world drawn from the Classic of Mountains and Seas, monster chefs use their cooking to purify and tame mythical beasts. Skilled cooks face off in culinary battles around a grand ceremony, and their dishes are the tools they use to keep the balance of the world intact."
 },
 "whatswrongwithmybigbrother": {
 "origin": "CN",
 "name": "What's Wrong with My Big Brother",
 "completed": false,
-"note": "members-only gaps"
+"note": "members-only gaps",
+"summary": "Dongfang Xianyun, the eldest disciple of his sect, is written off by everyone around him as a bit cracked in the head. In truth he is a transmigrator who knows how dangerous this world can be, and he bends over backwards to dodge every deadly situation, putting staying alive ahead of looking heroic even as trouble keeps finding him."
 },
 "rivergodsaxe": {
 "origin": "CN",
 "name": "The River God's Axe",
 "completed": false,
-"note": "members-only gaps, long running"
+"note": "members-only gaps, long running",
+"summary_status": "unavailable"
 },
 "soninlawthroughtheages": {
 "origin": "CN",
 "name": "Son-In-Law Through The Ages",
 "completed": false,
-"note": "single bundle upload"
+"note": "single bundle upload",
+"summary_status": "unavailable"
 },
 "perfectworldp71": {
 "origin": "CN",
@@ -5833,7 +5893,8 @@
 "origin": "CN",
 "name": "The New Chronicles of Extraordinary Beings: Preface",
 "completed": false,
-"note": ""
+"note": "",
+"summary": "Hao Ren is an ordinary young man from a small city until he unexpectedly lands a job as a kind of cosmic police officer, placed in charge of a house full of non-human tenants. Looking after them draws him into a mystery linking the relics of a vanished civilization to strange species on Earth, along with ancient disasters and fallen gods."
 },
 "interstellarwanderer": {
 "origin": "CN",
@@ -5871,7 +5932,8 @@
 "origin": "CN",
 "name": "Xiaopin Family: Funny Campus",
 "completed": false,
-"note": "gaps, Chinese-language upload"
+"note": "gaps, Chinese-language upload",
+"summary": "Xiaopin is a lively third grader who loves to do things his own way, and his school days rarely go to plan. This comedy follows him along with his dad, mum and grandpa, a family of four whose everyday mix-ups at home and on campus turn into gentle, silly stories with a warm, upbeat message behind the jokes."
 },
 "imtheonlyhumaninschool": {
 "origin": "CN",
@@ -6140,7 +6202,8 @@
 "completed": true,
 "note": "no rating found; short series; Anime-Planet 3.925 of 5 from 19 votes",
 "rating": 7.8,
-"rating_src": "Anime-Planet x2"
+"rating_src": "Anime-Planet x2",
+"summary_status": "unavailable"
 },
 "thattimeigotreincarnatedasaslimevisionsofcoleus": {
 "origin": "JP",
@@ -6637,87 +6700,107 @@
 },
 "live:Omni-God: All Elements Awakened": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; auto match (probable) across Legend-Anime, NeonLore unverified; AI check says AI-made (not slop)",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:HP x100 Million": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Gods Rejected His SSS Talent": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Dumped at the Altar": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Awaken absolute luck talent": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
 "origin": "CN",
-"name": "Absolute Luck Talent"
+"name": "Absolute Luck Talent",
+"summary_status": "unavailable"
 },
 "live:Everyone Mocked His Dead Talent": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:God of Wealth (Real Money) Talent": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Desert survival!": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
 "origin": "CN",
-"name": "Desert Survival"
+"name": "Desert Survival",
+"summary_status": "unavailable"
 },
 "live:I Took a Summer Job": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
-"origin": "CN"
+"origin": "CN",
+"summary": "Lin Xiao, a student hunting for summer work, signs on for what looks like an ordinary seasonal gig and ends up on an alien front line where human forces in mechs fight swarms of insectoid creatures. His knack for tactics wins him fast promotions, but all he really wants is to collect his pay and get back to school before term starts."
 },
 "live:Reborn Before the Apocalypse": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Ultimate Island Survival for All": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:I Was the Weakest Mechanic": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Reborn 30 Days Before Doomsday": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Isekai Orc Chief": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Alien ocean doom!": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
 "origin": "CN",
-"name": "Alien Ocean Doom"
+"name": "Alien Ocean Doom",
+"summary_status": "unavailable"
 },
 "live:Frozen apocalypse hits!": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
 "origin": "CN",
-"name": "Frozen Apocalypse"
+"name": "Frozen Apocalypse",
+"summary_status": "unavailable"
 },
 "live:Dumped by the School Beauty": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub",
-"origin": "CN"
+"origin": "CN",
+"summary": "Fang Yi wakes up in another world only to be dumped by his beautiful classmate girlfriend on day one. Before he can dwell on it, a system warns him that spiritual energy will surge within a year and throw the world into a monster-filled apocalypse. With the system backing him, he sets out to train in martial arts and grow strong enough to face whatever comes."
 },
 "live:Everyone Fears the Endless Night": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:The World Logged Into a Death Game": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:They Treated Me Like a Slave": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; AI check says AI-made (not slop)",
-"origin": "CN"
+"origin": "CN",
+"summary_status": "unavailable"
 },
 "live:Zero-Attack / SSS Mecha Girl": {
 "note": "dub pass 2026-09-30: reviewed, kept; CN manhua dub; auto match (possible) across AlphaAnime, Legend-Anime unverified; AI check says AI-made (not slop)",

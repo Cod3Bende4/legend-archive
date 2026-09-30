@@ -168,6 +168,8 @@ footer .chip{background:none;padding:0;color:var(--muted)}
 .summary{display:grid;gap:6px;padding:14px 16px;border-radius:6px;background:var(--raise);border:1px solid var(--line);border-left:3px solid var(--gold)}
 .summary b{font:600 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .summary p{color:var(--fg);font-size:15.5px;line-height:1.7}
+.summary.nosum{border-left-color:var(--line)}
+.summary.nosum p{color:var(--muted);font-size:14px;font-style:italic}
 .hero p.sum{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .note{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:8px;background:var(--gold-tint);border:1px solid var(--gold-edge);font-size:14px}
 .note b{flex:0 0 auto;padding:2px 8px;border-radius:4px;background:var(--gold);font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-ink)}
@@ -436,7 +438,9 @@ function renderSheet() {
         <div class="eyebrow" style="--ac:${x.ac}"><span>${badge(x)}</span><i>/</i><span>${x.totalF} total</span></div>
         <h2>${esc(x.title)}</h2>
         ${x.tag ? `<p>${esc(x.tag)}</p>` : ''}
-        ${x.summary ? `<div class="summary"><b>Summary</b><p>${esc(x.summary)}</p></div>` : ''}
+        ${x.summary ? `<div class="summary"><b>Summary</b><p>${esc(x.summary)}</p></div>`
+          : x.summaryStatus === 'unavailable' ? `<div class="summary nosum"><b>Summary</b><p>No reliable description found for this series yet. It will be added if a source turns up.</p></div>`
+          : `<div class="summary nosum"><b>Summary</b><p>Description not written yet.</p></div>`}
         ${x.facts ? `<div class="facts">${esc(x.facts)}</div>` : ''}
         <div class="chips">${chipsFor(x)}</div>
         ${x.note ? `<div class="note"><b>${esc(x.conf || 'note')}</b><span>${esc(x.note)}</span></div>` : ''}

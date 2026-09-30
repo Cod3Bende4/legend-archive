@@ -27,6 +27,8 @@ Members-only: a series whose free uploads pitch a paid membership ("Join member 
 加入会员) is hidden, since the rest of it is behind the paywall. meta[key]["members_ok"] = true keeps one.
 
 Summary: meta[key]["summary"] is a short spoiler-free English premise, shown when a series is opened.
+When a run researched a series but found no reliable premise, it sets meta[key]["summary_status"] = "unavailable"
+(and leaves summary out); the page then says the description is not available instead of saying it is not written yet.
 
 Per-series facts that need judgment (rating, completed, display name, hide) live in
 curated.json under "meta", keyed by each series' "key". Claude's scheduled runs fill them in.
@@ -243,6 +245,8 @@ def apply(series, cur, Q):
         x["rating"] = rating
         x["ratingSrc"] = m.get("rating_src", "")
         x["summary"] = m.get("summary", "")
+        # "" = has a summary; "unavailable" = researched, no reliable source found; "pending" = not written yet
+        x["summaryStatus"] = "" if x["summary"] else ("unavailable" if m.get("summary_status") == "unavailable" else "pending")
         x["completed"] = m.get("completed", x["audio"] == "A3")
         members = x.pop("members", False) and not m.get("members_ok")
         if m.get("hide") or slop or members or x["total"] < 3600 or (rating is not None and rating < 7.5):
