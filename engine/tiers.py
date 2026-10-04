@@ -26,6 +26,8 @@ then ORIGIN_HINTS for known titles, then meta[key]["origin"] set by hand.
 Members-only: a series whose free uploads pitch a paid membership ("Join member to watch latest episode",
 加入会员) is hidden, since the rest of it is behind the paywall. meta[key]["members_ok"] = true keeps one.
 
+Score: score() below ranks the Focus list and Explore; meta[key]["anim"] (1 to 5, animation quality) feeds it.
+
 Summary: meta[key]["summary"] is a short spoiler-free English premise, shown when a series is opened.
 When a run researched a series but found no reliable premise, it sets meta[key]["summary_status"] = "unavailable"
 (and leaves summary out); the page then says the description is not available instead of saying it is not written yet.
@@ -224,6 +226,29 @@ SHELF_NAMES = {
 }
 
 
+def score(x):
+    """Worth-your-time score that orders the Focus list and Explore. None when the series is unrated.
+
+    rating x 10 (75 to 95), plus up to 8 for length (0 at 2h, 8 at 32h+), plus (anim - 3) x 3 when
+    meta["anim"] (1 to 5, animation quality) is set, minus up to 8 for missing episodes, minus 10 if
+    flagged as AI-made, minus 3 for a dub without the original background audio.
+    """
+    if x.get("rating") is None:
+        return None
+    import math
+    s = x["rating"] * 10
+    s += max(0.0, min(8.0, 2 * math.log2(max(x["total"], 1) / 7200)))
+    if x.get("anim"):
+        s += (x["anim"] - 3) * 3
+    if x.get("gaps") and x.get("episodes"):
+        s -= min(8.0, 20 * x["gaps"] / (x["episodes"] + x["gaps"]))
+    if x.get("q") == "ai":
+        s -= 10
+    if x.get("audio") == "A3":
+        s -= 3
+    return round(s, 1)
+
+
 def apply(series, cur, Q):
     meta = cur.get("meta", {})
     shown, hidden = [], 0
@@ -272,6 +297,8 @@ def apply(series, cur, Q):
         if x["audio"] != "A3":
             bits.append("Completed" if x["completed"] else "Ongoing")
         x["facts"] = " · ".join(bits)
+        x["anim"] = m.get("anim")
+        x["score"] = score(x)
         shown.append(x)
     shown.sort(key=lambda x: (x["tier"], x.get("q") == "ai", -(x.get("rating") or 0), -x["total"]))
     return shown, hidden

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=M+PLUS+1p:wght@400;500;700&family=M+PLUS+1+Code:wght@500;600&display=swap">
 <style>
 [hidden]{display:none!important}
-/* Layout: streaming shelf. Sticky bar, rotating saga banner, stat strip, horizontal shelves of 16:9 tiles by binge length, series sheet with season tabs.
+/* Layout: personal watch queue. Sticky bar with Focus and Explore, Focus = your 15 best complete series (started ones first) with progress bars, Explore = everything best first with origin filter, series sheet with your place, season tabs and episodes.
    Look: sumi-e ink wash (in'yō koi). Mottled grey-white paper, black ink, one red brushed sun, red splatter and seigaiha waves.
    Light only: videos play full screen, so there is no dark mode.
    Type: Yuji Syuku (shodō brush) for display, M PLUS 1p for text, M PLUS 1 Code for labels. */
@@ -204,6 +204,21 @@ body::after{content:"";position:fixed;right:0;bottom:0;z-index:-1;width:min(760p
 main::after{content:"";display:block;height:150px;margin-top:10px;background:var(--koi) center/contain no-repeat;opacity:.5;pointer-events:none}
 /* Yuji Syuku sets its Latin letters wide apart; pull them in so titles read as words */
 .logo,.hero h1,.page-head h1,.sheet h2,.shelf-head h2,.stat b,.more,.ptitle{letter-spacing:-.1em;word-spacing:.12em}
+/* focus list and your place in a series */
+.prog{position:absolute;left:0;right:0;bottom:0;z-index:3;height:4px;background:rgba(246,244,240,.22)}
+.prog i{display:block;height:100%;background:var(--gold)}
+.pill small{font:600 11.5px var(--mono);color:var(--muted)}
+.place{display:grid;gap:12px;align-items:center;padding:18px 20px;border-radius:10px;background:var(--gold-tint);border:1px solid var(--gold-edge)}
+.place b{display:block;font-size:17px}
+.place span{font:500 13px var(--mono);color:var(--muted)}
+.place .go{display:flex;flex-wrap:wrap;gap:8px}
+.place .hint{grid-column:1/-1;margin:0;font-weight:600;color:var(--gold)}
+.btn.sm{min-height:40px;padding:0 14px;gap:8px;font-size:14px}
+.btn.ghost[aria-pressed="true"]{box-shadow:inset 0 0 0 2px var(--gold)}
+.ep.seen{opacity:.5}
+.ep.seen em::after{content:" ✓"}
+.backup{display:flex;flex-wrap:wrap;align-items:center;gap:10px;color:var(--muted);font-size:14px}
+.backup label{cursor:pointer}
 @media (max-width:760px){
   .hero,.sheet-top{grid-template-columns:1fr}.hero .hero-media{order:-1}
   .hero::before{background:linear-gradient(180deg,transparent,var(--ink) 45%)}
@@ -223,15 +238,14 @@ main::after{content:"";display:block;height:150px;margin-top:10px;background:var
 
 <header class="gut">
   <a class="logo" href="#/" style="color:inherit;text-decoration:none"><span class="hanko" aria-hidden="true">伝</span><span><b>Legend</b> Archive</span></a>
-  <nav class="origins" id="origins" aria-label="Origin"></nav>
+  <nav class="origins" id="origins" aria-label="Sections"></nav>
   <label class="search" for="q">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
     <input id="q" type="search" placeholder="Search all sections…" aria-label="Search series in all sections" autocomplete="off">
   </label>
 </header>
 
-<div class="gut filters"><div class="pills" id="pills" role="group" aria-label="Filter by channel"></div></div>
-<section class="hero gut" id="hero"></section>
+<div class="gut filters"><div class="pills" id="pills" role="group" aria-label="Filter by origin"></div></div>
 <section class="gut" id="statbox"><div class="stats" id="stats"></div></section>
 <main class="gut" id="shelves"></main>
 <footer class="gut">
@@ -254,9 +268,8 @@ const ORIGINS = [
   {id:'cn', code:'CN', name:'Donghua', long:'Chinese animation', sub:'Donghua from official Chinese studio channels and English-dub channels.'},
   {id:'jp', code:'JP', name:'Anime', long:'Japanese anime', sub:'Japanese anime from official channels.'},
   {id:'kr', code:'KR', name:'Korean', long:'Korean webtoon & manhwa', sub:'Animation of Korean webtoons and manhwa.'}];
-const CAP = 20, PAGE = 48;
-const SHELVES = [{id:0,name:'New this week',sub:'Series with an upload that appeared in the last 7 days.'}].concat(META.shelves || []);
-const S = {q:'', ch:'All', hero:0, sel:null, season:0, playing:false, origin:'cn', shelf:null, sort:'rank', shown:PAGE, open:{}};
+const PAGE = 48, FOCUS = 15, STORE = 'legend-archive:progress';
+const S = {q:'', mode:'focus', xo:'all', sel:null, season:0, playing:false, playId:null, sort:'quality', shown:PAGE, open:{}, place:false, hideSeen:true};
 let LIVE = false; // true once YouTube thumbnails can load (page opened outside Claude)
 const $ = (id) => document.getElementById(id);
 const esc = (t) => String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -264,17 +277,76 @@ const yt = (id) => 'https://www.youtube.com/watch?v=' + id;
 const thumb = (id, q) => 'https://i.ytimg.com/vi/' + id + '/' + (q || 'hqdefault') + '.jpg';
 const badge = (x) => x.seasons > 1 ? x.seasons + ' seasons' : 'Feature';
 const secs = (d) => { const m = /(?:(\d+)h )?(\d+)m/.exec(d || ''); return m ? (+(m[1]||0))*3600 + (+m[2])*60 : 0; };
+const hm = (s) => { const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60); return h ? h + 'h ' + String(m).padStart(2, '0') + 'm' : m + 'm'; };
+const today = () => new Date().toISOString().slice(0, 10);
 const art = (x) => `background:radial-gradient(circle at ${x.rx}% ${x.ry}%,transparent 34%,${x.ac}55 34.6%,transparent 36.4%),radial-gradient(70% 60% at ${x.px}% ${x.py}%,${x.ac}66 0%,transparent 62%),linear-gradient(160deg,${x.c1},${x.c2})`;
 const dot = (c) => `<i class="dot" style="background:${chCol(c)}"></i>`;
 const chipsFor = (x) => x.chans.map(c => `<span class="chip">${dot(c)}${esc(chName(c))}</span>`).join('');
 const PLAY = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
 const CHEV = (d) => `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="${d < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7'}"/></svg>`;
-const org = () => ORIGINS.find(o => o.id === S.origin);
 const ALL = DATA.map((x,i) => ({x,i}));
+const BYKEY = {}; ALL.forEach(o => BYKEY[o.x.key] = o);
 const ofOrigin = (code) => ALL.filter(o => (o.x.origin || 'CN') === code);
-const inOrigin = () => ofOrigin(org().code);
-const LIVE_ORIGINS = ORIGINS.filter(o => ofOrigin(o.code).length); // a section with no series gets no tab
-const href = (origin, shelf) => '#/' + origin + (shelf != null ? '/' + shelf : '');
+const LIVE_ORIGINS = ORIGINS.filter(o => ofOrigin(o.code).length); // a section with no series gets no filter
+const xorg = () => ORIGINS.find(o => o.id === S.xo); // undefined for "All"
+const inView = () => xorg() ? ofOrigin(xorg().code) : ALL;
+
+// Your progress lives in this browser only (Back up / Restore copies it to a file):
+// prog[key] = {i: furthest part opened, as an index into units(), t: when}, done[key] / drop[key] = date,
+// focus = the keys holding your 15 slots, so a slot only changes hands when you finish or drop a series.
+const P = (() => { const e = {prog:{}, done:{}, drop:{}, focus:[]};
+  try { return Object.assign(e, JSON.parse(localStorage.getItem(STORE)) || {}); } catch (_) { return e; } })();
+function save() { try { localStorage.setItem(STORE, JSON.stringify(P)); } catch (_) {} }
+
+// every playable upload of a series in watch order: each episode, or the season's one upload when it has no episode list
+const UNITS = {};
+function units(i) {
+  if (!UNITS[i]) {
+    const x = DATA[i], many = x.seas.length > 1;
+    UNITS[i] = x.seas.flatMap((s, si) => (s.eps && s.eps.length ? s.eps : [{n: many ? 'Full' : 'Feature', id: s.pick.id, dur: s.pick.dur}])
+      .map(e => ({si, id: e.id, n: (many ? s.short + ' ' : '') + e.n, dur: secs(e.dur)})));
+  }
+  return UNITS[i];
+}
+function status(o) {
+  const u = units(o.i), p = P.prog[o.x.key], at = p ? Math.min(p.i, u.length - 1) : -1;
+  const tot = u.reduce((n, e) => n + e.dur, 0) || 1, seen = u.slice(0, at + 1).reduce((n, e) => n + e.dur, 0);
+  return {at, next: u[at + 1] || null, nextI: at + 1, pct: Math.round(100 * seen / tot), left: tot - seen, n: u.length};
+}
+// opening a part moves your place forward (never back); opening the last part finishes the series unless
+// that part is over an hour long (a full-season upload), which you finish with "Mark finished"
+function reach(i, u, exact) {
+  const k = DATA[i].key, p = P.prog[k], last = units(i).length - 1;
+  if (exact || !p || u > p.i) P.prog[k] = {i: u, t: Date.now()}; else p.t = Date.now();
+  if (!exact && u === last && units(i)[last].dur <= 3600) P.done[k] = today();
+  save();
+}
+const gone = (k) => !!(P.done[k] || P.drop[k]);
+// a series and its English-dub upload are one story: they share a slot, and finishing or dropping either settles both
+const twin = (k) => k.endsWith('-dub') ? k.slice(0, -4) : k + '-dub';
+const settled = (k) => gone(k) || gone(twin(k));
+const fits = (x) => x.completed && x.score != null && x.audio !== 'A3' && x.q !== 'ai'; // may hold a slot
+const byScore = (a, b) => (b.x.score ?? -1) - (a.x.score ?? -1) || b.x.total - a.x.total;
+const byRecent = (a, b) => ((P.prog[b.x.key] || {}).t || 0) - ((P.prog[a.x.key] || {}).t || 0);
+function focusList() {
+  const ok = (k) => BYKEY[k] && !settled(k);
+  let f = P.focus.filter(k => ok(k) && (fits(BYKEY[k].x) || P.prog[k]));
+  f = f.filter((k, j) => { const t = f.indexOf(twin(k)), a = !!P.prog[k], b = !!P.prog[twin(k)]; return t < 0 || a > b || (a === b && j < t); });
+  // a series you have started always gets a slot: its twin's if that holds one, else the lowest-scored one you have not started
+  Object.keys(P.prog).filter(k => ok(k) && fits(BYKEY[k].x) && f.indexOf(k) < 0)
+    .sort((a, b) => P.prog[b].t - P.prog[a].t).forEach(k => {
+      const tw = f.indexOf(twin(k));
+      if (tw >= 0) { if (!P.prog[twin(k)]) f[tw] = k; return; }
+      const fresh = f.filter(j => !P.prog[j]);
+      if (f.length >= FOCUS && fresh.length) f.splice(f.indexOf(fresh.reduce((a, b) => BYKEY[a].x.score <= BYKEY[b].x.score ? a : b)), 1);
+      f.push(k);
+    });
+  ALL.filter(o => fits(o.x) && !settled(o.x.key)).sort(byScore).forEach(o => {
+    if (f.length < FOCUS && f.indexOf(o.x.key) < 0 && f.indexOf(twin(o.x.key)) < 0) f.push(o.x.key);
+  });
+  if (f.join('\n') !== P.focus.join('\n')) { P.focus = f; save(); }
+  return f.map(k => BYKEY[k]).sort((a, b) => byRecent(a, b) || byScore(a, b));
+}
 
 function frame(x, opts) {
   const id = x.seas[0].pick.id, big = opts && opts.big;
@@ -291,68 +363,28 @@ function imgBad(el, id, big) {
   el.remove();
 }
 function matches(x) {
-  if (S.ch !== 'All' && x.chans.indexOf(S.ch) < 0) return false;
   if (!S.q) return true;
   const hay = (x.title + ' ' + x.tag + ' ' + (x.summary || '') + ' ' + x.seas.map(s => s.pick.t + ' ' + s.alts.map(a => a.t).join(' ')).join(' ')).toLowerCase();
   return hay.indexOf(S.q) >= 0;
 }
-function renderOrigins() {
-  $('origins').innerHTML = LIVE_ORIGINS.map(o => {
-    const n = ofOrigin(o.code).length;
-    return `<a class="origin" href="${href(o.id)}" title="${o.long}"${o.id === S.origin ? ' aria-current="page"' : ''}>${o.name}<small>${n}</small></a>`;
-  }).join('');
+function renderNav() {
+  const n = focusList().length;
+  $('origins').innerHTML = `<a class="origin" href="#/"${S.mode === 'focus' ? ' aria-current="page"' : ''}>Focus<small>${n}</small></a>
+    <a class="origin" href="#/explore${S.xo === 'all' ? '' : '/' + S.xo}"${S.mode === 'explore' ? ' aria-current="page"' : ''}>Explore<small>${ALL.length}</small></a>`;
 }
 function chansHere() {
   const n = {};
-  inOrigin().forEach(o => o.x.chans.forEach(c => n[c] = (n[c] || 0) + 1));
+  inView().forEach(o => o.x.chans.forEach(c => n[c] = (n[c] || 0) + 1));
   return Object.keys(n).sort((a,b) => n[b] - n[a]);
 }
 function renderPills() {
-  const cs = chansHere();
-  if (S.ch !== 'All' && cs.indexOf(S.ch) < 0) S.ch = 'All';
-  $('pills').hidden = cs.length < 2;
-  $('pills').innerHTML = ['All'].concat(cs).map(c =>
-    `<button class="pill" type="button" data-ch="${esc(c)}" aria-pressed="${S.ch===c}">${c==='All' ? '<i class="dot" style="background:var(--fg)"></i>All channels' : dot(c)+esc(chName(c))}</button>`).join('');
-}
-function heroList() {
-  const here = inOrigin();
-  let l = here.filter(o => o.x.tier <= 3 && o.x.seasons > 1).slice(0, 6);
-  if (!l.length) l = here.filter(o => o.x.tier <= 7).slice(0, 6);
-  if (!l.length) l = here.slice(0, 6);
-  return l;
-}
-function renderHero() {
-  const box = $('hero');
-  const list = heroList();
-  box.hidden = !!S.q || S.ch !== 'All' || S.shelf !== null || !list.length;
-  if (box.hidden) return;
-  const n = list.length, hi = ((S.hero % n) + n) % n, o = list[hi], x = o.x;
-  const runs = x.seas.filter(s => /^S\d+$/.test(s.short)).map(s =>
-    `<span>${dot(s.pick.ch)}${s.short} <em>${s.pick.dur}</em></span>`).join('');
-  box.innerHTML = `
-    <div class="hero-glow" style="background:radial-gradient(60% 90% at 80% 30%,${x.c1}66,transparent 70%)"></div>
-    <div class="hero-copy">
-      <div class="eyebrow" style="--ac:${x.ac}"><span>${esc((SHELVES.find(s => s.id === x.tier) || {name:''}).name.split(' · ')[0])}</span><i>/</i><span>${badge(x)}</span><i>/</i><span>${x.totalF}</span></div>
-      <h1>${esc(x.title)}</h1>
-      ${x.summary ? `<p class="sum">${esc(x.summary)}</p>` : `<p>${esc(x.tag)}</p>`}
-      ${x.facts ? `<div class="facts">${esc(x.facts)}</div>` : ''}
-      <div class="chips">${chipsFor(x)}${x.chans.length > 1 ? `<span class="chip gold">Same story on ${x.chans.length} channels</span>` : ''}</div>
-      <div class="actions">
-        <a class="btn gold" href="${yt(x.seas[0].pick.id)}" target="_blank" rel="noopener">${PLAY}Play Season 1</a>
-        <button class="btn ghost" type="button" data-open="${o.i}">All seasons &amp; uploads</button>
-      </div>
-      <div class="nav">
-        <button class="round" type="button" data-hero="-1" aria-label="Previous saga"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-        <div class="bars">${list.map((_, j) => `<span class="${j===hi?'on':''}"></span>`).join('')}</div>
-        <button class="round" type="button" data-hero="1" aria-label="Next saga"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-        <span class="pos">${hi+1} / ${n}</span>
-      </div>
-    </div>
-    <div class="hero-media">${frame(x, {big:true})}<div class="strip" aria-label="Seasons and runtimes">${runs}</div></div>`;
+  $('pills').hidden = S.mode !== 'explore' || !!S.q;
+  $('pills').innerHTML = [{id:'all', name:'All', n:ALL.length}].concat(LIVE_ORIGINS.map(o => ({id:o.id, name:o.name, n:ofOrigin(o.code).length}))).map(o =>
+    `<button class="pill" type="button" data-xo="${o.id}" aria-pressed="${S.xo === o.id}">${o.name}<small>${o.n}</small></button>`).join('');
 }
 function renderStats() {
-  const here = inOrigin().map(o => o.x);
-  $('statbox').hidden = S.shelf !== null || !!S.q || !here.length;
+  const here = inView().map(o => o.x);
+  $('statbox').hidden = S.mode !== 'explore' || !!S.q || !here.length;
   const up = here.reduce((n,x) => n + x.seas.reduce((m,s) => m + Math.max(1 + s.alts.length, (s.eps || []).length), 0), 0);
   const nch = chansHere().length;
   $('stats').innerHTML = [
@@ -360,75 +392,76 @@ function renderStats() {
     [here.filter(x=>x.rating).length,'rated 7.5+'],[Math.round(here.reduce((n,x)=>n+x.total,0)/3600)+'h','of watch time']
   ].map(([n,l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
 }
-function tile(x, i) {
-  const inner = `<div class="tag"><span class="genre" style="color:${x.ac}">${esc(x.genre)}</span><span style="display:flex;gap:6px">${x.fresh ? '<span class="badge new">NEW</span>' : ''}${x.q === 'ai' ? '<span class="badge" title="AI-made, flagged from comments">AI</span>' : ''}<span class="badge">${badge(x)}</span></span></div><div class="ptitle" style="font-size:${Math.round(x.fs*0.6)}px">${esc(x.title)}</div>`;
+function tile(x, i, st) {
+  const k = x.key, mark = P.done[k] ? '<span class="badge new">WATCHED</span>' : P.drop[k] ? '<span class="badge">DROPPED</span>' : '';
+  const inner = `<div class="tag"><span class="genre" style="color:${x.ac}">${esc(x.genre)}</span><span style="display:flex;gap:6px">${mark}${x.fresh ? '<span class="badge new">NEW</span>' : ''}${x.q === 'ai' ? '<span class="badge" title="AI-made, flagged from comments">AI</span>' : ''}<span class="badge">${badge(x)}</span></span></div><div class="ptitle" style="font-size:${Math.round(x.fs*0.6)}px">${esc(x.title)}</div>`
+    + (st && st.at >= 0 ? `<div class="prog"><i style="width:${st.pct}%"></i></div>` : '');
+  const where = !st ? x.totalF : st.at < 0 ? 'Start · ' + x.totalF : st.next ? `Next ${esc(st.next.n)} · ${hm(st.left)} left` : 'Last part opened';
   return `<button class="tile" type="button" data-open="${i}" aria-label="${esc(x.title)}, ${badge(x)}, ${x.totalF}">
     ${frame(x, {inner})}
     <div class="tname">${esc(x.title)}</div>
-    <div class="tmeta">${x.totalF}${x.rating ? ' · ★ ' + x.rating : ''} <span style="display:flex;gap:4px">${x.chans.map(dot).join('')}</span>${x.chans.length > 1 ? `<span class="x">${x.chans.length} channels</span>` : ''}</div>
+    <div class="tmeta">${where}${x.rating ? ' · ★ ' + x.rating : ''}</div>
   </button>`;
 }
-function shelfItems(d) {
-  const items = inOrigin().filter(o => (d.id === 0 ? o.x.fresh : o.x.tier === d.id) && matches(o.x));
-  if (d.id === 0) items.sort((a,b) => b.x.newest.localeCompare(a.x.newest));
-  return items;
+const grid = (list, withStatus) => `<div class="grid">${list.map(o => tile(o.x, o.i, withStatus || P.prog[o.x.key] ? status(o) : null)).join('')}</div>`;
+const block = (title, sub, list) => `<section aria-label="${esc(title)}"><div class="shelf-head"><h2>${esc(title)}</h2><span>${esc(sub)}</span></div><div style="margin-top:14px">${grid(list)}</div></section>`;
+function renderFocus() {
+  const list = focusList(), going = list.filter(o => P.prog[o.x.key]).length, left = list.reduce((n, o) => n + status(o).left, 0);
+  const also = Object.keys(P.prog).filter(k => BYKEY[k] && !gone(k) && P.focus.indexOf(k) < 0).map(k => BYKEY[k]).sort(byRecent);
+  const done = Object.keys(P.done).filter(k => BYKEY[k]).sort((a, b) => P.done[b].localeCompare(P.done[a])).map(k => BYKEY[k]);
+  const dropped = Object.keys(P.drop).filter(k => BYKEY[k]).map(k => BYKEY[k]);
+  $('shelves').innerHTML = `<div class="page-head"><div><h1>Your ${FOCUS}</h1>
+      <p>The best complete series, the ones you have started first. Finish one and the next best takes its slot. ${going} in progress · ${hm(left)} of watching left.</p></div></div>
+    ${list.length ? grid(list, true) : '<div class="empty">No complete, rated series are left to pick from. Explore has everything else.</div>'}
+    ${also.length ? block('Also watching', 'Started, but still airing or not rated yet, so they wait outside your 15.', also) : ''}
+    ${done.length ? block('Watched', done.length + ' finished. Open one to bring it back.', done) : ''}
+    ${dropped.length ? block('Not for me', 'Open one to bring it back.', dropped) : ''}
+    <div class="backup"><span>Your progress is saved in this browser only.</span>
+      <button class="btn ghost sm" type="button" data-backup>Back up progress</button>
+      <label class="btn ghost sm" for="restore">Restore from backup</label><input id="restore" type="file" accept="application/json,.json" hidden></div>`;
 }
-const SORTS = {rank:['Top', null], rating:['Rating', (a,b) => (b.x.rating||0) - (a.x.rating||0) || b.x.total - a.x.total],
+const SORTS = {quality:['Best first', byScore], rating:['Rating', (a,b) => (b.x.rating||0) - (a.x.rating||0) || b.x.total - a.x.total],
   long:['Longest', (a,b) => b.x.total - a.x.total], newest:['Newest', (a,b) => b.x.newest.localeCompare(a.x.newest)],
   az:['A–Z', (a,b) => a.x.title.localeCompare(b.x.title)]};
-function renderShelves() {
-  if (S.shelf !== null) return renderPage();
-  if (S.q) return renderSearch();
-  const html = SHELVES.map(d => {
-    const items = shelfItems(d);
-    if (!items.length) return '';
-    const more = items.length > CAP, link = href(S.origin, d.id);
-    return `<section aria-label="${esc(d.name)}"><div class="shelf-head"><h2>${esc(d.name)}</h2><span>${esc(d.sub)}</span>
-        <a class="all" href="${link}">See all ${items.length}${CHEV(1)}</a></div>
-      <div class="rail">
-        <button class="arrow prev" type="button" data-scroll="-1" aria-label="Scroll ${esc(d.name)} left" disabled><span>${CHEV(-1)}</span></button>
-        <div class="row">${items.slice(0, CAP).map(o => tile(o.x, o.i)).join('')}${more ? `<a class="more" href="${link}">See all<small>${items.length - CAP} more in this shelf</small></a>` : ''}</div>
-        <button class="arrow next" type="button" data-scroll="1" aria-label="Scroll ${esc(d.name)} right"><span>${CHEV(1)}</span></button>
-      </div></section>`;
-  }).join('');
-  $('shelves').innerHTML = html || `<div class="empty">No ${org().long} series yet. They appear here as soon as an official channel uploads one.</div>`;
-  document.querySelectorAll('.row').forEach(r => { r.addEventListener('scroll', arrows, {passive:true}); arrows({target:r}); });
-}
-function arrows(e) {
-  const r = e.target, rail = r.parentNode, end = r.scrollWidth - r.clientWidth - 4;
-  rail.querySelector('.prev').disabled = r.scrollLeft <= 4;
-  rail.querySelector('.next').disabled = r.scrollLeft >= end;
+function renderExplore() {
+  const items = inView().filter(o => matches(o.x) && !(S.hideSeen && settled(o.x.key))).sort(SORTS[S.sort][1]);
+  const show = items.slice(0, S.shown);
+  $('shelves').innerHTML = `<div class="page-head"><div><h1>Explore</h1><p>${items.length} series${xorg() ? ' of ' + xorg().long : ''}. Best first ranks by rating, length and upload gaps; unrated series come last.</p></div>
+      <div class="sort" role="group" aria-label="Sort">${Object.keys(SORTS).map(k => `<button type="button" data-sort="${k}" aria-pressed="${S.sort===k}">${SORTS[k][0]}</button>`).join('')}
+      <button type="button" data-seen aria-pressed="${!S.hideSeen}">Show watched</button></div></div>
+    ${items.length ? `<div class="grid">${show.map(o => tile(o.x, o.i, P.prog[o.x.key] ? status(o) : null)).join('')}</div>` : '<div class="empty">Nothing here.</div>'}
+    ${items.length > show.length ? `<div class="pager"><span>Showing ${show.length} of ${items.length}</span><button class="btn ghost" type="button" data-more>Show ${Math.min(PAGE, items.length - show.length)} more</button></div>` : ''}`;
 }
 function renderSearch() {
-  // search covers every section, the one you are in first
-  const order = [org()].concat(LIVE_ORIGINS.filter(o => o !== org()));
-  const html = order.map(o => {
-    const items = ofOrigin(o.code).filter(e => matches(e.x));
+  // search covers every section, best first
+  const html = LIVE_ORIGINS.map(o => {
+    const items = ofOrigin(o.code).filter(e => matches(e.x)).sort(byScore);
     if (!items.length) return '';
     const cap = S.open[o.id] ? items.length : 12;
     return `<section aria-label="${o.name} results"><div class="shelf-head"><h2>${o.name}</h2><span>${items.length} match${items.length === 1 ? '' : 'es'} for “${esc(S.q)}”</span></div>
-      <div class="grid" style="margin-top:14px">${items.slice(0, cap).map(e => tile(e.x, e.i)).join('')}</div>
+      <div style="margin-top:14px">${grid(items.slice(0, cap))}</div>
       ${items.length > cap ? `<div class="pager" style="margin-top:18px"><button class="btn ghost" type="button" data-open-all="${o.id}">Show all ${items.length} in ${o.name}</button></div>` : ''}</section>`;
   }).join('');
   $('shelves').innerHTML = html || `<div class="empty">Nothing matches “${esc(S.q)}” in any section. Try one word, like mecha, carp or skeleton.</div>`;
 }
-function renderPage() {
-  const d = SHELVES.find(x => x.id === S.shelf) || SHELVES[0];
-  const items = shelfItems(d), f = SORTS[S.sort][1];
-  if (f) items.sort(f);
-  const show = items.slice(0, S.shown);
-  $('shelves').innerHTML = `<div class="page-head"><div><a class="back" href="${href(S.origin)}">${CHEV(-1)}${org().name}</a>
-      <h1>${esc(d.name)}</h1><p>${esc(d.sub)} ${items.length} series.</p></div>
-      <div class="sort" role="group" aria-label="Sort">${Object.keys(SORTS).map(k => `<button type="button" data-sort="${k}" aria-pressed="${S.sort===k}">${SORTS[k][0]}</button>`).join('')}</div></div>
-    ${items.length ? `<div class="grid">${show.map(o => tile(o.x, o.i)).join('')}</div>` : `<div class="empty">Nothing here matches “${esc(S.q)}”.</div>`}
-    ${items.length > show.length ? `<div class="pager"><span>Showing ${show.length} of ${items.length}</span><button class="btn ghost" type="button" data-more>Show ${Math.min(PAGE, items.length - show.length)} more</button></div>` : ''}`;
+function renderPlace(x, i) {
+  const k = x.key, st = status({x, i});
+  const head = P.done[k] ? 'Finished on ' + P.done[k] : P.drop[k] ? 'Marked not for me' : st.at < 0 ? 'Not started' : st.next ? 'Up next: ' + st.next.n : 'Last part opened';
+  const sub = st.at < 0 ? `${st.n} part${st.n === 1 ? '' : 's'} · ${x.totalF}` : `${st.pct}% watched · ${hm(st.left)} left`;
+  return `<div class="place"><div><b>${esc(head)}</b><span>${sub}</span></div>
+    <div class="go">${gone(k) ? '<button class="btn gold sm" type="button" data-restore>Bring it back</button>' : `
+      ${st.next ? `<a class="btn gold sm" href="${yt(st.next.id)}" target="_blank" rel="noopener" data-u="${st.nextI}">${PLAY}${st.at < 0 ? 'Start' : 'Play'} ${esc(st.next.n)}</a>` : ''}
+      <button class="btn ghost sm" type="button" data-place aria-pressed="${S.place}">${S.place ? 'Cancel' : 'I’m further along'}</button>
+      <button class="btn ghost sm" type="button" data-finish>Mark finished</button>
+      <button class="btn ghost sm" type="button" data-drop>Not for me</button>`}</div>
+    ${S.place ? '<p class="hint">Tap the last episode you watched below (switch seasons with the tabs).</p>' : ''}</div>`;
 }
 function renderSheet() {
   const v = $('veil');
   if (S.sel === null) { v.hidden = true; v.innerHTML = ''; document.body.style.overflow = ''; return; }
   const x = DATA[S.sel], si = Math.min(S.season, x.seas.length - 1), s = x.seas[si];
   const one = x.seas.length === 1, label = one ? 'feature' : s.short;
-  const pid = S.playId || s.pick.id;
+  const pid = S.playId || s.pick.id, base = units(S.sel).findIndex(u => u.si === si), at = status({x, i:S.sel}).at;
   const player = S.playing && LIVE ? `<div class="player"><iframe src="https://www.youtube.com/embed/${pid}?autoplay=1&rel=0" title="${esc(s.pick.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>` : '';
   v.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(x.title)}">
     <button class="round close" type="button" data-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -438,6 +471,7 @@ function renderSheet() {
         <div class="eyebrow" style="--ac:${x.ac}"><span>${badge(x)}</span><i>/</i><span>${x.totalF} total</span></div>
         <h2>${esc(x.title)}</h2>
         ${x.tag ? `<p>${esc(x.tag)}</p>` : ''}
+        ${renderPlace(x, S.sel)}
         ${x.summary ? `<div class="summary"><b>Summary</b><p>${esc(x.summary)}</p></div>`
           : x.summaryStatus === 'unavailable' ? `<div class="summary nosum"><b>Summary</b><p>No reliable description found for this series yet. It will be added if a source turns up.</p></div>`
           : `<div class="summary nosum"><b>Summary</b><p>Description not written yet.</p></div>`}
@@ -453,49 +487,87 @@ function renderSheet() {
       <div class="pick">
         <div style="min-width:0"><div class="lab"><span>Watch this</span>${dot(s.pick.ch)}<span class="who">${esc(chName(s.pick.ch))}</span><span>${s.pick.dur}</span></div><div class="ttl">${esc(s.pick.t)}</div></div>
         <div class="go">
-          ${LIVE && !S.playing ? `<button class="btn gold" type="button" data-play>${PLAY}Play ${label} here</button>` : ''}
-          <a class="btn ${LIVE && !S.playing ? 'ghost' : 'gold'}" href="${yt(s.pick.id)}" target="_blank" rel="noopener">${LIVE ? 'Open on YouTube' : PLAY + 'Play ' + label}</a>
+          ${LIVE && !S.playing ? `<button class="btn gold" type="button" data-play data-u="${base}">${PLAY}Play ${label} here</button>` : ''}
+          <a class="btn ${LIVE && !S.playing ? 'ghost' : 'gold'}" href="${yt(s.pick.id)}" target="_blank" rel="noopener" data-u="${base}">${LIVE ? 'Open on YouTube' : PLAY + 'Play ' + label}</a>
         </div>
       </div>
-      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map(e => `<a class="ep ${S.playing && pid === e.id ? 'on' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" data-ep="${e.id}">${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
+      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map((e, j) => `<a class="ep ${S.playing && pid === e.id ? 'on' : ''} ${base + j <= at ? 'seen' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" data-ep="${e.id}" data-u="${base + j}">${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
       ${s.alts.length ? `<div class="alts"><h3>Also uploaded as</h3>${s.alts.map(a => `<a class="alt" href="${yt(a.id)}" target="_blank" rel="noopener"><span class="c">${dot(a.ch)}${esc(chName(a.ch))}</span><span>${esc(a.t)}</span><span class="d">${a.dur}</span></a>`).join('')}</div>` : ''}
     </div></div>`;
   v.hidden = false; document.body.style.overflow = 'hidden';
 }
-function renderAll() { renderOrigins(); renderPills(); renderHero(); renderStats(); renderShelves(); renderLegend(); }
+function renderMain() {
+  renderNav(); renderPills(); renderStats();
+  if (S.q) renderSearch(); else if (S.mode === 'focus') renderFocus(); else renderExplore();
+  renderLegend();
+}
 function renderLegend() {
   $('legend').innerHTML = chansHere().map(c => `<span class="chip">${dot(c)}${esc(chName(c))}</span>`).join('');
 }
 function route() {
-  const m = /^#\/(cn|jp|kr)(?:\/(\d+))?/.exec(location.hash);
-  const live = m && LIVE_ORIGINS.some(o => o.id === m[1]);
-  const origin = live ? m[1] : (LIVE_ORIGINS[0] || ORIGINS[0]).id, shelf = live && m[2] !== undefined ? +m[2] : null;
-  const moved = origin !== S.origin || shelf !== S.shelf;
-  if (origin !== S.origin) { S.hero = 0; S.ch = 'All'; }
-  if (shelf !== S.shelf) { S.sort = 'rank'; S.shown = PAGE; }
-  S.origin = origin; S.shelf = shelf;
-  renderAll();
+  // #/ is Focus; #/explore and #/explore/cn|jp|kr is Explore (older #/cn links land in Explore too)
+  const m = /^#\/(?:explore\/?)?(cn|jp|kr)?/.exec(location.hash), xo = m && m[1] && LIVE_ORIGINS.some(o => o.id === m[1]) ? m[1] : 'all';
+  const mode = /^#\/(explore|cn|jp|kr)/.test(location.hash) ? 'explore' : 'focus';
+  const moved = mode !== S.mode || xo !== S.xo;
+  if (moved) S.shown = PAGE;
+  S.mode = mode; S.xo = xo;
+  renderMain();
   if (moved) window.scrollTo(0, 0);
+}
+function openSheet(i) {
+  const st = status(ALL[i]);
+  S.sel = i; S.season = st.next ? st.next.si : 0; S.playing = false; S.playId = null; S.place = false; renderSheet();
+}
+function closeSheet() { S.sel = null; S.playing = false; S.place = false; renderSheet(); }
+function backup() {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(P)], {type:'application/json'}));
+  a.download = 'legend-archive-progress-' + today() + '.json';
+  a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
 
 document.addEventListener('click', (e) => {
+  const u = e.target.closest('[data-u]');
+  if (u && S.sel !== null) {
+    if (S.place) { e.preventDefault(); reach(S.sel, +u.dataset.u, true); S.place = false; renderSheet(); renderMain(); return; }
+    reach(S.sel, +u.dataset.u);
+    setTimeout(() => { renderSheet(); renderMain(); }); // after the link has opened
+  }
   const ep = e.target.closest('[data-ep]');
   if (ep && LIVE) { e.preventDefault(); S.playId = ep.dataset.ep; S.playing = true; renderSheet(); return; }
-  const t = e.target.closest('[data-open],[data-hero],[data-ch],[data-close],[data-season],[data-play],[data-scroll],[data-sort],[data-more],[data-open-all]');
-  if (!t) { if (e.target === $('veil')) { S.sel = null; S.playing = false; renderSheet(); } return; }
-  if (t.dataset.open !== undefined) { S.sel = +t.dataset.open; S.season = 0; S.playing = false; S.playId = null; renderSheet(); }
-  else if (t.dataset.hero) { S.hero += +t.dataset.hero; renderHero(); }
-  else if (t.dataset.ch) { S.ch = t.dataset.ch; renderAll(); }
-  else if (t.dataset.close !== undefined) { S.sel = null; S.playing = false; renderSheet(); }
+  const t = e.target.closest('[data-open],[data-xo],[data-close],[data-season],[data-play],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup]');
+  if (!t) { if (e.target === $('veil')) closeSheet(); return; }
+  const k = S.sel !== null ? DATA[S.sel].key : null;
+  if (t.dataset.open !== undefined) openSheet(+t.dataset.open);
+  else if (t.dataset.xo) location.hash = '#/explore' + (t.dataset.xo === 'all' ? '' : '/' + t.dataset.xo);
+  else if (t.dataset.close !== undefined) closeSheet();
   else if (t.dataset.season) { S.season = +t.dataset.season; S.playing = false; S.playId = null; renderSheet(); }
   else if (t.dataset.play !== undefined) { S.playing = true; S.playId = null; renderSheet(); }
-  else if (t.dataset.scroll) { const r = t.parentNode.querySelector('.row'); r.scrollBy({left: +t.dataset.scroll * r.clientWidth * 0.9}); }
-  else if (t.dataset.sort) { S.sort = t.dataset.sort; S.shown = PAGE; renderShelves(); }
-  else if (t.dataset.more !== undefined) { S.shown += PAGE; renderShelves(); }
-  else if (t.dataset.openAll) { S.open[t.dataset.openAll] = true; renderShelves(); }
+  else if (t.dataset.sort) { S.sort = t.dataset.sort; S.shown = PAGE; renderMain(); }
+  else if (t.dataset.seen !== undefined) { S.hideSeen = !S.hideSeen; renderMain(); }
+  else if (t.dataset.more !== undefined) { S.shown += PAGE; renderMain(); }
+  else if (t.dataset.openAll) { S.open[t.dataset.openAll] = true; renderMain(); }
+  else if (t.dataset.backup !== undefined) backup();
+  else if (t.dataset.place !== undefined) { S.place = !S.place; renderSheet(); }
+  else if (k && (t.dataset.finish !== undefined || t.dataset.drop !== undefined || t.dataset.restore !== undefined)) {
+    if (t.dataset.finish !== undefined) P.done[k] = today();
+    else if (t.dataset.drop !== undefined) P.drop[k] = today();
+    else { delete P.done[k]; delete P.drop[k]; }
+    save(); S.place = false; renderSheet(); renderMain();
+  }
 });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.sel !== null) { S.sel = null; S.playing = false; renderSheet(); } });
-$('q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); S.open = {}; renderAll(); });
+document.addEventListener('change', (e) => {
+  if (e.target.id !== 'restore' || !e.target.files[0]) return;
+  e.target.files[0].text().then(t => {
+    const v = JSON.parse(t);
+    if (!v || typeof v.prog !== 'object') throw new Error('not a backup');
+    Object.keys(P).forEach(k => delete P[k]);
+    Object.assign(P, {prog:{}, done:{}, drop:{}, focus:[]}, v);
+    save(); renderMain();
+  }).catch(() => alert('That file is not a Legend Archive progress backup.'));
+});
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.sel !== null) closeSheet(); });
+$('q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); S.open = {}; renderMain(); });
 $('foot').textContent = 'Updated ' + new Date(META.updated).toLocaleString([], {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}) + (META.added ? ' · ' + META.added + ' new upload' + (META.added > 1 ? 's' : '') : '') + (META.hidden ? ' · ' + META.hidden + ' AI-slop series hidden' : '') + (META.failed.length ? ' · could not reach ' + META.failed.join(', ') : '') + '. Refreshes daily at 10 PM.';
 window.addEventListener('hashchange', route);
 route();
