@@ -3,7 +3,7 @@
 A browsable archive of long-form animation in three sections: Donghua (Chinese), Anime (Japanese) and Korean (webtoon and manhwa adaptations), from official YouTube channels plus four English-dub channels, sorted into quality tiers. Every play button opens or embeds the YouTube video; nothing is downloaded or rehosted.
 
 ## The page
-- **Focus** (home): 15 slots holding the best complete, rated series, ranked by `score()` in `engine/tiers.py` (rating, length, upload gaps, `anim`). Series you have started come first. A slot only changes hands when you finish a series or mark it "Not for me". An original and its English-dub upload share one slot.
+- **Focus** (home): 15 slots holding the best complete, rated series, ranked by `score()` in `engine/tiers.py` (rating, length, upload gaps, `anim`). Series you have started come first. A slot only changes hands when you finish a series or mark it "Not for me". An original and its English-dub upload share one slot. Tabs: Top 15 (all), Top 15 Anime, Top 15 Donghua, each with its own slots.
 - **Explore**: every series, best first, filterable by Donghua, Anime or Korean.
 - Opening an episode records your place. Progress is kept in the browser's local storage, with Back up / Restore buttons at the bottom of Focus.
 

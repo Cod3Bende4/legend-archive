@@ -269,7 +269,7 @@ const ORIGINS = [
   {id:'jp', code:'JP', name:'Anime', long:'Japanese anime', sub:'Japanese anime from official channels.'},
   {id:'kr', code:'KR', name:'Korean', long:'Korean webtoon & manhwa', sub:'Animation of Korean webtoons and manhwa.'}];
 const PAGE = 48, FOCUS = 15, STORE = 'legend-archive:progress';
-const S = {q:'', mode:'focus', xo:'all', sel:null, season:0, playing:false, playId:null, sort:'quality', shown:PAGE, open:{}, place:false, hideSeen:true};
+const S = {q:'', mode:'focus', xo:'all', sel:null, season:0, playing:false, playId:null, fq:'all', sort:'quality', shown:PAGE, open:{}, place:false, hideSeen:true};
 let LIVE = false; // true once YouTube thumbnails can load (page opened outside Claude)
 const $ = (id) => document.getElementById(id);
 const esc = (t) => String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -290,12 +290,16 @@ const ofOrigin = (code) => ALL.filter(o => (o.x.origin || 'CN') === code);
 const LIVE_ORIGINS = ORIGINS.filter(o => ofOrigin(o.code).length); // a section with no series gets no filter
 const xorg = () => ORIGINS.find(o => o.id === S.xo); // undefined for "All"
 const inView = () => xorg() ? ofOrigin(xorg().code) : ALL;
+// Focus tabs: each keeps its own 15 slots
+const QUEUES = [{id:'all', name:'Top 15'}, {id:'jp', code:'JP', name:'Top 15 Anime'}, {id:'cn', code:'CN', name:'Top 15 Donghua'}];
+const inQueue = (x, q) => !q.code || (x.origin || 'CN') === q.code;
 
 // Your progress lives in this browser only (Back up / Restore copies it to a file):
 // prog[key] = {i: furthest part opened, as an index into units(), t: when}, done[key] / drop[key] = date,
-// focus = the keys holding your 15 slots, so a slot only changes hands when you finish or drop a series.
-const P = (() => { const e = {prog:{}, done:{}, drop:{}, focus:[]};
-  try { return Object.assign(e, JSON.parse(localStorage.getItem(STORE)) || {}); } catch (_) { return e; } })();
+// focus[tab] = the keys holding that tab's 15 slots, so a slot only changes hands when you finish or drop a series.
+const P = (() => { const e = {prog:{}, done:{}, drop:{}, focus:{}};
+  try { return fix(Object.assign(e, JSON.parse(localStorage.getItem(STORE)) || {})); } catch (_) { return e; } })();
+function fix(p) { if (Array.isArray(p.focus)) p.focus = {all: p.focus}; p.focus = p.focus || {}; return p; } // older backups had one list
 function save() { try { localStorage.setItem(STORE, JSON.stringify(P)); } catch (_) {} }
 
 // every playable upload of a series in watch order: each episode, or the season's one upload when it has no episode list
@@ -328,9 +332,10 @@ const settled = (k) => gone(k) || gone(twin(k));
 const fits = (x) => x.completed && x.score != null && x.audio !== 'A3' && x.q !== 'ai'; // may hold a slot
 const byScore = (a, b) => (b.x.score ?? -1) - (a.x.score ?? -1) || b.x.total - a.x.total;
 const byRecent = (a, b) => ((P.prog[b.x.key] || {}).t || 0) - ((P.prog[a.x.key] || {}).t || 0);
-function focusList() {
-  const ok = (k) => BYKEY[k] && !settled(k);
-  let f = P.focus.filter(k => ok(k) && (fits(BYKEY[k].x) || P.prog[k]));
+function focusList(id) {
+  const q = QUEUES.find(t => t.id === (id || S.fq)) || QUEUES[0], had = P.focus[q.id] || [];
+  const ok = (k) => BYKEY[k] && !settled(k) && inQueue(BYKEY[k].x, q);
+  let f = had.filter(k => ok(k) && (fits(BYKEY[k].x) || P.prog[k]));
   f = f.filter((k, j) => { const t = f.indexOf(twin(k)), a = !!P.prog[k], b = !!P.prog[twin(k)]; return t < 0 || a > b || (a === b && j < t); });
   // a series you have started always gets a slot: its twin's if that holds one, else the lowest-scored one you have not started
   Object.keys(P.prog).filter(k => ok(k) && fits(BYKEY[k].x) && f.indexOf(k) < 0)
@@ -341,10 +346,10 @@ function focusList() {
       if (f.length >= FOCUS && fresh.length) f.splice(f.indexOf(fresh.reduce((a, b) => BYKEY[a].x.score <= BYKEY[b].x.score ? a : b)), 1);
       f.push(k);
     });
-  ALL.filter(o => fits(o.x) && !settled(o.x.key)).sort(byScore).forEach(o => {
+  ALL.filter(o => fits(o.x) && !settled(o.x.key) && inQueue(o.x, q)).sort(byScore).forEach(o => {
     if (f.length < FOCUS && f.indexOf(o.x.key) < 0 && f.indexOf(twin(o.x.key)) < 0) f.push(o.x.key);
   });
-  if (f.join('\n') !== P.focus.join('\n')) { P.focus = f; save(); }
+  if (f.join('\n') !== had.join('\n')) { P.focus[q.id] = f; save(); }
   return f.map(k => BYKEY[k]).sort((a, b) => byRecent(a, b) || byScore(a, b));
 }
 
@@ -369,7 +374,7 @@ function matches(x) {
 }
 function renderNav() {
   const n = focusList().length;
-  $('origins').innerHTML = `<a class="origin" href="#/"${S.mode === 'focus' ? ' aria-current="page"' : ''}>Focus<small>${n}</small></a>
+  $('origins').innerHTML = `<a class="origin" href="#/${S.fq === 'all' ? '' : 'focus/' + S.fq}"${S.mode === 'focus' ? ' aria-current="page"' : ''}>Focus<small>${n}</small></a>
     <a class="origin" href="#/explore${S.xo === 'all' ? '' : '/' + S.xo}"${S.mode === 'explore' ? ' aria-current="page"' : ''}>Explore<small>${ALL.length}</small></a>`;
 }
 function chansHere() {
@@ -378,7 +383,9 @@ function chansHere() {
   return Object.keys(n).sort((a,b) => n[b] - n[a]);
 }
 function renderPills() {
-  $('pills').hidden = S.mode !== 'explore' || !!S.q;
+  $('pills').hidden = !!S.q;
+  if (S.mode === 'focus') { $('pills').innerHTML = QUEUES.map(t =>
+    `<button class="pill" type="button" data-fq="${t.id}" aria-pressed="${S.fq === t.id}">${t.name}</button>`).join(''); return; }
   $('pills').innerHTML = [{id:'all', name:'All', n:ALL.length}].concat(LIVE_ORIGINS.map(o => ({id:o.id, name:o.name, n:ofOrigin(o.code).length}))).map(o =>
     `<button class="pill" type="button" data-xo="${o.id}" aria-pressed="${S.xo === o.id}">${o.name}<small>${o.n}</small></button>`).join('');
 }
@@ -406,11 +413,12 @@ function tile(x, i, st) {
 const grid = (list, withStatus) => `<div class="grid">${list.map(o => tile(o.x, o.i, withStatus || P.prog[o.x.key] ? status(o) : null)).join('')}</div>`;
 const block = (title, sub, list) => `<section aria-label="${esc(title)}"><div class="shelf-head"><h2>${esc(title)}</h2><span>${esc(sub)}</span></div><div style="margin-top:14px">${grid(list)}</div></section>`;
 function renderFocus() {
+  const q = QUEUES.find(t => t.id === S.fq), mine = (k) => BYKEY[k] && inQueue(BYKEY[k].x, q);
   const list = focusList(), going = list.filter(o => P.prog[o.x.key]).length, left = list.reduce((n, o) => n + status(o).left, 0);
-  const also = Object.keys(P.prog).filter(k => BYKEY[k] && !gone(k) && P.focus.indexOf(k) < 0).map(k => BYKEY[k]).sort(byRecent);
-  const done = Object.keys(P.done).filter(k => BYKEY[k]).sort((a, b) => P.done[b].localeCompare(P.done[a])).map(k => BYKEY[k]);
-  const dropped = Object.keys(P.drop).filter(k => BYKEY[k]).map(k => BYKEY[k]);
-  $('shelves').innerHTML = `<div class="page-head"><div><h1>Your ${FOCUS}</h1>
+  const also = Object.keys(P.prog).filter(k => mine(k) && !gone(k) && P.focus[q.id].indexOf(k) < 0).map(k => BYKEY[k]).sort(byRecent);
+  const done = Object.keys(P.done).filter(mine).sort((a, b) => P.done[b].localeCompare(P.done[a])).map(k => BYKEY[k]);
+  const dropped = Object.keys(P.drop).filter(mine).map(k => BYKEY[k]);
+  $('shelves').innerHTML = `<div class="page-head"><div><h1>${q.name}</h1>
       <p>The best complete series, the ones you have started first. Finish one and the next best takes its slot. ${going} in progress · ${hm(left)} of watching left.</p></div></div>
     ${list.length ? grid(list, true) : '<div class="empty">No complete, rated series are left to pick from. Explore has everything else.</div>'}
     ${also.length ? block('Also watching', 'Started, but still airing or not rated yet, so they wait outside your 15.', also) : ''}
@@ -505,12 +513,14 @@ function renderLegend() {
   $('legend').innerHTML = chansHere().map(c => `<span class="chip">${dot(c)}${esc(chName(c))}</span>`).join('');
 }
 function route() {
-  // #/ is Focus; #/explore and #/explore/cn|jp|kr is Explore (older #/cn links land in Explore too)
-  const m = /^#\/(?:explore\/?)?(cn|jp|kr)?/.exec(location.hash), xo = m && m[1] && LIVE_ORIGINS.some(o => o.id === m[1]) ? m[1] : 'all';
-  const mode = /^#\/(explore|cn|jp|kr)/.test(location.hash) ? 'explore' : 'focus';
-  const moved = mode !== S.mode || xo !== S.xo;
+  // #/ and #/focus/jp|cn are Focus tabs; #/explore and #/explore/cn|jp|kr is Explore (older #/cn links land in Explore too)
+  const h = location.hash, mode = /^#\/(explore|cn|jp|kr)/.test(h) ? 'explore' : 'focus';
+  const m = /^#\/(?:explore\/|focus\/)?(cn|jp|kr)/.exec(h), id = m ? m[1] : 'all';
+  const xo = mode === 'explore' ? (LIVE_ORIGINS.some(o => o.id === id) ? id : 'all') : S.xo;
+  const fq = mode === 'focus' ? (QUEUES.some(t => t.id === id) ? id : 'all') : S.fq;
+  const moved = mode !== S.mode || xo !== S.xo || fq !== S.fq;
   if (moved) S.shown = PAGE;
-  S.mode = mode; S.xo = xo;
+  S.mode = mode; S.xo = xo; S.fq = fq;
   renderMain();
   if (moved) window.scrollTo(0, 0);
 }
@@ -535,10 +545,11 @@ document.addEventListener('click', (e) => {
   }
   const ep = e.target.closest('[data-ep]');
   if (ep && LIVE) { e.preventDefault(); S.playId = ep.dataset.ep; S.playing = true; renderSheet(); return; }
-  const t = e.target.closest('[data-open],[data-xo],[data-close],[data-season],[data-play],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup]');
+  const t = e.target.closest('[data-open],[data-fq],[data-xo],[data-close],[data-season],[data-play],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup]');
   if (!t) { if (e.target === $('veil')) closeSheet(); return; }
   const k = S.sel !== null ? DATA[S.sel].key : null;
   if (t.dataset.open !== undefined) openSheet(+t.dataset.open);
+  else if (t.dataset.fq) location.hash = '#/' + (t.dataset.fq === 'all' ? '' : 'focus/' + t.dataset.fq);
   else if (t.dataset.xo) location.hash = '#/explore' + (t.dataset.xo === 'all' ? '' : '/' + t.dataset.xo);
   else if (t.dataset.close !== undefined) closeSheet();
   else if (t.dataset.season) { S.season = +t.dataset.season; S.playing = false; S.playId = null; renderSheet(); }
@@ -562,7 +573,7 @@ document.addEventListener('change', (e) => {
     const v = JSON.parse(t);
     if (!v || typeof v.prog !== 'object') throw new Error('not a backup');
     Object.keys(P).forEach(k => delete P[k]);
-    Object.assign(P, {prog:{}, done:{}, drop:{}, focus:[]}, v);
+    fix(Object.assign(P, {prog:{}, done:{}, drop:{}, focus:{}}, v));
     save(); renderMain();
   }).catch(() => alert('That file is not a Legend Archive progress backup.'));
 });
