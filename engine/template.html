@@ -294,13 +294,61 @@ const inView = () => xorg() ? ofOrigin(xorg().code) : ALL;
 const QUEUES = [{id:'all', name:'Top 15'}, {id:'jp', code:'JP', name:'Top 15 Anime'}, {id:'cn', code:'CN', name:'Top 15 Donghua'}];
 const inQueue = (x, q) => !q.code || (x.origin || 'CN') === q.code;
 
-// Your progress lives in this browser only (Back up / Restore copies it to a file):
-// prog[key] = {i: furthest part opened, as an index into units(), t: when}, done[key] / drop[key] = date,
-// focus[tab] = the keys holding that tab's 15 slots, so a slot only changes hands when you finish or drop a series.
-const P = (() => { const e = {prog:{}, done:{}, drop:{}, focus:{}};
-  try { return fix(Object.assign(e, JSON.parse(localStorage.getItem(STORE)) || {})); } catch (_) { return e; } })();
-function fix(p) { if (Array.isArray(p.focus)) p.focus = {all: p.focus}; p.focus = p.focus || {}; return p; } // older backups had one list
-function save() { try { localStorage.setItem(STORE, JSON.stringify(P)); } catch (_) {} }
+// Your progress lives in this browser, and in progress.json in the site's GitHub repo once cloud save is on:
+// prog[key] = {i: furthest part opened, as an index into units(), t: when}, done / drop / saved[key] = date,
+// focus[tab] = the keys holding that tab's 15 slots, so a slot only changes hands when you finish or drop a series,
+// updated = last change (the newer copy wins when this browser and the cloud copy differ).
+const EMPTY = () => ({prog:{}, done:{}, drop:{}, saved:{}, focus:{}, updated:0});
+const P = (() => { try { return fix(Object.assign(EMPTY(), JSON.parse(localStorage.getItem(STORE)) || {})); } catch (_) { return EMPTY(); } })();
+function fix(p) { if (Array.isArray(p.focus)) p.focus = {all: p.focus}; p.focus = p.focus || {}; p.saved = p.saved || {}; return p; } // older backups had one list
+function keep() { try { localStorage.setItem(STORE, JSON.stringify(P)); } catch (_) {} }
+function save() { P.updated = Date.now(); keep(); queuePush(); }
+function replaceP(v) { Object.keys(P).forEach(k => delete P[k]); fix(Object.assign(P, EMPTY(), v)); keep(); }
+
+// Cloud save: a fine-grained GitHub token (this repo only, Contents read and write), kept in this browser,
+// commits progress.json to the repo. That file is outside engine/, so saving it does not rebuild the site.
+const TOKEN = 'legend-archive:token';
+const GH = (() => { const r = location.pathname.split('/')[1];
+  return /\.github\.io$/.test(location.hostname) && r ? `https://api.github.com/repos/${location.hostname.split('.')[0]}/${r}/contents/progress.json` : null; })();
+const CLOUD = {token: (() => { try { return localStorage.getItem(TOKEN) || ''; } catch (_) { return ''; } })(), sha: null, at: null, err: '', busy: false};
+const b64 = (s) => btoa(unescape(encodeURIComponent(s)));
+const unb64 = (s) => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
+const gh = (method, body) => fetch(GH + (method === 'GET' ? '?t=' + Date.now() : ''), {method, body: body && JSON.stringify(body),
+  headers: {Authorization: 'Bearer ' + CLOUD.token, Accept: 'application/vnd.github+json'}});
+async function pull() {
+  if (!GH || !CLOUD.token || CLOUD.busy) return;
+  CLOUD.busy = true;
+  try {
+    const r = await gh('GET');
+    if (r.status === 404) { CLOUD.sha = null; CLOUD.busy = false; return push(); }
+    if (!r.ok) throw new Error(r.status === 401 ? 'GitHub did not accept the token' : 'GitHub said ' + r.status);
+    const j = await r.json(), v = JSON.parse(unb64(j.content));
+    CLOUD.sha = j.sha; CLOUD.err = ''; CLOUD.at = new Date();
+    if ((v.updated || 0) > (P.updated || 0)) { replaceP(v); renderMain(); if (S.sel !== null) renderSheet(); }
+    else if ((v.updated || 0) < (P.updated || 0)) { CLOUD.busy = false; return push(); }
+  } catch (e) { CLOUD.err = e.message; }
+  CLOUD.busy = false; renderSync();
+}
+async function push() {
+  if (!GH || !CLOUD.token || CLOUD.busy) return;
+  CLOUD.busy = true;
+  try {
+    const r = await gh('PUT', {message: 'Progress ' + today(), content: b64(JSON.stringify(P, null, 1)), ...(CLOUD.sha ? {sha: CLOUD.sha} : {})});
+    if (r.status === 409 || r.status === 422) { CLOUD.busy = false; CLOUD.sha = null; return pull(); } // changed elsewhere: take the newer copy
+    if (!r.ok) throw new Error(r.status === 401 ? 'GitHub did not accept the token' : r.status === 403 || r.status === 404 ? 'The token cannot write to this repo' : 'GitHub said ' + r.status);
+    CLOUD.sha = (await r.json()).content.sha; CLOUD.err = ''; CLOUD.at = new Date();
+  } catch (e) { CLOUD.err = e.message; }
+  CLOUD.busy = false; renderSync();
+}
+let pushTimer;
+function queuePush() { if (GH && CLOUD.token) { clearTimeout(pushTimer); pushTimer = setTimeout(push, 3000); } }
+function syncText() {
+  if (!GH) return 'Cloud save works on the published site only.';
+  if (!CLOUD.token) return 'Saved in this browser only. Turn on cloud save so clearing the browser or switching devices loses nothing.';
+  if (CLOUD.err) return 'Cloud save problem: ' + CLOUD.err + '. Your list is still saved in this browser.';
+  return CLOUD.at ? 'Cloud save on. Last synced ' + CLOUD.at.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}) + '.' : 'Cloud save on. Syncing…';
+}
+function renderSync() { const el = $('sync'); if (el) el.textContent = syncText(); }
 
 // every playable upload of a series in watch order: each episode, or the season's one upload when it has no episode list
 const UNITS = {};
@@ -349,7 +397,7 @@ function focusList(id) {
   ALL.filter(o => fits(o.x) && !settled(o.x.key) && inQueue(o.x, q)).sort(byScore).forEach(o => {
     if (f.length < FOCUS && f.indexOf(o.x.key) < 0 && f.indexOf(twin(o.x.key)) < 0) f.push(o.x.key);
   });
-  if (f.join('\n') !== had.join('\n')) { P.focus[q.id] = f; save(); }
+  if (f.join('\n') !== had.join('\n')) { P.focus[q.id] = f; keep(); } // refilled slots are not your edits: no timestamp, no cloud push
   return f.map(k => BYKEY[k]).sort((a, b) => byRecent(a, b) || byScore(a, b));
 }
 
@@ -374,7 +422,9 @@ function matches(x) {
 }
 function renderNav() {
   const n = focusList().length;
+  const mine = Object.keys(P.prog).concat(Object.keys(P.saved)).filter((k, j, a) => BYKEY[k] && !gone(k) && a.indexOf(k) === j).length;
   $('origins').innerHTML = `<a class="origin" href="#/${S.fq === 'all' ? '' : 'focus/' + S.fq}"${S.mode === 'focus' ? ' aria-current="page"' : ''}>Focus<small>${n}</small></a>
+    <a class="origin" href="#/list"${S.mode === 'list' ? ' aria-current="page"' : ''}>My List<small>${mine}</small></a>
     <a class="origin" href="#/explore${S.xo === 'all' ? '' : '/' + S.xo}"${S.mode === 'explore' ? ' aria-current="page"' : ''}>Explore<small>${ALL.length}</small></a>`;
 }
 function chansHere() {
@@ -383,7 +433,7 @@ function chansHere() {
   return Object.keys(n).sort((a,b) => n[b] - n[a]);
 }
 function renderPills() {
-  $('pills').hidden = !!S.q;
+  $('pills').hidden = !!S.q || S.mode === 'list';
   if (S.mode === 'focus') { $('pills').innerHTML = QUEUES.map(t =>
     `<button class="pill" type="button" data-fq="${t.id}" aria-pressed="${S.fq === t.id}">${t.name}</button>`).join(''); return; }
   $('pills').innerHTML = [{id:'all', name:'All', n:ALL.length}].concat(LIVE_ORIGINS.map(o => ({id:o.id, name:o.name, n:ofOrigin(o.code).length}))).map(o =>
@@ -413,20 +463,29 @@ function tile(x, i, st) {
 const grid = (list, withStatus) => `<div class="grid">${list.map(o => tile(o.x, o.i, withStatus || P.prog[o.x.key] ? status(o) : null)).join('')}</div>`;
 const block = (title, sub, list) => `<section aria-label="${esc(title)}"><div class="shelf-head"><h2>${esc(title)}</h2><span>${esc(sub)}</span></div><div style="margin-top:14px">${grid(list)}</div></section>`;
 function renderFocus() {
-  const q = QUEUES.find(t => t.id === S.fq), mine = (k) => BYKEY[k] && inQueue(BYKEY[k].x, q);
+  const q = QUEUES.find(t => t.id === S.fq);
   const list = focusList(), going = list.filter(o => P.prog[o.x.key]).length, left = list.reduce((n, o) => n + status(o).left, 0);
-  const also = Object.keys(P.prog).filter(k => mine(k) && !gone(k) && P.focus[q.id].indexOf(k) < 0).map(k => BYKEY[k]).sort(byRecent);
-  const done = Object.keys(P.done).filter(mine).sort((a, b) => P.done[b].localeCompare(P.done[a])).map(k => BYKEY[k]);
-  const dropped = Object.keys(P.drop).filter(mine).map(k => BYKEY[k]);
   $('shelves').innerHTML = `<div class="page-head"><div><h1>${q.name}</h1>
       <p>The best complete series, the ones you have started first. Finish one and the next best takes its slot. ${going} in progress · ${hm(left)} of watching left.</p></div></div>
-    ${list.length ? grid(list, true) : '<div class="empty">No complete, rated series are left to pick from. Explore has everything else.</div>'}
-    ${also.length ? block('Also watching', 'Started, but still airing or not rated yet, so they wait outside your 15.', also) : ''}
+    ${list.length ? grid(list, true) : '<div class="empty">No complete, rated series are left to pick from. Explore has everything else.</div>'}`;
+}
+function renderList() {
+  const keys = (o) => Object.keys(o).filter(k => BYKEY[k]);
+  const watching = keys(P.prog).filter(k => !gone(k)).map(k => BYKEY[k]).sort(byRecent);
+  const saved = keys(P.saved).filter(k => !gone(k) && !P.prog[k]).sort((a, b) => P.saved[b].localeCompare(P.saved[a])).map(k => BYKEY[k]);
+  const done = keys(P.done).sort((a, b) => P.done[b].localeCompare(P.done[a])).map(k => BYKEY[k]);
+  const dropped = keys(P.drop).map(k => BYKEY[k]);
+  $('shelves').innerHTML = `<div class="page-head"><div><h1>My List</h1>
+      <p>Everything you are watching, want to watch, finished or dropped.</p></div></div>
+    <div class="backup"><span id="sync">${esc(syncText())}</span>
+      ${GH ? `<button class="btn ${CLOUD.token ? 'ghost' : 'gold'} sm" type="button" data-cloud>${CLOUD.token ? 'Turn off cloud save' : 'Turn on cloud save'}</button>` : ''}
+      <button class="btn ghost sm" type="button" data-backup>Back up to a file</button>
+      <label class="btn ghost sm" for="restore">Restore from file</label><input id="restore" type="file" accept="application/json,.json" hidden></div>
+    ${watching.length ? block('Watching', watching.length + ' started, most recent first.', watching) : ''}
+    ${saved.length ? block('Want to watch', 'Added with “+ My List” on a series.', saved) : ''}
     ${done.length ? block('Watched', done.length + ' finished. Open one to bring it back.', done) : ''}
     ${dropped.length ? block('Not for me', 'Open one to bring it back.', dropped) : ''}
-    <div class="backup"><span>Your progress is saved in this browser only.</span>
-      <button class="btn ghost sm" type="button" data-backup>Back up progress</button>
-      <label class="btn ghost sm" for="restore">Restore from backup</label><input id="restore" type="file" accept="application/json,.json" hidden></div>`;
+    ${watching.length + saved.length + done.length + dropped.length ? '' : '<div class="empty">Nothing here yet. Start an episode, or open any series and tap “+ My List”.</div>'}`;
 }
 const SORTS = {quality:['Best first', byScore], rating:['Rating', (a,b) => (b.x.rating||0) - (a.x.rating||0) || b.x.total - a.x.total],
   long:['Longest', (a,b) => b.x.total - a.x.total], newest:['Newest', (a,b) => b.x.newest.localeCompare(a.x.newest)],
@@ -461,7 +520,8 @@ function renderPlace(x, i) {
       ${st.next ? `<a class="btn gold sm" href="${yt(st.next.id)}" target="_blank" rel="noopener" data-u="${st.nextI}">${PLAY}${st.at < 0 ? 'Start' : 'Play'} ${esc(st.next.n)}</a>` : ''}
       <button class="btn ghost sm" type="button" data-place aria-pressed="${S.place}">${S.place ? 'Cancel' : 'I’m further along'}</button>
       <button class="btn ghost sm" type="button" data-finish>Mark finished</button>
-      <button class="btn ghost sm" type="button" data-drop>Not for me</button>`}</div>
+      <button class="btn ghost sm" type="button" data-drop>Not for me</button>
+      <button class="btn ghost sm" type="button" data-save aria-pressed="${!!P.saved[k]}">${P.saved[k] ? '✓ On My List' : '+ My List'}</button>`}</div>
     ${S.place ? '<p class="hint">Tap the last episode you watched below (switch seasons with the tabs).</p>' : ''}</div>`;
 }
 function renderSheet() {
@@ -506,15 +566,15 @@ function renderSheet() {
 }
 function renderMain() {
   renderNav(); renderPills(); renderStats();
-  if (S.q) renderSearch(); else if (S.mode === 'focus') renderFocus(); else renderExplore();
+  if (S.q) renderSearch(); else if (S.mode === 'focus') renderFocus(); else if (S.mode === 'list') renderList(); else renderExplore();
   renderLegend();
 }
 function renderLegend() {
   $('legend').innerHTML = chansHere().map(c => `<span class="chip">${dot(c)}${esc(chName(c))}</span>`).join('');
 }
 function route() {
-  // #/ and #/focus/jp|cn are Focus tabs; #/explore and #/explore/cn|jp|kr is Explore (older #/cn links land in Explore too)
-  const h = location.hash, mode = /^#\/(explore|cn|jp|kr)/.test(h) ? 'explore' : 'focus';
+  // #/ and #/focus/jp|cn are Focus tabs; #/list is My List; #/explore and #/explore/cn|jp|kr is Explore (older #/cn links land in Explore too)
+  const h = location.hash, mode = /^#\/list/.test(h) ? 'list' : /^#\/(explore|cn|jp|kr)/.test(h) ? 'explore' : 'focus';
   const m = /^#\/(?:explore\/|focus\/)?(cn|jp|kr)/.exec(h), id = m ? m[1] : 'all';
   const xo = mode === 'explore' ? (LIVE_ORIGINS.some(o => o.id === id) ? id : 'all') : S.xo;
   const fq = mode === 'focus' ? (QUEUES.some(t => t.id === id) ? id : 'all') : S.fq;
@@ -529,6 +589,17 @@ function openSheet(i) {
   S.sel = i; S.season = st.next ? st.next.si : 0; S.playing = false; S.playId = null; S.place = false; renderSheet();
 }
 function closeSheet() { S.sel = null; S.playing = false; S.place = false; renderSheet(); }
+function cloudToggle() {
+  if (CLOUD.token) {
+    if (!confirm('Turn off cloud save in this browser? Your list stays here and in the repo.')) return;
+    CLOUD.token = ''; try { localStorage.removeItem(TOKEN); } catch (_) {}
+    return renderMain();
+  }
+  const t = (prompt('Paste a GitHub fine-grained token for this repo with Contents: Read and write.\nIt is kept in this browser only.') || '').trim();
+  if (!t) return;
+  CLOUD.token = t; CLOUD.err = ''; CLOUD.at = null; try { localStorage.setItem(TOKEN, t); } catch (_) {}
+  renderMain(); pull();
+}
 function backup() {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([JSON.stringify(P)], {type:'application/json'}));
@@ -545,7 +616,7 @@ document.addEventListener('click', (e) => {
   }
   const ep = e.target.closest('[data-ep]');
   if (ep && LIVE) { e.preventDefault(); S.playId = ep.dataset.ep; S.playing = true; renderSheet(); return; }
-  const t = e.target.closest('[data-open],[data-fq],[data-xo],[data-close],[data-season],[data-play],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup]');
+  const t = e.target.closest('[data-open],[data-fq],[data-xo],[data-close],[data-season],[data-play],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup],[data-save],[data-cloud]');
   if (!t) { if (e.target === $('veil')) closeSheet(); return; }
   const k = S.sel !== null ? DATA[S.sel].key : null;
   if (t.dataset.open !== undefined) openSheet(+t.dataset.open);
@@ -559,6 +630,8 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.more !== undefined) { S.shown += PAGE; renderMain(); }
   else if (t.dataset.openAll) { S.open[t.dataset.openAll] = true; renderMain(); }
   else if (t.dataset.backup !== undefined) backup();
+  else if (t.dataset.cloud !== undefined) cloudToggle();
+  else if (k && t.dataset.save !== undefined) { if (P.saved[k]) delete P.saved[k]; else P.saved[k] = today(); save(); renderSheet(); renderMain(); }
   else if (t.dataset.place !== undefined) { S.place = !S.place; renderSheet(); }
   else if (k && (t.dataset.finish !== undefined || t.dataset.drop !== undefined || t.dataset.restore !== undefined)) {
     if (t.dataset.finish !== undefined) P.done[k] = today();
@@ -572,16 +645,16 @@ document.addEventListener('change', (e) => {
   e.target.files[0].text().then(t => {
     const v = JSON.parse(t);
     if (!v || typeof v.prog !== 'object') throw new Error('not a backup');
-    Object.keys(P).forEach(k => delete P[k]);
-    fix(Object.assign(P, {prog:{}, done:{}, drop:{}, focus:{}}, v));
-    save(); renderMain();
+    replaceP(v); save(); renderMain();
   }).catch(() => alert('That file is not a Legend Archive progress backup.'));
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.sel !== null) closeSheet(); });
 $('q').addEventListener('input', (e) => { S.q = e.target.value.trim().toLowerCase(); S.open = {}; renderMain(); });
 $('foot').textContent = 'Updated ' + new Date(META.updated).toLocaleString([], {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}) + (META.added ? ' · ' + META.added + ' new upload' + (META.added > 1 ? 's' : '') : '') + (META.hidden ? ' · ' + META.hidden + ' AI-slop series hidden' : '') + (META.failed.length ? ' · could not reach ' + META.failed.join(', ') : '') + '. Refreshes daily at 10 PM.';
 window.addEventListener('hashchange', route);
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') pull(); }); // back from YouTube or another device
 route();
+pull();
 </script>
 
 </body>

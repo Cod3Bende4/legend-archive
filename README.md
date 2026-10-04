@@ -5,7 +5,8 @@ A browsable archive of long-form animation in three sections: Donghua (Chinese),
 ## The page
 - **Focus** (home): 15 slots holding the best complete, rated series, ranked by `score()` in `engine/tiers.py` (rating, length, upload gaps, `anim`). Series you have started come first. A slot only changes hands when you finish a series or mark it "Not for me". An original and its English-dub upload share one slot. Tabs: Top 15 (all), Top 15 Anime, Top 15 Donghua, each with its own slots.
 - **Explore**: every series, best first, filterable by Donghua, Anime or Korean.
-- Opening an episode records your place. Progress is kept in the browser's local storage, with Back up / Restore buttons at the bottom of Focus.
+- **My List**: what you are watching, want to watch (the "+ My List" button on a series), finished and dropped.
+- Opening an episode records your place. Progress is kept in the browser's local storage. **Cloud save** (on My List) also commits it to `progress.json` in this repo using a fine-grained GitHub token kept in the browser (this repo only, Contents read and write); the newer copy wins, so a cleared browser or another device gets everything back. `progress.json` sits outside `engine/`, so saving it does not rebuild the site. Back up / Restore to a file also works.
 
 ## How it runs
 - **22:00 IST, GitHub Actions** (`.github/workflows/nightly.yml`): asks the YouTube Data API for uploads newer than the ones already saved, checks new series' comments for AI slop, rebuilds `index.html`, publishes to GitHub Pages.
