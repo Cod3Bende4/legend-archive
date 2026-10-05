@@ -328,9 +328,14 @@ def score(x):
 def apply(series, cur, Q):
     meta = cur.get("meta", {})
     shown, hidden = [], 0
+    seen = set()
+    for x in sorted(series, key=lambda x: -x["total"]):
+        if "key" not in x:  # dub-channel series are keyed by title; two stories can share one, so the longest keeps it
+            k = "live:" + x["title"]
+            x["key"] = k if k not in seen else f"{k} | {(x.get('tag') or x['seas'][0]['pick']['t'])[:40]}"
+        seen.add(x["key"])
     for x in series:
         x.setdefault("audio", "A3")
-        x.setdefault("key", "live:" + x["title"])
         m = meta.get(x["key"], {})
         x["origin"] = m.get("origin") or origin_of(x.get("origin", "CN"), x["title"])
         if m.get("name"):
