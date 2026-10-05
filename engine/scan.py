@@ -6,7 +6,8 @@ and adds the video IDs it has not seen before, stamped with first_seen. Known ID
 re-checked. A full listing runs once a month (or with --full) to catch deleted videos and
 retitled episodes; it keeps every first_seen date.
 
-Saves engine/scan/<name>.json: {name, url, channel, audio, scanned, last_full, uploads:[{id,t,d,first_seen,gone?}]}
+Every run also reads the channel's members-only playlist and marks those uploads "locked": true.
+Saves engine/scan/<name>.json: {name, url, channel, audio, scanned, last_full, uploads:[{id,t,d,first_seen,gone?,locked?}]}
 """
 import datetime, json, os, subprocess, sys
 
@@ -62,6 +63,19 @@ def scan_channel(name, c, full):
                 v["gone"] = True
                 gone += 1
     uploads = new + list(known.values())
+    locked = set()
+    if os.environ.get("YT_API_KEY"):  # every run: early-access videos turn free, new ones get locked
+        import ytapi
+        try:
+            locked = ytapi.members_only(c["url"])
+        except Exception as e:
+            log(f"{name}: members-only list failed: {e}")
+            locked = {v["id"] for v in uploads if v.get("locked")}
+    for v in uploads:
+        if v["id"] in locked:
+            v["locked"] = True
+        else:
+            v.pop("locked", None)
     res = dict(name=name, url=c["url"], channel=j.get("channel") or j.get("uploader") or (old or {}).get("channel"),
                audio=c.get("audio"), scanned=datetime.datetime.now().isoformat(timespec="minutes"),
                last_full=datetime.datetime.now().isoformat(timespec="minutes") if full else old.get("last_full"),
@@ -69,7 +83,7 @@ def scan_channel(name, c, full):
     from refresh import write_lines
     write_lines(path, res)
     log(f"{name}: {'full' if full else 'delta'} listing, {len(new)} new" + (f", {gone} removed" if full else "") +
-        f", {len(uploads)} known")
+        f", {len(uploads)} known, {len(locked)} members-only")
     return len(new)
 
 

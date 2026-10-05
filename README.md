@@ -9,7 +9,7 @@ A browsable archive of long-form animation in three sections: Donghua (Chinese),
 - Opening an episode records your place. Progress is kept in the browser's local storage. **Cloud save** (on My List) also commits it to `progress.json` in this repo using a fine-grained GitHub token kept in the browser (this repo only, Contents read and write); the newer copy wins, so a cleared browser or another device gets everything back. `progress.json` sits outside `engine/`, so saving it does not rebuild the site. Back up / Restore to a file also works.
 
 ## How it runs
-- **22:00 IST, GitHub Actions** (`.github/workflows/nightly.yml`): asks the YouTube Data API for uploads newer than the ones already saved, checks new series' comments for AI slop, rebuilds `index.html`, publishes to GitHub Pages.
+- **22:00 IST, GitHub Actions** (`.github/workflows/nightly.yml`): asks the YouTube Data API for uploads newer than the ones already saved, reads each official channel's members-only playlist ("UUMO" + channel ID) to mark locked uploads, checks new series' comments for AI slop, rebuilds `index.html`, publishes to GitHub Pages.
 - **23:13 IST, Claude scheduled task**: researches ratings and completion for unrated series and commits them to `engine/curated.json`; that push triggers a rebuild.
 - Any push to `engine/` or the workflow rebuilds and republishes in about 2 minutes. Put `[skip ci]` in a commit message to push without publishing (the curation job does this for its progress commits).
 

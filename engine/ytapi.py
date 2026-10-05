@@ -4,6 +4,7 @@ Quota (10,000 units/day free): every call used here costs 1 unit.
   uploads(channel)   1 call to resolve the channel + 1 call per 50 uploads (stops early at known IDs)
   details(ids)       1 call per 50 videos (duration, views, likes)
   comments(id)       1 call per video (top 60 by relevance)
+  members_only(url)  1 call to resolve the channel + 1 call per 50 members-only videos
 """
 import json, os, re, time, urllib.error, urllib.parse, urllib.request
 
@@ -120,3 +121,24 @@ def comments(video_id, n=60):
     except (PermissionError, LookupError):
         return []
     return [it["snippet"]["topLevelComment"]["snippet"].get("textDisplay", "") for it in j.get("items", [])]
+
+
+def members_only(url):
+    """IDs of a channel's members-only videos. YouTube keeps them in an automatic playlist named "UUMO" plus the
+    channel ID without its "UC" (next to "UU", the uploads playlist). An empty set when the channel has none."""
+    cid, _, _ = channel(url)
+    ids, token = set(), None
+    while True:
+        params = dict(part="snippet", playlistId="UUMO" + cid[2:], maxResults=50)
+        if token:
+            params["pageToken"] = token
+        try:
+            j = get("playlistItems", **params)
+        except (LookupError, PermissionError):
+            break
+        ids |= {it["snippet"]["resourceId"]["videoId"] for it in j.get("items", [])
+                if it["snippet"].get("resourceId", {}).get("videoId")}
+        token = j.get("nextPageToken")
+        if not token:
+            break
+    return ids

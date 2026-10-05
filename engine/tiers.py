@@ -25,7 +25,8 @@ then ORIGIN_HINTS for known titles, then meta[key]["origin"] set by hand.
 
 Members-only: hidden when you could not watch it free from the start or to the end. A series is gated when an
 upload naming it (clips and shorts included) pitches a membership ("Join to watch latest", 加入会员) or an
-episode is locked (YouTube reports it members-only, or its title says "For Membership" / "Member Only"). A gated
+episode is locked (on the channel's members-only playlist, YouTube refused it as members-only, or its title says
+"For Membership" / "Member Only"). A gated
 series is hidden when its first episodes are locked or missing, when a finished season of it has locked or missing
 episodes, or when it has finished airing and episodes are still locked or missing. Gaps in the season still airing
 are early access to the newest episodes, which turn free later, so they are fine.
@@ -144,6 +145,8 @@ def official_series(genre, PAL, split_title, meta=None):
         for v in s.get("uploads", []):
             if v.get("gone"):
                 continue
+            if v.get("locked"):  # on the channel's members-only playlist
+                locked.add(v["id"])
             # any upload, clips and shorts included, that sells a membership or is locked behind one
             if v.get("t") and (PITCH.search(v["t"]) or v.get("id") in locked):
                 pitches.setdefault(cname, []).append(v["t"])
