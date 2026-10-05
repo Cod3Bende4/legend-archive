@@ -13,6 +13,7 @@
                                               = "unavailable" so the page says so; those are listed last)
   python3 engine/curate_tools.py anim [N]     after a local rebuild: shown rated series without meta[key]["anim"]
                                               (animation quality 1 to 5), complete and best-scored first
+  python3 engine/curate_tools.py midstory     after a local rebuild: shown series that start at a later season
   python3 engine/curate_tools.py report       after a local rebuild: counts per section and tier, sources, borderline
 
 Series under 1 hour total are hidden by tiers.apply, so every list here skips them.
@@ -137,7 +138,7 @@ def check():
             cur = nxt
         if k.endswith("-dub") != t.endswith("-dub"):
             print("AUDIO MIX", k, "->", t, "(never merge a dub key into a subbed one or back)"); bad += 1
-        if now.get(t, {}).get("hide"):
+        if now.get(t, {}).get("hide") and not now[k].get("hide"):  # hiding the source too says the family goes
             print("TARGET HIDDEN", k, "->", t); bad += 1
     before = {s["key"]: s for s in series(old)}
     after = {s["key"]: s for s in series(now)}
@@ -149,11 +150,14 @@ def check():
             print("MISSING TARGET", k, "->", t); bad += 1; continue
         src, b, a = before[k], before[t], after.get(t)
         gain = (a["total"] if a else 0) - b["total"]
-        shared = {x["label"] for x in src["seas"]} & {x["label"] for x in b["seas"]}
+        nums = [int(x["short"][1:]) for x in src["seas"] if x["short"][1:].isdigit()]
+        shift = m.get("season_as", 0) and nums and m["season_as"] - min(nums)  # filed as a later season of the target
+        labels = {f"Season {int(x['short'][1:]) + shift}" if shift and x["short"][1:].isdigit() else x["label"] for x in src["seas"]}
+        shared = labels & {x["label"] for x in b["seas"]}
         flag = "DOUBLE?" if shared and gain > 0.9 * src["total"] and b["total"] > 3600 else "ok"
         lost = "LOST RUNTIME" if a and a["total"] < b["total"] else ""
         print(f"{flag:8} {lost} {k} ({src['totalF']}) -> {t}: {b['totalF']} => {a['totalF'] if a else '?'} "
-              f"| src {sorted(x['label'] for x in src['seas'])} tgt {sorted(x['label'] for x in b['seas'])}")
+              f"| src {sorted(labels)} tgt {sorted(x['label'] for x in b['seas'])}")
     print("problems:", bad, "(DOUBLE? = same season label and the target grew by the whole source: "
           "likely the same episodes under another numbering; hide the source as a duplicate instead)")
 
@@ -198,6 +202,20 @@ def anim(n):
     for x in todo[:n]:
         print(x["key"], "|", x["title"], "|", x.get("origin"), "|", "complete" if x.get("completed") else "airing",
               "| score", x.get("score"), "|", x["totalF"], "|", x["seas"][0]["pick"]["t"][:70])
+
+
+def midstory():
+    """Shown series that look like a later part with no beginning: lowest season label above 1, or a title that says
+    season 2+, part II and the like. Merge it into the earlier seasons with merge_into + season_as when those exist,
+    otherwise hide it with a note starting "starts mid-story:". Reviewed keys get midstory_checked = today."""
+    meta = load_meta()
+    later = re.compile(r"season\s*[2-9]|\b\d+(st|nd|rd|th) season|second season|\b(ii|iii|iv)\b|part\s*(2|ii)|\b[2-9]$", re.I)
+    for x in data():
+        nums = [int(s["short"][1:]) for s in x["seas"] if s["short"][1:].isdigit()]
+        if meta.get(x["key"], {}).get("midstory_checked"):
+            continue
+        if (nums and min(nums) > 1) or later.search(x["title"]):
+            print(x["key"], "|", x["title"], "|", x["totalF"], "| seasons", [s["short"] for s in x["seas"]], "| rating", x.get("rating"))
 
 
 def summaries(n):
@@ -246,4 +264,4 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "todo"
     n = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else 60
     {"todo": lambda: todo(n), "members": members, "check": check, "ongoing": lambda: ongoing(n),
-     "dubs": lambda: dubs(n), "stamp": lambda: stamp(sys.argv[2:]), "summaries": lambda: summaries(n), "anim": lambda: anim(n), "report": report}[cmd]()
+     "dubs": lambda: dubs(n), "stamp": lambda: stamp(sys.argv[2:]), "summaries": lambda: summaries(n), "anim": lambda: anim(n), "midstory": midstory, "report": report}[cmd]()

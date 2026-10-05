@@ -991,10 +991,11 @@
 "rating": 8.28,
 "rating_src": "MAL",
 "completed": false,
-"note": "MAL lists 52 eps, only 51 uploaded",
+"note": "starts mid-story: Act II; Ace of Diamond S1-S2 not uploaded; MAL lists 52 eps, only 51 uploaded",
 "summary": "Eijun Sawamura is now a second-year pitcher at Seido High School, a powerhouse baseball program in Tokyo. With the older team leaders gone, he competes with his teammates, including rival pitcher Satoru Furuya and a promising new batch of first-years, for the ace number, while the team aims for a return to the national tournament at Koshien.",
-"checked": "2026-10-04",
-"checked_eps": 51
+"checked": "2026-10-05",
+"checked_eps": 51,
+"hide": true
 },
 "bloodriver": {
 "name": "Blood River",
@@ -1269,7 +1270,7 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": true,
-"note": "S1-S3 complete (S3 MAL 7.91); S4 announced, not uploaded",
+"note": "S1-S3 complete (S3 MAL 7.91); S4 merged from classroomoftheelite4thseason",
 "summary": "Kiyotaka Ayanokoji enrolls at an elite government-run high school that promises its graduates a bright future, only to be placed in Class D, the class for supposed misfits. The school ranks classes by merit points and pits them against each other in tests of wits, and the quiet, seemingly average Ayanokoji keeps his real abilities hidden while quietly steering his class through the competition.",
 "checked": "2026-09-30",
 "checked_eps": 38
@@ -1845,10 +1846,11 @@
 "rating": 8.2,
 "rating_src": "MAL",
 "completed": true,
-"note": "Season 2 as one full upload (36 eps); demonhunter holds S1 and a gappy S2",
+"note": "duplicate of demonhunter (S2 EP1-36 in one upload); Season 2 as one full upload (36 eps); demonhunter holds S1 and a gappy S2",
 "summary": "The second season of The Demon Hunter continues the story of Meng Chuan, a young swordsman from Dongning who trains to fight the demons that pour into the human world. Having proven himself early, he steps into a wider world of powerful clans, academies and battlefields, pushing his martial path further while the demon threat keeps growing.",
-"checked": "2026-09-30",
-"checked_eps": 36
+"checked": "2026-10-05",
+"checked_eps": 36,
+"hide": true
 },
 "wealthandwonder": {
 "name": "Wealth and Wonder",
@@ -2134,11 +2136,12 @@
 "rating": 8.1,
 "rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "S2 only as a complete-series compilation; may overlap campfirecookinginanotherworld; Anime-Planet 4.052 of 5 from 9757 votes (S1 entry)",
+"note": "starts mid-story: season 2 only; S2 only as a complete-series compilation; may overlap campfirecookinginanotherworld; Anime-Planet 4.052 of 5 from 9757 votes (S1 entry)",
 "origin": "JP",
 "summary": "Office worker Tsuyoshi Mukohda is dragged into another world alongside a group of teenagers summoned as heroes, but his only skill lets him order goods from a modern online supermarket. Wary of the kingdom that called him, he slips away to travel on his own. His home cooking soon attracts a legendary Fenrir, who signs a contract with him in exchange for meals.",
-"checked": "2026-09-30",
-"checked_eps": 13
+"checked": "2026-10-05",
+"checked_eps": 13,
+"hide": true
 },
 "codeofgodshavoc": {
 "name": "Code of Gods Havoc",
@@ -2166,11 +2169,12 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": false,
-"note": "S5 EP1-2 missing here (see degeneratedrawingjianghus5... keys); S6 complete; score recalled",
+"note": "starts mid-story: seasons 5-7 only; S5 EP1-2 missing here (see degeneratedrawingjianghus5... keys); S6 complete; score recalled",
 "summary": "Set in the chaotic years after the fall of China's Tang dynasty, this story follows the Buliangren, a secret organization of assassins founded to guard the dynasty's legacy, and the rival factions and warlords struggling for power. Heroes such as Li Xingyun are drawn into schemes over lost relics and royal bloodlines as they try to protect those they care about.",
-"checked": "2026-10-04",
+"checked": "2026-10-05",
 "checked_eps": 36,
-"verify_tried": "2026-10-01"
+"verify_tried": "2026-10-01",
+"hide": true
 },
 "ascendantsoftheninesuns": {
 "name": "Ascendants of the Nine Suns",
@@ -2681,11 +2685,13 @@
 "异世界中药铺": {
 "name": "Different World Chinese Medicine Shop Part II",
 "completed": false,
-"note": "Part II (EP41-100 compilations), continues differentworldmedicineshop (Part I, EP1-40); Anime-Planet entry (Yi Shijie Zhongyao Pu, 3.355 of 5 from 69 votes) covers only EP1-40, so not used; end of run not verified",
+"note": "Part II, filed as season 2; Part II (EP41-100 compilations), continues differentworldmedicineshop (Part I, EP1-40); Anime-Planet entry (Yi Shijie Zhongyao Pu, 3.355 of 5 from 69 votes) covers only EP1-40, so not used; end of run not verified",
 "origin": "CN",
 "summary": "A young man from the modern world ends up in a fantasy realm and opens a shop selling traditional Chinese medicine. Monsters, adventurers and other odd customers come through his door with strange ailments, and he treats them with herbal remedies while slowly learning how this world works.",
-"checked": "2026-09-30",
-"checked_eps": 60
+"checked": "2026-10-05",
+"checked_eps": 60,
+"merge_into": "differentworldmedicineshop",
+"season_as": 2
 },
 "mostpowerfulvendor": {
 "name": "The Most Powerful Vendor",
@@ -2935,10 +2941,11 @@
 "rating": 7.6,
 "rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "MAL entry: Xiao Lu He Xiao Lan; uploads cover S2-S5 only (S1 absent); Anime-Planet 3.8 of 5 from 294 votes (S1 page)",
+"note": "starts mid-story: seasons 2-5 only; MAL entry: Xiao Lu He Xiao Lan; uploads cover S2-S5 only (S1 absent); Anime-Planet 3.8 of 5 from 294 votes (S1 page)",
 "summary": "Gentle Beryl and easily flustered Sapphire keep crossing paths in one world after another. In each short episodic tale the two meet under new circumstances, sometimes as close companions and sometimes as rivals or enemies, and the series plays with how their bond shifts from setting to setting.",
-"checked": "2026-10-02",
-"checked_eps": 48
+"checked": "2026-10-05",
+"checked_eps": 48,
+"hide": true
 },
 "jojosbizarreadventurebattletendency": {
 "name": "JoJo's Bizarre Adventure",
@@ -3045,13 +3052,15 @@
 "classroomoftheelite4thseason": {
 "name": "Classroom of the Elite Season 4",
 "completed": true,
-"note": "16 eps; gaps from EP01-04 bundle; no rating found; Anime-Planet 4.07 of 5 from 2075 votes",
+"note": "filed as season 4; 16 eps; gaps from EP01-04 bundle; no rating found; Anime-Planet 4.07 of 5 from 2075 votes",
 "origin": "JP",
 "rating": 8.1,
 "rating_src": "Anime-Planet x2",
 "summary": "Kiyotaka Ayanokoji is a quiet student at the Advanced Nurturing High School, where classes compete in harsh special exams and the lowest performers can be expelled. As he begins his second year, a new group of first-year students arrives, and a large reward is quietly offered to anyone who can get him expelled. Ayanokoji must stay hidden while figuring out who has come to take him down.",
-"checked": "2026-09-30",
-"checked_eps": 13
+"checked": "2026-10-05",
+"checked_eps": 13,
+"merge_into": "classroomoftheelite",
+"season_as": 4
 },
 "slaythegods": {
 "name": "Slay the Gods",
@@ -3282,7 +3291,8 @@
 "completed": true,
 "merge_into": "degeneratedrawingjianghu",
 "note": "ENG SUB season 7 of Hua Jiang Hu: Bu Liang Ren; score recalled",
-"checked": "2026-09-30"
+"checked": "2026-10-05",
+"hide": true
 },
 "fatedmagicalprincesswhomademeaprincess": {
 "name": "The Fated Magical Princess: Who Made Me a Princess",
@@ -3319,11 +3329,12 @@
 "rating": 7.7,
 "rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "Season 2 only (EP16-30, finished 2024); Anime-Planet 3.828 of 5 from 39 votes (2nd Season entry)",
+"note": "starts mid-story: season 2 only; Season 2 only (EP16-30, finished 2024); Anime-Planet 3.828 of 5 from 39 votes (2nd Season entry)",
 "origin": "CN",
 "summary": "On a mysterious, tightly ordered island, a stubborn girl with no magical powers dreams of becoming a martial artist, though an incident in her childhood has left her an outcast. She wants to leave the island and find her father. Her path crosses with an immortal boy from the fairy realm, and together they are drawn into dangers and secrets hidden beneath the island's calm surface.",
-"checked": "2026-09-30",
-"checked_eps": 15
+"checked": "2026-10-05",
+"checked_eps": 15,
+"hide": true
 },
 "swordandfairy": {
 "name": "Sword and Fairy 3",
@@ -3797,10 +3808,11 @@
 "completed": true,
 "rating": 7.9,
 "rating_src": "Anime-Planet x2",
-"note": "Anime-Planet 3.964 of 5 from 543 votes (13 eps, 2020)",
+"note": "starts mid-story: BanG Dream 2nd Season not uploaded; Anime-Planet 3.964 of 5 from 543 votes (13 eps, 2020)",
 "summary": "Kasumi and her band Poppin'Party are now running their own shows and aiming higher than ever. When a nationwide band contest begins, they and the other girl bands of their scene compete for a spot on the big stage, while the aggressive newcomer group RAISE A SUILEN pushes hard to dominate the music scene.",
-"checked": "2026-09-30",
-"checked_eps": 13
+"checked": "2026-10-05",
+"checked_eps": 13,
+"hide": true
 },
 "wrongwaytousehealingmagic": {
 "origin": "JP",
@@ -4014,10 +4026,11 @@
 "completed": true,
 "rating": 8.1,
 "rating_src": "Anime-Planet x2",
-"note": "possible overlap with aceofdiamondact, not merged; Anime-Planet 4.06 of 5 from 273 votes",
+"note": "starts mid-story: Act II Second Season; Ace of Diamond S1-S2 not uploaded; possible overlap with aceofdiamondact, not merged; Anime-Planet 4.06 of 5 from 273 votes",
 "summary": "Eijun Sawamura, a loud and stubborn left-handed pitcher, is now a second-year at Seido High School, a baseball powerhouse. With new first-years arriving and rivals within his own team, he fights to claim the ace number while Seido chases the summer tournament and a place at Koshien. This part continues the Act II story.",
-"checked": "2026-10-03",
-"checked_eps": 13
+"checked": "2026-10-05",
+"checked_eps": 13,
+"hide": true
 },
 "cellsatworkcodeblack": {
 "origin": "JP",
@@ -4122,19 +4135,21 @@
 "completed": false,
 "rating": 8.9,
 "rating_src": "Anime-Planet x2",
-"note": "only S2 uploaded; S3 airing since Aug 2026 (24 eps, part 2 due 2027); Anime-Planet 4.471 of 5 from 3,274 votes",
+"note": "Link Click S2 under its Chinese title; only S2 uploaded; S3 airing since Aug 2026 (24 eps, part 2 due 2027); Anime-Planet 4.471 of 5 from 3,274 votes",
 "summary": "Cheng Xiaoshi and Lu Guang run the Time Photo Studio, which quietly takes on unusual jobs. Using a photograph, Cheng can enter the body of the person who took it and relive twelve hours of their past, while Lu Guang guides him with information and strict rules against changing history. Their clients' requests draw them into painful secrets and dangers that reach back into their own lives.",
-"checked": "2026-10-04",
-"checked_eps": 12
+"checked": "2026-10-05",
+"checked_eps": 12,
+"merge_into": "linkclick"
 },
 "legendofmartial": {
 "origin": "CN",
 "name": "The Legend of Martial",
 "completed": false,
-"note": "only S2 uploaded, ongoing; no Anime-Planet entry found; no rating found",
+"note": "starts mid-story: season 2 only; only S2 uploaded, ongoing; no Anime-Planet entry found; no rating found",
 "summary_status": "unavailable",
-"checked": "2026-09-30",
-"checked_eps": 40
+"checked": "2026-10-05",
+"checked_eps": 40,
+"hide": true
 },
 "aliencut": {
 "origin": "CN",
@@ -4726,12 +4741,13 @@
 "origin": "JP",
 "name": "Campfire Cooking in Another World",
 "completed": true,
-"note": "season 2 only uploaded here; Anime-Planet 4.032 of 5 from 3,599 votes",
+"note": "starts mid-story: season 2 only; season 2 only uploaded here; Anime-Planet 4.032 of 5 from 3,599 votes",
 "rating": 8.1,
 "rating_src": "Anime-Planet x2",
 "summary": "Office worker Tsuyoshi Mukohda is dragged into another world by accident during a hero-summoning ritual. His only skill lets him buy groceries from a modern online supermarket, which turns out to be very useful: his cooking wins over Fel, a legendary wolf who becomes his familiar. He travels the land with his growing band of powerful, food-loving companions, trying to live a quiet life.",
-"checked": "2026-10-03",
-"checked_eps": 12
+"checked": "2026-10-05",
+"checked_eps": 12,
+"hide": true
 },
 "kumamikogirlmeetsbear": {
 "origin": "JP",
@@ -5408,12 +5424,14 @@
 "origin": "JP",
 "name": "Danganronpa 3: The End of Hope's Peak High School - Future Arc",
 "completed": true,
-"note": "Anime-Planet 3.8 of 5 from 7623 votes; Despair Arc is a separate key",
+"note": "Danganronpa 3 Future Arc filed as season 2 (watch alternating with Despair Arc); Anime-Planet 3.8 of 5 from 7623 votes; Despair Arc is a separate key",
 "rating": 7.6,
 "rating_src": "Anime-Planet x2",
 "summary": "Makoto Naegi, survivor of a killing game, is detained by the Future Foundation over accusations of sheltering former agents of despair. During his hearing, the leaders of the organization are trapped together and forced into a new deadly game run by an unknown mastermind. Each wears a bracelet with a secret forbidden action, and they must survive while figuring out who among them is the traitor.",
-"checked": "2026-10-01",
-"checked_eps": 12
+"checked": "2026-10-05",
+"checked_eps": 12,
+"merge_into": "danganronpatheanimation",
+"season_as": 2
 },
 "privatetutortothedukesdaughter": {
 "origin": "JP",
@@ -5639,10 +5657,11 @@
 "completed": true,
 "rating": 8.3,
 "rating_src": "Anime-Planet x2",
-"note": "Anime-Planet 4.156 of 5 from 2,126 votes",
+"note": "starts mid-story: season 3 only; Anime-Planet 4.156 of 5 from 2,126 votes",
 "summary": "Nishikata is a middle school boy who is constantly teased by Takagi, the classmate who sits beside him and always seems to read his mind. He keeps scheming to get back at her and make her flustered for once, but his plans nearly always backfire. This season continues their playful daily rivalry as they spend their third year of middle school together.",
-"checked": "2026-10-04",
-"checked_eps": 12
+"checked": "2026-10-05",
+"checked_eps": 12,
+"hide": true
 },
 "handshakers": {
 "origin": "JP",
@@ -5721,10 +5740,12 @@
 "completed": true,
 "rating": 7.7,
 "rating_src": "Anime-Planet x2",
-"note": "Anime-Planet 3.851 of 5 from 820 votes",
+"note": "BLOOM is season 3; Anime-Planet 3.851 of 5 from 820 votes",
 "summary": "Cocoa Hoto lives and works at the Rabbit House, a cafe in a picturesque European-style town run by the reserved Chino and her family. Together with their friends Rize, Chiya and Sharo, the girls enjoy school, part-time jobs and small adventures around town. In this season, they start thinking about the future and where each of them wants to go after school.",
-"checked": "2026-10-04",
-"checked_eps": 12
+"checked": "2026-10-05",
+"checked_eps": 12,
+"merge_into": "istheorderarabbit",
+"season_as": 3
 },
 "asobiasobaseworkshopoffun": {
 "origin": "JP",
@@ -6056,10 +6077,11 @@
 "completed": true,
 "rating": 8.8,
 "rating_src": "Anime-Planet x2",
-"note": "Time Agent S1 compilation EP1-11; name uncertain vs key; Anime-Planet 4.408 of 5 from 7,598 votes",
+"note": "Link Click S1 compilation; Time Agent S1 compilation EP1-11; name uncertain vs key; Anime-Planet 4.408 of 5 from 7,598 votes",
 "summary": "Cheng Xiaoshi and Lu Guang run a small photo studio that secretly takes on unusual jobs. Using a photograph, Cheng can enter the body of the person who took it and relive a stretch of their past, while Lu guides him and sets the rules. Clients hire them to learn the truth about moments in their lives, but changing the past is forbidden, and the cases grow darker as they go.",
-"checked": "2026-10-04",
-"checked_eps": 11
+"checked": "2026-10-05",
+"checked_eps": 11,
+"merge_into": "linkclick"
 },
 "asheepinwolfsclothing": {
 "origin": "CN",
@@ -6086,10 +6108,12 @@
 "completed": true,
 "rating": 7.7,
 "rating_src": "Anime-Planet x2",
-"note": "Anime-Planet 3.844 of 5 from 7400 votes",
-"checked": "2026-10-02",
+"note": "Danganronpa 3 Despair Arc filed as season 3; Anime-Planet 3.844 of 5 from 7400 votes",
+"checked": "2026-10-05",
 "checked_eps": 11,
-"summary": "Set before the events of the first game, the story follows the elite students of Hope's Peak Academy's 77th class during their school days. As the academy runs experiments in secret, a charismatic classmate begins to pull them toward despair, revealing how the tragedy that engulfs the world began."
+"summary": "Set before the events of the first game, the story follows the elite students of Hope's Peak Academy's 77th class during their school days. As the academy runs experiments in secret, a charismatic classmate begins to pull them toward despair, revealing how the tragedy that engulfs the world began.",
+"merge_into": "danganronpatheanimation",
+"season_as": 3
 },
 "outburstdreamerboys": {
 "origin": "JP",
@@ -6365,12 +6389,13 @@
 "origin": "CN",
 "name": "The Legend of Sky Lord",
 "completed": false,
-"note": "Shen Wu Tian Zun (iQIYI 2D, 2020 to 2025, 253 eps); Anime-Planet 3.73 of 5 from 50 votes; uploads EP57 to EP253 with 175 gaps, EP1-56 missing; separate 2024 3D version exists",
+"note": "Chinese-title uploads of The Legend of Sky Lord; Shen Wu Tian Zun (iQIYI 2D, 2020 to 2025, 253 eps); Anime-Planet 3.73 of 5 from 50 votes; uploads EP57 to EP253 with 175 gaps, EP1-56 missing; separate 2024 3D version exists",
 "summary": "Xiao Chen is a formidable body cultivator who is betrayed by the people closest to him and dies. He awakens in a new body that shares his name, in a realm of gods and mystic powers, and sets out to rebuild his strength, repay the betrayal and find his place among the powerful figures of this world.",
 "rating": 7.5,
 "rating_src": "Anime-Planet x2",
-"checked": "2026-09-30",
-"checked_eps": 22
+"checked": "2026-10-05",
+"checked_eps": 22,
+"merge_into": "legendofskylord"
 },
 "memoryofchangan": {
 "origin": "CN",
@@ -6479,10 +6504,11 @@
 "origin": "CN",
 "name": "Magical Legend: Rise to Immortality",
 "completed": false,
-"note": "Taiyi Xianmo Lu Zhi Ling Fei Ji; season 4 only (12 eps, 2021, finished), earlier seasons not uploaded; Anime-Planet S4 unrated (season 1 is 3.385 of 5 from 20 votes, not applied); no rating found",
+"note": "starts mid-story: season 4 only; Taiyi Xianmo Lu Zhi Ling Fei Ji; season 4 only (12 eps, 2021, finished), earlier seasons not uploaded; Anime-Planet S4 unrated (season 1 is 3.385 of 5 from 20 votes, not applied); no rating found",
 "summary": "Set in the Ming Dynasty, the series follows an age-old war between Taoists and demons. Emperor Zhu Yunwen and Taoist disciple Leng Shuangning turn out to be reincarnations of ancient deities, and when infighting splits the Taoist clan, the demons seize the chance to push toward a new war centred on Kunlun Mountain.",
-"checked": "2026-09-30",
-"checked_eps": 12
+"checked": "2026-10-05",
+"checked_eps": 12,
+"hide": true
 },
 "anotherjourneytothewest": {
 "origin": "CN",
@@ -6639,10 +6665,11 @@
 "origin": "CN",
 "name": "My Three-Body",
 "completed": false,
-"note": "Wo De San Ti; season 4 only (9 eps, July 2024, finished), earlier seasons not uploaded; no Anime-Planet entry found; no rating found",
+"note": "starts mid-story: season 4 only; Wo De San Ti; season 4 only (9 eps, July 2024, finished), earlier seasons not uploaded; no Anime-Planet entry found; no rating found",
 "summary": "This animated series retells Liu Cixin's Remembrance of Earth's Past saga using blocky, Minecraft-style animation. It follows humanity after contact with the Trisolaran civilisation, whose fleet is on its way to Earth, as scientists, soldiers and strategists struggle to find a way for the human race to survive.",
-"checked": "2026-09-30",
-"checked_eps": 9
+"checked": "2026-10-05",
+"checked_eps": 9,
+"hide": true
 },
 "ipickeduplotsofattributes": {
 "origin": "CN",
@@ -7044,7 +7071,8 @@
 "completed": false,
 "merge_into": "magicallegend",
 "note": "truncated title, Season 4 of Magical Legend; check season clash",
-"checked": "2026-09-30"
+"checked": "2026-10-05",
+"hide": true
 },
 "manfromdaoxiangcun": {
 "origin": "CN",
@@ -7114,12 +7142,13 @@
 "origin": "CN",
 "name": "I Am The Great Immortal",
 "completed": false,
-"note": "Anime-Planet 3.728 of 5 from 18 votes (Wo Shi Da Shenxian 3rd Season, 2024, 16 eps x 20 min; matched by season, length and count, verify); only S3 EP8-16 uploaded",
+"note": "starts mid-story: season 3 only; Anime-Planet 3.728 of 5 from 18 votes (Wo Shi Da Shenxian 3rd Season, 2024, 16 eps x 20 min; matched by season, length and count, verify); only S3 EP8-16 uploaded",
 "summary": "A peerless cultivation genius is betrayed and killed by powerful heavenly beings. Thanks to a mysterious Heavenly Book, he wakes up again in his own body at the age of twenty, long before his downfall. With his old knowledge intact but his strength gone, he sets out to rebuild his power and settle the score with those who framed him.",
 "rating": 7.5,
 "rating_src": "Anime-Planet x2",
-"checked": "2026-09-30",
-"checked_eps": 9
+"checked": "2026-10-05",
+"checked_eps": 9,
+"hide": true
 },
 "nekoalbum": {
 "origin": "CN",
@@ -7174,10 +7203,11 @@
 "origin": "CN",
 "name": "Fei Ren Zai",
 "completed": false,
-"note": "Season 3 only (24 uploads); no rating found: Anime-Planet lists it as Deviant (season 1 3.845 of 5 from 127 votes, 3rd season 3.848 from 48 votes but only 12 eps), season numbering does not match this upload",
+"note": "Fei Ren Zai is Fabulous Beasts; Season 3 only (24 uploads); no rating found: Anime-Planet lists it as Deviant (season 1 3.845 of 5 from 127 votes, 3rd season 3.848 from 48 votes but only 12 eps), season numbering does not match this upload",
 "summary": "Figures from Chinese myth and legend, including a nine-tailed fox girl and many other gods and spirits, live ordinary modern lives among humans. The comedy follows their everyday routines of work, friendship and family, with their supernatural natures causing constant small absurdities in contemporary city life.",
-"checked": "2026-09-30",
-"checked_eps": 24
+"checked": "2026-10-05",
+"checked_eps": 24,
+"merge_into": "fabulousbeasts"
 },
 "goldencurse": {
 "origin": "CN",
@@ -7413,10 +7443,11 @@
 "completed": true,
 "rating": 7.9,
 "rating_src": "MAL",
-"note": "score recalled",
+"note": "starts mid-story: season 3 only; score recalled",
 "summary": "Characters from several isekai series, including KonoSuba, Overlord, Re:Zero and The Saga of Tanya the Evil, are drawn into a shared world and enrolled as students at the same school. Drawn in a cute chibi style, the casts bump into one another's quirks through classes, school events and misunderstandings. This season continues their crossover comedy with more classmates and school hijinks.",
-"checked": "2026-09-30",
-"checked_eps": 11
+"checked": "2026-10-05",
+"checked_eps": 11,
+"hide": true
 },
 "whimsicalwish": {
 "origin": "CN",
@@ -7526,10 +7557,11 @@
 "origin": "CN",
 "name": "Is There A God?",
 "completed": false,
-"note": "no rating found (Anime-Planet: insufficient votes); 有神么; only season 2 uploaded (EP1-11; Anime-Planet lists 12 eps, 2016); season 1 (2013, 10 eps) not uploaded; titles mostly Chinese, subtitle language unverified",
+"note": "starts mid-story: season 2 only; no rating found (Anime-Planet: insufficient votes); 有神么; only season 2 uploaded (EP1-11; Anime-Planet lists 12 eps, 2016); season 1 (2013, 10 eps) not uploaded; titles mostly Chinese, subtitle language unverified",
 "summary": "Faith in the gods is fading, and a sudden power failure strikes the eastern heavenly realm, threatening the stability of the three realms. This comedy follows a crew of Chinese deities as they scramble to deal with the crisis, retelling familiar myths with a modern, irreverent sense of humour.",
-"checked": "2026-09-30",
-"checked_eps": 11
+"checked": "2026-10-05",
+"checked_eps": 11,
+"hide": true
 },
 "novolandeagleflag": {
 "origin": "CN",
@@ -7909,7 +7941,8 @@
 "completed": false,
 "note": "S2 collection",
 "merge_into": "berylandsapphire",
-"checked": "2026-09-30"
+"checked": "2026-10-05",
+"hide": true
 },
 "remake": {
 "origin": "CN",
@@ -8165,10 +8198,11 @@
 "origin": "CN",
 "name": "Tata's Rainbow Brainstorm 2",
 "completed": false,
-"note": "獭獭突然想到 2 (2022, 12 eps, all uploaded); season 1 (2020, 12 eps) not uploaded; no rating found (Anime-Planet under vote threshold)",
+"note": "starts mid-story: season 2 only; 獭獭突然想到 2 (2022, 12 eps, all uploaded); season 1 (2020, 12 eps) not uploaded; no rating found (Anime-Planet under vote threshold)",
 "summary": "Tata, a small otter with a restless imagination, keeps stopping to wonder what the world would be like if something ordinary suddenly changed. Each short episode plays out one of these daydreams, such as a world full of triangles or a body that obeys every command, with gentle comedy suited to all ages.",
-"checked": "2026-09-30",
-"checked_eps": 12
+"checked": "2026-10-05",
+"checked_eps": 12,
+"hide": true
 },
 "nationoftreasure": {
 "origin": "CN",
@@ -8202,10 +8236,11 @@
 "origin": "CN",
 "name": "I Annoyed Millions of Cultivators",
 "completed": false,
-"note": "Wo Qi Ku Le Baiwan Xiulian Zhe; 160 eps finished (from 2021), only EP95-100 uploaded; no rating found",
+"note": "Chinese-title uploads; Wo Qi Ku Le Baiwan Xiulian Zhe; 160 eps finished (from 2021), only EP95-100 uploaded; no rating found",
 "summary": "Jiang Bei, an ordinary student, gains a system after a fight at a subway station and is carried off to a world of cultivators. Starting as a nobody in a small town, he grows stronger by provoking and outwitting everyone around him, turning his talent for making enemies furious into a path toward real power.",
-"checked": "2026-09-30",
-"checked_eps": 6
+"checked": "2026-10-05",
+"checked_eps": 6,
+"merge_into": "iannoyedmillionsofcultivators"
 },
 "furiousyamaseason1all": {
 "origin": "CN",
@@ -8421,12 +8456,13 @@
 "origin": "CN",
 "name": "Tale of Herding Gods",
 "completed": false,
-"note": "EP1-100 collection upload; show ongoing (2024-); Anime-Planet 4.39 of 5 from 169 votes",
-"checked": "2026-10-04",
+"note": "duplicate of taleofherdinggod (EP1-100 in one upload); EP1-100 collection upload; show ongoing (2024-); Anime-Planet 4.39 of 5 from 169 votes",
+"checked": "2026-10-05",
 "checked_eps": 100,
 "rating": 8.8,
 "rating_src": "Anime-Planet x2",
-"summary": "Qin Mu was found as a baby in the Forsaken Land, a wild region full of demons and ruins, and was raised by nine strange elders of a remote village who each teach him their own skills. When he finally steps out into the wider world, he sets out to uncover the secrets of the gods and carve out his own path."
+"summary": "Qin Mu was found as a baby in the Forsaken Land, a wild region full of demons and ruins, and was raised by nine strange elders of a remote village who each teach him their own skills. When he finally steps out into the wider world, he sets out to uncover the secrets of the gods and carve out his own path.",
+"hide": true
 },
 "少年歌行番外篇之少年事": {
 "origin": "CN",
@@ -8458,7 +8494,8 @@
 "completed": false,
 "note": "duplicate/variant of degeneratedrawingjianghu",
 "merge_into": "degeneratedrawingjianghu",
-"checked": "2026-09-30"
+"checked": "2026-10-05",
+"hide": true
 },
 "thisseasonend": {
 "origin": "CN",
@@ -8507,7 +8544,8 @@
 "completed": false,
 "note": "duplicate/variant of degeneratedrawingjianghu",
 "merge_into": "degeneratedrawingjianghu",
-"checked": "2026-09-30"
+"checked": "2026-10-05",
+"hide": true
 },
 "end": {
 "origin": "CN",
@@ -10494,6 +10532,11 @@
 "note": "English dub of 黑塔：从超忆症开始成神, a 2026 Chinese AI 漫剧 (AI comic drama) by 圆梦传媒 per duanjubaike; AI-generated",
 "summary": "Chen Xi, a top high school student with a perfect memory, notices that his deskmate has vanished and that everyone else has forgotten him ever existed. Learning that a hidden supernatural world exists and that a dark tower has been swallowing people for decades, he awakens strange powers of his own and sets out to uncover what happened.",
 "checked": "2026-10-04"
+},
+"李熊猫": {
+"merge_into": "raisedbydemonspandali",
+"note": "Chinese-title EP1-10 compilation of Raised by Demons: Panda Li",
+"checked": "2026-10-05"
 }
 }
 }

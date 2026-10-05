@@ -26,9 +26,9 @@ then ORIGIN_HINTS for known titles, then meta[key]["origin"] set by hand.
 Members-only: hidden when you could not watch it free from the start or to the end. A series is gated when an
 upload naming it (clips and shorts included) pitches a membership ("Join to watch latest", 加入会员) or an
 episode is locked (YouTube reports it members-only, or its title says "For Membership" / "Member Only"). A gated
-series is hidden when its first episodes are locked or missing, when older episodes are locked or missing (holes
-before the newest free one), or when it has finished airing and episodes are still locked or missing. Early access to
-the newest episodes of an airing series is fine: those turn free later.
+series is hidden when its first episodes are locked or missing, when a finished season of it has locked or missing
+episodes, or when it has finished airing and episodes are still locked or missing. Gaps in the season still airing
+are early access to the newest episodes, which turn free later, so they are fine.
 meta[key]["members"] = true hides one by hand; meta[key]["members_ok"] = true keeps one the detection got wrong.
 
 Score: score() below ranks the Focus list and Explore; meta[key]["anim"] (1 to 5, animation quality) feeds it.
@@ -170,6 +170,10 @@ def official_series(genre, PAL, split_title, meta=None):
         if target and target in by and target != k:
             src = by.pop(k)
             dst = by[target]
+            shift = meta.get(k, {}).get("season_as", 0) and meta[k]["season_as"] - min(src["seasons"])
+            if shift:  # "season_as": N files a later season uploaded under its own title as season N of the target
+                src["seasons"] = {sn + shift: eps for sn, eps in src["seasons"].items()}
+                src["locks"] = [(s_ + shift, a, b) for s_, a, b in src["locks"]]
             for n, c in src["names"].items():
                 dst["names"][n] = dst["names"].get(n, 0) + c
             dst["chans"] |= src["chans"]
@@ -195,7 +199,7 @@ def official_series(genre, PAL, split_title, meta=None):
     out = []
     for k, ser in by.items():
         seas, total, n_eps = [], 0, 0
-        start_locked, locked_n, holes = False, 0, 0
+        start_locked, locked_n, holes, last_holes = False, 0, 0, 0
         for sn in sorted(ser["seasons"]):
             items = ser["seasons"][sn]
             covered, chosen = set(), []
@@ -206,6 +210,15 @@ def official_series(genre, PAL, split_title, meta=None):
                 rng = set(range(it["a"], it["b"] + 1))
                 if rng.isdisjoint(covered):
                     covered |= rng; chosen.append(it)
+            # a multi-episode upload beats the pieces inside its range when it runs far longer than they do:
+            # those pieces are clips mislabelled as episodes, or a few stray episodes of a season it covers whole
+            for it in sorted([x for x in items if not x["full"] and x["b"] > x["a"] and x not in chosen], key=lambda x: -x["d"]):
+                inside = [c for c in chosen if it["a"] <= c["a"] and c["b"] <= it["b"]]
+                if any(c["a"] <= it["b"] and it["a"] <= c["b"] for c in chosen if c not in inside):
+                    continue  # it straddles an upload already chosen
+                if it["d"] > 1.5 * sum(c["d"] for c in inside):
+                    chosen = [c for c in chosen if c not in inside] + [it]
+                    covered |= set(range(it["a"], it["b"] + 1))
             if not chosen:
                 fulls = sorted([x for x in items if x["full"]], key=lambda x: -x["d"])
                 chosen = fulls[:1]
@@ -218,10 +231,12 @@ def official_series(genre, PAL, split_title, meta=None):
             total += dur
             n_eps += len(covered) or 1
             gaps = [n for n in range(min(covered), max(covered) + 1) if n not in covered] if covered else []
+            last_holes = 0
             if covered:  # episodes you could not watch free: gaps, plus locked ones no free upload covers
                 lost = {e for s_, a, b in ser["locks"] if s_ == sn for e in range(a, b + 1) if e not in covered}
                 locked_n += len(set(gaps) | lost)
-                holes += len(gaps) + sum(1 for e in lost if e < max(covered))  # older episodes, not the newest
+                last_holes = len(gaps) + sum(1 for e in lost if e < max(covered))  # older episodes, not the newest
+                holes += last_holes
                 if sn == min(ser["seasons"]) and (min(covered) > 1 or any(e <= 3 for e in lost)):
                     start_locked = True
             first = chosen[0]
@@ -250,7 +265,7 @@ def official_series(genre, PAL, split_title, meta=None):
                         fs=34 if tl <= 22 else 28 if tl <= 38 else 23 if tl <= 60 else 19,
                         fresh=newest > "2026-09-28" and newest >= week_ago, newest=newest, q="", audio="A1" if ser["dub"] else "A2", episodes=n_eps,
                         gaps=sum(s_["gaps"] for s_ in seas), origin=orig,
-                        lock=dict(gated=ser["gated"], start=start_locked, missing=locked_n, holes=holes)))
+                        lock=dict(gated=ser["gated"], start=start_locked, missing=locked_n, holes=holes - last_holes)))
     return out
 
 
