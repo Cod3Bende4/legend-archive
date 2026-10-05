@@ -1289,7 +1289,8 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Seven years ago prince Li Han watched seven immortals destroy his family, and he and his sister survived only because the mysterious Endless God Realm took them in. Now back in the world and far stronger, he climbs the cultivation ranks hoping to wake his comatose sister, protect ordinary people and find out who was truly behind the massacre.",
 "checked": "2026-09-30",
-"checked_eps": 80
+"checked_eps": 80,
+"anim_tried": "2026-10-05"
 },
 "jojosbizarreadventurediamondisunbreakable": {
 "name": "JoJo's Bizarre Adventure",
@@ -1640,7 +1641,8 @@
 "rating_src": "Anime-Planet x2",
 "summary": "On his eighteenth birthday, the orphan Luo Yun is pulled into an unlikely group chat run by the East Sea Dragon Palace. By bartering ordinary goods with immortals for cultivation methods and magic treasures, he starts building power in both the human and immortal worlds while chasing clues about his own mysterious origins.",
 "checked": "2026-09-30",
-"checked_eps": 60
+"checked_eps": 60,
+"anim_tried": "2026-10-05"
 },
 "frierenbeyondjourneysend-dub": {
 "name": "Frieren: Beyond Journey's End (English Dub)",
@@ -1879,7 +1881,9 @@
 "note": "MAL: S1 7.42, S2 7.51 (Feng Ling Yu Xiu)",
 "summary": "Feng Ling is a quick-fingered thief and Bai Yuxiu is a gifted martial artist, and a chance meeting throws the mismatched pair onto the same road. Travelling through the jianghu, the world of wandering kung fu fighters, they get tangled up in schemes and rivalries far bigger than either of them, and have to learn to trust each other to survive.",
 "checked": "2026-09-30",
-"checked_eps": 24
+"checked_eps": 24,
+"anim": 3,
+"anim_note": "2D canvas-texture look, fights praised, early episodes inconsistent"
 },
 "blastoftempest": {
 "name": "Blast of Tempest",
@@ -2113,7 +2117,9 @@
 "completed": true,
 "summary": "Aoba Suzukaze joins a video game studio straight out of high school, hired as a character designer on a sequel to the very game that inspired her as a child. Surrounded by quirky coworkers, including the artist she idolizes, she learns the ropes of professional work while striving to grow into a designer who can contribute to the games she loves.",
 "checked": "2026-09-30",
-"checked_eps": 24
+"checked_eps": 24,
+"anim": 4,
+"anim_note": "Doga Kobo, clean consistent polished 2D"
 },
 "saintsmagicpowerisomnipotent": {
 "name": "The Saint's Magic Power is Omnipotent",
@@ -2131,7 +2137,9 @@
 "completed": true,
 "summary": "Kaede Honjo is talked into trying the virtual reality game NewWorld Online and, because she hates getting hurt, puts every stat point into defense. Playing as Maple, her slow, unkillable build turns into a string of absurd skills that the developers never expected. She wanders the game at her own pace with her friend Sally, stumbling into strength that leaves other players baffled.",
 "checked": "2026-09-30",
-"checked_eps": 24
+"checked_eps": 24,
+"anim": 3,
+"anim_note": "Silver Link; S1 fine, S2 noticeably weaker"
 },
 "shy": {
 "name": "SHY",
@@ -2200,7 +2208,9 @@
 "origin": "JP",
 "summary": "Kukuru, an eighteen-year-old who works at a small aquarium in Okinawa, meets Fuuka, a former idol hopeful who has run away from Tokyo. Fuuka joins the staff looking for a place to belong, and the two try to save the struggling aquarium from closing while facing their own worries about the future.",
 "checked": "2026-09-30",
-"checked_eps": 24
+"checked_eps": 24,
+"anim": 4,
+"anim_note": "P.A. Works, beautiful backgrounds, polished throughout"
 },
 "kingsavatars2quanzhigaoshou": {
 "name": "The King's Avatar",
@@ -2411,7 +2421,9 @@
 "origin": "CN",
 "summary": "On the lawless western frontier at the end of the Sui dynasty, a hardened sword-for-hire named Dao Ma takes a job escorting a wanted man across the desert. The commission draws bounty hunters, soldiers and old enemies onto their trail, and the mismatched travellers must fight their way through a collapsing empire.",
 "checked": "2026-09-30",
-"checked_eps": 23
+"checked_eps": 23,
+"anim": 5,
+"anim_note": "Colored Pencil 2D ink-wash style, praised action, Golden Dragon award; S2 more 3D"
 },
 "talesofdarkriver": {
 "name": "Tales of Dark River",
@@ -2422,7 +2434,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Dark River is a secretive assassin organization run by three families, and its leader has just been poisoned. Su Muyu, captain of the guard unit sworn to protect him, sets out to find a legendary doctor while fending off killers. His closest friend Su Changhe, meanwhile, has joined the plot to overthrow the leader, putting the two on a collision course.",
 "checked": "2026-09-30",
-"checked_eps": 26
+"checked_eps": 26,
+"anim": 4,
+"anim_note": "Passion Paint 3D (Shaonian Ge Xing studio), solid wuxia fights"
 },
 "monsterbutwild": {
 "name": "Monster but Wild",
@@ -2557,14 +2571,15 @@
 },
 "insearchofgods": {
 "name": "In Search of Gods",
-"completed": true,
-"note": "no rating found; Anime-Planet 3.785 of 5 from 21 votes",
+"completed": false,
+"note": "no rating found; Anime-Planet 3.785 of 5 from 21 votes; Lucifer Donghua lists it as ongoing (24 eps by Aug 2026), so completed false",
 "origin": "CN",
 "rating": 7.6,
 "rating_src": "Anime-Planet x2",
 "summary": "In the chaotic age when the Yan and Huang Emperors led rival tribes, young Tuoba Ye unexpectedly inherits the power of the legendary Emperor Shennong. With the tribes fighting for dominance, he is pulled into battles and old mysteries, and must learn to wield a gift he never asked for while finding his place in a world on the brink of war.",
-"checked": "2026-09-30",
-"checked_eps": 24
+"checked": "2026-10-05",
+"checked_eps": 24,
+"anim_tried": "2026-10-05"
 },
 "immortalitys1s2all": {
 "name": "Immortality",
@@ -2794,7 +2809,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Gu Zhengfeng, a dragon who once prided himself on his conscience, wakes from a thousand-year sleep to find his nature has turned wicked and his entire treasure hoard has vanished. Adjusting to a world that has moved on without him, he sets out to reclaim his lost riches and figure out what happened while he slept.",
 "checked": "2026-09-30",
-"checked_eps": 48
+"checked_eps": 48,
+"anim": 2,
+"anim_note": "Ruo Hong Culture 3D short episodes; review cites bad proportions"
 },
 "heavenscrapmaster": {
 "name": "Heaven Scrap Master",
@@ -2845,7 +2862,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Two rival immortals are pushed into a political marriage, only to find that neither can manage to kill the other. They then learn they are both survivors of a destroyed alien civilization, and that the legendary treasures of their world are really pieces of a spaceship, so they reluctantly join forces to hunt down the relics.",
 "checked": "2026-09-30",
-"checked_eps": 60
+"checked_eps": 60,
+"anim": 3,
+"anim_note": "Soyep (Suoyi) 3D short episodes; press calls designs decent, QC acceptable"
 },
 "soulofsoldiermaster": {
 "name": "The Soul of Soldier Master",
@@ -3073,7 +3092,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "A century ago the immortal Tian Quan slew the Lord of the Mirage, but her memories of that battle are broken. Now living quietly in the mortal world, she takes in a small black bird that can turn into a man who looks like her lost love. When a series of strange killings points to the Mirage stirring again, the pair set out to find the truth.",
 "checked": "2026-09-30",
-"checked_eps": 18
+"checked_eps": 18,
+"anim": 3,
+"anim_note": "Thundray; one review says good animation, nothing notable"
 },
 "berylandsapphire": {
 "name": "Beryl and Sapphire",
@@ -3211,7 +3232,9 @@
 "note": "MAL entry: Zhan Shen: Fanchen Shenyu; S1 15 eps (2024), S2 separate; score not confirmed",
 "summary": "Lin Qiye lost his sight as a boy after glimpsing a winged figure on the moon, and years later his vision returns along with a strange power hidden in his mind. He learns that monsters and gods from ancient myths lurk behind modern city life, and he joins the Night Watchers, a secret force that fights these beings to keep ordinary people safe.",
 "checked": "2026-09-30",
-"checked_eps": 15
+"checked_eps": 15,
+"anim": 3,
+"anim_note": "Shenman Entertainment 3D, video-game look per review; ordinary"
 },
 "pheromonessaywerenotmeanttobeourpheromonessayno": {
 "name": "Pheromones Say We're Not Meant to Be",
@@ -3668,7 +3691,9 @@
 "note": "Anime-Planet 3.728 of 5 from 29173 votes",
 "checked": "2026-10-02",
 "checked_eps": 13,
-"summary": "Makoto Naegi, an ordinary student chosen by lottery, enters the elite Hope's Peak Academy alongside fifteen gifted classmates. They find themselves locked inside the school by a sinister bear named Monokuma, who tells them the only way out is to murder a classmate and get away with it in a class trial."
+"summary": "Makoto Naegi, an ordinary student chosen by lottery, enters the elite Hope's Peak Academy alongside fifteen gifted classmates. They find themselves locked inside the school by a sinister bear named Monokuma, who tells them the only way out is to murder a classmate and get away with it in a class trial.",
+"anim": 3,
+"anim_note": "Lerche; stylized but rushed TV production"
 },
 "richestmaningame": {
 "name": "The Richest Man in Game",
@@ -3768,7 +3793,9 @@
 "origin": "JP",
 "summary": "In 2078, Hitomi Tsukishiro is a quiet high school girl who sees the world without color. Her grandmother Kohaku, a powerful magician, casts a spell that sends her back sixty years to 2018. There she meets her teenage grandmother and a boy in the art club, Yuito Aoi, whose drawings are the first things she has seen in color in years.",
 "checked": "2026-09-30",
-"checked_eps": 13
+"checked_eps": 13,
+"anim": 4,
+"anim_note": "P.A. Works, lush colour-themed visuals, consistently polished"
 },
 "igotacheatskillinanotherworldandbecameunrivaledintherealworl": {
 "name": "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too",
@@ -3948,7 +3975,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "In a world where people bond with spirit creatures, young soul pet master Chu Mu sets out with Mo Xie, a fox companion. Starting as underdogs just trying to survive, the pair grow stronger by finding allies, digging into hidden plots and breaking curses as ever tougher opponents stand in their way.",
 "checked": "2026-09-30",
-"checked_eps": 16
+"checked_eps": 16,
+"anim": 3,
+"anim_note": "Foch 3D; ordinary web 3D"
 },
 "fairymountain": {
 "origin": "CN",
@@ -4002,7 +4031,9 @@
 "note": "Anime-Planet 3.858 of 5 from 5216 votes",
 "checked": "2026-10-02",
 "checked_eps": 13,
-"summary": "Mitsuyoshi Tada is a high school student and amateur photographer who has never been interested in romance. His life changes when he meets Teresa Wagner, a cheerful foreign exchange student who is fascinated by Japanese culture, and the two start spending time together around his family's coffee shop."
+"summary": "Mitsuyoshi Tada is a high school student and amateur photographer who has never been interested in romance. His life changes when he meets Teresa Wagner, a cheerful foreign exchange student who is fascinated by Japanese culture, and the two start spending time together around his family's coffee shop.",
+"anim": 3,
+"anim_note": "Doga Kobo original, pleasant ordinary TV"
 },
 "haigakura": {
 "origin": "JP",
@@ -4200,7 +4231,9 @@
 "note": "separate series from Cells at Work!; Anime-Planet 3.844 of 5 from 3446 votes",
 "summary": "A newly deployed red blood cell starts work inside the body of a man whose smoking, drinking, stress and lack of sleep make every shift a crisis. Delivering oxygen through clogged vessels while white blood cells battle constant infections, he tries to keep going and find meaning in a workplace that seems to be falling apart.",
 "checked": "2026-09-30",
-"checked_eps": 13
+"checked_eps": 13,
+"anim": 3,
+"anim_note": "Liden Films, ordinary TV quality"
 },
 "godofhighschool": {
 "origin": "KR",
@@ -4211,7 +4244,9 @@
 "note": "Japan-Korea co-production of Korean webtoon; Anime-Planet 3.874 of 5 from 17,026 votes",
 "checked": "2026-10-03",
 "checked_eps": 13,
-"summary": "Jin Mori, a carefree high schooler and martial arts prodigy, enters a nationwide fighting tournament that promises its champion any wish. As he battles fighters from every style, he and his new friends discover that the contest hides borrowed supernatural powers and a much larger plot behind it."
+"summary": "Jin Mori, a carefree high schooler and martial arts prodigy, enters a nationwide fighting tournament that promises its champion any wish. As he battles fighters from every style, he and his new friends discover that the contest hides borrowed supernatural powers and a much larger plot behind it.",
+"anim": 4,
+"anim_note": "MAPPA, fight animation widely praised; some rushed later frames"
 },
 "noblesse": {
 "origin": "KR",
@@ -5159,7 +5194,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Futaba Igarashi is a small, hardworking young office worker whose mentor, Harumi Takeda, is a huge, loud, and friendly senior colleague who treats her kindly but never lets up on his teasing. The series follows their daily office life and after-work outings as the two slowly grow closer.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 4,
+"anim_note": "Doga Kobo, clean consistent polished 2D"
 },
 "cautiousherotheheroisoverpoweredbutoverlycautious": {
 "origin": "JP",
@@ -5170,7 +5207,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Rookie goddess Ristarte summons Seiya Ryuuguuin to save the extremely difficult world of Gaeabrande. Seiya has remarkable stats, but he is obsessively careful: he over-trains, buys spare sets of armor and destroys weak enemies with excessive force. Ristarte struggles to keep up with her paranoid hero as they head toward the Demon Lord.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "White Fox, ordinary TV quality"
 },
 "ossannewbieadventurer": {
 "origin": "JP",
@@ -5202,7 +5241,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "A comedic spin-off of That Time I Got Reincarnated as a Slime set in the monster nation of Tempest. Rimuru and his companions set aside major battles to handle everyday life: festivals, food, farming and seasonal events. Each episode follows the townsfolk, from Shion to Benimaru, in small lighthearted stories.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "8bit chibi spin-off, simple ordinary TV"
 },
 "girlslasttour": {
 "origin": "JP",
@@ -5289,7 +5330,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "The world's best assassin is killed by his own organization and offered a new life by a goddess in a fantasy world. Reborn as Lugh Tuatha De, heir to a noble family of assassins, he is given a mission: kill the hero destined to destroy that world. He combines his old skills with magic while training his companions.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "Silver Link/Studio Palette, decent ordinary TV"
 },
 "osamakeromcomwherethechildhoodfriendwontlose": {
 "origin": "JP",
@@ -5467,7 +5510,9 @@
 "rating_src": "Anime-Planet x2",
 "checked": "2026-10-04",
 "checked_eps": 12,
-"summary": "Noel Stollen is the grandson of a legendary hero, but he was born with the Talker class, a weak support role that boosts allies with his voice. Refusing to give up on becoming the greatest explorer of his time, he relies on sharp planning, bluffing and ruthless negotiation to build a clan that can climb to the top."
+"summary": "Noel Stollen is the grandson of a legendary hero, but he was born with the Talker class, a weak support role that boosts allies with his voice. Refusing to give up on becoming the greatest explorer of his time, he relies on sharp planning, bluffing and ruthless negotiation to build a clan that can climb to the top.",
+"anim": 3,
+"anim_note": "ANN review: animation B-, slight dip later, never flat"
 },
 "easygoingterritorydefensebytheoptimisticlord": {
 "origin": "JP",
@@ -5587,7 +5632,9 @@
 "rating_src": "Anime-Planet x2",
 "checked": "2026-10-02",
 "checked_eps": 12,
-"summary": "A brilliant pharmacologist who worked himself to death in modern Japan wakes up in the body of a young boy in a medieval world, the son of a court pharmacist. Gifted with magic that lets him create and analyze substances, he sets out to bring real medicine to a society that relies on bloodletting and superstition."
+"summary": "A brilliant pharmacologist who worked himself to death in modern Japan wakes up in the body of a young boy in a medieval world, the son of a court pharmacist. Gifted with magic that lets him create and analyze substances, he sets out to bring real medicine to a society that relies on bloodletting and superstition.",
+"anim": 3,
+"anim_note": "Diomedea, ordinary TV quality"
 },
 "diaryofourdaysatthebreakwater": {
 "origin": "JP",
@@ -5914,7 +5961,9 @@
 "note": "Anime-Planet 3.828 of 5 from 7504 votes",
 "summary": "Nakano is a young salaryman worn down by long hours at a demanding company. One evening he comes home to find Senko, an 800-year-old fox spirit in the form of a small girl, who has arrived to take care of him. She cooks, cleans and offers comfort, hoping to ease his stress and help him rest.",
 "checked": "2026-10-01",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "Doga Kobo, pleasant ordinary TV"
 },
 "istheorderarabbitbloom": {
 "origin": "JP",
@@ -5996,7 +6045,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Ya She is a quiet antique shop run by a mysterious owner who seems to have lived far longer than any human should. Each object on its shelves carries a story from China's past, and as customers and curious visitors cross his path, the owner reveals the legends, loves and grudges bound up in these relics.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 4,
+"anim_note": "Colored Pencil Animation 2D (Biao Ren studio); studio track record"
 },
 "lovemagicgrocery": {
 "origin": "CN",
@@ -6007,7 +6058,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Shi Ye is a police inspector with no interest in romance. His work leads him to a strange shop whose cunning witch owner sells unusual fixes for people's love troubles, and he sets out to uncover the secrets of the store and the woman who runs it.",
 "checked": "2026-09-30",
-"checked_eps": 16
+"checked_eps": 16,
+"anim": 3,
+"anim_note": "Tthunder Animation 2D for iQIYI; ordinary"
 },
 "luoyang": {
 "origin": "CN",
@@ -6668,7 +6721,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Pei Qian, head of the small Tengda company, gets a second shot at life along with a strange system that pays him out of whatever money his business loses. Determined to cash in, he sets out to make the worst, most unprofitable games he can think of, only for his plans to keep backfiring in unexpected ways.",
 "checked": "2026-09-30",
-"checked_eps": 16
+"checked_eps": 16,
+"anim": 3,
+"anim_note": "Foch 2D; reviews call animation stock Chinese style, adequate"
 },
 "agooddaytoascend": {
 "origin": "CN",
@@ -8228,7 +8283,9 @@
 "note": "3-ep special series; Anime-Planet 4.0 of 5 from 2687 votes",
 "checked": "2026-10-02",
 "checked_eps": 3,
-"summary": "A short side story set in the world of the slime Rimuru, centered on Hinata Sakaguchi, the stern commander of the Holy Knights. A journey to the small kingdom of Coleus draws her into the troubles of its royal court, where she has to weigh her strict sense of justice against the people she meets."
+"summary": "A short side story set in the world of the slime Rimuru, centered on Hinata Sakaguchi, the stern commander of the Holy Knights. A journey to the small kingdom of Coleus draws her into the troubles of its royal court, where she has to weigh her strict sense of justice against the people she meets.",
+"anim": 3,
+"anim_note": "8bit OVA, ordinary TV quality"
 },
 "apocalypticimprisonmentmynemesissecretlylovesme": {
 "origin": "CN",
