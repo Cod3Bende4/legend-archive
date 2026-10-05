@@ -23,8 +23,13 @@ Origin (CN donghua, JP anime, KR Korean webtoon/manhwa) splits the site into thr
 carry the shelves above. It comes from the channel ("origin" in config.json, the four dub channels are CN),
 then ORIGIN_HINTS for known titles, then meta[key]["origin"] set by hand.
 
-Members-only: a series whose free uploads pitch a paid membership ("Join member to watch latest episode",
-加入会员) is hidden, since the rest of it is behind the paywall. meta[key]["members_ok"] = true keeps one.
+Members-only: hidden when you could not watch it free from the start or to the end. A series is gated when an
+upload naming it (clips and shorts included) pitches a membership ("Join to watch latest", 加入会员) or an
+episode is locked (YouTube reports it members-only, or its title says "For Membership" / "Member Only"). A gated
+series is hidden when its first episodes are locked or missing, when older episodes are locked or missing (holes
+before the newest free one), or when it has finished airing and episodes are still locked or missing. Early access to
+the newest episodes of an airing series is fine: those turn free later.
+meta[key]["members"] = true hides one by hand; meta[key]["members_ok"] = true keeps one the detection got wrong.
 
 Score: score() below ranks the Focus list and Explore; meta[key]["anim"] (1 to 5, animation quality) feeds it.
 
@@ -49,6 +54,10 @@ JUNK = re.compile(
 EPNUM = re.compile(r"\b(?:ep(?:isode)?\.?\s*|第\s*)(\d{1,4})", re.I)
 SKIP = re.compile(r"trailer|teaser|pv\b|preview|opening|ending|\bop\b|\bed\b|ost|mv\b|behind the scenes|shorts|clip|highlight", re.I)
 
+
+LOCK = re.compile(r"for membership|members?[\s-]*only|member only|members? exclusive|会员专享(?!最新)", re.I)
+PITCH = re.compile(r"join\s*(the\s*)?(members?|channel)|join to watch|加入会员|会员畅享|会员专享|会员抢先|抢先看|"
+                   r"members?[\s-]*(only|preview|get|first)|member only", re.I)
 
 ORIGINS = {"CN": "Donghua", "JP": "Anime", "KR": "Korean"}
 # titles whose origin differs from their channel's (Muse Asia is mostly Japanese anime)
@@ -117,18 +126,29 @@ def official_series(genre, PAL, split_title, meta=None):
         if f.endswith(".json") and f != "quality.json":
             chans.append(json.load(open(os.path.join(scan_dir, f), encoding="utf-8")))
     epparse.learn(v["t"] for s in chans for v in s.get("uploads", []))
-    by = {}
+    qpath = os.path.join(scan_dir, "quality.json")
+    locked = {i for i, q in (json.load(open(qpath, encoding="utf-8")) if os.path.exists(qpath) else {}).items()
+              if "members-only" in (q.get("error") or "")}  # YouTube refused the nightly check: members only
+    by, pitches, locks = {}, {}, {}
     for s in chans:
         cname = re.sub(r"\s*-\s*(get|chinese).*$", "", s.get("channel") or s["name"], flags=re.I).strip()
         corig = cands.get(s["name"], {}).get("origin", "CN")
         for v in s.get("uploads", []):
             if v.get("gone"):
                 continue
+            # any upload, clips and shorts included, that sells a membership or is locked behind one
+            if v.get("t") and (PITCH.search(v["t"]) or v.get("id") in locked):
+                pitches.setdefault(cname, []).append(v["t"])
+            if v.get("t") and (v.get("id") in locked or LOCK.search(v["t"])):  # a locked episode: note it, never play it
+                lp = epparse.parse(epparse.MEMBERS.sub(" ", LOCK.sub(" ", v["t"])), v.get("d"))
+                if lp and not lp["full"]:
+                    locks.setdefault(epparse.key_of(lp["name"]) + ("-dub" if lp["dub"] else ""), []).append((lp["season"], lp["a"], lp["b"]))
+                continue
             p = epparse.parse(v.get("t") or "", v.get("d"))
             if not p:
                 continue
             k = epparse.key_of(p["name"]) + ("-dub" if p["dub"] else "")
-            ser = by.setdefault(k, dict(key=k, names={}, chans=set(), dub=p["dub"], seasons={}, gated=False, orig={}))
+            ser = by.setdefault(k, dict(key=k, names={}, chans=set(), dub=p["dub"], seasons={}, gated=False, orig={}, locks=[]))
             ser["names"][p["name"]] = ser["names"].get(p["name"], 0) + 1
             ser["gated"] |= p["gated"]
             ser["orig"][corig] = ser["orig"].get(corig, 0) + 1
@@ -154,13 +174,28 @@ def official_series(genre, PAL, split_title, meta=None):
                 dst["names"][n] = dst["names"].get(n, 0) + c
             dst["chans"] |= src["chans"]
             dst["gated"] |= src["gated"]
+            dst["locks"] += src["locks"] + locks.pop(k, [])
             for o, c in src["orig"].items():
                 dst["orig"][o] = dst["orig"].get(o, 0) + c
             for sn, eps in src["seasons"].items():
                 dst["seasons"].setdefault(sn, []).extend(eps)
+    for k, ls in locks.items():
+        k = meta.get(k, {}).get("merge_into") or k
+        if k in by:
+            by[k]["locks"] += ls
+            by[k]["gated"] = True
+    # a pitch names its series: give it to the longest series name it contains in that channel, so
+    # "A Mortal's Journey to Immortality ... Join to watch" gates that show and not "Immortality"
+    for cname, titles in pitches.items():
+        here = [(n, ser) for ser in by.values() if cname in ser["chans"] for n in ser["names"] if len(n) >= 6]
+        for t in titles:
+            hits = [(len(n), ser) for n, ser in here if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", t, re.I)]
+            if hits:
+                max(hits, key=lambda h: h[0])[1]["gated"] = True
     out = []
     for k, ser in by.items():
         seas, total, n_eps = [], 0, 0
+        start_locked, locked_n, holes = False, 0, 0
         for sn in sorted(ser["seasons"]):
             items = ser["seasons"][sn]
             covered, chosen = set(), []
@@ -183,6 +218,12 @@ def official_series(genre, PAL, split_title, meta=None):
             total += dur
             n_eps += len(covered) or 1
             gaps = [n for n in range(min(covered), max(covered) + 1) if n not in covered] if covered else []
+            if covered:  # episodes you could not watch free: gaps, plus locked ones no free upload covers
+                lost = {e for s_, a, b in ser["locks"] if s_ == sn for e in range(a, b + 1) if e not in covered}
+                locked_n += len(set(gaps) | lost)
+                holes += len(gaps) + sum(1 for e in lost if e < max(covered))  # older episodes, not the newest
+                if sn == min(ser["seasons"]) and (min(covered) > 1 or any(e <= 3 for e in lost)):
+                    start_locked = True
             first = chosen[0]
             lab = lambda x: "Full" if x["full"] else (f"EP{x['a']}" if x["a"] == x["b"] else f"EP{x['a']}-{x['b']}")
             seas.append(dict(label=f"Season {sn}", short=f"S{sn}",
@@ -208,7 +249,8 @@ def official_series(genre, PAL, split_title, meta=None):
                         px=h % 70 + 15, py=(h >> 8) % 60 + 10, rx=(h >> 16) % 80 + 10, ry=(h >> 24) % 70 + 20,
                         fs=34 if tl <= 22 else 28 if tl <= 38 else 23 if tl <= 60 else 19,
                         fresh=newest > "2026-09-28" and newest >= week_ago, newest=newest, q="", audio="A1" if ser["dub"] else "A2", episodes=n_eps,
-                        gaps=sum(s_["gaps"] for s_ in seas), origin=orig, members=ser["gated"]))
+                        gaps=sum(s_["gaps"] for s_ in seas), origin=orig,
+                        lock=dict(gated=ser["gated"], start=start_locked, missing=locked_n, holes=holes)))
     return out
 
 
@@ -273,7 +315,9 @@ def apply(series, cur, Q):
         # "" = has a summary; "unavailable" = researched, no reliable source found; "pending" = not written yet
         x["summaryStatus"] = "" if x["summary"] else ("unavailable" if m.get("summary_status") == "unavailable" else "pending")
         x["completed"] = m.get("completed", x["audio"] == "A3")
-        members = x.pop("members", False) and not m.get("members_ok")
+        lk = x.pop("lock", None) or {}
+        members = bool(m.get("members")) or (not m.get("members_ok") and lk.get("gated", False)
+                                             and (lk["start"] or lk["holes"] > 0 or (x["completed"] and lk["missing"] > 0)))
         if m.get("hide") or slop or members or x["total"] < 3600 or (rating is not None and rating < 7.5):
             hidden += 1
             continue
@@ -292,6 +336,8 @@ def apply(series, cur, Q):
         if rating is not None:
             bits.append(f"{x['ratingSrc'] or 'Rating'} {rating}")
         bits.append({"A1": "English audio, original sound", "A2": "Original audio, English subs", "A3": "English dub"}[x["audio"]])
+        if m.get("anim"):
+            bits.append(f"Animation {m['anim']}/5")
         if x.get("episodes"):
             bits.append(f"{x['episodes']} episodes")
         if x["audio"] != "A3":

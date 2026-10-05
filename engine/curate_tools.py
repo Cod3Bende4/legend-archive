@@ -4,13 +4,15 @@
   python3 engine/curate_tools.py todo [N]     worklist (deltas only): new series, unrated retries that are due,
                                               recalled scores to verify
   python3 engine/curate_tools.py stamp KEY..  print today's "checked" stamp for keys (helper; see below)
-  python3 engine/curate_tools.py members      rated series hidden only by the members-only filter
+  python3 engine/curate_tools.py members      gated series to review (members-only rule, see tiers.py)
   python3 engine/curate_tools.py check        sanity check of meta edits since the last commit (merges, cycles, runtimes)
   python3 engine/curate_tools.py ongoing [N]  Sunday list: shown series marked not completed, best first
   python3 engine/curate_tools.py dubs [N]     dub-channel (A3) series for a light review
   python3 engine/curate_tools.py summaries [N] after a local rebuild: shown series without a summary, tiers 1-7 first
                                               (researched but no reliable premise found: set meta[key]["summary_status"]
                                               = "unavailable" so the page says so; those are listed last)
+  python3 engine/curate_tools.py anim [N]     after a local rebuild: shown rated series without meta[key]["anim"]
+                                              (animation quality 1 to 5), complete and best-scored first
   python3 engine/curate_tools.py report       after a local rebuild: counts per section and tier, sources, borderline
 
 Series under 1 hour total are hidden by tiers.apply, so every list here skips them.
@@ -97,13 +99,19 @@ def todo(n):
 
 
 def members():
+    """Gated series (an upload sells a membership or an episode is locked) worth a human look, not yet reviewed:
+    HIDDEN ones rated 7.5+ (is the lock real?) and SHOWN ones with episodes missing (will they turn free?).
+    A run that reviews one sets meta[key]["members_checked"] = today, plus "members" or "members_ok" when needed."""
     meta = load_meta()
     for s in sorted(series(meta), key=lambda s: -s["total"]):
-        m = meta.get(s["key"], {})
-        if s.get("members") and not m.get("members_ok") and not m.get("hide") and not m.get("merge_into") \
-                and s["total"] >= MIN_TOTAL and (m.get("rating") is None or m["rating"] >= 7.5):
-            print(f"{s['key']} | {m.get('name', s['title'])} | {s['totalF']} | rating {m.get('rating')} | "
-                  f"completed {m.get('completed')} | {m.get('note', '')[:80]}")
+        m, lk = meta.get(s["key"], {}), s.get("lock") or {}
+        if not lk.get("gated") or m.get("hide") or m.get("merge_into") or m.get("members_checked") or s["total"] < MIN_TOTAL:
+            continue
+        done = m.get("completed", False)
+        hidden = bool(m.get("members")) or (not m.get("members_ok") and (lk["start"] or lk["holes"] > 0 or (done and lk["missing"] > 0)))
+        if (hidden and (m.get("rating") or 0) >= 7.5) or (not hidden and lk["missing"] > 0):
+            print(f"{'HIDDEN' if hidden else 'SHOWN '} {s['key']} | {m.get('name', s['title'])} | {s['totalF']} | rating {m.get('rating')} | "
+                  f"completed {done} | first eps locked {lk['start']} | holes {lk['holes']} | missing {lk['missing']} | {m.get('note', '')[:70]}")
 
 
 def check():
@@ -182,6 +190,16 @@ def dubs(n):
               f"q {x.get('q')} | {', '.join(x['chans'])} | {x['seas'][0]['pick']['t'][:70]}")
 
 
+def anim(n):
+    """Shown, rated series with no animation grade yet, the ones most likely to reach the Focus lists first."""
+    todo = sorted([x for x in data() if x.get("rating") is not None and not x.get("anim") and x.get("audio") != "A3"],
+                  key=lambda x: (not x.get("completed"), -(x.get("score") or 0)))
+    print(len(todo), "rated series without an animation grade (complete ones first, best score first)")
+    for x in todo[:n]:
+        print(x["key"], "|", x["title"], "|", x.get("origin"), "|", "complete" if x.get("completed") else "airing",
+              "| score", x.get("score"), "|", x["totalF"], "|", x["seas"][0]["pick"]["t"][:70])
+
+
 def summaries(n):
     meta = load_meta()
     skip = {x["key"] for x in data() if x.get("summaryStatus") == "unavailable"
@@ -228,4 +246,4 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "todo"
     n = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else 60
     {"todo": lambda: todo(n), "members": members, "check": check, "ongoing": lambda: ongoing(n),
-     "dubs": lambda: dubs(n), "stamp": lambda: stamp(sys.argv[2:]), "summaries": lambda: summaries(n), "report": report}[cmd]()
+     "dubs": lambda: dubs(n), "stamp": lambda: stamp(sys.argv[2:]), "summaries": lambda: summaries(n), "anim": lambda: anim(n), "report": report}[cmd]()
