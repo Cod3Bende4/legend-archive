@@ -196,7 +196,9 @@ def dubs(n):
 
 def anim(n):
     """Shown, rated series with no animation grade yet, the ones most likely to reach the Focus lists first."""
-    todo = sorted([x for x in data() if x.get("rating") is not None and not x.get("anim") and x.get("audio") != "A3"],
+    keys = {x["key"] for x in data()}
+    todo = sorted([x for x in data() if x.get("rating") is not None and not x.get("anim") and x.get("audio") != "A3"
+                   and not (x["key"].endswith("-dub") and x["key"][:-4] in keys)],  # a dub takes its original's grade
                   key=lambda x: (not x.get("completed"), -(x.get("score") or 0)))
     print(len(todo), "rated series without an animation grade (complete ones first, best score first)")
     for x in todo[:n]:
@@ -235,12 +237,15 @@ def summaries(n):
 def report():
     meta = load_meta()
     d = data()
-    names = {1: "T1", 2: "T2", 3: "T3", 4: "T4", 5: "T5", 6: "T6", 7: "T7", 8: "Ongoing", 9: "Awaiting", 10: "Extras"}
     print(len(d), "series shown")
-    for o in ("JP", "CN", "KR"):
-        c = collections.Counter(x["tier"] for x in d if x.get("origin") == o)
-        if c:
-            print(o, " ".join(f"{names[t]} {c[t]}" for t in sorted(c)))
+    # the Focus pool: what can hold one of his 15 slots (complete, rated, original audio, not AI-made)
+    pool = lambda x: x.get("completed") and x.get("score") is not None and x.get("audio") != "A3" and x.get("q") != "ai"
+    for o, name in (("JP", "Anime"), ("CN", "Donghua"), ("KR", "Korean")):
+        xs = [x for x in d if x.get("origin") == o]
+        if xs:
+            p = [x for x in xs if pool(x)]
+            print(f"{name}: {len(xs)} shown | Focus pool {len(p)} ({sum(1 for x in p if x.get('anim'))} with an animation grade) | "
+                  f"airing {sum(1 for x in xs if not x.get('completed'))} | unrated {sum(1 for x in xs if x.get('rating') is None)}")
     src = collections.Counter()
     for m in meta.values():
         if m.get("rating") is not None and not m.get("hide") and not m.get("merge_into"):

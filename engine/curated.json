@@ -562,10 +562,13 @@
 "rating": 8.1,
 "rating_src": "MAL",
 "completed": false,
-"note": "S4 is a five-cour run started April 2026, still airing; S1/S2 uploaded as compilations",
+"note": "S2 full upload skipped: S1 EP1-48 already holds season 2; S4 is a five-cour run started April 2026, still airing; S1/S2 uploaded as compilations",
 "summary": "Satoru Mikami, a 37-year-old office worker, is stabbed to death and wakes up in a fantasy world as a slime with odd skills, including the power to devour things and copy their abilities. After befriending the sealed Storm Dragon Veldora, he takes the name Rimuru Tempest. He begins protecting the monsters around him, and his growing band of followers sets out to build a peaceful nation.",
-"checked": "2026-10-04",
-"checked_eps": 96
+"checked": "2026-10-05",
+"checked_eps": 96,
+"skip_seasons": [
+2
+]
 },
 "renegadeimmortal": {
 "name": "Renegade Immortal",
@@ -1620,10 +1623,12 @@
 "rating": 8.62,
 "rating_src": "MAL",
 "completed": true,
-"note": "S2 only; both seasons in this key are the same S2 (episodes plus a full compilation), so runtime is doubled",
+"note": "season 2 of madeinabyss; S2 only; both seasons in this key are the same S2 (episodes plus a full compilation), so runtime is doubled",
 "summary": "Riko, a young cave raider, and her robot companion Reg continue their descent into the Abyss, a vast pit full of relics and deadly curses, with the rabbit-like Nanachi at their side. Reaching the sixth layer, they enter a strange village built by earlier explorers and must learn its rules as Riko keeps pressing toward the bottom, where she believes her mother waits.",
-"checked": "2026-09-30",
-"checked_eps": 13
+"checked": "2026-10-05",
+"checked_eps": 13,
+"merge_into": "madeinabyss",
+"season_as": 2
 },
 "tobeherox": {
 "name": "To Be Hero X",
@@ -1734,11 +1739,13 @@
 "rating": 8.0,
 "rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "Anime-Planet 4.0 of 5 from 1889 votes (25 eps, 2024-2025)",
+"note": "sequel to the main series, filed as season 10; Anime-Planet 4.0 of 5 from 1889 votes (25 eps, 2024-2025)",
 "origin": "JP",
 "summary": "Natsu, Lucy, Happy, Gray, Erza and Wendy take on the 100 Years Quest, a job no Fairy Tail wizard has managed to finish in a century. It sends them to a distant continent where they must seal away five ancient dragon gods, facing strange towns, new allies and powerful enemies along the way.",
-"checked": "2026-09-30",
-"checked_eps": 25
+"checked": "2026-10-05",
+"checked_eps": 25,
+"merge_into": "fairytail",
+"season_as": 10
 },
 "ragnacrimson": {
 "name": "Ragna Crimson",
@@ -2056,10 +2063,11 @@
 "rating": 7.7,
 "rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "Season 1 slot is a Punch! complete-series compilation duplicating the S2 episodes; not merged into kumakumakumabear because that label would clash with original S1; Anime-Planet 3.857 of 5 from 2485 votes",
-"checked": "2026-10-02",
+"note": "season 2 of kumakumakumabear (its episodes are already labelled S2); Season 1 slot is a Punch! complete-series compilation duplicating the S2 episodes; not merged into kumakumakumabear because that label would clash with original S1; Anime-Planet 3.857 of 5 from 2485 votes",
+"checked": "2026-10-05",
 "checked_eps": 13,
-"summary": "Yuna, the girl stuck in a game world with an overpowered bear suit, has settled into life in the town of Crimonia. She keeps taking on odd requests, running her bakery and helping the children and nobles she has befriended, while new trips and troubles keep pulling her and her summoned bears out on the road."
+"summary": "Yuna, the girl stuck in a game world with an overpowered bear suit, has settled into life in the town of Crimonia. She keeps taking on odd requests, running her bakery and helping the children and nobles she has befriended, while new trips and troubles keep pulling her and her summoned bears out on the road.",
+"merge_into": "kumakumakumabear"
 },
 "acertainmagicalindex": {
 "name": "A Certain Magical Index",
@@ -3404,7 +3412,7 @@
 "rating": 8.6,
 "rating_src": "MAL",
 "completed": true,
-"note": "Season 1; Golden City is key madeinabyssthegoldencityofthescorchingsun (not merged, season label clash risk)",
+"note": "Season 1; Golden City merged in as season 2 (, season label clash risk)",
 "summary": "Riko is an orphan girl training as a Cave Raider in the town of Orth, which sits at the edge of the Abyss, an enormous pit full of relics and strange creatures. When she finds Reg, a robot boy with no memories, and receives a message that seems to come from her legendary mother deep below, the two set out to descend into the Abyss, knowing the climb back up grows deadlier with every layer.",
 "checked": "2026-09-30",
 "checked_eps": 13
@@ -3656,11 +3664,13 @@
 "rating": 7.6,
 "rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "separate series from other BanG Dream keys; Anime-Planet 3.823 of 5 from 285 votes",
+"note": "sequel to MyGO, filed as season 2; separate series from other BanG Dream keys; Anime-Planet 3.823 of 5 from 285 votes",
 "origin": "JP",
 "summary": "Sakiko Togawa gathers four girls into Ave Mujica, a gothic rock band whose members perform in masks and hide who they really are. As the group chases success on stage, the secrets and old wounds each member carries, especially from Sakiko's past bands, start to pull at the fragile arrangement holding them together.",
-"checked": "2026-09-30",
-"checked_eps": 13
+"checked": "2026-10-05",
+"checked_eps": 13,
+"merge_into": "bangdreamitsmygo",
+"season_as": 2
 },
 "marriagetoxin": {
 "name": "Marriagetoxin",
@@ -3879,7 +3889,7 @@
 },
 "bangdreamitsmygo": {
 "origin": "JP",
-"name": "BanG Dream! It's MyGO!!!!!",
+"name": "BanG Dream! It's MyGO!!!!! and Ave Mujica",
 "completed": true,
 "rating": 7.8,
 "rating_src": "Anime-Planet x2",
@@ -5327,7 +5337,7 @@
 "origin": "JP",
 "name": "Kuma Kuma Kuma Bear",
 "completed": true,
-"note": "Anime-Planet 3.9 of 5 from 6641 votes; season 2 is a separate key",
+"note": "Anime-Planet 3.9 of 5 from 6641 votes; season 2 merged in",
 "rating": 7.8,
 "rating_src": "Anime-Planet x2",
 "checked": "2026-10-02",

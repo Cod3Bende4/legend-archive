@@ -107,6 +107,14 @@ def fmt(s):
     return f"{h}h {m:02d}m" if h else f"{m}m"
 
 
+def same_show(eps_season, full_season):
+    """True when a full upload's title contains the name its season's episode titles use ("Kuma Kuma Kuma Bear - Punch!"
+    in "Kuma Kuma Kuma Bear - Punch! - Episode 01"), so MyGO and Ave Mujica, alike in length, stay apart."""
+    flat = lambda t: re.sub(r"[^a-z0-9]+", "", t.lower())
+    name = re.split(r"\s[-|:]\s*(?:episode|ep\.?)\s*\d|\s(?:episode|ep\.?)\s*\d", eps_season["pick"]["t"], flags=re.I)[0]
+    return len(flat(name)) >= 6 and flat(name) in flat(full_season["pick"]["t"])
+
+
 def official_series(genre, PAL, split_title, meta=None):
     """Group every official upload into series > seasons > episodes by parsing its title.
 
@@ -201,6 +209,8 @@ def official_series(genre, PAL, split_title, meta=None):
         seas, total, n_eps = [], 0, 0
         start_locked, locked_n, holes, last_holes = False, 0, 0, 0
         for sn in sorted(ser["seasons"]):
+            if sn in meta.get(k, {}).get("skip_seasons", []):  # a season label whose episodes another season already has
+                continue
             items = ser["seasons"][sn]
             covered, chosen = set(), []
             for it in sorted([x for x in items if not x["full"] and x["a"] == x["b"]], key=lambda x: -x["d"]):
@@ -244,7 +254,16 @@ def official_series(genre, PAL, split_title, meta=None):
             seas.append(dict(label=f"Season {sn}", short=f"S{sn}",
                              pick=dict(id=first["id"], ch=first["ch"], dur=fmt(dur), t=first["t"][:160]),
                              alts=[], gaps=len(gaps),
-                             eps=[dict(n=lab(x), id=x["id"], dur=fmt(x["d"]), ch=x["ch"]) for x in chosen]))
+                             eps=[dict(n=lab(x), id=x["id"], dur=fmt(x["d"]), ch=x["ch"]) for x in chosen], d=dur, one=chosen[0]["full"]))
+        # a "Complete Series" upload often lands under its own season label: when one full upload runs within 1.5% of
+        # another season and its title names what that season's episodes are called, it is that season again
+        for s_ in [s_ for s_ in seas if s_["one"] and len(s_["eps"]) == 1]:
+            if any(o is not s_ and not o["one"] and abs(o["d"] - s_["d"]) <= 0.015 * o["d"] and same_show(o, s_) for o in seas):
+                seas.remove(s_)
+                total -= s_["d"]
+                n_eps -= 1
+        for s_ in seas:
+            s_.pop("d"); s_.pop("one")
         if not seas or total < 1800:
             continue
         import datetime
@@ -351,14 +370,15 @@ def apply(series, cur, Q):
         if rating is not None:
             bits.append(f"{x['ratingSrc'] or 'Rating'} {rating}")
         bits.append({"A1": "English audio, original sound", "A2": "Original audio, English subs", "A3": "English dub"}[x["audio"]])
-        if m.get("anim"):
-            bits.append(f"Animation {m['anim']}/5")
+        anim = m.get("anim") or (meta.get(x["key"][:-4], {}).get("anim") if x["key"].endswith("-dub") else None)
+        if anim:
+            bits.append(f"Animation {anim}/5")
         if x.get("episodes"):
             bits.append(f"{x['episodes']} episodes")
         if x["audio"] != "A3":
             bits.append("Completed" if x["completed"] else "Ongoing")
         x["facts"] = " · ".join(bits)
-        x["anim"] = m.get("anim")
+        x["anim"] = m.get("anim") or (meta.get(x["key"][:-4], {}).get("anim") if x["key"].endswith("-dub") else None)  # a dub looks like its original
         x["score"] = score(x)
         shown.append(x)
     shown.sort(key=lambda x: (x["tier"], x.get("q") == "ai", -(x.get("rating") or 0), -x["total"]))
