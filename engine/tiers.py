@@ -211,7 +211,8 @@ def official_series(genre, PAL, split_title, meta=None):
         for sn in sorted(ser["seasons"]):
             if sn in meta.get(k, {}).get("skip_seasons", []):  # a season label whose episodes another season already has
                 continue
-            items = ser["seasons"][sn]
+            first_ep = meta.get(k, {}).get("from_ep", 1)  # episodes before it are watched in another key
+            items = [x for x in ser["seasons"][sn] if x["full"] or x["a"] >= first_ep]
             covered, chosen = set(), []
             for it in sorted([x for x in items if not x["full"] and x["a"] == x["b"]], key=lambda x: -x["d"]):
                 if it["a"] not in covered:
@@ -247,7 +248,7 @@ def official_series(genre, PAL, split_title, meta=None):
                 locked_n += len(set(gaps) | lost)
                 last_holes = len(gaps) + sum(1 for e in lost if e < max(covered))  # older episodes, not the newest
                 holes += last_holes
-                if sn == min(ser["seasons"]) and (min(covered) > 1 or any(e <= 3 for e in lost)):
+                if sn == min(ser["seasons"]) and (min(covered) > first_ep or any(first_ep <= e < first_ep + 3 for e in lost)):
                     start_locked = True
             first = chosen[0]
             lab = lambda x: "Full" if x["full"] else (f"EP{x['a']}" if x["a"] == x["b"] else f"EP{x['a']}-{x['b']}")

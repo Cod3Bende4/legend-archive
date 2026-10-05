@@ -413,15 +413,22 @@
 "checked_eps": 309
 },
 "amortalsjourney": {
-"name": "A Mortal's Journey",
+"name": "A Mortal's Journey (from EP77)",
 "rating": 8.1,
 "rating_src": "MAL",
 "completed": false,
-"note": "mostly multi-episode collections; members-only gaps; still ongoing (Sea of Stars arc)",
+"note": "continues the Remastered entry (amortalsjourneytoimmortalityremake, EP1-76): starts at EP77; S2-S5 are compilations of EP22-176 already in S1, skipped; mostly multi-episode collections; members-only gaps; still ongoing (Sea of Stars arc)",
 "members_ok": true,
 "summary": "Han Li is a poor village boy with no special talent who is taken in as a helper by a small martial sect. When he stumbles onto a mysterious bottle that speeds the growth of medicinal herbs, he quietly begins cultivating immortal arts, relying on caution, patience and cunning to survive a ruthless world of cultivators on his long road toward immortality.",
-"checked": "2026-10-04",
-"checked_eps": 348
+"checked": "2026-10-05",
+"checked_eps": 348,
+"from_ep": 77,
+"skip_seasons": [
+2,
+3,
+4,
+5
+]
 },
 "perfectworld": {
 "name": "Perfect World",
@@ -2328,13 +2335,13 @@
 "checked_eps": 26
 },
 "amortalsjourneytoimmortalityremake": {
-"name": "A Record of a Mortal's Journey to Immortality (Remastered)",
+"name": "A Mortal's Journey: Remastered (EP1-76)",
 "rating": 8.0,
 "rating_src": "Anime-Planet x2",
 "completed": false,
-"note": "members-only gaps; not merged into amortalsjourney (episode numbering may clash); rating of main series; Anime-Planet 4.0 of 5 from 340 votes (Fanren Xiu Xian Chuan page)",
+"note": "watch first: EP1-76 remastered, then amortalsjourney from EP77; members-only gaps; rating of main series; Anime-Planet 4.0 of 5 from 340 votes (Fanren Xiu Xian Chuan page)",
 "summary": "Han Li is a poor village boy with no special talent who is taken in as a helper by a small martial sect. When he stumbles onto a mysterious bottle that speeds the growth of medicinal herbs, he quietly begins cultivating immortal arts, relying on caution, patience and cunning to survive a ruthless world of cultivators on his long road toward immortality.",
-"checked": "2026-10-04",
+"checked": "2026-10-05",
 "checked_eps": 27
 },
 "rebornasacat": {
