@@ -191,6 +191,11 @@ footer .chip{background:none;padding:0;color:var(--muted)}
 .pick .ttl{font-size:17px;font-weight:700;line-height:1.4;overflow-wrap:anywhere;margin-top:6px}
 .pick .go{display:flex;gap:10px;flex-wrap:wrap}
 .player{position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000}
+.pick.playing{grid-template-columns:1fr}
+.steps{display:flex;flex-wrap:wrap;gap:8px}
+.btn[disabled]{opacity:.4;cursor:default}
+.hint.muted{margin:0;color:var(--muted);font-size:13px}
+button.ep{font:600 13px var(--mono);cursor:pointer;text-align:left}
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .alts{display:grid;gap:8px}
 .alts h3{margin:0;font:600 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
@@ -269,7 +274,7 @@ const ORIGINS = [
   {id:'jp', code:'JP', name:'Anime', long:'Japanese anime', sub:'Japanese anime from official channels.'},
   {id:'kr', code:'KR', name:'Korean', long:'Korean webtoon & manhwa', sub:'Animation of Korean webtoons and manhwa.'}];
 const PAGE = 48, FOCUS = 15, STORE = 'legend-archive:progress';
-const S = {q:'', mode:'focus', xo:'all', sel:null, season:0, fq:'all', sort:'quality', shown:PAGE, open:{}, place:false, hideSeen:true};
+const S = {q:'', mode:'focus', xo:'all', sel:null, season:0, u:0, here:false, fq:'all', sort:'quality', shown:PAGE, open:{}, place:false, hideSeen:true};
 let LIVE = false; // true once YouTube thumbnails can load (page opened outside Claude)
 const $ = (id) => document.getElementById(id);
 const esc = (t) => String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -519,19 +524,36 @@ function renderPlace(x, i) {
   const sub = st.at < 0 ? `${st.n} part${st.n === 1 ? '' : 's'} · ${x.totalF}` : `${st.pct}% watched · ${hm(st.left)} left`;
   return `<div class="place"><div><b>${esc(head)}</b><span>${sub}</span></div>
     <div class="go">${gone(k) ? '<button class="btn gold sm" type="button" data-restore>Bring it back</button>' : `
-      ${st.next ? `<a class="btn gold sm" href="${yt(st.next.id)}" target="_blank" rel="noopener" data-u="${st.nextI}">${PLAY}${st.at < 0 ? 'Start' : 'Play'} ${esc(st.next.n)}</a>` : ''}
+      ${st.next ? `<button class="btn gold sm" type="button" data-pick="${st.nextI}">${PLAY}${st.at < 0 ? 'Start' : 'Play'} ${esc(st.next.n)}</button>` : ''}
       <button class="btn ghost sm" type="button" data-place aria-pressed="${S.place}">${S.place ? 'Cancel' : 'I’m further along'}</button>
       <button class="btn ghost sm" type="button" data-finish>Mark finished</button>
       <button class="btn ghost sm" type="button" data-drop>Not for me</button>
       <button class="btn ghost sm" type="button" data-save aria-pressed="${!!P.saved[k]}">${P.saved[k] ? '✓ On My List' : '+ My List'}</button>`}</div>
     ${S.place ? '<p class="hint">Tap the last episode you watched below (switch seasons with the tabs).</p>' : ''}</div>`;
 }
+// the selected episode: play it here or on YouTube; while it plays here, step to the previous or next one
+function renderPick(x, i) {
+  const us = units(i), u = Math.max(0, Math.min(S.u, us.length - 1)), cur = us[u], prev = us[u - 1], next = us[u + 1];
+  const ep = x.seas[cur.si].eps.find(e => e.id === cur.id) || x.seas[cur.si].pick;
+  const yt1 = (cls, text) => `<a class="btn ${cls}" href="${yt(cur.id)}" target="_blank" rel="noopener" data-u="${u}">${text}</a>`;
+  const info = `<div style="min-width:0"><div class="lab"><span>${S.here ? 'Playing' : 'Selected'}</span>${dot(ep.ch)}<span class="who">${esc(chName(ep.ch))}</span><span>${hm(cur.dur)}</span></div>
+      <div class="ttl">${esc(cur.n)}${ep === x.seas[cur.si].pick ? ' · ' + esc(ep.t) : ''}</div></div>`;  // one-upload seasons show its title
+  if (!S.here) return `<div class="pick" id="pick">${info}<div class="go">
+      <button class="btn gold" type="button" data-here>${PLAY}Play here</button>${yt1('ghost', 'Play on YouTube')}</div></div>`;
+  return `<div class="pick playing" id="pick">${info}
+    <div class="player"><iframe src="https://www.youtube.com/embed/${cur.id}?autoplay=1&rel=0&playsinline=1" title="${esc(cur.n)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+    <div class="steps">
+      <button class="btn ghost sm" type="button" data-step="-1"${prev ? '' : ' disabled'}>◀ ${prev ? 'Previous: ' + esc(prev.n) : 'Previous'}</button>
+      <button class="btn gold sm" type="button" data-step="1"${next ? '' : ' disabled'}>${next ? 'Next: ' + esc(next.n) : 'Last episode'} ▶</button>
+      ${yt1('ghost sm', 'Open on YouTube')}
+    </div>
+    <p class="hint muted">Black screen or "unavailable"? That channel blocks playing outside YouTube: use Open on YouTube.</p></div>`;
+}
 function renderSheet() {
   const v = $('veil');
   if (S.sel === null) { v.hidden = true; v.innerHTML = ''; document.body.style.overflow = ''; return; }
   const x = DATA[S.sel], si = Math.min(S.season, x.seas.length - 1), s = x.seas[si];
   const one = x.seas.length === 1;
-  // every link opens YouTube itself: many channels block playback inside other sites (a black screen)
   const base = units(S.sel).findIndex(u => u.si === si), at = status({x, i:S.sel}).at;
   v.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(x.title)}">
     <button class="round close" type="button" data-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -552,14 +574,9 @@ function renderSheet() {
       </div>
     </div>
     <div class="sheet-body">
-      <div class="tabs" role="tablist" aria-label="Seasons">${x.seas.map((t,j) => `<button type="button" role="tab" data-season="${j}" aria-selected="${j===si}">${one ? 'Full feature' : esc(t.label)}${t.pick.new || t.alts.some(a => a.new) ? ' · new' : ''}</button>`).join('')}</div>
-      <div class="pick">
-        <div style="min-width:0"><div class="lab"><span>Watch this</span>${dot(s.pick.ch)}<span class="who">${esc(chName(s.pick.ch))}</span><span>${s.pick.dur}</span></div><div class="ttl">${esc(s.pick.t)}</div></div>
-        <div class="go">
-          <a class="btn gold" href="${yt(s.pick.id)}" target="_blank" rel="noopener" data-u="${base}">${PLAY}Play ${one ? 'on YouTube' : esc(s.short) + ' from the start'}</a>
-        </div>
-      </div>
-      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map((e, j) => `<a class="ep ${base + j <= at ? 'seen' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" title="Open ${esc(e.n)} on YouTube" data-u="${base + j}">${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
+      <div class="tabs" role="tablist" aria-label="Seasons">${x.seas.map((t,j) => `<button type="button" role="tab" data-season="${j}" aria-selected="${j===si}">${one ? (t.eps && t.eps.length > 1 ? 'Episodes' : 'Full feature') : esc(t.label)}${t.pick.new || t.alts.some(a => a.new) ? ' · new' : ''}</button>`).join('')}</div>
+      ${renderPick(x, S.sel)}
+      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes · tap one to choose how to play it</h3><div class="eps">${s.eps.map((e, j) => `<button type="button" class="ep ${base + j === S.u ? 'on' : ''} ${base + j <= at ? 'seen' : ''}" data-pick="${base + j}">${e.n}<em>${e.dur}</em></button>`).join('')}</div></div>` : ''}
       ${s.alts.length ? `<div class="alts"><h3>Also uploaded as</h3>${s.alts.map(a => `<a class="alt" href="${yt(a.id)}" target="_blank" rel="noopener"><span class="c">${dot(a.ch)}${esc(chName(a.ch))}</span><span>${esc(a.t)}</span><span class="d">${a.dur}</span></a>`).join('')}</div>` : ''}
     </div></div>`;
   v.hidden = false; document.body.style.overflow = 'hidden';
@@ -586,9 +603,9 @@ function route() {
 }
 function openSheet(i) {
   const st = status(ALL[i]);
-  S.sel = i; S.season = st.next ? st.next.si : 0; S.place = false; renderSheet();
+  S.sel = i; S.u = st.next ? st.nextI : 0; S.season = units(i)[S.u].si; S.here = false; S.place = false; renderSheet();
 }
-function closeSheet() { S.sel = null; S.place = false; renderSheet(); }
+function closeSheet() { S.sel = null; S.here = false; S.place = false; renderSheet(); }
 function cloudToggle() {
   if (CLOUD.token) {
     if (!confirm('Turn off cloud save in this browser? Your list stays here and in the repo.')) return;
@@ -614,14 +631,32 @@ document.addEventListener('click', (e) => {
     reach(S.sel, +u.dataset.u);
     setTimeout(() => { renderSheet(); renderMain(); }); // after the link has opened
   }
-  const t = e.target.closest('[data-open],[data-fq],[data-xo],[data-close],[data-season],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup],[data-save],[data-cloud]');
+  const t = e.target.closest('[data-open],[data-fq],[data-xo],[data-close],[data-season],[data-pick],[data-here],[data-step],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup],[data-save],[data-cloud]');
   if (!t) { if (e.target === $('veil')) closeSheet(); return; }
   const k = S.sel !== null ? DATA[S.sel].key : null;
   if (t.dataset.open !== undefined) openSheet(+t.dataset.open);
   else if (t.dataset.fq) location.hash = '#/' + (t.dataset.fq === 'all' ? '' : 'focus/' + t.dataset.fq);
   else if (t.dataset.xo) location.hash = '#/explore' + (t.dataset.xo === 'all' ? '' : '/' + t.dataset.xo);
   else if (t.dataset.close !== undefined) closeSheet();
-  else if (t.dataset.season) { S.season = +t.dataset.season; renderSheet(); }
+  else if (t.dataset.season) {
+    S.season = +t.dataset.season;
+    if (units(S.sel)[S.u].si !== S.season) { S.u = units(S.sel).findIndex(u => u.si === S.season); S.here = false; }
+    renderSheet();
+  }
+  else if (t.dataset.pick !== undefined) {
+    const u = +t.dataset.pick;
+    if (S.place) { reach(S.sel, u, true); S.place = false; renderSheet(); renderMain(); return; }
+    S.u = u; S.season = units(S.sel)[u].si;
+    if (S.here) reach(S.sel, u);  // already watching here: switch straight to it
+    renderSheet(); if (S.here) renderMain();
+    const pk = $('pick'); if (pk) pk.scrollIntoView({block: 'nearest', behavior: 'smooth'});
+  }
+  else if (t.dataset.here !== undefined) { S.here = true; reach(S.sel, S.u); renderSheet(); renderMain(); }
+  else if (t.dataset.step) {
+    const us = units(S.sel), u = S.u + +t.dataset.step;
+    if (u < 0 || u >= us.length) return;
+    S.u = u; S.season = us[u].si; reach(S.sel, u); renderSheet(); renderMain();
+  }
   else if (t.dataset.sort) { S.sort = t.dataset.sort; S.shown = PAGE; renderMain(); }
   else if (t.dataset.seen !== undefined) { S.hideSeen = !S.hideSeen; renderMain(); }
   else if (t.dataset.more !== undefined) { S.shown += PAGE; renderMain(); }
