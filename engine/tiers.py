@@ -359,6 +359,8 @@ def apply(series, cur, Q):
         x["summaryStatus"] = "" if x["summary"] else ("unavailable" if m.get("summary_status") == "unavailable" else "pending")
         x["completed"] = m.get("completed", x["audio"] == "A3")
         lk = x.pop("lock", None) or {}
+        if x["audio"] == "A3" and any("members-only" in (Q.get(i, {}).get("error") or "") for i in ids):
+            lk = dict(gated=True, start=True, missing=1, holes=0)  # a dub-channel upload behind a membership
         members = bool(m.get("members")) or (not m.get("members_ok") and lk.get("gated", False)
                                              and (lk["start"] or lk["holes"] > 0 or (x["completed"] and lk["missing"] > 0)))
         if m.get("hide") or slop or members or x["total"] < 3600 or (rating is not None and rating < 7.5):

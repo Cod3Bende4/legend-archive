@@ -122,6 +122,15 @@ def parse(title, dur):
                 name = EP.split(parts[0])[0]
             season_cn = SEASON.search(mm.group(1))
     if not name:
+        # 【永生第三季】EP33 / 🔥hook text【元龙S2】 EP01: the bracket right before the episode number names the show,
+        # whatever hook sentence comes first
+        mb = re.search(r"【([^】]{2,40})】\s*(?:EP\s*\d|第\s*\d)", title, re.I)
+        if mb and not BRACKET_JUNK.fullmatch(mb.group(1).strip()):
+            name = mb.group(1)
+            ms2 = re.fullmatch(r"(.+?)\s*S(\d{1,2})", name.strip())
+            if ms2 and not SEASON.search(title.replace(mb.group(0), "")):
+                name, bracket_season = ms2.group(1), int(ms2.group(2))
+    if not name:
         for br in re.findall(r"【([^】]+)】", title):
             if re.search(r"[A-Za-z]{3,}", br) and not BRACKET_JUNK.fullmatch(br.strip()) and not re.search(r"^(eng|multi)\s*sub$|members|trailer|preview|season ended|limited free|get app", br, re.I):
                 name = br
@@ -140,8 +149,8 @@ def parse(title, dur):
             idx = segs.index(seg) if seg in segs else 0
             pre = segs[idx - 1] if idx > 0 else pre
         name = pre
-    season = None
-    ms = SEASON.search(title)
+    season = locals().get("bracket_season")
+    ms = None if season else SEASON.search(title)
     if ms:
         g = next(x for x in ms.groups() if x)
         season = cn_int(g)

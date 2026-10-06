@@ -3666,12 +3666,11 @@
 "rating": 8.0,
 "rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "members-only from EP2 (he could not play it); look for a free copy on another channel; Diyi Xulie S1, 16 eps (EP16 END); Anime-Planet entry: Di Yi Xulie; Di Yi Xulie 2 announced; Anime-Planet 4.007 of 5 from 117 votes",
+"note": "free on Lv.99 Animation Club (merged), Bilibili copies are members-only from EP2; Diyi Xulie S1, 16 eps (EP16 END); Anime-Planet entry: Di Yi Xulie; Di Yi Xulie 2 announced; Anime-Planet 4.007 of 5 from 117 votes",
 "checked": "2026-10-05",
 "checked_eps": 16,
 "summary": "After a catastrophe wiped out much of civilization, survivors live in fortified strongholds or scrape by in lawless settlements on the fringes, where only the strong last. Ren Xiaosu grew up fending for himself in this harsh world. When an unexpected incident leaves him with supernatural powers, he must decide how to use them as he fights to survive and carve out a place in a society full of distrust.",
-"anim_tried": "2026-10-05",
-"members": true
+"anim_tried": "2026-10-05"
 },
 "fairytail-dub": {
 "name": "Fairy Tail (English Dub)",
@@ -4177,7 +4176,7 @@
 "name": "Carp Reborn",
 "completed": false,
 "note": "Season 3 of Carp Reborn, mislabeled key; no rating found",
-"merge_into": "carpreborn",
+"merge_into": "元龙",
 "checked": "2026-09-30"
 },
 "iamtheblade": {
@@ -4575,9 +4574,10 @@
 "rating": 7.7,
 "rating_src": "Anime-Planet x2",
 "summary": "Wang Sheng, a modern special forces soldier, wakes up in a world of spirits bound to one of the weakest possible: a humble carp. Using his soldier's wits and modern knowledge, he looks for ways to make the lowly spirit stronger while powerful factions clash around him, aiming to leap the dragon gate and rise from nothing.",
-"checked": "2026-09-30",
+"checked": "2026-10-06",
 "checked_eps": 31,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"merge_into": "元龙"
 },
 "demonsascension": {
 "origin": "CN",
@@ -6885,8 +6885,9 @@
 "rating": 7.1,
 "rating_src": "Anime-Planet x2",
 "summary": "After a rift between worlds lets cultivators pour into modern Earth, ordinary young man Wu Ran nearly throws his life away to save a goddess. The act awakens a strange power based on rolling dice, and he has to learn how to use it to survive and rise in a world that no longer plays by the old rules.",
-"checked": "2026-09-30",
-"checked_eps": 16
+"checked": "2026-10-06",
+"checked_eps": 16,
+"merge_into": "逆天战纪"
 },
 "仙王的日常生活": {
 "origin": "CN",
@@ -8833,11 +8834,12 @@
 "name": "Wings of the World",
 "completed": true,
 "note": "Wanguo Zhi (万国志); Anime-Planet 3.445 of 5 from 36 votes; LX Animation Studio 3D, 16 eps, 2019 to 2020, complete; all 16 eps uploaded",
-"checked": "2026-10-05",
+"checked": "2026-10-06",
 "checked_eps": 16,
 "rating": 6.9,
 "rating_src": "Anime-Planet x2",
-"summary": "In 1663 Lu Changfeng, a commander of the Ming navy, survives a supernatural attack at sea and is guided by a mysterious girl from the ocean to Luzon. There he joins the Kingdom of Wan, a faction led by Song Yingxing that uses advanced technology to resist Spanish colonial rule, and finds himself up against the brilliant inventor Vesalius."
+"summary": "In 1663 Lu Changfeng, a commander of the Ming navy, survives a supernatural attack at sea and is guided by a mysterious girl from the ocean to Luzon. There he joins the Kingdom of Wan, a faction led by Song Yingxing that uses advanced technology to resist Spanish colonial rule, and finds himself up against the brilliant inventor Vesalius.",
+"merge_into": "万国志"
 },
 "真人动画魔幻现实主义迷你剧联盒圀合集篇第14集": {
 "origin": "CN",
@@ -10831,6 +10833,171 @@
 "note": "dub pass 2026-10-05: reviewed, kept; CN manhua dub on Legend-Anime; full upload title 0 Mana, 3 SSS Talents: Now I Fire 10,000 Spells a Second!; source not identified; AI check: not available; summary from upload title",
 "summary": "In a world where magic decides everything, the lead is judged worthless because he has no mana at all. What others miss is that he holds three SSS-rank talents, which together let him cast spells at an impossible rate. He sets out to prove those who looked down on him wrong.",
 "checked": "2026-10-05"
+},
+"君有云": {
+"merge_into": "wordofhonor",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of wordofhonor"
+},
+"神道帝尊": {
+"merge_into": "divinelordoftheheavens",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of divinelordoftheheavens"
+},
+"火凤燎原": {
+"merge_into": "ravagesoftime",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of ravagesoftime"
+},
+"山海际会": {
+"merge_into": "msorganization",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of msorganization"
+},
+"幻宠师": {
+"merge_into": "charmofsoulpets",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of charmofsoulpets"
+},
+"第一序列": {
+"merge_into": "firstorder",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of firstorder"
+},
+"元龙": {
+"name": "Carp Reborn",
+"origin": "CN",
+"rating": 7.7,
+"rating_src": "Anime-Planet x2",
+"completed": false,
+"summary": "Wang Sheng, a modern special forces soldier, wakes up in a world of spirits bound to one of the weakest possible: a humble carp. Using his soldier's wits and modern knowledge, he looks for ways to make the lowly spirit stronger while powerful factions clash around him, aiming to leap the dragon gate and rise from nothing.",
+"note": "Lv.99 Animation Club copy; research from carpreborn; Anime-Planet 3.87 of 5 from 307 votes (season 1 entry, Yuan Long); only S2 EP2-16 uploaded (EP1 missing); members 2026-10-05: S2 EP1 missing",
+"checked": "2026-10-06"
+},
+"银河之心": {
+"merge_into": "sidestorytransformation",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of sidestorytransformation"
+},
+"龙蛇演义": {
+"merge_into": "dragonsdisciple",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of dragonsdisciple"
+},
+"大道朝天": {
+"merge_into": "onewayoranother",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of onewayoranother"
+},
+"逆天战纪": {
+"name": "The Rise of the Weak",
+"origin": "CN",
+"rating": 7.1,
+"rating_src": "Anime-Planet x2",
+"completed": false,
+"summary": "After a rift between worlds lets cultivators pour into modern Earth, ordinary young man Wu Ran nearly throws his life away to save a goddess. The act awakens a strange power based on rolling dice, and he has to learn how to use it to survive and rise in a world that no longer plays by the old rules.",
+"note": "Lv.99 Animation Club copy; research from riseoftheweak; Anime-Planet 3.532 of 5 from 18 votes (Ni Tian Zhan Ji, 20 eps 2023); uploads start at EP5",
+"checked": "2026-10-06"
+},
+"仙帝归来": {
+"merge_into": "backasimmortallord",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of backasimmortallord"
+},
+"炼气练了3000年": {
+"merge_into": "qirefiningfor3000years",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of qirefiningfor3000years"
+},
+"一世之尊": {
+"merge_into": "ancientlords",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of ancientlords"
+},
+"三寸人间": {
+"merge_into": "aworldworthprotecting",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of aworldworthprotecting"
+},
+"万国志": {
+"name": "Wings of the World",
+"origin": "CN",
+"rating": 6.9,
+"rating_src": "Anime-Planet x2",
+"completed": true,
+"summary": "In 1663 Lu Changfeng, a commander of the Ming navy, survives a supernatural attack at sea and is guided by a mysterious girl from the ocean to Luzon. There he joins the Kingdom of Wan, a faction led by Song Yingxing that uses advanced technology to resist Spanish colonial rule, and finds himself up against the brilliant inventor Vesalius.",
+"note": "Lv.99 Animation Club copy; research from wingsoftheworld; Wanguo Zhi (万国志); Anime-Planet 3.445 of 5 from 36 votes; LX Animation Studio 3D, 16 eps, 2019 to 2020, complete; all 16 eps uploaded",
+"checked": "2026-10-06"
+},
+"大宇宙时代": {
+"merge_into": "ageofcosmosexploration",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of ageofcosmosexploration"
+},
+"十方武圣": {
+"merge_into": "invincible",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of invincible"
+},
+"天宝伏妖录": {
+"merge_into": "legendofexorcism",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of legendofexorcism"
+},
+"你真是个天才": {
+"merge_into": "youreagenius",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of youreagenius"
+},
+"傲世九重天": {
+"merge_into": "transcendingthenineheavens",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of transcendingthenineheavens"
+},
+"虎鹤妖师录": {
+"merge_into": "tigercrane",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of tigercrane"
+},
+"反派初始化": {
+"merge_into": "villaininitialization",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of villaininitialization"
+},
+"凡人修仙传": {
+"merge_into": "amortalsjourney",
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club free copy of amortalsjourney"
+},
+"师兄啊师兄": {
+"merge_into": "myseniorbrotheristoostrong",
+"checked": "2026-10-06",
+"note": "Chinese-title uploads of myseniorbrotheristoostrong"
+},
+"仙武传": {
+"merge_into": "legendofxianwu",
+"checked": "2026-10-06",
+"note": "Chinese-title uploads of legendofxianwu"
+},
+"永生": {
+"hide": true,
+"note": "Lv.99 copy of Immortality S1-S3 only (S4 locked everywhere); numbering differs from immortality, not merged",
+"checked": "2026-10-06"
+},
+"穿越战国就送系统现代战神vs战国诸侯这波智斗燃爆了战千年": {
+"hide": true,
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club full-season compilation; the same episodes are uploaded one by one"
+},
+"系列高潮这一切都是梦究竟是谁在幕后操盘一口气看完元龙s": {
+"hide": true,
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club full-season compilation; the same episodes are uploaded one by one"
+},
+"野路子修仙穿越化身修仙界第一兵王一口气爽看s1": {
+"hide": true,
+"checked": "2026-10-06",
+"note": "Lv.99 Animation Club full-season compilation; the same episodes are uploaded one by one"
 }
 }
 }
