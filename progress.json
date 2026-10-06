@@ -7,6 +7,10 @@
   "immortality": {
    "i": 0,
    "t": 1791135327181
+  },
+  "firstorder": {
+   "i": 1,
+   "t": 1791283485290
   }
  },
  "done": {},
@@ -23,30 +27,30 @@
    "jojosbizarreadventure",
    "assassinationclassroom",
    "tobeherox",
-   "madeinabyssthegoldencityofthescorchingsun",
    "lordofmysteriestheclown",
    "onepunchman-dub",
    "dandadan",
    "ouranhighschoolhostclub",
-   "immortality"
+   "madeinabyss",
+   "hyouka"
   ],
   "cn": [
    "heavenofficialsblessing",
    "tobeherox",
    "lordofmysteriestheclown",
-   "modlive",
-   "2thedemonhunter",
-   "howdareyou",
    "thousandautumns",
    "wugenji",
    "legendofexorcism",
-   "abovemyriads",
    "scumbagsystem",
    "wordofhonor",
-   "immortality",
    "firstorder",
-   "othersideofdeepspace"
+   "othersideofdeepspace",
+   "howdareyou-dub",
+   "girldownstairs",
+   "yashe",
+   "slaythegods",
+   "losingmoneytobeatycoon"
   ]
  },
- "updated": 0
+ "updated": 1791283485290
 }
