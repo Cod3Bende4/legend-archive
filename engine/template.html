@@ -269,7 +269,7 @@ const ORIGINS = [
   {id:'jp', code:'JP', name:'Anime', long:'Japanese anime', sub:'Japanese anime from official channels.'},
   {id:'kr', code:'KR', name:'Korean', long:'Korean webtoon & manhwa', sub:'Animation of Korean webtoons and manhwa.'}];
 const PAGE = 48, FOCUS = 15, STORE = 'legend-archive:progress';
-const S = {q:'', mode:'focus', xo:'all', sel:null, season:0, playing:false, playId:null, fq:'all', sort:'quality', shown:PAGE, open:{}, place:false, hideSeen:true};
+const S = {q:'', mode:'focus', xo:'all', sel:null, season:0, fq:'all', sort:'quality', shown:PAGE, open:{}, place:false, hideSeen:true};
 let LIVE = false; // true once YouTube thumbnails can load (page opened outside Claude)
 const $ = (id) => document.getElementById(id);
 const esc = (t) => String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -530,9 +530,9 @@ function renderSheet() {
   const v = $('veil');
   if (S.sel === null) { v.hidden = true; v.innerHTML = ''; document.body.style.overflow = ''; return; }
   const x = DATA[S.sel], si = Math.min(S.season, x.seas.length - 1), s = x.seas[si];
-  const one = x.seas.length === 1, label = one ? 'feature' : s.short;
-  const pid = S.playId || s.pick.id, base = units(S.sel).findIndex(u => u.si === si), at = status({x, i:S.sel}).at;
-  const player = S.playing && LIVE ? `<div class="player"><iframe src="https://www.youtube.com/embed/${pid}?autoplay=1&rel=0" title="${esc(s.pick.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>` : '';
+  const one = x.seas.length === 1;
+  // every link opens YouTube itself: many channels block playback inside other sites (a black screen)
+  const base = units(S.sel).findIndex(u => u.si === si), at = status({x, i:S.sel}).at;
   v.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(x.title)}">
     <button class="round close" type="button" data-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     <div class="sheet-top" style="background:radial-gradient(80% 140% at 0% 0%,${x.c1}40,transparent 65%)">
@@ -553,15 +553,13 @@ function renderSheet() {
     </div>
     <div class="sheet-body">
       <div class="tabs" role="tablist" aria-label="Seasons">${x.seas.map((t,j) => `<button type="button" role="tab" data-season="${j}" aria-selected="${j===si}">${one ? 'Full feature' : esc(t.label)}${t.pick.new || t.alts.some(a => a.new) ? ' · new' : ''}</button>`).join('')}</div>
-      ${player}
       <div class="pick">
         <div style="min-width:0"><div class="lab"><span>Watch this</span>${dot(s.pick.ch)}<span class="who">${esc(chName(s.pick.ch))}</span><span>${s.pick.dur}</span></div><div class="ttl">${esc(s.pick.t)}</div></div>
         <div class="go">
-          ${LIVE && !S.playing ? `<button class="btn gold" type="button" data-play data-u="${base}">${PLAY}Play ${label} here</button>` : ''}
-          <a class="btn ${LIVE && !S.playing ? 'ghost' : 'gold'}" href="${yt(s.pick.id)}" target="_blank" rel="noopener" data-u="${base}">${LIVE ? 'Open on YouTube' : PLAY + 'Play ' + label}</a>
+          <a class="btn gold" href="${yt(s.pick.id)}" target="_blank" rel="noopener" data-u="${base}">${PLAY}Play ${one ? 'on YouTube' : esc(s.short) + ' from the start'}</a>
         </div>
       </div>
-      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map((e, j) => `<a class="ep ${S.playing && pid === e.id ? 'on' : ''} ${base + j <= at ? 'seen' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" data-ep="${e.id}" data-u="${base + j}">${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
+      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes</h3><div class="eps">${s.eps.map((e, j) => `<a class="ep ${base + j <= at ? 'seen' : ''}" href="${yt(e.id)}" target="_blank" rel="noopener" title="Open ${esc(e.n)} on YouTube" data-u="${base + j}">${e.n}<em>${e.dur}</em></a>`).join('')}</div></div>` : ''}
       ${s.alts.length ? `<div class="alts"><h3>Also uploaded as</h3>${s.alts.map(a => `<a class="alt" href="${yt(a.id)}" target="_blank" rel="noopener"><span class="c">${dot(a.ch)}${esc(chName(a.ch))}</span><span>${esc(a.t)}</span><span class="d">${a.dur}</span></a>`).join('')}</div>` : ''}
     </div></div>`;
   v.hidden = false; document.body.style.overflow = 'hidden';
@@ -588,9 +586,9 @@ function route() {
 }
 function openSheet(i) {
   const st = status(ALL[i]);
-  S.sel = i; S.season = st.next ? st.next.si : 0; S.playing = false; S.playId = null; S.place = false; renderSheet();
+  S.sel = i; S.season = st.next ? st.next.si : 0; S.place = false; renderSheet();
 }
-function closeSheet() { S.sel = null; S.playing = false; S.place = false; renderSheet(); }
+function closeSheet() { S.sel = null; S.place = false; renderSheet(); }
 function cloudToggle() {
   if (CLOUD.token) {
     if (!confirm('Turn off cloud save in this browser? Your list stays here and in the repo.')) return;
@@ -616,17 +614,14 @@ document.addEventListener('click', (e) => {
     reach(S.sel, +u.dataset.u);
     setTimeout(() => { renderSheet(); renderMain(); }); // after the link has opened
   }
-  const ep = e.target.closest('[data-ep]');
-  if (ep && LIVE) { e.preventDefault(); S.playId = ep.dataset.ep; S.playing = true; renderSheet(); return; }
-  const t = e.target.closest('[data-open],[data-fq],[data-xo],[data-close],[data-season],[data-play],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup],[data-save],[data-cloud]');
+  const t = e.target.closest('[data-open],[data-fq],[data-xo],[data-close],[data-season],[data-sort],[data-more],[data-open-all],[data-seen],[data-place],[data-finish],[data-drop],[data-restore],[data-backup],[data-save],[data-cloud]');
   if (!t) { if (e.target === $('veil')) closeSheet(); return; }
   const k = S.sel !== null ? DATA[S.sel].key : null;
   if (t.dataset.open !== undefined) openSheet(+t.dataset.open);
   else if (t.dataset.fq) location.hash = '#/' + (t.dataset.fq === 'all' ? '' : 'focus/' + t.dataset.fq);
   else if (t.dataset.xo) location.hash = '#/explore' + (t.dataset.xo === 'all' ? '' : '/' + t.dataset.xo);
   else if (t.dataset.close !== undefined) closeSheet();
-  else if (t.dataset.season) { S.season = +t.dataset.season; S.playing = false; S.playId = null; renderSheet(); }
-  else if (t.dataset.play !== undefined) { S.playing = true; S.playId = null; renderSheet(); }
+  else if (t.dataset.season) { S.season = +t.dataset.season; renderSheet(); }
   else if (t.dataset.sort) { S.sort = t.dataset.sort; S.shown = PAGE; renderMain(); }
   else if (t.dataset.seen !== undefined) { S.hideSeen = !S.hideSeen; renderMain(); }
   else if (t.dataset.more !== undefined) { S.shown += PAGE; renderMain(); }
