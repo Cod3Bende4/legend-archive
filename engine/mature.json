@@ -1,0 +1,468 @@
+{
+"2purpleriver": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/m/mzc00200iawcmn2.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/album/7nv1zwiyjcyle63"
+}
+]
+},
+"apotheosis": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Youku",
+"url": "https://list.youku.com/show/id_bdfd61c13f714ae5affc"
+},
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28340485"
+}
+]
+},
+"attackontitan": {
+"checked": "2026-10-07",
+"mature": true,
+"watch": [
+{
+"site": "Adult Swim",
+"url": "https://www.adultswim.com/videos/attack-on-titan"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/xq12ps94l5"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/@attackontitan_officialchannel"
+}
+]
+},
+"awilleternal": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/w/ww18u675tfmhas6.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/play/ciw7o8319w2cx15"
+}
+]
+},
+"demongods": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/yl6lapwmmx5ivew.html"
+}
+]
+},
+"fairytail": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl2VQRIahDF73hnkdPjNRYnu"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/Fairy-Tail-Season-1/dp/B0CHBPDKHT"
+}
+]
+},
+"gloriousrevengeofyefeng": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Youku",
+"url": "https://m.youku.com/alipay_video/id_fafe8a23507c42a589ae.html?spm=a2h0c.8166622.PhoneSokuProgram_1.dplaybutton"
+},
+{
+"site": "Youku TV",
+"url": "https://www.youku.tv/v/v_show/id_XNjA2MjEyMjkyNA==.html?s=bcadf25f63b0461fa317&spm=a2hje.13141534.${moduleIndex}_1.d_zj1_1&scm=20140719.apircmd.242627.video_XNjA2MjEyMjkyNA=="
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLOUUm4xsoaeB3Q1t_SnrgdX0mLoVhb_0g"
+}
+]
+},
+"greatjourneyofteenagers": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md101852/"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/play/19rrh5yia5"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrh5yia5.html"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/37949"
+}
+]
+},
+"greatruler": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/19rrhzlqup"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLTndXYWs2JgHO5pr997G5_CoSHf4P9hmJ"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrhsgm1t.html"
+}
+]
+},
+"hunterhunter": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2SdSro00Nvg38MQUf-5ZL8"
+}
+]
+},
+"immortality": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28230735/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfiLAy4MOjekVRx__T6qR_xe"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1043330"
+}
+]
+},
+"lingwucontinent": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/v_2gjv1pyuyik.html"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/灵武大陆-2024-1caffetn8ud?lang=en_us"
+}
+]
+},
+"perfectworld": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/m/mcv8hkc8zk8lnov.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/play/oz5ppkfjx9niv57"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnKfl20-jrXc1pflxjHKFnRf"
+}
+]
+},
+"reborn": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tubi TV",
+"url": "https://tubitv.com/series/1669/reborn"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/35692"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0Hvvm1qpOoJRSOiJhj9nnl"
+}
+]
+},
+"renegadeimmortal": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/mzc00200aaogpgh.html"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GKEH2G0MN/renegade-immortal"
+}
+]
+},
+"rezerostartinglifeinanotherworld": {
+"checked": "2026-10-07",
+"mature": true,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80131659"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0_movujO4K0xYOAG9soPjH"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/03f5afe1-1092-45ee-a421-91d0d8413bf0"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/@Rezero_official"
+}
+]
+},
+"soulland": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/m/m441e3rjq9kwpsc.html"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnJV5YGIKqb1I7v-9g7KdMGk"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/en/album/wzx7pbebgpxlqqr"
+},
+{
+"site": "Viki",
+"url": "https://www.viki.com/tv/39850c-soul-land"
+}
+]
+},
+"soulland2thepeerlesstangclan": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/mzc00200xf3rir6.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/album/wu7vz4vgfi8ugan"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnIHBNKvMwn8UAa4NVz2LZao"
+}
+]
+},
+"supremealchemy": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/丹道至尊-2023-2b49jh3chrt?lang=th_th"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/v_1rluros3258.html?vfrm=pcw_album_auto"
+}
+]
+},
+"supremelordofgalaxy": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Youku",
+"url": "https://list.youku.com/show/id_zebcbaf7c12e242128b52.html"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLOUUm4xsoaeD1eLwVVxunZPAGIHZFtDfI"
+}
+]
+},
+"swallowedstar": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/3/324olz7ilvo2j5f.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/en/play/0qgqd4kcd9ajxrs"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnKgeFGyyrtQxbxrdSlOxkei"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GQWH0M1Q9/swallowed-star"
+}
+]
+},
+"thattimeigotreincarnatedasaslime": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B07XWCY17G/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0eZktsDv3cu78EC0l2qYKI"
+},
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md139252"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/79ace21f-5124-4913-950e-1afea45f723c"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/34510"
+}
+]
+},
+"throneofseal": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/mzc002007j7p5hn.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/play/nxxyh0x1vp4nydt"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GJ0H7QG9N/throne-of-seal"
+}
+]
+},
+"urbanmiracledoctor": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/urban-miracle-doctor-2024-102vgnfh5zp"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/v_265kuc10m34.html"
+}
+]
+},
+"welcometodemonschoolirumakun": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/welcome-to-demon-school-iruma-kun"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81194192"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1Sf_lALh99YZAJTp5IaRft"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/@animeofficial5506"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/bc9d04d6-0575-4341-82ca-8c6f5b697651"
+}
+]
+},
+"wonderland": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/ckwrt68q0x"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLTndXYWs2JgH-5lilX9xaqToBcfEe-LMg"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrhb9ynh.html"
+}
+]
+},
+"斗罗大陆2绝世唐门": {
+"checked": "2026-10-07",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/mzc00200xf3rir6.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/album/wu7vz4vgfi8ugan"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnIHBNKvMwn8UAa4NVz2LZao"
+}
+]
+}
+}
