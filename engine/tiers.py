@@ -37,6 +37,9 @@ meta[key]["members"] = true hides one by hand; meta[key]["members_ok"] = true ke
 
 Score: score() below ranks the Focus list and Explore; meta[key]["anim"] (1 to 5, animation quality) feeds it.
 
+Episodes: episode_slots() fills every episode number of a season from the best free upload on any channel (single
+episode, else inside a compilation by chapter or estimate), so one show spread over several channels plays end to end.
+
 Summary: meta[key]["summary"] is a short spoiler-free English premise, shown when a series is opened.
 When a run researched a series but found no reliable premise, it sets meta[key]["summary_status"] = "unavailable"
 (and leaves summary out); the page then says the description is not available instead of saying it is not written yet.
@@ -111,6 +114,48 @@ def fmt(s):
     return f"{h}h {m:02d}m" if h else f"{m}m"
 
 
+def episode_slots(items):
+    """{episode number: slot} for one season, each episode from its best free upload.
+
+    A single-episode upload wins, unless it is far shorter than an episode of a compilation covering it (then it is a
+    clip or preview). Otherwise the episode comes from inside a compilation: at its chapter time when the description
+    lists chapters, else at an even split of the compilation ("est"). The most specific compilation wins. A slot is
+    {src: upload, d: seconds} plus at/to (seconds into src) for compilation slots."""
+    ranges = []
+    for x in items:
+        chap = x.get("chap") or []
+        if x["full"] and len(chap) >= 2:  # a whole-season upload whose chapters name its episodes
+            x = dict(x, full=False, a=min(c[1] for c in chap), b=max(c[1] for c in chap))
+        if not x["full"] and x["b"] > x["a"]:
+            ranges.append(x)
+    per = lambda r: r["d"] / (r["b"] - r["a"] + 1)
+    nums = {e for r in ranges for e in range(r["a"], r["b"] + 1)} | {x["a"] for x in items if not x["full"] and x["a"] == x["b"]}
+    slots = {}
+    for e in sorted(nums):
+        around = sorted([r for r in ranges if r["a"] <= e <= r["b"]], key=lambda r: (r["b"] - r["a"], -per(r)))
+        floor = 0.5 * per(around[0]) if around else 0
+        singles = [x for x in items if not x["full"] and x["a"] == x["b"] == e and x["d"] >= floor]
+        if singles:
+            src = max(singles, key=lambda x: x["d"])
+            slots[e] = dict(src=src, d=src["d"])
+            continue
+        for r in around:
+            chap = sorted(r.get("chap") or [])
+            hit = [i for i, c in enumerate(chap) if c[1] == e]
+            if hit:
+                i = hit[0]
+                at, to = chap[i][0], chap[i + 1][0] if i + 1 < len(chap) else r["d"]
+                if to > at:
+                    slots[e] = dict(src=r, d=to - at, at=at, to=to)
+                    break
+        else:
+            if around:
+                r = around[0]
+                at = int((e - r["a"]) * per(r))
+                slots[e] = dict(src=r, d=int(per(r)), at=at, to=int(at + per(r)), est=1)
+    return slots
+
+
 def same_show(eps_season, full_season):
     """True when a full upload's title contains the name its season's episode titles use ("Kuma Kuma Kuma Bear - Punch!"
     in "Kuma Kuma Kuma Bear - Punch! - Episode 01"), so MyGO and Ave Mujica, alike in length, stay apart."""
@@ -167,7 +212,7 @@ def official_series(genre, PAL, split_title, meta=None):
             ser["gated"] |= p["gated"]
             ser["orig"][corig] = ser["orig"].get(corig, 0) + 1
             ser["chans"].add(cname)
-            ser["seasons"].setdefault(p["season"], []).append(dict(p, id=v["id"], d=v["d"], ch=cname, t=v["t"],
+            ser["seasons"].setdefault(p["season"], []).append(dict(p, id=v["id"], d=v["d"], ch=cname, t=v["t"], chap=v.get("chap"),
                                                                   fs=v.get("p") or v.get("first_seen", "2026-09-28")))
     # fold near-identical keys (typos, "Tale"/"Tales") and hand-made merges into one series
     dom = lambda ser: max(ser["orig"].items(), key=lambda kv: kv[1])[0]
@@ -219,30 +264,15 @@ def official_series(genre, PAL, split_title, meta=None):
                 continue
             first_ep = meta.get(k, {}).get("from_ep", 1)  # episodes before it are watched in another key
             items = [x for x in ser["seasons"][sn] if x["full"] or x["a"] >= first_ep]
-            covered, chosen = set(), []
-            for it in sorted([x for x in items if not x["full"] and x["a"] == x["b"]], key=lambda x: -x["d"]):
-                if it["a"] not in covered:
-                    covered.add(it["a"]); chosen.append(it)
-            for it in sorted([x for x in items if not x["full"] and x["b"] > x["a"]], key=lambda x: (x["a"], -x["b"])):
-                rng = set(range(it["a"], it["b"] + 1))
-                if rng.isdisjoint(covered):
-                    covered |= rng; chosen.append(it)
-            # a multi-episode upload beats the pieces inside its range when it runs far longer than they do:
-            # those pieces are clips mislabelled as episodes, or a few stray episodes of a season it covers whole
-            for it in sorted([x for x in items if not x["full"] and x["b"] > x["a"] and x not in chosen], key=lambda x: -x["d"]):
-                inside = [c for c in chosen if it["a"] <= c["a"] and c["b"] <= it["b"]]
-                if any(c["a"] <= it["b"] and it["a"] <= c["b"] for c in chosen if c not in inside):
-                    continue  # it straddles an upload already chosen
-                if it["d"] > 1.5 * sum(c["d"] for c in inside):
-                    chosen = [c for c in chosen if c not in inside] + [it]
-                    covered |= set(range(it["a"], it["b"] + 1))
-            if not chosen:
+            slots = episode_slots(items)
+            covered = set(slots)
+            if not slots:  # nothing numbered: the longest whole-season upload stands in as one part
                 fulls = sorted([x for x in items if x["full"]], key=lambda x: -x["d"])
-                chosen = fulls[:1]
-            if not chosen:
+                if fulls:
+                    slots = {0: dict(src=fulls[0], d=fulls[0]["d"])}
+            if not slots:
                 continue
-            chosen.sort(key=lambda x: x["a"])
-            dur = sum(x["d"] for x in chosen)
+            dur = sum(sl["d"] for sl in slots.values())
             if dur < 1200:
                 continue
             total += dur
@@ -256,12 +286,17 @@ def official_series(genre, PAL, split_title, meta=None):
                 holes += last_holes
                 if sn == min(ser["seasons"]) and (min(covered) > first_ep or any(first_ep <= e < first_ep + 3 for e in lost)):
                     start_locked = True
-            first = chosen[0]
-            lab = lambda x: "Full" if x["full"] else (f"EP{x['a']}" if x["a"] == x["b"] else f"EP{x['a']}-{x['b']}")
+            eps = []
+            for e in sorted(slots):
+                sl, src = slots[e], slots[e]["src"]
+                ep = dict(n=f"EP{e}" if e else "Full", id=src["id"], dur=fmt(sl["d"]), ch=src["ch"])
+                if "at" in sl:  # inside a compilation: where it starts and ends, and whether that is estimated
+                    ep.update(at=sl["at"], to=sl["to"], of=fmt(src["d"]), **({"est": 1} if sl.get("est") else {}))
+                eps.append(ep)
+            first = slots[min(slots)]["src"]
             seas.append(dict(label=f"Season {sn}", short=f"S{sn}",
                              pick=dict(id=first["id"], ch=first["ch"], dur=fmt(dur), t=first["t"][:160]),
-                             alts=[], gaps=len(gaps),
-                             eps=[dict(n=lab(x), id=x["id"], dur=fmt(x["d"]), ch=x["ch"]) for x in chosen], d=dur, one=chosen[0]["full"]))
+                             alts=[], gaps=len(gaps), eps=eps, d=dur, one=0 in slots))
         # a "Complete Series" upload often lands under its own season label: when one full upload runs within 1.5% of
         # another season and its title names what that season's episodes are called, it is that season again
         for s_ in [s_ for s_ in seas if s_["one"] and len(s_["eps"]) == 1]:

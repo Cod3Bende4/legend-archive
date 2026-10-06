@@ -13,6 +13,7 @@
                                               = "unavailable" so the page says so; those are listed last)
   python3 engine/curate_tools.py anim [N]     after a local rebuild: shown rated series without meta[key]["anim"]
                                               (animation quality 1 to 5), complete and best-scored first
+  python3 engine/curate_tools.py names        Chinese-titled series and the existing series each may be, by pinyin
   python3 engine/curate_tools.py midstory     after a local rebuild: shown series that start at a later season
   python3 engine/curate_tools.py report       after a local rebuild: counts per section and tier, sources, borderline
 
@@ -220,6 +221,31 @@ def midstory():
             print(x["key"], "|", x["title"], "|", x["totalF"], "| seasons", [s["short"] for s in x["seas"]], "| rating", x.get("rating"))
 
 
+def names():
+    """Chinese-titled series (as Lv.99 Animation Club and others upload them) and the existing series each may be, by
+    pinyin: 第一序列 -> diyixulie -> firstorder ("Diyi Xulie" in its note). Confirm with merge_into (season_as when the
+    numbering differs), or treat it as a new show and give it an English name. Needs pypinyin (pip install pypinyin)."""
+    try:
+        from pypinyin import lazy_pinyin
+    except ImportError:
+        print("pypinyin missing: pip install pypinyin"); return
+    meta = load_meta()
+    flat = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
+    index = [(k, flat(k + " " + (m.get("name") or "") + " " + (m.get("note") or ""))) for k, m in meta.items()
+             if not m.get("merge_into") and re.search(r"[a-z]", k)]
+    shown = 0
+    for s in sorted(series(meta), key=lambda s: -s["total"]):
+        m = meta.get(s["key"], {})
+        if not re.fullmatch(r"[\u3400-\u9fff0-9]+", s["key"]) or m.get("merge_into") or m.get("hide") or m.get("name") or s["total"] < MIN_TOTAL:
+            continue
+        py = flat("".join(lazy_pinyin(s["key"])))
+        hits = [k for k, t in index if len(py) >= 4 and py in t][:4]
+        shown += 1
+        print(f"{s['key']} | {py} | {s['totalF']} | {', '.join(c for c in s['chans'])[:30]} -> "
+              + ("; ".join(f"{k} ({meta[k].get('name')}, rating {meta[k].get('rating')})" for k in hits) or "no match: a new show"))
+    print(shown, "Chinese-titled series without a decision")
+
+
 def summaries(n):
     meta = load_meta()
     skip = {x["key"] for x in data() if x.get("summaryStatus") == "unavailable"
@@ -269,4 +295,4 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "todo"
     n = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else 60
     {"todo": lambda: todo(n), "members": members, "check": check, "ongoing": lambda: ongoing(n),
-     "dubs": lambda: dubs(n), "stamp": lambda: stamp(sys.argv[2:]), "summaries": lambda: summaries(n), "anim": lambda: anim(n), "midstory": midstory, "report": report}[cmd]()
+     "dubs": lambda: dubs(n), "stamp": lambda: stamp(sys.argv[2:]), "summaries": lambda: summaries(n), "anim": lambda: anim(n), "midstory": midstory, "names": names, "report": report}[cmd]()

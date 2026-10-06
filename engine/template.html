@@ -280,6 +280,8 @@ let LIVE = false; // true once YouTube thumbnails can load (page opened outside 
 const $ = (id) => document.getElementById(id);
 const esc = (t) => String(t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const yt = (id) => 'https://www.youtube.com/watch?v=' + id;
+const ytAt = (u) => yt(u.id) + (u.at ? '&t=' + u.at + 's' : '');  // an episode inside a compilation opens at its start
+const clock = (s) => { const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(x).padStart(2, '0'); };
 const thumb = (id, q) => 'https://i.ytimg.com/vi/' + id + '/' + (q || 'hqdefault') + '.jpg';
 const badge = (x) => x.seasons > 1 ? x.seasons + ' seasons' : 'Feature';
 const secs = (d) => { const m = /(?:(\d+)h )?(\d+)m/.exec(d || ''); return m ? (+(m[1]||0))*3600 + (+m[2])*60 : 0; };
@@ -363,8 +365,8 @@ const UNITS = {};
 function units(i) {
   if (!UNITS[i]) {
     const x = DATA[i], many = x.seas.length > 1;
-    UNITS[i] = x.seas.flatMap((s, si) => (s.eps && s.eps.length ? s.eps : [{n: many ? 'Full' : 'Feature', id: s.pick.id, dur: s.pick.dur}])
-      .map(e => ({si, id: e.id, n: (many ? s.short + ' ' : '') + e.n, dur: secs(e.dur)})));
+    UNITS[i] = x.seas.flatMap((s, si) => (s.eps && s.eps.length ? s.eps : [{n: many ? 'Full' : 'Feature', id: s.pick.id, dur: s.pick.dur, ch: s.pick.ch}])
+      .map(e => ({si, id: e.id, n: (many ? s.short + ' ' : '') + e.n, dur: secs(e.dur), ch: e.ch, at: e.at, to: e.to, est: e.est, of: e.of})));
   }
   return UNITS[i];
 }
@@ -535,14 +537,15 @@ function renderPlace(x, i) {
 // the selected episode: play it here or on YouTube; while it plays here, step to the previous or next one
 function renderPick(x, i) {
   const us = units(i), u = Math.max(0, Math.min(S.u, us.length - 1)), cur = us[u], prev = us[u - 1], next = us[u + 1];
-  const ep = x.seas[cur.si].eps.find(e => e.id === cur.id) || x.seas[cur.si].pick;
-  const yt1 = (cls, text) => `<a class="btn ${cls}" href="${yt(cur.id)}" target="_blank" rel="noopener" data-u="${u}">${text}</a>`;
-  const info = `<div style="min-width:0"><div class="lab"><span>${S.here ? 'Playing' : 'Selected'}</span>${dot(ep.ch)}<span class="who">${esc(chName(ep.ch))}</span><span>${hm(cur.dur)}</span></div>
+  const ep = x.seas[cur.si].eps.length ? cur : x.seas[cur.si].pick;
+  const yt1 = (cls, text) => `<a class="btn ${cls}" href="${ytAt(cur)}" target="_blank" rel="noopener" data-u="${u}">${text}</a>`;
+  const inside = cur.at != null ? `<span>in a ${esc(cur.of)} video from ${clock(cur.at)}${cur.est ? ' (approx.)' : ''}</span>` : '';
+  const info = `<div style="min-width:0"><div class="lab"><span>${S.here ? 'Playing' : 'Selected'}</span>${dot(ep.ch)}<span class="who">${esc(chName(ep.ch))}</span><span>${hm(cur.dur)}</span>${inside}</div>
       <div class="ttl">${esc(cur.n)}${ep === x.seas[cur.si].pick ? ' · ' + esc(ep.t) : ''}</div></div>`;  // one-upload seasons show its title
   if (!S.here) return `<div class="pick" id="pick">${info}<div class="go">
       <button class="btn gold" type="button" data-here>${PLAY}Play here</button>${yt1('ghost', 'Play on YouTube')}</div></div>`;
   return `<div class="pick playing" id="pick">${info}
-    <div class="player"><iframe src="https://www.youtube.com/embed/${cur.id}?autoplay=1&rel=0&playsinline=1" title="${esc(cur.n)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+    <div class="player"><iframe src="https://www.youtube.com/embed/${cur.id}?autoplay=1&rel=0&playsinline=1${cur.at != null ? '&start=' + cur.at + '&end=' + cur.to : ''}" title="${esc(cur.n)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
     <div class="steps">
       <button class="btn ghost sm" type="button" data-step="-1"${prev ? '' : ' disabled'}>◀ ${prev ? 'Previous: ' + esc(prev.n) : 'Previous'}</button>
       <button class="btn gold sm" type="button" data-step="1"${next ? '' : ' disabled'}>${next ? 'Next: ' + esc(next.n) : 'Last episode'} ▶</button>
@@ -578,7 +581,7 @@ function renderSheet() {
     <div class="sheet-body">
       <div class="tabs" role="tablist" aria-label="Seasons">${x.seas.map((t,j) => `<button type="button" role="tab" data-season="${j}" aria-selected="${j===si}">${one ? (t.eps && t.eps.length > 1 ? 'Episodes' : 'Full feature') : esc(t.label)}${t.pick.new || t.alts.some(a => a.new) ? ' · new' : ''}</button>`).join('')}</div>
       ${renderPick(x, S.sel)}
-      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes · tap one to choose how to play it</h3><div class="eps">${s.eps.map((e, j) => `<button type="button" class="ep ${base + j === S.u ? 'on' : ''} ${base + j <= at ? 'seen' : ''}" data-pick="${base + j}">${e.n}<em>${e.dur}</em></button>`).join('')}</div></div>` : ''}
+      ${s.eps && s.eps.length > 1 ? `<div class="alts"><h3>${s.eps.length} episodes · tap one to choose how to play it</h3><div class="eps">${s.eps.map((e, j) => `<button type="button" class="ep ${base + j === S.u ? 'on' : ''} ${base + j <= at ? 'seen' : ''}" data-pick="${base + j}"${e.at != null ? ` title="Inside a ${e.of} video, from ${clock(e.at)}${e.est ? ', approximate' : ''}"` : ''}>${e.n}<em>${e.est ? '≈' : ''}${e.dur}</em></button>`).join('')}</div></div>` : ''}
       ${s.alts.length ? `<div class="alts"><h3>Also uploaded as</h3>${s.alts.map(a => `<a class="alt" href="${yt(a.id)}" target="_blank" rel="noopener"><span class="c">${dot(a.ch)}${esc(chName(a.ch))}</span><span>${esc(a.t)}</span><span class="d">${a.dur}</span></a>`).join('')}</div>` : ''}
     </div></div>`;
   v.hidden = false; document.body.style.overflow = 'hidden';
