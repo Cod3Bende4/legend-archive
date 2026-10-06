@@ -413,7 +413,9 @@
 "summary": "Tang San, a prodigy of the Tang Sect of hidden weapons, is reborn in a world where everyone awakens a martial spirit that decides their path in life. Born as a blacksmith's son in a small village, he discovers he carries unusual spirits and rare potential, and he sets out to train at academies and rise as a Spirit Master.",
 "checked": "2026-10-04",
 "checked_eps": 309,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 3,
+"anim_note": "known: Sparkly Key 3D, stiff early episodes, improved later; most of run ordinary"
 },
 "amortalsjourney": {
 "name": "A Mortal's Journey (from EP77)",
@@ -432,7 +434,9 @@
 4,
 5
 ],
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 4,
+"anim_note": "known: Original Force 3D, consistently polished for most of the run"
 },
 "perfectworld": {
 "name": "Perfect World",
@@ -443,7 +447,9 @@
 "summary": "Shi Hao is a boy raised in a small village in the wild Great Wilderness. As an infant he was robbed of a rare, powerful bone that marked him for greatness, yet he grows up tough and fearless anyway. Training with the villagers and the spirit that guards them, he sets out into a world of ancient beasts, clans and sects, determined to grow stronger and uncover his origins.",
 "checked": "2026-10-04",
 "checked_eps": 272,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 3,
+"anim_note": "known: Tencent 3D, stiff early episodes, decent for most of the run"
 },
 "tenthousandworlds": {
 "name": "Ten Thousand Worlds",
@@ -455,7 +461,9 @@
 "summary": "Lin Feng is left for dead when his fiancée steals his rare sword martial soul. The betrayal awakens a hidden phoenix bloodline and makes him master of a mysterious burial ground of gods. Shunned by his clan but backed by family, he sets out to rebuild his strength and climb the martial world.",
 "checked": "2026-09-30",
 "checked_eps": 417,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 2,
+"anim_note": "known: short-form budget 3D, stiff models and heavy reuse over the long run"
 },
 "spiritswordsovereign": {
 "name": "Spirit Sword Sovereign",
@@ -478,7 +486,9 @@
 "summary": "After a deadly virus sweeps the planet and monsters overrun most of it, humanity lives in fortified cities where trained martial artists fight the beasts. Luo Feng, a young man from an ordinary family, is determined to become a warrior so he can provide for his loved ones, and his growing strength sets him on a path toward far greater powers and threats.",
 "checked": "2026-10-04",
 "checked_eps": 228,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 4,
+"anim_note": "known: Sparkly Key 3D, good sci-fi action for most of the run"
 },
 "reborn": {
 "name": "Reborn!",
@@ -515,7 +525,9 @@
 "summary": "A modern man is reborn in an ancient world of qi cultivators and sets out to reach immortality while keeping his head down and his strength hidden. His quiet routine as senior disciple is upended when his master brings home a lively new junior sister, pulling the overly cautious hero into adventures that keep threatening to expose how powerful he really is.",
 "checked": "2026-10-04",
 "checked_eps": 221,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 3,
+"anim_note": "Sparkly Key 3D (Shixiong A Shixiong), ordinary comedic 3D"
 },
 "throneofseal": {
 "name": "Throne of Seal",
@@ -595,7 +607,9 @@
 "checked_eps": 96,
 "skip_seasons": [
 2
-]
+],
+"anim": 3,
+"anim_note": "studio 8bit, solid TV quality, weaker S2; most of run ordinary-good"
 },
 "renegadeimmortal": {
 "name": "Renegade Immortal",
@@ -606,7 +620,9 @@
 "summary": "Wang Lin is a boy of ordinary talent from a poor village who longs to become a cultivator. After barely getting into a cultivation sect, he finds a mysterious bead that changes his fate. Determined and ruthless when he must be, he climbs the harsh world of immortal cultivation in pursuit of power and eternal life.",
 "checked": "2026-10-04",
 "checked_eps": 140,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 4,
+"anim_note": "known: Tencent 3D, consistently polished cultivation fights"
 },
 "legendofxianwu": {
 "name": "Legend of Xianwu",
@@ -618,7 +634,9 @@
 "summary": "Ye Chen is a loyal sect disciple who tends a field of spiritual herbs. When rivals destroy the field and he is thrown out of the sect for it, a celestial flame comes to his aid and sets him on the path of cultivation. Growing stronger, he sets out to repay those who betrayed him and carve out his own fate.",
 "checked": "2026-09-30",
 "checked_eps": 165,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 3,
+"anim_note": "known: Youku 3D cultivation series, ordinary TV-level 3D"
 },
 "peerlessmartialspirit": {
 "name": "Peerless Martial Spirit",
@@ -681,7 +699,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Nian Bing was born able to wield both ice and fire magic, which makes him a target of the Ice God Pagoda. After escaping them he becomes the apprentice of a reclusive master chef and learns to cook with magic in a new city, growing stronger as dangers close in while he works toward becoming the continent's greatest mage.",
 "checked": "2026-09-30",
-"checked_eps": 156
+"checked_eps": 156,
+"anim": 3,
+"anim_note": "known: Youku 3D, ordinary TV-level 3D"
 },
 "apotheosis": {
 "name": "Apotheosis",
@@ -696,13 +716,15 @@
 "successofmmpyreanxuanemperor": {
 "name": "The Success of Empyrean Xuan Emperor",
 "completed": false,
-"note": "Anime-Planet 3.667 of 5 from 104 votes (season 1 page); ongoing multi-season",
+"note": "Anime-Planet 3.667 of 5 from 104 votes (season 1 page); ongoing multi-season; members-only: free to EP209 (free uploads stalled about a year ago), EP210-248 locked for well over a year; not early access",
 "origin": "CN",
 "rating": 7.3,
 "rating_src": "Anime-Planet x2",
 "summary": "Wang Fan looks like an ordinary student at the Golden Academy, but he has mastered a powerful martial technique called the Empyrean Xuan Knack. When a senior he respects is wronged, he puts on the Silver Tiger King mask and starts taking revenge under a secret identity, while trying to keep his double life hidden.",
 "checked": "2026-09-30",
-"checked_eps": 248
+"checked_eps": 248,
+"members_checked": "2026-10-06",
+"members": true
 },
 "斗罗大陆2绝世唐门": {
 "merge_into": "soulland2thepeerlesstangclan",
@@ -726,13 +748,15 @@
 "legendofsworddomain": {
 "name": "The Legend of Sword Domain",
 "completed": false,
-"note": "Anime-Planet 3.77 of 5 from 99 votes (season 1 page); ongoing, more seasons",
+"note": "Anime-Planet 3.77 of 5 from 99 votes (season 1 page); ongoing, more seasons; members-only: free uploads stop at EP189 (about a year ago); EP190-196 locked since late 2024/early 2025; TVmaze shows latest episode EP196 aired 20 Oct 2024, nothing since, so these stay locked; no free copy on tracked channels",
 "origin": "CN",
 "rating": 7.5,
 "rating_src": "Anime-Planet x2",
 "summary": "Lv Yang is the son of a declining house among the five great families of the Sword Domain. While on the run he comes into possession of a legendary sword, and he trains with it to grow strong enough to learn what happened to his mother, all while the rival clans and factions around him scheme against one another.",
-"checked": "2026-09-30",
-"checked_eps": 248
+"checked": "2026-10-06",
+"checked_eps": 248,
+"members_checked": "2026-10-06",
+"members": true
 },
 "godofwardominates": {
 "name": "The God of War Dominates (Martial Master)",
@@ -742,7 +766,9 @@
 "note": "MAL entry: Wushen Zhuzai; still airing (700+ eps), uploads are 20-ep compilations up to EP473",
 "summary": "Qin Chen was once a peerless martial master who was betrayed and killed. He awakens hundreds of years later in the body of a scorned young man at a royal academy, looked down on by everyone around him. Using the knowledge and techniques from his past life, he sets out to rebuild his strength, protect the people close to him and uncover the truth behind his death.",
 "checked": "2026-09-30",
-"checked_eps": 472
+"checked_eps": 472,
+"anim": 2,
+"anim_note": "known: long-running budget 3D, plastic models and heavy reuse"
 },
 "wonderland": {
 "name": "Wonderland",
@@ -797,16 +823,19 @@
 "summary": "Qin Mu is an orphan raised in a village of eccentric, disabled elders in the Great Ruins, a wasteland where monsters come out after dark. Each elder is secretly a master of some art, and they teach him everything they know. When he grows up, Qin Mu leaves the Ruins to see the outside world and uncover the truth about his origins and the gods that rule it.",
 "checked": "2026-10-04",
 "checked_eps": 101,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 4,
+"anim_note": "known: Bilibili 3D, polished cinematic look across the run"
 },
 "lingwucontinent": {
 "name": "Lingwu Continent",
 "rating": 6.83,
 "rating_src": "MAL",
 "completed": false,
-"note": "MAL entry: Ling Wu Dalu; still airing",
+"note": "MAL entry: Ling Wu Dalu; still airing; early access: free to EP200, EP201-204 locked, weekly and still airing",
 "checked": "2026-09-30",
-"checked_eps": 204
+"checked_eps": 204,
+"members_checked": "2026-10-06"
 },
 "urbanmiracledoctor": {
 "name": "Urban Miracle Doctor",
@@ -826,7 +855,9 @@
 "summary": "Thousands of years after the first Soul Land story, Huo Yuhao is the neglected son of a duke, living with his mistreated mother and born with a weak martial spirit. After tragedy strikes, he vows to grow strong enough for revenge, and a chance encounter with a powerful spirit beast sets him on the road to Shrek Academy.",
 "checked": "2026-10-04",
 "checked_eps": 156,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 3,
+"anim_note": "known: Sparkly Key 3D, ordinary TV-level 3D"
 },
 "supremelordofgalaxy": {
 "name": "Supreme Lord of Galaxy",
@@ -897,11 +928,13 @@
 "superheroic": {
 "name": "Super Heroic",
 "completed": false,
-"note": "iQIYI 'Super Heroic' is Jueshi Zhan Hun (same Chinese title as superheroicspirit), likely the long-running 2021 version; not merged (different runs); members-only gaps (267 missing); no rating found (Anime-Planet 2021 entry lists only 60 eps)",
+"note": "iQIYI \"Super Heroic\" is Jueshi Zhan Hun, the same show as superheroicspirit (same Chinese title, same premise, same per-episode length: EP01-150 collection 61437 s, Spirit EP01-160 collection 65236 s, about 410 s each); its EP151-180 are locked here but superheroicspirit has a free EP01-180 FULL upload, so merged into it",
 "origin": "CN",
 "summary": "On the Canglan Continent a cultivator's worth depends on the martial spirit he awakens, and Qin Nan's is so weak that everyone writes him off. When a lightning strike leaves him with a Divine Battle Spirit that can keep growing stronger, he sets out to overturn the rules that held him down and learn where the power came from.",
 "checked": "2026-09-30",
-"checked_eps": 179
+"checked_eps": 179,
+"members_checked": "2026-10-06",
+"merge_into": "superheroicspirit"
 },
 "supremealchemy": {
 "name": "Supreme Alchemy",
@@ -928,9 +961,11 @@
 "rating": 6.65,
 "rating_src": "MAL",
 "completed": false,
-"note": "members-only gaps; series ended at EP165 (Oct 2025)",
+"note": "members-only gaps; series ended at EP165 (Oct 2025); members-only: show ended at EP165; EP151 in no free upload (individual uploads stop at EP45, rest only unlabelled season compilations), so treated as missing",
 "checked": "2026-09-30",
-"checked_eps": 165
+"checked_eps": 165,
+"members_checked": "2026-10-06",
+"members": true
 },
 "ancientmyth": {
 "merge_into": "mythofeternity",
@@ -948,7 +983,9 @@
 "summary": "In a world where demons break through into human lands and ordinary people rely on martial warriors for protection, Meng Chuan grows up in Dongning in the shadow of a mother who fought the demons. Determined to protect his family and his city, he devotes himself to the sword and the long road of cultivation, aiming to become strong enough to stand against the demon hordes.",
 "checked": "2026-10-04",
 "checked_eps": 67,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 4,
+"anim_note": "known: Youku 3D, well-made fights, consistent across both seasons"
 },
 "jadedynasty": {
 "name": "Jade Dynasty",
@@ -959,7 +996,9 @@
 "summary": "Zhang Xiaofan is an ordinary village boy whose home is wiped out in a single night, leaving him one of the few survivors. Taken in by the Qingyun Sect, he struggles as its least gifted disciple while secretly carrying teachings from another school and a strange weapon, and his quiet life gradually gets tangled in the conflict between righteous sects and demonic factions.",
 "checked": "2026-10-04",
 "checked_eps": 74,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 4,
+"anim_note": "known: Tencent 3D, polished models and fights for most of the run"
 },
 "landofmiracles": {
 "name": "The Land of Miracles",
@@ -1000,7 +1039,9 @@
 "note": "S3 cour 1 (14 eps) ended Sept 2026; cour 2 announced for 2027",
 "summary": "A jobless, reclusive man in his thirties dies in an accident and is reborn as Rudeus Greyrat, an infant in a world of swords and magic who keeps all his old memories. Determined not to waste his second life, he throws himself into learning magic from a young age. As he grows up, he makes friends, finds teachers and faces the challenges his past self always ran from.",
 "checked": "2026-10-04",
-"checked_eps": 61
+"checked_eps": 61,
+"anim": 5,
+"anim_note": "studio Bind, widely praised animation, S2/S3 also strong"
 },
 "iannoyedmillionsofcultivators": {
 "name": "I Annoyed Millions of Cultivators",
@@ -1044,7 +1085,9 @@
 "summary": "On the Canglan Continent a cultivator's worth depends on the martial spirit he awakens, and Qin Nan's is so weak that he becomes a laughingstock. After a lightning strike gives him a Divine Battle Spirit that can level up, he starts climbing past those who mocked him and uncovering the secrets behind his new power.",
 "checked": "2026-10-04",
 "checked_eps": 185,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 2,
+"anim_note": "known: short-form budget 3D, stiff and repetitive"
 },
 "aceofdiamondact": {
 "name": "Ace of Diamond Act II",
@@ -1073,7 +1116,9 @@
 "note": "MAL entry: Da Zhuzai: Nian Fan; second year-long season still airing in 2026",
 "summary": "In a vast universe of stacked realms where talented fighters from lower worlds rise to fame, Mu Chen is the son of the lord of the Northern Spirit Realm. He sets out on the path of spiritual cultivation, aiming to climb from his home realm into the wider Great Thousand World, facing rivals and dark forces while growing strong enough to stand beside the people he cares about.",
 "checked": "2026-09-30",
-"checked_eps": 80
+"checked_eps": 80,
+"anim": 3,
+"anim_note": "known: Da Zhuzai 3D, ordinary TV-level 3D; graded as no original key exists"
 },
 "shangrilafrontier": {
 "name": "Shangri-La Frontier",
@@ -1100,12 +1145,13 @@
 "rating": 7.9,
 "rating_src": "MAL",
 "completed": true,
-"note": "MAL entry: Cheng He Titong (S1 7.99, S2 7.76); animated version, not the 2026 live action",
+"note": "MAL entry: Cheng He Titong (S1 7.99, S2 7.76); animated version, not the 2026 live action; S1 EP3-12 locked members-only (only EP1-2, 13-24 free), S2 fully free; free English dub of S1 EP1-12 is under howdareyou-dub (different audio, not merged); members-only; no free copy on tracked channels",
 "summary": "Office worker Yu Wanwan wakes up inside a palace-intrigue novel as a scheming imperial consort who is fated to die badly. She soon learns that the feared tyrant emperor Xia Houdan is also a stranger from the modern world, and the two form a wary alliance, using what they know of the story to outwit court factions and change their doomed endings.",
 "checked": "2026-09-30",
 "checked_eps": 48,
 "anim": 4,
-"anim_note": "Shenying Animation 3D, reviews praise visuals; graded 4 on limited evidence"
+"anim_note": "Shenying Animation 3D, reviews praise visuals; graded 4 on limited evidence",
+"members_checked": "2026-10-06"
 },
 "spyfamily": {
 "name": "SPY x FAMILY",
@@ -1177,7 +1223,9 @@
 "note": "S2 has 27 eps, only 16 uploaded",
 "summary": "Chen Ping'an is a poor orphan living in Mud Vase Lane, a small town that is secretly a sealed world full of hidden fortunes. When the seal starts to break, powerful outsiders arrive seeking treasures and heirs, and the humble boy is drawn into their schemes as he sets out on the long road to become a swordsman.",
 "checked": "2026-10-04",
-"checked_eps": 42
+"checked_eps": 42,
+"anim": 4,
+"anim_note": "known: Tencent 3D, refined ink-style art, consistently good"
 },
 "lovestoryofmyimmortaldad": {
 "name": "The Love Story of My Immortal Dad",
@@ -1210,7 +1258,9 @@
 "summary": "Zhou Zishu, former head of an imperial spy network, walks away from his old life and wanders the martial world in disguise with only a few years left to live. On the road he meets Wen Kexing, a charming stranger with dark secrets, and the two are pulled into the rival sects' deadly scramble for a legendary armor said to unlock a hidden trove of martial arts.",
 "checked": "2026-09-30",
 "checked_eps": 56,
-"members_checked": "2026-10-05"
+"members_checked": "2026-10-05",
+"anim": 4,
+"anim_note": "Passion Paint Animation; Anime-Planet review calls animation quite good, very colorful landscapes"
 },
 "hundredrefiningsoaringrecord": {
 "name": "Hundred Refining Soaring Record",
@@ -1267,10 +1317,13 @@
 "rating": 7.66,
 "rating_src": "MAL",
 "completed": false,
-"note": "S1-S3 only partially uploaded, S4 25 of 26 eps; S5 exists; rating is S4",
+"note": "S1-S3 only partially uploaded, S4 25 of 26 eps; S5 exists; rating is S4; members check: free \"All Collection\" upload (19h56m) has chapters for S1 EP1-24, then an unchaptered 15h50m stretch matching S2-S4 runtime, then 2 final chapters; it very likely covers S1-S4, so left visible; S5 airing Oct 2026",
 "summary": "Rakshasa Street is a borderland between the world of the living and the spirit realm. Cao Yanbing, a Spirit General who works as a delivery man, commands guardian spirits in battle there. When ordinary girl Xia Ling stumbles into the street, she learns of his missing parents and lost brother and joins him against a shadowy group known as the Kingdom Organization.",
-"checked": "2026-09-30",
-"checked_eps": 46
+"checked": "2026-10-06",
+"checked_eps": 46,
+"anim": 3,
+"anim_note": "2D, cheap-looking S1 but better later seasons; most of run ordinary",
+"members_checked": "2026-10-06"
 },
 "kokiesdanapiyangajaib": {
 "name": "The Magic Chef of Ice and Fire (Indonesian sub)",
@@ -1290,7 +1343,7 @@
 "summary": "Seven years ago prince Li Han watched seven immortals destroy his family, and he and his sister survived only because the mysterious Endless God Realm took them in. Now back in the world and far stronger, he climbs the cultivation ranks hoping to wake his comatose sister, protect ordinary people and find out who was truly behind the massacre.",
 "checked": "2026-09-30",
 "checked_eps": 80,
-"anim_tried": "2026-10-05"
+"anim_tried": "2026-10-06"
 },
 "jojosbizarreadventurediamondisunbreakable": {
 "name": "JoJo's Bizarre Adventure",
@@ -1518,7 +1571,9 @@
 "note": "S3 has 10 eps but only 8 uploaded; S4 (24 eps) ended Oct 2026, not uploaded; Anime-Planet vote-weighted S1-S3 4.15 of 5 from 31320 votes (S1 4.1/14412, S2 4.2/10759, S3 4.16/6149)",
 "summary": "Urano, a young woman who loves books above everything, dies and is reborn as Myne, a sickly five-year-old girl in a poor family in a medieval-style world. Books are rare and only the wealthy can afford them, and she cannot even read the local script. Refusing to give up, she sets out to make books herself from scratch.",
 "checked": "2026-10-04",
-"checked_eps": 36
+"checked_eps": 36,
+"anim": 2,
+"anim_note": "studio Ajia-do, widely noted as cheap and off-model in all seasons"
 },
 "fabulousswordgod": {
 "name": "The Fabulous Sword God",
@@ -1635,14 +1690,16 @@
 "mywechatconnectstothedragonpalace": {
 "name": "My WeChat Connects to the Dragon Palace",
 "completed": true,
-"note": "60 eps; no rating found; Anime-Planet 3.729 of 5 from 20 votes",
+"note": "60 eps; no rating found; Anime-Planet 3.729 of 5 from 20 votes; members check: free FULL compilation (7h04m, same per-episode length as the free EP1-20 and EP1-40 compilations) covers EP1-60; individual EP41-60 locked only",
 "origin": "CN",
 "rating": 7.5,
 "rating_src": "Anime-Planet x2",
 "summary": "On his eighteenth birthday, the orphan Luo Yun is pulled into an unlikely group chat run by the East Sea Dragon Palace. By bartering ordinary goods with immortals for cultivation methods and magic treasures, he starts building power in both the human and immortal worlds while chasing clues about his own mysterious origins.",
 "checked": "2026-09-30",
 "checked_eps": 60,
-"anim_tried": "2026-10-05"
+"anim_tried": "2026-10-05",
+"members_checked": "2026-10-06",
+"members_ok": true
 },
 "frierenbeyondjourneysend-dub": {
 "name": "Frieren: Beyond Journey's End (English Dub)",
@@ -2220,7 +2277,9 @@
 "note": "S1 EP1-2 missing here (likely in kingsavatars1quanzhigaoshouthekingsavatar); S2 complete; Anime-Planet vote-weighted S1+S2 4.11 of 5 from 14161 votes (S1 4.1/11508, S2 4.15/2653)",
 "summary": "Ye Xiu is a veteran pro player of the online game Glory and one of its greatest, until his club forces him out of the team. Taking a job at an internet cafe, he starts over from level one on a new server with a fresh character, aiming to build a new team and fight his way back to the professional stage.",
 "checked": "2026-10-04",
-"checked_eps": 24
+"checked_eps": 24,
+"anim": 3,
+"anim_note": "B.CMAY Pictures 2D with CG game scenes, ordinary; S2 slightly better"
 },
 "mynextlifeasavillainessallroutesleadtodoomx": {
 "name": "My Next Life as a Villainess: All Routes Lead to Doom!",
@@ -2351,13 +2410,15 @@
 "longsword": {
 "name": "Long Sword",
 "completed": false,
-"note": "S1 1 members-only gap; S2 aired 2023; Anime-Planet 3.5 of 5 from 39 votes",
+"note": "S1 1 members-only gap; S2 aired 2023; Anime-Planet 3.5 of 5 from 39 votes; members-only: S2 (2023) free EP1-4 only, EP5-12 locked; most of S1 locked too",
 "origin": "CN",
 "rating": 7.0,
 "rating_src": "Anime-Planet x2",
 "summary": "After environmental collapse throws the world into chaos, He Jiang lives with her truck-driver father in New Sacco City. A terrorist group called You'ren rules East City through fear and force. Together with her friends Qiao Qi and Liu Zhan, He Jiang organizes a resistance to push back against their grip on the city.",
 "checked": "2026-09-30",
-"checked_eps": 19
+"checked_eps": 19,
+"members_checked": "2026-10-06",
+"members": true
 },
 "muvluvalternative": {
 "name": "Muv-Luv Alternative",
@@ -2417,13 +2478,14 @@
 "rating": 7.6,
 "rating_src": "Anime-Planet x2",
 "completed": true,
-"note": "S2 (8 eps) finished Jul 2026; Anime-Planet 3.82 of 5 from 239 votes (S1 entry)",
+"note": "S2 (8 eps) finished Jul 2026; Anime-Planet 3.82 of 5 from 239 votes (S1 entry); S1 free; S2 EP2-8 locked members-only though S2 finished; members-only; no free copy on tracked channels",
 "origin": "CN",
 "summary": "On the lawless western frontier at the end of the Sui dynasty, a hardened sword-for-hire named Dao Ma takes a job escorting a wanted man across the desert. The commission draws bounty hunters, soldiers and old enemies onto their trail, and the mismatched travellers must fight their way through a collapsing empire.",
 "checked": "2026-09-30",
 "checked_eps": 23,
 "anim": 5,
-"anim_note": "Colored Pencil 2D ink-wash style, praised action, Golden Dragon award; S2 more 3D"
+"anim_note": "Colored Pencil 2D ink-wash style, praised action, Golden Dragon award; S2 more 3D",
+"members_checked": "2026-10-06"
 },
 "talesofdarkriver": {
 "name": "Tales of Dark River",
@@ -2441,13 +2503,15 @@
 "monsterbutwild": {
 "name": "Monster but Wild",
 "completed": false,
-"note": "Anime-Planet 3.4 of 5 from 276 votes (season 1 page, Ququ Bucai Zaixia Ye Guai); S1 has 1 members-only gap",
+"note": "Anime-Planet 3.4 of 5 from 276 votes (season 1 page, Ququ Bucai Zaixia Ye Guai); S1 has 1 members-only gap; members-only: S1 EP5-12 locked members-only (finished season), S2 free",
 "origin": "CN",
 "rating": 6.8,
 "rating_src": "Anime-Planet x2",
 "summary": "A devoted player of the online game Azure opens a strange prize and finds himself pulled into the game world. Instead of a hero, he has become one of the weakest wild monsters on the map. He has to survive players hunting for experience points and find a way to grow stronger in a world he used to play from outside.",
 "checked": "2026-09-30",
-"checked_eps": 27
+"checked_eps": 27,
+"members_checked": "2026-10-06",
+"members": true
 },
 "gateofmysticalrealm": {
 "name": "The Gate of Mystical Realm",
@@ -2465,10 +2529,12 @@
 "rating": 8.0,
 "rating_src": "Anime-Planet x2",
 "completed": false,
-"note": "watch first: EP1-76 remastered, then amortalsjourney from EP77; members-only gaps; rating of main series; Anime-Planet 4.0 of 5 from 340 votes (Fanren Xiu Xian Chuan page)",
+"note": "watch first: EP1-76 remastered, then amortalsjourney from EP77; members-only gaps; rating of main series; Anime-Planet 4.0 of 5 from 340 votes (Fanren Xiu Xian Chuan page); members check: EP47-72 covered by free \"Remake EP1-72 collection\" (plus free EP73-76 collection); no real gap",
 "summary": "Han Li is a poor village boy with no special talent who is taken in as a helper by a small martial sect. When he stumbles onto a mysterious bottle that speeds the growth of medicinal herbs, he quietly begins cultivating immortal arts, relying on caution, patience and cunning to survive a ruthless world of cultivators on his long road toward immortality.",
 "checked": "2026-10-05",
-"checked_eps": 27
+"checked_eps": 27,
+"members_checked": "2026-10-06",
+"members_ok": true
 },
 "rebornasacat": {
 "name": "Reborn as a Cat",
@@ -2497,10 +2563,11 @@
 "rating": 8.0,
 "rating_src": "Anime-Planet x2",
 "completed": false,
-"note": "S2 only EP5-12 uploaded; Anime-Planet 4.0 of 5 from 1529 votes (S1 page, Dawang Raoming)",
+"note": "S2 only EP5-12 uploaded; Anime-Planet 4.0 of 5 from 1529 votes (S1 page, Dawang Raoming); S1 EP2-12 locked members-only, S2 free (EP1-12 collection); members-only; no free copy on tracked channels",
 "summary": "Lu Shu is a sharp-tongued orphan living in a world where spiritual energy has suddenly returned and people are awakening strange powers. He gains a mysterious system that rewards him whenever others feel negative emotions toward him, so he sets about annoying everyone he meets. While looking after his younger sister, he uses the rewards to grow stronger and is drawn into the world of cultivators.",
 "checked": "2026-10-04",
-"checked_eps": 20
+"checked_eps": 20,
+"members_checked": "2026-10-06"
 },
 "xuchangqing": {
 "name": "Legend of Lotus Sword Fairy",
@@ -2572,14 +2639,16 @@
 "insearchofgods": {
 "name": "In Search of Gods",
 "completed": false,
-"note": "no rating found; Anime-Planet 3.785 of 5 from 21 votes; Lucifer Donghua lists it as ongoing (24 eps by Aug 2026), so completed false",
+"note": "no rating found; Anime-Planet 3.785 of 5 from 21 votes; Lucifer Donghua lists it as ongoing (24 eps by Aug 2026), so completed false; members-only: sub EP16-24 locked; EP24 marked END (season finished), free sub stops at EP15; the English dub upload \"In Search of Gods FULL\" (6h08m, same length as locked Multi Sub FULL) is free, so insearchofgods-dub can show all 24 eps",
 "origin": "CN",
 "rating": 7.6,
 "rating_src": "Anime-Planet x2",
 "summary": "In the chaotic age when the Yan and Huang Emperors led rival tribes, young Tuoba Ye unexpectedly inherits the power of the legendary Emperor Shennong. With the tribes fighting for dominance, he is pulled into battles and old mysteries, and must learn to wield a gift he never asked for while finding his place in a world on the brink of war.",
-"checked": "2026-10-05",
+"checked": "2026-10-06",
 "checked_eps": 24,
-"anim_tried": "2026-10-05"
+"anim_tried": "2026-10-05",
+"members_checked": "2026-10-06",
+"members": true
 },
 "immortalitys1s2all": {
 "name": "Immortality",
@@ -2739,14 +2808,15 @@
 },
 "mythicalcreaturesaremydinners": {
 "name": "Mythical Creatures Are My Dinners",
-"completed": false,
-"note": "Anime-Planet 3.43 of 5 from 15 votes (Jintian De Wancan Jiushi Ni); ongoing",
+"completed": true,
+"note": "Anime-Planet 3.43 of 5 from 15 votes (Jintian De Wancan Jiushi Ni); ongoing; members check: free \"All Episode\" upload (4h56m, about 36 x 8 min) covers all 36 eps; EP36 marked final chapter",
 "origin": "CN",
 "rating": 6.9,
 "rating_src": "Anime-Planet x2",
 "summary": "Mo Bai believes he is the best cook in the world, until a chance meeting shows him how little he knows. He is drawn into a fantasy world where magical beasts are the finest ingredients, and sets out to hunt, cook and taste creatures of legend on his way to becoming a true master chef.",
-"checked": "2026-09-30",
-"checked_eps": 41
+"checked": "2026-10-06",
+"checked_eps": 36,
+"members_checked": "2026-10-06"
 },
 "riseofthedragon": {
 "name": "Rise of the Dragon",
@@ -2803,7 +2873,7 @@
 "dragonstarlord": {
 "name": "The Dragon Star Lord",
 "completed": true,
-"note": "no rating found; Anime-Planet 3.84 of 5 from 19 votes",
+"note": "no rating found; Anime-Planet 3.84 of 5 from 19 votes; members check: free Collection 1-48 uploads (two copies plus 1-10..31-40 collections) cover all 48 eps",
 "origin": "CN",
 "rating": 7.7,
 "rating_src": "Anime-Planet x2",
@@ -2811,7 +2881,9 @@
 "checked": "2026-09-30",
 "checked_eps": 48,
 "anim": 2,
-"anim_note": "Ruo Hong Culture 3D short episodes; review cites bad proportions"
+"anim_note": "Ruo Hong Culture 3D short episodes; review cites bad proportions",
+"members_checked": "2026-10-06",
+"members_ok": true
 },
 "heavenscrapmaster": {
 "name": "Heaven Scrap Master",
@@ -2822,7 +2894,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Zhao Xin, a modern martial artist, unexpectedly ends up in charge of a scrap recycling station serving the Heavenly Court. Handling the junk that immortals throw away brings him useful treasures and the favor of divine figures, and he uses this odd job to hunt demons and push toward the peak of martial arts.",
 "checked": "2026-09-30",
-"checked_eps": 40
+"checked_eps": 40,
+"anim": 3,
+"anim_note": "known: Soyep weekly short-episode 3D web series, ordinary CG; no reviews on visuals"
 },
 "maddemonlord": {
 "name": "Mad Demon Lord",
@@ -2908,11 +2982,13 @@
 "castoutbymyfamilyiawakened900millionstatpoints": {
 "name": "Cast Out by My Family, I Awakened 900 Million Stat Points",
 "completed": false,
-"note": "season 2 still airing; no rating found",
+"note": "season 2 still airing; no rating found; members-only: S1 EP36-40 locked though S1 finished (S2 airing, S2 EP1-16 free); S1 EP1-35 free only via a limited-free compilation",
 "origin": "CN",
 "summary": "Zhao Hezhou was born with ruined meridians after his mother gave up her health to save his sister, and his family casts him out as a cripple. He then learns he is the reincarnation of an ancient Asura demon god who carries nine hundred million stat points from his past life, and uses them to clear his mother's name and take revenge.",
 "checked": "2026-09-30",
-"checked_eps": 54
+"checked_eps": 54,
+"members_checked": "2026-10-06",
+"members": true
 },
 "bladeandbones": {
 "name": "Blade and Bones",
@@ -2934,12 +3010,14 @@
 "makemoneytobeking": {
 "name": "Make Money to Be King",
 "completed": false,
-"note": "Anime-Planet 3.53 of 5 from 37 votes (Wo Kao Chongzhi Dang Wudi, S1 60 eps); a second season exists, continues past EP60",
+"note": "Anime-Planet 3.53 of 5 from 37 votes (Wo Kao Chongzhi Dang Wudi, S1 60 eps); a second season exists, continues past EP60; members-only: S1 (60 eps) finished; free EP1-30, EP31-60 locked",
 "origin": "CN",
 "rating": 7.1,
 "rating_src": "Anime-Planet x2",
 "checked": "2026-09-30",
-"checked_eps": 60
+"checked_eps": 60,
+"members_checked": "2026-10-06",
+"members": true
 },
 "goodkiller": {
 "name": "Good Killer",
@@ -3068,7 +3146,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Yang Chen, grandson of the patriarch of the Yang clan, is mocked by his own household because his Dao Soul has failed to awaken for years. Determined to prove them wrong, he pushes his cultivation forward while his ambitious uncle plots to seize control of the family, and Yang Chen sets out to grow strong enough to protect his grandfather and his home.",
 "checked": "2026-09-30",
-"checked_eps": 40
+"checked_eps": 40,
+"anim": 3,
+"anim_note": "Ruo Hong Culture 3D (Anime-Planet studio field), ordinary CG; no reviews on visuals"
 },
 "thousandautumns": {
 "name": "Thousand Autumns",
@@ -3118,7 +3198,7 @@
 "overthedivinerealms": {
 "name": "Over the Divine Realms",
 "completed": true,
-"note": "no rating found; Anime-Planet 3.89 of 5 from 36 votes",
+"note": "no rating found; Anime-Planet 3.89 of 5 from 36 votes; members check: free \"S1 FULL\" upload (5h18m, same length as the locked EP01-17 collection) covers all 17 eps; title says a further season is coming",
 "origin": "CN",
 "rating": 7.8,
 "rating_src": "Anime-Planet x2",
@@ -3126,18 +3206,22 @@
 "checked": "2026-09-30",
 "checked_eps": 17,
 "anim": 3,
-"anim_note": "CG Year 3D for iQIYI, AIGC-assisted; press praises camera work, no independent reviews"
+"anim_note": "CG Year 3D for iQIYI, AIGC-assisted; press praises camera work, no independent reviews",
+"members_checked": "2026-10-06",
+"members_ok": true
 },
 "rebirthoftheswordpatriarch": {
 "name": "Rebirth of the Sword Patriarch",
 "completed": false,
-"note": "Anime-Planet 3.508 of 5 from 31 votes (Yongheng Jian Zu / Eternal Sword Ancestor); 40 eps, finished 2025; 1 gap and EP40 missing from uploads",
+"note": "Anime-Planet 3.508 of 5 from 31 votes (Yongheng Jian Zu / Eternal Sword Ancestor); 40 eps, finished 2025; 1 gap and EP40 missing from uploads; members-only: 40 eps finished 2025; EP40 locked for over a year, free stops at EP39",
 "origin": "CN",
 "rating": 7.0,
 "rating_src": "Anime-Planet x2",
 "summary": "A legendary Sword Emperor passes through the cycle of reincarnation and wakes in a new life, starting over as a young man others dismiss as useless. Relying on ancient cultivation methods from his past life, he rebuilds his body and soul from the ground up, aiming to break the limits set by the gods and expose a conspiracy that has deceived the world.",
 "checked": "2026-09-30",
-"checked_eps": 38
+"checked_eps": 38,
+"members_checked": "2026-10-06",
+"members": true
 },
 "evernight": {
 "name": "Ever Night",
@@ -3307,27 +3391,33 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Lin Fei is a young martial artist whose flawed meridians keep him from training, and he watches his master and a friend die in battle. Turning to the craft of refining artifacts in search of revenge, he is later revived by a mysterious power in a new era, where he sets out to rebuild his sect.",
 "checked": "2026-09-30",
-"checked_eps": 26
+"checked_eps": 26,
+"anim": 4,
+"anim_note": "2:10 Animation 3D; Anime-Planet review praises beautiful sword fights; limited evidence"
 },
 "legendofprincesschangge": {
 "name": "The Legend of Princess Chang-Ge",
 "completed": false,
-"note": "Anime-Planet 3.92 of 5 from 23 votes (Chang Ge Xing, 2025); 16 eps but only 15 uploaded",
+"note": "Anime-Planet 3.92 of 5 from 23 votes (Chang Ge Xing, 2025); 16 eps but only 15 uploaded; members-only: 16 eps finished 2025; free EP1-8, EP9-16 locked (All Episodes upload also locked); members-only; no free copy on tracked channels",
 "origin": "CN",
 "rating": 7.8,
 "rating_src": "Anime-Planet x2",
 "summary": "In the Tang dynasty, Princess Li Changge is skilled in both martial arts and strategy. After a prophecy blames a woman for coming calamity and her family is destroyed, she escapes and sets out to take revenge on those responsible, gathering allies and fighting her way toward reclaiming what was taken from her house.",
 "checked": "2026-10-04",
-"checked_eps": 15
+"checked_eps": 15,
+"members_checked": "2026-10-06",
+"members": true
 },
 "apocalypseidominatewithmysrankmech": {
 "name": "Apocalypse: I Dominate with My S-Rank Mech",
 "completed": false,
-"note": "ongoing (2026, EP40 aired June 2026); no rating found",
+"note": "ongoing (2026, EP40 aired June 2026); no rating found; members-only: free EP1-37 (limited-free compilation), EP38-40 locked; EP40 posted June 2026 and nothing newer in 4 months, so the season looks finished with the tail still locked",
 "origin": "CN",
 "summary": "In a world overrun by apocalypse, a young man written off as worthless is cast aside, then awakens a system that lets him build and upgrade machines with advanced technology. Starting with an S-rank mech, he sets out to turn the tables on those who abandoned him and carve out his own power in the ruined world.",
 "checked": "2026-09-30",
-"checked_eps": 40
+"checked_eps": 40,
+"members_checked": "2026-10-06",
+"members": true
 },
 "immortalsofthegodlessage": {
 "name": "Immortals of the Godless Age",
@@ -3440,7 +3530,7 @@
 "abovemyriads": {
 "name": "Above Myriads",
 "completed": true,
-"note": "Anime-Planet 4.05 of 5 from 37 votes (Wan Ren Zhi Shang, 2026); season of 14 eps finished (final 6 released at once on iQIYI); all 14 uploaded",
+"note": "Anime-Planet 4.05 of 5 from 37 votes (Wan Ren Zhi Shang, 2026); season of 14 eps finished (final 6 released at once on iQIYI); all 14 uploaded; members check: all 14 eps free (EP14 free upload and free FULL compilation); hole was a numbering artifact",
 "origin": "CN",
 "summary": "Yi Feng is transported into the Immortal River Continent, a cultivation world where he appears to have no spiritual roots at all and gets by on the everyday skills a mysterious system hands him. What he does not realize is that his strength is godlike, and as he goes about his quiet life, his casual actions keep resolving crises and reshaping the continent around him.",
 "rating": 8.1,
@@ -3448,7 +3538,9 @@
 "checked": "2026-09-30",
 "checked_eps": 14,
 "anim": 4,
-"anim_note": "Guangzhou Liu Ling Yi 2D; early coverage praises very smooth animation and distinctive art"
+"anim_note": "Guangzhou Liu Ling Yi 2D; early coverage praises very smooth animation and distinctive art",
+"members_checked": "2026-10-06",
+"members_ok": true
 },
 "画江湖之不良人第七季九幽玄天": {
 "name": "The Degenerate-Drawing Jianghu Season 7",
@@ -3469,7 +3561,9 @@
 "checked": "2026-10-02",
 "checked_eps": 14,
 "origin": "CN",
-"summary": "A woman wakes up reborn as Athanasia, an infant princess from a romance story in which her cold father, the emperor, eventually has her executed. Determined to avoid that ending, she tries to stay out of his way and plan an escape, but her efforts keep drawing his attention instead."
+"summary": "A woman wakes up reborn as Athanasia, an infant princess from a romance story in which her cold father, the emperor, eventually has her executed. Determined to avoid that ending, she tries to stay out of his way and plan an escape, but her efforts keep drawing his attention instead.",
+"anim": 4,
+"anim_note": "Colored Pencil Animation 2D; first-impression review: pleasing, robust backgrounds, good motion"
 },
 "divinelordoftheheavens": {
 "name": "Divine Lord of the Heavens",
@@ -3614,7 +3708,8 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Duanmu Yeyu, a young man from a remote village, heads to Ember City hoping to join the elite monster-fighting Hell Hunters. After he rescues an injured engineered agent called MIKO-Taiyi, he unknowingly walks off with a vital device she was carrying. Taiyi must quietly get close to him to recover it, just as the forces of the villain Lucifer close in on the city.",
 "checked": "2026-09-30",
-"checked_eps": 15
+"checked_eps": 15,
+"anim_tried": "2026-10-06"
 },
 "capsules": {
 "name": "CAPSULES",
@@ -3650,7 +3745,9 @@
 "note": "MAL entry: Kao Ni La Zhanshen Xitong; Anime-Planet 3.804 of 5 from 404 votes",
 "checked": "2026-10-02",
 "checked_eps": 16,
-"summary": "An Lin is an ordinary young man from the city until a powerful cultivator hands him a War God System and sends him off to train in a world of spiritual cultivation. Lacking natural talent, he is mocked as someone who only got ahead through connections. Leaning on the system and his own stubbornness, he sets out to grow stronger, make real friends and prove the doubters wrong."
+"summary": "An Lin is an ordinary young man from the city until a powerful cultivator hands him a War God System and sends him off to train in a world of spiritual cultivation. Lacking natural talent, he is mocked as someone who only got ahead through connections. Leaning on the system and his own stubbornness, he sets out to grow stronger, make real friends and prove the doubters wrong.",
+"anim_tried": "2026-10-06",
+"origin": "CN"
 },
 "fatalrule": {
 "name": "Fatal Rule",
@@ -3670,7 +3767,10 @@
 "checked": "2026-10-05",
 "checked_eps": 16,
 "summary": "After a catastrophe wiped out much of civilization, survivors live in fortified strongholds or scrape by in lawless settlements on the fringes, where only the strong last. Ren Xiaosu grew up fending for himself in this harsh world. When an unexpected incident leaves him with supernatural powers, he must decide how to use them as he fights to survive and carve out a place in a society full of distrust.",
-"anim_tried": "2026-10-05"
+"anim_tried": "2026-10-05",
+"anim": 4,
+"anim_note": "Passion Paint Animation 3D; Anime-Planet review: many pretty moments, strong environment design",
+"origin": "CN"
 },
 "fairytail-dub": {
 "name": "Fairy Tail (English Dub)",
@@ -3814,7 +3914,10 @@
 "note": "Anime-Planet 3.728 of 5 from 25286 votes",
 "checked": "2026-10-02",
 "checked_eps": 13,
-"summary": "In 2031 humanity has been pushed behind walls by the Gastrea, monsters spread by a virus. Rentaro Satomi, a young civil security agent, works with Enju, one of the Cursed Children born with Gastrea powers, to fight the creatures, and the pair get caught up in a plot that threatens Tokyo."
+"summary": "In 2031 humanity has been pushed behind walls by the Gastrea, monsters spread by a virus. Rentaro Satomi, a young civil security agent, works with Enju, one of the Cursed Children born with Gastrea powers, to fight the creatures, and the pair get caught up in a plot that threatens Tokyo.",
+"anim": 3,
+"anim_note": "known: Kinema Citrus 2014, ordinary TV quality",
+"origin": "JP"
 },
 "alderaminonthesky": {
 "name": "Alderamin on the Sky",
@@ -3850,7 +3953,10 @@
 "note": "S2 confirmed for 2027; Anime-Planet 3.82 of 5 from 1731 votes",
 "checked": "2026-10-02",
 "checked_eps": 13,
-"summary": "Hikaru Gero is the heir of a family of assassins who specialize in poison, and he has no luck at all with women. To keep the family line going he must find a wife, so he teams up with a con artist who seduces people for a living and learns how to date while still doing his deadly job."
+"summary": "Hikaru Gero is the heir of a family of assassins who specialize in poison, and he has no luck at all with women. To keep the family line going he must find a wife, so he teams up with a con artist who seduces people for a living and learns how to date while still doing his deadly job.",
+"anim": 3,
+"anim_note": "known: Bones Film 2025, solid action moments, ordinary TV overall",
+"origin": "JP"
 },
 "dragonsdisciple": {
 "name": "Dragon's Disciple",
@@ -3862,7 +3968,9 @@
 "summary": "A frail but upright youth begins training in traditional Chinese martial arts under the master Tang Zichen. Pushing past the limits of his weak body, he learns that true martial skill is meant to stop fighting rather than start it, and sets out to grow strong enough to stand up for what is right.",
 "members_ok": true,
 "checked": "2026-09-30",
-"checked_eps": 16
+"checked_eps": 16,
+"anim": 4,
+"anim_note": "Xuni Pictures and Wonder Cat 2D, reviewers praise martial arts fight choreography"
 },
 "ipponagain": {
 "name": "Ippon Again!",
@@ -3893,7 +4001,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Chu Yang is killed in an ambush by plunderers hunting the legendary Nine Tribulations Sword, only to wake sixteen years in the past. Armed with memories of his first life, he tries to reshape his fate, avoid the betrayals that doomed him and grow strong enough to change what is coming.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: Foch 3D (Perfect World studio), ordinary to decent CG"
 },
 "我是学校唯一的人类": {
 "name": "I'm the Only Human at School",
@@ -4020,7 +4130,9 @@
 "note": "Anime-Planet 3.8 of 5 from 9479 votes; 13 eps (2021) complete",
 "summary": "Yoshida, a 26-year-old office worker, gets turned down by the coworker he loves and heads home drunk, where he finds high school girl Sayu sitting by the road. She ran away from home months ago and has been drifting across Japan. He reluctantly lets her stay at his apartment, and the two start helping each other put their lives back in order.",
 "checked": "2026-09-30",
-"checked_eps": 13
+"checked_eps": 13,
+"anim": 3,
+"anim_note": "known: Project No.9, ordinary TV quality"
 },
 "tadaneverfallsinlove": {
 "origin": "JP",
@@ -4257,7 +4369,9 @@
 "note": "Korean webtoon adaptation; Anime-Planet 3.776 of 5 from 7535 votes",
 "summary": "Cadis Etrama Di Raizel, a powerful noble, wakes from an 820 year sleep and finds the modern world unfamiliar. His loyal servant Frankenstein, now principal of a Korean high school, enrolls him as a student. Rai makes human friends there, but a secret organization called the Union soon begins sending its modified agents after them.",
 "checked": "2026-09-30",
-"checked_eps": 13
+"checked_eps": 13,
+"anim": 3,
+"anim_note": "known: Production I.G 2020, ordinary TV quality, some flat fights"
 },
 "walkingthewayallalone": {
 "origin": "CN",
@@ -4268,7 +4382,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Luo Li grows up on the Yinzhou Continent, a land without spiritual energy, and becomes the top assassin of the Tianjue Assassin Hall. When his father gives his life for him, Luo Li flees to the Zhongtian Main World, where he takes up cultivation and begins digging into the secrets surrounding his past on his long road toward immortality.",
 "checked": "2026-09-30",
-"checked_eps": 16
+"checked_eps": 16,
+"anim": 3,
+"anim_note": "Wonder Cat Animation 2D (2026); detailed fights claimed but one upload flagged AI, no reviews seen"
 },
 "qirefiningfor3000years": {
 "origin": "CN",
@@ -4371,7 +4487,8 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Linley Baruch is the heir of the Baruch clan, once-legendary Dragonblood Warriors who have fallen into poverty. As a boy he finds the Coiling Dragon Ring, which holds the spirit of Doehring Cowart, an ancient grand magus. Under Doehring's guidance Linley trains as a mage and sets out to become strong enough to restore his family's lost glory.",
 "checked": "2026-09-30",
-"checked_eps": 20
+"checked_eps": 20,
+"anim_tried": "2026-10-06"
 },
 "purgatorywalkers": {
 "origin": "CN",
@@ -4386,11 +4503,11 @@
 "pawspalaces": {
 "origin": "CN",
 "name": "Paws & Palaces",
-"completed": false,
-"note": "Zi Jin: Yu Miao Fang; 16 eps (2025 to 2026, finished); gap of 1 episode; no rating found (Anime-Planet has too few votes)",
+"completed": true,
+"note": "Zi Jin: Yu Miao Fang; studio Colored Pencil Animation; 16 eps (Dec 2025 to 2026, finished), all 16 now uploaded; no rating found (MAL not yet rated, Anime-Planet too few votes)",
 "summary": "Behind the calm of the Forbidden City, six palace cats lead a secret second life. Split into civil and martial divisions, they guard the memories held inside the palace's cultural relics and fight off Black Owl, a force bent on destroying them.",
-"checked": "2026-09-30",
-"checked_eps": 15
+"checked": "2026-10-06",
+"checked_eps": 16
 },
 "diningroomoflinklee": {
 "origin": "CN",
@@ -4588,7 +4705,8 @@
 "rating_src": "Anime-Planet x2",
 "summary": "In a world where humans and demons live side by side and dark powers run wild, a desperate young man raised among ruthless, wicked people finds his way onto the path of immortal cultivation. Carrying the scars of his upbringing, he sets out to climb the ranks of cultivators and take control of a fate that no heaven will decide for him.",
 "checked": "2026-09-30",
-"checked_eps": 15
+"checked_eps": 15,
+"anim_tried": "2026-10-06"
 },
 "aworldworthprotecting": {
 "origin": "CN",
@@ -4694,7 +4812,9 @@
 "note": "Anime-Planet 3.741 of 5 from 1,755 votes",
 "summary": "Koguma is a high school girl in rural Yamanashi living alone with no parents, no friends, and no hobbies. Her quiet routine changes when she buys a cheap used Honda Super Cub scooter, and learning to ride and care for it slowly widens her world, bringing small adventures and her first real friendship.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 4,
+"anim_note": "known: Studio Kai 2021, praised art direction and color, CG scooter"
 },
 "miragehouseintheclouds": {
 "origin": "CN",
@@ -4786,7 +4906,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "A diligent office worker dies and is reborn in the fantasy world of Galdardia as Luciel, a young healer. Using the habits of his old working life, he throws himself into grueling training, including drinking a vile potion to build stamina, so that he can survive in a dangerous world full of monsters.",
 "checked": "2026-09-30",
-"checked_eps": 1
+"checked_eps": 1,
+"anim": 2,
+"anim_note": "known: Studio Comet, cheap and stiff, widely criticized animation"
 },
 "failureframe": {
 "origin": "JP",
@@ -4850,7 +4972,9 @@
 "note": "Anime-Planet 3.8 of 5 from 2,732 votes",
 "summary": "Kenzaburou Tondabayashi, a veteran government official and devoted father, dies in an accident and wakes up as Julitta, the villainess of an otome game his daughter loved. Using decades of workplace experience and good sense, he tries to avoid the character's doomed endings, and ends up charming the game's leading men without meaning to.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: Ajia-do 2025 comedy, ordinary, limited animation"
 },
 "chillininanotherworldwithlevel2supercheatpowers": {
 "origin": "JP",
@@ -5017,7 +5141,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Bocchi Hitori is painfully shy, and when her only childhood friend Kai tells her they will not be at the same middle school, she makes Bocchi promise to befriend the whole new class before they can talk again. Starting with a tough-looking girl named Nako, Bocchi works up the courage to make friends one nervous step at a time.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: C2C 2019, ordinary slice-of-life TV quality"
 },
 "7thtimeloopthevillainessenjoysacarefreelifemarriedtoherworst": {
 "origin": "JP",
@@ -5051,7 +5177,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Elaina is a talented young witch who, inspired by a book of travel stories, sets out to see the world for herself. Flying on her broom from one country to the next, she meets people with odd customs, kind hearts or dark secrets, observing and sometimes stepping in, while keeping her freedom as a traveler who never stays long.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 4,
+"anim_note": "known: C2C 2020, polished art and backgrounds, consistent"
 },
 "reborntomasterthebladefromherokingtoextraordinarysquire": {
 "origin": "JP",
@@ -5184,7 +5312,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "High school student Miko Yotsuya suddenly starts seeing grotesque spirits and monsters that nobody else can. Rather than react and draw their attention, she decides to act as if nothing is there. The series follows her daily life at school and home as she keeps a straight face in front of increasingly horrifying apparitions.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: Passione 2021, ordinary TV, decent creature designs"
 },
 "mysenpaiisannoying": {
 "origin": "JP",
@@ -5221,7 +5351,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Rick Gladiator decides to become an adventurer at forty, an age when most people have long since retired from that life. His late start catches the eye of the top-ranked hero party, who take him on as an apprentice and put him through punishing training. The middle-aged rookie grows far stronger than anyone expects as he takes on quests.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: 2024 isekai-style TV production, ordinary, limited fights"
 },
 "halloweenspecial": {
 "origin": "JP",
@@ -5278,7 +5410,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Mahiru Kozuki has given up on her dream of drawing and blends into the crowd in Shibuya. One night she meets Kano Yamanouchi, a former idol who wants to make music again, and they form JELEE, an anonymous online creative group. With new collaborators joining, the girls chase the chance to be seen for their own art.",
 "checked": "2026-10-03",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 4,
+"anim_note": "known: Doga Kobo 2024, vivid colorful visuals, polished throughout"
 },
 "hinalogicfromlucklogic": {
 "origin": "JP",
@@ -5310,7 +5444,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Princess Anisphia remembers a past life and is obsessed with magic, yet she cannot use it herself, so she invents her own field of magicology. When her brother publicly breaks off his engagement to Euphyllia, a gifted and dutiful noble daughter, Anis sweeps her away to become her assistant. Together they chase Anis's dream of flying and challenge the kingdom's rigid ideas about magic.",
 "checked": "2026-10-03",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: Diomedea 2023, ordinary, some uneven episodes"
 },
 "servamp": {
 "origin": "JP",
@@ -5424,7 +5560,9 @@
 "rating_src": "Anime-Planet x2",
 "checked": "2026-10-04",
 "checked_eps": 12,
-"summary": "Dale is a skilled young adventurer who finds a small demon girl named Latina alone in a forest after her father's death. Unable to leave her, he takes her back to the town inn where he lives and becomes her guardian, juggling dangerous jobs with the everyday work of raising a child who is quickly winning over everyone around her."
+"summary": "Dale is a skilled young adventurer who finds a small demon girl named Latina alone in a forest after her father's death. Unable to leave her, he takes her back to the town inn where he lives and becomes her guardian, juggling dangerous jobs with the everyday work of raising a child who is quickly winning over everyone around her.",
+"anim": 3,
+"anim_note": "known: Maho Film 2019, ordinary TV quality"
 },
 "greatestdemonlordisrebornasatypicalnobody": {
 "origin": "JP",
@@ -5469,7 +5607,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Nozomu Tanaka enrolls at an all-girls high school hoping for a dramatic youth, but she is loud, silly and quickly nicknamed Baka by her classmates. Along with the otaku Wota and the expressionless Robo, she spends her school days on pointless schemes, strange conversations and small misadventures with a class full of odd girls.",
 "checked": "2026-10-01",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: Passione 2019, ordinary comedy TV quality"
 },
 "arte": {
 "origin": "JP",
@@ -5480,7 +5620,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "In 16th century Florence, Arte is a young noblewoman who dreams of becoming a painter at a time when women are barred from the craft. Leaving her privileged life behind, she persuades a gruff master named Leo to take her on as an apprentice and sets out to prove herself in a workshop world run by men.",
 "checked": "2026-10-01",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: Seven Arcs 2020, nice period backgrounds, ordinary animation"
 },
 "worldsstrongestrearguard": {
 "origin": "JP",
@@ -5612,7 +5754,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "Wein Salema Arbalest is the prince regent of Natra, a poor, snowbound northern kingdom. Privately he wants nothing more than to sell off the country and retire in comfort, with his loyal aide Ninym as his only confidante. Yet every scheme he tries to shed responsibility somehow succeeds so well that his people hail him as a genius, pulling him deeper into war and diplomacy.",
 "checked": "2026-10-01",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: Yokohama Animation Laboratory 2022, ordinary, dialogue-heavy"
 },
 "sheprofessedherselfpupilofthewiseman": {
 "origin": "JP",
@@ -5646,7 +5790,9 @@
 "rating_src": "Anime-Planet x2",
 "checked": "2026-10-02",
 "checked_eps": 12,
-"summary": "Hina Tsurugi, a shy first-year who has just moved to a seaside town, wants to join a handicrafts club but ends up in the Breakwater Club, a school club devoted to fishing. Guided by an energetic senior, she learns to cast, bait and cook her catch, finding small adventures along the coast."
+"summary": "Hina Tsurugi, a shy first-year who has just moved to a seaside town, wants to join a handicrafts club but ends up in the Breakwater Club, a school club devoted to fishing. Guided by an energetic senior, she learns to cast, bait and cook her catch, finding small adventures along the coast.",
+"anim": 3,
+"anim_note": "known: Doga Kobo 2020, clean and ordinary TV quality"
 },
 "danganronpa3theendofhopespeakhighschoolfuturearc": {
 "origin": "JP",
@@ -5867,7 +6013,9 @@
 "note": "Anime-Planet 3.747 of 5 from 7747 votes",
 "checked": "2026-10-02",
 "checked_eps": 12,
-"summary": "Five hundred years after witches learned magic, a half-beast mercenary hated and feared by humans dreams of becoming human. He meets Zero, a witch searching for a stolen grimoire powerful enough to destroy the world, and agrees to act as her bodyguard in exchange for her promise to turn him into a human."
+"summary": "Five hundred years after witches learned magic, a half-beast mercenary hated and feared by humans dreams of becoming human. He meets Zero, a witch searching for a stolen grimoire powerful enough to destroy the world, and agrees to act as her bodyguard in exchange for her promise to turn him into a human.",
+"anim": 3,
+"anim_note": "studio White Fox, ordinary TV quality"
 },
 "epicofdivinitylight": {
 "origin": "CN",
@@ -6020,11 +6168,13 @@
 "origin": "CN",
 "name": "Different World Medicine Shop",
 "completed": false,
-"note": "Anime-Planet 3.355 of 5 from 69 votes (Yi Shijie Zhongyao Pu, 40 eps, 2020); a Part II (2021) exists and is not covered by this key",
+"note": "Anime-Planet 3.355 of 5 from 69 votes (Yi Shijie Zhongyao Pu, 40 eps, 2020); a Part II (2021) exists and is not covered by this key; members-only: free EP1-20, EP21-100 locked; finished show",
 "rating": 6.7,
 "rating_src": "Anime-Planet x2",
 "checked": "2026-09-30",
-"checked_eps": 40
+"checked_eps": 40,
+"members_checked": "2026-10-06",
+"members": true
 },
 "changanmagicstreet": {
 "origin": "CN",
@@ -6066,11 +6216,11 @@
 "luoyang": {
 "origin": "CN",
 "name": "Luoyang",
-"completed": false,
-"note": "no rating found (no Anime-Planet entry); 16 eps (2021-22) complete on iQIYI, 15 uploaded, 1 ep gap",
+"completed": true,
+"note": "Luoyang (Luo Yang); 16 eps (2021-22), finished, all 16 now uploaded; no rating found (no Anime-Planet entry, retried 2026-10-06)",
 "summary": "During the reign of Wu Zetian, a new imperial examination system threatens the old aristocratic families, who plot to keep her from the throne. Pei Kun arrives in the divine capital of Luoyang and is quickly caught up in a conspiracy involving the Chun Qiu Dao, forcing him to navigate court intrigue and hidden enemies.",
-"checked": "2026-09-30",
-"checked_eps": 15
+"checked": "2026-10-06",
+"checked_eps": 16
 },
 "zhenjiandhisfriends": {
 "origin": "CN",
@@ -6283,7 +6433,9 @@
 "note": "Anime-Planet 3.79 of 5 from 2277 votes",
 "summary": "College student Seigi Nakata rescues a strikingly handsome British jeweler named Richard from a group of drunks and asks him to appraise a ring his late grandmother left behind. The appraisal uncovers a painful family story, and afterward Seigi takes a part-time job at Richard's Ginza jewelry shop, where each gemstone brought in comes with a customer's secret to unravel.",
 "checked": "2026-10-01",
-"checked_eps": 12
+"checked_eps": 12,
+"anim": 3,
+"anim_note": "known: Shuka 2020, ordinary TV quality"
 },
 "bloodofyouth": {
 "origin": "CN",
@@ -6507,12 +6659,14 @@
 "origin": "CN",
 "name": "Ancient War Soul",
 "completed": false,
-"note": "Anime-Planet 3.69 of 5 from 20 votes; Anime-Planet lists 40 eps (2025), only 21 uploaded",
+"note": "Anime-Planet 3.69 of 5 from 20 votes; Anime-Planet lists 40 eps (2025), only 21 uploaded; members-only: 40 eps (2025), free EP1-21 only, EP22-40 locked and free uploads stalled about a year ago",
 "rating": 7.4,
 "rating_src": "Anime-Planet x2",
 "summary": "A martial emperor who once stood above everyone is killed, and tens of thousands of years later his soul wakes inside the body of a young man named Qin Feng. Awakening a powerful martial soul, he starts training again from the bottom, taking on rival fighters as he works his way back toward the heights he lost.",
 "checked": "2026-09-30",
-"checked_eps": 21
+"checked_eps": 21,
+"members_checked": "2026-10-06",
+"members": true
 },
 "shifangjiansheng": {
 "origin": "CN",
@@ -6671,7 +6825,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "A comfortable office worker receives a strange invitation that pulls him into a divine realm. There he and others are thrown into simulated trials built to test how humanity adapts and survives, and he has to work out the rules of this place and keep passing its challenges if he wants to stay alive and find a way home.",
 "checked": "2026-09-30",
-"checked_eps": 16
+"checked_eps": 16,
+"anim": 4,
+"anim_note": "Wonder Cat Animation 3D for Bilibili; Anime-Planet review praises the animation; limited evidence"
 },
 "howdareyou-dub": {
 "origin": "CN",
@@ -6730,10 +6886,11 @@
 "origin": "CN",
 "name": "A Good Day to Ascend",
 "completed": false,
-"note": "Zeri Feisheng (2026); Anime-Planet 3.833 of 5 from only 14 votes, too few; iQIYI lists 30 eps, completed; uploads cover only EP2 to EP13, EP1 missing; no rating found",
+"note": "Zeri Feisheng (2026); Anime-Planet 3.833 of 5 from only 14 votes, too few; iQIYI lists 30 eps, completed; uploads cover only EP2 to EP13, EP1 missing; no rating found; early access: free EP1-13, newest locked, still releasing weekly (EP13 posted Oct 2026)",
 "summary": "In an age when demons roam free and corrupt officials hold power, Xu Ying is a humble snake catcher. After he kills a god and gets rid of a crooked official, both the mortal authorities and the heavens want him dead, and he is forced to run for his life.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"members_checked": "2026-10-06"
 },
 "martialuniverse": {
 "origin": "CN",
@@ -6849,13 +7006,14 @@
 "rift": {
 "origin": "CN",
 "name": "Rift",
-"completed": false,
-"note": "Anime-Planet 3.435 of 5 from 80 votes (Shikong Zhi Xi, 13 eps, 2022, completed); gaps 2",
+"completed": true,
+"note": "Anime-Planet 3.435 of 5 from 80 votes (Shikong Zhi Xi, 13 eps, 2022, completed); gaps 2; members check: free \"Rift Full\" upload (3h57m, same length as the locked All episodes upload) covers all 13 eps; finished 2022",
 "rating": 6.9,
 "rating_src": "Anime-Planet x2",
 "summary": "Unstable energy between our world and a parallel realm has torn open a rift in time and space, the only doorway monsters can use to cross over. A small group of chosen fighters takes up the job of guarding the rift and holding back the creatures before they overrun the world.",
-"checked": "2026-09-30",
-"checked_eps": 11
+"checked": "2026-10-06",
+"checked_eps": 13,
+"members_checked": "2026-10-06"
 },
 "fallenmaster": {
 "origin": "CN",
@@ -6980,10 +7138,12 @@
 "origin": "CN",
 "name": "Raccoon Town in Phone",
 "completed": false,
-"note": "members-only gaps; no rating found (Anime-Planet has under 1 vote); 2 seasons of 26 short eps (2021-22)",
+"note": "members-only gaps; no rating found (Anime-Planet has under 1 vote); 2 seasons of 26 short eps (2021-22); members-only: finished 2021-22; free EP1-4 compilation plus a few, most episodes locked",
 "summary": "Inside people's mobile phones lives a town of small animals who keep the devices running and messages flowing. This raccoon town has its own police station, hospitals and entertainment venues, and the series follows its residents through the everyday work, culture and festivals of their miniature society.",
 "checked": "2026-09-30",
-"checked_eps": 41
+"checked_eps": 41,
+"members_checked": "2026-10-06",
+"members": true
 },
 "jojosbizarreadventurephantomblood": {
 "origin": "JP",
@@ -7020,11 +7180,11 @@
 "inthenameofyingtai": {
 "origin": "CN",
 "name": "In the Name of Ying Tai",
-"completed": false,
-"note": "Zai Xia Ying Tai; 11 of 12 eps uploaded, 1 gap; no Anime-Planet entry found; no rating found",
-"summary_status": "unavailable",
-"checked": "2026-09-30",
-"checked_eps": 11
+"completed": true,
+"note": "Zai Xia Ying Tai; Kio Studio, 12 eps (2025, finished), all 12 now uploaded; no rating found (MAL not yet rated, no Anime-Planet entry found)",
+"checked": "2026-10-06",
+"checked_eps": 12,
+"summary": "A young woman with extraordinary physical strength steps into city life and learns she is tied to an ancient martial order. Determined to sharpen her skills and discipline, she enrolls in an academy, where she trains alongside her classmates and is drawn into a conflict with foreign agents targeting the palace."
 },
 "busteddarklord": {
 "origin": "CN",
@@ -7150,10 +7310,11 @@
 "origin": "CN",
 "name": "Raised by Demons: Panda Li",
 "completed": false,
-"note": "Li Xiongmao (2026, ongoing, GARDEN), adapted from a Wen Zhou novel; Anime-Planet 3.94 of 5 from only 14 votes, too few; uploads start at EP2; no rating found",
+"note": "Li Xiongmao (2026, ongoing, GARDEN), adapted from a Wen Zhou novel; Anime-Planet 3.94 of 5 from only 14 votes, too few; uploads start at EP2; no rating found; early access: free EP1-10, EP11 locked, airing weekly",
 "summary": "Panda Li is a human who was raised by demons, and he sets out to kill the three enemies responsible for wiping out the demon race. As he hunts them down, he uncovers a deeper conflict between humans and demons, secrets buried in the ruling dynasty, and the truth about where he himself came from.",
 "checked": "2026-09-30",
-"checked_eps": 10
+"checked_eps": 10,
+"members_checked": "2026-10-06"
 },
 "strongestmaleheroever": {
 "origin": "CN",
@@ -7179,12 +7340,16 @@
 "origin": "CN",
 "name": "Beyond Time's Gaze",
 "completed": false,
-"note": "gaps 9; still airing weekly (about 42 eps out by Oct 2026); Anime-Planet 4.29 of 5 from 79 votes",
+"note": "gaps 9; still airing weekly (about 42 eps out by Oct 2026); Anime-Planet 4.29 of 5 from 79 votes; members-only: only EP1-3 free, EP4-40 locked while EP42 is out; not early access; members-only; no free copy on tracked channels",
 "rating": 8.6,
 "rating_src": "Anime-Planet x2",
 "summary": "In a broken world where time itself has become unstable, a giant eye opened in the shattered sky and left death and forbidden zones behind it. Xu Qing, a young survivor from the slums, fights to stay alive in this hostile land and looks for a way to grow strong enough to shape his own fate.",
 "checked": "2026-10-04",
-"checked_eps": 8
+"checked_eps": 8,
+"anim": 4,
+"anim_note": "Yien Animation and Flying Fish 3D (2025), polished; limited review evidence",
+"members_checked": "2026-10-06",
+"members": true
 },
 "alchemistsrise": {
 "origin": "CN",
@@ -7228,12 +7393,14 @@
 "origin": "CN",
 "name": "You're a Genius",
 "completed": false,
-"note": "Anime-Planet 3.396 of 5 from 30 votes (Ni Zhenshi Ge Tiancai, 24 eps 2022); uploads start at EP4, gaps 2",
+"note": "Anime-Planet 3.396 of 5 from 30 votes (Ni Zhenshi Ge Tiancai, 24 eps 2022); uploads start at EP4, gaps 2; members-only: 24 eps (2022) finished; free EP1-10 only (Bilibili and Lv.99), EP11-24 locked",
 "rating": 6.8,
 "rating_src": "Anime-Planet x2",
 "summary": "In a world split between a Western and an Eastern continent, where magic is the main source of power, a boy with unusual talents sets out on a journey across the lands to master arts that can stand against magic. His travels take him through rival empires and tribes, played with a light comedic touch.",
 "checked": "2026-09-30",
-"checked_eps": 18
+"checked_eps": 18,
+"members_checked": "2026-10-06",
+"members": true
 },
 "heroreturn": {
 "origin": "CN",
@@ -7270,12 +7437,14 @@
 "origin": "CN",
 "name": "The Chronicles of the Ranger",
 "completed": false,
-"note": "Anime-Planet 3.593 of 5 from 31 votes (Youxia Zhanji, 2021, 20 eps); identified as Youxia Zhanji by title and Ranger League premise; only 10 uploads so likely partial",
+"note": "Anime-Planet 3.593 of 5 from 31 votes (Youxia Zhanji, 2021, 20 eps); identified as Youxia Zhanji by title and Ranger League premise; only 10 uploads so likely partial; members-only: 20 eps (2021) finished; free EP1-10, EP11-20 locked",
 "rating": 7.2,
 "rating_src": "Anime-Planet x2",
 "summary": "Hou Mo is a young nobody scraping by in the marketplace until an accident awakens the hidden potential in his genes. Newly empowered, he joins the Ranger League, a group of heroes who protect the weak, and sets out to fight the sinister organization known as the Ferryman.",
 "checked": "2026-09-30",
-"checked_eps": 10
+"checked_eps": 10,
+"members_checked": "2026-10-06",
+"members": true
 },
 "insearchofgods-dub": {
 "origin": "CN",
@@ -7310,11 +7479,11 @@
 "不正经土豪": {
 "origin": "CN",
 "name": "Not-So-Serious Tycoon",
-"completed": false,
-"note": "no rating found; gaps 1; English title unsure",
+"completed": true,
+"note": "Bu Zhengjing Tuhao; Youku, uploads from 2021; all 14 uploaded eps present, no gaps, nothing new since 2021 so likely complete (total unverified); format unverified, some episode titles hint at real-life subjects; no rating found; English title unsure",
 "summary": "A light comedy series that peeks into the lives of absurdly wealthy people who insist they are perfectly ordinary. Each short episode, such as a visit to a so-called average otaku's room, plays up the gap between everyday life and the extravagant world of the ultra-rich, poking fun at their habits along the way.",
-"checked": "2026-09-30",
-"checked_eps": 13
+"checked": "2026-10-06",
+"checked_eps": 14
 },
 "gicallegend": {
 "origin": "CN",
@@ -7443,12 +7612,14 @@
 "origin": "CN",
 "name": "I Have a Mountain Fastness",
 "completed": false,
-"note": "Anime-Planet 3.647 of 5 from 16 votes (Kaiju Yi Zuo Shan, 2022, 12 eps); season 1 fully uploaded but a 24-episode season 2 exists",
+"note": "Anime-Planet 3.647 of 5 from 16 votes (Kaiju Yi Zuo Shan, 2022, 12 eps); season 1 fully uploaded but a 24-episode season 2 exists; members-only: 12 eps (2022) finished; free EP1-6, EP7-12 locked",
 "rating": 7.3,
 "rating_src": "Anime-Planet x2",
 "summary": "A modern man with a talent for strategy is transported into a war-torn dynasty and finds himself in charge of a mountain stronghold full of unreliable companions. Rather than chase the usual ambitions, he sets his own unconventional goals and uses his wits to hold the mountain against rival warriors and bandit forces.",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"members_checked": "2026-10-06",
+"members": true
 },
 "feirenzai": {
 "origin": "CN",
@@ -7464,10 +7635,11 @@
 "origin": "CN",
 "name": "Golden Curse",
 "completed": false,
-"note": "no rating found (Anime-Planet Caishen Dou Zhanlong has too few votes); 2026, ongoing; uploads start at EP2",
+"note": "no rating found (Anime-Planet Caishen Dou Zhanlong has too few votes); 2026, ongoing; uploads start at EP2; early access: free EP1-9, airing weekly",
 "summary": "Dou Zhanlong is a treasure-hunting master known as history's most sinister God of Wealth, trapped in an endless cycle of rebirth. Set in a dark world of supernatural realms and occult arts, the story follows his attempts to master forbidden techniques and finally break free of the cycle, while rival treasure hunters pursue their own goals.",
 "checked": "2026-09-30",
-"checked_eps": 7
+"checked_eps": 7,
+"members_checked": "2026-10-06"
 },
 "soulbusterepisode": {
 "origin": "CN",
@@ -7601,7 +7773,9 @@
 "rating_src": "Anime-Planet x2",
 "summary": "An anthology of standalone short films inspired by Chinese folklore and myth, each made by a different director in its own visual style. The stories range from a lowly boar demon toiling for a mountain demon king to tales of wolves, geese and strange visitors from the sky, reworking old legends around modern worries about work, family and belonging.",
 "checked": "2026-09-30",
-"checked_eps": 8
+"checked_eps": 8,
+"anim": 5,
+"anim_note": "Shanghai Animation Film Studio anthology, each film in a distinct style, widely praised visuals"
 },
 "adventuresinsubduingthedemons": {
 "origin": "CN",
@@ -7623,16 +7797,19 @@
 "note": "Anime-Planet 3.756 of 5 from 3285 votes",
 "checked": "2026-10-02",
 "checked_eps": 12,
-"summary": "Nanako Yukishiro is a cheerful high school girl who is too shy to speak, so she communicates only by writing short senryu poems on wooden tablets. In the literature club she grows close to Eiji Busujima, a former delinquent with a scary face, and the two learn to understand each other."
+"summary": "Nanako Yukishiro is a cheerful high school girl who is too shy to speak, so she communicates only by writing short senryu poems on wooden tablets. In the literature club she grows close to Eiji Busujima, a former delinquent with a scary face, and the two learn to understand each other.",
+"anim": 3,
+"anim_note": "studio Connect, simple ordinary TV quality"
 },
 "gowestoverworked": {
 "origin": "CN",
 "name": "GoWest: Overworked",
-"completed": false,
-"note": "Da Xia Qing Shang Gong (2025); Anime-Planet and AnimeCountdown list 10 eps, finished July 2025, not yet rated on Anime-Planet; this key has 15 uploads with 85 gaps and includes a Spy x Sect EP100 upload, so it looks mixed with another show; no rating found",
+"completed": true,
+"note": "Da Xia Qing Shang Gong (2025); Anime-Planet and AnimeCountdown list 10 eps, finished July 2025, not yet rated on Anime-Planet; this key has 15 uploads with 85 gaps and includes a Spy x Sect EP100 upload, so it looks mixed with another show; no rating found; members check: free \"All Episodes\" upload has chapters EP1-10, whole show free; finished July 2025",
 "summary": "Decades after a chaotic force invaded the martial arts world, a successor to the retired sect leader who fought it turned cultivation into a booming industry, and every martial artist became an exhausted workaholic. An idealistic young fighter tracks down the old master, now hiding out in a restaurant, and tries to talk him into restoring the martial world's old spirit.",
-"checked": "2026-09-30",
-"checked_eps": 15
+"checked": "2026-10-06",
+"checked_eps": 11,
+"members_checked": "2026-10-06"
 },
 "炼气十万年": {
 "origin": "CN",
@@ -7682,11 +7859,11 @@
 "martialweekly": {
 "origin": "CN",
 "name": "The Martial Weekly",
-"completed": false,
-"note": "no rating found (Anime-Planet Wulin Buer Zhoukan: insufficient votes); 24 eps (2023); uploads cover EP5-24 only, EP1-4 missing",
+"completed": true,
+"note": "Wulin Bu Er Zhoukan; 24 eps (2023, finished); free 'All Episodes' upload now covers EP1-24; no rating found (MAL not yet rated, Anime-Planet insufficient votes)",
 "summary": "Hua Xiangrong is the young leader of the small Huajian Clan, trying to keep her sect afloat in a martial world full of schemes and rivals. Framed as a survival guide to the jianghu, this comedic series follows her and her friends as they stumble through traps, feuds and misadventures on their way to making a name for themselves.",
-"checked": "2026-09-30",
-"checked_eps": 20
+"checked": "2026-10-06",
+"checked_eps": 24
 },
 "isekaiquartet": {
 "origin": "JP",
@@ -7753,10 +7930,12 @@
 "origin": "CN",
 "name": "The River God's Axe",
 "completed": false,
-"note": "no rating found (not on Anime-Planet, rechecked 2026-10-05); 河神赐斧，杂灵根劈开修仙路 (Youku 2026); very short episodes (under 2 min each), comic-drama format, AI status not confirmed; members-only gaps, long running and ongoing (uploads reach EP81)",
+"note": "no rating found (not on Anime-Planet, rechecked 2026-10-05); 河神赐斧，杂灵根劈开修仙路 (Youku 2026); very short episodes (under 2 min each), comic-drama format, AI status not confirmed; members-only gaps, long running and ongoing (uploads reach EP81); members-only: EP40-45 locked in the middle of the airing season (free EP37-39 and EP46 onward); not just the newest episodes",
 "summary": "Lu Changgeng, a poor young man with no standing, has spent three years as a hired labourer trying to save his gravely ill mother. After a river god hands him a strange axe, he sets out on the path of cultivation despite having a mixed spiritual root, the kind most sects dismiss as worthless, and starts carving his own way forward.",
 "checked": "2026-10-05",
-"checked_eps": 81
+"checked_eps": 81,
+"members_checked": "2026-10-06",
+"members": true
 },
 "soninlawthroughtheages": {
 "origin": "CN",
@@ -7939,10 +8118,12 @@
 "origin": "CN",
 "name": "The Furious Yama",
 "completed": false,
-"note": "no rating found; members-only gaps; season 1 12 eps (10 uploaded), season 2 only 2 uploads",
+"note": "no rating found; members-only gaps; season 1 12 eps (10 uploaded), season 2 only 2 uploads; members-only: S1 EP1-12 all free (EP5-6 gap is a title-parse artifact), but S2 (finished) EP2-12 locked",
 "summary_status": "unavailable",
 "checked": "2026-09-30",
-"checked_eps": 12
+"checked_eps": 12,
+"members_checked": "2026-10-06",
+"members": true
 },
 "wattsupgirl": {
 "origin": "CN",
@@ -8215,10 +8396,11 @@
 "amortalsjourneytoimmortalitybattleinyanfamily": {
 "origin": "CN",
 "name": "A Mortal's Journey to Immortality: Battle in Yan Family",
-"completed": false,
-"note": "special",
-"merge_into": "amortalsjourneytoimmortalityspecial",
-"checked": "2026-09-30"
+"completed": true,
+"note": "Fanren Xiu Xian Chuan: Yan Jia Bao Zhi Zhan; canon 4-part arc (Jan-Feb 2021, listed on TVDB as specials, numbered 18-21 in that run) in one free 1h16m upload; kept as a companion to amortalsjourney since its story is not in the numbered uploads; old merge target amortalsjourneytoimmortalityspecial is not on the site; no rating found",
+"checked": "2026-10-06",
+"summary": "Han Li, still a cautious young cultivator of the Yellow Maple Valley, joins a gathering at the fortress of the Yan family. What should be a simple affair turns into a deadly trap when the Ghost Spirit Sect and its young master Wang Chan strike, forcing Han Li to fight for his life with every trick he has.",
+"checked_eps": 1
 },
 "kingsavatars1quanzhigaoshouthekingsavatar": {
 "origin": "CN",
@@ -8330,10 +8512,12 @@
 "origin": "CN",
 "name": "You're a Genius (English Dub)",
 "completed": false,
-"note": "English dub; members-only gap; no rating found",
+"note": "English dub; members-only gap; no rating found; members-only: dub of a finished 24-ep show; free EP1-4, 6-7 only, rest locked or missing",
 "summary_status": "unavailable",
 "checked": "2026-09-30",
-"checked_eps": 6
+"checked_eps": 6,
+"members_checked": "2026-10-06",
+"members": true
 },
 "iamsopoorthatallihaveismoney": {
 "origin": "CN",
@@ -10998,6 +11182,107 @@
 "hide": true,
 "checked": "2026-10-06",
 "note": "Lv.99 Animation Club full-season compilation; the same episodes are uploaded one by one"
+},
+"legendofskylord3d": {
+"members_checked": "2026-10-06",
+"origin": "CN",
+"name": "The Legend of Sky Lord 3D",
+"rating": 7.3,
+"rating_src": "Anime-Planet x2",
+"completed": true,
+"note": "Shen Wu Tian Zun 3D (iQIYI, 2024, 24 eps, finished per iq.com); all 24 eps uploaded free (singles plus collections); Anime-Planet 3.641 of 5 from 32 votes (2024 remake entry, per legendofskylord note); 3D remake of the 2D legendofskylord, separate production; the 'The Legend of Sky Lord | EP01-78' collections (about 7 min per ep) are not this show but the older Shen Wu Tian Zun numbering, so the 78-ep count and the EP80-119 locked flag do not apply here; this key also picks up the 2D series EP1-78 collections (title parse); hidden by rating anyway",
+"summary": "Xiao Chen once stood at the peak of the martial world as the revered Sky Lord, until betrayal ended his life. His soul wakes inside a weak young disciple who shares his name, and with his memories and knowledge intact he begins rebuilding his strength, taking on students and settling old scores on the way back to the top.",
+"checked": "2026-10-06",
+"checked_eps": 78
+},
+"风姿物语仙罗篇": {
+"origin": "CN",
+"name": "The Shape of the Wind: Siam Era",
+"merge_into": "shapeofthewindsiamera",
+"note": "Fengzi Wuyu: Xianluo Pian; Lv.99 Animation Club free MultiSub copy of shapeofthewindsiamera (20 eps, same numbering); fills its members-only gaps; MAL lists it after Fengzi Wuyu: Yinhe Pian (2021, not on tracked channels), but it opens a new story with new leads",
+"checked": "2026-10-06",
+"checked_eps": 20
+},
+"战千年": {
+"origin": "CN",
+"name": "Millenniums of Warring States",
+"merge_into": "millenniumsofwarringstates",
+"note": "Zhan Qiannian; Lv.99 Animation Club free MultiSub copy of millenniumsofwarringstates (16 eps, same numbering); fills its members-only gaps",
+"checked": "2026-10-06",
+"checked_eps": 16
+},
+"长夜开拓者": {
+"origin": "CN",
+"name": "Blade of Dawn",
+"merge_into": "bladeofdawn",
+"note": "Changye Kaituozhe; Lv.99 Animation Club free MultiSub copy of bladeofdawn (16 eps, same numbering); fills its members-only gaps",
+"checked": "2026-10-06",
+"checked_eps": 16
+},
+"不死不灭": {
+"origin": "CN",
+"name": "The Eternal Strife",
+"merge_into": "eternalstrife",
+"note": "Bu Si Bu Mie; Lv.99 Animation Club free MultiSub copy of eternalstrife (16 eps, same numbering); fills its members-only gaps",
+"checked": "2026-10-06",
+"checked_eps": 16
+},
+"无限世界": {
+"origin": "CN",
+"name": "The Infinitors",
+"merge_into": "infinitors",
+"note": "Wuxian Shijie; Lv.99 Animation Club free MultiSub copy of infinitors (16 eps, same numbering); fills its members-only gaps",
+"checked": "2026-10-06",
+"checked_eps": 16
+},
+"异人君莫邪": {
+"origin": "CN",
+"name": "Otherworldly Evil Monarch",
+"merge_into": "otherworldlyevilmonarch",
+"note": "Yiren Jun Moxie (Yi Shi Xie Jun); Lv.99 Animation Club free MultiSub copy of otherworldlyevilmonarch (12 eps, same numbering); fills its members-only gaps; one EP1-6 compilation is labeled 'ai' by the quality check only because of a joking comment, not slop",
+"checked": "2026-10-06",
+"checked_eps": 12
+},
+"kingofthezoo": {
+"origin": "CN",
+"name": "King of the Zoo",
+"rating": 6.7,
+"rating_src": "MAL",
+"completed": true,
+"note": "Wo Kai Dongwuyuan Naxie Nian (Those Years I Opened a Zoo), Haoliners, 2020, 13 eps, finished; MAL 6.68 from 971 users (seen on a MAL mirror page); Anime-Planet 3.627 of 5 from 173 votes; danmei novel source; single eps members-only but the free 'All Episodes' upload covers EP1-13",
+"summary": "Fresh out of university, Duan Jiaze inherits a small private zoo and signs a contract that binds him to run it. The animals arriving there turn out to be spirits and creatures from myth, including the mysterious Lu Ya, and he has to keep the strange place afloat while learning who his new residents really are.",
+"checked": "2026-10-06",
+"checked_eps": 13
+},
+"live:My Luck Is Absolute": {
+"note": "dub pass 2026-10-06: reviewed, kept; CN manhua dub; single full upload; AI check says AI-made, channel self-declared (not slop); possibly related to live:Awaken absolute luck talent, unverified",
+"summary_status": "unavailable",
+"checked": "2026-10-06",
+"checked_eps": 0
+},
+"live:Trash Gene?": {
+"note": "dub pass 2026-10-06: reviewed, kept; CN manhua dub; single full upload; not yet AI-checked",
+"summary_status": "unavailable",
+"checked": "2026-10-06",
+"checked_eps": 0
+},
+"live:I Awakened S-Rank Execute": {
+"note": "dub pass 2026-10-06: reviewed, kept; CN manhua dub; single full upload; AI check says quality",
+"summary_status": "unavailable",
+"checked": "2026-10-06",
+"checked_eps": 0
+},
+"live:He Awakened SSS Wind Power": {
+"note": "dub pass 2026-10-06: reviewed, kept; CN manhua dub; single full upload; AI check says AI-made, channel self-declared (not slop)",
+"summary_status": "unavailable",
+"checked": "2026-10-06",
+"checked_eps": 0
+},
+"live:Fate Shatterer": {
+"note": "dub pass 2026-10-06: reviewed, kept; CN manhua dub; single upload labeled S1, more seasons may follow; AI check says quality",
+"summary_status": "unavailable",
+"checked": "2026-10-06",
+"checked_eps": 0
 }
 }
 }
