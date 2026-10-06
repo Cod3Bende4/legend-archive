@@ -5,6 +5,7 @@ Quota (10,000 units/day free): every call used here costs 1 unit.
   details(ids)       1 call per 50 videos (duration, views, likes)
   comments(id)       1 call per video (top 60 by relevance)
   members_only(url)  1 call to resolve the channel + 1 call per 50 members-only videos
+  (chapters come with details(): 1 call per 50 videos)
 """
 import json, os, re, time, urllib.error, urllib.parse, urllib.request
 
@@ -85,6 +86,26 @@ def details(ids):
     return out
 
 
+CHAP_TIME = r"((?:\d{1,2}:)?\d{1,2}:\d{2})"
+CHAP_EP = r"(?:EP|E|Ep\.?|Episode|第)\s*0*(\d{1,4})"
+
+
+def chapters(description):
+    """[[seconds, episode], ...] from a description's chapter list ("00:00 EP1", "21:30 - Episode 2", "EP3 43:10",
+    "第4集 1:02:00"), in time order with one start per episode; [] unless at least two episodes are named."""
+    secs = lambda t: sum(int(p) * 60 ** i for i, p in enumerate(reversed(t.split(":"))))
+    found = {}
+    for line in (description or "").splitlines():
+        m = re.search(CHAP_TIME + r"\D{0,12}?" + CHAP_EP, line, re.I) or re.search(CHAP_EP + r"\D{0,30}?" + CHAP_TIME, line, re.I)
+        if not m:
+            continue
+        t, e = (m.group(1), m.group(2)) if ":" in m.group(1) else (m.group(2), m.group(1))
+        found.setdefault(int(e), secs(t))
+    out = sorted([s, e] for e, s in found.items())
+    ok = len(out) >= 2 and all(b[0] > a[0] for a, b in zip(out, out[1:]))
+    return out if ok else []
+
+
 def uploads(url, known=frozenset(), full=False):
     """Newest-first uploads of a channel as [{id, t, d}]. Stops at the first page made only of known
     IDs unless full=True. Durations are fetched only for IDs not in `known`."""
@@ -110,6 +131,7 @@ def uploads(url, known=frozenset(), full=False):
     for p in items:
         if p["id"] in info:
             p["d"] = info[p["id"]]["d"]
+            p["chap"] = chapters(info[p["id"]]["description"])
     return dict(channel_id=cid, channel=title, items=items)
 
 

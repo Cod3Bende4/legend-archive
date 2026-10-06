@@ -6,8 +6,9 @@ and adds the video IDs it has not seen before, stamped with first_seen. Known ID
 re-checked. A full listing runs once a month (or with --full) to catch deleted videos and
 retitled episodes; it keeps every first_seen date.
 
-Every run also reads the channel's members-only playlist and marks those uploads "locked": true.
-Saves engine/scan/<name>.json: {name, url, channel, audio, scanned, last_full, uploads:[{id,t,d,first_seen,gone?,locked?}]}
+Every run also reads the channel's members-only playlist and marks those uploads "locked": true, and reads the
+description of each compilation once ("cq") for a chapter list: "chap": [[seconds, episode], ...].
+Saves engine/scan/<name>.json: {name, url, channel, audio, scanned, last_full, uploads:[{id,t,d,first_seen,gone?,locked?,cq?,chap?}]}
 """
 import datetime, json, os, subprocess, sys
 
@@ -19,6 +20,9 @@ from refresh import ytdlp, log, load  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
 DELTA_ITEMS = 150
+# multi-episode uploads whose descriptions may list chapters ("EP1-10", "合集", "完整版", "Complete Series")
+import re  # noqa: E402
+COMPILATION = re.compile(r"EP\s*\d+\s*[-~–]\s*(?:EP)?\s*\d+|合集|完整版|全集|collection|complete series|full season|all episodes", re.I)
 FULL_EVERY_DAYS = 30
 
 
@@ -26,7 +30,8 @@ def listing(url, limit=None, known=frozenset()):
     if os.environ.get("YT_API_KEY"):
         import ytapi
         res = ytapi.uploads(url.replace("/videos", ""), known=known, full=limit is None)
-        return dict(channel=res["channel"]), [dict(id=i["id"], t=i["t"], d=i.get("d"), p=i.get("p")) for i in res["items"]]
+        return dict(channel=res["channel"]), [dict(id=i["id"], t=i["t"], d=i.get("d"), p=i.get("p"), chap=i.get("chap") or None)
+                                              for i in res["items"]]
     cmd = [ytdlp(), "--flat-playlist", "-J", "--no-warnings"]
     if limit:
         cmd += ["--playlist-end", str(limit)]
@@ -63,6 +68,21 @@ def scan_channel(name, c, full):
                 v["gone"] = True
                 gone += 1
     uploads = new + list(known.values())
+    if os.environ.get("YT_API_KEY"):  # chapters of compilations seen before chapters were read (once per video)
+        import ytapi
+        todo = [v for v in uploads if "cq" not in v and not v.get("gone") and (v.get("d") or 0) >= 2400 and COMPILATION.search(v.get("t") or "")]
+        try:
+            for i in range(0, min(len(todo), 2000), 50):
+                info = ytapi.details([v["id"] for v in todo[i:i + 50]])
+                for v in todo[i:i + 50]:
+                    v["cq"] = 1
+                    ch = ytapi.chapters((info.get(v["id"]) or {}).get("description"))
+                    if ch:
+                        v["chap"] = ch
+        except Exception as e:
+            log(f"{name}: chapter backfill stopped: {e}")
+    for v in new:
+        v["cq"] = 1
     locked = set()
     if os.environ.get("YT_API_KEY"):  # every run: early-access videos turn free, new ones get locked
         import ytapi
