@@ -400,6 +400,17 @@ def main():
             quality.main(limit=150)
         except Exception as e:
             log(f"nightly quality check failed: {e}")
+    if not offline:
+        try:
+            import mature
+            mature.main(cur)
+        except Exception as e:
+            log(f"mature tagging failed: {e}")
+    try:
+        import mature
+        mature.overlay(cur)
+    except Exception as e:
+        log(f"mature overlay failed: {e}")
     series = build(state, cur)
     import tiers
     qpath = os.path.join(ENG, "scan", "quality.json")

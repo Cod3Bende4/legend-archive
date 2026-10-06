@@ -1,6 +1,6 @@
 # Legend Archive
 
-A browsable archive of long-form animation in three sections: Donghua (Chinese), Anime (Japanese) and Korean (webtoon and manhwa adaptations), from official YouTube channels plus four English-dub channels, sorted into quality tiers. Every play button opens or embeds the YouTube video; nothing is downloaded or rehosted.
+A browsable archive of long-form animation in four sections: Donghua (Chinese), Anime (Japanese), Korean (webtoon and manhwa adaptations) and Mature (adult-oriented, story-driven, never explicit), from official YouTube channels plus four English-dub channels, sorted into quality tiers. Every play button opens or embeds the YouTube video; nothing is downloaded or rehosted.
 
 ## The page
 - **Focus** (home): 15 slots holding the best complete, rated series, ranked by `score()` in `engine/tiers.py` (rating, length, upload gaps, `anim`). Series you have started come first. A slot only changes hands when you finish a series or mark it "Not for me". An original and its English-dub upload share one slot. Tabs: Top 15 (all), Top 15 Anime, Top 15 Donghua, each with its own slots.
@@ -21,6 +21,7 @@ A browsable archive of long-form animation in three sections: Donghua (Chinese),
 | `engine/curated.json` | Hand curation. `meta[series_key]`: `name`, `rating`, `rating_src`, `completed`, `hide`, `quality`, `anim` (animation quality 1 to 5; raises or lowers the series' score) with `anim_note` and `anim_tried`, `members` (hide as members-only by hand), `members_ok` (keep one the members-only detection got wrong), `members_checked`, `merge_into` with `season_as` (file the source as season N of the target), `skip_seasons` (season labels whose episodes another season already holds), `from_ep` (start the series at this episode; earlier ones are watched in another key), `origin` (CN, JP, KR), `summary` (English premise shown on the series page), `summary_status` ("unavailable" when researched but no reliable premise was found; the page then says so instead of "not written yet"), `note`, `checked` (date last researched), `checked_eps` (episode count then), `verify_tried` (date a recalled score could not be verified); the nightly run uses these to work only on deltas |
 | `engine/videos.json`, `engine/scan/*.json` | Saved uploads (one per line), with `first_seen` dates |
 | `engine/scan/quality.json` | AI verdict per checked video: `quality`, `ai`, `slop`, `unknown` |
+| `engine/mature.py`, `engine/mature.json` | Nightly AniList lookup: tags Seinen, Josei or gory series as Mature (anything AniList flags adult is skipped) and saves official "Also watch on" links; hand settings `mature` and `watch` in curated meta win |
 | `engine/tiers.py` | Score, tier rules, origin split, members-only hiding (see its docstring) |
 | `engine/epparse.py` | Title parser: series, season, episode; drops trailers, clips, members-only |
 

@@ -48,7 +48,7 @@ jobs:
         run: |
           git config user.name "legend-archive-bot"
           git config user.email "legend-archive-bot@users.noreply.github.com"
-          git add engine/videos.json engine/scan
+          git add engine/videos.json engine/scan engine/mature.json
           if ! git diff --cached --quiet; then
             git commit -m "Nightly data $(date +%F)"
             git pull --rebase --autostash

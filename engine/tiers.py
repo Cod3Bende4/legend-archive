@@ -19,6 +19,9 @@ Shelves
   10 Extras               A3 under 5h
   hidden                  AI slop, rated under 7.5, under 1 hour total, members-only, or hidden by hand
 
+Mature (MA) is a fourth section: meta[key]["mature"] = true moves a series out of its origin section.
+It is for adult-oriented, story-driven series, never explicit ones (mature.py refuses anything AniList flags adult).
+
 Origin (CN donghua, JP anime, KR Korean webtoon/manhwa) splits the site into three sections that each
 carry the shelves above. It comes from the channel ("origin" in config.json, the four dub channels are CN),
 then ORIGIN_HINTS for known titles, then meta[key]["origin"] set by hand.
@@ -63,7 +66,7 @@ LOCK = re.compile(r"for membership|members?[\s-]*only|member only|members? exclu
 PITCH = re.compile(r"join\s*(the\s*)?(members?|channel)|join to watch|加入会员|会员畅享|会员专享|会员抢先|抢先看|"
                    r"members?[\s-]*(only|preview|get|first)|member only", re.I)
 
-ORIGINS = {"CN": "Donghua", "JP": "Anime", "KR": "Korean"}
+ORIGINS = {"CN": "Donghua", "JP": "Anime", "KR": "Korean", "MA": "Mature"}
 # titles whose origin differs from their channel's (Muse Asia is mostly Japanese anime)
 ORIGIN_HINTS = [
     ("KR", re.compile(r"god of high school|noblesse|tower of god|solo leveling|who made me a princess|fated magical princess|"
@@ -377,6 +380,9 @@ def apply(series, cur, Q):
         x.setdefault("audio", "A3")
         m = meta.get(x["key"], {})
         x["origin"] = m.get("origin") or origin_of(x.get("origin", "CN"), x["title"])
+        if m.get("mature"):  # adult-oriented but not explicit; mature.py sets it from AniList, or by hand
+            x["origin"] = "MA"
+        x["watch"] = [w for w in m.get("watch") or [] if str(w.get("url", "")).startswith("https://")]  # official places to watch: [{"site", "url"}]
         if m.get("name"):
             x["title"] = m["name"]
         ids = [s["pick"]["id"] for s in x["seas"]] + [e["id"] for s in x["seas"] for e in s.get("eps", [])]

@@ -272,7 +272,8 @@ const chCol = (c) => CHCOL[c] || '#8e8a85';
 const ORIGINS = [
   {id:'cn', code:'CN', name:'Donghua', long:'Chinese animation', sub:'Donghua from official Chinese studio channels and English-dub channels.'},
   {id:'jp', code:'JP', name:'Anime', long:'Japanese anime', sub:'Japanese anime from official channels.'},
-  {id:'kr', code:'KR', name:'Korean', long:'Korean webtoon & manhwa', sub:'Animation of Korean webtoons and manhwa.'}];
+  {id:'kr', code:'KR', name:'Korean', long:'Korean webtoon & manhwa', sub:'Animation of Korean webtoons and manhwa.'},
+  {id:'ma', code:'MA', name:'Mature', long:'Mature, story-driven animation', sub:'Adult-oriented series with strong stories and animation. Not explicit.'}];
 const PAGE = 48, FOCUS = 15, STORE = 'legend-archive:progress';
 const S = {q:'', mode:'focus', xo:'all', sel:null, season:0, u:0, here:false, fq:'all', sort:'quality', shown:PAGE, open:{}, place:false, hideSeen:true};
 let LIVE = false; // true once YouTube thumbnails can load (page opened outside Claude)
@@ -572,6 +573,7 @@ function renderSheet() {
           : `<div class="summary nosum"><b>Summary</b><p>Description not written yet.</p></div>`}
         ${x.facts ? `<div class="facts">${esc(x.facts)}</div>` : ''}
         <div class="chips">${chipsFor(x)}</div>
+        ${(x.watch || []).length ? `<div class="summary"><b>Also watch on</b><p>${x.watch.map(w => `<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.site)}</a>`).join(' · ')}</p></div>` : ''}
         ${x.note ? `<div class="note"><b>${esc(x.conf || 'note')}</b><span>${esc(x.note)}</span></div>` : ''}
         ${x.missing.length ? `<div class="gapnote">Season ${x.missing.join(', ')} ${x.missing.length > 1 ? 'are' : 'is'} not uploaded on these channels yet.</div>` : ''}
       </div>
