@@ -13,6 +13,74 @@
 }
 ]
 },
+"againstthegods": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/19rrhsgdfl"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrhsgdfl.html"
+}
+]
+},
+"ahirunosora": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/ahiru-no-sora"
+},
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/ahiru-no-sora"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80245713"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0aMBGsjj5NwAkJb76zE59C"
+}
+]
+},
+"amortalsjourneytoimmortality": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28223043/"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/36571"
+}
+]
+},
+"ancientmyth": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_x9bo7q0g1x.html"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLLbpFtHGpEaRIZ4HPaaQS2sPztVRxoGDE"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/myth-of-eternity-2022-x9bo7q0g1x?lang=en_us"
+}
+]
+},
 "apotheosis": {
 "checked": "2026-10-07",
 "mature": false,
@@ -24,6 +92,20 @@
 {
 "site": "Bilibili",
 "url": "https://www.bilibili.com/bangumi/media/md28340485"
+}
+]
+},
+"assassinationclassroom": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1QGs4v-QtvNHpC_N8ZjkEs"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/assassination-classroom"
 }
 ]
 },
@@ -59,6 +141,42 @@
 }
 ]
 },
+"beelzebub": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl0sgiAAegEz0YBnExhICwtl"
+}
+]
+},
+"classroomoftheelite": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80193178"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl37ONxLQx-mIAJu3hdX-brM"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/play/classroom-of-the-elite-s1-episode-1-2asqqgg1opk"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/34645"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL169S905pZlnUmZkbd4IIPFu"
+}
+]
+},
 "demongods": {
 "checked": "2026-10-07",
 "mature": false,
@@ -66,6 +184,16 @@
 {
 "site": "Tencent Video",
 "url": "https://v.qq.com/detail/t/yl6lapwmmx5ivew.html"
+}
+]
+},
+"demonhunter": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Youku",
+"url": "https://list.youku.com/show/id_adaec02f09f9469ab8d8"
 }
 ]
 },
@@ -80,6 +208,26 @@
 {
 "site": "Amazon Prime Video",
 "url": "https://www.amazon.com/Fairy-Tail-Season-1/dp/B0CHBPDKHT"
+}
+]
+},
+"fairytailfinalseason": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl2VQRIahDF73hnkdPjNRYnu"
+}
+]
+},
+"frierenbeyondjourneysend": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLtdSPZNWT1AuEnWLElajRzm2DZhx1tVhd"
 }
 ]
 },
@@ -141,6 +289,20 @@
 }
 ]
 },
+"howdareyou": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_ydnygop4kp.html"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/watch?v=bYq9t_fncvc&list=PLTndXYWs2JgGUrty_JUO-GCXENidVtucT"
+}
+]
+},
 "hunterhunter": {
 "checked": "2026-10-07",
 "mature": false,
@@ -148,6 +310,16 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2SdSro00Nvg38MQUf-5ZL8"
+}
+]
+},
+"iannoyedmillionsofcultivators": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/mzc00200sm0qv1l.html"
 }
 ]
 },
@@ -169,6 +341,67 @@
 }
 ]
 },
+"jadedynasty": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/m/mzc00200kwy29cd.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/en/album/62e9ut2hxil9sgj"
+}
+]
+},
+"jojosbizarreadventurediamondisunbreakable": {
+"checked": "2026-10-08",
+"mature": true,
+"watch": []
+},
+"jojosbizarreadventuregoldenwind": {
+"checked": "2026-10-08",
+"mature": true,
+"watch": []
+},
+"jojosbizarreadventurestardustcrusaders": {
+"checked": "2026-10-08",
+"mature": true,
+"watch": []
+},
+"landofmiracles": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/1lmiizjz93t"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLTndXYWs2JgF-YCVRYHYsv9uewP-21gbC"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_xgzhhxd7ot.html"
+}
+]
+},
+"legendaryoverlord": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/s/sifd2an7kx2h9h8.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/play/gu8xnp9494amf21"
+}
+]
+},
 "lingwucontinent": {
 "checked": "2026-10-07",
 "mature": false,
@@ -180,6 +413,36 @@
 {
 "site": "iQ",
 "url": "https://www.iq.com/album/灵武大陆-2024-1caffetn8ud?lang=en_us"
+}
+]
+},
+"mushokutenseijoblessreincarnation": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl01_ftoIT3birJWkpxFZkEl"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/mushoku-tensei-jobless-reincarnation-787a5fb4-9cba-4a69-96b2-4fb3b10c860a"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/mushoku-tensei-jobless-reincarnation"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80987039"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/en/play/ecmp615ib5kswl3"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/tg0bzbp8zd"
 }
 ]
 },
@@ -198,6 +461,20 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnKfl20-jrXc1pflxjHKFnRf"
+}
+]
+},
+"rakshasastreet": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md3863"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLgovbMZiNNk5YjgQwpDndusiFy8eUpR4-"
 }
 ]
 },
@@ -255,6 +532,56 @@
 }
 ]
 },
+"shangrilafrontier": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G79H23Z8P/shangri-la-frontier"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/@TV-kt7jx"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2089932"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/jlv4yvu36l"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1k3PpCugshhYpSQVWUAaib"
+},
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md21086747"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81727242"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/shangri-la-frontier-29fc8e6f-1516-4dad-afce-7a216212b11d"
+},
+{
+"site": "Niconico Video",
+"url": "https://anime.nicovideo.jp/detail/shangrilafrontier/index.html"
+},
+{
+"site": "Bandai Channel",
+"url": "https://www.b-ch.com/titles/8284/"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.co.jp/gp/video/detail/B0CH9BQDND/"
+}
+]
+},
 "soulland": {
 "checked": "2026-10-07",
 "mature": false,
@@ -292,6 +619,44 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnIHBNKvMwn8UAa4NVz2LZao"
+}
+]
+},
+"spyfamily": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81511410"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/spy-x-family"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1048837/"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl1wGMYg5oB3uEns0CZNl6sI"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/65d158d4-443f-44c7-bd2c-eae39f6c60e9"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/yngqr3tli9/"
+},
+{
+"site": "Disney Plus",
+"url": "https://www.disneyplus.com/series/spyfamily/fet1h9jqmrAM"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL145WmZpHC4VMbgjCAShnb1M"
 }
 ]
 },
@@ -389,6 +754,48 @@
 }
 ]
 },
+"tokyorevengers": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3F9AGKbC7iRIGeU2XosgTy"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/tokyo-revengers"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81442520"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/17qqf96eghx"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1001400"
+},
+{
+"site": "Max",
+"url": "https://www.max.com/shows/47f0c251-1a08-4225-b089-acb5ecc6ebf6"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL14ZN_ayyUTitn2qFsVKMI_9"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/d45b72d4-3c8d-4961-960a-c0c182890189"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/1a195a35-e19c-4e36-b609-3b1c451f6ce4"
+}
+]
+},
 "urbanmiracledoctor": {
 "checked": "2026-10-07",
 "mature": false,
@@ -400,6 +807,20 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/v_265kuc10m34.html"
+}
+]
+},
+"ushioandtora": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2zSNOBIPISqdjAL69vBOSk"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/70309073"
 }
 ]
 },
@@ -444,6 +865,24 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_19rrhb9ynh.html"
+}
+]
+},
+"youngbrewmastersadventure": {
+"checked": "2026-10-08",
+"mature": false,
+"watch": [
+{
+"site": "Youku",
+"url": "https://list.youku.com/show/id_fffa039f00534757a325"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLOUUm4xsoaeCgM7JPBXa_JUGC-798iGpz"
+},
+{
+"site": "Youku TV",
+"url": "https://www.youku.tv/v/v_show/id_XNTg4ODg1NjM4MA==.html?s=edde539e5d134308a20b"
 }
 ]
 },
