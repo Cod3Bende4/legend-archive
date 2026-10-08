@@ -1,4 +1,22 @@
 {
+"100girlfriendswhoreallyreallyreallyreallyreallyloveyou": {
+"checked": "2026-10-09",
+"mature": true,
+"watch": [
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2091388"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GNVHKN933/the-100-girlfriends-who-really-really-really-really-really-love-you"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2ilZQ5Xv1xozab_cm90ugI"
+}
+]
+},
 "2purpleriver": {
 "checked": "2026-10-07",
 "mature": false,
@@ -49,6 +67,20 @@
 }
 ]
 },
+"amortalsjourneyspeedingintheseaofstars": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28223043/"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/36571"
+}
+]
+},
 "amortalsjourneytoimmortality": {
 "checked": "2026-10-08",
 "mature": false,
@@ -81,6 +113,24 @@
 }
 ]
 },
+"ancientwelkin": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/19rrh8i545"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLTndXYWs2JgFVx1jbfn24U2ZBp5wzYete"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrh8i545.html"
+}
+]
+},
 "apotheosis": {
 "checked": "2026-10-07",
 "mature": false,
@@ -92,6 +142,38 @@
 {
 "site": "Bilibili",
 "url": "https://www.bilibili.com/bangumi/media/md28340485"
+}
+]
+},
+"areyouok": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/19rrhl8nbx"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLTndXYWs2JgFmz2JrlAFO9nOM4C3RbL5M"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrhvrhtl.html"
+}
+]
+},
+"ascendanceofabookworm": {
+"checked": "2026-10-09",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/ascendance-of-a-bookworm"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1M7sDB0qBDBKDKUJnHciM6"
 }
 ]
 },
@@ -151,6 +233,42 @@
 }
 ]
 },
+"bemywife": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/g7xymbsegl"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/watch?list=PLTndXYWs2JgFWz3aPIxhtzN_eFHqacKs_"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_vq7uvkhiwt.html"
+}
+]
+},
+"beyondtheocean": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/19rrgxqvep"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLTndXYWs2JgGbc_TuYHDoFHbSp-VX21NF"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrgxqvep.html"
+}
+]
+},
 "classroomoftheelite": {
 "checked": "2026-10-08",
 "mature": false,
@@ -177,6 +295,36 @@
 }
 ]
 },
+"dandadan": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81736884"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/bad0bb31-0fa5-4a69-b9a5-5e5ed5032a48"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/115u6ibs611"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2OF_CmbcBOUk_216rwS1wD"
+},
+{
+"site": "Niconico Video",
+"url": "https://ch.nicovideo.jp/anime-dandadan"
+}
+]
+},
 "demongods": {
 "checked": "2026-10-07",
 "mature": false,
@@ -194,6 +342,32 @@
 {
 "site": "Youku",
 "url": "https://list.youku.com/show/id_adaec02f09f9469ab8d8"
+}
+]
+},
+"fairiesalbums": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md4313762/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfgV7gPQHReort3y4fta8GQm"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1014195"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81648250"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G1XHJV2DX/fairies-album"
 }
 ]
 },
@@ -218,6 +392,16 @@
 {
 "site": "YouTube",
 "url": "https://youtube.com/playlist?list=PLwLSw1_eDZl2VQRIahDF73hnkdPjNRYnu"
+}
+]
+},
+"firstimmortalofsevenrealms": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/mzc00200qxw3l4s.html"
 }
 ]
 },
@@ -388,6 +572,20 @@
 }
 ]
 },
+"lawofdevil": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/mzc00200ddf1a1w.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/en/album/yn5xr1e683sbbor"
+}
+]
+},
 "legendaryoverlord": {
 "checked": "2026-10-08",
 "mature": false,
@@ -402,6 +600,20 @@
 }
 ]
 },
+"lingcage": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md23432/"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1005888"
+}
+]
+},
 "lingwucontinent": {
 "checked": "2026-10-07",
 "mature": false,
@@ -413,6 +625,58 @@
 {
 "site": "iQ",
 "url": "https://www.iq.com/album/灵武大陆-2024-1caffetn8ud?lang=en_us"
+}
+]
+},
+"madeinabyssthegoldencityofthescorchingsun": {
+"checked": "2026-10-09",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/made-in-abyss-the-golden-city-of-the-scorching-sun"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0aRsSiTx2Kq6Mc5zc0jrL1"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1061490"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL14TynuTpdGkvaG87xXye_r3"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80193163"
+}
+]
+},
+"mobpsycho100": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80179798"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL15H3VL53aWCCaCk_pkpJ5u-"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.primevideo.com/detail/0U3TA8SOFL6VTAQ1E1QSC0SA6D/ref=atv_dp_season_select_s1"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1pvIv1fBd3oKkP3XEQpT_G"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/mob-psycho-100-fc9b8130-e1e3-420b-b28d-a72f0b235069"
 }
 ]
 },
@@ -446,6 +710,38 @@
 }
 ]
 },
+"myheroichusband": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28235402/"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2081315"
+},
+{
+"site": "Viki",
+"url": "https://www.viki.com/tv/39787c-my-heroic-husband-series"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfidAtODz2lwrdVntfUAmhH0"
+}
+]
+},
+"outcast": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/x/cover/ozvao2u23k1nf9o.html"
+}
+]
+},
 "perfectworld": {
 "checked": "2026-10-07",
 "mature": false,
@@ -475,6 +771,24 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLgovbMZiNNk5YjgQwpDndusiFy8eUpR4-"
+}
+]
+},
+"ravagesoftime": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28223047/"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2081129"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfjM2fMNt8JJApFSNj49UXwF"
 }
 ]
 },
@@ -529,6 +843,24 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/@Rezero_official"
+}
+]
+},
+"saltedfish": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28230748/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfjCRrz9481EyBtOhMLhptE4"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1014031"
 }
 ]
 },
@@ -847,6 +1179,32 @@
 {
 "site": "Hulu",
 "url": "https://www.hulu.com/series/bc9d04d6-0575-4341-82ca-8c6f5b697651"
+}
+]
+},
+"wistoriawandandsword": {
+"checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GW4HM7WK9/wistoria-wand-and-sword"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/lyyvlqthw5"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2110991"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3fj-ljtzKxYaTBgrqtcqoY"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81900358"
 }
 ]
 },
