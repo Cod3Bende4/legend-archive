@@ -269,6 +269,30 @@
 }
 ]
 },
+"blastoftempest": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0eNUZD2EZUg4k3YiDheOYF"
+}
+]
+},
+"celestialaboveall": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/v_f51n0mha00.html"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/celestial-above-all-2025-22le6kky0zp"
+}
+]
+},
 "classroomoftheelite": {
 "checked": "2026-10-08",
 "mature": false,
@@ -325,6 +349,36 @@
 }
 ]
 },
+"darkgathering": {
+"checked": "2026-10-10",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/dark-gathering"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl27LXaPp_ryQdu41PQGpWEq"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/nd4lyz6mpt"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL14JGEg2HzBJ9enWVg7AgD_t"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/id-en/title/81707187"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/dark-gathering-42809c33-ab67-4fbf-9d7d-c52b4c1f56cf"
+}
+]
+},
 "demongods": {
 "checked": "2026-10-07",
 "mature": false,
@@ -342,6 +396,24 @@
 {
 "site": "Youku",
 "url": "https://list.youku.com/show/id_adaec02f09f9469ab8d8"
+}
+]
+},
+"eclipseofillusion": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Youku",
+"url": "https://v.youku.com/v_show/id_XNjQ4MTE0OTAxMg==.html?s=cfbd5ff48e464bbdb631"
+},
+{
+"site": "Youku TV",
+"url": "https://www.youku.tv/v/v_show/id_XNjQ4ODkyNzM3Mg==.html?s=efaff3ecae1544a19eeb"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLQXpxE9saH823-g-taWm7ukGvAzRfX2iZ"
 }
 ]
 },
@@ -382,6 +454,28 @@
 {
 "site": "Amazon Prime Video",
 "url": "https://www.amazon.com/Fairy-Tail-Season-1/dp/B0CHBPDKHT"
+}
+]
+},
+"fairytail100yearsquest": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/20qa68wokup"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2112349"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl23uIjbwVKoUA3dbo6FiGoX"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GG5H5XQED/fairy-tail-100-years-quest"
 }
 ]
 },
@@ -525,6 +619,42 @@
 }
 ]
 },
+"inspectre": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/inspectre"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl33XF-NyOM6dJZ6hNDi54lg"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/@kyokou_suiri"
+}
+]
+},
+"interludemv": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/19rrhl8nbx"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLTndXYWs2JgFmz2JrlAFO9nOM4C3RbL5M"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrhvrhtl.html"
+}
+]
+},
 "jadedynasty": {
 "checked": "2026-10-08",
 "mature": false,
@@ -538,6 +668,11 @@
 "url": "https://wetv.vip/en/album/62e9ut2hxil9sgj"
 }
 ]
+},
+"jojosbizarreadventure": {
+"checked": "2026-10-10",
+"mature": true,
+"watch": []
 },
 "jojosbizarreadventurediamondisunbreakable": {
 "checked": "2026-10-08",
@@ -732,6 +867,24 @@
 }
 ]
 },
+"ouranhighschoolhostclub": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Tubi TV",
+"url": "https://tubitv.com/series/2047/ouran_high_school_host_club"
+},
+{
+"site": "Crunchyroll",
+"url": "https://crunchyroll.com/series/GRGGJWD2R/ouran-high-school-host-club"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1z8JtxYPgiV9H6tGZMlhTC"
+}
+]
+},
 "outcast": {
 "checked": "2026-10-09",
 "mature": false,
@@ -757,6 +910,32 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnKfl20-jrXc1pflxjHKFnRf"
+}
+]
+},
+"ragnacrimson": {
+"checked": "2026-10-10",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/ragna-crimson"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2090761"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2gLJyLH6BkSr4l1XPaKDjT"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.primevideo.com/detail/Ragna-Crimson/0U5EZSNVUVMCD4Z0IGE1HHSFHW"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/ragna-crimson-f5a6e973-45da-4635-80bf-36c34843a4b2"
 }
 ]
 },
@@ -824,6 +1003,28 @@
 }
 ]
 },
+"rentagirlfriend": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/rent-a-girlfriend"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/19rrhla5ox"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3rS5lwfx07zxghGRJ6Ckp8"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81299211"
+}
+]
+},
 "rezerostartinglifeinanotherworld": {
 "checked": "2026-10-07",
 "mature": true,
@@ -861,6 +1062,30 @@
 {
 "site": "Bilibili TV",
 "url": "https://www.bilibili.tv/media/1014031"
+}
+]
+},
+"sevendeadlysins": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80050063"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl3572W1HJjIkZyW-0GGVUVq&si=mP5IwBPobYKC27_K"
+}
+]
+},
+"sevendeadlysinsrevivalofthecommandments": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80050063"
 }
 ]
 },
@@ -953,6 +1178,33 @@
 "url": "https://www.youtube.com/playlist?list=PLxOs22nkVmnIHBNKvMwn8UAa4NVz2LZao"
 }
 ]
+},
+"soulmateadventure": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md6038"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfgjGH4kuVqqEKBC2mzhA8tC"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/37770"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81648370"
+}
+]
+},
+"spirituallordofchaos": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": []
 },
 "spyfamily": {
 "checked": "2026-10-08",
@@ -1086,6 +1338,28 @@
 }
 ]
 },
+"tobeherox": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28340128/"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GQWH0M1J3/to-be-hero-x"
+},
+{
+"site": "Bilibili",
+"url": "https://space.bilibili.com/1203126943"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2121835"
+}
+]
+},
 "tokyorevengers": {
 "checked": "2026-10-08",
 "mature": false,
@@ -1182,6 +1456,16 @@
 }
 ]
 },
+"westward": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/0gsf9fytppje54d.html"
+}
+]
+},
 "wistoriawandandsword": {
 "checked": "2026-10-09",
 "mature": false,
@@ -1223,6 +1507,16 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_19rrhb9ynh.html"
+}
+]
+},
+"worldofimmortals": {
+"checked": "2026-10-10",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/x/cover/mzc00200kqa0dbi.html"
 }
 ]
 },
