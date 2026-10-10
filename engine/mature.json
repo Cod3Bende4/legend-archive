@@ -31,6 +31,20 @@
 }
 ]
 },
+"accelworld": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Tubi TV",
+"url": "https://tubitv.com/series/2082/accel_world"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2UJ5gM6kNKM4uwJ3NWCMjN"
+}
+]
+},
 "againstthegods": {
 "checked": "2026-10-08",
 "mature": false,
@@ -279,6 +293,32 @@
 }
 ]
 },
+"bofuriidontwanttogethurtsoillmaxoutmydefense": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/bofuri-i-dont-want-to-get-hurt-so-ill-max-out-my-defense"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0fxMZfFjcKLnL0Hj6cw3Op"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81234294"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/1j0m72u50tl"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/bofuri-i-dont-want-to-get-hurt-so-ill-max-out-my-defense"
+}
+]
+},
 "celestialaboveall": {
 "checked": "2026-10-10",
 "mature": false,
@@ -321,6 +361,36 @@
 },
 "dandadan": {
 "checked": "2026-10-09",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81736884"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/bad0bb31-0fa5-4a69-b9a5-5e5ed5032a48"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/115u6ibs611"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2OF_CmbcBOUk_216rwS1wD"
+},
+{
+"site": "Niconico Video",
+"url": "https://ch.nicovideo.jp/anime-dandadan"
+}
+]
+},
+"dandadan-dub": {
+"checked": "2026-10-11",
 "mature": false,
 "watch": [
 {
@@ -509,6 +579,24 @@
 }
 ]
 },
+"girlfriendgirlfriend": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://crunchyroll.com/series/GEXH3WP97"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl31SiYBPaDaekqPOjqvl2Qg"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/22kzhzv0wbd"
+}
+]
+},
 "gloriousrevengeofyefeng": {
 "checked": "2026-10-07",
 "mature": false,
@@ -524,6 +612,28 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLOUUm4xsoaeB3Q1t_SnrgdX0mLoVhb_0g"
+}
+]
+},
+"goblinslayer": {
+"checked": "2026-10-11",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/goblin-slayer"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81021570"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B07Z1RCLB3/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0yarBY8H1zXi3Oz834aRhm"
 }
 ]
 },
@@ -591,6 +701,24 @@
 }
 ]
 },
+"hyouka": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl28iypqyY3tsSz7P1BByLiK"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/hyouka"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/34818"
+}
+]
+},
 "iannoyedmillionsofcultivators": {
 "checked": "2026-10-08",
 "mature": false,
@@ -652,6 +780,72 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_19rrhvrhtl.html"
+}
+]
+},
+"istheorderarabbit": {
+"checked": "2026-10-11",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/season/21743"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL14aFCVvKtSODEQclbYeEpfL"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2tM6NR6nQyaGYW8dF1HZ1f"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/id/media/34500"
+}
+]
+},
+"ivebeenkillingslimesfor300yearsandmaxedoutmylevel": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/ive-been-killing-slimes-for-300-years-and-maxed-out-my-level"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/1dtp72c2h4x"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl00zKZeF1wQmnu9hUjsDGaU"
+}
+]
+},
+"iwasreincarnatedasthe7thprince": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GJ0H7QG4E/i-was-reincarnated-as-the-7th-prince-so-i-can-take-my-time-perfecting-my-magical-ability"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2104024"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/y7b6ibavcp"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3FY6j0fvEZZ3qZDqrzsuTn"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81769842"
 }
 ]
 },
@@ -735,6 +929,28 @@
 }
 ]
 },
+"letthisgrievingsoulretire": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GZJH3D8J9/let-this-grieving-soul-retire"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl39ouByN0ujsTUV3jnaJVLu"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2116038"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/in/title/81946855"
+}
+]
+},
 "lingcage": {
 "checked": "2026-10-09",
 "mature": false,
@@ -760,6 +976,28 @@
 {
 "site": "iQ",
 "url": "https://www.iq.com/album/灵武大陆-2024-1caffetn8ud?lang=en_us"
+}
+]
+},
+"luciferandbiscuithammer": {
+"checked": "2026-10-11",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G1XHJV22X/lucifer-and-the-biscuit-hammer"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2mjV_pl9Dr_QTcn1nmNvB1"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1060564/"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/77f6448d-f15d-4f14-a3fa-989470cb08e1"
 }
 ]
 },
@@ -815,6 +1053,46 @@
 }
 ]
 },
+"moriartythepatriot": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl23lU3K_aB0k1aPJ93_jdnt"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81335206"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/moriarty-the-patriot"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/34643"
+}
+]
+},
+"mosthereticallastbossqueenfromvillainesstosavior": {
+"checked": "2026-10-11",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/the-most-heretical-last-boss-queen-from-villainess-to-savior"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2087285"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1gxoIoRFrIlzxe5FM1yZfe"
+}
+]
+},
 "mushokutenseijoblessreincarnation": {
 "checked": "2026-10-08",
 "mature": false,
@@ -864,6 +1142,16 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLBakWosU0sfidAtODz2lwrdVntfUAmhH0"
+}
+]
+},
+"newgame": {
+"checked": "2026-10-11",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3guU7C6fmEzgwnIFAnrzk5"
 }
 ]
 },
@@ -1047,6 +1335,36 @@
 }
 ]
 },
+"saintsmagicpowerisomnipotent": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2X8Vz7MxBgWGm8HjVyEgl9"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-saints-magic-power-is-omnipotent"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/Saints-Magic-Power-Omnipotent/dp/B09X2XDYPV"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpgwlBB-OyFUGX8MucDMUf3"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLuxqoToY7Ucga-y8Lo_49r61L_tFwShuR"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1002703"
+}
+]
+},
 "saltedfish": {
 "checked": "2026-10-09",
 "mature": false,
@@ -1076,6 +1394,16 @@
 {
 "site": "YouTube",
 "url": "https://youtube.com/playlist?list=PLwLSw1_eDZl3572W1HJjIkZyW-0GGVUVq&si=mP5IwBPobYKC27_K"
+}
+]
+},
+"sevendeadlysinsimperialwrathofthegods": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80050063"
 }
 ]
 },
@@ -1136,6 +1464,42 @@
 {
 "site": "Amazon Prime Video",
 "url": "https://www.amazon.co.jp/gp/video/detail/B0CH9BQDND/"
+}
+]
+},
+"shy": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GKEH2G0W9/shy"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0e2nQ5MU6dWXVC3Pqf6941"
+}
+]
+},
+"skeletonknightinanotherworld": {
+"checked": "2026-10-11",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/skeleton-knight-in-another-world"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1047664/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl20EjWfUYYc1YyqdU8ilHEe"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL16OlEVUjYr-a_5MOXpJPupg"
 }
 ]
 },
