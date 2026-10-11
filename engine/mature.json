@@ -45,6 +45,32 @@
 }
 ]
 },
+"acertainmagicalindex": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/a-certain-magical-index/"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/70308188"
+},
+{
+"site": "Tubi TV",
+"url": "https://tubitv.com/series/2313/a_certain_magical_index"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1_y0Egv3OLQDJfK2hIx3Vc"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/34529"
+}
+]
+},
 "againstthegods": {
 "checked": "2026-10-08",
 "mature": false,
@@ -156,6 +182,24 @@
 {
 "site": "Bilibili",
 "url": "https://www.bilibili.com/bangumi/media/md28340485"
+}
+]
+},
+"aquatopeonwhitesand": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://crunchyroll.com/series/G0XHWM3J0/the-aquatope-on-white-sand"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl13ebVE0dgagqzozYJ5d1Er"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1011004"
 }
 ]
 },
@@ -333,6 +377,38 @@
 }
 ]
 },
+"cellsatwork": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81028791"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl2jD4HobdnUs3oOdkDNwQGq&si=nMq7BfTrJQ-FbH-g"
+}
+]
+},
+"chainedsoldier": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/chained-soldier"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2096950"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3ICvMY_c9VTL6yduj59Osl"
+}
+]
+},
 "classroomoftheelite": {
 "checked": "2026-10-08",
 "mature": false,
@@ -466,6 +542,24 @@
 {
 "site": "Youku",
 "url": "https://list.youku.com/show/id_adaec02f09f9469ab8d8"
+}
+]
+},
+"devilisaparttimer": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80006149"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3f9u2Wb_weEMZFcCD1BXhC"
+},
+{
+"site": "Crunchyroll",
+"url": "https://crunchyroll.com/series/GR75Z5KKY/the-devil-is-a-part-timer"
 }
 ]
 },
@@ -729,6 +823,24 @@
 }
 ]
 },
+"ileftmyarankparty": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GKEH2G004/i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2122082"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl03q6rAPvEC-sRXeGiy6qMM"
+}
+]
+},
 "immortality": {
 "checked": "2026-10-07",
 "mature": false,
@@ -863,6 +975,20 @@
 }
 ]
 },
+"jasmine": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/19rrhsgdfl"
+},
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_19rrhsgdfl.html"
+}
+]
+},
 "jojosbizarreadventure": {
 "checked": "2026-10-10",
 "mature": true,
@@ -881,6 +1007,37 @@
 "jojosbizarreadventurestardustcrusaders": {
 "checked": "2026-10-08",
 "mature": true,
+"watch": []
+},
+"kingsavatars2quanzhigaoshou": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md5852/"
+},
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/t/ttqxo9s3cblgofl.html"
+},
+{
+"site": "WeTV",
+"url": "https://wetv.vip/en/play/pnumjfjcvuau4sr"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLMX26aiIvX5pFbfTf10Tke0CiMwxO76fT"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GQWH0M113/the-kings-avatar"
+}
+]
+},
+"kumakumakumabearpunch": {
+"checked": "2026-10-12",
+"mature": false,
 "watch": []
 },
 "landofmiracles": {
@@ -1123,6 +1280,20 @@
 }
 ]
 },
+"muvluvalternative": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/muv-luv-alternative"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1jvxZE-x5NVjJQz3pQquTI"
+}
+]
+},
 "myheroichusband": {
 "checked": "2026-10-09",
 "mature": false,
@@ -1145,6 +1316,24 @@
 }
 ]
 },
+"mynextlifeasavillainessallroutesleadtodoomx": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/my-next-life-as-a-villainess-all-routes-lead-to-doom"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2NUQVQKUbLfVEuPD5CpyOz"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/my-next-life-as-a-villainess-all-routes-lead-to-doom-6712b34c-1079-4cf7-974f-0934ff29c2a5"
+}
+]
+},
 "newgame": {
 "checked": "2026-10-11",
 "mature": true,
@@ -1152,6 +1341,24 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3guU7C6fmEzgwnIFAnrzk5"
+}
+]
+},
+"nogunslife": {
+"checked": "2026-10-12",
+"mature": true,
+"watch": [
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/no-guns-life"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl295YtiWYiGSBinlDaH9yTH"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/no-guns-life"
 }
 ]
 },
@@ -1383,6 +1590,28 @@
 }
 ]
 },
+"scumofthebrave": {
+"checked": "2026-10-12",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/channel/UCFYchaoT5V6WmLTPAj3l0_Q"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00365730/scum-of-the-brave"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2jocaAW0S6IpbSv01XLHkV"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLPanbgyToztZkryJy8UUrvrpwGRH4bXVJ"
+}
+]
+},
 "sevendeadlysins": {
 "checked": "2026-10-10",
 "mature": false,
@@ -1464,6 +1693,16 @@
 {
 "site": "Amazon Prime Video",
 "url": "https://www.amazon.co.jp/gp/video/detail/B0CH9BQDND/"
+}
+]
+},
+"shihuang": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_12199gfpqhh.html"
 }
 ]
 },
@@ -1565,6 +1804,16 @@
 }
 ]
 },
+"sparemegreatlord": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Tencent Video",
+"url": "https://v.qq.com/detail/o/od1kjfd56e3s7n7.html"
+}
+]
+},
 "spirituallordofchaos": {
 "checked": "2026-10-10",
 "mature": false,
@@ -1605,6 +1854,24 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL145WmZpHC4VMbgjCAShnb1M"
+}
+]
+},
+"sugarapplefairytale": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G5PHNM7E2/sugar-apple-fairy-tale"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1jW_xDvXXJOphlaMLZxsJ-"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2074512"
 }
 ]
 },
@@ -1881,6 +2148,16 @@
 {
 "site": "Tencent Video",
 "url": "https://v.qq.com/x/cover/mzc00200kqa0dbi.html"
+}
+]
+},
+"xuchangqing": {
+"checked": "2026-10-12",
+"mature": false,
+"watch": [
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_ld3g2ahc5h.html"
 }
 ]
 },
