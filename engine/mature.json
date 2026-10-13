@@ -281,6 +281,16 @@
 }
 ]
 },
+"bangdream": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2S8kRjXhccfBL7JnI5dFNO"
+}
+]
+},
 "beelzebub": {
 "checked": "2026-10-08",
 "mature": false,
@@ -327,6 +337,20 @@
 }
 ]
 },
+"bladeofdawn": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28235363/"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/2067757"
+}
+]
+},
 "blastoftempest": {
 "checked": "2026-10-10",
 "mature": false,
@@ -360,6 +384,20 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/bofuri-i-dont-want-to-get-hurt-so-ill-max-out-my-defense"
+}
+]
+},
+"capsules": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://space.bilibili.com/485154857/channel/collectiondetail?sid=682536"
+},
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28235403"
 }
 ]
 },
@@ -541,6 +579,20 @@
 }
 ]
 },
+"danganronpatheanimation": {
+"checked": "2026-10-14",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2oW4bATqEoAh2xpGMTSXKM"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/danganronpa-the-animation"
+}
+]
+},
 "darkgathering": {
 "checked": "2026-10-10",
 "mature": true,
@@ -637,6 +689,20 @@
 }
 ]
 },
+"edrelease": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28230747/"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1064017"
+}
+]
+},
 "fairiesalbums": {
 "checked": "2026-10-09",
 "mature": false,
@@ -706,6 +772,24 @@
 {
 "site": "YouTube",
 "url": "https://youtube.com/playlist?list=PLwLSw1_eDZl2VQRIahDF73hnkdPjNRYnu"
+}
+]
+},
+"fatalrule": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "iQIYI",
+"url": "https://www.iqiyi.com/a_28pmxi1ot5l.html"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/fatal-rule-2023-ucmnduntsp?lang=en_us"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLTndXYWs2JgFT3wIuMbSMwtxd_D2CQCq9"
 }
 ]
 },
@@ -962,6 +1046,20 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_19rrhvrhtl.html"
+}
+]
+},
+"irodukutheworldincolors": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B07J1XBCYL/"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl0RAmNIrodPyAf8t3iNWd0q"
 }
 ]
 },
@@ -1282,6 +1380,36 @@
 }
 ]
 },
+"madeinabyss": {
+"checked": "2026-10-14",
+"mature": true,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B073S2612X"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80193163"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0-bp4bZ7ER-VQ-973riDyN"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/37179"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/37179"
+},
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/season/20003"
+}
+]
+},
 "madeinabyssthegoldencityofthescorchingsun": {
 "checked": "2026-10-09",
 "mature": true,
@@ -1308,6 +1436,32 @@
 }
 ]
 },
+"marriedashusbandandwifenodoubtaboutlove": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28223053/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfgqR84LIZdg6VQdnt_hoQU2"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfhn-sWP508yUGD2gS8xRNMD"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1005700"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81648185"
+}
+]
+},
 "mobpsycho100": {
 "checked": "2026-10-09",
 "mature": false,
@@ -1331,6 +1485,34 @@
 {
 "site": "Hulu",
 "url": "https://www.hulu.com/series/mob-psycho-100-fc9b8130-e1e3-420b-b28d-a72f0b235069"
+}
+]
+},
+"momentarylily": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GG5H5XQQ5/momentary-lily"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2124185"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3ML-kzI3sjoetbnmSaealc"
+}
+]
+},
+"momokuri": {
+"checked": "2026-10-14",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3etcUK39lZKBM6P2URu_Jz"
 }
 ]
 },
@@ -1455,6 +1637,20 @@
 {
 "site": "Hulu",
 "url": "https://www.hulu.com/series/my-next-life-as-a-villainess-all-routes-lead-to-doom-6712b34c-1079-4cf7-974f-0934ff29c2a5"
+}
+]
+},
+"myseniorbrotheristoostrong": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md25487812"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2128139"
 }
 ]
 },
@@ -1905,6 +2101,36 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0e2nQ5MU6dWXVC3Pqf6941"
+}
+]
+},
+"sinceiwasnttheheroine": {
+"checked": "2026-10-14",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28339941/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfindaFLELMbIRolvkqLjP9J"
+},
+{
+"site": "Viki",
+"url": "https://www.viki.com/tv/39788c-since-i-wasnt-the-heroine"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfhmc2Q4TMaMrIUhoY3YGhPB"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLBakWosU0sfjQict-z0oO2WgrpWCefHsq"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2081246"
 }
 ]
 },
