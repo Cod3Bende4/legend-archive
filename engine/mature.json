@@ -107,6 +107,20 @@
 }
 ]
 },
+"alderaminonthesky": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B076B5F6Y9/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1tTjHxsEqxY9VXJH-heiAs"
+}
+]
+},
 "amortalsjourneyspeedingintheseaofstars": {
 "checked": "2026-10-09",
 "mature": false,
@@ -291,6 +305,46 @@
 }
 ]
 },
+"bangdreamavemujica": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/@bang_dream_AveMujica"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G0XHWM11X/ave-mujica---the-die-is-cast--"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl322PZfaZqVFMuAmmGGephH"
+}
+]
+},
+"beasttamer": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://crunchyroll.com/series/G8DHV743V"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1lv3DwQr43Dbdnjsxfa_cB"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2069487"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL16nGfiLyHX1k5KZfjdGGHcy"
+}
+]
+},
 "beelzebub": {
 "checked": "2026-10-08",
 "mature": false,
@@ -334,6 +388,16 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_19rrgxqvep.html"
+}
+]
+},
+"blackbullet": {
+"checked": "2026-10-15",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1_e_EKh4oVFriW8um3TKY6"
 }
 ]
 },
@@ -925,6 +989,34 @@
 }
 ]
 },
+"haigakura": {
+"checked": "2026-10-15",
+"mature": true,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B0DHDGVXFD"
+},
+{
+"site": "OceanVeil",
+"url": "https://oceanveil.net/anime_titles/365"
+}
+]
+},
+"higehiroafterbeingrejectedishavedandtookinahighschoolrunaway": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/higehiro-after-being-rejected-i-shaved-and-took-in-a-high-school-runaway"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl04kRKOrkNNvS1Yht4lZ8QK"
+}
+]
+},
 "howdareyou": {
 "checked": "2026-10-08",
 "mature": false,
@@ -974,6 +1066,28 @@
 {
 "site": "Tencent Video",
 "url": "https://v.qq.com/detail/t/mzc00200sm0qv1l.html"
+}
+]
+},
+"igotacheatskillinanotherworldandbecameunrivaledintherealworl": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GEXH3W49E/i-got-a-cheat-skill-in-another-world-and-became-unrivaled-in-the-real-world-too"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2078533"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3NIzWVo6NiXcorugfvyvVg"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/id-en/title/81681485"
 }
 ]
 },
@@ -1046,6 +1160,24 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_19rrhvrhtl.html"
+}
+]
+},
+"ipponagain": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/ippon-again"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2GTD5eb1FOEFT-OPoVhIjJ"
+},
+{
+"site": "Hoopla",
+"url": "https://www.hoopladigital.com/television/ippon-again-season-1-ayasa-ito/16309485"
 }
 ]
 },
@@ -1436,6 +1568,28 @@
 }
 ]
 },
+"marriagetoxin": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00371857/marriagetoxin"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl011mVXTXqaPUz2fiiEyFPF"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2342380"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/lobrkqtcd1"
+}
+]
+},
 "marriedashusbandandwifenodoubtaboutlove": {
 "checked": "2026-10-14",
 "mature": false,
@@ -1459,6 +1613,16 @@
 {
 "site": "Netflix",
 "url": "https://www.netflix.com/title/81648185"
+}
+]
+},
+"minamikamakurahighschoolgirlscyclingclub": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3lknkYJWO-mDkHIibtlgpQ"
 }
 ]
 },
@@ -1924,6 +2088,28 @@
 }
 ]
 },
+"sasakiandpeeps": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G5PHNM935/sasaki-and-peeps"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2096149"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3-9-2FJKBOwpaNg_K1oUoA"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81768306"
+}
+]
+},
 "scumofthebrave": {
 "checked": "2026-10-12",
 "mature": true,
@@ -2353,6 +2539,34 @@
 }
 ]
 },
+"tadaneverfallsinlove": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2qmzRU6SDdKO6Ob4HYKcBK"
+},
+{
+"site": "Hoopla",
+"url": "https://www.hoopladigital.com/television/tada-never-falls-in-love-season-1-yuichi-nakamura/16309481"
+}
+]
+},
+"talentlessnana": {
+"checked": "2026-10-15",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2t0ExBn76ZdBomplZbeaay"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/talentless-nana"
+}
+]
+},
 "thattimeigotreincarnatedasaslime": {
 "checked": "2026-10-07",
 "mature": false,
@@ -2576,6 +2790,28 @@
 {
 "site": "Tencent Video",
 "url": "https://v.qq.com/x/cover/mzc00200kqa0dbi.html"
+}
+]
+},
+"wrongwaytousehealingmagic": {
+"checked": "2026-10-15",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G0XHWM1EK/the-wrong-way-to-use-healing-magic"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2095912"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2qQ39Obr5X2J0fIATD9M2M"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81747942"
 }
 ]
 },
