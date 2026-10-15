@@ -121,6 +121,16 @@
 }
 ]
 },
+"alicezoroku": {
+"checked": "2026-10-16",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1CiPZS3C6j3d9fiLZsmUgC"
+}
+]
+},
 "amortalsjourneyspeedingintheseaofstars": {
 "checked": "2026-10-09",
 "mature": false,
@@ -182,6 +192,28 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_19rrh8i545.html"
+}
+]
+},
+"apocalypsebringermynoghra": {
+"checked": "2026-10-16",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G1XHJV0M7/apocalypse-bringer-mynoghra-world-conquest-starts-with-the-civilization-of-ruin"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/1m8l8ex2cfp"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0ah79jTczH6CBPDr0uZcji"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2129668"
 }
 ]
 },
@@ -320,6 +352,29 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl322PZfaZqVFMuAmmGGephH"
+}
+]
+},
+"bangdreamitsmygo": {
+"checked": "2026-10-16",
+"mature": false,
+"watch": []
+},
+"bangdreamyumemita": {
+"checked": "2026-10-16",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/@BDP_yumemita"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00379424/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0ctL2jtLzMpMPtAYfkdRVO"
 }
 ]
 },
@@ -490,6 +545,24 @@
 {
 "site": "YouTube",
 "url": "https://youtube.com/playlist?list=PLwLSw1_eDZl2jD4HobdnUs3oOdkDNwQGq&si=nMq7BfTrJQ-FbH-g"
+}
+]
+},
+"cellsatworkcodeblack": {
+"checked": "2026-10-16",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/cells-at-work-code-black"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/23c87oba56x"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81392162"
 }
 ]
 },
@@ -707,6 +780,24 @@
 }
 ]
 },
+"detectiveisalreadydead": {
+"checked": "2026-10-16",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2qyiTb5d4rLdPpMLM8gEGP"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-detective-is-already-dead"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1010919"
+}
+]
+},
 "devilisaparttimer": {
 "checked": "2026-10-12",
 "mature": false,
@@ -764,6 +855,28 @@
 {
 "site": "Bilibili TV",
 "url": "https://www.bilibili.tv/media/1064017"
+}
+]
+},
+"exiledheavyknightknowshowtogamethesystem": {
+"checked": "2026-10-16",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00378018/the-exiled-heavy-knight-knows-how-to-game-the-system"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3yq1oZEC8iNCwgMsg0NmIZ"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/2411725"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/a5a0t3nwm1"
 }
 ]
 },
@@ -874,6 +987,24 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLtdSPZNWT1AuEnWLElajRzm2DZhx1tVhd"
+}
+]
+},
+"fuutopi": {
+"checked": "2026-10-16",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://crunchyroll.com/series/GMEHMEWK0"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0AqkVnkd9eTh2OI1mRRpRs"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1062349"
 }
 ]
 },
@@ -1906,6 +2037,20 @@
 }
 ]
 },
+"policeinapod": {
+"checked": "2026-10-16",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl2izs1xOy2sqcPOQf9Jv7BF"
+},
+{
+"site": "Crunchyroll",
+"url": "https://beta.crunchyroll.com/series/GJ0H7Q8Z1/police-in-a-pod"
+}
+]
+},
 "ragnacrimson": {
 "checked": "2026-10-10",
 "mature": true,
@@ -2040,6 +2185,16 @@
 }
 ]
 },
+"riddlestoryofdevil": {
+"checked": "2026-10-16",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2GuaYah2DPB0cUq-KOb2ba"
+}
+]
+},
 "saintsmagicpowerisomnipotent": {
 "checked": "2026-10-11",
 "mature": false,
@@ -2067,6 +2222,20 @@
 {
 "site": "Bilibili TV",
 "url": "https://www.bilibili.tv/en/media/1002703"
+}
+]
+},
+"saiyukireloadzeroin": {
+"checked": "2026-10-16",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/saiyuki-reload-zeroin"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLWBgW1RHJJCTSuxzweNqoEgFRxuRzxVB5"
 }
 ]
 },
@@ -2157,6 +2326,20 @@
 {
 "site": "Bilibili",
 "url": "https://www.bilibili.com/bangumi/media/md5291/?from=search&seid=4946183391621457582"
+}
+]
+},
+"selectionproject": {
+"checked": "2026-10-16",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2FRizEh6a46FMtDzXRUeXq"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/selection-project"
 }
 ]
 },
@@ -2780,6 +2963,24 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_19rrhb9ynh.html"
+}
+]
+},
+"worldisdancing": {
+"checked": "2026-10-16",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/season/36240"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.co.jp/-/en/dp/B0H46Z36CY"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0a5R_sTDWnpN19_TCZuW-E"
 }
 ]
 },
