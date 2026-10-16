@@ -195,6 +195,20 @@
 }
 ]
 },
+"andyouthoughtthereisneveragirlonline": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0_pFZjGAyXj8oQkUF566Lq"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/and-you-thought-there-is-never-a-girl-online"
+}
+]
+},
 "apocalypsebringermynoghra": {
 "checked": "2026-10-16",
 "mature": true,
@@ -584,6 +598,16 @@
 }
 ]
 },
+"cheerboys": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1BWelglxcX-6baOKAYaeZ5"
+}
+]
+},
 "chroniclesofeverlastingwindandswordrain": {
 "checked": "2026-10-13",
 "mature": false,
@@ -760,6 +784,24 @@
 }
 ]
 },
+"dawnofthewitch": {
+"checked": "2026-10-17",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-dawn-of-the-witch"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1049174/"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl0oqORR5jlJJvR2Qa2a77Qu"
+}
+]
+},
 "demongods": {
 "checked": "2026-10-07",
 "mature": false,
@@ -880,6 +922,28 @@
 }
 ]
 },
+"failureframeibecamethestrongestandannihilatedeverythingwithl": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2111677"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2Ylo_ZqR-Ian69US02f1GA"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G3KHEVD3E/failure-frame-i-became-the-strongest-and-annihilated-everything-with-low-level-spells"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81910037"
+}
+]
+},
 "fairiesalbums": {
 "checked": "2026-10-09",
 "mature": false,
@@ -990,6 +1054,24 @@
 }
 ]
 },
+"frombureaucrattovillainessdadsbeenreincarnated": {
+"checked": "2026-10-17",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/season/28118"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2122554"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl031zNeBVFi0zLndX_M3PhN"
+}
+]
+},
 "fuutopi": {
 "checked": "2026-10-16",
 "mature": true,
@@ -1023,6 +1105,16 @@
 {
 "site": "iQ",
 "url": "https://www.iq.com/album/22kzhzv0wbd"
+}
+]
+},
+"girlsfrontline": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28221280"
 }
 ]
 },
@@ -1077,6 +1169,24 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/@goodkiller1250/"
+}
+]
+},
+"greatclericwhitecollarsurvivalinanotherworld": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GG5H5XQ24/the-great-cleric"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2084471"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3r0PWvImxT2aNky9PgNVIJ"
 }
 ]
 },
@@ -1699,6 +1809,16 @@
 }
 ]
 },
+"magicalwarfare": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl36-wnIlkhEFYInNFa5RB1C"
+}
+]
+},
 "marriagetoxin": {
 "checked": "2026-10-15",
 "mature": false,
@@ -1744,6 +1864,16 @@
 {
 "site": "Netflix",
 "url": "https://www.netflix.com/title/81648185"
+}
+]
+},
+"matoithesacredslayer": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3ZFrbrMSmwz2d52oRAsQDm"
 }
 ]
 },
@@ -2163,6 +2293,11 @@
 }
 ]
 },
+"rentagirlfriend2ndseason": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": []
+},
 "rezerostartinglifeinanotherworld": {
 "checked": "2026-10-07",
 "mature": true,
@@ -2539,6 +2674,28 @@
 }
 ]
 },
+"snowballearth": {
+"checked": "2026-10-17",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00371869/snowball-earth"
+},
+{
+"site": "Disney Plus",
+"url": "https://www.disneyplus.com/browse/entity-5ecc8b00-79fd-4c1a-81ed-f44260ef38d4"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3pfSGYuLYNhx-r4jK1qzTB"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/82746480"
+}
+]
+},
 "soulland": {
 "checked": "2026-10-07",
 "mature": false,
@@ -2672,6 +2829,20 @@
 }
 ]
 },
+"supercub": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1bLUFrbGuwsVRTjgIvhVzS"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/super-cub"
+}
+]
+},
 "supremealchemy": {
 "checked": "2026-10-07",
 "mature": false,
@@ -2773,6 +2944,16 @@
 {
 "site": "Bilibili TV",
 "url": "https://www.bilibili.tv/media/34510"
+}
+]
+},
+"thisartclubhasaproblem": {
+"checked": "2026-10-17",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3eo5TUJIZbvoh5rY0xqUyw"
 }
 ]
 },
