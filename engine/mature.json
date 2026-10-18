@@ -125,6 +125,24 @@
 }
 ]
 },
+"ajourneythroughanotherworld": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G79H23ZVX/a-journey-through-another-world-raising-kids-while-adventuring"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2112079"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3YlF-AmAQWIFW1BV-Q84tW"
+}
+]
+},
 "alderaminonthesky": {
 "checked": "2026-10-15",
 "mature": false,
@@ -552,6 +570,32 @@
 }
 ]
 },
+"cautiousherotheheroisoverpoweredbutoverlycautious": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/cautious-hero-the-hero-is-overpowered-but-overly-cautious"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0hI_XedalMVIvHcVLOouiv"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81196818"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/cautious-hero-the-hero-is-overpowered-but-overly-cautious"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/34773"
+}
+]
+},
 "celestialaboveall": {
 "checked": "2026-10-10",
 "mature": false,
@@ -714,6 +758,20 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3d2XXHoyqobEAMz2g0nBc0"
+}
+]
+},
+"combatantswillbedispatched": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0tNsenacq3tN4Jedyd-H_7"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/combatants-will-be-dispatched"
 }
 ]
 },
@@ -1281,6 +1339,20 @@
 }
 ]
 },
+"heavensdesignteam": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/heavens-design-team"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/watch?v=l0TQMnzE7CY"
+}
+]
+},
 "higehiroafterbeingrejectedishavedandtookinahighschoolrunaway": {
 "checked": "2026-10-15",
 "mature": false,
@@ -1469,6 +1541,28 @@
 }
 ]
 },
+"iparryeverything": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/season/24576"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2111844"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3C3peDURtUL6yivoXKvuZ7"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.primevideo.com/-/fr/detail/I-Parry-Everything/0QM2391MATPGGX3FNXU8DHYQSA"
+}
+]
+},
 "ipponagain": {
 "checked": "2026-10-15",
 "mature": false,
@@ -1498,6 +1592,16 @@
 {
 "site": "YouTube",
 "url": "https://youtube.com/playlist?list=PLwLSw1_eDZl0RAmNIrodPyAf8t3iNWd0q"
+}
+]
+},
+"isekaiofficeworker": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00365574/isekai-office-worker-the-other-worlds-books-depend-on-the-bean-counter"
 }
 ]
 },
@@ -1615,6 +1719,24 @@
 "mature": true,
 "watch": []
 },
+"justbecause": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLPanbgyToztbrsaAZ2NOdDEvPgig2ZbUa"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/34859"
+},
+{
+"site": "Hoopla",
+"url": "https://www.hoopladigital.com/television/just-because-season-1-aoi-ichikawa/16309475"
+}
+]
+},
 "kingofjinintangdynasty": {
 "checked": "2026-10-13",
 "mature": false,
@@ -1689,6 +1811,20 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_xgzhhxd7ot.html"
+}
+]
+},
+"lapisrelights": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3MvMICti5VTiLTHivii-JR"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/lapis-relights"
 }
 ]
 },
@@ -1956,6 +2092,32 @@
 }
 ]
 },
+"mierukochan": {
+"checked": "2026-10-19",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl17reRE_OPjNhFb-IgV1aYY"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/mieruko-chan-2c7u5fzqd0h"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1019493"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/mieruko-chan"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81513820"
+}
+]
+},
 "minamikamakurahighschoolgirlscyclingclub": {
 "checked": "2026-10-15",
 "mature": false,
@@ -2163,6 +2325,36 @@
 }
 ]
 },
+"mysenpaiisannoying": {
+"checked": "2026-10-19",
+"mature": true,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/my-senpai-is-annoying-1dclwo44t0p"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/play/1018992?s_locale=en_US&from=COPY"
+},
+{
+"site": "Crunchyroll",
+"url": "https://crunchyroll.com/series/GP5HJ815K"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL16mXC_GUcX38ocG91W0boKy"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1lPiuYljW124AbkxpGY_XH"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81510817"
+}
+]
+},
 "mystatusasanassassinobviouslyexceedstheheros": {
 "checked": "2026-10-18",
 "mature": false,
@@ -2356,6 +2548,28 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0Hvvm1qpOoJRSOiJhj9nnl"
+}
+]
+},
+"reborntomasterthebladefromherokingtoextraordinarysquire": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GQWH0MP94/reborn-to-master-the-blade-from-hero-king-to-extraordinary-squire"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1aAPuUflQZTsm6r9xyuK4z"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2073796"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/1pw5mk1u3t1"
 }
 ]
 },
@@ -3195,6 +3409,16 @@
 }
 ]
 },
+"uqholder": {
+"checked": "2026-10-19",
+"mature": true,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/gp/video/detail/B0763JGLBQ"
+}
+]
+},
 "urbanmiracledoctor": {
 "checked": "2026-10-07",
 "mature": false,
@@ -3220,6 +3444,32 @@
 {
 "site": "Netflix",
 "url": "https://www.netflix.com/title/70309073"
+}
+]
+},
+"wanderingwitchthejourneyofelaina": {
+"checked": "2026-10-19",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0t53wDaw_s7IFG7cNLp_BL"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/wandering-witch-the-journey-of-elaina-b91b2cf9-d56f-450b-9458-a6302f5caf15"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/wandering-witch-the-journey-of-elaina"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/id/play/1004995"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/jp-en/title/81333300"
 }
 ]
 },
