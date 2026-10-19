@@ -1213,6 +1213,20 @@
 }
 ]
 },
+"girlslasttour": {
+"checked": "2026-10-20",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3llJarYAOOfcLJ3LUcHlxC"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/34725"
+}
+]
+},
 "gloriousrevengeofyefeng": {
 "checked": "2026-10-07",
 "mature": false,
@@ -1339,6 +1353,16 @@
 }
 ]
 },
+"halloweenspecial": {
+"checked": "2026-10-20",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl28nYqV_gPaNLe-PL2JEnCR"
+}
+]
+},
 "heavensdesignteam": {
 "checked": "2026-10-19",
 "mature": false,
@@ -1364,6 +1388,16 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl04kRKOrkNNvS1Yht4lZ8QK"
+}
+]
+},
+"hinalogicfromlucklogic": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl12grj-StM5rf3UOWjX_ZCg"
 }
 ]
 },
@@ -1699,6 +1733,24 @@
 }
 ]
 },
+"jellyfishcantswiminthenight": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/season/22309"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/1prbchssivl"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2z_raZP-3EdZOrEzjrGXco"
+}
+]
+},
 "jojosbizarreadventure": {
 "checked": "2026-10-10",
 "mature": true,
@@ -1734,6 +1786,20 @@
 {
 "site": "Hoopla",
 "url": "https://www.hoopladigital.com/television/just-because-season-1-aoi-ichikawa/16309475"
+}
+]
+},
+"kandagawajetgirls": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/kandagawa-jet-girls"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3kpZfsZ4e25RH25ZyYHk_j"
 }
 ]
 },
@@ -1924,6 +1990,24 @@
 }
 ]
 },
+"lonerlifeinanotherworld": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/season/26571"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1P3W7ws_S-dsq2zV3aIj-S"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81955440"
+}
+]
+},
 "lordofmysteriestheclown": {
 "checked": "2026-10-13",
 "mature": true,
@@ -2021,6 +2105,28 @@
 {
 "site": "Netflix",
 "url": "https://www.netflix.com/title/80193163"
+}
+]
+},
+"magicalrevolutionofthereincarnatedprincessandthegeniusyoungl": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl39RHrWKdjZJ9hFQ6UYiDMr"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2073540"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G5PHNM7J2/the-magical-revolution-of-the-reincarnated-princess-and-the-genius-young-lady"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/24szadiebp9"
 }
 ]
 },
@@ -2398,6 +2504,38 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/no-guns-life"
+}
+]
+},
+"osamakeromcomwherethechildhoodfriendwontlose": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/osamake-romcom-where-the-childhood-friend-wont-lose"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1WTubEn3m0nfJ8ZLnLFUwq"
+}
+]
+},
+"ossannewbieadventurer": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GXJHM3GKX/the-ossan-newbie-adventurer-trained-to-death-by-the-most-powerful-party-became-invincible"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2111784"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3eT2fOFMIeAJZQpdxe9tmU"
 }
 ]
 },
@@ -2808,6 +2946,44 @@
 }
 ]
 },
+"servamp": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1a-fR7PKtKLE_nzXYzm0MH"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/servamp"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqFZK1Q5eBBefGw7YoyrrAq"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/36982"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLuxqoToY7Ucin1S0BBvaye-StIcK-qpSA"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/Tsubaki/dp/B0CH9DDVQ7"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.co.jp/-/en/dp/B07FHLHJ27/"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.co.jp/-/en/dp/B01I4R974U/"
+}
+]
+},
 "sevendeadlysins": {
 "checked": "2026-10-10",
 "mature": false,
@@ -2839,6 +3015,20 @@
 {
 "site": "Netflix",
 "url": "https://www.netflix.com/title/80050063"
+}
+]
+},
+"shachibatopresidentitstimeforbattle": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3QImEBH4Sfmjg-Q2SB61OB"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/shachibato-president-its-time-for-battle/"
 }
 ]
 },
@@ -3299,6 +3489,28 @@
 }
 ]
 },
+"thattimeigotreincarnatedasaslimetheslimediaries": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-slime-diaries"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl0KQPaOlV_-i8-F3Dyu_kO_"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/2edcfemvkyx"
+},
+{
+"site": "Bilibili",
+"url": "https://www.bilibili.com/bangumi/media/md28233903"
+}
+]
+},
 "thisartclubhasaproblem": {
 "checked": "2026-10-17",
 "mature": false,
@@ -3578,6 +3790,28 @@
 {
 "site": "Tencent Video",
 "url": "https://v.qq.com/x/cover/mzc00200kqa0dbi.html"
+}
+]
+},
+"worldsfinestassassingetsreincarnatedinanotherworldasanaristo": {
+"checked": "2026-10-20",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://crunchyroll.com/series/GMEHME55K"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0PWwz5cS6rncbDhX-J3AeV"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1019621"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81511191"
 }
 ]
 },
