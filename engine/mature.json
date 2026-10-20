@@ -317,6 +317,46 @@
 }
 ]
 },
+"armedgirlsmachiavellism": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B06Y1PY91G"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0HZb3tX9UUUxUK7kHmeDtO"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GJ0H7QDW8/"
+}
+]
+},
+"arte": {
+"checked": "2026-10-21",
+"mature": true,
+"watch": [
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/arte"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1-UC4RgrWv8yHKbtrVASbf"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/arte"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/34709"
+}
+]
+},
 "ascendanceofabookworm": {
 "checked": "2026-10-09",
 "mature": true,
@@ -503,6 +543,24 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1_e_EKh4oVFriW8um3TKY6"
+}
+]
+},
+"blacktorch": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00377907/black-torch"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/am6qsz178h"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3mx2NrmJSwHk-VtvhmGnZz"
 }
 ]
 },
@@ -1299,6 +1357,32 @@
 }
 ]
 },
+"greatestdemonlordisrebornasatypicalnobody": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-greatest-demon-lord-is-reborn-as-a-typical-nobody"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl2r_5gebNCgFLONBLem1_si"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/iogt7vd8i1/"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1047521"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1047521"
+}
+]
+},
 "greatjourneyofteenagers": {
 "checked": "2026-10-07",
 "mature": false,
@@ -1478,6 +1562,20 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/ichu"
+}
+]
+},
+"ifitsformydaughteridevendefeatademonlord": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/if-its-for-my-daughter-id-even-defeat-a-demon-lord"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3hnDBJquengxjETgIxDai-"
 }
 ]
 },
@@ -1803,6 +1901,24 @@
 }
 ]
 },
+"kemonojihen": {
+"checked": "2026-10-21",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1YS_pINBRcstuSCSgO4EGj"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81392166"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/kemono-jihen"
+}
+]
+},
 "kingofjinintangdynasty": {
 "checked": "2026-10-13",
 "mature": false,
@@ -1891,6 +2007,16 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/lapis-relights"
+}
+]
+},
+"lastperiodthejourneytotheendofthedespair": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl07SGVEc61IT60Q1ERpw-od"
 }
 ]
 },
@@ -2489,6 +2615,28 @@
 }
 ]
 },
+"ningenfushinadventurerswhodontbelieveinhumanitywillsavethewo": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G24H1N8ZN/ningen-fushin-adventurers-who-dont-believe-in-humanity-will-save-the-world"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0X9kRSmdiB5L2FfA_eTyMZ"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/2073490/"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/2bwfzdba54p"
+}
+]
+},
 "nogunslife": {
 "checked": "2026-10-12",
 "mature": true,
@@ -2781,6 +2929,38 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2GuaYah2DPB0cUq-KOb2ba"
+}
+]
+},
+"rokudosbadgirls": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GW4HM75QW/rokudos-bad-girls"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/@rokudo_akujo"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1ko2ZtycDHdgIovdrzT1QX"
+}
+]
+},
+"rumblegaranndoll": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3OjCmcapJ_gTsUedrF2j6-"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/rumble-garanndoll"
 }
 ]
 },
@@ -3363,6 +3543,20 @@
 }
 ]
 },
+"supposeakidfromthelastdungeonbooniesmovedtoastartertown": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3X-zEFf3ZnYgu6MuUIO9q3"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/suppose-a-kid-from-the-last-dungeon-boonies-moved-to-a-starter-town"
+}
+]
+},
 "supremealchemy": {
 "checked": "2026-10-07",
 "mature": false,
@@ -3682,6 +3876,24 @@
 {
 "site": "Netflix",
 "url": "https://www.netflix.com/jp-en/title/81333300"
+}
+]
+},
+"wastefuldaysofhighschoolgirls": {
+"checked": "2026-10-21",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/wasteful-days-of-high-school-girls"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3a6WBPlpPJlaNKNGwHGA08"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81256684"
 }
 ]
 },
