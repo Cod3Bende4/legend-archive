@@ -281,6 +281,24 @@
 }
 ]
 },
+"appraiser": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GNVHKN99W/even-given-the-worthless-appraiser-class--im-actually-the-strongest"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2123536"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2VtrcMiIwEPC5RetXymTDz"
+}
+]
+},
 "aquatopeonwhitesand": {
 "checked": "2026-10-12",
 "mature": false,
@@ -1021,6 +1039,28 @@
 }
 ]
 },
+"easygoingterritorydefensebytheoptimisticlord": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00365565/easygoing-territory-defense-by-the-optimistic-lord"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2288556"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/14p5qniiqvd"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3oMlnB7bBRbcdnIbrj9wNv"
+}
+]
+},
 "eclipseofillusion": {
 "checked": "2026-10-10",
 "mature": false,
@@ -1240,6 +1280,24 @@
 {
 "site": "Bilibili TV",
 "url": "https://www.bilibili.tv/media/1062349"
+}
+]
+},
+"geniusprincesguidetoraisinganationoutofdebt": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3c_LVdE3-fWSI17vrM46ez"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-genius-princes-guide-to-raising-a-nation-out-of-debt"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1035162"
 }
 ]
 },
@@ -1959,6 +2017,24 @@
 }
 ]
 },
+"kumakumakumabear": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/kuma-kuma-kuma-bear-01548761-15e2-4321-b7cf-ece5e51f8f42"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0zRE6T4CdrulzxXZgdRGLr"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/kuma-kuma-kuma-bear"
+}
+]
+},
 "kumakumakumabearpunch": {
 "checked": "2026-10-12",
 "mature": false,
@@ -2615,6 +2691,24 @@
 }
 ]
 },
+"newgate": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2104888"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GMEHME7Z1/the-new-gate"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl01FuNigO2J_kpRcdtjWN9F"
+}
+]
+},
 "ningenfushinadventurerswhodontbelieveinhumanitywillsavethewo": {
 "checked": "2026-10-21",
 "mature": false,
@@ -2705,6 +2799,28 @@
 }
 ]
 },
+"ourdatingstorytheexperiencedyouandtheinexperiencedme": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0whg1P3W-GGjHV0roiqsFP"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2090634"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G5PHNM9G5/our-dating-story-the-experienced-you-and-the-inexperienced-me"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81725576"
+}
+]
+},
 "outcast": {
 "checked": "2026-10-09",
 "mature": false,
@@ -2712,6 +2828,28 @@
 {
 "site": "Tencent Video",
 "url": "https://v.qq.com/x/cover/ozvao2u23k1nf9o.html"
+}
+]
+},
+"parallelworldpharmacy": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1ZHXQDzK5Qit6jqLTNzjZ3"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G24H1NJJD/parallel-world-pharmacy"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1062554"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL1548fYEI4WA4uJ9snfpGm6J"
 }
 ]
 },
@@ -3262,6 +3400,28 @@
 }
 ]
 },
+"sheprofessedherselfpupilofthewiseman": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2o_CBCRxnYJOP_UhDn7NeW"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1036060/"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/she-professed-herself-pupil-of-the-wise-man-2022-17kgvyisbr9"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/she-professed-herself-pupil-of-the-wise-man"
+}
+]
+},
 "shiboyugiplayingdeathgamestoputfoodonthetable": {
 "checked": "2026-10-13",
 "mature": true,
@@ -3305,6 +3465,28 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0e2nQ5MU6dWXVC3Pqf6941"
+}
+]
+},
+"shyheroandtheassassinprincesses": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GXJHM3G0J/the-shy-hero-and-the-assassin-princesses"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2129562"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/channel/UCGbshtvS9t-8CW11W7TooQg"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/1c4exe85vox"
 }
 ]
 },
@@ -3511,6 +3693,20 @@
 }
 ]
 },
+"stardusttelepath": {
+"checked": "2026-10-23",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GKEH2G0P9/stardust-telepath"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3SO7xh3VLjlKKvxihVUOaI"
+}
+]
+},
 "sugarapplefairytale": {
 "checked": "2026-10-12",
 "mature": false,
@@ -3654,6 +3850,28 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/talentless-nana"
+}
+]
+},
+"talker": {
+"checked": "2026-10-23",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GDKHZEJD0/the-most-notorious-talker-runs-the-worlds-greatest-clan"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2115664"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0dnyHyQUkE0ggdGHWwWogW"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/12dsdm04mft"
 }
 ]
 },
@@ -3812,6 +4030,28 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1gBwBsgwk8WFIcWW_YatlT"
+}
+]
+},
+"unwantedundeadadventurer": {
+"checked": "2026-10-23",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GW4HM7WZQ/the-unwanted-undead-adventurer"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2096429"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl3tJE53C10vT7BjOzXaG5q5&si=xgzVkKWJb1nI1tK8"
+},
+{
+"site": "Netflix",
+"url": "https://netflix.com/title/81746882"
 }
 ]
 },
