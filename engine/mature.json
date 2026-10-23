@@ -103,6 +103,28 @@
 }
 ]
 },
+"agatherersadventureinisekai": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G1XHJV0G7/a-gatherers-adventure-in-isekai"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl15GuyNnaoSrjuBATA-sA3R"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2247354"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/qdnfd9rard"
+}
+]
+},
 "ahirunosora": {
 "checked": "2026-10-08",
 "mature": false,
@@ -164,6 +186,28 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1CiPZS3C6j3d9fiLZsmUgC"
+}
+]
+},
+"alwaysacatch": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/fh6v37zbyp"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2343020"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3n62kkjOOBxuuhfXiDUu4g"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00371642/always-a-catch"
 }
 ]
 },
@@ -242,6 +286,24 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/and-you-thought-there-is-never-a-girl-online"
+}
+]
+},
+"anobodyswayuptoanexplorationhero": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2111356"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0sGgFJa4A_jELqNXVv8dqg"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GZJH3D8X9/a-nobodys-way-up-to-an-exploration-hero"
 }
 ]
 },
@@ -515,6 +577,28 @@
 {
 "site": "YouTube",
 "url": "https://youtube.com/playlist?list=PLwLSw1_eDZl0sgiAAegEz0YBnExhICwtl"
+}
+]
+},
+"behenekotheelfgirlscatissecretlyansrankedmonster": {
+"checked": "2026-10-24",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/season/28068"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0kTapKR1aoeVPXca6KIPPc"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2122155"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/g7jc0mxo9x"
 }
 ]
 },
@@ -851,6 +935,28 @@
 }
 ]
 },
+"copcraft": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/cop-craft-da0b3b7a-2bb3-4fc8-b6ce-9ed7f30e3e45"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B07VM98CLR/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl27k9-B8hZh98KmD8R6Zwnq"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/cop-craft"
+}
+]
+},
 "dandadan": {
 "checked": "2026-10-09",
 "mature": false,
@@ -908,6 +1014,20 @@
 {
 "site": "Niconico Video",
 "url": "https://ch.nicovideo.jp/anime-dandadan"
+}
+]
+},
+"danganronpa3theendofhopespeakhighschoolfuturearc": {
+"checked": "2026-10-24",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0xXCx8vGdbNBIXN73bE1J-"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/danganronpa-3-the-end-of-hopes-peak-high-school"
 }
 ]
 },
@@ -1026,6 +1146,20 @@
 {
 "site": "Crunchyroll",
 "url": "https://crunchyroll.com/series/GR75Z5KKY/the-devil-is-a-part-timer"
+}
+]
+},
+"diaryofourdaysatthebreakwater": {
+"checked": "2026-10-24",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0hQYI9Fqqby4gip8mBhPpX"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/diary-of-our-days-at-the-breakwater"
 }
 ]
 },
@@ -1835,6 +1969,20 @@
 }
 ]
 },
+"iwanttoescapefromprincesslessons": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G9VHN9QQ4/i-want-to-escape-from-princess-lessons"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1DlUDCVK433fUMRHqlggDM"
+}
+]
+},
 "iwasreincarnatedasthe7thprince": {
 "checked": "2026-10-11",
 "mature": false,
@@ -2310,6 +2458,16 @@
 }
 ]
 },
+"magatsuwahrheitzuerst": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/magatsu-wahrheit"
+}
+]
+},
 "magicalrevolutionofthereincarnatedprincessandthegeniusyoungl": {
 "checked": "2026-10-20",
 "mature": false,
@@ -2487,6 +2645,24 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3etcUK39lZKBM6P2URu_Jz"
+}
+]
+},
+"monstergirldoctor": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/monster-girl-doctor"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3LmQOuDIveKBPJvUcapoq5"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/2ffkws2tkk5"
 }
 ]
 },
@@ -2896,6 +3072,24 @@
 {
 "site": "Crunchyroll",
 "url": "https://beta.crunchyroll.com/series/GJ0H7Q8Z1/police-in-a-pod"
+}
+]
+},
+"privatetutortothedukesdaughter": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GG5H5XQGQ/private-tutor-to-the-dukes-daughter"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/2140675"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/14cgu9sf5pp"
 }
 ]
 },
@@ -3872,6 +4066,24 @@
 {
 "site": "iQ",
 "url": "https://www.iq.com/album/12dsdm04mft"
+}
+]
+},
+"tearmoonempire": {
+"checked": "2026-10-24",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G9VHN9QVN/tearmoon-empire"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2091236"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1xwjPnSCLFHXdlH1HUcrfD"
 }
 ]
 },
