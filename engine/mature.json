@@ -307,6 +307,24 @@
 }
 ]
 },
+"aplaythroughofacertaindudesvrmmolife": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GMEHME70J/a-playthrough-of-a-certain-dudes-vrmmo-life"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2090240"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2_YhCrD7kgWkEHEraqedPW"
+}
+]
+},
 "apocalypsebringermynoghra": {
 "checked": "2026-10-16",
 "mature": true,
@@ -448,6 +466,28 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl1M7sDB0qBDBKDKUJnHciM6"
+}
+]
+},
+"asignofaffection": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GEXH3W2V7/a-sign-of-affection"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2095969"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl14kD6iz4eILaU9kceG6UZL"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81748453"
 }
 ]
 },
@@ -1173,6 +1213,32 @@
 }
 ]
 },
+"drramunemysteriousdiseasespecialist": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/dr-ramune-mysterious-disease-specialist-"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2ZFZlTclIzJrxs74_7Nb47"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchVjLOiCYh8s5EC1-Ic0jOl"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/36711"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoV_cZSaTMzstflTQgOiDVL"
+}
+]
+},
 "easygoingterritorydefensebytheoptimisticlord": {
 "checked": "2026-10-23",
 "mature": false,
@@ -1615,6 +1681,24 @@
 }
 ]
 },
+"grimoireofzero": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B06Y3TBYDJ/"
+},
+{
+"site": "Hoopla",
+"url": "https://www.hoopladigital.com/television/grimoire-of-zero-season-1-yumiri-hanamori/16309478"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/80192979"
+}
+]
+},
 "haigakura": {
 "checked": "2026-10-15",
 "mature": true,
@@ -1636,6 +1720,16 @@
 {
 "site": "YouTube",
 "url": "https://youtube.com/playlist?list=PLwLSw1_eDZl28nYqV_gPaNLe-PL2JEnCR"
+}
+]
+},
+"handshakers": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3ob71CVx_FBoe8IsTleZge"
 }
 ]
 },
@@ -1826,6 +1920,20 @@
 {
 "site": "Bilibili TV",
 "url": "https://www.bilibili.tv/media/1043330"
+}
+]
+},
+"insearchofthelostfuture": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2uBNylC0zv02_h8DU_Ybl0"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/in-search-of-the-lost-future"
 }
 ]
 },
@@ -2402,6 +2510,42 @@
 }
 ]
 },
+"lucklogic": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/gp/video/detail/B06XJFC5T9/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3FbMdfz-wzxlhpm-FTf2oS"
+}
+]
+},
+"luminouswitches": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/league-of-nations-air-force-aviation-magic-band-luminous-witches"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3myw51ePNETmCVl587h_Y3"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/1062286"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcgnhaRRy7hnyQBCLPvI4Dcl"
+}
+]
+},
 "madeinabyss": {
 "checked": "2026-10-14",
 "mature": true,
@@ -2777,6 +2921,28 @@
 }
 ]
 },
+"myinstantdeathabilityisoverpowered": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/@sokushicheat_prdayo"
+},
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/my-instant-death-ability-is-overpowered"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2095811"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl24uc_SVJohCJFLtMu2Iaey"
+}
+]
+},
 "mynextlifeasavillainessallroutesleadtodoomx": {
 "checked": "2026-10-12",
 "mature": false,
@@ -2922,6 +3088,28 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/no-guns-life"
+}
+]
+},
+"oneswithin": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/the-ones-within-9afe71d4-c8b9-4dd3-9f79-6c3a52297afa"
+},
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B07TVPTFF8/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0Teg-jmcUbCFtcbiDHcBi-"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-ones-within"
 }
 ]
 },
@@ -3191,6 +3379,42 @@
 }
 ]
 },
+"remonster": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl05v2mf2IgiVxgoEkFGh4yI"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81766618"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/remonster"
+}
+]
+},
+"remonster-dub": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl05v2mf2IgiVxgoEkFGh4yI"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81766618"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/remonster"
+}
+]
+},
 "renegadeimmortal": {
 "checked": "2026-10-07",
 "mature": false,
@@ -3293,6 +3517,28 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/rumble-garanndoll"
+}
+]
+},
+"sabikuibisco": {
+"checked": "2026-10-25",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/sabikui-bisco"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl3wnGEqGVQDhDlyDLviOhCx"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1037462/"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/sabikui-bisuko-2022-1vsb8xl70ap"
 }
 ]
 },
