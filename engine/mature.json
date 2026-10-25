@@ -491,6 +491,24 @@
 }
 ]
 },
+"asobiasobaseworkshopoffun": {
+"checked": "2026-10-26",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl34w4cxzFbtRUZMe6jpokyr"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81264508"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/36155"
+}
+]
+},
 "assassinationclassroom": {
 "checked": "2026-10-08",
 "mature": false,
@@ -730,6 +748,11 @@
 }
 ]
 },
+"blazbluealtermemory": {
+"checked": "2026-10-26",
+"mature": false,
+"watch": []
+},
 "bofuriidontwanttogethurtsoillmaxoutmydefense": {
 "checked": "2026-10-11",
 "mature": false,
@@ -767,6 +790,20 @@
 {
 "site": "Bilibili",
 "url": "https://www.bilibili.com/bangumi/media/md28235403"
+}
+]
+},
+"casefilesofjewelerrichard": {
+"checked": "2026-10-26",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-case-files-of-jeweler-richard"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0vwHVQLtVh4xoUX5pxEiJD"
 }
 ]
 },
@@ -1057,6 +1094,20 @@
 }
 ]
 },
+"danganronpa3theendofhopespeakhighschooldespairarc": {
+"checked": "2026-10-26",
+"mature": true,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0xXCx8vGdbNBIXN73bE1J-"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/danganronpa-3-the-end-of-hopes-peak-high-school"
+}
+]
+},
 "danganronpa3theendofhopespeakhighschoolfuturearc": {
 "checked": "2026-10-24",
 "mature": true,
@@ -1210,6 +1261,24 @@
 {
 "site": "Bilibili",
 "url": "https://www.bilibili.com/bangumi/media/md22731221"
+}
+]
+},
+"drawthisthendie": {
+"checked": "2026-10-26",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00371656/draw-this-then-die"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81787975"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0BnHSDgsrzHcX29LmyNwQ1"
 }
 ]
 },
@@ -1747,6 +1816,20 @@
 }
 ]
 },
+"helpfulfoxsenkosan": {
+"checked": "2026-10-26",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/the-helpful-fox-senko-san"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl00GK4KkK6uhYqRYYg15T27"
+}
+]
+},
 "higehiroafterbeingrejectedishavedandtookinahighschoolrunaway": {
 "checked": "2026-10-15",
 "mature": false,
@@ -1923,6 +2006,24 @@
 }
 ]
 },
+"imtheevillordofanintergalacticempire": {
+"checked": "2026-10-26",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G79H23ZE3/im-the-evil-lord-of-an-intergalactic-empire"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2126479"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl15t3FDPEZ8RDr8uVWnRs2k"
+}
+]
+},
 "insearchofthelostfuture": {
 "checked": "2026-10-25",
 "mature": false,
@@ -2056,6 +2157,32 @@
 {
 "site": "Bilibili TV",
 "url": "https://www.bilibili.tv/id/media/34500"
+}
+]
+},
+"istheorderarabbitbloom": {
+"checked": "2026-10-26",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/is-the-order-a-rabbit-bloom-season-3"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/is-the-order-a-rabbit"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL1455LwF6n-EiT6cfJBWt9IF"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3ZbVoRNolft4BWVS5fS-2t"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/id/media/34641"
 }
 ]
 },
@@ -2198,6 +2325,24 @@
 {
 "site": "Hoopla",
 "url": "https://www.hoopladigital.com/television/just-because-season-1-aoi-ichikawa/16309475"
+}
+]
+},
+"kaijugirlcaramelise": {
+"checked": "2026-10-26",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GT00378081/kaiju-girl-caramelise"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl38hoyHQ6-C5HAQ9lJ5jkdG"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/2411889"
 }
 ]
 },
@@ -2485,6 +2630,20 @@
 {
 "site": "YouTube",
 "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0GaYki8AMQtObLOY61-9jq"
+}
+]
+},
+"lordofvermilionthecrimsonking": {
+"checked": "2026-10-26",
+"mature": false,
+"watch": [
+{
+"site": "Amazon Prime Video",
+"url": "https://www.amazon.com/dp/B07WPG2R4L/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0NZmU6_edKi3KghUDUZvIR"
 }
 ]
 },
@@ -3281,6 +3440,20 @@
 }
 ]
 },
+"protocolrain": {
+"checked": "2026-10-26",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G4PH0WJ4Q/protocol-rain"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0QVdscY93WMTdqR0tl1b32"
+}
+]
+},
 "ragnacrimson": {
 "checked": "2026-10-10",
 "mature": true,
@@ -3471,6 +3644,32 @@
 {
 "site": "Hulu",
 "url": "https://www.hulu.com/series/03f5afe1-1092-45ee-a421-91d0d8413bf0"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/@Rezero_official"
+}
+]
+},
+"rezerostartinglifeinanotherworldseason4part1": {
+"checked": "2026-10-26",
+"mature": true,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GRGG9798R"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/re-zero-starting-life-in-another-world-season-4-2026-201wmt3pwgh"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2342439"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3RN7t6wesJqlUkSUN6FHKF"
 },
 {
 "site": "YouTube",
