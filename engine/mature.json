@@ -433,6 +433,20 @@
 }
 ]
 },
+"armorshopforladiesgentlemen": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/armor-shop-for-ladies-gentlemen"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl20EtLhL_010FstUsomf7Gr"
+}
+]
+},
 "arte": {
 "checked": "2026-10-21",
 "mature": true,
@@ -678,6 +692,24 @@
 }
 ]
 },
+"berserkofgluttony": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G1XHJV05V/berserk-of-gluttony"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl16aN3dffy3DzuC9JLH3gDg"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/2090442"
+}
+]
+},
 "beyondtheocean": {
 "checked": "2026-10-09",
 "mature": false,
@@ -778,6 +810,11 @@
 "url": "https://www.crunchyroll.com/bofuri-i-dont-want-to-get-hurt-so-ill-max-out-my-defense"
 }
 ]
+},
+"candycaries": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": []
 },
 "capsules": {
 "checked": "2026-10-14",
@@ -1009,6 +1046,36 @@
 {
 "site": "Crunchyroll",
 "url": "https://www.crunchyroll.com/combatants-will-be-dispatched"
+}
+]
+},
+"contentwarningdarkgathering": {
+"checked": "2026-10-27",
+"mature": true,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/dark-gathering"
+},
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl27LXaPp_ryQdu41PQGpWEq"
+},
+{
+"site": "iQ",
+"url": "https://www.iq.com/album/nd4lyz6mpt"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL14JGEg2HzBJ9enWVg7AgD_t"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/id-en/title/81707187"
+},
+{
+"site": "Hulu",
+"url": "https://www.hulu.com/series/dark-gathering-42809c33-ab67-4fbf-9d7d-c52b4c1f56cf"
 }
 ]
 },
@@ -1830,6 +1897,20 @@
 }
 ]
 },
+"hetaliaworldstars": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl031sy9v8VtSbqYgoAmGAL7"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/hetalia"
+}
+]
+},
 "higehiroafterbeingrejectedishavedandtookinahighschoolrunaway": {
 "checked": "2026-10-15",
 "mature": false,
@@ -2305,6 +2386,11 @@
 "mature": true,
 "watch": []
 },
+"jojosbizarreadventurephantomblood": {
+"checked": "2026-10-27",
+"mature": true,
+"watch": []
+},
 "jojosbizarreadventurestardustcrusaders": {
 "checked": "2026-10-08",
 "mature": true,
@@ -2325,6 +2411,24 @@
 {
 "site": "Hoopla",
 "url": "https://www.hoopladigital.com/television/just-because-season-1-aoi-ichikawa/16309475"
+}
+]
+},
+"kaginado": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/movies/kaginado"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/G3KHEV73Z/kaginado"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3gRcH6U4L-LonrzmvlvvX0"
 }
 ]
 },
@@ -3344,6 +3448,11 @@
 }
 ]
 },
+"outburstdreamerboys": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": []
+},
 "outcast": {
 "checked": "2026-10-09",
 "mature": false,
@@ -3903,6 +4012,28 @@
 }
 ]
 },
+"senryugirl": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": [
+{
+"site": "HIDIVE",
+"url": "https://www.hidive.com/tv/senryu-girl"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/senryu-girl"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2dEwttp8R56-7BaiquzmWM"
+},
+{
+"site": "Hoopla",
+"url": "https://www.hoopladigital.com/television/senryu-girl-season-1-kana-hanazawa/16309480"
+}
+]
+},
 "servamp": {
 "checked": "2026-10-20",
 "mature": false,
@@ -4090,6 +4221,28 @@
 {
 "site": "iQIYI",
 "url": "https://www.iqiyi.com/a_12199gfpqhh.html"
+}
+]
+},
+"shikimorisnotjustacutie": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/shikimoris-not-just-a-cutie"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/media/1049425/"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2v3GdglUbai_QNMJHZMOHP"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLpm1VVK4UL16eTqwCR993sQaRmk3t5dZc"
 }
 ]
 },
@@ -4580,6 +4733,20 @@
 }
 ]
 },
+"thattimeigotreincarnatedasaslimevisionsofcoleus": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://youtube.com/playlist?list=PLwLSw1_eDZl1JiNtHZQTpQrjNbwXf4pHM&si=XfyE96UCHsShlXMn"
+},
+{
+"site": "Netflix",
+"url": "https://www.netflix.com/title/81028712"
+}
+]
+},
 "thisartclubhasaproblem": {
 "checked": "2026-10-17",
 "mature": false,
@@ -4669,6 +4836,20 @@
 {
 "site": "Hulu",
 "url": "https://www.hulu.com/series/1a195a35-e19c-4e36-b609-3b1c451f6ce4"
+}
+]
+},
+"uniteupunibirth": {
+"checked": "2026-10-27",
+"mature": false,
+"watch": [
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/c/UniteUpOfficialYouTubeChannel"
+},
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/series/GJ0H7Q5J9/uniteup"
 }
 ]
 },
