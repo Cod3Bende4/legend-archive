@@ -811,6 +811,24 @@
 }
 ]
 },
+"burnthewitch": {
+"checked": "2026-10-28",
+"mature": false,
+"watch": [
+{
+"site": "Crunchyroll",
+"url": "https://www.crunchyroll.com/burn-the-witch"
+},
+{
+"site": "YouTube",
+"url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl2w1kwb9Si-CBmmpGA5PY65"
+},
+{
+"site": "Bilibili TV",
+"url": "https://www.bilibili.tv/en/media/34678"
+}
+]
+},
 "candycaries": {
 "checked": "2026-10-27",
 "mature": false,
@@ -1100,6 +1118,11 @@
 "url": "https://www.crunchyroll.com/cop-craft"
 }
 ]
+},
+"crayonshinchan": {
+"checked": "2026-10-28",
+"mature": false,
+"watch": []
 },
 "dandadan": {
 "checked": "2026-10-09",
